@@ -1,0 +1,423 @@
+Hostname: fa24-cs425-6901.cs.illinois.edu
+Num of lines matched: 42
+./.bash_history:48:cat socket_client.py -irn '.' -e '200'
+./.bash_history:49:python socket_client.py -irn '.' -e '200'
+./.bash_history:52:python socket_client.py -irn '.' -e '200'
+./distributed-logger/.git/hooks/pre-rebase.sample:3:# Copyright (c) 2006, 2008 Junio C Hamano
+./distributed-logger/log/log.txt:3:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:5:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:6:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:7:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:10:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:12:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:15:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:18:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:24:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:25:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:29:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:38:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:39:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:40:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:43:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:45:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:47:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:54:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:55:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:61:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:62:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:63:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:65:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:66:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:70:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:74:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:75:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:78:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:79:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:80:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:81:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:92:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:95:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:98:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:102:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:111:[200 OK] request from 192.168.0.1
+./distributed-logger/log_generator.py:9:statuses = ['200 OK', '404 Not Found', '500 Internal Server Error', '302 Found']
+
+This message will be written to the log file.
+Hostname: fa24-cs425-6902.cs.illinois.edu
+Num of lines matched: 39
+./distributed-logger/.git/hooks/pre-rebase.sample:3:# Copyright (c) 2006, 2008 Junio C Hamano
+./distributed-logger/log/log.txt:3:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:5:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:6:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:7:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:10:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:12:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:15:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:18:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:24:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:25:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:29:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:38:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:39:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:40:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:43:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:45:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:47:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:54:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:55:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:61:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:62:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:63:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:65:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:66:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:70:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:74:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:75:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:78:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:79:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:80:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:81:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:92:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:95:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:98:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:102:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:111:[200 OK] request from 192.168.0.1
+./distributed-logger/log_generator.py:9:statuses = ['200 OK', '404 Not Found', '500 Internal Server Error', '302 Found']
+
+This message will be written to the log file.
+Hostname: fa24-cs425-6903.cs.illinois.edu
+Num of lines matched: 39
+./distributed-logger/.git/hooks/pre-rebase.sample:3:# Copyright (c) 2006, 2008 Junio C Hamano
+./distributed-logger/log/log.txt:3:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:5:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:6:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:7:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:10:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:12:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:15:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:18:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:24:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:25:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:29:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:38:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:39:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:40:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:43:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:45:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:47:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:54:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:55:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:61:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:62:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:63:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:65:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:66:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:70:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:74:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:75:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:78:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:79:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:80:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:81:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:92:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:95:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:98:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:102:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:111:[200 OK] request from 192.168.0.1
+./distributed-logger/log_generator.py:9:statuses = ['200 OK', '404 Not Found', '500 Internal Server Error', '302 Found']
+
+This message will be written to the log file.
+Hostname: fa24-cs425-6904.cs.illinois.edu
+Num of lines matched: 39
+./distributed-logger/.git/hooks/pre-rebase.sample:3:# Copyright (c) 2006, 2008 Junio C Hamano
+./distributed-logger/log/log.txt:3:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:5:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:6:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:7:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:10:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:12:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:15:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:18:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:24:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:25:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:29:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:38:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:39:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:40:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:43:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:45:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:47:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:54:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:55:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:61:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:62:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:63:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:65:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:66:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:70:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:74:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:75:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:78:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:79:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:80:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:81:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:92:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:95:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:98:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:102:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:111:[200 OK] request from 192.168.0.1
+./distributed-logger/log_generator.py:9:statuses = ['200 OK', '404 Not Found', '500 Internal Server Error', '302 Found']
+
+This message will be written to the log file.
+Hostname: fa24-cs425-6905.cs.illinois.edu
+Num of lines matched: 39
+./distributed-logger/.git/hooks/pre-rebase.sample:3:# Copyright (c) 2006, 2008 Junio C Hamano
+./distributed-logger/log/log.txt:3:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:5:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:6:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:7:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:10:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:12:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:15:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:18:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:24:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:25:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:29:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:38:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:39:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:40:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:43:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:45:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:47:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:54:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:55:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:61:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:62:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:63:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:65:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:66:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:70:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:74:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:75:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:78:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:79:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:80:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:81:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:92:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:95:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:98:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:102:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:111:[200 OK] request from 192.168.0.1
+./distributed-logger/log_generator.py:9:statuses = ['200 OK', '404 Not Found', '500 Internal Server Error', '302 Found']
+
+This message will be written to the log file.
+Hostname: fa24-cs425-6906.cs.illinois.edu
+Num of lines matched: 39
+./distributed-logger/.git/hooks/pre-rebase.sample:3:# Copyright (c) 2006, 2008 Junio C Hamano
+./distributed-logger/log/log.txt:3:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:5:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:6:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:7:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:10:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:12:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:15:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:18:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:24:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:25:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:29:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:38:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:39:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:40:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:43:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:45:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:47:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:54:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:55:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:61:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:62:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:63:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:65:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:66:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:70:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:74:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:75:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:78:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:79:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:80:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:81:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:92:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:95:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:98:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:102:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:111:[200 OK] request from 192.168.0.1
+./distributed-logger/log_generator.py:9:statuses = ['200 OK', '404 Not Found', '500 Internal Server Error', '302 Found']
+
+This message will be written to the log file.
+Hostname: fa24-cs425-6907.cs.illinois.edu
+Num of lines matched: 39
+./distributed-logger/.git/hooks/pre-rebase.sample:3:# Copyright (c) 2006, 2008 Junio C Hamano
+./distributed-logger/log/log.txt:3:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:5:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:6:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:7:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:10:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:12:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:15:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:18:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:24:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:25:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:29:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:38:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:39:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:40:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:43:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:45:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:47:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:54:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:55:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:61:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:62:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:63:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:65:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:66:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:70:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:74:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:75:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:78:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:79:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:80:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:81:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:92:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:95:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:98:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:102:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:111:[200 OK] request from 192.168.0.1
+./distributed-logger/log_generator.py:9:statuses = ['200 OK', '404 Not Found', '500 Internal Server Error', '302 Found']
+
+This message will be written to the log file.
+Hostname: fa24-cs425-6908.cs.illinois.edu
+Num of lines matched: 39
+./distributed-logger/.git/hooks/pre-rebase.sample:3:# Copyright (c) 2006, 2008 Junio C Hamano
+./distributed-logger/log/log.txt:3:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:5:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:6:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:7:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:10:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:12:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:15:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:18:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:24:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:25:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:29:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:38:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:39:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:40:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:43:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:45:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:47:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:54:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:55:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:61:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:62:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:63:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:65:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:66:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:70:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:74:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:75:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:78:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:79:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:80:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:81:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:92:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:95:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:98:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:102:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:111:[200 OK] request from 192.168.0.1
+./distributed-logger/log_generator.py:9:statuses = ['200 OK', '404 Not Found', '500 Internal Server Error', '302 Found']
+
+This message will be written to the log file.
+Hostname: fa24-cs425-6909.cs.illinois.edu
+Num of lines matched: 39
+./distributed-logger/.git/hooks/pre-rebase.sample:3:# Copyright (c) 2006, 2008 Junio C Hamano
+./distributed-logger/log/log.txt:3:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:5:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:6:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:7:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:10:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:12:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:15:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:18:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:24:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:25:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:29:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:38:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:39:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:40:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:43:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:45:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:47:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:54:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:55:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:61:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:62:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:63:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:65:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:66:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:70:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:74:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:75:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:78:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:79:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:80:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:81:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:92:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:95:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:98:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:102:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:111:[200 OK] request from 192.168.0.1
+./distributed-logger/log_generator.py:9:statuses = ['200 OK', '404 Not Found', '500 Internal Server Error', '302 Found']
+
+This message will be written to the log file.
+Hostname: fa24-cs425-6910.cs.illinois.edu
+Num of lines matched: 39
+./distributed-logger/.git/hooks/pre-rebase.sample:3:# Copyright (c) 2006, 2008 Junio C Hamano
+./distributed-logger/log/log.txt:3:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:5:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:6:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:7:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:10:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:12:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:15:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:18:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:24:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:25:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:29:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:38:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:39:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:40:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:43:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:45:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:47:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:54:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:55:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:61:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:62:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:63:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:65:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:66:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:70:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:74:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:75:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:78:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:79:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:80:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:81:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:92:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:95:[200 OK] Request from 192.168.0.1
+./distributed-logger/log/log.txt:98:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:102:[200 OK] Request from 127.0.0.1
+./distributed-logger/log/log.txt:111:[200 OK] request from 192.168.0.1
+./distributed-logger/log_generator.py:9:statuses = ['200 OK', '404 Not Found', '500 Internal Server Error', '302 Found']
+
+This message will be written to the log file.

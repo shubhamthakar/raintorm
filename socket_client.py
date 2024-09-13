@@ -1,6 +1,6 @@
 import socket
 import sys 
-from hosts import hosts
+from hosts import hosts_dict
 
 # try: 
 # 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
@@ -31,7 +31,7 @@ grep_command = sys.argv[1:]
 output_dict = {}
 total_lines_matched = 0
 
-for _, host_name in hosts.items():
+for _, host_name in hosts_dict.items():
 	try:
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		s.connect((host_name, port))
@@ -49,7 +49,7 @@ for _, host_name in hosts.items():
 		output_dict[host_name] = grep_output
 	except:
 		write_output(host_name, 0, '')
-		# print('Error connecting to host') #Better error?
+		print('Error connecting to host') #Better error?
 		output_dict[host_name] = ""
 	finally:
 		s.close()
