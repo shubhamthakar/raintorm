@@ -2,11 +2,11 @@ import socket
 import sys 
 from hosts import hosts
 
-try: 
-	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
-	print ("Socket successfully created")
-except socket.error as err: 
-	print ("socket creation failed with error %s" %(err))
+# try: 
+# 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
+# 	print ("Socket successfully created")
+# except socket.error as err: 
+# 	print ("socket creation failed with error %s" %(err))
 
 port = 12345
 
@@ -33,6 +33,7 @@ total_lines_matched = 0
 
 for _, host_name in hosts.items():
 	try:
+		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		s.connect((host_name, port))
 		s.sendall(" ".join(grep_command).encode())
 		grep_output = ""
@@ -50,5 +51,7 @@ for _, host_name in hosts.items():
 		write_output(host_name, 0, '')
 		# print('Error connecting to host') #Better error?
 		output_dict[host_name] = ""
+	finally:
+		s.close()
 print("total lines matched:", total_lines_matched)
 
