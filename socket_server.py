@@ -4,7 +4,7 @@ from grepper import grep_from_python
 
 s = socket.socket()		 
 print ("Socket successfully created")
-port = 12345
+port = 12346
 
 # Next bind to the port 
 # we have not typed any ip in the ip field 
