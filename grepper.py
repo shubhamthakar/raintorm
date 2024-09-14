@@ -4,7 +4,10 @@ import sys
 def grep_from_python(args):
     try:
 
-        result = subprocess.run(['grep','-r /home/chaskar2/log', *args.split()], capture_output=True, text=True, check=True)
+        mod_args = "-r " + args + " /home/chaskar2/log"
+        print(mod_args)
+        print(mod_args.split())
+        result = subprocess.run(['grep', *mod_args.split()], capture_output=True, text=True, check=True)
         print("Results: ",  result.stdout)
         return result.stdout
     except subprocess.CalledProcessError as e:
@@ -15,3 +18,6 @@ def grep_from_python(args):
             # Handle other possible errors (e.g., invalid options, file not found)
             print(f"Error: {e.stderr}")
             return ""
+
+
+grep_from_python("reynolds")

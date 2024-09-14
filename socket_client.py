@@ -35,6 +35,7 @@ for _, host_name in hosts_dict.items():
 	try:
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		s.connect((host_name, port))
+		print(grep_command)
 		s.sendall(" ".join(grep_command).encode())
 		grep_output = ""
 		while True:

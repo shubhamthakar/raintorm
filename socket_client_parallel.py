@@ -12,7 +12,7 @@ total_lines_matched = 0
 def write_output(host_name, lines_matched, grep_output):
     print(f'Hostname: {host_name}')
     print(f'Num of lines matched: {lines_matched}')
-    print(grep_output)
+    # print(grep_output)
 
     with open('output.log', 'a') as log_file:
         print(f'Hostname: {host_name}', file=log_file)
