@@ -2,25 +2,27 @@ import os
 import random
 
 # Create the log directory if it doesn't exist
-log_dir = 'log'
-os.makedirs(log_dir, exist_ok=True)
+gen_log_dir = 'generated_logs'
+os.makedirs(gen_log_dir, exist_ok=True)
 
 # List of possible HTTP request statuses
+known_logs = ['[200 OK] Request from 127.0.0.1']
 statuses = ['200 OK', '404 Not Found', '500 Internal Server Error', '302 Found']
+ips = ["192.168.0.2", "192.168.0.1"]
+
+dict = {
+    'rare_pattern' : known_logs + [f'[{random.choice(statuses)}] Request from {random.choice(ips)}' for _ in range(99)],
+    'somewhat_freq_pattern' : known_logs*50 + [f'[{random.choice(statuses)}] Request from {random.choice(ips)}' for _ in range(50)],
+    'freq_pattern' : known_logs*100,
+    'random_pattern' : [f'[{random.choice(statuses)}] Request from {random.choice(ips)}' for _ in range(100)],
+    'empty_pattern' : []
+}
+
 
 # Generate 10 random log files
-for i in range(100):
-    # Generate a random file name
-    file_name = f'log.txt'
-    
-    # Generate a random HTTP request status
-    status = random.choice(statuses)
-    
-    # Generate the log message
-    log_message = f'[{status}] Request from {random.choice(["127.0.0.1", "192.168.0.1"])}'
-    
-    # Write the log message to the file
-    with open(os.path.join(log_dir, file_name), 'a') as file:
-        file.write(log_message + '\n')
-        
-    # print(f'appended log to log file file: {file_name}')
+for k, v in dict.items():
+    with open(os.path.join(gen_log_dir, f'{k}.txt'), 'a') as file:
+        if k != 'empty_pattern':
+            random.shuffle(v)
+            for i in range(len(v)):
+                file.write(v[i] + '\n')
