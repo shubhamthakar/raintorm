@@ -18,6 +18,3 @@ def grep_from_python(args):
             # Handle other possible errors (e.g., invalid options, file not found)
             print(f"Error: {e.stderr}")
             return ""
-
-
-grep_from_python("reynolds")
