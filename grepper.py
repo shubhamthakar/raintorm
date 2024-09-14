@@ -4,7 +4,7 @@ import sys
 def grep_from_python(args):
     try:
 
-        mod_args = "-r " + args + " /home/chaskar2/log"
+        mod_args = args
         print(mod_args)
         print(mod_args.split())
         result = subprocess.run(['grep', *mod_args.split()], capture_output=True, text=True, check=True)

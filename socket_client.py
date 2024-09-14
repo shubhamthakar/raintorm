@@ -22,7 +22,7 @@ def write_output(host_name, lines_matched, grep_output):
 	print('Num of lines matched:', lines_matched)
 	print(grep_output)
 
-	with open('output.log', 'a') as log_file:
+	with open('output.log', 'w') as log_file:
 		print(f'Hostname: {host_name}', file=log_file)
 		print(f'Num of lines matched: {lines_matched}', file=log_file)
 		print(f'{grep_output}', file=log_file)
