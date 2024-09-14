@@ -1,6 +1,7 @@
 import socket
 import sys 
 from hosts import hosts_dict
+import time
 
 # try: 
 # 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
@@ -31,6 +32,7 @@ grep_command = sys.argv[1:]
 output_dict = {}
 total_lines_matched = 0
 
+start_time = time.time()
 for _, host_name in hosts_dict.items():
 	try:
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -59,5 +61,10 @@ for _, host_name in hosts_dict.items():
 		output_dict[host_name] = ""
 	finally:
 		s.close()
+
+end_time = time.time()
+execution_time = end_time - start_time
+print("Execution time:", execution_time)
+
 print("total lines matched:", total_lines_matched)
 

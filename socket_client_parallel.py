@@ -2,6 +2,7 @@ import socket
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from hosts import hosts_dict
+import time
 
 # Define the port and global output variables
 port = 12345
@@ -73,8 +74,12 @@ def main():
         print("Please provide the grep command as arguments.")
         sys.exit(1)
 
-    # Run the socket calls in parallel
+    start_time = time.time()
     run_parallel_socket_calls(hosts_dict, port, grep_command)
+    end_time = time.time()
+
+    execution_time = end_time - start_time
+    print("Execution time:", execution_time, "seconds")
 
     # Print final results
     print("Total lines matched:", total_lines_matched)
