@@ -4,7 +4,7 @@ import sys
 def grep_from_python(args):
     try:
 
-        result = subprocess.run(['grep', *args.split()], cwd='/home/chaskar2/distributed-logger', capture_output=True, text=True, check=True)
+        result = subprocess.run(['grep','-r /home/chaskar2/log', *args.split()], capture_output=True, text=True, check=True)
         print("Results: ",  result.stdout)
         return result.stdout
     except subprocess.CalledProcessError as e:
