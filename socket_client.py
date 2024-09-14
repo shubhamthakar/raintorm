@@ -52,9 +52,9 @@ for _, host_name in hosts_dict.items():
 		total_lines_matched += lines_matched
 		write_output(host_name, lines_matched, grep_output)
 		output_dict[host_name] = grep_output
-	except:
+	except Exception as e:
 		write_output(host_name, 0, '')
-		print('Error connecting to host') #Better error?
+		print('Error connecting to host', e) #Better error?
 		output_dict[host_name] = ""
 	finally:
 		s.close()
