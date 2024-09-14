@@ -43,13 +43,13 @@ for _, host_name in hosts_dict.items():
 			
 			if not data:
 				break
-        
-        if grep_output == "":
-            lines_matched = 0
-        else:
-		    lines_matched = len(grep_output.split('\n'))
+			
+		if grep_output == "":
+			lines_matched = 0
+		else:
+			lines_matched = len(grep_output.split('\n'))
 		
-        total_lines_matched += lines_matched
+		total_lines_matched += lines_matched
 		write_output(host_name, lines_matched, grep_output)
 		output_dict[host_name] = grep_output
 	except:
