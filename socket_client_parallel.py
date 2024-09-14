@@ -29,7 +29,7 @@ def process_host(host_name, port, grep_command):
         # Create and connect the socket
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.connect((host_name, port))
-        s.sendall(" ".join(grep_command).encode())
+        s.sendall(",".join(grep_command).encode())
 
         # Receive data from the server
         while True:
