@@ -65,6 +65,7 @@ def run_parallel_socket_calls(hosts_dict, port, grep_command):
             host_name, grep_output, lines_matched = future.result()
             output_dict[host_name] = grep_output
             total_lines_matched += lines_matched
+    return output_dict
 
 # Main function to initiate the parallel execution
 def main():
@@ -75,7 +76,8 @@ def main():
         sys.exit(1)
 
     start_time = time.time()
-    run_parallel_socket_calls(hosts_dict, port, grep_command)
+    out = run_parallel_socket_calls(hosts_dict, port, grep_command)
+    print(out)
     end_time = time.time()
 
     execution_time = end_time - start_time
