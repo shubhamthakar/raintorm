@@ -39,7 +39,7 @@ def process_host(host_name, port, grep_command):
             grep_output += data.decode()
 
         # Count the number of lines matched
-        lines_matched = len(grep_output.split('\n')) if grep_output else 0
+        lines_matched = len(grep_output.split('\n'))-1 if grep_output else 0
 
     except Exception as e:
         print(f'Error connecting to host {host_name}: {e}')
