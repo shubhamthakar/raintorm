@@ -4,7 +4,7 @@ from hosts import hosts_dict
 # output_dict[host_name] = grep_output
 port = 12345
 
-def test_rare_pattern_on_one_machine():
+def test_rare_on_one_machine():
     grep_command = ['-r', '\[200 OK\] Request from 127.0.0.1', '/home/chaskar2/distributed-logger/tests/test_logs/test_rare_on_one_machine.txt']
     output_dict = run_parallel_socket_calls(hosts_dict, port, grep_command)
 
@@ -37,8 +37,8 @@ def test_rare_pattern_on_one_machine():
     # Use assertions to compare actual and expected values
     assert output_dict == expected_output, f"Expected {expected_output}, got {output_dict}"
 
-def test_somewhatfreq_pattern_on_5_machine():
-    grep_command = ['-r', '\[200 OK\] Request from 127.0.0.1', '/home/chaskar2/distributed-logger/tests/test_logs/test_somewhatfreq_pattern_on_5_machine.txt']
+def test_somewhatfreq_on_5_machine():
+    grep_command = ['-r', '\[200 OK\] Request from 127.0.0.1', '/home/chaskar2/distributed-logger/tests/test_logs/test_somewhatfreq_on_5_machine.txt']
     output_dict = run_parallel_socket_calls(hosts_dict, port, grep_command)
 
     """
@@ -71,8 +71,8 @@ def test_somewhatfreq_pattern_on_5_machine():
     assert output_dict == expected_output, f"Expected {expected_output}, got {output_dict}"
 
 
-def test_freq_pattern_on_all_machine():
-    grep_command = ['-r', '\[200 OK\] Request from 127.0.0.1', '/home/chaskar2/distributed-logger/tests/test_logs/test_freq_pattern_on_all_machine.txt']
+def test_freq_on_all_machine():
+    grep_command = ['-r', '\[200 OK\] Request from 127.0.0.1', '/home/chaskar2/distributed-logger/tests/test_logs/test_freq_on_all_machine.txt']
     output_dict = run_parallel_socket_calls(hosts_dict, port, grep_command)
 
     """
