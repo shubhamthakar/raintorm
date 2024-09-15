@@ -69,7 +69,6 @@ def main():
 
     start_time = time.time()
     out = run_parallel_socket_calls(hosts_dict, port, grep_command)
-    print(out)
     end_time = time.time()
 
     execution_time = end_time - start_time
