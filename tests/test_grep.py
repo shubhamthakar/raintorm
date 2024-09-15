@@ -5,7 +5,7 @@ from hosts import hosts_dict
 port = 12345
 
 def test_rare_on_one_machine():
-    grep_command = ['-r', '\[200 OK\] Request from 127.0.0.1', '/home/chaskar2/distributed-logger/tests/test_logs/test_rare_on_one_machine.txt']
+    grep_command = ['-r', r'\[200 OK\] Request from 127.0.0.1', '/home/chaskar2/distributed-logger/tests/test_logs/test_rare_on_one_machine.txt']
     output_dict = run_parallel_socket_calls(hosts_dict, port, grep_command)
 
     """
@@ -38,7 +38,7 @@ def test_rare_on_one_machine():
     assert output_dict == expected_output, f"Expected {expected_output}, got {output_dict}"
 
 def test_somewhatfreq_on_5_machine():
-    grep_command = ['-r', '\[200 OK\] Request from 127.0.0.1', '/home/chaskar2/distributed-logger/tests/test_logs/test_somewhatfreq_on_5_machine.txt']
+    grep_command = ['-r', r'\[200 OK\] Request from 127.0.0.1', '/home/chaskar2/distributed-logger/tests/test_logs/test_somewhatfreq_on_5_machine.txt']
     output_dict = run_parallel_socket_calls(hosts_dict, port, grep_command)
 
     """
@@ -72,7 +72,7 @@ def test_somewhatfreq_on_5_machine():
 
 
 def test_freq_on_all_machine():
-    grep_command = ['-r', '\[200 OK\] Request from 127.0.0.1', '/home/chaskar2/distributed-logger/tests/test_logs/test_freq_on_all_machine.txt']
+    grep_command = ['-r', r'\[200 OK\] Request from 127.0.0.1', '/home/chaskar2/distributed-logger/tests/test_logs/test_freq_on_all_machine.txt']
     output_dict = run_parallel_socket_calls(hosts_dict, port, grep_command)
 
     """
@@ -99,7 +99,7 @@ def test_freq_on_all_machine():
     'fa24-cs425-6907.cs.illinois.edu': '[200 OK] Request from 127.0.0.1\n'*100,
     'fa24-cs425-6908.cs.illinois.edu': '[200 OK] Request from 127.0.0.1\n'*100,
     'fa24-cs425-6909.cs.illinois.edu': '[200 OK] Request from 127.0.0.1\n'*100,
-    'fa24-cs425-69010.cs.illinois.edu': '[200 OK] Request from 127.0.0.1\n'*100
+    'fa24-cs425-6910.cs.illinois.edu': '[200 OK] Request from 127.0.0.1\n'*100
 }
     # Use assertions to compare actual and expected values
     assert output_dict == expected_output, f"Expected {expected_output}, got {output_dict}"
