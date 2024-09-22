@@ -60,10 +60,10 @@ class Process:
         new_node_ip, new_node_port = addr
         new_node_id = f"{new_node_ip}_{new_node_port}_{int(time.time())}"
         new_node_info = {'node_id': new_node_id, 'status': 'LIVE'}
+        self.notify_all_nodes(new_node_info)
         self.membership_list.append(new_node_info)
         self.log(f"New join request received from {new_node_ip}:{new_node_port}")
         self.send_membership_list(new_node_ip, new_node_port)
-        self.notify_all_nodes(new_node_info)
 
     def handle_membership_list(self, membership_list):
         self.membership_list = membership_list
@@ -111,6 +111,6 @@ class Process:
 
 if __name__ == "__main__":
     # Example: Start a node at IP 127.0.0.1, port 5000, with introducer at 127.0.0.1:4000
-    node = Process('', 5000, 'fa24-cs425-6901.cs.illinois.edu', 5000)
+    node = Process(socket.gethostname(), 5000, 'fa24-cs425-6901.cs.illinois.edu', 5000)
     if node.introducer_ip:
         node.send_join_request()
