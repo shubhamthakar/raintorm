@@ -27,7 +27,7 @@ def process_host(host_name, port, grep_command):
         s.sendall(",".join(grep_command).encode())
 
         while True:
-            data = s.recv(2)
+            data = s.recv(1024)
             if not data:
                 break
             grep_output += data.decode()
