@@ -104,4 +104,4 @@ def test_freq_on_all_machine():
     # Use assertions to compare actual and expected values
     assert output_dict == expected_output, f"Expected {expected_output}, got {output_dict}"
 
-#scp /home/chaskar2/distributed-logger/tests/generated_logs/random_pattern.txt sthakar3@fa24-cs425-6902.cs.illinois.edu:/home/chaskar2/distributed-logger/tests/test_logs/test_rare_on_one_machine.txt
+#scp /home/chaskar2/distributed-logger/tests/generated_logs/somewhat_freq_pattern.txt sthakar3@fa24-cs425-6902.cs.illinois.edu:/home/chaskar2/distributed-logger/tests/test_logs/test_somewhatfreq_on_5_machine.txt
