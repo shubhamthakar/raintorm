@@ -38,7 +38,7 @@ class Process:
             try:
                 self.server_socket.settimeout(1)  # Set a timeout so the thread can check the flag periodically
                 data, addr = self.server_socket.recvfrom(1024)
-                hostname = socket.gethostbyaddr(addr[0])
+                hostname, _, _ = socket.gethostbyaddr(addr[0])
                 new_add = (hostname, addr[1])
                 message = json.loads(data.decode('utf-8'))
                 self.handle_message(message, new_add)

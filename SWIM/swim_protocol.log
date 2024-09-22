@@ -1,0 +1,60 @@
+2024-09-22 15:44:45,047 - Node started, listening on :5000
+2024-09-22 15:44:45,047 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-22 15:44:45,048 - New join request received from 172.22.94.228:5000
+2024-09-22 15:44:45,048 - Sent membership list to 172.22.94.228:5000
+2024-09-22 15:44:45,048 - Notified 172.22.94.228:5000 of new node {'node_id': '172.22.94.228_5000_1727037885', 'status': 'LIVE'}
+2024-09-22 15:44:45,048 - Received updated membership list: [{'node_id': '172.22.94.228_5000_1727037885', 'status': 'LIVE'}]
+2024-09-22 15:44:45,048 - New node added to membership list: {'node_id': '172.22.94.228_5000_1727037885', 'status': 'LIVE'}
+2024-09-22 15:45:35,785 - Shutting down...
+2024-09-22 15:45:36,099 - Node shut down gracefully.
+2024-09-22 15:45:39,814 - Node started, listening on :5000
+2024-09-22 15:45:39,815 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-22 15:45:39,815 - New join request received from 172.22.94.228:5000
+2024-09-22 15:45:39,815 - Sent membership list to 172.22.94.228:5000
+2024-09-22 15:45:39,815 - Notified 172.22.94.228:5000 of new node {'node_id': '172.22.94.228_5000_1727037939', 'status': 'LIVE'}
+2024-09-22 15:45:39,816 - Received updated membership list: [{'node_id': '172.22.94.228_5000_1727037939', 'status': 'LIVE'}]
+2024-09-22 15:45:39,816 - New node added to membership list: {'node_id': '172.22.94.228_5000_1727037939', 'status': 'LIVE'}
+2024-09-22 15:45:42,332 - Shutting down...
+2024-09-22 15:45:42,819 - Node shut down gracefully.
+2024-09-22 15:46:29,972 - Node started, listening on :5000
+2024-09-22 15:46:29,972 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-22 15:46:29,972 - New join request received from 172.22.94.228:5000
+2024-09-22 15:46:29,973 - Sent membership list to 172.22.94.228:5000
+2024-09-22 15:46:29,973 - Notified 172.22.94.228:5000 of new node {'node_id': '172.22.94.228_5000_1727037989', 'status': 'LIVE'}
+2024-09-22 15:46:29,973 - Received updated membership list: [{'node_id': '172.22.94.228_5000_1727037989', 'status': 'LIVE'}]
+2024-09-22 15:46:29,973 - New node added to membership list: {'node_id': '172.22.94.228_5000_1727037989', 'status': 'LIVE'}
+2024-09-22 15:47:04,046 - New join request received from 172.22.156.229:5000
+2024-09-22 15:47:04,046 - Sent membership list to 172.22.156.229:5000
+2024-09-22 15:47:04,046 - Notified 172.22.94.228:5000 of new node {'node_id': '172.22.156.229_5000_1727038024', 'status': 'LIVE'}
+2024-09-22 15:47:04,046 - Notified 172.22.94.228:5000 of new node {'node_id': '172.22.156.229_5000_1727038024', 'status': 'LIVE'}
+2024-09-22 15:47:04,046 - Notified 172.22.156.229:5000 of new node {'node_id': '172.22.156.229_5000_1727038024', 'status': 'LIVE'}
+2024-09-22 15:47:04,047 - New node added to membership list: {'node_id': '172.22.156.229_5000_1727038024', 'status': 'LIVE'}
+2024-09-22 15:47:04,047 - New node added to membership list: {'node_id': '172.22.156.229_5000_1727038024', 'status': 'LIVE'}
+2024-09-22 15:48:27,079 - Shutting down...
+2024-09-22 15:48:27,134 - Node shut down gracefully.
+2024-09-22 16:09:09,132 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-22 16:09:09,133 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-22 16:09:09,133 - New join request received from 172.22.94.228:5000
+2024-09-22 16:09:09,134 - Sent membership list to 172.22.94.228:5000
+2024-09-22 16:09:09,134 - Received updated membership list: [{'node_id': '172.22.94.228_5000_1727039349', 'status': 'LIVE'}]
+2024-09-22 16:09:15,444 - Notified 172.22.94.228:5000 of new node {'node_id': '172.22.156.229_5000_1727039355', 'status': 'LIVE'}
+2024-09-22 16:09:15,444 - New join request received from 172.22.156.229:5000
+2024-09-22 16:09:15,444 - Sent membership list to 172.22.156.229:5000
+2024-09-22 16:09:15,444 - New node added to membership list: {'node_id': '172.22.156.229_5000_1727039355', 'status': 'LIVE'}
+2024-09-22 16:20:54,168 - Shutting down...
+2024-09-22 16:20:55,125 - Node shut down gracefully.
+2024-09-22 16:30:20,262 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-22 16:30:20,263 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-22 16:30:20,265 - New join request received from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228']):5000
+2024-09-22 16:30:20,265 - Error receiving message: str, bytes or bytearray expected, not tuple
+2024-09-22 16:32:33,566 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-22 16:32:33,567 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-22 16:32:33,569 - New join request received from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228']):5000
+2024-09-22 16:32:33,569 - Error receiving message: str, bytes or bytearray expected, not tuple
+2024-09-22 16:33:15,952 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-22 16:33:15,952 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-22 16:33:15,955 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-22 16:33:15,955 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-22 16:33:15,956 - Received updated membership list: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1727040795', 'status': 'LIVE'}]
+2024-09-22 16:33:24,155 - Shutting down...
+2024-09-22 16:33:24,965 - Node shut down gracefully.
