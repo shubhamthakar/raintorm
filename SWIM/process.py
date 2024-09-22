@@ -38,10 +38,14 @@ class Process:
             try:
                 self.server_socket.settimeout(1)  # Set a timeout so the thread can check the flag periodically
                 data, addr = self.server_socket.recvfrom(1024)
+                hostname = socket.gethostbyaddr(addr[0])
+                new_add = (hostname, addr[1])
                 message = json.loads(data.decode('utf-8'))
-                self.handle_message(message, addr)
+                self.handle_message(message, new_add)
             except socket.timeout:
                 continue
+            except socket.herror:
+                self.handle_message(message, addr)
             except Exception as e:
                 self.log(f"Error receiving message: {e}")
                 break
@@ -60,9 +64,9 @@ class Process:
         new_node_ip, new_node_port = addr
         new_node_id = f"{new_node_ip}_{new_node_port}_{int(time.time())}"
         new_node_info = {'node_id': new_node_id, 'status': 'LIVE'}
+        self.log(f"New join request received from {new_node_ip}:{new_node_port}")
         self.notify_all_nodes(new_node_info)
         self.membership_list.append(new_node_info)
-        self.log(f"New join request received from {new_node_ip}:{new_node_port}")
         self.send_membership_list(new_node_ip, new_node_port)
 
     def handle_membership_list(self, membership_list):
