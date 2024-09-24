@@ -173,9 +173,8 @@ class Process:
     def send_ack(self, addr):
         """Send an acknowledgment message in response to a ping."""
         ack_message = {'type': 'ack'}
-        if addr[0] != 'fa24-cs425-6901.cs.illinois.edu':
-            self.server_socket.sendto(json.dumps(ack_message).encode('utf-8'), addr)
-            self.log(f"Sent ack to {addr}")
+        self.server_socket.sendto(json.dumps(ack_message).encode('utf-8'), addr)
+        self.log(f"Sent ack to {addr}")
 
     def update_node_status(self, node_id, status):
         """Update the status of a node in the membership list."""
