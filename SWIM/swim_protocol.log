@@ -403,3 +403,200 @@
 2024-09-23 23:40:05,160 - Node shut down gracefully.
 2024-09-23 23:40:05,160 - Node 172.22.156.229:5000 did not respond, marking as DEAD
 2024-09-23 23:40:05,160 - Updated status of 172.22.156.229_5000_1727152778 to DEAD
+2024-09-24 00:31:23,782 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:31:23,783 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:31:23,784 - New join request received from 172.22.94.228:5000
+2024-09-24 00:31:23,784 - Sent membership list to 172.22.94.228:5000
+2024-09-24 00:31:23,784 - Received updated membership list: [{'node_id': '172.22.94.228_5000_1727155883', 'status': 'LIVE'}]
+2024-09-24 00:31:24,784 - Pinging 172.22.94.228:5000
+2024-09-24 00:31:25,785 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:31:43,374 - Shutting down...
+2024-09-24 00:31:43,803 - Node shut down gracefully.
+2024-09-24 00:31:46,883 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:31:46,883 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:31:46,884 - New join request received from 172.22.94.228:5000
+2024-09-24 00:31:46,884 - Sent membership list to 172.22.94.228:5000
+2024-09-24 00:31:46,884 - Received updated membership list: [{'node_id': '172.22.94.228_5000_1727155906', 'status': 'LIVE'}]
+2024-09-24 00:31:47,884 - Pinging 172.22.94.228:5000
+2024-09-24 00:31:48,885 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:31:49,777 - Shutting down...
+2024-09-24 00:31:49,886 - Node shut down gracefully.
+2024-09-24 00:33:08,657 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:33:08,658 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:33:08,658 - New join request received from 172.22.94.228:5000
+2024-09-24 00:33:08,658 - Sent membership list to 172.22.94.228:5000
+2024-09-24 00:33:08,658 - Received updated membership list: [{'node_id': '172.22.94.228_5000_1727155988', 'status': 'LIVE'}]
+2024-09-24 00:33:09,658 - Pinging 172.22.94.228:5000
+2024-09-24 00:33:10,659 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:33:22,468 - Shutting down...
+2024-09-24 00:33:22,665 - Node shut down gracefully.
+2024-09-24 00:34:39,925 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:34:39,926 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:34:39,926 - New join request received from 172.22.94.228:5000
+2024-09-24 00:34:39,926 - Sent membership list to 172.22.94.228:5000
+2024-09-24 00:34:39,926 - Received updated membership list: [{'node_id': '172.22.94.228_5000_1727156079', 'status': 'LIVE'}]
+2024-09-24 00:34:40,927 - Pinging 172.22.94.228:5000
+2024-09-24 00:34:41,927 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:34:42,928 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:34:42,928 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:34:42,928 - Pinging 172.22.94.228:5000
+2024-09-24 00:34:43,928 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:34:44,929 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:34:44,929 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:34:44,929 - Pinging 172.22.94.228:5000
+2024-09-24 00:34:45,929 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:34:46,930 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:34:46,930 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:34:46,930 - Pinging 172.22.94.228:5000
+2024-09-24 00:34:47,930 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:34:48,931 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:34:48,931 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:34:48,931 - Pinging 172.22.94.228:5000
+2024-09-24 00:34:49,931 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:34:50,932 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:34:50,932 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:34:50,932 - Pinging 172.22.94.228:5000
+2024-09-24 00:34:51,932 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:34:52,933 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:34:52,933 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:34:52,933 - Pinging 172.22.94.228:5000
+2024-09-24 00:34:53,933 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:34:54,934 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:34:54,934 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:34:54,934 - Pinging 172.22.94.228:5000
+2024-09-24 00:34:55,934 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:34:56,935 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:34:56,935 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:34:56,935 - Pinging 172.22.94.228:5000
+2024-09-24 00:34:57,935 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:34:58,936 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:34:58,936 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:34:58,936 - Pinging 172.22.94.228:5000
+2024-09-24 00:34:59,936 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:00,937 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:00,937 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:00,937 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:01,937 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:02,938 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:02,938 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:02,938 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:03,938 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:04,939 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:04,939 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:04,939 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:05,939 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:06,939 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:06,940 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:06,940 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:07,940 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:08,941 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:08,941 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:08,941 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:09,941 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:10,941 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:10,942 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:10,942 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:11,942 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:12,942 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:12,942 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:12,943 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:13,943 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:14,943 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:14,943 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:14,943 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:15,944 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:16,944 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:16,944 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:16,944 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:17,945 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:18,945 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:18,945 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:18,945 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:19,946 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:20,946 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:20,946 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:20,946 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:21,947 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:22,947 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:22,947 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:22,947 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:23,948 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:24,948 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:24,948 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:24,948 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:25,949 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:26,949 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:26,949 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:26,949 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:27,950 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:28,950 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:28,950 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:28,950 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:29,951 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:30,951 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:30,951 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:30,951 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:31,952 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:32,952 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:32,952 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:32,952 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:33,953 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:34,953 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:34,953 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:34,953 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:35,954 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:36,954 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:36,954 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:36,954 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:37,955 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:38,955 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:38,955 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:38,955 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:39,956 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:40,956 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:40,956 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:40,956 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:41,957 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:42,957 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:42,957 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:42,957 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:43,958 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:44,958 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:44,958 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:44,958 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:45,959 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:46,959 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:46,959 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:46,959 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:47,959 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:48,960 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:48,960 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:48,960 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:49,961 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:50,961 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:50,961 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:50,961 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:51,961 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:52,962 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:52,962 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:52,962 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:53,962 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:54,963 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:54,963 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:54,963 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:55,963 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:56,964 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:56,964 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:35:56,964 - Pinging 172.22.94.228:5000
+2024-09-24 00:35:57,090 - Shutting down...
+2024-09-24 00:35:57,964 - Node 172.22.94.228:5000 did not respond. Sending indirect pings.
+2024-09-24 00:35:57,965 - Node shut down gracefully.
+2024-09-24 00:35:58,965 - Node 172.22.94.228:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 00:35:58,965 - Updated status of 172.22.94.228_5000_1727156079 to DEAD
+2024-09-24 00:42:59,131 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:42:59,132 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:42:59,136 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:42:59,136 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:42:59,137 - Received updated membership list: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1727156579', 'status': 'LIVE'}]
+2024-09-24 00:43:05,729 - Shutting down...
+2024-09-24 00:43:06,144 - Node shut down gracefully.
