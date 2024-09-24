@@ -600,3 +600,486 @@
 2024-09-24 00:42:59,137 - Received updated membership list: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1727156579', 'status': 'LIVE'}]
 2024-09-24 00:43:05,729 - Shutting down...
 2024-09-24 00:43:06,144 - Node shut down gracefully.
+2024-09-24 00:44:16,753 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:16,754 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:16,757 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:16,757 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:16,761 - Received updated membership list: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1727156656', 'status': 'LIVE'}]
+2024-09-24 00:44:23,667 - New join request received from fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:44:23,668 - Sent membership list to fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:44:23,761 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:44:23,765 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:23,765 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:23,765 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:44:24,669 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:24,761 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:44:24,763 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:24,763 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:24,763 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:44:25,762 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:25,763 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:25,764 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:25,764 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:25,764 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:26,673 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:26,763 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:44:26,765 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:26,765 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:26,766 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:44:27,764 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:27,765 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:27,766 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:27,766 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:27,766 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:28,765 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:28,767 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:28,767 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:28,768 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:28,768 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:29,674 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:29,766 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:44:29,769 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:29,769 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:29,769 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:44:30,767 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:30,768 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:30,769 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:30,769 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:30,769 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:31,768 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:44:31,770 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:31,770 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:31,770 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:44:32,677 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:32,769 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:32,770 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:32,771 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:32,771 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:32,771 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:33,770 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:33,772 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:33,772 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:33,772 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:33,773 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:34,770 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:34,774 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:34,775 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:34,775 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:34,775 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:35,771 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:35,773 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:35,774 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:35,774 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:35,774 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:36,681 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:36,772 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:44:36,774 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:36,775 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:36,775 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:44:37,773 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:37,775 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:37,775 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:37,776 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:37,776 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:38,686 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:38,774 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:44:38,777 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:38,777 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:38,777 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:44:39,684 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:39,775 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:44:39,778 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:39,778 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:39,778 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:44:40,777 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:44:40,779 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:40,779 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:40,779 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:44:41,687 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:41,778 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:41,779 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:41,780 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:41,780 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:41,780 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:42,688 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:42,779 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:42,780 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:42,781 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:42,781 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:42,781 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:43,689 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:43,780 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:44:43,782 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:43,782 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:43,782 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:44:44,690 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:44,781 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:44:44,783 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:44,783 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:44,783 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:44:45,690 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:45,782 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:44:45,784 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:45,784 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:45,784 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:44:46,691 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:46,783 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:44:46,786 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:46,786 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:46,786 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:44:47,784 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:47,785 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:47,786 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:47,787 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:47,787 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:48,785 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:48,786 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:48,787 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:48,787 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:48,787 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:49,694 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:49,786 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:49,787 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:49,788 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:49,788 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:49,788 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:50,695 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:50,787 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:44:50,789 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:50,789 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:50,789 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:44:51,788 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:51,790 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:51,790 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:51,790 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:51,791 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:52,789 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:52,791 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:52,791 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:52,791 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:52,792 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:53,790 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:53,792 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:53,792 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:53,792 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:53,793 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:54,791 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:54,793 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:54,793 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:54,793 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:54,793 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:55,792 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:44:55,794 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:55,794 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:55,795 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:44:56,701 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:56,793 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:56,794 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:56,795 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:56,795 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:56,795 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:57,794 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:44:57,797 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:57,797 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:57,797 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:44:58,795 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:44:58,797 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:58,797 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:44:58,797 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:58,797 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:44:59,796 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:44:59,799 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:44:59,799 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:44:59,799 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:00,706 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:00,796 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:00,798 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:00,799 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:00,799 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:00,799 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:01,797 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:01,800 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:01,800 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:01,800 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:02,708 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:02,798 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:02,800 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:02,801 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:02,801 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:02,801 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:03,709 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:03,799 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:03,801 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:03,801 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:03,801 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:03,802 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:04,800 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:04,803 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:04,803 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:04,803 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:05,801 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:05,803 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:05,804 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:05,804 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:05,804 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:06,803 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:06,804 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:06,805 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:06,805 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:06,805 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:07,712 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:07,804 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:07,806 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:07,807 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:07,807 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:08,805 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:08,807 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:08,807 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:08,807 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:09,714 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:09,805 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:09,806 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:09,807 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:09,807 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:09,807 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:10,806 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:10,807 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:10,808 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:10,808 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:10,808 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:11,716 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:11,807 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:11,810 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:11,810 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:11,810 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:12,717 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:12,808 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:12,810 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:12,810 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:12,811 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:13,809 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:13,812 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:13,812 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:13,812 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:14,719 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:14,810 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:14,812 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:14,813 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:14,813 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:15,720 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:15,811 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:15,814 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:15,814 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:15,814 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:16,812 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:16,815 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:16,815 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:16,815 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:17,723 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:17,813 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:17,815 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:17,815 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:17,816 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:17,816 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:18,724 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:18,814 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:18,817 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:18,817 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:18,817 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:19,815 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:19,817 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:19,818 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:19,818 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:19,818 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:20,816 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:20,819 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:20,819 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:20,819 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:20,820 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:21,818 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:21,820 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:21,820 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:21,820 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:22,819 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:22,821 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:22,821 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:22,821 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:23,728 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:23,820 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:23,821 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:23,822 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:23,822 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:23,822 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:24,729 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:24,821 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:24,823 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:24,824 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:24,824 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:24,824 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:25,730 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:25,822 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:25,823 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:25,824 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:25,824 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:25,824 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:26,731 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:26,823 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:26,825 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:26,825 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:26,825 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:26,826 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:27,824 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:27,827 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:27,827 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:27,827 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:28,825 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:28,827 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:28,828 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:28,828 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:29,826 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:29,827 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:29,828 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:29,828 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:29,828 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:30,827 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:30,828 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:30,829 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:30,829 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:30,829 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:31,828 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:31,830 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:31,830 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:31,830 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:32,738 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:32,829 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:32,832 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:32,832 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:32,832 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:33,830 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:33,832 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:33,832 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:33,832 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:33,832 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:34,831 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:34,833 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:34,834 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:34,834 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:34,834 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:35,832 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:35,834 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:35,834 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:35,834 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:35,835 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:36,833 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:36,836 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:36,836 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:36,836 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:37,834 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:37,836 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:37,837 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:37,837 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:37,837 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:38,835 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:38,837 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:38,838 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:38,838 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:38,838 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:39,744 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:39,836 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:39,839 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:39,839 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:39,839 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:40,837 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:40,839 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:40,840 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:40,840 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:40,840 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:41,839 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:41,840 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:41,840 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:41,841 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:41,841 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:42,840 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:42,845 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:42,846 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:42,846 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:42,846 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:43,841 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:43,843 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:43,843 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:43,843 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:44,842 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:44,843 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:44,844 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:44,844 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:44,844 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:45,843 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:45,845 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:45,845 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:45,845 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:45,845 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:46,751 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:46,844 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:46,846 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:46,846 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:46,847 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:46,847 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:47,752 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:47,844 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:47,846 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:47,846 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:47,846 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:47,847 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:48,753 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:48,845 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:48,847 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:48,848 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:48,848 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:49,846 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:49,848 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:49,849 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:49,849 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:49,849 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:50,755 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:50,847 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:50,849 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:50,850 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:50,850 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:51,757 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:51,848 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:51,851 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:51,851 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:51,851 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:52,757 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:52,849 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:52,851 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:52,851 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:52,852 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:52,852 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:53,850 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:53,852 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:53,853 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:53,853 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:53,853 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:54,851 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:54,853 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:54,853 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:54,853 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:54,854 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:55,852 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:55,854 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:55,855 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:55,855 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:55,855 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:56,761 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:56,853 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 00:45:56,857 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 00:45:56,857 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:56,857 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727156663 to LIVE
+2024-09-24 00:45:57,854 - Pinging fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 00:45:57,856 - Sent ack to ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:57,856 - Received ack from ('fa24-cs425-6901.cs.illinois.edu', 5000)
+2024-09-24 00:45:57,856 - Node fa24-cs425-6901.cs.illinois.edu:5000 is alive
+2024-09-24 00:45:57,857 - Updated status of fa24-cs425-6901.cs.illinois.edu_5000_1727156656 to LIVE
+2024-09-24 00:45:58,104 - Shutting down...
+2024-09-24 00:45:58,857 - Node shut down gracefully.

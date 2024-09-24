@@ -53,7 +53,6 @@ class Process:
 
             target_node = random.choice(eligible_nodes)
 
-            target_node = random.choice(self.membership_list)
             target_ip, target_port, _ = target_node['node_id'].split('_')
             self.log(f"Pinging {target_ip}:{target_port}")
 
@@ -174,7 +173,7 @@ class Process:
     def send_ack(self, addr):
         """Send an acknowledgment message in response to a ping."""
         ack_message = {'type': 'ack'}
-        if addr[0] != '172.22.94.228':
+        if addr[0] != 'fa24-cs425-6901.cs.illinois.edu':
             self.server_socket.sendto(json.dumps(ack_message).encode('utf-8'), addr)
             self.log(f"Sent ack to {addr}")
 
