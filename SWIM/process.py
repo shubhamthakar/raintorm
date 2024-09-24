@@ -8,8 +8,16 @@ import random
 import traceback
 import queue
 import select
+import random
+import traceback
+import queue
+import select
 
 class Process:
+    PROTOCOL_PERIOD = 3  # Time between pings (in seconds)
+    PING_TIMEOUT = 1  # Timeout for receiving an ack (in seconds)
+
+    def _init_(self, ip, port, introducer_ip=None, introducer_port=None):
     PROTOCOL_PERIOD = 3  # Time between pings (in seconds)
     PING_TIMEOUT = 1  # Timeout for receiving an ack (in seconds)
 
@@ -22,9 +30,11 @@ class Process:
         self.log_file = 'swim_protocol.log'
         self.shutdown_flag = threading.Event()  # Used to signal when to stop the listener thread
         self.ack_queue = queue.Queue()  # Queue for ack messages intended for ping_node
+        self.ack_queue = queue.Queue()  # Queue for ack messages intended for ping_node
         self.init_logging()
         self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self.server_socket.bind((self.ip, self.port))
+        self.server_socket.setblocking(False)  # Make socket non-blocking
         self.server_socket.setblocking(False)  # Make socket non-blocking
         self.listen_thread = threading.Thread(target=self.listen_for_messages)
         self.listen_thread.start()
@@ -103,8 +113,23 @@ class Process:
                 except Exception as e:
                     self.log(f"Error receiving message: {e}")
                     break
+            ready = select.select([self.server_socket], [], [], 1)  # Check if socket has any data to read
+            if ready[0]:
+                try:
+                    data, addr = self.server_socket.recvfrom(1024)
+                    message = json.loads(data.decode('utf-8'))
+                    self.handle_message(message, addr)
+                except Exception as e:
+                    self.log(f"Error receiving message: {e}")
+                    break
 
     def handle_message(self, message, addr):
+        if message['type'] == 'ping':
+            self.send_ack(addr)
+        elif message['type'] == 'ack':
+            self.log(f"Received ack from {addr}")
+            self.ack_queue.put({'node_ip': addr[0], 'node_port': addr[1]})  # Place ack in the ack queue
+        elif message['type'] == 'join_request':
         if message['type'] == 'ping':
             self.send_ack(addr)
         elif message['type'] == 'ack':
@@ -141,8 +166,31 @@ class Process:
         logging.info(message)
         print(message)
 
+    def send_ack(self, addr):
+        """Send an acknowledgment message in response to a ping."""
+        ack_message = {'type': 'ack'}
+        self.server_socket.sendto(json.dumps(ack_message).encode('utf-8'), addr)
+        self.log(f"Sent ack to {addr}")
+
+    def update_node_status(self, node_id, status):
+        """Update the status of a node in the membership list."""
+        for node in self.membership_list:
+            if node['node_id'] == node_id:
+                node['status'] = status
+                self.log(f"Updated status of {node_id} to {status}")
+                break
+
+    def init_logging(self):
+        logging.basicConfig(filename=self.log_file, level=logging.INFO,
+                            format='%(asctime)s - %(message)s')
+
+    def log(self, message):
+        logging.info(message)
+        print(message)
+
     def handle_join_request(self, addr):
         new_node_ip, new_node_port = addr
+        new_node_id = f"{new_node_ip}{new_node_port}{int(time.time())}"
         new_node_id = f"{new_node_ip}{new_node_port}{int(time.time())}"
         new_node_info = {'node_id': new_node_id, 'status': 'LIVE'}
         self.log(f"New join request received from {new_node_ip}:{new_node_port}")
@@ -191,6 +239,7 @@ class Process:
         self.log("Shutting down...")
         self.shutdown_flag.set()  # Signal the listener thread to stop
         self.listen_thread.join()  # Wait for the listener thread to finish
+        self.failure_detection_thread.join()  # Wait for the failure detection thread to finish
         self.failure_detection_thread.join()  # Wait for the failure detection thread to finish
         self.server_socket.close()  # Close the socket
         self.log("Node shut down gracefully.")
