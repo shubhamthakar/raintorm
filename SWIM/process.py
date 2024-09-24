@@ -4,16 +4,15 @@ import time
 import json
 import logging
 import signal
-import random
-import traceback
-import queue
 import select
+import queue
+import random
 
 class Process:
-    PROTOCOL_PERIOD = 3  # Time between pings (in seconds)
+    PROTOCOL_PERIOD = 1  # Time between pings (in seconds)
     PING_TIMEOUT = 1  # Timeout for receiving an ack (in seconds)
 
-    def _init_(self, ip, port, introducer_ip=None, introducer_port=None):
+    def __init__(self, ip, port, introducer_ip=None, introducer_port=None):
         self.ip = ip
         self.port = port
         self.introducer_ip = introducer_ip
@@ -63,6 +62,13 @@ class Process:
             if remaining_time > 0:
                 time.sleep(remaining_time)  # Sleep only for the remaining time to complete the protocol period
 
+    def init_logging(self):
+        logging.basicConfig(filename=self.log_file, level=logging.INFO,
+                            format='%(asctime)s - %(message)s')
+
+    def log(self, message):
+        logging.info(message)
+        print(message)
 
     def ping_node(self, node_ip, node_port):
         """Send a ping to the target node and wait for an acknowledgment."""
@@ -76,6 +82,20 @@ class Process:
                 return True
         except queue.Empty:
             return False
+        
+    def send_ack(self, addr):
+        """Send an acknowledgment message in response to a ping."""
+        ack_message = {'type': 'ack'}
+        self.server_socket.sendto(json.dumps(ack_message).encode('utf-8'), addr)
+        self.log(f"Sent ack to {addr}")
+
+    def update_node_status(self, node_id, status):
+        """Update the status of a node in the membership list."""
+        for node in self.membership_list:
+            if node['node_id'] == node_id:
+                node['status'] = status
+                self.log(f"Updated status of {node_id} to {status}")
+                break
 
     def listen_for_messages(self):
         self.log(f"Node started, listening on {self.ip}:{self.port}")
@@ -105,31 +125,9 @@ class Process:
         else:
             self.log(f"Unknown message type received from {addr}")
 
-    def send_ack(self, addr):
-        """Send an acknowledgment message in response to a ping."""
-        ack_message = {'type': 'ack'}
-        self.server_socket.sendto(json.dumps(ack_message).encode('utf-8'), addr)
-        self.log(f"Sent ack to {addr}")
-
-    def update_node_status(self, node_id, status):
-        """Update the status of a node in the membership list."""
-        for node in self.membership_list:
-            if node['node_id'] == node_id:
-                node['status'] = status
-                self.log(f"Updated status of {node_id} to {status}")
-                break
-
-    def init_logging(self):
-        logging.basicConfig(filename=self.log_file, level=logging.INFO,
-                            format='%(asctime)s - %(message)s')
-
-    def log(self, message):
-        logging.info(message)
-        print(message)
-
     def handle_join_request(self, addr):
         new_node_ip, new_node_port = addr
-        new_node_id = f"{new_node_ip}{new_node_port}{int(time.time())}"
+        new_node_id = f"{new_node_ip}_{new_node_port}_{int(time.time())}"
         new_node_info = {'node_id': new_node_id, 'status': 'LIVE'}
         self.log(f"New join request received from {new_node_ip}:{new_node_port}")
         self.notify_all_nodes(new_node_info)
@@ -177,11 +175,12 @@ class Process:
         self.log("Shutting down...")
         self.shutdown_flag.set()  # Signal the listener thread to stop
         self.listen_thread.join()  # Wait for the listener thread to finish
-        self.failure_detection_thread.join()  # Wait for the failure detection thread to finish
         self.server_socket.close()  # Close the socket
         self.log("Node shut down gracefully.")
 
 if __name__ == "__main__":
+    # Example: Start a node at IP 127.0.0.1, port 5000, with introducer at 127.0.0.1:4000
     node = Process(socket.gethostname(), 5000, 'fa24-cs425-6901.cs.illinois.edu', 5000)
     if node.introducer_ip:
         node.send_join_request()
+
