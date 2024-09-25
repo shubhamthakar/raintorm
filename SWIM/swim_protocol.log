@@ -2719,3 +2719,199 @@
 2024-09-24 01:03:50,676 - Node shut down gracefully.
 2024-09-24 01:03:51,661 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond to indirect pings. Marking as DEAD
 2024-09-24 01:03:51,662 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727157592 to DEAD
+2024-09-24 01:05:29,722 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 01:05:29,723 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 01:05:29,726 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 01:05:29,727 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 01:05:29,727 - Received updated membership list: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1727157929', 'status': 'LIVE'}]
+2024-09-24 01:05:33,504 - New join request received from fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:05:33,505 - Sent membership list to fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:05:37,296 - New join request received from fa24-cs425-6903.cs.illinois.edu:5000
+2024-09-24 01:05:37,297 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1727157937', 'status': 'LIVE'}
+2024-09-24 01:05:37,298 - Sent membership list to fa24-cs425-6903.cs.illinois.edu:5000
+2024-09-24 01:05:39,726 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:05:39,729 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 01:05:39,729 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 01:05:39,729 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727157933 to LIVE
+2024-09-24 01:05:43,515 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 01:05:47,298 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:05:49,734 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:05:49,737 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 01:05:49,737 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 01:05:49,737 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727157933 to LIVE
+2024-09-24 01:05:53,525 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 01:05:59,735 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-09-24 01:05:59,739 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:05:59,739 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
+2024-09-24 01:05:59,739 - Updated status of fa24-cs425-6903.cs.illinois.edu_5000_1727157937 to LIVE
+2024-09-24 01:06:03,535 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 01:06:09,745 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:06:09,748 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 01:06:09,748 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 01:06:09,748 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727157933 to LIVE
+2024-09-24 01:06:13,545 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 01:06:17,320 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:06:19,751 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:06:19,754 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 01:06:19,754 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 01:06:19,754 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727157933 to LIVE
+2024-09-24 01:06:23,555 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 01:06:27,330 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:06:29,760 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:06:29,763 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-09-24 01:06:29,764 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-09-24 01:06:29,764 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727157933 to LIVE
+2024-09-24 01:06:37,341 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:06:39,761 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-09-24 01:06:39,763 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:06:39,763 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
+2024-09-24 01:06:39,764 - Updated status of fa24-cs425-6903.cs.illinois.edu_5000_1727157937 to LIVE
+2024-09-24 01:06:49,768 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:06:50,352 - Received indirect ping request from ('fa24-cs425-6903.cs.illinois.edu', 5000) to ping fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:06:50,352 - Received indirect ping request to ping fa24-cs425-6902.cs.illinois.edu:5000 from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:06:52,769 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond. Sending indirect pings.
+2024-09-24 01:06:52,769 - Sending indirect ping to fa24-cs425-6903.cs.illinois.edu:5000 to check fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:06:53,353 - Indirect ping to fa24-cs425-6902.cs.illinois.edu:5000 failed
+2024-09-24 01:06:55,770 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 01:06:55,770 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727157933 to DEAD
+2024-09-24 01:06:57,351 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:06:59,772 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:07:02,773 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond. Sending indirect pings.
+2024-09-24 01:07:02,773 - Sending indirect ping to fa24-cs425-6903.cs.illinois.edu:5000 to check fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:07:05,774 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 01:07:05,774 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727157933 to DEAD
+2024-09-24 01:07:07,361 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:07:09,776 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:07:12,777 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond. Sending indirect pings.
+2024-09-24 01:07:12,777 - Sending indirect ping to fa24-cs425-6903.cs.illinois.edu:5000 to check fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:07:15,778 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 01:07:15,778 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727157933 to DEAD
+2024-09-24 01:07:19,776 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:07:20,363 - Received indirect ping request from ('fa24-cs425-6903.cs.illinois.edu', 5000) to ping fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:07:20,363 - Received indirect ping request to ping fa24-cs425-6902.cs.illinois.edu:5000 from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:07:22,777 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond. Sending indirect pings.
+2024-09-24 01:07:22,777 - Sending indirect ping to fa24-cs425-6903.cs.illinois.edu:5000 to check fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:07:23,364 - Indirect ping to fa24-cs425-6902.cs.illinois.edu:5000 failed
+2024-09-24 01:07:25,778 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 01:07:25,778 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727157933 to DEAD
+2024-09-24 01:07:29,780 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-09-24 01:07:29,782 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:07:29,783 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
+2024-09-24 01:07:29,783 - Updated status of fa24-cs425-6903.cs.illinois.edu_5000_1727157937 to LIVE
+2024-09-24 01:07:30,364 - Received indirect ping request from ('fa24-cs425-6903.cs.illinois.edu', 5000) to ping fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:07:30,364 - Received indirect ping request to ping fa24-cs425-6902.cs.illinois.edu:5000 from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:07:33,364 - Indirect ping to fa24-cs425-6902.cs.illinois.edu:5000 failed
+2024-09-24 01:07:37,366 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:07:39,784 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-09-24 01:07:39,786 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:07:39,786 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
+2024-09-24 01:07:39,786 - Updated status of fa24-cs425-6903.cs.illinois.edu_5000_1727157937 to LIVE
+2024-09-24 01:07:49,789 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-09-24 01:07:49,791 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:07:49,792 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
+2024-09-24 01:07:49,792 - Updated status of fa24-cs425-6903.cs.illinois.edu_5000_1727157937 to LIVE
+2024-09-24 01:07:50,367 - Received indirect ping request from ('fa24-cs425-6903.cs.illinois.edu', 5000) to ping fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:07:50,367 - Received indirect ping request to ping fa24-cs425-6902.cs.illinois.edu:5000 from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:07:53,368 - Indirect ping to fa24-cs425-6902.cs.illinois.edu:5000 failed
+2024-09-24 01:07:57,371 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:07:59,799 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:08:02,800 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond. Sending indirect pings.
+2024-09-24 01:08:02,800 - Sending indirect ping to fa24-cs425-6903.cs.illinois.edu:5000 to check fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:08:05,801 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 01:08:05,801 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727157933 to DEAD
+2024-09-24 01:08:07,375 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:08:09,801 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-09-24 01:08:09,803 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:08:09,804 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
+2024-09-24 01:08:09,804 - Updated status of fa24-cs425-6903.cs.illinois.edu_5000_1727157937 to LIVE
+2024-09-24 01:08:17,387 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:08:19,809 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:08:22,810 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond. Sending indirect pings.
+2024-09-24 01:08:22,810 - Sending indirect ping to fa24-cs425-6903.cs.illinois.edu:5000 to check fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:08:25,811 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 01:08:25,811 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727157933 to DEAD
+2024-09-24 01:08:27,385 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:08:29,813 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-09-24 01:08:29,816 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:08:29,816 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
+2024-09-24 01:08:29,816 - Updated status of fa24-cs425-6903.cs.illinois.edu_5000_1727157937 to LIVE
+2024-09-24 01:08:39,823 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-09-24 01:08:39,826 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:08:39,826 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
+2024-09-24 01:08:39,826 - Updated status of fa24-cs425-6903.cs.illinois.edu_5000_1727157937 to LIVE
+2024-09-24 01:08:40,394 - Received indirect ping request from ('fa24-cs425-6903.cs.illinois.edu', 5000) to ping fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:08:40,395 - Received indirect ping request to ping fa24-cs425-6902.cs.illinois.edu:5000 from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:08:43,395 - Indirect ping to fa24-cs425-6902.cs.illinois.edu:5000 failed
+2024-09-24 01:08:47,398 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:08:49,832 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-09-24 01:08:49,835 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:08:49,835 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
+2024-09-24 01:08:49,835 - Updated status of fa24-cs425-6903.cs.illinois.edu_5000_1727157937 to LIVE
+2024-09-24 01:08:59,842 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:09:00,400 - Received indirect ping request from ('fa24-cs425-6903.cs.illinois.edu', 5000) to ping fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:09:00,401 - Received indirect ping request to ping fa24-cs425-6902.cs.illinois.edu:5000 from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:09:02,843 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond. Sending indirect pings.
+2024-09-24 01:09:02,843 - Sending indirect ping to fa24-cs425-6903.cs.illinois.edu:5000 to check fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:09:03,401 - Indirect ping to fa24-cs425-6902.cs.illinois.edu:5000 failed
+2024-09-24 01:09:05,844 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 01:09:05,844 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727157933 to DEAD
+2024-09-24 01:09:09,846 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-09-24 01:09:09,849 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:09:09,849 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
+2024-09-24 01:09:09,849 - Updated status of fa24-cs425-6903.cs.illinois.edu_5000_1727157937 to LIVE
+2024-09-24 01:09:10,405 - Received indirect ping request from ('fa24-cs425-6903.cs.illinois.edu', 5000) to ping fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:09:10,405 - Received indirect ping request to ping fa24-cs425-6902.cs.illinois.edu:5000 from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:09:13,405 - Indirect ping to fa24-cs425-6902.cs.illinois.edu:5000 failed
+2024-09-24 01:09:17,408 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:09:19,848 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-09-24 01:09:19,851 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:09:19,851 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
+2024-09-24 01:09:19,851 - Updated status of fa24-cs425-6903.cs.illinois.edu_5000_1727157937 to LIVE
+2024-09-24 01:09:29,850 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:09:30,419 - Received indirect ping request from ('fa24-cs425-6903.cs.illinois.edu', 5000) to ping fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:09:30,419 - Received indirect ping request to ping fa24-cs425-6902.cs.illinois.edu:5000 from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:09:32,851 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond. Sending indirect pings.
+2024-09-24 01:09:32,851 - Sending indirect ping to fa24-cs425-6903.cs.illinois.edu:5000 to check fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:09:33,420 - Indirect ping to fa24-cs425-6902.cs.illinois.edu:5000 failed
+2024-09-24 01:09:35,852 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 01:09:35,852 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727157933 to DEAD
+2024-09-24 01:09:37,422 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:09:39,851 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:09:42,852 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond. Sending indirect pings.
+2024-09-24 01:09:42,852 - Sending indirect ping to fa24-cs425-6903.cs.illinois.edu:5000 to check fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:09:45,853 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 01:09:45,853 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727157933 to DEAD
+2024-09-24 01:09:49,853 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-09-24 01:09:49,855 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:09:49,855 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
+2024-09-24 01:09:49,855 - Updated status of fa24-cs425-6903.cs.illinois.edu_5000_1727157937 to LIVE
+2024-09-24 01:09:50,433 - Received indirect ping request from ('fa24-cs425-6903.cs.illinois.edu', 5000) to ping fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:09:50,433 - Received indirect ping request to ping fa24-cs425-6902.cs.illinois.edu:5000 from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:09:53,434 - Indirect ping to fa24-cs425-6902.cs.illinois.edu:5000 failed
+2024-09-24 01:09:57,436 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:09:59,854 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-09-24 01:09:59,857 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-09-24 01:09:59,857 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
+2024-09-24 01:09:59,857 - Updated status of fa24-cs425-6903.cs.illinois.edu_5000_1727157937 to LIVE
+2024-09-24 01:10:09,864 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-09-24 01:10:12,866 - Node fa24-cs425-6903.cs.illinois.edu:5000 did not respond. Sending indirect pings.
+2024-09-24 01:10:12,866 - Sending indirect ping to fa24-cs425-6902.cs.illinois.edu:5000 to check fa24-cs425-6903.cs.illinois.edu:5000
+2024-09-24 01:10:15,867 - Node fa24-cs425-6903.cs.illinois.edu:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 01:10:15,867 - Updated status of fa24-cs425-6903.cs.illinois.edu_5000_1727157937 to DEAD
+2024-09-24 01:10:19,868 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:10:22,869 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond. Sending indirect pings.
+2024-09-24 01:10:22,869 - Sending indirect ping to fa24-cs425-6903.cs.illinois.edu:5000 to check fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:10:25,870 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 01:10:25,870 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727157933 to DEAD
+2024-09-24 01:10:29,872 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:10:32,873 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond. Sending indirect pings.
+2024-09-24 01:10:32,873 - Sending indirect ping to fa24-cs425-6903.cs.illinois.edu:5000 to check fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:10:35,874 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 01:10:35,874 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727157933 to DEAD
+2024-09-24 01:10:39,872 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:10:42,873 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond. Sending indirect pings.
+2024-09-24 01:10:42,873 - Sending indirect ping to fa24-cs425-6903.cs.illinois.edu:5000 to check fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 01:10:45,874 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond to indirect pings. Marking as DEAD
+2024-09-24 01:10:45,874 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727157933 to DEAD
+2024-09-24 01:10:48,719 - Shutting down...
+2024-09-24 01:10:48,907 - Node shut down gracefully.
