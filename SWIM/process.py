@@ -9,8 +9,8 @@ import queue
 import random
 
 class Process:
-    PROTOCOL_PERIOD = 1  # Time between pings (in seconds)
-    PING_TIMEOUT = 1  # Timeout for receiving an ack (in seconds)
+    PROTOCOL_PERIOD = 10  # Time between pings (in seconds)
+    PING_TIMEOUT = 3  # Timeout for receiving an ack (in seconds)
 
     def __init__(self, ip, port, introducer_ip=None, introducer_port=None):
         self.ip = ip
