@@ -18,7 +18,6 @@ class Process:
         self.introducer_ip = introducer_ip
         self.introducer_port = introducer_port
         self.membership_list = []  # List of dicts with 'node_id' and 'status'
-        self.membership_list_lock = threading.Lock()
         self.log_file = 'swim_protocol.log'
         self.shutdown_flag = threading.Event()  # Used to signal when to stop the listener thread
         self.ack_queue = queue.Queue()  # Queue for ack messages intended for ping_node
@@ -42,21 +41,19 @@ class Process:
         current_index = 0  # Keep track of the index for round-robin iteration
 
         while not self.shutdown_flag.is_set():
-            # Lock the list before accessing it
-            with self.membership_list_lock:
-                # If the membership list is empty, sleep for the protocol period and continue
-                if not self.membership_list:
-                    time.sleep(self.PROTOCOL_PERIOD)
-                    continue
+            # If the membership list is empty, sleep for the protocol period and continue
+            if not self.membership_list:
+                time.sleep(self.PROTOCOL_PERIOD)
+                continue
 
-                # If we've reached the end of the list, shuffle it and reset the index
-                if current_index >= len(self.membership_list):
-                    random.shuffle(self.membership_list)  # Shuffle the list after each full round
-                    current_index = 0
+            # If we've reached the end of the list, shuffle it and reset the index
+            if current_index >= len(self.membership_list):
+                random.shuffle(self.membership_list)  # Shuffle the list after each full round
+                current_index = 0
 
-                # Select the next node in round-robin fashion
-                target_node = self.membership_list[current_index]
-                current_index += 1
+            # Select the next node in round-robin fashion
+            target_node = self.membership_list[current_index]
+            current_index += 1
 
             # Extract IP and port from the node_id
             target_ip, target_port, _ = target_node['node_id'].split('_')
@@ -95,7 +92,7 @@ class Process:
         """Send a ping to the target node and wait for an acknowledgment."""
         ping_message = {'type': 'ping'}
         self.server_socket.sendto(json.dumps(ping_message).encode('utf-8'), (node_ip, node_port))
-        
+
         # Wait for ack to be put in the ack queue
         try:
             ack = self.ack_queue.get(timeout=self.PING_TIMEOUT)  # Block until an ack is received or timeout
@@ -103,7 +100,7 @@ class Process:
                 return True
         except queue.Empty:
             return False
-        
+
     def send_ack(self, addr):
         """Send an acknowledgment message in response to a ping."""
         ack_message = {'type': 'ack'}
@@ -112,12 +109,12 @@ class Process:
 
     def update_node_status(self, node_id, status):
         """Update the status of a node in the membership list."""
-        with self.membership_list_lock:
-            for node in self.membership_list:
-                if node['node_id'] == node_id:
-                    node['status'] = status
-                    self.log(f"Updated status of {node_id} to {status}")
-                    break
+
+        for node in self.membership_list:
+            if node['node_id'] == node_id:
+                node['status'] = status
+                self.log(f"Updated status of {node_id} to {status}")
+                break
 
     def listen_for_messages(self):
         self.log(f"Node started, listening on {self.ip}:{self.port}")
@@ -157,8 +154,7 @@ class Process:
         new_node_info = {'node_id': new_node_id, 'status': 'LIVE'}
         self.log(f"New join request received from {new_node_ip}:{new_node_port}")
         self.notify_all_nodes(new_node_info)
-        with self.membership_list_lock:
-            self.membership_list.append(new_node_info)
+        self.membership_list.append(new_node_info)
         self.send_membership_list(new_node_ip, new_node_port)
 
     def handle_membership_list(self, membership_list):
@@ -166,8 +162,7 @@ class Process:
         self.log(f"Received updated membership list: {self.membership_list}")
 
     def handle_new_node(self, new_node_info):
-        with self.membership_list_lock:
-            self.membership_list.append(new_node_info)
+        self.membership_list.append(new_node_info)
         self.log(f"New node added to membership list: {new_node_info}")
 
     def send_join_request(self):
@@ -192,12 +187,12 @@ class Process:
             'type': 'new_node',
             'data': new_node_info
         }
-        with self.membership_list_lock:
-            for node in self.membership_list:
-                node_ip, node_port, _ = node['node_id'].split('_')
-                if (node_ip, int(node_port)) != (self.ip, self.port):  # Skip self
-                    self.server_socket.sendto(json.dumps(notification_message).encode('utf-8'), (node_ip, int(node_port)))
-                    self.log(f"Notified {node_ip}:{node_port} of new node {new_node_info}")
+
+        for node in self.membership_list:
+            node_ip, node_port, _ = node['node_id'].split('_')
+            if (node_ip, int(node_port)) != (self.ip, self.port):  # Skip self
+                self.server_socket.sendto(json.dumps(notification_message).encode('utf-8'), (node_ip, int(node_port)))
+                self.log(f"Notified {node_ip}:{node_port} of new node {new_node_info}")
 
     def shutdown(self, signum, frame):
         """ Graceful shutdown function """
@@ -212,5 +207,3 @@ if __name__ == "__main__":
     node = Process(socket.gethostname(), 5000, 'fa24-cs425-6901.cs.illinois.edu', 5000)
     if node.introducer_ip:
         node.send_join_request()
-
-

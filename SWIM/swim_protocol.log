@@ -4000,3 +4000,32 @@
 2024-09-24 19:50:00,091 - Updated status of fa24-cs425-6902.cs.illinois.edu_5000_1727225183 to DEAD
 2024-09-24 19:50:13,387 - Shutting down...
 2024-09-24 19:50:14,178 - Node shut down gracefully.
+2024-09-24 19:58:04,896 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 19:58:04,897 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 19:58:04,900 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 19:59:17,133 - Shutting down...
+2024-09-24 19:59:24,949 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 19:59:24,949 - Node shut down gracefully.
+2024-09-24 19:59:28,476 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 19:59:28,477 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 19:59:28,480 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 20:00:43,925 - Shutting down...
+2024-09-24 20:00:48,554 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 20:00:48,554 - Node shut down gracefully.
+2024-09-24 20:02:49,240 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 20:02:49,241 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 20:02:49,243 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 20:03:46,356 - Shutting down...
+2024-09-24 20:03:49,296 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 20:03:49,297 - Node shut down gracefully.
+2024-09-24 20:04:12,748 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 20:04:12,748 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 20:04:12,751 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 20:04:30,772 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-24 20:04:30,778 - New join request received from fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 20:04:30,778 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 20:04:30,779 - Sent membership list to fa24-cs425-6902.cs.illinois.edu:5000
+2024-09-24 20:04:30,780 - Received updated membership list: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1727226252', 'status': 'LIVE'}]
+2024-09-24 20:04:31,780 - Node fa24-cs425-6902.cs.illinois.edu:5000 did not respond, marking as DEAD
+2024-09-24 20:05:19,418 - Shutting down...
+2024-09-24 20:05:20,069 - Node shut down gracefully.
