@@ -90,7 +90,10 @@ class Process:
 
     def ping_node(self, node_ip, node_port):
         """Send a ping to the target node and wait for an acknowledgment."""
-        ping_message = {'type': 'ping'}
+        ping_message = {
+            'type': 'ping',
+            'membership_list': self.membership_list  # Include the current membership list
+        }
         self.server_socket.sendto(json.dumps(ping_message).encode('utf-8'), (node_ip, node_port))
 
         # Wait for ack to be put in the ack queue
@@ -103,7 +106,10 @@ class Process:
 
     def send_ack(self, addr):
         """Send an acknowledgment message in response to a ping."""
-        ack_message = {'type': 'ack'}
+        ack_message = {
+            'type': 'ack',
+            'membership_list': self.membership_list  # Include the current membership list
+        }
         self.server_socket.sendto(json.dumps(ack_message).encode('utf-8'), addr)
         self.log(f"Sent ack to {addr}")
 
@@ -115,6 +121,7 @@ class Process:
                 node['status'] = status
                 self.log(f"Updated status of {node_id} to {status}")
                 break
+        self.log(self.membership_list)
 
     def listen_for_messages(self):
         self.log(f"Node started, listening on {self.ip}:{self.port}")
@@ -135,8 +142,10 @@ class Process:
 
     def handle_message(self, message, addr):
         if message['type'] == 'ping':
+            self.reconcile_membership_list(message['membership_list'])
             self.send_ack(addr)
         elif message['type'] == 'ack':
+            self.reconcile_membership_list(message['membership_list'])
             self.log(f"Received ack from {addr}")
             self.ack_queue.put({'node_ip': addr[0], 'node_port': addr[1]})  # Place ack in the ack queue
         elif message['type'] == 'join_request':
@@ -147,6 +156,20 @@ class Process:
             self.handle_new_node(message['data'])
         else:
             self.log(f"Unknown message type received from {addr}")
+
+    def reconcile_membership_list(self, received_list):
+        """Reconcile the received membership list with the local membership list."""
+        for received_node in received_list:
+            local_node = next((n for n in self.membership_list if n['node_id'] == received_node['node_id']), None)
+
+            if local_node:
+                # Update status only if the received node's status is more accurate (i.e., dead vs alive)
+                if local_node['status'] == 'LIVE' and received_node['status'] == 'DEAD':
+                    self.update_node_status(local_node['node_id'], 'DEAD')
+            else:
+                # If the node is not in the local list, add it
+                self.membership_list.append(received_node)
+                self.log(f"Added new node from received membership list: {received_node}")
 
     def handle_join_request(self, addr):
         new_node_ip, new_node_port = addr
