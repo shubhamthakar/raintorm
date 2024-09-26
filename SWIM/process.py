@@ -39,6 +39,8 @@ class Process:
     def failure_detection(self):
         """Failure detection by pinging nodes in a round-robin fashion, shuffling after each full iteration, skipping self and dead nodes."""
         current_index = 0  # Keep track of the index for round-robin iteration
+        suspicion_timeout = 5 * self.PROTOCOL_PERIOD  # Example suspicion timeout, adjust as needed
+        self.timer_dict = {}  # Dictionary to track suspicion start times
 
         while not self.shutdown_flag.is_set():
             # If the membership list is empty, sleep for the protocol period and continue
@@ -63,22 +65,53 @@ class Process:
                 continue
 
             start_time = time.time()  # Record the start time of the protocol period
-
             self.log(f"Pinging {target_ip}:{target_port}")
 
-            # Ping the selected node and update its status
+            # Ping the selected node and handle response based on suspicion flag
             if self.ping_node(target_ip, int(target_port)):
-                self.log(f"Node {target_ip}:{target_port} is alive")
-                self.update_node_status(target_node['node_id'], 'LIVE')
+                if target_node['status'] == 'SUSPECT':
+                    self.log(f"Node {target_ip}:{target_port} was suspect, marking as LIVE")
+                    self.update_node_status(target_node['node_id'], 'LIVE')
+                    self.timer_dict.pop(target_node['node_id'], None)  # Remove suspicion timer if node is alive
+                else:
+                    self.log(f"Node {target_ip}:{target_port} is alive")
             else:
-                self.log(f"Node {target_ip}:{target_port} did not respond, marking as DEAD")
-                self.update_node_status(target_node['node_id'], 'DEAD')
+                # No ACK received
+                if self.suspicion_flag:
+                    # If node is already suspect, check the timer
+                    if target_node['status'] == 'SUSPECT':
+                        suspicion_start_time = self.timer_dict.get(target_node['node_id'], time.time())
+                        # If suspicion timeout is exceeded, mark as DEAD
+                        if time.time() - suspicion_start_time > suspicion_timeout:
+                            self.log(f"Node {target_ip}:{target_port} exceeded suspicion timeout, marking as DEAD")
+                            self.update_node_status(target_node['node_id'], 'DEAD')
+                    else:
+                        # Mark node as SUSPECT and store suspicion start time
+                        self.log(f"Node {target_ip}:{target_port} did not respond, marking as SUSPECT")
+                        self.update_node_status(target_node['node_id'], 'SUSPECT')
+                        self.timer_dict[target_node['node_id']] = time.time()
+                else:
+                    # If suspicion flag is off, directly mark as DEAD
+                    self.log(f"Node {target_ip}:{target_port} did not respond, marking as DEAD")
+                    self.update_node_status(target_node['node_id'], 'DEAD')
+
+            # Handle suspicion timeout checks
+            if self.suspicion_flag:
+                current_time = time.time()
+                for node in self.membership_list:
+                    if node['status'] == 'SUSPECT':
+                        suspicion_start_time = self.timer_dict.get(node['node_id'])
+                        if suspicion_start_time and current_time - suspicion_start_time > suspicion_timeout:
+                            self.log(f"Node {node['node_id']} exceeded suspicion timeout, marking as DEAD")
+                            self.update_node_status(node['node_id'], 'DEAD')
+                            self.timer_dict.pop(node['node_id'], None)  # Remove suspicion timer
 
             # Calculate the elapsed time and sleep for the remaining time in the protocol period
             elapsed_time = time.time() - start_time
             remaining_time = self.PROTOCOL_PERIOD - elapsed_time
             if remaining_time > 0:
                 time.sleep(remaining_time)  # Sleep for the remaining time to complete the protocol period
+
 
     def init_logging(self):
         logging.basicConfig(filename=self.log_file, level=logging.INFO,
