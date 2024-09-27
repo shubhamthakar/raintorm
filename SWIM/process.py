@@ -232,7 +232,7 @@ class Process:
                         self.log(f"Updated suspicion timer for node {local_node['node_id']} with equal or higher incarnation number {received_inc_num}")
 
                     # 3) Dead overrides anything
-                    elif received_node['status'] == 'DEAD' and local_node != 'DEAD':
+                    elif received_node['status'] == 'DEAD' and local_node['status'] != 'DEAD':
                         self.update_node_status(local_node['node_id'], 'DEAD')
                         self.log(f"Node {local_node['node_id']} marked as DEAD from received membership list")
 
