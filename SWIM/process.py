@@ -226,7 +226,7 @@ class Process:
 
                     # Suspect {node_l, inc = i} overrides Suspect {node_l, inc = j} if i >= j
                     # Update the suspicion timestamp and incarnation number
-                    elif local_node['status'] == 'SUSPECT' and received_node['status'] == 'SUSPECT' and received_inc_num >= local_inc_num:
+                    elif local_node['status'] == 'SUSPECT' and received_node['status'] == 'SUSPECT' and received_inc_num > local_inc_num:
                         local_node['inc_num'] = received_inc_num  # Update incarnation number
                         self.timer_dict[local_node['node_id']] = time.time()  # Refresh suspicion timer
                         self.log(f"Updated suspicion timer for node {local_node['node_id']} with equal or higher incarnation number {received_inc_num}")
