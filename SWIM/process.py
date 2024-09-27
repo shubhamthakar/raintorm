@@ -15,9 +15,11 @@ class Process:
     def __init__(self, ip, port, introducer_ip=None, introducer_port=None):
         self.ip = ip
         self.port = port
+        self.node_id = ''
         self.introducer_ip = introducer_ip
         self.introducer_port = introducer_port
         self.membership_list = []  # List of dicts with 'node_id' and 'status'
+        self.timer_dict = {}  # Dictionary to track suspicion start times
         self.log_file = 'swim_protocol.log'
         self.shutdown_flag = threading.Event()  # Used to signal when to stop the listener thread
         self.ack_queue = queue.Queue()  # Queue for ack messages intended for ping_node
@@ -39,8 +41,7 @@ class Process:
     def failure_detection(self):
         """Failure detection by pinging nodes in a round-robin fashion, shuffling after each full iteration, skipping self and dead nodes."""
         current_index = 0  # Keep track of the index for round-robin iteration
-        suspicion_timeout = 5 * self.PROTOCOL_PERIOD  # Example suspicion timeout, adjust as needed
-        self.timer_dict = {}  # Dictionary to track suspicion start times
+        suspicion_timeout = 2*self.PROTOCOL_PERIOD  # Example suspicion timeout, adjust as needed
 
         while not self.shutdown_flag.is_set():
             # If the membership list is empty, sleep for the protocol period and continue
@@ -184,7 +185,7 @@ class Process:
         elif message['type'] == 'join_request':
             self.handle_join_request(addr)
         elif message['type'] == 'membership_list':
-            self.handle_membership_list(message['data'])
+            self.handle_membership_list(message['data'], message['node_id'])
         elif message['type'] == 'new_node':
             self.handle_new_node(message['data'])
         else:
@@ -196,24 +197,68 @@ class Process:
             local_node = next((n for n in self.membership_list if n['node_id'] == received_node['node_id']), None)
 
             if local_node:
-                # Update status only if the received node's status is more accurate (i.e., dead vs alive)
-                if local_node['status'] == 'LIVE' and received_node['status'] == 'DEAD':
-                    self.update_node_status(local_node['node_id'], 'DEAD')
+                # If suspicion flag is on
+                if self.suspicion_flag:
+                    local_inc_num = local_node.get('inc_num', 0)
+                    received_inc_num = received_node.get('inc_num', 0)
+
+                    # Special case: if the received list contains a suspect status for the current node, mark itself as LIVE and increment its incarnation number
+                    if received_node['node_id'] == f"{self.ip}_{self.port}_{int(time.time())}" and received_node['status'] == 'SUSPECT':
+                        self.update_node_status(received_node['node_id'], 'LIVE')
+                        local_node['inc_num'] += 1  # Increment incarnation number
+                        self.log(f"Self node was marked SUSPECT, updating to LIVE and incrementing incarnation number")
+
+                    # 1) Alive {node_l, inc = i} overrides Suspect {node_l, inc = j} if i > j
+                    # If I get alive message with greater incarnation number, update suspect status to alive
+                    elif local_node['status'] == 'SUSPECT' and received_node['status'] == 'LIVE' and received_inc_num > local_inc_num:
+                        self.update_node_status(local_node['node_id'], 'LIVE')
+                        local_node['inc_num'] = received_inc_num  # Update incarnation number
+                        self.log(f"Updated node {local_node['node_id']} to LIVE with higher incarnation number {received_inc_num}")
+
+                    # 2) Suspect {node_l, inc = i} overrides Alive {node_l, inc = j} if i >= j
+                    # If I get suspect message with greater or equal incarnation number, update alive status to suspect
+                    elif local_node['status'] == 'LIVE' and received_node['status'] == 'SUSPECT' and received_inc_num >= local_inc_num:
+                        self.update_node_status(local_node['node_id'], 'SUSPECT')
+                        local_node['inc_num'] = received_inc_num  # Update incarnation number
+                        self.timer_dict[local_node['node_id']] = time.time()  # Start suspicion timer
+                        self.log(f"Updated node {local_node['node_id']} to SUSPECT with equal or higher incarnation number {received_inc_num}")
+
+                    # Suspect {node_l, inc = i} overrides Suspect {node_l, inc = j} if i >= j
+                    # Update the suspicion timestamp and incarnation number
+                    elif local_node['status'] == 'SUSPECT' and received_node['status'] == 'SUSPECT' and received_inc_num >= local_inc_num:
+                        local_node['inc_num'] = received_inc_num  # Update incarnation number
+                        self.timer_dict[local_node['node_id']] = time.time()  # Refresh suspicion timer
+                        self.log(f"Updated suspicion timer for node {local_node['node_id']} with equal or higher incarnation number {received_inc_num}")
+
+                    # 3) Dead overrides anything
+                    elif received_node['status'] == 'DEAD':
+                        self.update_node_status(local_node['node_id'], 'DEAD')
+                        self.log(f"Node {local_node['node_id']} marked as DEAD from received membership list")
+
+                # If suspicion flag is off, just mark DEAD as the priority
+                else:
+                    if local_node['status'] == 'LIVE' and received_node['status'] == 'DEAD':
+                        self.update_node_status(local_node['node_id'], 'DEAD')
+                        self.log(f"Node {local_node['node_id']} marked as DEAD with suspicion flag off")
+
             else:
                 # If the node is not in the local list, add it
                 self.membership_list.append(received_node)
                 self.log(f"Added new node from received membership list: {received_node}")
 
+            
+
     def handle_join_request(self, addr):
         new_node_ip, new_node_port = addr
         new_node_id = f"{new_node_ip}_{new_node_port}_{int(time.time())}"
-        new_node_info = {'node_id': new_node_id, 'status': 'LIVE'}
+        new_node_info = {'node_id': new_node_id, 'status': 'LIVE', 'inc_num': 0}
         self.log(f"New join request received from {new_node_ip}:{new_node_port}")
         self.notify_all_nodes(new_node_info)
         self.membership_list.append(new_node_info)
-        self.send_membership_list(new_node_ip, new_node_port)
+        self.send_membership_list(new_node_ip, new_node_port, new_node_id)
 
-    def handle_membership_list(self, membership_list):
+    def handle_membership_list(self, membership_list, node_id):
+        self.node_id = node_id
         self.membership_list = membership_list
         self.log(f"Received updated membership list: {self.membership_list}")
 
@@ -230,10 +275,11 @@ class Process:
         else:
             self.log("No introducer IP and port provided")
 
-    def send_membership_list(self, node_ip, node_port):
+    def send_membership_list(self, node_ip, node_port, node_id):
         membership_message = {
             'type': 'membership_list',
-            'data': self.membership_list
+            'data': self.membership_list,
+            'node_id': node_id
         }
         self.server_socket.sendto(json.dumps(membership_message).encode('utf-8'), (node_ip, node_port))
         self.log(f"Sent membership list to {node_ip}:{node_port}")
