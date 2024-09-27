@@ -16,7 +16,7 @@ class Process:
         self.ip = ip
         self.port = port
         self.node_id = ''
-        self.suspicion_flag = False
+        self.suspicion_flag = True
         self.introducer_ip = introducer_ip
         self.introducer_port = introducer_port
         self.membership_list = []  # List of dicts with 'node_id' and 'status'
