@@ -120,7 +120,7 @@ class Process:
 
     def init_logging(self):
         logging.basicConfig(filename=self.log_file, level=logging.INFO,
-                            format='%(asctime)s - %(message)s', filemode='w')
+                            format='%(asctime)s - %(message)s')
 
     def log(self, message):
         logging.info(message)
@@ -139,9 +139,13 @@ class Process:
 
         # Wait for ack to be put in the ack queue
         try:
+            queue_items = list(self.ack_queue.queue)
+            self.log(f"Current ACK Queue contents (unsafe read): {queue_items}")
             ack = self.ack_queue.get(timeout=self.ping_timeout)  # Block until an ack is received or timeout
             if ack['node_ip'] == node_ip and ack['node_port'] == node_port:
                 return True
+            else:
+                self.log(f"Popped from queue but didnt match current ping node. ack contents: {ack}")
         except queue.Empty:
             return False
 
