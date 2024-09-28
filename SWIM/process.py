@@ -120,7 +120,7 @@ class Process:
 
     def init_logging(self):
         logging.basicConfig(filename=self.log_file, level=logging.INFO,
-                            format='%(asctime)s - %(message)s')
+                            format='%(asctime)s - %(message)s', filemode='w')
 
     def log(self, message):
         logging.info(message)
