@@ -7,12 +7,15 @@ import signal
 import select
 import queue
 import random
+import argparse
+import random
 
 class Process:
-    PROTOCOL_PERIOD = 10  # Time between pings (in seconds)
-    PING_TIMEOUT = 3  # Timeout for receiving an ack (in seconds)
 
-    def __init__(self, ip, port, introducer_ip=None, introducer_port=None):
+    def __init__(self, ip, port, introducer_ip, introducer_port, protocol_period=5, ping_timeout=1, drop_percent=0):
+        self.protocol_period = protocol_period
+        self.drop_percent = drop_percent
+        self.ping_timeout = ping_timeout
         self.ip = ip
         self.port = port
         self.node_id = ''
@@ -42,12 +45,12 @@ class Process:
     def failure_detection(self):
         """Failure detection by pinging nodes in a round-robin fashion, shuffling after each full iteration, skipping self and dead nodes."""
         current_index = 0  # Keep track of the index for round-robin iteration
-        suspicion_timeout = 2*self.PROTOCOL_PERIOD  # Example suspicion timeout, adjust as needed
+        suspicion_timeout = 2*self.protocol_period  # Example suspicion timeout, adjust as needed
 
         while not self.shutdown_flag.is_set():
             # If the membership list is empty, sleep for the protocol period and continue
             if not self.membership_list:
-                time.sleep(self.PROTOCOL_PERIOD)
+                time.sleep(self.protocol_period)
                 continue
 
             # If we've reached the end of the list, shuffle it and reset the index
@@ -110,7 +113,7 @@ class Process:
 
             # Calculate the elapsed time and sleep for the remaining time in the protocol period
             elapsed_time = time.time() - start_time
-            remaining_time = self.PROTOCOL_PERIOD - elapsed_time
+            remaining_time = self.protocol_period - elapsed_time
             if remaining_time > 0:
                 time.sleep(remaining_time)  # Sleep for the remaining time to complete the protocol period
 
@@ -125,6 +128,9 @@ class Process:
 
     def ping_node(self, node_ip, node_port):
         """Send a ping to the target node and wait for an acknowledgment."""
+        if random.uniform(0, 100) < self.drop_percent:
+            self.log(f"Dropped ping to {node_ip}:{node_port} (drop_percent={self.drop_percent})")
+            return False
         ping_message = {
             'type': 'ping',
             'membership_list': self.membership_list  # Include the current membership list
@@ -133,7 +139,7 @@ class Process:
 
         # Wait for ack to be put in the ack queue
         try:
-            ack = self.ack_queue.get(timeout=self.PING_TIMEOUT)  # Block until an ack is received or timeout
+            ack = self.ack_queue.get(timeout=self.ping_timeout)  # Block until an ack is received or timeout
             if ack['node_ip'] == node_ip and ack['node_port'] == node_port:
                 return True
         except queue.Empty:
@@ -141,6 +147,9 @@ class Process:
 
     def send_ack(self, addr):
         """Send an acknowledgment message in response to a ping."""
+        if random.uniform(0, 100) < self.drop_percent:
+            self.log(f"Dropped ack to {addr} (drop_percent={self.drop_percent})")
+            return  # Simulate the ack being dropped
         ack_message = {
             'type': 'ack',
             'membership_list': self.membership_list  # Include the current membership list
@@ -189,8 +198,34 @@ class Process:
             self.handle_membership_list(message['data'], message['node_id'])
         elif message['type'] == 'new_node':
             self.handle_new_node(message['data'])
+        elif message['type'] == 'switch_modes':  # New case for 'switch_modes'
+            self.switch_modes()
+            self.log(f"Switched suspicion mode, suspicion_flag is now {self.suspicion_flag}")
+        elif message['type'] == 'list_mem':
+            self.send_membership_list_response(addr)
         else:
             self.log(f"Unknown message type received from {addr}")
+
+    def send_membership_list_response(self, addr):
+        """Send the current membership list to the requester, excluding DEAD nodes."""
+        # Filter the membership list to exclude nodes with 'DEAD' status
+        filtered_membership_list = [
+            node for node in self.membership_list if node['status'] != 'DEAD'
+        ]
+
+        membership_response = {
+            'type': 'membership_list_response',
+            'data': filtered_membership_list,  # Send the filtered membership list
+            'mode': 'Ping+Ack+S' if self.suspicion_flag else 'Ping+Ack'
+
+        }
+
+        self.server_socket.sendto(json.dumps(membership_response).encode('utf-8'), addr)
+        self.log(f"Sent membership list response to {addr} with {len(filtered_membership_list)} active nodes")
+
+    def switch_modes(self):
+        """Method to switch the suspicion_flag value."""
+        self.suspicion_flag = not self.suspicion_flag
 
     def reconcile_membership_list(self, received_list):
         """Reconcile the received membership list with the local membership list."""
@@ -247,7 +282,7 @@ class Process:
                 self.membership_list.append(received_node)
                 self.log(f"Added new node from received membership list: {received_node}")
 
-            
+
 
     def handle_join_request(self, addr):
         new_node_ip, new_node_port = addr
@@ -307,6 +342,12 @@ class Process:
 
 if __name__ == "__main__":
     # Example: Start a node at IP 127.0.0.1, port 5000, with introducer at 127.0.0.1:4000
-    node = Process(socket.gethostname(), 5000, 'fa24-cs425-6901.cs.illinois.edu', 5000)
+    parser = argparse.ArgumentParser(description="Start a SWIM protocol node.")
+    parser.add_argument('--proto_period', type=int, required=True, help='The protocol period of SWIM')
+    parser.add_argument('--ping_timeout', type=int, required=True, help='Ping timeout for SWIM')
+    parser.add_argument('--drop_percent', type=int, required=True, help='Packet drop percentage')
+    args = parser.parse_args()
+
+    node = Process(socket.gethostname(), 5000, 'fa24-cs425-6901.cs.illinois.edu', 5000, args.proto_period, args.ping_timeout, args.drop_percent)
     if node.introducer_ip:
         node.send_join_request()
