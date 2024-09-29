@@ -193,14 +193,12 @@ class Process:
     def handle_message(self, message, addr):
         if message['type'] == 'ping':
             self.log(f'Recieved a ping from {addr}')
-            self.reconcile_membership_list(message['membership_list'])
             self.send_ack(addr)
-            self.log(f'Actually sent out an ACK')
+            self.reconcile_membership_list(message['membership_list'])
         elif message['type'] == 'ack':
             self.log(f"Received ack from {addr}")
-            self.reconcile_membership_list(message['membership_list'])
-            self.log(f"Received ack from {addr} after reconcile")
             self.ack_queue.put({'node_ip': addr[0], 'node_port': addr[1]})  # Place ack in the ack queue
+            self.reconcile_membership_list(message['membership_list'])
         elif message['type'] == 'join_request':
             self.handle_join_request(addr)
         elif message['type'] == 'membership_list':
@@ -346,6 +344,7 @@ class Process:
         self.log("Shutting down...")
         self.shutdown_flag.set()  # Signal the listener thread to stop
         self.listen_thread.join()  # Wait for the listener thread to finish
+        self.failure_detection_thread.join()
         self.server_socket.close()  # Close the socket
         self.log("Node shut down gracefully.")
 
