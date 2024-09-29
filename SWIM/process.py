@@ -178,7 +178,7 @@ class Process:
             ready = select.select([self.server_socket], [], [], 1)  # Check if socket has any data to read
             if ready[0]:
                 try:
-                    data, addr = self.server_socket.recvfrom(2048)
+                    data, addr = self.server_socket.recvfrom(4096)
                     message = json.loads(data.decode('utf-8'))
                     hostname, _, _ = socket.gethostbyaddr(addr[0])
                     new_add = (hostname, addr[1])
