@@ -54,8 +54,8 @@ def request_membership_list(process_ip, process_port):
         # Wait for the response
         try:
             # Set a timeout for the response
-            client_socket.settimeout(2)
-            data, addr = client_socket.recvfrom(1024)
+            client_socket.settimeout(5)
+            data, addr = client_socket.recvfrom(2048)
             response = json.loads(data.decode('utf-8'))
 
             # Print the membership list in a formatted way

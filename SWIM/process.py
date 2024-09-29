@@ -12,14 +12,14 @@ import random
 
 class Process:
 
-    def __init__(self, ip, port, introducer_ip, introducer_port, protocol_period=5, ping_timeout=1, drop_percent=0):
+    def __init__(self, ip, port, introducer_ip, introducer_port, suspicion, protocol_period=5, ping_timeout=1, drop_percent=0):
         self.protocol_period = protocol_period
         self.drop_percent = drop_percent
         self.ping_timeout = ping_timeout
         self.ip = ip
         self.port = port
         self.node_id = ''
-        self.suspicion_flag = True
+        self.suspicion_flag = suspicion
         self.introducer_ip = introducer_ip
         self.introducer_port = introducer_port
         self.membership_list = []  # List of dicts with 'node_id' and 'status'
@@ -178,7 +178,7 @@ class Process:
             ready = select.select([self.server_socket], [], [], 1)  # Check if socket has any data to read
             if ready[0]:
                 try:
-                    data, addr = self.server_socket.recvfrom(1024)
+                    data, addr = self.server_socket.recvfrom(2048)
                     message = json.loads(data.decode('utf-8'))
                     hostname, _, _ = socket.gethostbyaddr(addr[0])
                     new_add = (hostname, addr[1])
@@ -355,8 +355,9 @@ if __name__ == "__main__":
     parser.add_argument('--proto_period', type=int, required=True, help='The protocol period of SWIM')
     parser.add_argument('--ping_timeout', type=int, required=True, help='Ping timeout for SWIM')
     parser.add_argument('--drop_percent', type=int, required=True, help='Packet drop percentage')
+    parser.add_argument('--suspicion', action='store_true', help='Whether suspicion is on')
     args = parser.parse_args()
 
-    node = Process(socket.gethostname(), 5000, 'fa24-cs425-6901.cs.illinois.edu', 5000, args.proto_period, args.ping_timeout, args.drop_percent)
+    node = Process(socket.gethostname(), 5000, 'fa24-cs425-6901.cs.illinois.edu', 5000, args.suspicion, args.proto_period, args.ping_timeout, args.drop_percent)
     if node.introducer_ip:
         node.send_join_request()
