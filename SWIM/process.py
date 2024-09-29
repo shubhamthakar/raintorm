@@ -136,17 +136,18 @@ class Process:
             'membership_list': self.membership_list  # Include the current membership list
         }
         self.server_socket.sendto(json.dumps(ping_message).encode('utf-8'), (node_ip, node_port))
+        self.log('Actually sent ping out')
 
         # Wait for ack to be put in the ack queue
         try:
-            queue_items = list(self.ack_queue.queue)
-            self.log(f"Current ACK Queue contents (unsafe read): {queue_items}")
             ack = self.ack_queue.get(timeout=self.ping_timeout)  # Block until an ack is received or timeout
+            self.log(f'Popped this from queue: {ack}')
             if ack['node_ip'] == node_ip and ack['node_port'] == node_port:
                 return True
             else:
                 self.log(f"Popped from queue but didnt match current ping node. ack contents: {ack}")
         except queue.Empty:
+            self.log('Queue was empty after timeout')
             return False
 
     def send_ack(self, addr):
@@ -190,11 +191,14 @@ class Process:
 
     def handle_message(self, message, addr):
         if message['type'] == 'ping':
+            self.log(f'Recieved a ping from {addr}')
             self.reconcile_membership_list(message['membership_list'])
             self.send_ack(addr)
+            self.log(f'Actually sent out an ACK')
         elif message['type'] == 'ack':
-            self.reconcile_membership_list(message['membership_list'])
             self.log(f"Received ack from {addr}")
+            self.reconcile_membership_list(message['membership_list'])
+            self.log(f"Received ack from {addr} after reconcile")
             self.ack_queue.put({'node_ip': addr[0], 'node_port': addr[1]})  # Place ack in the ack queue
         elif message['type'] == 'join_request':
             self.handle_join_request(addr)

@@ -12,3 +12,10 @@
 2024-09-28 18:50:50,770 - Received updated membership list: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1727567450', 'status': 'LIVE', 'inc_num': 0}]
 2024-09-28 18:50:55,452 - Shutting down...
 2024-09-28 18:50:55,775 - Node shut down gracefully.
+2024-09-28 19:17:34,319 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-28 19:17:34,320 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-28 19:17:34,324 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-28 19:17:34,325 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-09-28 19:17:34,326 - Received updated membership list: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1727569054', 'status': 'LIVE', 'inc_num': 0}]
+2024-09-28 19:17:37,428 - Shutting down...
+2024-09-28 19:17:38,331 - Node shut down gracefully.
