@@ -31,14 +31,13 @@ def leave_process():
 
 
 def request_membership_list_from_all_nodes(server_list):
-    """Query the membership list from all nodes and print each node's membership list."""
-    with concurrent.futures.ThreadPoolExecutor() as executor:
-        futures = [executor.submit(request_membership_list, server['ip'], server['port']) for server in server_list]
-        for future in concurrent.futures.as_completed(futures):
-            try:
-                future.result()
-            except Exception as e:
-                print(f"Error occurred: {e}")
+    """Query the membership list from all nodes one by one and print each node's membership list."""
+    for server in server_list:
+        print(f"Requesting membership list from {server['ip']}:{server['port']}...")
+        try:
+            request_membership_list(server['ip'], server['port'])
+        except Exception as e:
+            print(f"Error occurred while requesting from {server['ip']}:{server['port']}: {e}")
 
 def request_membership_list(process_ip, process_port):
     """Connect to the process and request the membership list."""
@@ -58,7 +57,7 @@ def request_membership_list(process_ip, process_port):
             data, addr = client_socket.recvfrom(2048)
             response = json.loads(data.decode('utf-8'))
 
-            # Print the membership list in a formatted way
+            # Print the membership list in a formatted way as soon as it is received
             print(f"\nMembership list for node {process_ip}:{process_port}:")
             print(f"{'Node ID':<40}{'Status':<10}{'Incarnation Number':<10}")
             print("-" * 60)

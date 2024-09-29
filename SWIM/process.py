@@ -193,8 +193,8 @@ class Process:
     def handle_message(self, message, addr):
         if message['type'] == 'ping':
             self.log(f'Recieved a ping from {addr}')
-            self.send_ack(addr)
             self.reconcile_membership_list(message['membership_list'])
+            self.send_ack(addr)
         elif message['type'] == 'ack':
             self.log(f"Received ack from {addr}")
             self.ack_queue.put({'node_ip': addr[0], 'node_port': addr[1]})  # Place ack in the ack queue
@@ -306,8 +306,10 @@ class Process:
         self.log(f"Received updated membership list: {self.membership_list}")
 
     def handle_new_node(self, new_node_info):
-        self.membership_list.append(new_node_info)
-        self.log(f"New node added to membership list: {new_node_info}")
+        local_node = next((n for n in self.membership_list if n['node_id'] == new_node_info['node_id']), None)
+        if local_node is None:
+            self.membership_list.append(new_node_info)
+            self.log(f"New node added to membership list: {new_node_info}")
 
     def send_join_request(self):
         if self.introducer_ip and self.introducer_port:
