@@ -19,7 +19,7 @@ class Process:
         self.ip = ip
         self.port = port
         self.node_id = ''
-        self.suspicion_flag = True
+        self.suspicion_flag = False
         self.introducer_ip = introducer_ip
         self.introducer_port = introducer_port
         self.membership_list = []  # List of dicts with 'node_id' and 'status'
@@ -187,7 +187,6 @@ class Process:
                     self.handle_message(message, addr)
                 except Exception as e:
                     self.log(f"Error receiving message: {e}")
-                    self.log(f"Data content: {data.decode('utf-8')}")
                     break
 
     def handle_message(self, message, addr):
