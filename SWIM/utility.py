@@ -4,28 +4,6 @@ import concurrent.futures
 import argparse
 import os
 
-def request_membership_list(process_ip):
-    """Connect to the process and request the membership list."""
-    with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as client_socket:
-        # Construct the message
-        message = {
-            'type': 'list_mem'
-        }
-
-        # Send the message to the specified process
-        client_socket.sendto(json.dumps(message).encode('utf-8'), (process_ip, 5000))
-
-        # Wait for the response
-        try:
-            # Set a timeout for the response
-            client_socket.settimeout(2)
-            data, addr = client_socket.recvfrom(1024)
-            response = json.loads(data.decode('utf-8'))
-            print("Received membership list:", response['data'])
-            print("Current mode:", response['mode'])
-        except socket.timeout:
-            print("No response received from the process.")
-
 def send_switch_modes_message(server_ip, server_port):
     message = {
         'type': 'switch_modes'
@@ -51,6 +29,47 @@ def leave_process():
     os.system("pkill -f 'python .*process.py.*'")
     print("Send termination signal to process")
 
+
+def request_membership_list_from_all_nodes(server_list):
+    """Query the membership list from all nodes and print each node's membership list."""
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        futures = [executor.submit(request_membership_list, server['ip'], server['port']) for server in server_list]
+        for future in concurrent.futures.as_completed(futures):
+            try:
+                future.result()
+            except Exception as e:
+                print(f"Error occurred: {e}")
+
+def request_membership_list(process_ip, process_port):
+    """Connect to the process and request the membership list."""
+    with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as client_socket:
+        # Construct the message
+        message = {
+            'type': 'list_mem'
+        }
+
+        # Send the message to the specified process
+        client_socket.sendto(json.dumps(message).encode('utf-8'), (process_ip, process_port))
+
+        # Wait for the response
+        try:
+            # Set a timeout for the response
+            client_socket.settimeout(2)
+            data, addr = client_socket.recvfrom(1024)
+            response = json.loads(data.decode('utf-8'))
+
+            # Print the membership list in a formatted way
+            print(f"\nMembership list for node {process_ip}:{process_port}:")
+            print(f"{'Node ID':<40}{'Status':<10}{'Incarnation Number':<10}")
+            print("-" * 60)
+            for entry in response['data']:
+                print(f"{entry['node_id']:<40}{entry['status']:<10}{entry['inc_num']:<10}")
+            print(f"\nCurrent mode: {response['mode']}\n")
+        except socket.timeout:
+            print(f"No response received from the node {process_ip}:{process_port}.")
+        except json.JSONDecodeError:
+            print(f"Invalid JSON response from node {process_ip}:{process_port}.")
+
 def main():
     # Set up argument parsing
     parser = argparse.ArgumentParser(description='Utility for communicating with the process.')
@@ -59,12 +78,10 @@ def main():
     # Parse the arguments
     args = parser.parse_args()
 
-    # Get the host IP from the socket
-    process_ip = socket.gethostname()
-
-    # Execute the appropriate function based on the command
     if args.command == 'list_mem':
-        request_membership_list(process_ip)
+        # List of 10 servers with their IP and port information
+        servers = [{'ip': f'fa24-cs425-69{i:02d}.cs.illinois.edu', 'port': 5000} for i in range(1, 11)]
+        request_membership_list_from_all_nodes(servers)
     elif args.command == 'switch_modes':
         # List of 10 servers with their IP and port information
         servers = [{'ip': f'fa24-cs425-69{i:02d}.cs.illinois.edu', 'port': 5000} for i in range(1, 11)]
@@ -74,12 +91,5 @@ def main():
     else:
         print(f"Unknown command: {args.command}")
 
-
-
 if __name__ == "__main__":
     main()
-    
-    
-
-    
-
