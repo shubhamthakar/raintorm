@@ -14,7 +14,7 @@ This directory contains the code for implementing the SWIM protocol for membersh
 
 ## Files and Usage
 
-### 1. `process.py`
+### 1. process.py
 This is the main implementation of the SWIM protocol. It runs the SWIM algorithm and manages communication between nodes.
 
 **Usage:**
@@ -29,7 +29,7 @@ To run processes on all machines, use the following command:
 ```bash
 sh /home/chaskar/swim_runner_all.sh```
 
-### 2. `bandwidth.py`
+### 2. bandwidth.py
 This script measures bandwidth usage at the network interface level, helping monitor the bandwidth overhead caused by the SWIM protocol.
 
 **Usage:**
@@ -39,7 +39,7 @@ To run this process, use the following command:
 ```bash
 python bandwidth.py```
 
-### 3. `utility.py`
+### 3. utility.py
 This file contains various utility functions that can be used to interact with the processes and manage the SWIM protocol.
 
 **Usage:**
@@ -59,6 +59,6 @@ Gracefully leave the cluster:
 python utility.py --command leave```
 
 
-### 4. `process_with_ping_rec.py`
+### 4. process_with_ping_rec.py
 This is an alternative implementation of the SWIM protocol that includes support for ping_req messages
 
