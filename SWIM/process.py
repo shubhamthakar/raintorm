@@ -45,7 +45,7 @@ class Process:
     def failure_detection(self):
         """Failure detection by pinging nodes in a round-robin fashion, shuffling after each full iteration, skipping self and dead nodes."""
         current_index = 0  # Keep track of the index for round-robin iteration
-        suspicion_timeout = 8*self.protocol_period  # Example suspicion timeout, adjust as needed
+        suspicion_timeout = 2*self.protocol_period  # Example suspicion timeout, adjust as needed
 
         while not self.shutdown_flag.is_set():
             # If the membership list is empty, sleep for the protocol period and continue
