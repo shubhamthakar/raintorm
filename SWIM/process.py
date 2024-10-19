@@ -12,7 +12,8 @@ import random
 
 class Process:
 
-    def __init__(self, ip, port, introducer_ip, introducer_port, suspicion, protocol_period=5, ping_timeout=1, drop_percent=0):
+    def __init__(self, ip, port, introducer_ip, introducer_port, suspicion, protocol_period=5, ping_timeout=1, drop_percent=0, ring_id=0):
+        self.ring_id = ring_id
         self.protocol_period = protocol_period
         self.drop_percent = drop_percent
         self.ping_timeout = ping_timeout
@@ -200,7 +201,7 @@ class Process:
             self.ack_queue.put({'node_ip': addr[0], 'node_port': addr[1]})  # Place ack in the ack queue
             self.reconcile_membership_list(message['membership_list'])
         elif message['type'] == 'join_request':
-            self.handle_join_request(addr)
+            self.handle_join_request(addr, message['ring_id'])
         elif message['type'] == 'membership_list':
             self.handle_membership_list(message['data'], message['node_id'])
         elif message['type'] == 'new_node':
@@ -291,10 +292,10 @@ class Process:
 
 
 
-    def handle_join_request(self, addr):
+    def handle_join_request(self, addr, ring_id):
         new_node_ip, new_node_port = addr
         new_node_id = f"{new_node_ip}_{new_node_port}_{int(time.time())}"
-        new_node_info = {'node_id': new_node_id, 'status': 'LIVE', 'inc_num': 0}
+        new_node_info = {'ring_id': ring_id, 'node_id': new_node_id, 'status': 'LIVE', 'inc_num': 0}
         self.log(f"New join request received from {new_node_ip}:{new_node_port}")
         self.notify_all_nodes(new_node_info)
         self.membership_list.append(new_node_info)
@@ -313,7 +314,7 @@ class Process:
 
     def send_join_request(self):
         if self.introducer_ip and self.introducer_port:
-            join_message = {'type': 'join_request'}
+            join_message = {'type': 'join_request', 'ring_id': self.ring_id}
             self.server_socket.sendto(json.dumps(join_message).encode('utf-8'),
                                       (self.introducer_ip, self.introducer_port))
             self.log(f"Sent join request to introducer at {self.introducer_ip}:{self.introducer_port}")
