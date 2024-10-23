@@ -1,7 +1,7 @@
 # How to assign nodes 
 import socket
 import hashlib
-from ..SWIM.process import Process
+from process import Process
 
 class RingNode:
     def __init__(self):
