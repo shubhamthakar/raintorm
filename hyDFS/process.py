@@ -8,7 +8,7 @@ import select
 import queue
 import random
 import argparse
-import random
+import msgpack
 
 class Process:
 
@@ -136,7 +136,7 @@ class Process:
             'type': 'ping',
             'membership_list': self.membership_list  # Include the current membership list
         }
-        self.server_socket.sendto(json.dumps(ping_message).encode('utf-8'), (node_ip, node_port))
+        self.server_socket.sendto(msgpack.packb(ping_message), (node_ip, node_port))
         self.log('Actually sent ping out')
 
         # Wait for ack to be put in the ack queue
@@ -160,7 +160,7 @@ class Process:
             'type': 'ack',
             'membership_list': self.membership_list  # Include the current membership list
         }
-        self.server_socket.sendto(json.dumps(ack_message).encode('utf-8'), addr)
+        self.server_socket.sendto(msgpack.packb(ack_message), addr)
         self.log(f"Sent ack to {addr}")
 
     def update_node_status(self, node_id, status):
@@ -180,7 +180,7 @@ class Process:
             if ready[0]:
                 try:
                     data, addr = self.server_socket.recvfrom(4096)
-                    message = json.loads(data.decode('utf-8'))
+                    message = msgpack.unpackb(data)
                     hostname, _, _ = socket.gethostbyaddr(addr[0])
                     new_add = (hostname, addr[1])
                     self.handle_message(message, new_add)
@@ -188,7 +188,7 @@ class Process:
                     self.handle_message(message, addr)
                 except Exception as e:
                     self.log(f"Error receiving message: {e}")
-                    self.log(f"Data content: {data.decode('utf-8')}")
+                    self.log(f"Data content: {msgpack.unpackb(data)}")
                     break
 
     def handle_message(self, message, addr):
@@ -228,7 +228,7 @@ class Process:
 
         }
 
-        self.server_socket.sendto(json.dumps(membership_response).encode('utf-8'), addr)
+        self.server_socket.sendto(msgpack.packb(membership_response), addr)
         self.log(f"Sent membership list response to {addr} with {len(filtered_membership_list)} active nodes")
 
     def switch_modes(self):
@@ -315,7 +315,7 @@ class Process:
     def send_join_request(self):
         if self.introducer_ip and self.introducer_port:
             join_message = {'type': 'join_request', 'ring_id': self.ring_id}
-            self.server_socket.sendto(json.dumps(join_message).encode('utf-8'),
+            self.server_socket.sendto(msgpack.packb(join_message),
                                       (self.introducer_ip, self.introducer_port))
             self.log(f"Sent join request to introducer at {self.introducer_ip}:{self.introducer_port}")
         else:
@@ -327,7 +327,7 @@ class Process:
             'data': self.membership_list,
             'node_id': node_id
         }
-        self.server_socket.sendto(json.dumps(membership_message).encode('utf-8'), (node_ip, node_port))
+        self.server_socket.sendto(msgpack.packb(membership_message), (node_ip, node_port))
         self.log(f"Sent membership list to {node_ip}:{node_port}")
 
     def notify_all_nodes(self, new_node_info):
@@ -339,7 +339,7 @@ class Process:
         for node in self.membership_list:
             node_ip, node_port, _ = node['node_id'].split('_')
             if (node_ip, int(node_port)) != (self.ip, self.port):  # Skip self
-                self.server_socket.sendto(json.dumps(notification_message).encode('utf-8'), (node_ip, int(node_port)))
+                self.server_socket.sendto(msgpack.packb(notification_message), (node_ip, int(node_port)))
                 self.log(f"Notified {node_ip}:{node_port} of new node {new_node_info}")
 
     def shutdown(self, signum, frame):
