@@ -3,6 +3,7 @@ import json
 import concurrent.futures
 import argparse
 import os
+import msgpack
 
 def send_switch_modes_message(server_ip, server_port):
     message = {
@@ -10,7 +11,7 @@ def send_switch_modes_message(server_ip, server_port):
     }
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as client_socket:
-            client_socket.sendto(json.dumps(message).encode('utf-8'), (server_ip, server_port))
+            client_socket.sendto(msgpack.packb(message), (server_ip, server_port))
             print(f"Sent 'switch_modes' message to {server_ip}:{server_port}")
     except Exception as e:
         print(f"Failed to send message to {server_ip}:{server_port}. Error: {e}")
@@ -48,14 +49,14 @@ def request_membership_list(process_ip, process_port):
         }
 
         # Send the message to the specified process
-        client_socket.sendto(json.dumps(message).encode('utf-8'), (process_ip, process_port))
+        client_socket.sendto(msgpack.packb(message), (process_ip, process_port))
 
         # Wait for the response
         try:
             # Set a timeout for the response
             client_socket.settimeout(5)
             data, addr = client_socket.recvfrom(2048)
-            response = json.loads(data.decode('utf-8'))
+            response = msgpack.unpackb(data)
 
             # Print the membership list in a formatted way as soon as it is received
             print(f"\nMembership list for node {process_ip}:{process_port}:")
