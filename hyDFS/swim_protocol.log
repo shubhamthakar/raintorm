@@ -752,3 +752,80 @@
 2024-10-26 16:28:24,934 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729978104', 'status': 'LIVE', 'inc_num': 0}]
 2024-10-26 16:36:28,760 - Shutting down...
 2024-10-26 16:36:29,580 - Node shut down gracefully.
+2024-10-26 16:52:52,505 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:52:52,510 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:52:52,513 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:52:52,515 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:52:52,517 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729979572', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 16:54:34,737 - Shutting down...
+2024-10-26 16:54:35,039 - Node shut down gracefully.
+2024-10-26 16:54:40,604 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:54:40,609 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:54:40,613 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:54:40,615 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:54:40,617 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729979680', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 16:59:43,117 - Shutting down...
+2024-10-26 16:59:43,392 - Node shut down gracefully.
+2024-10-26 16:59:45,953 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:59:45,957 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:59:45,967 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:59:45,969 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:59:45,970 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729979985', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 17:04:29,047 - Shutting down...
+2024-10-26 17:04:29,628 - Node shut down gracefully.
+2024-10-26 17:04:31,774 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:04:31,781 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:04:31,782 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:04:31,784 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:04:31,786 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729980271', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 17:08:09,886 - Shutting down...
+2024-10-26 17:08:10,002 - Node shut down gracefully.
+2024-10-26 17:08:15,089 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:08:15,094 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:08:15,097 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:08:15,099 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:08:15,100 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729980495', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 17:13:53,177 - Shutting down...
+2024-10-26 17:13:54,052 - Node shut down gracefully.
+2024-10-26 17:13:56,448 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:13:56,452 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:13:56,456 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:13:56,458 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:13:56,459 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729980836', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 17:26:23,207 - Shutting down...
+2024-10-26 17:26:23,925 - Node shut down gracefully.
+2024-10-26 17:28:00,639 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:28:00,647 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:28:00,650 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:28:00,652 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:28:00,653 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729981680', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 17:29:10,044 - Shutting down...
+2024-10-26 17:29:10,980 - Node shut down gracefully.
+2024-10-26 17:29:15,312 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:29:15,319 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:29:15,321 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:29:15,323 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:29:15,324 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729981755', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 17:30:57,628 - Shutting down...
+2024-10-26 17:30:57,852 - Node shut down gracefully.
+2024-10-26 17:31:05,910 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:31:05,917 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:31:05,919 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:31:05,921 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:31:05,924 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729981865', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 17:31:28,628 - Shutting down...
+2024-10-26 17:31:28,962 - Node shut down gracefully.
+2024-10-26 17:31:47,155 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:31:47,162 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:31:47,163 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:31:47,165 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:31:47,166 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729981907', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 17:32:15,828 - Shutting down...
+2024-10-26 17:32:16,240 - Node shut down gracefully.
+2024-10-26 17:32:26,809 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:32:26,815 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:32:26,817 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:32:26,819 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:32:26,820 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729981946', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 17:34:34,926 - Shutting down...
+2024-10-26 17:34:35,500 - Node shut down gracefully.

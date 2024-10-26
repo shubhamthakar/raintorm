@@ -9,7 +9,7 @@ import select
 import signal
 import os
 import re
-
+from collections import defaultdict
 
 
 class RingNode:
@@ -46,8 +46,17 @@ class RingNode:
         # Socket message handling variables
         self.inputs = [self.server_socket]
         self.outputs = []
-        self.data_buffer = {}
-        
+        self.data_buffer = defaultdict(lambda: b"")
+        self.client_socket_map = {}
+
+        # Ack Tracking
+        # key: client_name, file_name, action
+        self.acktracker = defaultdict(lambda: 0)
+
+
+        # Quorum
+        self.quorum_size = 3
+
         self.send_join_request()
 
 
@@ -80,20 +89,32 @@ class RingNode:
                             # Extract the complete data before <EOF>
                             complete_data, _, _ = self.data_buffer[s].partition(b"<EOF>")
                             file_info = msgpack.unpackb(complete_data)
+                            action = file_info.get("action")                            
+
+                            # Only create socket mapping when message is received from client
+                            if action in ["create", "get", "append", "merge"]:
+                                client_name = file_info["client_name"]
+                                self.client_socket_map[client_name] = s
                             
                             self.handle_message(file_info, s)
 
-                            # Clean up this client
-                            self.inputs.remove(s)
-                            s.close()
-                            del self.data_buffer[s]
+                            # # Clean up this client
+                            # self.inputs.remove(s)
+                            # s.close()
+                            # del self.data_buffer[s]
                     else:
                     # Client disconnected unexpectedly
-                        print("Client disconnected unexpectedly")
+                        print("Client disconnected")
                         self.inputs.remove(s)
+                        
+                        if s in self.client_socket_map:
+                            del self.client_socket_map[s]
+                        
                         s.close()
+                    
                     if s in self.data_buffer:
                         del self.data_buffer[s]
+                        
 
 
     def handle_message(self, file_info, client_socket):
@@ -107,7 +128,7 @@ class RingNode:
             self.write_file(file_info, client_socket)
         
         elif action == "ack":
-            self.acknowledge(file_info, client_socket)
+            self.acknowledge(file_info)
         
         else:
             print(f"Unknown action: {action}")
@@ -148,8 +169,28 @@ class RingNode:
         filename = file_info["filename"]
         file_content = file_info.get("content", b"")  # Default to empty content if not provided
 
-
+        # Construct the full file path
         file_path = os.path.join(self.fs_directory, filename)
+
+        # Check if the file already exists
+        if os.path.exists(file_path):
+            print(f"File '{filename}' already exists. Not writing to it.")
+
+            # Prepare acknowledgment message indicating the file already exists
+            ack_message = {
+                "client_name": file_info["client_name"],
+                "action": "ack",
+                "filename": filename,
+                "status": "file_exists"
+            }
+            
+            try:
+                # Send ack message using msgpack for serialization
+                client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
+                print(f"Acknowledgment sent to client for existing file '{filename}'.")
+            except (BlockingIOError, socket.error) as e:
+                print(f"Failed to send acknowledgment for existing file '{filename}' - {e}")
+            return  # Exit the function since the file was not written
 
         # Write content to file
         with open(file_path, "wb") as file:
@@ -161,20 +202,53 @@ class RingNode:
         ack_message = {
             "client_name": file_info["client_name"],
             "action": "ack",
-            "filename": filename
+            "filename": filename,
+            "status": "write_complete"
         }
         
         try:
-            # Send ack message using msgpack for serialization
+        # Send ack message using msgpack for serialization
             client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
             print(f"Acknowledgment sent to client for '{filename}'.")
-
         except (BlockingIOError, socket.error) as e:
             print(f"Failed to send acknowledgment for '{filename}' - {e}")
 
 
-    def acknowledge(self, file_info, client_socket):
+    def acknowledge(self, file_info):
+        client_name = file_info["client_name"]
+        filename = file_info['filename']
+        action = file_info['action']
+
         print(f"Acknowledgment received for file info: {file_info}")
+        self.acktracker[(client_name, filename, action)] += 1
+
+        ack_count = self.acktracker[(client_name, filename, action)]
+
+        if ack_count == self.quorum_size:
+
+            # Retrieve the client socket from the client_socket_map using client_name
+            client_socket_to_use = self.client_socket_map.get(client_name)
+
+            print("client_socket_to_use", client_socket_to_use)
+
+            print("file_info received from replicas: ", file_info)
+
+            if client_socket_to_use:
+                try:
+                    # Send the acknowledgment message using msgpack for serialization
+                    client_socket_to_use.sendall(msgpack.packb(file_info) + b"<EOF>")
+                    print(f"Acknowledgment sent to {client_name} for file '{file_info['filename']}'.")
+
+                    # Cleanup ack count
+                    del self.acktracker[(client_name, filename, action)]
+
+                except (BlockingIOError, socket.error) as e:
+                    print(f"Failed to send acknowledgment to {client_name} - {e}")
+            else:
+                print(f"No client socket found for {client_name}.")
+        else:
+            print(f"Quorum not yet met, received ack from {ack_count} replicas")
+
     
 
     # Creates a socket to the replica and sends the "write" file_info message over the socket
