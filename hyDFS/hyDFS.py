@@ -34,7 +34,7 @@ class RingNode:
         self.listen_thread = threading.Thread(target=self.listen_for_messages)
         self.listen_thread.start()
         
-        self.fs_directory = "filesystem"
+        self.fs_directory = "/home/chaskar2/distributed-logger/hyDFS/filesystem"
         self.local_directory = ""
 
 
