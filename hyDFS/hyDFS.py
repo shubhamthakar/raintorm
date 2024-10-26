@@ -8,6 +8,8 @@ import threading
 import select
 import signal
 import os
+import re
+
 
 
 class RingNode:
@@ -32,8 +34,8 @@ class RingNode:
         self.listen_thread = threading.Thread(target=self.listen_for_messages)
         self.listen_thread.start()
         
-        self.fs_directory = "/home/chaskar2/distributed-logger/hyDFS/filesystem"
-        self.local_directory = "/home/chaskar2/distributed-logger/hyDFS"
+        self.fs_directory = "filesystem"
+        self.local_directory = ""
 
 
         # Set up signal handlers for graceful shutdown
@@ -41,20 +43,21 @@ class RingNode:
         signal.signal(signal.SIGINT, self.shutdown)
         signal.signal(signal.SIGTERM, self.shutdown)
 
+        # Socket message handling variables
+        self.inputs = [self.server_socket]
+        self.outputs = []
+        self.data_buffer = {}
+        
         self.send_join_request()
+
 
 
     
     def listen_for_messages(self):
         self.log(f"Server listening on {self.host_name}:{self.hydfs_host_port}")
 
-        inputs = [self.server_socket]
-        outputs = []
-        data_buffer = {}
-
-
         while not self.shutdown_flag.is_set():
-            readable, _, exceptional = select.select(inputs, outputs, inputs,5)
+            readable, _, exceptional = select.select(self.inputs, self.outputs, self.inputs, 5)
 
             # Handle readable sockets
             for s in readable:
@@ -62,52 +65,149 @@ class RingNode:
                     # Accept new client connection
                     client_socket, client_address = self.server_socket.accept()
                     client_socket.setblocking(False)
-                    inputs.append(client_socket)
-                    data_buffer[client_socket] = b""
+                    self.inputs.append(client_socket)
+                    self.data_buffer[client_socket] = b""
                     print(f"Connection from {client_address}")
 
                 else:
                     # Read data from an existing client
                     data = s.recv(4096)
                     if data:
-                        data_buffer[s] += data
+                        self.data_buffer[s] += data
 
                         # Check if we have received the complete dictionary with "<EOF>"
-                        if b"<EOF>" in data_buffer[s]:
+                        if b"<EOF>" in self.data_buffer[s]:
                             # Extract the complete data before <EOF>
-                            complete_data, _, _ = data_buffer[s].partition(b"<EOF>")
+                            complete_data, _, _ = self.data_buffer[s].partition(b"<EOF>")
                             file_info = msgpack.unpackb(complete_data)
                             
-                            if file_info["action"] == "create_file":
-                                self.create_file(file_info)
+                            self.handle_message(file_info, s)
 
                             # Clean up this client
-                            inputs.remove(s)
+                            self.inputs.remove(s)
                             s.close()
-                            del data_buffer[s]
-
+                            del self.data_buffer[s]
                     else:
-                        # Client disconnected unexpectedly
+                    # Client disconnected unexpectedly
                         print("Client disconnected unexpectedly")
-                        inputs.remove(s)
+                        self.inputs.remove(s)
                         s.close()
-                        if s in data_buffer:
-                            del data_buffer[s]
+                    if s in self.data_buffer:
+                        del self.data_buffer[s]
 
 
-    def create_file(self, file_info):
+    def handle_message(self, file_info, client_socket):
 
-        filename = file_info['filename']
-        file_content = file_info['content']
+        action = file_info.get("action")
 
-        # Save the file to the server's local storage
-        file_path = os.path.join("received_files", filename)
-        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        if action == "create":
+            self.create_file(file_info, client_socket)
         
-        with open(file_path, 'wb') as f:
-            f.write(file_content)
+        elif action == "write":
+            self.write_file(file_info, client_socket)
+        
+        elif action == "ack":
+            self.acknowledge(file_info, client_socket)
+        
+        else:
+            print(f"Unknown action: {action}")
 
-        print(f"File '{filename}' received and saved successfully.")
+
+    # Sends write request to all the replicas
+    def create_file(self, file_info, client_socket):
+        # Step 1: Get all replicas
+        all_replicas = self.get_all_replicas(file_info["filename"])
+
+        # Step 2: Parse each node_id to get hostname and port
+        for replica in all_replicas:
+            node_id = replica["node_id"]
+            
+            # Extract hostname and port using regex
+            match = re.match(r"^(.*?)_(\d+)_.*$", node_id)
+            if not match:
+                print(f"Error parsing node_id {node_id}")
+                continue
+            
+            host = match.group(1)
+            port = self.hydfs_host_port
+
+            # Format write request
+            file_info_create = {
+            "client_name": file_info["client_name"],
+            "action": "write",
+            "filename": file_info["filename"],
+            "content": file_info["content"]
+            }
+
+            # Step 3: Send a create request to each replica
+            self.send_request(host, port, file_info_create)
+
+
+    # Writes the files after receiving a  "write" request (handle_message)
+    def write_file(self, file_info, client_socket):
+        filename = file_info["filename"]
+        file_content = file_info.get("content", b"")  # Default to empty content if not provided
+
+
+        file_path = os.path.join(self.fs_directory, filename)
+
+        # Write content to file
+        with open(file_path, "wb") as file:
+            file.write(file_content)
+
+        print(f"File '{filename}' written successfully.")
+
+        # Send acknowledgment back to the client socket
+        ack_message = {
+            "client_name": file_info["client_name"],
+            "action": "ack",
+            "filename": filename
+        }
+        
+        try:
+            # Send ack message using msgpack for serialization
+            client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
+            print(f"Acknowledgment sent to client for '{filename}'.")
+
+        except (BlockingIOError, socket.error) as e:
+            print(f"Failed to send acknowledgment for '{filename}' - {e}")
+
+
+    def acknowledge(self, file_info, client_socket):
+        print(f"Acknowledgment received for file info: {file_info}")
+    
+
+    # Creates a socket to the replica and sends the "write" file_info message over the socket
+    def send_request(self, host, port, file_info):
+        # Create a non-blocking socket connection to the target replica
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.setblocking(False)
+
+        try:
+            s.connect((host, port))
+        except BlockingIOError:
+            # Non-blocking connect may raise this; it’s expected behavior
+            pass
+
+        # Add the socket to self.inputs for select monitoring
+        self.inputs.append(s)
+        self.data_buffer[s] = b""
+
+        # Prepare the file info message and store it to send after connection
+        message = msgpack.packb(file_info) + b"<EOF>"
+        
+        # Keep track of data to be sent in an output buffer
+        try:
+            # Send the message immediately
+            s.sendall(message)
+            print(f"Write request sent to {host}:{port} for file {file_info['filename']}")
+
+        except (BlockingIOError, socket.error) as e:
+            print(f"Failed to send write request to {host}:{port} - {e}")
+        
+        print(f"Write request initialized for {host}:{port} for file {file_info['filename']}")
+
+
 
     
     def shutdown(self, signum, frame):
@@ -126,9 +226,6 @@ class RingNode:
         
         self.log("HyDFS Node shut down gracefully.")
     
-
-
-
     
     def send_join_request(self):
         self.process.send_join_request()
@@ -140,31 +237,16 @@ class RingNode:
         
         return hash_int % (2**10)
 
-    def handle_create_file(filename):
 
-        file_primary_node_id = self.hash_string(filename)
-        next_2_nodes = get_next_n_nodes(file_primary_node_id, 2)
-
-        file_primary_node = {
-                'node_id': self.process.node_id,
-                'ring_id': self.process.ring_id
-        }
-
-        self.send_file_actual(file_primary_node, filename)    
-
-        for node in next_2_nodes:
-            self.send_file_actual(node, filename)
-
-
-    def get_next_n_nodes(node_id, n):
+    def get_next_n_nodes(self, ring_id, n):
         live_nodes = [node for node in self.process.membership_list if node['status'] == 'LIVE']
         
         sorted_nodes = sorted(live_nodes, key=lambda x: x['ring_id'])
         
-        current_index = next((i for i, node in enumerate(sorted_nodes) if node['node_id'] == node_id), None)
+        current_index = next((i for i, node in enumerate(sorted_nodes) if node['ring_id'] == ring_id), None)
         
         if current_index is None:
-            raise ValueError(f"Node {node_id} not found in the membership list.")
+            raise ValueError(f"Node with ring_id:{ring_id} not found in the membership list.")
         
         next_nodes = []
         for i in range(1, n+1):
@@ -177,48 +259,24 @@ class RingNode:
         print(next_nodes)
         
         return next_nodes
-
-
-
-
-    def handle_message(self, message, addr):
-        # Existing message handling...
-        if message['type'] == 'file_upload':
-            self.handle_file_upload(message, addr)
-        elif message['type'] == 'create_file':
-            self.handle_create_file(message, addr)
-        else:
-            # Handle other message types...
-            pass
-
-
     
 
-    def send_file_actual(self, node_id, filename):
-        """Handle file upload request from a client."""
+    def get_all_replicas(self, filename):
 
-        addr = node_id.split("-")[0]
-        self.log(f"Starting file download: {filename} to {addr}")
+        file_primary_ring_id = self.hash_string(filename)
 
-        local_file_path = os.path.join(self.local_directory, filename)
+        primary_node_info = {
+                'node_id': self.process.node_id,
+                'ring_id': self.process.ring_id
+        }
 
-        if os.path.exists(local_file_path):
-            filesize = os.path.getsize(local_file_path)
+        next_2_nodes_info = self.get_next_n_nodes(file_primary_ring_id, 2)
 
-            with open(local_file_path, 'rb') as f:
-                while (data := f.read(4096)):  # Adjust buffer size as needed
-                    message = {
-                    'type': 'receive_this',
-                    'filename': filename,
-                    'data': data
-                    }
-                    self.server_socket.sendto(message, addr)
+        all_replicas = [primary_node_info] + next_2_nodes_info
 
-            self.log(f"File upload completed: {filename}")
-        else:
-            self.log(f"File {filename} does not exist, sending error message.")
-            self.server_socket.sendto(json.dumps({'error': 'File not found'}).encode(), addr)
+        return all_replicas
 
+    
     def log(self, message):
         print(message)  # Replace with a more sophisticated logging if needed
 
