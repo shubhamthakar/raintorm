@@ -22,7 +22,11 @@ for i in $(seq -w 01 10); do
     else
       echo 'Directory does not exist, cloning repo...';
       sudo git clone -b HyDFS '$REPO_URL' '$TARGET_DIR';
-    fi"
+    fi
+
+    # Change permissions of the target directory
+    sudo chmod -R 777 '$TARGET_DIR';"
 
   echo "Done with $HOST"
 done
+
