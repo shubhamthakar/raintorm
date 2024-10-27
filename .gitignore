@@ -1,6 +1,5 @@
 __pycache__/
 output.log
 tests/test_logs/
-hyDFS/filesystem/*
 hyDFS/logs/
 
