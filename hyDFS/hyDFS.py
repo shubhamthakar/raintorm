@@ -10,6 +10,7 @@ import signal
 import os
 import re
 from collections import defaultdict
+import logging
 
 
 class RingNode:
@@ -54,7 +55,7 @@ class RingNode:
         self.acktracker = defaultdict(lambda: 0)
 
         # Logging
-        self.log_file = 'hydfs.log'
+        self.log_file = '/home/chaskar2/distributed-logger/hyDFS/logs'
         self.init_logging()
 
         # Quorum
@@ -69,7 +70,7 @@ class RingNode:
 
     def log(self, message):
         logging.info(message)
-        self.log(message)
+        print(message)
     
     def listen_for_messages(self):
         self.log(f"Server listening on {self.host_name}:{self.hydfs_host_port}")
@@ -137,7 +138,7 @@ class RingNode:
 
             # Handle exceptional sockets
             for s in exceptional:
-                self.log("Handling exceptional condition for", s.getpeername())
+                self.log(f"Handling exceptional condition for {s.getpeername()}")
                 self.inputs.remove(s)
                 if s in self.outputs:
                     self.outputs.remove(s)
@@ -261,9 +262,9 @@ class RingNode:
             # Retrieve the client socket from the client_socket_map using client_name
             client_socket_to_use = self.client_socket_map.get(client_name)
 
-            self.log("client_socket_to_use", client_socket_to_use)
+            self.log(f"client_socket_to_use {client_socket_to_use}")
 
-            self.log("file_info received from replicas: ", file_info)
+            self.log(f"file_info received from replicas: {file_info}")
 
             if client_socket_to_use:
                 try:
@@ -367,7 +368,7 @@ class RingNode:
                 'ring_id': sorted_nodes[next_index]['ring_id']
             })
 
-        self.log(next_nodes)
+        self.log(f"{next_nodes}")
         
         return next_nodes
     
@@ -386,10 +387,6 @@ class RingNode:
         all_replicas = [primary_node_info] + next_2_nodes_info
 
         return all_replicas
-
-    
-    def log(self, message):
-        self.log(message)  # Replace with a more sophisticated logging if needed
 
 
 
