@@ -28,7 +28,7 @@ class RingNode:
         self.server_socket.bind((self.host_name, self.hydfs_host_port))
         self.server_socket.listen()
         self.server_socket.setblocking(False)
-        print(f"Server listening on {self.host_name}:{self.hydfs_host_port}")
+        self.log(f"Server listening on {self.host_name}:{self.hydfs_host_port}")
 
 
         self.listen_thread = threading.Thread(target=self.listen_for_messages)
@@ -53,6 +53,9 @@ class RingNode:
         # key: client_name, file_name, action
         self.acktracker = defaultdict(lambda: 0)
 
+        # Logging
+        self.log_file = 'hydfs.log'
+        self.init_logging()
 
         # Quorum
         self.quorum_size = 3
@@ -60,7 +63,13 @@ class RingNode:
         self.send_join_request()
 
 
+    def init_logging(self):
+        logging.basicConfig(filename=self.log_file, level=logging.INFO,
+                            format='%(asctime)s - %(message)s')
 
+    def log(self, message):
+        logging.info(message)
+        self.log(message)
     
     def listen_for_messages(self):
         self.log(f"Server listening on {self.host_name}:{self.hydfs_host_port}")
@@ -76,7 +85,7 @@ class RingNode:
                     client_socket.setblocking(False)
                     self.inputs.append(client_socket)
                     self.data_buffer[client_socket] = b""
-                    print(f"Connection from {client_address}")
+                    self.log(f"Connection from {client_address}")
                 else:
                     # Read data from an existing client
                     data = s.recv(4096)
@@ -102,7 +111,7 @@ class RingNode:
                             #     self.outputs.append(s)
                     else:
                         # Client disconnected unexpectedly
-                        print("Client disconnected")
+                        self.log("Client disconnected")
                         self.inputs.remove(s)
                         if s in self.client_socket_map:
                             del self.client_socket_map[s]
@@ -116,10 +125,10 @@ class RingNode:
                     # Send all data from data_buffer and clear it
                     try:
                         s.sendall(self.data_buffer[s])
-                        print(f"Sent data_buffer message {self.data_buffer[s]}")
+                        self.log(f"Sent data_buffer message {self.data_buffer[s]}")
                         self.data_buffer[s] = b""
                     except Exception as e:
-                        print(f"Error sending data: {e}")
+                        self.log(f"Error sending data: {e}")
                         self.outputs.remove(s)
                         s.close()
                 else:
@@ -128,7 +137,7 @@ class RingNode:
 
             # Handle exceptional sockets
             for s in exceptional:
-                print("Handling exceptional condition for", s.getpeername())
+                self.log("Handling exceptional condition for", s.getpeername())
                 self.inputs.remove(s)
                 if s in self.outputs:
                     self.outputs.remove(s)
@@ -154,7 +163,7 @@ class RingNode:
             self.acknowledge(file_info)
         
         else:
-            print(f"Unknown action: {action}")
+            self.log(f"Unknown action: {action}")
 
 
     # Sends write request to all the replicas
@@ -169,7 +178,7 @@ class RingNode:
             # Extract hostname and port using regex
             match = re.match(r"^(.*?)_(\d+)_.*$", node_id)
             if not match:
-                print(f"Error parsing node_id {node_id}")
+                self.log(f"Error parsing node_id {node_id}")
                 continue
             
             host = match.group(1)
@@ -197,7 +206,7 @@ class RingNode:
 
         # Check if the file already exists
         if os.path.exists(file_path):
-            print(f"File '{filename}' already exists. Not writing to it.")
+            self.log(f"File '{filename}' already exists. Not writing to it.")
 
             # Prepare acknowledgment message indicating the file already exists
             ack_message = {
@@ -210,16 +219,16 @@ class RingNode:
             try:
                 # Send ack message using msgpack for serialization
                 client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
-                print(f"Acknowledgment sent to client for existing file '{filename}'.")
+                self.log(f"Acknowledgment sent to client for existing file '{filename}'.")
             except (BlockingIOError, socket.error) as e:
-                print(f"Failed to send acknowledgment for existing file '{filename}' - {e}")
+                self.log(f"Failed to send acknowledgment for existing file '{filename}' - {e}")
             return  # Exit the function since the file was not written
 
         # Write content to file
         with open(file_path, "wb") as file:
             file.write(file_content)
 
-        print(f"File '{filename}' written successfully.")
+        self.log(f"File '{filename}' written successfully.")
 
         # Send acknowledgment back to the client socket
         ack_message = {
@@ -232,9 +241,9 @@ class RingNode:
         try:
         # Send ack message using msgpack for serialization
             client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
-            print(f"Acknowledgment sent to client for '{filename}'.")
+            self.log(f"Acknowledgment sent to client for '{filename}'.")
         except (BlockingIOError, socket.error) as e:
-            print(f"Failed to send acknowledgment for '{filename}' - {e}")
+            self.log(f"Failed to send acknowledgment for '{filename}' - {e}")
 
 
     def acknowledge(self, file_info):
@@ -242,7 +251,7 @@ class RingNode:
         filename = file_info['filename']
         action = file_info['action']
 
-        print(f"Acknowledgment received for file info: {file_info}")
+        self.log(f"Acknowledgment received for file info: {file_info}")
         self.acktracker[(client_name, filename, action)] += 1
 
         ack_count = self.acktracker[(client_name, filename, action)]
@@ -252,25 +261,25 @@ class RingNode:
             # Retrieve the client socket from the client_socket_map using client_name
             client_socket_to_use = self.client_socket_map.get(client_name)
 
-            print("client_socket_to_use", client_socket_to_use)
+            self.log("client_socket_to_use", client_socket_to_use)
 
-            print("file_info received from replicas: ", file_info)
+            self.log("file_info received from replicas: ", file_info)
 
             if client_socket_to_use:
                 try:
                     # Send the acknowledgment message using msgpack for serialization
                     client_socket_to_use.sendall(msgpack.packb(file_info) + b"<EOF>")
-                    print(f"Acknowledgment sent to {client_name} for file '{file_info['filename']}'.")
+                    self.log(f"Acknowledgment sent to {client_name} for file '{file_info['filename']}'.")
 
                     # Cleanup ack count
                     del self.acktracker[(client_name, filename, action)]
 
                 except (BlockingIOError, socket.error) as e:
-                    print(f"Failed to send acknowledgment to {client_name} - {e}")
+                    self.log(f"Failed to send acknowledgment to {client_name} - {e}")
             else:
-                print(f"No client socket found for {client_name}.")
+                self.log(f"No client socket found for {client_name}.")
         else:
-            print(f"Quorum not yet met, received ack from {ack_count} replicas")
+            self.log(f"Quorum not yet met, received ack from {ack_count} replicas")
 
     
 
@@ -302,12 +311,12 @@ class RingNode:
         # try:
         #     # Send the message immediately
         #     s.sendall(message)
-        #     print(f"Write request sent to {host}:{port} for file {file_info['filename']}")
+        #     self.log(f"Write request sent to {host}:{port} for file {file_info['filename']}")
 
         # except (BlockingIOError, socket.error) as e:
-        #     print(f"Failed to send write request to {host}:{port} - {e}")
+        #     self.log(f"Failed to send write request to {host}:{port} - {e}")
         
-        # print(f"Write request initialized for {host}:{port} for file {file_info['filename']}")
+        # self.log(f"Write request initialized for {host}:{port} for file {file_info['filename']}")
 
 
 
@@ -358,7 +367,7 @@ class RingNode:
                 'ring_id': sorted_nodes[next_index]['ring_id']
             })
 
-        print(next_nodes)
+        self.log(next_nodes)
         
         return next_nodes
     
@@ -380,7 +389,7 @@ class RingNode:
 
     
     def log(self, message):
-        print(message)  # Replace with a more sophisticated logging if needed
+        self.log(message)  # Replace with a more sophisticated logging if needed
 
 
 
