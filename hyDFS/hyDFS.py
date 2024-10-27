@@ -66,7 +66,7 @@ class RingNode:
         self.log(f"Server listening on {self.host_name}:{self.hydfs_host_port}")
 
         while not self.shutdown_flag.is_set():
-            readable, _, exceptional = select.select(self.inputs, self.outputs, self.inputs, 5)
+            readable, writable, exceptional = select.select(self.inputs, self.outputs, self.inputs, 5)
 
             # Handle readable sockets
             for s in readable:
@@ -77,7 +77,6 @@ class RingNode:
                     self.inputs.append(client_socket)
                     self.data_buffer[client_socket] = b""
                     print(f"Connection from {client_address}")
-
                 else:
                     # Read data from an existing client
                     data = s.recv(4096)
@@ -89,31 +88,55 @@ class RingNode:
                             # Extract the complete data before <EOF>
                             complete_data, _, _ = self.data_buffer[s].partition(b"<EOF>")
                             file_info = msgpack.unpackb(complete_data)
-                            action = file_info.get("action")                            
+                            action = file_info.get("action")
 
                             # Only create socket mapping when message is received from client
                             if action in ["create", "get", "append", "merge"]:
                                 client_name = file_info["client_name"]
                                 self.client_socket_map[client_name] = s
-                            
+
                             self.handle_message(file_info, s)
 
-                            # # Clean up this client
-                            # self.inputs.remove(s)
-                            # s.close()
-                            # del self.data_buffer[s]
+                            # Add to outputs list if there's a response to be sent
+                            # if s not in self.outputs:
+                            #     self.outputs.append(s)
                     else:
-                    # Client disconnected unexpectedly
+                        # Client disconnected unexpectedly
                         print("Client disconnected")
                         self.inputs.remove(s)
-                        
                         if s in self.client_socket_map:
                             del self.client_socket_map[s]
-                        
                         s.close()
-                    
-                    if s in self.data_buffer:
-                        del self.data_buffer[s]
+                        if s in self.data_buffer:
+                            del self.data_buffer[s]
+
+            # Handle writable sockets
+            for s in writable:
+                if s in self.data_buffer and self.data_buffer[s]:
+                    # Send all data from data_buffer and clear it
+                    try:
+                        s.sendall(self.data_buffer[s])
+                        print(f"Sent data_buffer message {self.data_buffer[s]}")
+                        self.data_buffer[s] = b""
+                    except Exception as e:
+                        print(f"Error sending data: {e}")
+                        self.outputs.remove(s)
+                        s.close()
+                else:
+                    # No more data to send, remove from outputs
+                    self.outputs.remove(s)
+
+            # Handle exceptional sockets
+            for s in exceptional:
+                print("Handling exceptional condition for", s.getpeername())
+                self.inputs.remove(s)
+                if s in self.outputs:
+                    self.outputs.remove(s)
+                s.close()
+                if s in self.data_buffer:
+                    del self.data_buffer[s]
+
+
                         
 
 
@@ -265,21 +288,26 @@ class RingNode:
 
         # Add the socket to self.inputs for select monitoring
         self.inputs.append(s)
-        self.data_buffer[s] = b""
 
         # Prepare the file info message and store it to send after connection
         message = msgpack.packb(file_info) + b"<EOF>"
-        
-        # Keep track of data to be sent in an output buffer
-        try:
-            # Send the message immediately
-            s.sendall(message)
-            print(f"Write request sent to {host}:{port} for file {file_info['filename']}")
 
-        except (BlockingIOError, socket.error) as e:
-            print(f"Failed to send write request to {host}:{port} - {e}")
+        # Adding message to data_buffer and and outputs list, select.select will check when sock is avail and send data
+        self.data_buffer[s] = message
+        self.outputs.append(s)
+
         
-        print(f"Write request initialized for {host}:{port} for file {file_info['filename']}")
+        
+        # # Keep track of data to be sent in an output buffer
+        # try:
+        #     # Send the message immediately
+        #     s.sendall(message)
+        #     print(f"Write request sent to {host}:{port} for file {file_info['filename']}")
+
+        # except (BlockingIOError, socket.error) as e:
+        #     print(f"Failed to send write request to {host}:{port} - {e}")
+        
+        # print(f"Write request initialized for {host}:{port} for file {file_info['filename']}")
 
 
 
