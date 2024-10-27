@@ -11,6 +11,7 @@ import os
 import re
 from collections import defaultdict
 import logging
+import time
 
 
 class RingNode:
@@ -36,9 +37,15 @@ class RingNode:
 
         self.listen_thread = threading.Thread(target=self.listen_for_messages)
         self.listen_thread.start()
+
+
+        timer = threading.Timer(30, self.start_membership_monitor)
+        timer.start()
         
         self.fs_directory = "/home/chaskar2/distributed-logger/hyDFS/filesystem"
         self.local_directory = ""
+         # Clear the filesystem directory on startup
+        self.clear_fs_directory()
 
 
         # Set up signal handlers for graceful shutdown
@@ -60,6 +67,30 @@ class RingNode:
         self.quorum_size = 3
 
         self.send_join_request()
+
+    def start_membership_monitor(self):
+        """Start the thread that monitors the membership list for changes."""
+        self.membership_monitor_thread = threading.Thread(target=self.monitor_membership_list)
+        self.membership_monitor_thread.start()
+        self.log("Membership monitoring started after 30 seconds delay")
+
+    def clear_fs_directory(self):
+        """Remove all files in the filesystem directory at startup."""
+        if os.path.exists(self.fs_directory):
+            for file_name in os.listdir(self.fs_directory):
+                file_path = os.path.join(self.fs_directory, file_name)
+                try:
+                    if os.path.isfile(file_path):
+                        os.remove(file_path)
+                        self.log(f"Deleted file: {file_path}")
+                    elif os.path.isdir(file_path):
+                        os.rmdir(file_path)  # Remove directories if present
+                        self.log(f"Deleted directory: {file_path}")
+                except Exception as e:
+                    self.log(f"Failed to delete {file_path}. Reason: {e}")
+        else:
+            os.makedirs(self.fs_directory)  # Create the directory if it does not exist
+            self.log(f"Filesystem directory created at {self.fs_directory}")
 
 
     def init_logging(self):
@@ -139,7 +170,8 @@ class RingNode:
             # Handle exceptional sockets
             for s in exceptional:
                 self.log(f"Handling exceptional condition for {s.getpeername()}")
-                self.inputs.remove(s)
+                if s in self.outputs:
+                    self.inputs.remove(s)
                 if s in self.outputs:
                     self.outputs.remove(s)
                 s.close()
@@ -167,10 +199,128 @@ class RingNode:
             self.read_file(file_info, client_socket)
         
         elif action == "ack":
-            self.acknowledge(file_info)
+            self.acknowledge(file_info, client_socket)
+
+        elif action == "write_replica":
+            self.write_file_replica(file_info, client_socket)
+
+        elif action == "ack_replica":
+            self.ack_from_replica(file_info, client_socket)
         
         else:
             self.log(f"Unknown action: {action}")
+
+
+    def monitor_membership_list(self):
+        """
+        Monitor the membership list for changes. If a new node joins or a node status changes to 'DEAD',
+        find its 2 predecessors and 1 successor.
+        """
+        previous_membership_list = self.process.membership_list.copy()
+
+        while not self.shutdown_flag.is_set():
+            # Check for changes in the membership list every 2 seconds
+            time.sleep(2)
+            current_membership_list = self.process.membership_list.copy()
+
+            if previous_membership_list != current_membership_list:
+                for current_node in current_membership_list:
+                    if current_node not in previous_membership_list:
+                        # New node detected
+                        self.log(f"New node detected: {current_node}")
+                        self.handle_node_change(current_node, "joined")
+
+                    elif current_node['status'] == 'DEAD' and any(
+                            previous_node['node_id'] == current_node['node_id'] and previous_node['status'] != 'DEAD'
+                            for previous_node in previous_membership_list):
+                        # Node status changed to DEAD
+                        self.log(f"Hydfs node marked as DEAD: {current_node}")
+                        self.handle_node_change(current_node, "dead")
+
+                previous_membership_list = current_membership_list
+
+
+    def handle_node_change(self, affected_node, change_type):
+        """
+        Handle the logic when a node joins or becomes dead by finding its 2 predecessors and 1 successor.
+        Check if the current node (self.ring_id) is one of these.
+        """
+        # Sort the nodes in the ring by ring_id
+        sorted_nodes = sorted(
+            [node for node in self.process.membership_list if node['status'] == 'LIVE'],
+            key=lambda x: x['ring_id']
+        )
+
+        # Find the index of the affected node in the sorted list
+        affected_node_index = next((i for i, node in enumerate(sorted_nodes) if node['node_id'] == affected_node['node_id']), None)
+        curr_index = next((i for i, node in enumerate(sorted_nodes) if node['node_id'] == self.process.node_id), None)
+        next_replica = sorted_nodes[(curr_index + 1) % len(sorted_nodes)]
+        next_next_replica = sorted_nodes[(curr_index + 2) % len(sorted_nodes)]
+
+        if affected_node_index is not None:
+            # Get the two predecessors and one successor based on the index
+            first_predecessor = sorted_nodes[(affected_node_index - 2) % len(sorted_nodes)]
+            second_predecessor = sorted_nodes[(affected_node_index - 1) % len(sorted_nodes)]
+            first_successor = sorted_nodes[(affected_node_index + 1) % len(sorted_nodes)]
+
+            # Check if self.ring_id matches any of these roles
+            is_first_predecessor = self.ring_id == first_predecessor['ring_id']
+            is_second_predecessor = self.ring_id == second_predecessor['ring_id']
+            is_first_successor = self.ring_id == first_successor['ring_id']
+
+
+            for filename in os.listdir(self.fs_directory):
+                file_path = os.path.join(self.fs_directory, filename)
+                file_hash = self.hash_string(filename)
+                primary_replica_list = self.get_next_n_nodes(file_hash, 1)
+                is_primary_replica = self.process.node_id == primary_replica_list[0].node_id
+                if is_primary_replica:
+                    if change_type == 'dead':
+                        # If node is dead then predecessor sends file to next 2 replicas
+                        if is_first_predecessor or is_second_predecessor:
+                            #send file to next 2 replicas
+                            self.log(f"I am a predecessor of {change_type} node {affected_node['node_id']} with ring_id {affected_node['ring_id']}")
+                            for replica in (next_replica, next_next_replica):
+                            
+                                node_id = replica["node_id"]
+                
+                                # Extract hostname and port using regex
+                                match = re.match(r"^(.*?)_(\d+)_.*$", node_id)
+                                if not match:
+                                    self.log(f"Error parsing node_id {node_id}")
+                                    continue
+                                
+                                host = match.group(1)
+                                port = self.hydfs_host_port
+
+                                # Format write request
+                                file_info_write_replica = {
+                                "action": "write_replica",
+                                "filename": filename,
+                                }
+                                file_info_write_replica["filesize"] = os.path.getsize(file_path)
+                                with open(file_path, 'rb') as file:
+                                    file_info_write_replica["content"] = file.read()
+
+                                # Step 3: Send a create request to each replica
+                                self.send_request(host, port, file_info_write_replica)
+                        elif first_successor:
+                            self.log(f"I am the 1st successor of {change_type} node {affected_node['node_id']} with ring_id {affected_node['ring_id']}")
+                            # Node dead first sucessor, sends file hashing to itself
+                            pass
+                    elif change_type == 'joined':
+                        if is_first_predecessor or is_second_predecessor:
+                            self.log(f"I am a predecessor of {change_type} node {affected_node['node_id']} with ring_id {affected_node['ring_id']}")
+                            # New node predecessor sends it its files
+                            pass
+
+                        elif first_successor:
+                            self.log(f"I am the 1st successor of {change_type} node {affected_node['node_id']} with ring_id {affected_node['ring_id']}")
+                            # New node, sucessor finds files that hash to new node and sends them
+                            
+            # Log predecessors and successor for reference
+            self.log(f"{change_type.capitalize()} node {affected_node['node_id']} - 1st predecessor: {first_predecessor}, 2nd predecessor: {second_predecessor}, 1st successor: {first_successor}")
+
 
 
     # Sends write request to all the replicas
@@ -229,6 +379,39 @@ class RingNode:
             }
 
             self.send_request(host, port, file_info_get)
+
+
+    def write_file_replica(self, file_info, client_socket):
+        filename = file_info["filename"]
+        file_content = file_info.get("content", b"")  # Default to empty content if not provided
+
+        # Construct the full file path
+        file_path = os.path.join(self.fs_directory, filename)
+
+        # Prepare acknowledgment message indicating the file already exists
+        ack_message = {
+            "action": "ack_replica",
+            "filename": filename,
+        }
+
+        # Check if the file already exists
+        if os.path.exists(file_path):
+            self.log(f"File '{filename}' already exists. Rewritting the file contents.")
+            ack_message["status"] = "rewritten file"
+
+        with open(file_path, "wb") as file:
+            file.write(file_content)
+
+        self.log(f"File '{filename}' written successfully.")
+        ack_message["status"] = "write_complete"
+            
+            
+        try:
+            # Send ack message using msgpack for serialization
+            client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
+            self.log(f"Acknowledgment sent to client for existing file '{filename}'.")
+        except (BlockingIOError, socket.error) as e:
+            self.log(f"Failed to send acknowledgment for existing file '{filename}' - {e}")
 
 
 
@@ -307,13 +490,19 @@ class RingNode:
             self.log(f"Failed to send acknowledgment for file '{filename}' - {e}")
 
 
+    def ack_from_replica(self, file_info, s):
+        self.log(f"Acknowledgment received for file info: {file_info}")
+        s.close()
 
-    def acknowledge(self, file_info):
+
+
+    def acknowledge(self, file_info, s):
         client_name = file_info["client_name"]
         filename = file_info['filename']
         action = file_info['action']
 
         self.log(f"Acknowledgment received for file info: {file_info}")
+        s.close()
         self.acktracker[(client_name, filename, action)] += 1
 
         ack_count = self.acktracker[(client_name, filename, action)]
