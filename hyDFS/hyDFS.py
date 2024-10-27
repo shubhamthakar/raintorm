@@ -64,7 +64,8 @@ class RingNode:
 
     def init_logging(self):
         logging.basicConfig(filename=self.log_file, level=logging.INFO,
-                            format='%(asctime)s - %(message)s')
+                            format='%(asctime)s - %(message)s',
+                            filemode = "w")
         self.log("Logging initialized") 
 
     def log(self, message):
