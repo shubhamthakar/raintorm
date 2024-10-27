@@ -31,7 +31,7 @@ class RingNode:
         self.process = Process(socket.gethostname(), 5000, 'fa24-cs425-6901.cs.illinois.edu', 5000, False, 20, 10, 0, self.ring_id)
         
         self.shutdown_flag = threading.Event() 
-        
+
         self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.server_socket.bind((self.host_name, self.hydfs_host_port))
@@ -502,7 +502,7 @@ class RingNode:
 
     def ack_from_replica(self, file_info, s):
         self.log(f"Acknowledgment received for file info: {file_info}")
-        s.close()
+        # s.close()
 
 
 
@@ -512,7 +512,7 @@ class RingNode:
         action = file_info['action']
 
         self.log(f"Acknowledgment received for file info: {file_info}")
-        s.close()
+        # s.close()
         self.acktracker[(client_name, filename, action)] += 1
 
         ack_count = self.acktracker[(client_name, filename, action)]
