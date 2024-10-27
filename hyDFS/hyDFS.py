@@ -204,46 +204,32 @@ class RingNode:
         # Construct the full file path
         file_path = os.path.join(self.fs_directory, filename)
 
-        # Check if the file already exists
-        if os.path.exists(file_path):
-            self.log(f"File '{filename}' already exists. Not writing to it.")
-
-            # Prepare acknowledgment message indicating the file already exists
-            ack_message = {
-                "client_name": file_info["client_name"],
-                "action": "ack",
-                "filename": filename,
-                "status": "file_exists"
-            }
-            
-            try:
-                # Send ack message using msgpack for serialization
-                client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
-                self.log(f"Acknowledgment sent to client for existing file '{filename}'.")
-            except (BlockingIOError, socket.error) as e:
-                self.log(f"Failed to send acknowledgment for existing file '{filename}' - {e}")
-            return  # Exit the function since the file was not written
-
-        # Write content to file
-        with open(file_path, "wb") as file:
-            file.write(file_content)
-
-        self.log(f"File '{filename}' written successfully.")
-
-        # Send acknowledgment back to the client socket
+        # Prepare acknowledgment message indicating the file already exists
         ack_message = {
             "client_name": file_info["client_name"],
             "action": "ack",
             "filename": filename,
-            "status": "write_complete"
         }
-        
+
+        # Check if the file already exists
+        if os.path.exists(file_path):
+            self.log(f"File '{filename}' already exists. Not writing to it.")
+            ack_message["status"] = "file_exists"
+
+        else:
+            with open(file_path, "wb") as file:
+                file.write(file_content)
+
+            self.log(f"File '{filename}' written successfully.")
+            ack_message["status"] = "write_complete"
+            
+            
         try:
-        # Send ack message using msgpack for serialization
+            # Send ack message using msgpack for serialization
             client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
-            self.log(f"Acknowledgment sent to client for '{filename}'.")
+            self.log(f"Acknowledgment sent to client for existing file '{filename}'.")
         except (BlockingIOError, socket.error) as e:
-            self.log(f"Failed to send acknowledgment for '{filename}' - {e}")
+            self.log(f"Failed to send acknowledgment for existing file '{filename}' - {e}")
 
 
     def acknowledge(self, file_info):
