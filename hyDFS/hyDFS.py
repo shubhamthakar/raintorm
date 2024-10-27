@@ -158,6 +158,12 @@ class RingNode:
         
         elif action == "write":
             self.write_file(file_info, client_socket)
+
+        elif action == "get":
+            self.get_file(file_info, client_socket)
+
+        elif action == "read":
+            self.read_file(file_info, client_socket)
         
         elif action == "ack":
             self.acknowledge(file_info)
@@ -196,6 +202,35 @@ class RingNode:
             self.send_request(host, port, file_info_create)
 
 
+    # Sends read request to all the replicas
+    def get_file(self, file_info, client_socket):
+        # Step 1: Get all replicas
+        all_replicas = self.get_all_replicas(file_info["filename"])
+
+        # Step 2: Parse each node_id to get hostname and port
+        for replica in all_replicas:
+            node_id = replica["node_id"]
+
+            # Extract hostname and port using regex
+            match = re.match(r"^(.*?)_(\d+)_.*$", node_id)
+            if not match:
+                self.log(f"Error parsing node_id {node_id}")
+                continue
+
+            host = match.group(1)
+            port = self.hydfs_host_port
+
+            # Format get request
+            file_info_get = {
+                "client_name": file_info["client_name"],
+                "action": "read",
+                "filename": file_info["filename"]
+            }
+
+            self.send_request(host, port, file_info_get)
+
+
+
     # Writes the files after receiving a  "write" request (handle_message)
     def write_file(self, file_info, client_socket):
         filename = file_info["filename"]
@@ -230,6 +265,46 @@ class RingNode:
             self.log(f"Acknowledgment sent to client for existing file '{filename}'.")
         except (BlockingIOError, socket.error) as e:
             self.log(f"Failed to send acknowledgment for existing file '{filename}' - {e}")
+
+
+
+
+    def read_file(self, file_info, client_socket):
+        filename = file_info["filename"]
+
+        # Construct the full file path
+        file_path = os.path.join(self.fs_directory, filename)
+
+        # Prepare acknowledgment message for the response
+        ack_message = {
+            "client_name": file_info["client_name"],
+            "action": "ack",
+            "filename": filename,
+        }
+
+        # Check if the file exists
+        if os.path.exists(file_path):
+            # Read the file content
+            with open(file_path, "rb") as file:
+                file_content = file.read()
+
+            # Add the content and status to the ack message
+            ack_message["status"] = "read_complete"
+            ack_message["content"] = file_content
+            self.log(f"File '{filename}' read successfully and content prepared for sending.")
+        
+        else:
+            # If file does not exist, update the ack message with an error
+            ack_message["status"] = "file_not_found"
+            self.log(f"File '{filename}' not found. Cannot read.")
+
+        try:
+            # Send the ack message using msgpack for serialization
+            client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
+            self.log(f"Acknowledgment sent to client with status '{ack_message['status']}' for file '{filename}'.")
+        except (BlockingIOError, socket.error) as e:
+            self.log(f"Failed to send acknowledgment for file '{filename}' - {e}")
+
 
 
     def acknowledge(self, file_info):
@@ -274,6 +349,8 @@ class RingNode:
         # Create a non-blocking socket connection to the target replica
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.setblocking(False)
+
+        self.log(f"Sending {file_info['action']} to {host}:{port} for file {file_info['filename']}")
 
         try:
             s.connect((host, port))
@@ -336,42 +413,44 @@ class RingNode:
 
 
     def get_next_n_nodes(self, ring_id, n):
+        # Filter for live nodes only
         live_nodes = [node for node in self.process.membership_list if node['status'] == 'LIVE']
         
+        # Sort nodes by ring_id in ascending order
         sorted_nodes = sorted(live_nodes, key=lambda x: x['ring_id'])
         
+        # Find the index of the node with the specified ring_id
         current_index = next((i for i, node in enumerate(sorted_nodes) if node['ring_id'] == ring_id), None)
         
+        # If current_index is None, determine the node after where the ring_id would be
         if current_index is None:
-            raise ValueError(f"Node with ring_id:{ring_id} not found in the membership list.")
+            # Find the first node with a larger ring_id
+            current_index = next((i for i, node in enumerate(sorted_nodes) if node['ring_id'] > ring_id), 0)
         
+        # Retrieve the next n nodes starting after the found or calculated index
         next_nodes = []
-        for i in range(1, n+1):
+        for i in range(n):
+            # Use modulo to wrap around to the beginning of the list if necessary
             next_index = (current_index + i) % len(sorted_nodes)
             next_nodes.append({
                 'node_id': sorted_nodes[next_index]['node_id'],
                 'ring_id': sorted_nodes[next_index]['ring_id']
             })
 
-        self.log(f"{next_nodes}")
+        # Log the next nodes for debugging
+        self.log(f"Next {n} nodes after {ring_id}: {next_nodes}")
         
         return next_nodes
+
+
     
 
     def get_all_replicas(self, filename):
 
         file_primary_ring_id = self.hash_string(filename)
+        next_3_nodes_info = self.get_next_n_nodes(file_primary_ring_id, 3)
 
-        primary_node_info = {
-                'node_id': self.process.node_id,
-                'ring_id': self.process.ring_id
-        }
-
-        next_2_nodes_info = self.get_next_n_nodes(file_primary_ring_id, 2)
-
-        all_replicas = [primary_node_info] + next_2_nodes_info
-
-        return all_replicas
+        return next_3_nodes_info
 
 
 

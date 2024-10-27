@@ -40,6 +40,9 @@ class FileClient:
             else:
                 print(f"Error: File at {self.file_path} does not exist.")
                 return None
+        elif self.action == "get":
+        # No additional data needed for "get" action
+            pass
 
         return msgpack.packb(message) + b"<EOF>"
 
