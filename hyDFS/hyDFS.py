@@ -94,13 +94,27 @@ class RingNode:
 
 
     def init_logging(self):
-        logging.basicConfig(filename=self.log_file, level=logging.INFO,
-                            format='%(asctime)s - %(message)s',
-                            filemode = "w")
-        self.log("Logging initialized") 
+        # Create a specific logger for RingNode
+        self.logger = logging.getLogger('RingNodeLogger')
+        self.logger.setLevel(logging.INFO)
+        
+        # Ensure only one handler is added to prevent duplicate logs
+        if not self.logger.hasHandlers():
+            # Set up file handler
+            file_handler = logging.FileHandler(self.log_file)
+            file_handler.setLevel(logging.INFO)
+            
+            # Set up formatter and add it to handler
+            formatter = logging.Formatter('%(asctime)s - %(message)s')
+            file_handler.setFormatter(formatter)
+            
+            # Add handler to logger
+            self.logger.addHandler(file_handler)
+        
+        self.log("Logging initialized for RingNode") 
 
     def log(self, message):
-        logging.info(message)
+        self.logger.info(message)
         print(message)
     
     def listen_for_messages(self):

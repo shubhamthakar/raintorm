@@ -25,7 +25,7 @@ class Process:
         self.introducer_port = introducer_port
         self.membership_list = []  # List of dicts with 'node_id' and 'status'
         self.timer_dict = {}  # Dictionary to track suspicion start times
-        self.log_file = 'swim_protocol.log'
+        self.log_file = '/home/chaskar2/distributed-logger/hyDFS/logs/swim_protocol.log'
         self.shutdown_flag = threading.Event()  # Used to signal when to stop the listener thread
         self.ack_queue = queue.Queue()  # Queue for ack messages intended for ping_node
         self.init_logging()
