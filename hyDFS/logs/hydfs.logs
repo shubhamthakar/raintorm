@@ -1,0 +1,15 @@
+2024-10-26 20:03:22,251 - Logging initialized
+2024-10-26 20:03:30,096 - Logging initialized
+2024-10-26 20:03:42,411 - Logging initialized
+2024-10-26 20:03:42,414 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 20:03:42,416 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 20:03:42,418 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 20:03:42,421 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 20:03:42,423 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 20:03:42,424 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729991022', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 20:03:54,225 - Shutting down HyDFS...
+2024-10-26 20:03:54,225 - Listener thread is still running; proceeding to join...
+2024-10-26 20:03:57,432 - Listener thread joined successfully.
+2024-10-26 20:03:57,433 - Shutting down...
+2024-10-26 20:04:02,432 - Node shut down gracefully.
+2024-10-26 20:04:02,433 - HyDFS Node shut down gracefully.

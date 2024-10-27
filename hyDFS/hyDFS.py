@@ -21,6 +21,10 @@ class RingNode:
         self.host_name = socket.gethostname()
         self.hydfs_host_port = 5001
 
+        # Logging
+        self.log_file = '/home/chaskar2/distributed-logger/hyDFS/logs/hydfs.logs'
+        self.init_logging()
+
         self.ring_id = self.hash_string(self.host_name)
         self.process = Process(socket.gethostname(), 5000, 'fa24-cs425-6901.cs.illinois.edu', 5000, False, 20, 10, 0, self.ring_id)
         
@@ -29,8 +33,6 @@ class RingNode:
         self.server_socket.bind((self.host_name, self.hydfs_host_port))
         self.server_socket.listen()
         self.server_socket.setblocking(False)
-        self.log(f"Server listening on {self.host_name}:{self.hydfs_host_port}")
-
 
         self.listen_thread = threading.Thread(target=self.listen_for_messages)
         self.listen_thread.start()
@@ -54,10 +56,6 @@ class RingNode:
         # key: client_name, file_name, action
         self.acktracker = defaultdict(lambda: 0)
 
-        # Logging
-        self.log_file = '/home/chaskar2/distributed-logger/hyDFS/logs'
-        self.init_logging()
-
         # Quorum
         self.quorum_size = 3
 
@@ -67,6 +65,7 @@ class RingNode:
     def init_logging(self):
         logging.basicConfig(filename=self.log_file, level=logging.INFO,
                             format='%(asctime)s - %(message)s')
+        self.log("Logging initialized") 
 
     def log(self, message):
         logging.info(message)
