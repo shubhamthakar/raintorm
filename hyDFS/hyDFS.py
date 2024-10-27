@@ -26,32 +26,22 @@ class RingNode:
         self.log_file = '/home/chaskar2/distributed-logger/hyDFS/logs/hydfs.logs'
         self.init_logging()
 
+
         self.ring_id = self.hash_string(self.host_name)
         self.process = Process(socket.gethostname(), 5000, 'fa24-cs425-6901.cs.illinois.edu', 5000, False, 20, 10, 0, self.ring_id)
+        
+        self.shutdown_flag = threading.Event() 
         
         self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.server_socket.bind((self.host_name, self.hydfs_host_port))
         self.server_socket.listen()
         self.server_socket.setblocking(False)
-
-        self.listen_thread = threading.Thread(target=self.listen_for_messages)
-        self.listen_thread.start()
-
-
-        timer = threading.Timer(30, self.start_membership_monitor)
-        timer.start()
         
         self.fs_directory = "/home/chaskar2/distributed-logger/hyDFS/filesystem"
         self.local_directory = ""
          # Clear the filesystem directory on startup
         self.clear_fs_directory()
-
-
-        # Set up signal handlers for graceful shutdown
-        self.shutdown_flag = threading.Event() 
-        signal.signal(signal.SIGINT, self.shutdown)
-        signal.signal(signal.SIGTERM, self.shutdown)
 
         # Socket message handling variables
         self.inputs = [self.server_socket]
@@ -66,13 +56,18 @@ class RingNode:
         # Quorum
         self.quorum_size = 3
 
-        self.send_join_request()
+        self.listen_thread = threading.Thread(target=self.listen_for_messages)
+        self.listen_thread.start()
 
-    def start_membership_monitor(self):
-        """Start the thread that monitors the membership list for changes."""
         self.membership_monitor_thread = threading.Thread(target=self.monitor_membership_list)
         self.membership_monitor_thread.start()
-        self.log("Membership monitoring started after 30 seconds delay")
+
+        # Set up signal handlers for graceful shutdown
+        signal.signal(signal.SIGINT, self.shutdown)
+        signal.signal(signal.SIGTERM, self.shutdown)
+
+        self.send_join_request()
+
 
     def clear_fs_directory(self):
         """Remove all files in the filesystem directory at startup."""
@@ -101,7 +96,7 @@ class RingNode:
         # Ensure only one handler is added to prevent duplicate logs
         if not self.logger.hasHandlers():
             # Set up file handler
-            file_handler = logging.FileHandler(self.log_file)
+            file_handler = logging.FileHandler(self.log_file, mode='w')
             file_handler.setLevel(logging.INFO)
             
             # Set up formatter and add it to handler
@@ -230,6 +225,7 @@ class RingNode:
         Monitor the membership list for changes. If a new node joins or a node status changes to 'DEAD',
         find its 2 predecessors and 1 successor.
         """
+        time.sleep(20)
         previous_membership_list = self.process.membership_list.copy()
 
         while not self.shutdown_flag.is_set():
@@ -598,6 +594,14 @@ class RingNode:
             self.log("Listener thread joined successfully.")
         else:
             self.log("Listener thread is not running, skipping join.")
+
+        if self.membership_monitor_thread.is_alive():
+            self.log("Membership thread is still running; proceeding to join...")
+            self.membership_monitor_thread.join()  # Wait for the listener thread to finish
+            self.log("Membership thread joined successfully.")
+        else:
+            self.log("Membership thread is not running, skipping join.")
+
         self.server_socket.close()  # Close the socket
 
         self.process.shutdown(signum, frame) # Shutdown process

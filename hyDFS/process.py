@@ -32,16 +32,18 @@ class Process:
         self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self.server_socket.bind((self.ip, self.port))
         self.server_socket.setblocking(False)  # Make socket non-blocking
+        
         self.listen_thread = threading.Thread(target=self.listen_for_messages)
         self.listen_thread.start()
+
+        # Start failure detection thread
+        self.failure_detection_thread = threading.Thread(target=self.failure_detection)
+        self.failure_detection_thread.start()
 
         # Set up signal handlers for graceful shutdown
         signal.signal(signal.SIGINT, self.shutdown)
         signal.signal(signal.SIGTERM, self.shutdown)
 
-        # Start failure detection thread
-        self.failure_detection_thread = threading.Thread(target=self.failure_detection)
-        self.failure_detection_thread.start()
 
     def failure_detection(self):
         """Failure detection by pinging nodes in a round-robin fashion, shuffling after each full iteration, skipping self and dead nodes."""
@@ -121,7 +123,7 @@ class Process:
 
     def init_logging(self):
         logging.basicConfig(filename=self.log_file, level=logging.INFO,
-                            format='%(asctime)s - %(message)s')
+                            format='%(asctime)s - %(message)s', filemode='w')
 
     def log(self, message):
         logging.info(message)
