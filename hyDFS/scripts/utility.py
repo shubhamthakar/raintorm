@@ -60,10 +60,10 @@ def request_membership_list(process_ip, process_port):
 
             # Print the membership list in a formatted way as soon as it is received
             print(f"\nMembership list for node {process_ip}:{process_port}:")
-            print(f"{'Node ID':<40}{'Status':<10}{'Incarnation Number':<10}")
+            print(f"{'Ring ID':<10}{'Node ID':<40}{'Status':<10}{'Incarnation Number':<10}")
             print("-" * 60)
             for entry in response['data']:
-                print(f"{entry['node_id']:<40}{entry['status']:<10}{entry['inc_num']:<10}")
+                print(f"{entry['ring_id']:<10}{entry['node_id']:<40}{entry['status']:<10}{entry['inc_num']:<10}")
             print(f"\nCurrent mode: {response['mode']}\n")
         except socket.timeout:
             print(f"No response received from the node {process_ip}:{process_port}.")

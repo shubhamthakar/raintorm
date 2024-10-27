@@ -227,6 +227,7 @@ class RingNode:
         find its 2 predecessors and 1 successor.
         """
         time.sleep(20)
+        self.log("Monitoring membership list started")
         previous_membership_list = self.process.membership_list.copy()
 
         while not self.shutdown_flag.is_set():
@@ -249,7 +250,7 @@ class RingNode:
                         self.handle_node_change(current_node, "dead")
 
                 previous_membership_list = current_membership_list
-
+            print("No change in membership list")
 
     def handle_node_change(self, affected_node, change_type):
         """
