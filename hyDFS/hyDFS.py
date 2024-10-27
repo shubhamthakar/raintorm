@@ -168,6 +168,7 @@ class RingNode:
                         s.sendall(self.data_buffer[s])
                         self.log(f"Sent data_buffer message {self.data_buffer[s]}")
                         self.data_buffer[s] = b""
+                        # self.outputs.remove(s)
                     except Exception as e:
                         self.log(f"Error sending data: {e}")
                         self.outputs.remove(s)
@@ -512,7 +513,6 @@ class RingNode:
         action = file_info['action']
 
         self.log(f"Acknowledgment received for file info: {file_info}")
-        # s.close()
         self.acktracker[(client_name, filename, action)] += 1
 
         ack_count = self.acktracker[(client_name, filename, action)]

@@ -1,40 +1,31 @@
-2024-10-27 17:59:22,642 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
-2024-10-27 17:59:22,650 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
-2024-10-27 17:59:22,653 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
-2024-10-27 17:59:22,656 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
-2024-10-27 17:59:22,657 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
-2024-10-27 17:59:22,659 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730069962', 'status': 'LIVE', 'inc_num': 0}]
-2024-10-27 17:59:28,291 - Connection from ('172.22.94.228', 48464)
-2024-10-27 17:59:28,294 - Next 3 nodes after 715: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730069962', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730069962', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730069962', 'ring_id': 715}]
-2024-10-27 17:59:28,296 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-10-27 17:59:28,298 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-10-27 17:59:28,301 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-10-27 17:59:28,302 - Connection from ('172.22.94.228', 48468)
-2024-10-27 17:59:28,303 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
-2024-10-27 17:59:28,304 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
-2024-10-27 17:59:28,304 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
-2024-10-27 17:59:28,305 - Connection from ('172.22.94.228', 48472)
-2024-10-27 17:59:28,306 - File 'file_1194.txt' written successfully.
-2024-10-27 17:59:28,306 - Acknowledgment sent to client for existing file 'file_1194.txt'.
-2024-10-27 17:59:28,307 - Connection from ('172.22.94.228', 48482)
-2024-10-27 17:59:28,307 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'write_complete'}
-2024-10-27 17:59:28,307 - Quorum not yet met, received ack from 1 replicas
-2024-10-27 17:59:28,308 - File 'file_1194.txt' already exists. Not writing to it.
-2024-10-27 17:59:28,308 - Acknowledgment sent to client for existing file 'file_1194.txt'.
-2024-10-27 17:59:28,308 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
-2024-10-27 17:59:28,309 - Quorum not yet met, received ack from 2 replicas
-2024-10-27 17:59:28,309 - File 'file_1194.txt' already exists. Not writing to it.
-2024-10-27 17:59:28,309 - Acknowledgment sent to client for existing file 'file_1194.txt'.
-2024-10-27 17:59:28,310 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
-2024-10-27 17:59:28,310 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 48464)>
-2024-10-27 17:59:28,310 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
-2024-10-27 17:59:28,315 - Acknowledgment sent to client1 for file 'file_1194.txt'.
-2024-10-27 17:59:28,315 - Client disconnected
-2024-10-27 17:59:47,699 - Shutting down HyDFS...
-2024-10-27 17:59:47,700 - Listener thread is still running; proceeding to join...
-2024-10-27 17:59:48,345 - Listener thread joined successfully.
-2024-10-27 17:59:48,346 - Membership thread is still running; proceeding to join...
-2024-10-27 17:59:48,683 - Membership thread joined successfully.
-2024-10-27 17:59:48,684 - Shutting down...
-2024-10-27 17:59:48,715 - Node shut down gracefully.
-2024-10-27 17:59:48,715 - HyDFS Node shut down gracefully.
+2024-10-27 18:15:07,424 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-27 18:15:07,427 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/file_1194.txt
+2024-10-27 18:15:07,427 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-27 18:15:07,430 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-27 18:15:07,433 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-27 18:15:07,435 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-27 18:15:07,436 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730070907', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-27 18:15:27,887 - Connection from ('172.22.94.228', 36128)
+2024-10-27 18:15:27,887 - Next 3 nodes after 292: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730070907', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730070907', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730070907', 'ring_id': 715}]
+2024-10-27 18:15:27,889 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file hydfs_example_1.txt
+2024-10-27 18:15:27,897 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file hydfs_example_1.txt
+2024-10-27 18:15:27,904 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file hydfs_example_1.txt
+2024-10-27 18:15:27,911 - Connection from ('172.22.94.228', 36140)
+2024-10-27 18:15:27,911 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa4read\xa8filename\xb3hydfs_example_1.txt<EOF>'
+2024-10-27 18:15:27,911 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa4read\xa8filename\xb3hydfs_example_1.txt<EOF>'
+2024-10-27 18:15:27,912 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa4read\xa8filename\xb3hydfs_example_1.txt<EOF>'
+2024-10-27 18:15:27,912 - Connection from ('172.22.94.228', 36150)
+2024-10-27 18:15:27,913 - File 'hydfs_example_1.txt' not found. Cannot read.
+2024-10-27 18:15:27,913 - Acknowledgment sent to client with status 'file_not_found' for file 'hydfs_example_1.txt'.
+2024-10-27 18:15:27,914 - Connection from ('172.22.94.228', 36152)
+2024-10-27 18:15:27,914 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'hydfs_example_1.txt', 'status': 'file_not_found'}
+2024-10-27 18:15:27,914 - Quorum not yet met, received ack from 1 replicas
+2024-10-27 18:15:27,915 - File 'hydfs_example_1.txt' not found. Cannot read.
+2024-10-27 18:15:27,915 - Acknowledgment sent to client with status 'file_not_found' for file 'hydfs_example_1.txt'.
+2024-10-27 18:17:16,481 - Shutting down HyDFS...
+2024-10-27 18:17:16,482 - Listener thread is not running, skipping join.
+2024-10-27 18:17:16,482 - Membership thread is still running; proceeding to join...
+2024-10-27 18:17:17,847 - Membership thread joined successfully.
+2024-10-27 18:17:17,848 - Shutting down...
+2024-10-27 18:17:18,133 - Node shut down gracefully.
+2024-10-27 18:17:18,134 - HyDFS Node shut down gracefully.
