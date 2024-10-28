@@ -236,6 +236,9 @@ class RingNode:
             current_membership_list = self.process.membership_list.copy()
 
             if previous_membership_list != current_membership_list:
+                self.log(f"Membership lists are not equal")
+                self.log(f"previous list\n{previous_membership_list}")
+                self.log(f"current list\n{current_membership_list}")
                 for current_node in current_membership_list:
                     if current_node not in previous_membership_list:
                         # New node detected
@@ -250,7 +253,7 @@ class RingNode:
                         self.handle_node_change(current_node, "dead")
 
                 previous_membership_list = current_membership_list
-            print("No change in membership list")
+            self.log("No change in membership list")
 
     def handle_node_change(self, affected_node, change_type):
         """

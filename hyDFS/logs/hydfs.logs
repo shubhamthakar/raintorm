@@ -1,35 +1,130 @@
-2024-10-27 19:28:38,958 - Logging initialized for RingNode
-2024-10-27 19:28:38,964 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/file_1194.txt
-2024-10-27 19:28:38,965 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
-2024-10-27 19:28:57,138 - Connection from ('172.22.94.228', 58466)
-2024-10-27 19:28:57,140 - Next 3 nodes after 715: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730075318', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730075318', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730075318', 'ring_id': 715}]
-2024-10-27 19:28:57,142 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-10-27 19:28:57,144 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-10-27 19:28:57,146 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-10-27 19:28:57,148 - Connection from ('172.22.94.228', 58480)
-2024-10-27 19:28:57,149 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
-2024-10-27 19:28:57,149 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
-2024-10-27 19:28:57,150 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
-2024-10-27 19:28:57,150 - Connection from ('172.22.94.228', 58490)
-2024-10-27 19:28:57,151 - File 'file_1194.txt' written successfully.
-2024-10-27 19:28:57,152 - Acknowledgment sent to client 'file_1194.txt'.
-2024-10-27 19:28:57,152 - Connection from ('172.22.94.228', 58504)
-2024-10-27 19:28:57,153 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'write_complete'}
-2024-10-27 19:28:57,153 - Quorum not yet met, received ack from 1 replicas
-2024-10-27 19:28:57,153 - File 'file_1194.txt' already exists. Not writing to it.
-2024-10-27 19:28:57,154 - Acknowledgment sent to client 'file_1194.txt'.
-2024-10-27 19:28:57,154 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
-2024-10-27 19:28:57,154 - Quorum not yet met, received ack from 2 replicas
-2024-10-27 19:28:57,155 - File 'file_1194.txt' already exists. Not writing to it.
-2024-10-27 19:28:57,155 - Acknowledgment sent to client 'file_1194.txt'.
-2024-10-27 19:28:57,155 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
-2024-10-27 19:28:57,156 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 58466)>
-2024-10-27 19:28:57,156 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
-2024-10-27 19:28:57,160 - Acknowledgment sent to client1 for file 'file_1194.txt'.
-2024-10-27 19:28:57,161 - Client disconnected
-2024-10-27 19:28:58,977 - Monitoring membership list started
-2024-10-27 19:29:20,651 - Shutting down HyDFS...
-2024-10-27 19:29:20,652 - Listener thread is still running; proceeding to join...
-2024-10-27 19:29:22,211 - Listener thread joined successfully.
-2024-10-27 19:29:22,212 - Membership thread is not running, skipping join.
-2024-10-27 19:29:23,139 - HyDFS Node shut down gracefully.
+2024-10-27 19:30:49,790 - Logging initialized for RingNode
+2024-10-27 19:30:49,797 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/file_1194.txt
+2024-10-27 19:30:49,799 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-27 19:31:06,319 - Connection from ('172.22.94.228', 55466)
+2024-10-27 19:31:06,321 - Next 3 nodes after 715: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730075449', 'ring_id': 715}, {'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1730075455', 'ring_id': 845}, {'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1730075453', 'ring_id': 859}]
+2024-10-27 19:31:06,323 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
+2024-10-27 19:31:06,326 - Sending write to fa24-cs425-6905.cs.illinois.edu:5001 for file file_1194.txt
+2024-10-27 19:31:06,328 - Sending write to fa24-cs425-6904.cs.illinois.edu:5001 for file file_1194.txt
+2024-10-27 19:31:06,330 - Connection from ('172.22.94.228', 55480)
+2024-10-27 19:31:06,330 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
+2024-10-27 19:31:06,330 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
+2024-10-27 19:31:06,331 - File 'file_1194.txt' written successfully.
+2024-10-27 19:31:06,332 - Acknowledgment sent to client 'file_1194.txt'.
+2024-10-27 19:31:06,332 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
+2024-10-27 19:31:06,332 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'write_complete'}
+2024-10-27 19:31:06,333 - Quorum not yet met, received ack from 1 replicas
+2024-10-27 19:31:06,333 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'write_complete'}
+2024-10-27 19:31:06,333 - Quorum not yet met, received ack from 2 replicas
+2024-10-27 19:31:06,333 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'write_complete'}
+2024-10-27 19:31:06,333 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 55466)>
+2024-10-27 19:31:06,334 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'write_complete'}
+2024-10-27 19:31:06,336 - Acknowledgment sent to client1 for file 'file_1194.txt'.
+2024-10-27 19:31:06,336 - Client disconnected
+2024-10-27 19:31:09,802 - Monitoring membership list started
+2024-10-27 19:31:16,324 - Connection from ('172.22.94.228', 33780)
+2024-10-27 19:31:16,325 - Next 3 nodes after 715: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730075449', 'ring_id': 715}, {'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1730075455', 'ring_id': 845}, {'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1730075453', 'ring_id': 859}]
+2024-10-27 19:31:16,325 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
+2024-10-27 19:31:16,328 - Sending read to fa24-cs425-6905.cs.illinois.edu:5001 for file file_1194.txt
+2024-10-27 19:31:16,329 - Sending read to fa24-cs425-6904.cs.illinois.edu:5001 for file file_1194.txt
+2024-10-27 19:31:16,331 - Connection from ('172.22.94.228', 33792)
+2024-10-27 19:31:16,332 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa4read\xa8filename\xadfile_1194.txt<EOF>'
+2024-10-27 19:31:16,332 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa4read\xa8filename\xadfile_1194.txt<EOF>'
+2024-10-27 19:31:16,333 - File 'file_1194.txt' read successfully and content prepared for sending.
+2024-10-27 19:31:16,333 - Acknowledgment sent to client with status 'read_complete' for file 'file_1194.txt'.
+2024-10-27 19:31:16,333 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa4read\xa8filename\xadfile_1194.txt<EOF>'
+2024-10-27 19:31:16,334 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'read_complete', 'content': b'This file is uploaded to HyDFS'}
+2024-10-27 19:31:16,334 - Quorum not yet met, received ack from 1 replicas
+2024-10-27 19:31:16,334 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'read_complete', 'content': b'This file is uploaded to HyDFS'}
+2024-10-27 19:31:16,334 - Quorum not yet met, received ack from 2 replicas
+2024-10-27 19:31:16,335 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'read_complete', 'content': b'This file is uploaded to HyDFS'}
+2024-10-27 19:31:16,335 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 33780)>
+2024-10-27 19:31:16,335 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'read_complete', 'content': b'This file is uploaded to HyDFS'}
+2024-10-27 19:31:16,335 - Acknowledgment sent to client1 for file 'file_1194.txt'.
+2024-10-27 19:31:16,336 - Client disconnected
+2024-10-27 19:31:23,075 - Connection from ('172.22.94.228', 33806)
+2024-10-27 19:31:23,077 - Next 3 nodes after 715: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730075449', 'ring_id': 715}, {'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1730075455', 'ring_id': 845}, {'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1730075453', 'ring_id': 859}]
+2024-10-27 19:31:23,077 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
+2024-10-27 19:31:23,080 - Sending write to fa24-cs425-6905.cs.illinois.edu:5001 for file file_1194.txt
+2024-10-27 19:31:23,081 - Sending write to fa24-cs425-6904.cs.illinois.edu:5001 for file file_1194.txt
+2024-10-27 19:31:23,083 - Connection from ('172.22.94.228', 33814)
+2024-10-27 19:31:23,084 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
+2024-10-27 19:31:23,084 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
+2024-10-27 19:31:23,084 - File 'file_1194.txt' already exists. Not writing to it.
+2024-10-27 19:31:23,085 - Acknowledgment sent to client 'file_1194.txt'.
+2024-10-27 19:31:23,085 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
+2024-10-27 19:31:23,085 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
+2024-10-27 19:31:23,086 - Quorum not yet met, received ack from 1 replicas
+2024-10-27 19:31:23,086 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
+2024-10-27 19:31:23,086 - Quorum not yet met, received ack from 2 replicas
+2024-10-27 19:31:23,086 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
+2024-10-27 19:31:23,086 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 33806)>
+2024-10-27 19:31:23,087 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
+2024-10-27 19:31:23,087 - Acknowledgment sent to client1 for file 'file_1194.txt'.
+2024-10-27 19:31:23,087 - Client disconnected
+2024-10-27 19:31:27,150 - Connection from ('172.22.94.228', 53196)
+2024-10-27 19:31:27,152 - Next 3 nodes after 715: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730075449', 'ring_id': 715}, {'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1730075455', 'ring_id': 845}, {'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1730075453', 'ring_id': 859}]
+2024-10-27 19:31:27,152 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
+2024-10-27 19:31:27,154 - Sending read to fa24-cs425-6905.cs.illinois.edu:5001 for file file_1194.txt
+2024-10-27 19:31:27,156 - Sending read to fa24-cs425-6904.cs.illinois.edu:5001 for file file_1194.txt
+2024-10-27 19:31:27,157 - Connection from ('172.22.94.228', 53200)
+2024-10-27 19:31:27,158 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa4read\xa8filename\xadfile_1194.txt<EOF>'
+2024-10-27 19:31:27,159 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa4read\xa8filename\xadfile_1194.txt<EOF>'
+2024-10-27 19:31:27,159 - File 'file_1194.txt' read successfully and content prepared for sending.
+2024-10-27 19:31:27,160 - Acknowledgment sent to client with status 'read_complete' for file 'file_1194.txt'.
+2024-10-27 19:31:27,160 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa4read\xa8filename\xadfile_1194.txt<EOF>'
+2024-10-27 19:31:27,160 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'read_complete', 'content': b'This file is uploaded to HyDFS'}
+2024-10-27 19:31:27,161 - Quorum not yet met, received ack from 1 replicas
+2024-10-27 19:31:27,161 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'read_complete', 'content': b'This file is uploaded to HyDFS'}
+2024-10-27 19:31:27,161 - Quorum not yet met, received ack from 2 replicas
+2024-10-27 19:31:27,161 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'read_complete', 'content': b'This file is uploaded to HyDFS'}
+2024-10-27 19:31:27,162 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 53196)>
+2024-10-27 19:31:27,162 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'read_complete', 'content': b'This file is uploaded to HyDFS'}
+2024-10-27 19:31:27,162 - Acknowledgment sent to client1 for file 'file_1194.txt'.
+2024-10-27 19:31:27,163 - Client disconnected
+2024-10-27 19:31:43,937 - Connection from ('172.22.94.228', 54738)
+2024-10-27 19:31:43,939 - Next 3 nodes after 277: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1730075452', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1730075450', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1730075460', 'ring_id': 578}]
+2024-10-27 19:31:43,939 - Sending write to fa24-cs425-6903.cs.illinois.edu:5001 for file example_1.txt
+2024-10-27 19:31:43,942 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file example_1.txt
+2024-10-27 19:31:43,943 - Sending write to fa24-cs425-6909.cs.illinois.edu:5001 for file example_1.txt
+2024-10-27 19:31:43,945 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadexample_1.txt\xa7content\xc4\x1aThis is an example_1 file <EOF>'
+2024-10-27 19:31:43,945 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadexample_1.txt\xa7content\xc4\x1aThis is an example_1 file <EOF>'
+2024-10-27 19:31:43,946 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'example_1.txt', 'status': 'write_complete'}
+2024-10-27 19:31:43,947 - Quorum not yet met, received ack from 1 replicas
+2024-10-27 19:31:43,947 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadexample_1.txt\xa7content\xc4\x1aThis is an example_1 file <EOF>'
+2024-10-27 19:31:43,947 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'example_1.txt', 'status': 'write_complete'}
+2024-10-27 19:31:43,948 - Quorum not yet met, received ack from 2 replicas
+2024-10-27 19:31:43,948 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'example_1.txt', 'status': 'write_complete'}
+2024-10-27 19:31:43,948 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 54738)>
+2024-10-27 19:31:43,948 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'example_1.txt', 'status': 'write_complete'}
+2024-10-27 19:31:43,949 - Acknowledgment sent to client1 for file 'example_1.txt'.
+2024-10-27 19:31:43,949 - Client disconnected
+2024-10-27 19:31:54,227 - Connection from ('172.22.94.228', 43388)
+2024-10-27 19:31:54,228 - File 'example_1.txt' not found. Cannot read.
+2024-10-27 19:31:54,228 - Acknowledgment sent to client with status 'file_not_found' for file 'example_1.txt'.
+2024-10-27 19:31:54,229 - Client disconnected
+2024-10-27 19:32:02,310 - Connection from ('172.22.94.228', 42726)
+2024-10-27 19:32:02,312 - Next 3 nodes after 277: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1730075452', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1730075450', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1730075460', 'ring_id': 578}]
+2024-10-27 19:32:02,312 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file example_1.txt
+2024-10-27 19:32:02,314 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file example_1.txt
+2024-10-27 19:32:02,316 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file example_1.txt
+2024-10-27 19:32:02,317 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa4read\xa8filename\xadexample_1.txt<EOF>'
+2024-10-27 19:32:02,318 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa4read\xa8filename\xadexample_1.txt<EOF>'
+2024-10-27 19:32:02,319 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'example_1.txt', 'status': 'read_complete', 'content': b'This is an example_1 file '}
+2024-10-27 19:32:02,319 - Quorum not yet met, received ack from 1 replicas
+2024-10-27 19:32:02,319 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'example_1.txt', 'status': 'read_complete', 'content': b'This is an example_1 file '}
+2024-10-27 19:32:02,320 - Quorum not yet met, received ack from 2 replicas
+2024-10-27 19:32:02,320 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa4read\xa8filename\xadexample_1.txt<EOF>'
+2024-10-27 19:32:02,320 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'example_1.txt', 'status': 'read_complete', 'content': b'This is an example_1 file '}
+2024-10-27 19:32:02,321 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 42726)>
+2024-10-27 19:32:02,321 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'example_1.txt', 'status': 'read_complete', 'content': b'This is an example_1 file '}
+2024-10-27 19:32:02,321 - Acknowledgment sent to client1 for file 'example_1.txt'.
+2024-10-27 19:32:02,322 - Client disconnected
+2024-10-27 19:34:32,279 - Client disconnected
+2024-10-27 19:34:32,279 - Client disconnected
+2024-10-27 19:34:32,279 - Client disconnected
+2024-10-27 19:34:32,279 - Client disconnected
+2024-10-27 19:41:05,285 - Shutting down HyDFS...
+2024-10-27 19:41:05,285 - Listener thread is still running; proceeding to join...
+2024-10-27 19:41:07,606 - Listener thread joined successfully.
+2024-10-27 19:41:07,606 - Membership thread is not running, skipping join.
