@@ -12,6 +12,7 @@ import re
 from collections import defaultdict
 import logging
 import time
+import copy
 
 
 class RingNode:
@@ -228,19 +229,20 @@ class RingNode:
         """
         time.sleep(20)
         self.log("Monitoring membership list started")
-        previous_membership_list = self.process.membership_list.copy()
+        previous_membership_list = copy.deepcopy(self.process.membership_list)
 
         while not self.shutdown_flag.is_set():
             # Check for changes in the membership list every 2 seconds
             time.sleep(2)
-            current_membership_list = self.process.membership_list.copy()
+            current_membership_list = copy.deepcopy(self.process.membership_list)
 
             if previous_membership_list != current_membership_list:
                 self.log(f"Membership lists are not equal")
                 self.log(f"previous list\n{previous_membership_list}")
                 self.log(f"current list\n{current_membership_list}")
                 for current_node in current_membership_list:
-                    if current_node not in previous_membership_list:
+                    if not any(previous_node['node_id'] == current_node['node_id']
+                            for previous_node in previous_membership_list):
                         # New node detected
                         self.log(f"New node detected: {current_node}")
                         self.handle_node_change(current_node, "joined")
@@ -252,7 +254,7 @@ class RingNode:
                         self.log(f"Hydfs node marked as DEAD: {current_node}")
                         self.handle_node_change(current_node, "dead")
 
-                previous_membership_list = current_membership_list
+                previous_membership_list = copy.deepcopy(current_membership_list)
             self.log("No change in membership list")
 
     def handle_node_change(self, affected_node, change_type):
@@ -261,27 +263,58 @@ class RingNode:
         Check if the current node (self.ring_id) is one of these.
         """
         # Sort the nodes in the ring by ring_id
-        sorted_nodes = sorted(
-            [node for node in self.process.membership_list if node['status'] == 'LIVE'],
-            key=lambda x: x['ring_id']
-        )
+        sorted_nodes = sorted(self.process.membership_list, key=lambda x: x['ring_id'])
 
         # Find the index of the affected node in the sorted list
         affected_node_index = next((i for i, node in enumerate(sorted_nodes) if node['node_id'] == affected_node['node_id']), None)
+        succesor = []
+        i = affected_node_index + 1  # Start from the next item
+        list_length = len(sorted_nodes)
+
+        # Loop until we collect 2 non-DEAD nodes, wrapping around if necessary
+        while len(succesor) < 1:
+            node = sorted_nodes[i % list_length]  # Wrap around using modulo
+            if node.get('status') != 'DEAD':  # Only add nodes not marked as DEAD
+                succesor.append(node)
+            i += 1
+
+        predecessors = []
+        i = affected_node_index - 1 
+
+        # Loop until we collect 2 non-DEAD nodes, wrapping around if necessary
+        while len(predecessors) < 2:
+            node = sorted_nodes[i % list_length]  # Wrap around using modulo
+            if node.get('status') != 'DEAD':
+                predecessors.append(node)
+            i -= 1
+        
+        
+        first_predecessor = predecessors[0]
+        second_predecessor = predecessors[1]
+        first_successor = succesor[0]
+
+
         curr_index = next((i for i, node in enumerate(sorted_nodes) if node['node_id'] == self.process.node_id), None)
-        next_replica = sorted_nodes[(curr_index + 1) % len(sorted_nodes)]
-        next_next_replica = sorted_nodes[(curr_index + 2) % len(sorted_nodes)]
+        
+        replica_list = []
+        i = curr_index + 1  # Start from the next item
+        list_length = len(sorted_nodes)
+
+        # Loop until we collect 2 non-DEAD nodes, wrapping around if necessary
+        while len(replica_list) < 2:
+            node = sorted_nodes[i % list_length]  # Wrap around using modulo
+            if node.get('status') != 'DEAD':  # Only add nodes not marked as DEAD
+                replica_list.append(node)
+            i += 1
 
         if affected_node_index is not None:
             # Get the two predecessors and one successor based on the index
-            first_predecessor = sorted_nodes[(affected_node_index - 2) % len(sorted_nodes)]
-            second_predecessor = sorted_nodes[(affected_node_index - 1) % len(sorted_nodes)]
-            first_successor = sorted_nodes[(affected_node_index + 1) % len(sorted_nodes)]
+            
 
             # Check if self.ring_id matches any of these roles
-            is_first_predecessor = self.ring_id == first_predecessor['ring_id']
-            is_second_predecessor = self.ring_id == second_predecessor['ring_id']
-            is_first_successor = self.ring_id == first_successor['ring_id']
+            is_first_predecessor = self.node_id == first_predecessor['node_id']
+            is_second_predecessor = self.node_id == second_predecessor['node_id']
+            is_first_successor = self.node_id == first_successor['node_id']
 
 
             for filename in os.listdir(self.fs_directory):
@@ -295,7 +328,7 @@ class RingNode:
                         if is_first_predecessor or is_second_predecessor:
                             #send file to next 2 replicas
                             self.log(f"I am a predecessor of {change_type} node {affected_node['node_id']} with ring_id {affected_node['ring_id']}")
-                            for replica in (next_replica, next_next_replica):
+                            for replica in replica_list:
                             
                                 node_id = replica["node_id"]
                 
