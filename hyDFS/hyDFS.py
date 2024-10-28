@@ -168,7 +168,7 @@ class RingNode:
                         s.sendall(self.data_buffer[s])
                         self.log(f"Sent data_buffer message {self.data_buffer[s]}")
                         self.data_buffer[s] = b""
-                        # self.outputs.remove(s)
+                        self.outputs.remove(s)
                     except Exception as e:
                         self.log(f"Error sending data: {e}")
                         self.outputs.remove(s)
@@ -458,9 +458,9 @@ class RingNode:
         try:
             # Send ack message using msgpack for serialization
             client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
-            self.log(f"Acknowledgment sent to client for existing file '{filename}'.")
+            self.log(f"Acknowledgment sent to client '{filename}'.")
         except (BlockingIOError, socket.error) as e:
-            self.log(f"Failed to send acknowledgment for existing file '{filename}' - {e}")
+            self.log(f"Failed to send acknowledgment '{filename}' - {e}")
 
 
 
