@@ -119,6 +119,7 @@ class RingNode:
         while not self.shutdown_flag.is_set():
             readable, writable, exceptional = select.select(self.inputs, self.outputs, self.inputs, 5)
 
+        
             # Handle readable sockets
             for s in readable:
                 if s is self.server_socket:
@@ -127,7 +128,8 @@ class RingNode:
                     client_socket.setblocking(False)
                     self.inputs.append(client_socket)
                     self.data_buffer[client_socket] = b""
-                    self.log(f"Connection from {client_address}")
+                    # self.log(f"Connection from {client_address}")
+                    self.log(f"Connection from {socket.gethostbyaddr(client_address[0])}")
                 else:
                     # Read data from an existing client
                     data = s.recv(4096)
@@ -238,8 +240,8 @@ class RingNode:
 
             if previous_membership_list != current_membership_list:
                 self.log(f"Membership lists are not equal")
-                self.log(f"previous list\n{previous_membership_list}")
-                self.log(f"current list\n{current_membership_list}")
+                # self.log(f"previous list\n{previous_membership_list}")
+                # self.log(f"current list\n{current_membership_list}")
                 for current_node in current_membership_list:
                     if not any(previous_node['node_id'] == current_node['node_id']
                             for previous_node in previous_membership_list):
@@ -252,7 +254,10 @@ class RingNode:
                             for previous_node in previous_membership_list):
                         # Node status changed to DEAD
                         self.log(f"Hydfs node marked as DEAD: {current_node}")
-                        self.handle_node_change(current_node, "dead")
+                        try:
+                            self.handle_node_change(current_node, "dead")
+                        except Exception as e:
+                            self.log(f"Exception caught in thread: {e}")
 
                 previous_membership_list = copy.deepcopy(current_membership_list)
             self.log("No change in membership list")
@@ -292,7 +297,7 @@ class RingNode:
         first_predecessor = predecessors[0]
         second_predecessor = predecessors[1]
         first_successor = succesor[0]
-
+        self.log(f"{change_type.capitalize()} node {affected_node['node_id']} - 1st predecessor: {first_predecessor['node_id']}, 2nd predecessor: {second_predecessor['node_id']}, 1st successor: {first_successor['node_id']}")
 
         curr_index = next((i for i, node in enumerate(sorted_nodes) if node['node_id'] == self.process.node_id), None)
         
@@ -305,6 +310,7 @@ class RingNode:
             node = sorted_nodes[i % list_length]  # Wrap around using modulo
             if node.get('status') != 'DEAD':  # Only add nodes not marked as DEAD
                 replica_list.append(node)
+                self.log(f"Added {node['node_id']} to replica list")
             i += 1
 
         if affected_node_index is not None:
@@ -312,16 +318,17 @@ class RingNode:
             
 
             # Check if self.ring_id matches any of these roles
-            is_first_predecessor = self.node_id == first_predecessor['node_id']
-            is_second_predecessor = self.node_id == second_predecessor['node_id']
-            is_first_successor = self.node_id == first_successor['node_id']
+            is_first_predecessor = self.process.node_id == first_predecessor['node_id']
+            is_second_predecessor = self.process.node_id == second_predecessor['node_id']
+            is_first_successor = self.process.node_id == first_successor['node_id']
 
 
             for filename in os.listdir(self.fs_directory):
                 file_path = os.path.join(self.fs_directory, filename)
                 file_hash = self.hash_string(filename)
                 primary_replica_list = self.get_next_n_nodes(file_hash, 1)
-                is_primary_replica = self.process.node_id == primary_replica_list[0].node_id
+                self.log(f"Primary replica is {primary_replica_list[0]['node_id']}")
+                is_primary_replica = self.process.node_id == primary_replica_list[0]['node_id']
                 if is_primary_replica:
                     if change_type == 'dead':
                         # If node is dead then predecessor sends file to next 2 replicas
