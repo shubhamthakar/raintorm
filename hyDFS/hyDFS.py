@@ -13,7 +13,8 @@ from collections import defaultdict
 import logging
 import time
 import copy
-
+import json
+import base64
 
 class RingNode:
     def __init__(self):
@@ -53,6 +54,9 @@ class RingNode:
         # Ack Tracking
         # key: client_name, file_name, action
         self.acktracker = defaultdict(lambda: 0)
+
+        # Initialize the sequence number tracker
+        self.sequence_numbers = defaultdict(int)
 
         # Quorum
         self.quorum_size = 3
@@ -210,6 +214,12 @@ class RingNode:
 
         elif action == "read":
             self.read_file(file_info, client_socket)
+        
+        elif action == "append":
+            self.append_file(file_info, client_socket)
+        
+        elif action == "add":
+            self.add_file(file_info, client_socket)
         
         elif action == "ack":
             self.acknowledge(file_info, client_socket)
@@ -435,6 +445,37 @@ class RingNode:
 
             self.send_request(host, port, file_info_get)
 
+    
+
+    def append_file(self, file_info, client_socket):
+        # Step 1: Get all replicas for the specified filename
+        all_replicas = self.get_all_replicas(file_info["filename"])
+
+        # Step 2: Parse each node_id to get hostname and port
+        for replica in all_replicas:
+            node_id = replica["node_id"]
+
+            # Extract hostname and port using regex
+            match = re.match(r"^(.*?)_(\d+)_.*$", node_id)
+            if not match:
+                self.log(f"Error parsing node_id {node_id}")
+                continue
+
+            host = match.group(1)
+            port = self.hydfs_host_port
+
+            # Format append request
+            file_info_append = {
+                "client_name": file_info["client_name"],
+                "action": "add",
+                "filename": file_info["filename"],
+                "content": file_info["content"]
+            }
+
+            # Step 3: Send an append request to each replica
+            self.send_request(host, port, file_info_append)
+
+
 
     def write_file_replica(self, file_info, client_socket):
         filename = file_info["filename"]
@@ -509,28 +550,54 @@ class RingNode:
 
 
     def read_file(self, file_info, client_socket):
+        client_name = file_info["client_name"]
         filename = file_info["filename"]
 
         # Construct the full file path
         file_path = os.path.join(self.fs_directory, filename)
-
+        
         # Prepare acknowledgment message for the response
         ack_message = {
-            "client_name": file_info["client_name"],
+            "client_name": client_name,
             "action": "ack",
             "filename": filename,
         }
 
         # Check if the file exists
         if os.path.exists(file_path):
-            # Read the file content
+            # Read the main file content
             with open(file_path, "rb") as file:
                 file_content = file.read()
 
-            # Add the content and status to the ack message
+            
+            file_content = file_content.decode("utf-8")
+
+            # Define the path of the append log file
+            log_filename = f"{client_name}--{filename}.log"
+            log_file_path = os.path.join(self.fs_directory, log_filename)
+
+            # If the append log file exists, read and append its contents
+            if os.path.exists(log_file_path):
+                with open(log_file_path, "r") as log_file:
+                    for line in log_file:
+                        try:
+                            # Parse each line as JSON
+                            log_entry = json.loads(line.strip())
+                            
+                            # Check if log entry matches the client name and filename
+                            if (log_entry.get("client_name") == client_name and
+                                log_entry.get("filename") == filename):
+                                
+                                # Decode the base64 content and append to file content
+                                log_content = log_entry["content"]
+                                file_content += log_content + "\n"
+                        except json.JSONDecodeError:
+                            self.log(f"Error decoding log entry in {log_filename}")
+            
+            # Add the combined content and status to the ack message
             ack_message["status"] = "read_complete"
             ack_message["content"] = file_content
-            self.log(f"File '{filename}' read successfully and content prepared for sending.")
+            self.log(f"File '{filename}' and append log '{log_filename}' read successfully.")
         
         else:
             # If file does not exist, update the ack message with an error
@@ -543,6 +610,83 @@ class RingNode:
             self.log(f"Acknowledgment sent to client with status '{ack_message['status']}' for file '{filename}'.")
         except (BlockingIOError, socket.error) as e:
             self.log(f"Failed to send acknowledgment for file '{filename}' - {e}")
+
+
+
+
+    def add_file(self, file_info, client_socket):
+        # Extract client name and filename from the file_info
+        client_name = file_info["client_name"]
+        filename = file_info["filename"]
+        
+        # Define basepath of the file
+        base_file_path = os.path.join(self.fs_directory, filename)
+
+        # Define the append log file path
+        append_log_filename = f"{client_name}--{filename}.log"
+        append_log_filepath = os.path.join(self.fs_directory, append_log_filename)
+        
+
+        # Check if the file on which the append is requested exists in the filesystem
+        if not os.path.exists(base_file_path):
+            error_message = {
+                "client_name": client_name,
+                "action": "ack",
+                "filename": filename,
+                "status": "file_not_found",
+                "message": f"Error: File '{filename}' does not exist in the filesystem."
+            }
+            
+            # Send error message back to the client
+            try:
+                client_socket.sendall(msgpack.packb(error_message) + b"<EOF>")
+                self.log(f"Error message sent to client '{client_name}' - File '{filename}' does not exist.")
+            except (BlockingIOError, socket.error) as e:
+                self.log(f"Failed to send error message for file '{filename}' - {e}")
+            
+            return  # Exit the function since the file does not exist
+
+        # Increment the sequence number for each append action
+        if (client_name, filename) not in self.sequence_numbers:
+            self.sequence_numbers[(client_name, filename)] = 0  # Initialize if it doesn't exist
+        sequence_number = self.sequence_numbers[(client_name, filename)] + 1
+        self.sequence_numbers[(client_name, filename)] = sequence_number
+
+        # Convert the content to a base64 string for JSON serialization
+        content_str = file_info["content"].decode('utf-8')
+
+        # Create the new log entry with sequence number
+        file_info_append = {
+            "client_name": client_name,
+            "action": "append",
+            "filename": filename,
+            "content": content_str,
+            "sequence_number": sequence_number
+        }
+
+        # Write the new entry to the JSON file in append mode
+        with open(append_log_filepath, 'a') as json_file:
+            json_file.write(json.dumps(file_info_append) + '\n')
+
+        self.log(f"Append action added to '{append_log_filename}' with sequence number {sequence_number}.")
+
+        # Send acknowledgment back to the client
+        ack_message = {
+            "client_name": client_name,
+            "action": "ack",
+            "filename": filename,
+            "status": "append_logged",
+            "sequence_number": sequence_number
+        }
+
+        try:
+            # Send the ack message to the client
+            client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
+            self.log(f"Acknowledgment sent to client '{client_name}' for file '{filename}'.")
+        except (BlockingIOError, socket.error) as e:
+            self.log(f"Failed to send acknowledgment for file '{filename}' - {e}")
+
+
 
 
     def ack_from_replica(self, file_info, s):

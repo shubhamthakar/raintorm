@@ -3,14 +3,17 @@ import os
 import msgpack
 
 class FileClient:
-    def __init__(self, server_ip, server_port, client_name, action, file_name=None, file_path=None):
+    def __init__(self, server_ip, server_port, client_name, action, file_name=None, file_path=None, append_file_name=None, append_file_path=None):
         self.server_ip = server_ip
         self.server_port = server_port
         self.client_name = client_name
         self.action = action
         self.file_name = file_name
         self.file_path = file_path
+        self.append_file_name = append_file_name
+        self.append_file_path = append_file_path
         self.client_socket = None
+        
 
     def connect(self):
         """Establishes a connection to the server."""
@@ -32,7 +35,7 @@ class FileClient:
         }
 
         # For "create" action, add file size and content if file_path is provided
-        if (self.action == "create" or self.action == "append") and self.file_path:
+        if (self.action == "create" ) and self.file_path:
             if os.path.exists(self.file_path):
                 message["filesize"] = os.path.getsize(self.file_path)
                 with open(self.file_path, 'rb') as file:
@@ -40,6 +43,15 @@ class FileClient:
             else:
                 print(f"Error: File at {self.file_path} does not exist.")
                 return None
+        elif (self.action == "append") and self.append_file_path:
+            if os.path.exists(self.file_path):
+                message["filesize"] = os.path.getsize(self.append_file_path)
+                with open(self.append_file_path, 'rb') as file:
+                    message["content"] = file.read()
+            else:
+                print(f"Error: File at {self.file_path} does not exist.")
+                return None
+
         elif self.action == "get":
         # No additional data needed for "get" action
             pass
@@ -92,7 +104,7 @@ if __name__ == "__main__":
     import sys
 
     if len(sys.argv) < 7:
-        print("Usage: python client.py <server_ip> <server_port> <client_name> <action> <file_name> <file_path>")
+        print("Usage: python client.py <server_ip> <server_port> <client_name> <action> <file_name> <file_path> <append_file_name>")
         sys.exit(1)
 
     # Command-line arguments
@@ -102,7 +114,10 @@ if __name__ == "__main__":
     action = sys.argv[4]
     file_name = sys.argv[5]
     file_path = sys.argv[6] if len(sys.argv) > 6 else None
+    append_file_name = sys.argv[7] if len(sys.argv) > 7 else None
+    append_file_path = sys.argv[8] if len(sys.argv) > 8 else None
+
 
     # Initialize and perform action
-    client = FileClient(server_ip, server_port, client_name, action, file_name, file_path)
+    client = FileClient(server_ip, server_port, client_name, action, file_name, file_path, append_file_name, append_file_path)
     client.perform_action()
