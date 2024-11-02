@@ -229,10 +229,25 @@ class RingNode:
 
         elif action == "ack_replica":
             self.ack_from_replica(file_info, client_socket)
+
+        elif action == "ls":
+            self.ls_filename(file_info, client_socket)
         
         else:
             self.log(f"Unknown action: {action}")
 
+    def ls_filename(self, file_info, client_socket):
+        filename = file_info["filename"]
+        file_path = os.path.join(self.fs_directory, filename)
+        is_present = os.path.exists(file_path)
+        response = {"filename": filename, "is_present": is_present}
+
+        try:
+            # Send the ack message using msgpack for serialization
+            client_socket.sendall(msgpack.packb(response) + b"<EOF>")
+            self.log(f"ls reply sent to client for file '{filename}'.")
+        except (BlockingIOError, socket.error) as e:
+            self.log(f"Failed to send ls reply for file '{filename}' - {e}")
 
     def monitor_membership_list(self):
         """
@@ -342,9 +357,9 @@ class RingNode:
                 if is_primary_replica:
                     if change_type == 'dead':
                         # If node is dead then predecessor sends file to next 2 replicas
-                        if is_first_predecessor or is_second_predecessor:
+                        if is_first_predecessor or is_second_predecessor or first_successor:
                             #send file to next 2 replicas
-                            self.log(f"I am a predecessor of {change_type} node {affected_node['node_id']} with ring_id {affected_node['ring_id']}")
+                            self.log(f"I am a predecessor/succesor of {change_type} node {affected_node['node_id']} with ring_id {affected_node['ring_id']}")
                             for replica in replica_list:
                             
                                 node_id = replica["node_id"]
@@ -369,10 +384,10 @@ class RingNode:
 
                                 # Step 3: Send a create request to each replica
                                 self.send_request(host, port, file_info_write_replica)
-                        elif first_successor:
-                            self.log(f"I am the 1st successor of {change_type} node {affected_node['node_id']} with ring_id {affected_node['ring_id']}")
-                            # Node dead first sucessor, sends file hashing to itself
-                            pass
+                        # elif first_successor:
+                        #     self.log(f"I am the 1st successor of {change_type} node {affected_node['node_id']} with ring_id {affected_node['ring_id']}")
+                        #     # Node dead first sucessor, sends file hashing to itself
+                        #     pass
                     elif change_type == 'joined':
                         if is_first_predecessor or is_second_predecessor:
                             self.log(f"I am a predecessor of {change_type} node {affected_node['node_id']} with ring_id {affected_node['ring_id']}")
@@ -384,7 +399,7 @@ class RingNode:
                             # New node, sucessor finds files that hash to new node and sends them
                             
             # Log predecessors and successor for reference
-            self.log(f"{change_type.capitalize()} node {affected_node['node_id']} - 1st predecessor: {first_predecessor}, 2nd predecessor: {second_predecessor}, 1st successor: {first_successor}")
+            #self.log(f"{change_type.capitalize()} node {affected_node['node_id']} - 1st predecessor: {first_predecessor}, 2nd predecessor: {second_predecessor}, 1st successor: {first_successor}")
 
 
 

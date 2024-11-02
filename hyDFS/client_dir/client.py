@@ -97,6 +97,9 @@ class FileClient:
                 response = self.receive_response()
                 if response:
                     print("Server response:", response)
+                    if response["status"] == 'read_complete':
+                        with open(response["filename"], 'w') as file:
+                            file.write(response["content"])
             self.close()
 
 
