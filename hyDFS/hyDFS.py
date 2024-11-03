@@ -356,8 +356,11 @@ class RingNode:
 
 
             for filename in os.listdir(self.fs_directory):
+                actual_file_name = filename
+                if '.log' in filename:
+                    actual_file_name = filename.split('--')[1].replace('.log', '')
                 file_path = os.path.join(self.fs_directory, filename)
-                file_hash = self.hash_string(filename)
+                file_hash = self.hash_string(actual_file_name)
                 primary_replica_list = self.get_next_n_nodes(file_hash, 1)
                 self.log(f"Primary replica is {primary_replica_list[0]['node_id']}")
                 is_primary_replica = self.process.node_id == primary_replica_list[0]['node_id']
