@@ -57,7 +57,7 @@ def request_membership_list(process_ip, process_port):
             client_socket.settimeout(5)
             data, addr = client_socket.recvfrom(2048)
             response = msgpack.unpackb(data)
-
+            response['data'].sort(key = lambda x: x['ring_id'])
             # Print the membership list in a formatted way as soon as it is received
             print(f"\nMembership list for node {process_ip}:{process_port}:")
             print(f"{'Ring ID':<10}{'Node ID':<40}{'Status':<10}{'Incarnation Number':<10}")

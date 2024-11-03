@@ -19,6 +19,7 @@ def check_file_on_server(hostname, port, filename):
             s.sendall(request_data)
             
             # Receive the response
+            # print(hostname)
             response = b""
             while True:
                 chunk = s.recv(1024)
