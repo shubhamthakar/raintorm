@@ -1,146 +1,120 @@
-2024-11-03 16:04:12,541 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
-2024-11-03 16:04:12,542 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/business_1.txt
-2024-11-03 16:04:12,542 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/business_4.txt
-2024-11-03 16:04:12,543 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
-2024-11-03 16:04:12,544 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
-2024-11-03 16:04:12,547 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
-2024-11-03 16:04:12,548 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
-2024-11-03 16:04:12,550 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730671452', 'status': 'LIVE', 'inc_num': 0}]
-2024-11-03 16:04:32,568 - Monitoring membership list started
-2024-11-03 16:04:34,576 - No change in membership list
-2024-11-03 16:04:36,584 - No change in membership list
-2024-11-03 16:04:38,592 - No change in membership list
-2024-11-03 16:04:40,600 - No change in membership list
-2024-11-03 16:04:42,612 - No change in membership list
-2024-11-03 16:04:44,624 - No change in membership list
-2024-11-03 16:04:46,632 - No change in membership list
-2024-11-03 16:04:48,640 - No change in membership list
-2024-11-03 16:04:50,648 - No change in membership list
-2024-11-03 16:04:52,656 - No change in membership list
-2024-11-03 16:04:54,664 - No change in membership list
-2024-11-03 16:04:56,671 - No change in membership list
-2024-11-03 16:04:58,678 - No change in membership list
-2024-11-03 16:05:00,685 - No change in membership list
-2024-11-03 16:05:02,693 - No change in membership list
-2024-11-03 16:05:04,701 - No change in membership list
-2024-11-03 16:05:06,709 - No change in membership list
-2024-11-03 16:05:08,716 - No change in membership list
-2024-11-03 16:05:10,723 - No change in membership list
-2024-11-03 16:05:12,731 - No change in membership list
-2024-11-03 16:05:14,739 - No change in membership list
-2024-11-03 16:05:16,746 - No change in membership list
-2024-11-03 16:05:18,754 - No change in membership list
-2024-11-03 16:05:20,761 - No change in membership list
-2024-11-03 16:05:22,769 - No change in membership list
-2024-11-03 16:05:24,777 - No change in membership list
-2024-11-03 16:05:26,784 - No change in membership list
-2024-11-03 16:05:28,792 - No change in membership list
-2024-11-03 16:05:30,799 - No change in membership list
-2024-11-03 16:05:32,806 - No change in membership list
-2024-11-03 16:05:34,813 - No change in membership list
-2024-11-03 16:05:36,821 - No change in membership list
-2024-11-03 16:05:38,828 - No change in membership list
-2024-11-03 16:05:40,836 - No change in membership list
-2024-11-03 16:05:42,844 - No change in membership list
-2024-11-03 16:05:44,852 - No change in membership list
-2024-11-03 16:05:46,859 - No change in membership list
-2024-11-03 16:05:48,867 - No change in membership list
-2024-11-03 16:05:50,874 - No change in membership list
-2024-11-03 16:05:52,882 - No change in membership list
-2024-11-03 16:05:54,889 - No change in membership list
-2024-11-03 16:05:56,897 - No change in membership list
-2024-11-03 16:05:58,904 - No change in membership list
-2024-11-03 16:06:00,911 - No change in membership list
-2024-11-03 16:06:02,919 - No change in membership list
-2024-11-03 16:06:04,926 - No change in membership list
-2024-11-03 16:06:06,938 - No change in membership list
-2024-11-03 16:06:08,946 - No change in membership list
-2024-11-03 16:06:10,953 - No change in membership list
-2024-11-03 16:06:12,961 - No change in membership list
-2024-11-03 16:06:14,968 - No change in membership list
-2024-11-03 16:06:16,976 - No change in membership list
-2024-11-03 16:06:18,983 - No change in membership list
-2024-11-03 16:06:20,991 - No change in membership list
-2024-11-03 16:06:22,998 - No change in membership list
-2024-11-03 16:06:25,005 - No change in membership list
-2024-11-03 16:06:27,012 - No change in membership list
-2024-11-03 16:06:29,020 - No change in membership list
-2024-11-03 16:06:31,028 - No change in membership list
-2024-11-03 16:06:33,035 - No change in membership list
-2024-11-03 16:06:35,042 - No change in membership list
-2024-11-03 16:06:37,050 - No change in membership list
-2024-11-03 16:06:39,057 - No change in membership list
-2024-11-03 16:06:41,064 - No change in membership list
-2024-11-03 16:06:43,072 - No change in membership list
-2024-11-03 16:06:45,079 - No change in membership list
-2024-11-03 16:06:47,087 - No change in membership list
-2024-11-03 16:06:49,095 - No change in membership list
-2024-11-03 16:06:51,102 - No change in membership list
-2024-11-03 16:06:53,110 - No change in membership list
-2024-11-03 16:06:55,118 - No change in membership list
-2024-11-03 16:06:57,125 - No change in membership list
-2024-11-03 16:06:59,133 - No change in membership list
-2024-11-03 16:07:01,140 - No change in membership list
-2024-11-03 16:07:03,148 - No change in membership list
-2024-11-03 16:07:05,156 - No change in membership list
-2024-11-03 16:07:07,164 - No change in membership list
-2024-11-03 16:07:09,172 - No change in membership list
-2024-11-03 16:07:11,179 - No change in membership list
-2024-11-03 16:07:13,187 - No change in membership list
-2024-11-03 16:07:15,194 - No change in membership list
-2024-11-03 16:07:17,202 - No change in membership list
-2024-11-03 16:07:19,209 - No change in membership list
-2024-11-03 16:07:21,216 - No change in membership list
-2024-11-03 16:07:23,224 - No change in membership list
-2024-11-03 16:07:25,231 - No change in membership list
-2024-11-03 16:07:27,238 - No change in membership list
-2024-11-03 16:07:29,246 - No change in membership list
-2024-11-03 16:07:31,253 - No change in membership list
-2024-11-03 16:07:33,261 - No change in membership list
-2024-11-03 16:07:35,270 - No change in membership list
-2024-11-03 16:07:37,278 - No change in membership list
-2024-11-03 16:07:39,285 - No change in membership list
-2024-11-03 16:07:41,293 - No change in membership list
-2024-11-03 16:07:43,300 - No change in membership list
-2024-11-03 16:07:45,308 - No change in membership list
-2024-11-03 16:07:47,316 - No change in membership list
-2024-11-03 16:07:49,323 - No change in membership list
-2024-11-03 16:07:50,864 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 16:07:50,865 - Next 3 nodes after 715: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730671452', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730671452', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730671452', 'ring_id': 715}]
-2024-11-03 16:07:50,865 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-11-03 16:07:50,871 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-11-03 16:07:50,877 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-11-03 16:07:50,889 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 16:07:50,889 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
-2024-11-03 16:07:50,890 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
-2024-11-03 16:07:50,890 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
-2024-11-03 16:07:50,896 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 16:07:50,896 - File 'file_1194.txt' written successfully.
-2024-11-03 16:07:50,897 - Acknowledgment sent to client 'file_1194.txt'.
-2024-11-03 16:07:50,904 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 16:07:50,904 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'write_complete'}
-2024-11-03 16:07:50,904 - Quorum not yet met, received ack from 1 replicas
-2024-11-03 16:07:50,905 - File 'file_1194.txt' already exists. Not writing to it.
-2024-11-03 16:07:50,905 - Acknowledgment sent to client 'file_1194.txt'.
-2024-11-03 16:07:50,905 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
-2024-11-03 16:07:50,906 - Quorum not yet met, received ack from 2 replicas
-2024-11-03 16:07:50,906 - File 'file_1194.txt' already exists. Not writing to it.
-2024-11-03 16:07:50,906 - Acknowledgment sent to client 'file_1194.txt'.
-2024-11-03 16:07:50,906 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
-2024-11-03 16:07:50,907 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 42842)>
-2024-11-03 16:07:50,907 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
-2024-11-03 16:07:50,909 - Acknowledgment sent to client1 for file 'file_1194.txt'.
-2024-11-03 16:07:50,912 - Client disconnected
-2024-11-03 16:07:51,331 - No change in membership list
-2024-11-03 16:07:53,338 - No change in membership list
-2024-11-03 16:07:55,346 - No change in membership list
-2024-11-03 16:07:57,354 - No change in membership list
-2024-11-03 16:07:59,361 - No change in membership list
-2024-11-03 16:08:01,369 - No change in membership list
-2024-11-03 16:08:03,376 - No change in membership list
-2024-11-03 16:08:05,383 - No change in membership list
-2024-11-03 16:08:07,396 - No change in membership list
-2024-11-03 16:08:09,404 - No change in membership list
-2024-11-03 16:08:11,412 - No change in membership list
-2024-11-03 16:08:13,420 - No change in membership list
-2024-11-03 16:08:15,427 - No change in membership list
+2024-11-03 16:55:23,888 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-11-03 16:55:23,889 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/file_1194.txt
+2024-11-03 16:55:23,890 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/client1--file_1194.txt.log
+2024-11-03 16:55:23,890 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-11-03 16:55:23,891 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-11-03 16:55:23,894 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-11-03 16:55:23,895 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-11-03 16:55:23,896 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730674523', 'status': 'LIVE', 'inc_num': 0}]
+2024-11-03 16:55:26,336 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-03 16:55:26,337 - Next 3 nodes after 715: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730674523', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730674523', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730674523', 'ring_id': 715}]
+2024-11-03 16:55:26,338 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
+2024-11-03 16:55:26,339 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
+2024-11-03 16:55:26,339 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
+2024-11-03 16:55:26,340 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-03 16:55:26,341 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
+2024-11-03 16:55:26,341 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
+2024-11-03 16:55:26,341 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
+2024-11-03 16:55:26,342 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-03 16:55:26,342 - File 'file_1194.txt' written successfully.
+2024-11-03 16:55:26,343 - Acknowledgment sent to client 'file_1194.txt'.
+2024-11-03 16:55:26,343 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-03 16:55:26,343 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'write_complete'}
+2024-11-03 16:55:26,344 - Quorum not yet met, received ack from 1 replicas
+2024-11-03 16:55:26,344 - File 'file_1194.txt' already exists. Not writing to it.
+2024-11-03 16:55:26,344 - Acknowledgment sent to client 'file_1194.txt'.
+2024-11-03 16:55:26,344 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
+2024-11-03 16:55:26,344 - Quorum not yet met, received ack from 2 replicas
+2024-11-03 16:55:26,345 - File 'file_1194.txt' already exists. Not writing to it.
+2024-11-03 16:55:26,345 - Acknowledgment sent to client 'file_1194.txt'.
+2024-11-03 16:55:26,345 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
+2024-11-03 16:55:26,345 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 48402)>
+2024-11-03 16:55:26,346 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
+2024-11-03 16:55:26,346 - Acknowledgment sent to client1 for file 'file_1194.txt'.
+2024-11-03 16:55:26,347 - Client disconnected
+2024-11-03 16:55:31,588 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-03 16:55:31,589 - File 'file_1194.txt' and append log 'client1--file_1194.txt.log' read successfully.
+2024-11-03 16:55:31,589 - Acknowledgment sent to client with status 'read_complete' for file 'file_1194.txt'.
+2024-11-03 16:55:31,590 - Client disconnected
+2024-11-03 16:55:33,790 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-03 16:55:33,790 - Next 3 nodes after 715: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730674523', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730674523', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730674523', 'ring_id': 715}]
+2024-11-03 16:55:33,791 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
+2024-11-03 16:55:33,791 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
+2024-11-03 16:55:33,792 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
+2024-11-03 16:55:33,793 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-03 16:55:33,793 - Sent data_buffer message b"\x84\xabclient_name\xa7client1\xa6action\xa3add\xa8filename\xadfile_1194.txt\xa7content\xc41This append is from the client1's local directory<EOF>"
+2024-11-03 16:55:33,794 - Sent data_buffer message b"\x84\xabclient_name\xa7client1\xa6action\xa3add\xa8filename\xadfile_1194.txt\xa7content\xc41This append is from the client1's local directory<EOF>"
+2024-11-03 16:55:33,794 - Sent data_buffer message b"\x84\xabclient_name\xa7client1\xa6action\xa3add\xa8filename\xadfile_1194.txt\xa7content\xc41This append is from the client1's local directory<EOF>"
+2024-11-03 16:55:33,795 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-03 16:55:33,795 - Append action added to 'client1--file_1194.txt.log' with sequence number 1.
+2024-11-03 16:55:33,795 - Acknowledgment sent to client 'client1' for file 'file_1194.txt'.
+2024-11-03 16:55:33,796 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-03 16:55:33,796 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'append_logged', 'sequence_number': 1}
+2024-11-03 16:55:33,797 - Quorum not yet met, received ack from 1 replicas
+2024-11-03 16:55:33,797 - Append action added to 'client1--file_1194.txt.log' with sequence number 2.
+2024-11-03 16:55:33,797 - Acknowledgment sent to client 'client1' for file 'file_1194.txt'.
+2024-11-03 16:55:33,798 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'append_logged', 'sequence_number': 2}
+2024-11-03 16:55:33,798 - Quorum not yet met, received ack from 2 replicas
+2024-11-03 16:55:33,798 - Append action added to 'client1--file_1194.txt.log' with sequence number 3.
+2024-11-03 16:55:33,799 - Acknowledgment sent to client 'client1' for file 'file_1194.txt'.
+2024-11-03 16:55:33,799 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'append_logged', 'sequence_number': 3}
+2024-11-03 16:55:33,800 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 53908)>
+2024-11-03 16:55:33,800 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'append_logged', 'sequence_number': 3}
+2024-11-03 16:55:33,802 - Acknowledgment sent to client1 for file 'file_1194.txt'.
+2024-11-03 16:55:33,802 - Client disconnected
+2024-11-03 16:55:36,576 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-03 16:55:36,577 - File 'file_1194.txt' and append log 'client1--file_1194.txt.log' read successfully.
+2024-11-03 16:55:36,577 - Acknowledgment sent to client with status 'read_complete' for file 'file_1194.txt'.
+2024-11-03 16:55:36,578 - Client disconnected
+2024-11-03 16:55:40,158 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-03 16:55:40,159 - Next 3 nodes after 715: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730674523', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730674523', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730674523', 'ring_id': 715}]
+2024-11-03 16:55:40,159 - Sending combine to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
+2024-11-03 16:55:40,160 - Sending combine to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
+2024-11-03 16:55:40,161 - Sending combine to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
+2024-11-03 16:55:40,162 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-03 16:55:40,163 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa7combine\xa8filename\xadfile_1194.txt<EOF>'
+2024-11-03 16:55:40,163 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa7combine\xa8filename\xadfile_1194.txt<EOF>'
+2024-11-03 16:55:40,163 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa7combine\xa8filename\xadfile_1194.txt<EOF>'
+2024-11-03 16:55:40,164 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-03 16:55:40,164 - File Exists, starting merge of file_1194.txt
+2024-11-03 16:55:40,164 - Collected log file for merge of file_1194.txt: ['client1--file_1194.txt.log']
+2024-11-03 16:55:40,165 - Deleted log file 'client1--file_1194.txt.log' after merging.
+2024-11-03 16:55:40,165 - File 'file_1194.txt' overwritten with combined content.
+2024-11-03 16:55:40,165 - File 'file_1194.txt' and associated logs combined successfully.
+2024-11-03 16:55:40,166 - Acknowledgment sent to client with status 'merge_complete' for file 'file_1194.txt'.
+2024-11-03 16:55:40,167 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-03 16:55:40,167 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'merge_complete'}
+2024-11-03 16:55:40,167 - Quorum not yet met, received ack from 1 replicas
+2024-11-03 16:55:40,167 - File Exists, starting merge of file_1194.txt
+2024-11-03 16:55:40,168 - Collected log file for merge of file_1194.txt: []
+2024-11-03 16:55:40,168 - File 'file_1194.txt' overwritten with combined content.
+2024-11-03 16:55:40,169 - File 'file_1194.txt' and associated logs combined successfully.
+2024-11-03 16:55:40,169 - Acknowledgment sent to client with status 'merge_complete' for file 'file_1194.txt'.
+2024-11-03 16:55:40,169 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'merge_complete'}
+2024-11-03 16:55:40,169 - Quorum not yet met, received ack from 2 replicas
+2024-11-03 16:55:40,170 - File Exists, starting merge of file_1194.txt
+2024-11-03 16:55:40,170 - Collected log file for merge of file_1194.txt: []
+2024-11-03 16:55:40,170 - File 'file_1194.txt' overwritten with combined content.
+2024-11-03 16:55:40,171 - File 'file_1194.txt' and associated logs combined successfully.
+2024-11-03 16:55:40,171 - Acknowledgment sent to client with status 'merge_complete' for file 'file_1194.txt'.
+2024-11-03 16:55:40,171 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'merge_complete'}
+2024-11-03 16:55:40,172 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 33202)>
+2024-11-03 16:55:40,172 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'merge_complete'}
+2024-11-03 16:55:40,176 - Acknowledgment sent to client1 for file 'file_1194.txt'.
+2024-11-03 16:55:40,176 - Client disconnected
+2024-11-03 16:55:43,912 - Monitoring membership list started
+2024-11-03 16:55:45,920 - No change in membership list
+2024-11-03 16:55:47,927 - No change in membership list
+2024-11-03 16:55:49,934 - No change in membership list
+2024-11-03 16:55:51,941 - No change in membership list
+2024-11-03 16:55:53,949 - No change in membership list
+2024-11-03 16:55:55,956 - No change in membership list
+2024-11-03 16:55:57,963 - No change in membership list
+2024-11-03 16:55:59,070 - Shutting down HyDFS...
+2024-11-03 16:55:59,071 - Listener thread is still running; proceeding to join...
+2024-11-03 16:55:59,971 - No change in membership list
+2024-11-03 16:56:00,216 - Listener thread joined successfully.
+2024-11-03 16:56:00,217 - Membership thread is not running, skipping join.
+2024-11-03 16:56:00,217 - Shutting down...
+2024-11-03 16:56:01,017 - Node shut down gracefully.
+2024-11-03 16:56:01,018 - HyDFS Node shut down gracefully.

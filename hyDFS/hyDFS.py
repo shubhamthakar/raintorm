@@ -221,6 +221,12 @@ class RingNode:
         elif action == "add":
             self.add_file(file_info, client_socket)
         
+        elif action == "merge":
+            self.merge_file(file_info, client_socket)
+        
+        elif action == "combine":
+            self.combine_file(file_info, client_socket)
+        
         elif action == "ack":
             self.acknowledge(file_info, client_socket)
 
@@ -491,6 +497,34 @@ class RingNode:
             # Step 3: Send an append request to each replica
             self.send_request(host, port, file_info_append)
 
+    
+    def merge_file(self, file_info, client_socket):
+        # Step 1: Get all replicas for the specified filename
+        all_replicas = self.get_all_replicas(file_info["filename"])
+
+        # Step 2: Parse each node_id to get hostname and port
+        for replica in all_replicas:
+            node_id = replica["node_id"]
+
+            # Extract hostname and port using regex
+            match = re.match(r"^(.*?)_(\d+)_.*$", node_id)
+            if not match:
+                self.log(f"Error parsing node_id {node_id}")
+                continue
+
+            host = match.group(1)
+            port = self.hydfs_host_port
+
+            # Format append request
+            file_info_append = {
+                "client_name": file_info["client_name"],
+                "action": "combine",
+                "filename": file_info["filename"]
+            }
+
+            # Step 3: Send an append request to each replica
+            self.send_request(host, port, file_info_append)
+
 
 
     def write_file_replica(self, file_info, client_socket):
@@ -606,7 +640,7 @@ class RingNode:
                                 
                                 # Decode the base64 content and append to file content
                                 log_content = log_entry["content"]
-                                file_content += log_content + "\n"
+                                file_content +=  "\n" + log_content
                         except json.JSONDecodeError:
                             self.log(f"Error decoding log entry in {log_filename}")
             
@@ -703,6 +737,82 @@ class RingNode:
             self.log(f"Failed to send acknowledgment for file '{filename}' - {e}")
 
 
+
+    def combine_file(self, file_info, client_socket):
+        client_name = file_info["client_name"]
+        filename = file_info["filename"]
+
+        # Construct the full file path
+        file_path = os.path.join(self.fs_directory, filename)
+        
+        # Prepare acknowledgment message for the response
+        ack_message = {
+            "client_name": client_name,
+            "action": "ack",
+            "filename": filename,
+        }
+
+        # Check if the main file exists
+        if os.path.exists(file_path):
+
+            self.log(f"File Exists, starting merge of {filename}")
+
+            # Read the main file content
+            with open(file_path, "rb") as file:
+                file_content = file.read().decode("utf-8")  # Decode binary to UTF-8
+
+            # Collect log files with the target filename prefix
+            log_files = [
+                log_filename for log_filename in os.listdir(self.fs_directory)
+                if log_filename.endswith(".log") and (f"--{filename}" in log_filename)
+            ]
+
+            self.log(f"Collected log file for merge of {filename}: {log_files}")
+            
+            # Sort log files lexicographically by client name (assumes client name is part of the log filename)
+            log_files.sort()
+
+            # Read and append each log file's content in the sorted order
+            for log_filename in log_files:
+                log_file_path = os.path.join(self.fs_directory, log_filename)
+                
+                # Read the contents of the log file
+                with open(log_file_path, "r") as log_file:
+                    for line in log_file:
+                        try:
+                            # Parse each line as JSON
+                            log_entry = json.loads(line.strip())
+                            # Only append content if the filename matches
+                            if log_entry.get("filename") == filename:
+                                log_content = log_entry["content"]
+                                file_content += "\n" + log_content
+                        except json.JSONDecodeError:
+                            self.log(f"Error decoding log entry in {log_filename}")
+
+                # Delete the log file after processing
+                os.remove(log_file_path)
+                self.log(f"Deleted log file '{log_filename}' after merging.")
+
+            # Overwrite the main file with the combined content
+            with open(file_path, "w", encoding="utf-8") as file:
+                file.write(file_content)
+            self.log(f"File '{filename}' overwritten with combined content.")
+
+            # Add the combined content and status to the acknowledgment message
+            ack_message["status"] = "merge_complete"
+            self.log(f"File '{filename}' and associated logs combined successfully.")
+        
+        else:
+            # If the main file does not exist, update the acknowledgment message with an error
+            ack_message["status"] = "file_not_found"
+            self.log(f"File '{filename}' not found. Cannot read.")
+
+        try:
+            # Send the acknowledgment message using msgpack for serialization
+            client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
+            self.log(f"Acknowledgment sent to client with status '{ack_message['status']}' for file '{filename}'.")
+        except (BlockingIOError, socket.error) as e:
+            self.log(f"Failed to send acknowledgment for file '{filename}' - {e}")
 
 
     def ack_from_replica(self, file_info, s):

@@ -55,6 +55,9 @@ class FileClient:
         elif self.action == "get":
         # No additional data needed for "get" action
             pass
+        
+        elif self.action == "merge":
+            pass
 
         return msgpack.packb(message) + b"<EOF>"
 
