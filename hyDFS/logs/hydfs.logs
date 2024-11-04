@@ -1,157 +1,494 @@
-2024-11-03 18:22:00,773 - Logging initialized for RingNode
-2024-11-03 18:22:00,776 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/file_1194.txt
-2024-11-03 18:22:00,777 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
-2024-11-03 18:22:04,655 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 18:22:04,656 - Next 3 nodes after 715: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730679720', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730679720', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730679720', 'ring_id': 715}]
-2024-11-03 18:22:04,657 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-11-03 18:22:04,657 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-11-03 18:22:04,658 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-11-03 18:22:04,659 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 18:22:04,659 - Sent data_buffer message b"\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc5\x01AThis file is uploaded to HyDFS\nThis append is from the client1's local directory\nThis is the second append is from the client1's local directory\nThis is the third append is from the client1's local directory\nThis is the fourth append is from the client1's local directory\nThis append is from the client2's local directory<EOF>"
-2024-11-03 18:22:04,660 - Sent data_buffer message b"\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc5\x01AThis file is uploaded to HyDFS\nThis append is from the client1's local directory\nThis is the second append is from the client1's local directory\nThis is the third append is from the client1's local directory\nThis is the fourth append is from the client1's local directory\nThis append is from the client2's local directory<EOF>"
-2024-11-03 18:22:04,660 - Sent data_buffer message b"\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc5\x01AThis file is uploaded to HyDFS\nThis append is from the client1's local directory\nThis is the second append is from the client1's local directory\nThis is the third append is from the client1's local directory\nThis is the fourth append is from the client1's local directory\nThis append is from the client2's local directory<EOF>"
-2024-11-03 18:22:04,661 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 18:22:04,661 - File 'file_1194.txt' written successfully.
-2024-11-03 18:22:04,662 - Acknowledgment sent to client 'file_1194.txt'.
-2024-11-03 18:22:04,662 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 18:22:04,663 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'write_complete'}
-2024-11-03 18:22:04,663 - Quorum not yet met, received ack from 1 replicas
-2024-11-03 18:22:04,663 - File 'file_1194.txt' already exists. Not writing to it.
-2024-11-03 18:22:04,664 - Acknowledgment sent to client 'file_1194.txt'.
-2024-11-03 18:22:04,664 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
-2024-11-03 18:22:04,664 - Quorum not yet met, received ack from 2 replicas
-2024-11-03 18:22:04,665 - File 'file_1194.txt' already exists. Not writing to it.
-2024-11-03 18:22:04,665 - Acknowledgment sent to client 'file_1194.txt'.
-2024-11-03 18:22:04,665 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
-2024-11-03 18:22:04,666 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 38216)>
-2024-11-03 18:22:04,666 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
-2024-11-03 18:22:04,666 - Acknowledgment sent to client1 for file 'file_1194.txt'.
-2024-11-03 18:22:09,390 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 18:22:09,391 - Next 3 nodes after 715: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730679720', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730679720', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730679720', 'ring_id': 715}]
-2024-11-03 18:22:09,391 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-11-03 18:22:09,392 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-11-03 18:22:09,393 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-11-03 18:22:09,394 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 18:22:09,394 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa4read\xa8filename\xadfile_1194.txt<EOF>'
-2024-11-03 18:22:09,394 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa4read\xa8filename\xadfile_1194.txt<EOF>'
-2024-11-03 18:22:09,395 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa4read\xa8filename\xadfile_1194.txt<EOF>'
-2024-11-03 18:22:09,396 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 18:22:09,396 - File 'file_1194.txt' and append log 'client1--file_1194.txt.log' read successfully.
-2024-11-03 18:22:09,396 - Acknowledgment sent to client with status 'read_complete' for file 'file_1194.txt'.
-2024-11-03 18:22:09,397 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 18:22:09,397 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'read_complete', 'content': "This file is uploaded to HyDFS\nThis append is from the client1's local directory\nThis is the second append is from the client1's local directory\nThis is the third append is from the client1's local directory\nThis is the fourth append is from the client1's local directory\nThis append is from the client2's local directory"}
-2024-11-03 18:22:09,398 - Quorum not yet met, received ack from 1 replicas
-2024-11-03 18:22:09,398 - File 'file_1194.txt' and append log 'client1--file_1194.txt.log' read successfully.
-2024-11-03 18:22:09,400 - Acknowledgment sent to client with status 'read_complete' for file 'file_1194.txt'.
-2024-11-03 18:22:09,400 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'read_complete', 'content': "This file is uploaded to HyDFS\nThis append is from the client1's local directory\nThis is the second append is from the client1's local directory\nThis is the third append is from the client1's local directory\nThis is the fourth append is from the client1's local directory\nThis append is from the client2's local directory"}
-2024-11-03 18:22:09,400 - Quorum not yet met, received ack from 2 replicas
-2024-11-03 18:22:09,401 - File 'file_1194.txt' and append log 'client1--file_1194.txt.log' read successfully.
-2024-11-03 18:22:09,401 - Acknowledgment sent to client with status 'read_complete' for file 'file_1194.txt'.
-2024-11-03 18:22:09,401 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'read_complete', 'content': "This file is uploaded to HyDFS\nThis append is from the client1's local directory\nThis is the second append is from the client1's local directory\nThis is the third append is from the client1's local directory\nThis is the fourth append is from the client1's local directory\nThis append is from the client2's local directory"}
-2024-11-03 18:22:09,402 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 55308)>
-2024-11-03 18:22:09,402 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'read_complete', 'content': "This file is uploaded to HyDFS\nThis append is from the client1's local directory\nThis is the second append is from the client1's local directory\nThis is the third append is from the client1's local directory\nThis is the fourth append is from the client1's local directory\nThis append is from the client2's local directory"}
-2024-11-03 18:22:09,402 - Acknowledgment sent to client1 for file 'file_1194.txt'.
-2024-11-03 18:22:20,801 - Monitoring membership list started
-2024-11-03 18:22:22,809 - No change in membership list
-2024-11-03 18:22:24,816 - No change in membership list
-2024-11-03 18:22:26,824 - No change in membership list
-2024-11-03 18:22:28,831 - No change in membership list
-2024-11-03 18:22:30,839 - No change in membership list
-2024-11-03 18:22:32,846 - No change in membership list
-2024-11-03 18:22:34,853 - No change in membership list
-2024-11-03 18:22:36,861 - No change in membership list
-2024-11-03 18:22:38,868 - No change in membership list
-2024-11-03 18:22:40,876 - No change in membership list
-2024-11-03 18:22:42,883 - No change in membership list
-2024-11-03 18:22:44,890 - No change in membership list
-2024-11-03 18:22:46,903 - No change in membership list
-2024-11-03 18:22:48,911 - No change in membership list
-2024-11-03 18:22:50,918 - No change in membership list
-2024-11-03 18:22:52,932 - No change in membership list
-2024-11-03 18:22:54,939 - No change in membership list
-2024-11-03 18:22:56,946 - No change in membership list
-2024-11-03 18:22:58,953 - No change in membership list
-2024-11-03 18:23:00,961 - No change in membership list
-2024-11-03 18:23:02,968 - No change in membership list
-2024-11-03 18:23:04,976 - No change in membership list
-2024-11-03 18:23:06,983 - No change in membership list
-2024-11-03 18:23:08,990 - No change in membership list
-2024-11-03 18:23:10,998 - No change in membership list
-2024-11-03 18:23:13,005 - No change in membership list
-2024-11-03 18:23:15,012 - No change in membership list
-2024-11-03 18:23:17,020 - No change in membership list
-2024-11-03 18:23:19,027 - No change in membership list
-2024-11-03 18:23:21,034 - No change in membership list
-2024-11-03 18:23:22,432 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 18:23:22,432 - Next 3 nodes after 715: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730679720', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730679720', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730679720', 'ring_id': 715}]
-2024-11-03 18:23:22,433 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-11-03 18:23:22,439 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-11-03 18:23:22,445 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-11-03 18:23:22,456 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 18:23:22,456 - Sent data_buffer message b"\x84\xabclient_name\xa7client1\xa6action\xa3add\xa8filename\xadfile_1194.txt\xa7content\xc5\x07&Peugeot deal boosts Mitsubishi\n\nStruggling Japanese car maker Mitsubishi Motors has struck a deal to supply French car maker Peugeot with 30,000 sports utility vehicles (SUV).\n\nThe two firms signed a Memorandum of Understanding, and say they expect to seal a final agreement by Spring 2005. The alliance comes as a badly-needed boost for loss-making Mitsubishi, after several profit warnings and poor sales. The SUVs will be built in Japan using Peugeot's diesel engines and sold mainly in the European market. Falling sales have left Mitsubishi Motors with underused capacity, and the production deal with Peugeot gives it a chance to utilise some of it.\n\nIn January, Mitsubishi Motors issued its third profits warning in nine months, and cut its sales forecasts for the year to March 2005. Its sales have slid 41% in the past year, catalysed by the revelation that the company had systematically been hiding records of faults and then secretly repairing vehicles. As a result, the Japanese car maker has sought a series of financial bailouts. Last month it said it was looking for a further 540bn yen ($5.2bn; \xc2\xa32.77bn) in fresh financial backing, half of it from other companies in the Mitsubishi group. US-German carmaker DaimlerChrylser, a 30% shareholder in Mitsubishi Motors, decided in April 2004 not to pump in any more money. The deal with Peugeot was celebrated by Mitsubishi's newly-appointed chief executive Takashi Nishioka, who took over after three top bosses stood down last month to shoulder responsibility for the firm's troubles. Mitsubishi Motors has forecast a net loss of 472bn yen in its current financial year to March 2005. Last month, it signed a production agreement with Japanese rival Nissan Motor to supply it with 36,000 small cars for sale in Japan. It has been making cars for Nissan since 2003.\n<EOF>"
-2024-11-03 18:23:22,456 - Sent data_buffer message b"\x84\xabclient_name\xa7client1\xa6action\xa3add\xa8filename\xadfile_1194.txt\xa7content\xc5\x07&Peugeot deal boosts Mitsubishi\n\nStruggling Japanese car maker Mitsubishi Motors has struck a deal to supply French car maker Peugeot with 30,000 sports utility vehicles (SUV).\n\nThe two firms signed a Memorandum of Understanding, and say they expect to seal a final agreement by Spring 2005. The alliance comes as a badly-needed boost for loss-making Mitsubishi, after several profit warnings and poor sales. The SUVs will be built in Japan using Peugeot's diesel engines and sold mainly in the European market. Falling sales have left Mitsubishi Motors with underused capacity, and the production deal with Peugeot gives it a chance to utilise some of it.\n\nIn January, Mitsubishi Motors issued its third profits warning in nine months, and cut its sales forecasts for the year to March 2005. Its sales have slid 41% in the past year, catalysed by the revelation that the company had systematically been hiding records of faults and then secretly repairing vehicles. As a result, the Japanese car maker has sought a series of financial bailouts. Last month it said it was looking for a further 540bn yen ($5.2bn; \xc2\xa32.77bn) in fresh financial backing, half of it from other companies in the Mitsubishi group. US-German carmaker DaimlerChrylser, a 30% shareholder in Mitsubishi Motors, decided in April 2004 not to pump in any more money. The deal with Peugeot was celebrated by Mitsubishi's newly-appointed chief executive Takashi Nishioka, who took over after three top bosses stood down last month to shoulder responsibility for the firm's troubles. Mitsubishi Motors has forecast a net loss of 472bn yen in its current financial year to March 2005. Last month, it signed a production agreement with Japanese rival Nissan Motor to supply it with 36,000 small cars for sale in Japan. It has been making cars for Nissan since 2003.\n<EOF>"
-2024-11-03 18:23:22,457 - Sent data_buffer message b"\x84\xabclient_name\xa7client1\xa6action\xa3add\xa8filename\xadfile_1194.txt\xa7content\xc5\x07&Peugeot deal boosts Mitsubishi\n\nStruggling Japanese car maker Mitsubishi Motors has struck a deal to supply French car maker Peugeot with 30,000 sports utility vehicles (SUV).\n\nThe two firms signed a Memorandum of Understanding, and say they expect to seal a final agreement by Spring 2005. The alliance comes as a badly-needed boost for loss-making Mitsubishi, after several profit warnings and poor sales. The SUVs will be built in Japan using Peugeot's diesel engines and sold mainly in the European market. Falling sales have left Mitsubishi Motors with underused capacity, and the production deal with Peugeot gives it a chance to utilise some of it.\n\nIn January, Mitsubishi Motors issued its third profits warning in nine months, and cut its sales forecasts for the year to March 2005. Its sales have slid 41% in the past year, catalysed by the revelation that the company had systematically been hiding records of faults and then secretly repairing vehicles. As a result, the Japanese car maker has sought a series of financial bailouts. Last month it said it was looking for a further 540bn yen ($5.2bn; \xc2\xa32.77bn) in fresh financial backing, half of it from other companies in the Mitsubishi group. US-German carmaker DaimlerChrylser, a 30% shareholder in Mitsubishi Motors, decided in April 2004 not to pump in any more money. The deal with Peugeot was celebrated by Mitsubishi's newly-appointed chief executive Takashi Nishioka, who took over after three top bosses stood down last month to shoulder responsibility for the firm's troubles. Mitsubishi Motors has forecast a net loss of 472bn yen in its current financial year to March 2005. Last month, it signed a production agreement with Japanese rival Nissan Motor to supply it with 36,000 small cars for sale in Japan. It has been making cars for Nissan since 2003.\n<EOF>"
-2024-11-03 18:23:22,463 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 18:23:22,463 - Append action added to 'client1--file_1194.txt.log' with sequence number 1.
-2024-11-03 18:23:22,464 - Acknowledgment sent to client 'client1' for file 'file_1194.txt'.
-2024-11-03 18:23:22,470 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 18:23:22,470 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'append_logged', 'sequence_number': 1}
-2024-11-03 18:23:22,470 - Quorum not yet met, received ack from 1 replicas
-2024-11-03 18:23:22,471 - Append action added to 'client1--file_1194.txt.log' with sequence number 2.
-2024-11-03 18:23:22,471 - Acknowledgment sent to client 'client1' for file 'file_1194.txt'.
-2024-11-03 18:23:22,471 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'append_logged', 'sequence_number': 2}
-2024-11-03 18:23:22,472 - Quorum not yet met, received ack from 2 replicas
-2024-11-03 18:23:22,472 - Append action added to 'client1--file_1194.txt.log' with sequence number 3.
-2024-11-03 18:23:22,472 - Acknowledgment sent to client 'client1' for file 'file_1194.txt'.
-2024-11-03 18:23:22,473 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'append_logged', 'sequence_number': 3}
-2024-11-03 18:23:22,473 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 41988)>
-2024-11-03 18:23:22,473 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'append_logged', 'sequence_number': 3}
-2024-11-03 18:23:22,478 - Acknowledgment sent to client1 for file 'file_1194.txt'.
-2024-11-03 18:23:23,042 - No change in membership list
-2024-11-03 18:23:25,049 - No change in membership list
-2024-11-03 18:23:27,056 - No change in membership list
-2024-11-03 18:23:29,064 - No change in membership list
-2024-11-03 18:23:31,071 - No change in membership list
-2024-11-03 18:23:33,078 - No change in membership list
-2024-11-03 18:23:35,086 - No change in membership list
-2024-11-03 18:23:37,093 - No change in membership list
-2024-11-03 18:23:39,101 - No change in membership list
-2024-11-03 18:23:40,014 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 18:23:40,014 - Next 3 nodes after 715: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730679720', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730679720', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1730679720', 'ring_id': 715}]
-2024-11-03 18:23:40,015 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-11-03 18:23:40,021 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-11-03 18:23:40,027 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file file_1194.txt
-2024-11-03 18:23:40,038 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 18:23:40,038 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa4read\xa8filename\xadfile_1194.txt<EOF>'
-2024-11-03 18:23:40,038 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa4read\xa8filename\xadfile_1194.txt<EOF>'
-2024-11-03 18:23:40,039 - Sent data_buffer message b'\x83\xabclient_name\xa7client1\xa6action\xa4read\xa8filename\xadfile_1194.txt<EOF>'
-2024-11-03 18:23:40,044 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 18:23:40,045 - File 'file_1194.txt' and append log 'client1--file_1194.txt.log' read successfully.
-2024-11-03 18:23:40,045 - Acknowledgment sent to client with status 'read_complete' for file 'file_1194.txt'.
-2024-11-03 18:23:40,051 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-03 18:23:40,052 - File 'file_1194.txt' and append log 'client1--file_1194.txt.log' read successfully.
-2024-11-03 18:23:40,052 - Acknowledgment sent to client with status 'read_complete' for file 'file_1194.txt'.
-2024-11-03 18:23:40,053 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'read_complete', 'content': "This file is uploaded to HyDFS\nThis append is from the client1's local directory\nThis is the second append is from the client1's local directory\nThis is the third append is from the client1's local directory\nThis is the fourth append is from the client1's local directory\nThis append is from the client2's local directory\nPeugeot deal boosts Mitsubishi\n\nStruggling Japanese car maker Mitsubishi Motors has struck a deal to supply French car maker Peugeot with 30,000 sports utility vehicles (SUV).\n\nThe two firms signed a Memorandum of Understanding, and say they expect to seal a final agreement by Spring 2005. The alliance comes as a badly-needed boost for loss-making Mitsubishi, after several profit warnings and poor sales. The SUVs will be built in Japan using Peugeot's diesel engines and sold mainly in the European market. Falling sales have left Mitsubishi Motors with underused capacity, and the production deal with Peugeot gives it a chance to utilise some of it.\n\nIn January, Mitsubishi Motors issued its third profits warning in nine months, and cut its sales forecasts for the year to March 2005. Its sales have slid 41% in the past year, catalysed by the revelation that the company had systematically been hiding records of faults and then secretly repairing vehicles. As a result, the Japanese car maker has sought a series of financial bailouts. Last month it said it was looking for a further 540bn yen ($5.2bn; £2.77bn) in fresh financial backing, half of it from other companies in the Mitsubishi group. US-German carmaker DaimlerChrylser, a 30% shareholder in Mitsubishi Motors, decided in April 2004 not to pump in any more money. The deal with Peugeot was celebrated by Mitsubishi's newly-appointed chief executive Takashi Nishioka, who took over after three top bosses stood down last month to shoulder responsibility for the firm's troubles. Mitsubishi Motors has forecast a net loss of 472bn yen in its current financial year to March 2005. Last month, it signed a production agreement with Japanese rival Nissan Motor to supply it with 36,000 small cars for sale in Japan. It has been making cars for Nissan since 2003.\n\nPeugeot deal boosts Mitsubishi\n\nStruggling Japanese car maker Mitsubishi Motors has struck a deal to supply French car maker Peugeot with 30,000 sports utility vehicles (SUV).\n\nThe two firms signed a Memorandum of Understanding, and say they expect to seal a final agreement by Spring 2005. The alliance comes as a badly-needed boost for loss-making Mitsubishi, after several profit warnings and poor sales. The SUVs will be built in Japan using Peugeot's diesel engines and sold mainly in the European market. Falling sales have left Mitsubishi Motors with underused capacity, and the production deal with Peugeot gives it a chance to utilise some of it.\n\nIn January, Mitsubishi Motors issued its third profits warning in nine months, and cut its sales forecasts for the year to March 2005. Its sales have slid 41% in the past year, catalysed by the revelation that the company had systematically been hiding records of faults and then secretly repairing vehicles. As a result, the Japanese car maker has sought a series of financial bailouts. Last month it said it was looking for a further 540bn yen ($5.2bn; £2.77bn) in fresh financial backing, half of it from other companies in the Mitsubishi group. US-German carmaker DaimlerChrylser, a 30% shareholder in Mitsubishi Motors, decided in April 2004 not to pump in any more money. The deal with Peugeot was celebrated by Mitsubishi's newly-appointed chief executive Takashi Nishioka, who took over after three top bosses stood down last month to shoulder responsibility for the firm's troubles. Mitsubishi Motors has forecast a net loss of 472bn yen in its current financial year to March 2005. Last month, it signed a production agreement with Japanese rival Nissan Motor to supply it with 36,000 small cars for sale in Japan. It has been making cars for Nissan since 2003.\n\nPeugeot deal boosts Mitsubishi\n\nStruggling Japanese car maker Mitsubishi Motors has struck a deal to supply French car maker Peugeot with 30,000 sports utility vehicles (SUV).\n\nThe two firms signed a Memorandum of Understanding, and say they expect to seal a final agreement by Spring 2005. The alliance comes as a badly-needed boost for loss-making Mitsubishi, after several profit warnings and poor sales. The SUVs will be built in Japan using Peugeot's diesel engines and sold mainly in the European market. Falling sales have left Mitsubishi Motors with underused capacity, and the production deal with Peugeot gives it a chance to utilise some of it.\n\nIn January, Mitsubishi Motors issued its third profits warning in nine months, and cut its sales forecasts for the year to March 2005. Its sales have slid 41% in the past year, catalysed by the revelation that the company had systematically been hiding records of faults and then secretly repairing vehicles. As a result, the Japanese car maker has sought a series of financial bailouts. Last month it said it was looking for a further 540bn yen ($5.2bn; £2.77bn) in fresh financial backing, half of it from other companies in the Mitsubishi group. US-German carmaker DaimlerChrylser, a 30% shareholder in Mitsubishi Motors, decided in April 2004 not to pump in any more money. The deal with Peugeot was celebrated by Mitsubishi's newly-appointed chief executive Takashi Nishioka, who took over after three top bosses stood down last month to shoulder responsibility for the firm's troubles. Mitsubishi Motors has forecast a net loss of 472bn yen in its current financial year to March 2005. Last month, it signed a production agreement with Japanese rival Nissan Motor to supply it with 36,000 small cars for sale in Japan. It has been making cars for Nissan since 2003.\n"}
-2024-11-03 18:23:40,053 - Quorum not yet met, received ack from 1 replicas
-2024-11-03 18:23:40,053 - File 'file_1194.txt' and append log 'client1--file_1194.txt.log' read successfully.
-2024-11-03 18:23:40,054 - Acknowledgment sent to client with status 'read_complete' for file 'file_1194.txt'.
-2024-11-03 18:23:40,054 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'read_complete', 'content': "This file is uploaded to HyDFS\nThis append is from the client1's local directory\nThis is the second append is from the client1's local directory\nThis is the third append is from the client1's local directory\nThis is the fourth append is from the client1's local directory\nThis append is from the client2's local directory\nPeugeot deal boosts Mitsubishi\n\nStruggling Japanese car maker Mitsubishi Motors has struck a deal to supply French car maker Peugeot with 30,000 sports utility vehicles (SUV).\n\nThe two firms signed a Memorandum of Understanding, and say they expect to seal a final agreement by Spring 2005. The alliance comes as a badly-needed boost for loss-making Mitsubishi, after several profit warnings and poor sales. The SUVs will be built in Japan using Peugeot's diesel engines and sold mainly in the European market. Falling sales have left Mitsubishi Motors with underused capacity, and the production deal with Peugeot gives it a chance to utilise some of it.\n\nIn January, Mitsubishi Motors issued its third profits warning in nine months, and cut its sales forecasts for the year to March 2005. Its sales have slid 41% in the past year, catalysed by the revelation that the company had systematically been hiding records of faults and then secretly repairing vehicles. As a result, the Japanese car maker has sought a series of financial bailouts. Last month it said it was looking for a further 540bn yen ($5.2bn; £2.77bn) in fresh financial backing, half of it from other companies in the Mitsubishi group. US-German carmaker DaimlerChrylser, a 30% shareholder in Mitsubishi Motors, decided in April 2004 not to pump in any more money. The deal with Peugeot was celebrated by Mitsubishi's newly-appointed chief executive Takashi Nishioka, who took over after three top bosses stood down last month to shoulder responsibility for the firm's troubles. Mitsubishi Motors has forecast a net loss of 472bn yen in its current financial year to March 2005. Last month, it signed a production agreement with Japanese rival Nissan Motor to supply it with 36,000 small cars for sale in Japan. It has been making cars for Nissan since 2003.\n\nPeugeot deal boosts Mitsubishi\n\nStruggling Japanese car maker Mitsubishi Motors has struck a deal to supply French car maker Peugeot with 30,000 sports utility vehicles (SUV).\n\nThe two firms signed a Memorandum of Understanding, and say they expect to seal a final agreement by Spring 2005. The alliance comes as a badly-needed boost for loss-making Mitsubishi, after several profit warnings and poor sales. The SUVs will be built in Japan using Peugeot's diesel engines and sold mainly in the European market. Falling sales have left Mitsubishi Motors with underused capacity, and the production deal with Peugeot gives it a chance to utilise some of it.\n\nIn January, Mitsubishi Motors issued its third profits warning in nine months, and cut its sales forecasts for the year to March 2005. Its sales have slid 41% in the past year, catalysed by the revelation that the company had systematically been hiding records of faults and then secretly repairing vehicles. As a result, the Japanese car maker has sought a series of financial bailouts. Last month it said it was looking for a further 540bn yen ($5.2bn; £2.77bn) in fresh financial backing, half of it from other companies in the Mitsubishi group. US-German carmaker DaimlerChrylser, a 30% shareholder in Mitsubishi Motors, decided in April 2004 not to pump in any more money. The deal with Peugeot was celebrated by Mitsubishi's newly-appointed chief executive Takashi Nishioka, who took over after three top bosses stood down last month to shoulder responsibility for the firm's troubles. Mitsubishi Motors has forecast a net loss of 472bn yen in its current financial year to March 2005. Last month, it signed a production agreement with Japanese rival Nissan Motor to supply it with 36,000 small cars for sale in Japan. It has been making cars for Nissan since 2003.\n\nPeugeot deal boosts Mitsubishi\n\nStruggling Japanese car maker Mitsubishi Motors has struck a deal to supply French car maker Peugeot with 30,000 sports utility vehicles (SUV).\n\nThe two firms signed a Memorandum of Understanding, and say they expect to seal a final agreement by Spring 2005. The alliance comes as a badly-needed boost for loss-making Mitsubishi, after several profit warnings and poor sales. The SUVs will be built in Japan using Peugeot's diesel engines and sold mainly in the European market. Falling sales have left Mitsubishi Motors with underused capacity, and the production deal with Peugeot gives it a chance to utilise some of it.\n\nIn January, Mitsubishi Motors issued its third profits warning in nine months, and cut its sales forecasts for the year to March 2005. Its sales have slid 41% in the past year, catalysed by the revelation that the company had systematically been hiding records of faults and then secretly repairing vehicles. As a result, the Japanese car maker has sought a series of financial bailouts. Last month it said it was looking for a further 540bn yen ($5.2bn; £2.77bn) in fresh financial backing, half of it from other companies in the Mitsubishi group. US-German carmaker DaimlerChrylser, a 30% shareholder in Mitsubishi Motors, decided in April 2004 not to pump in any more money. The deal with Peugeot was celebrated by Mitsubishi's newly-appointed chief executive Takashi Nishioka, who took over after three top bosses stood down last month to shoulder responsibility for the firm's troubles. Mitsubishi Motors has forecast a net loss of 472bn yen in its current financial year to March 2005. Last month, it signed a production agreement with Japanese rival Nissan Motor to supply it with 36,000 small cars for sale in Japan. It has been making cars for Nissan since 2003.\n"}
-2024-11-03 18:23:40,055 - Quorum not yet met, received ack from 2 replicas
-2024-11-03 18:23:40,055 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'read_complete', 'content': "This file is uploaded to HyDFS\nThis append is from the client1's local directory\nThis is the second append is from the client1's local directory\nThis is the third append is from the client1's local directory\nThis is the fourth append is from the client1's local directory\nThis append is from the client2's local directory\nPeugeot deal boosts Mitsubishi\n\nStruggling Japanese car maker Mitsubishi Motors has struck a deal to supply French car maker Peugeot with 30,000 sports utility vehicles (SUV).\n\nThe two firms signed a Memorandum of Understanding, and say they expect to seal a final agreement by Spring 2005. The alliance comes as a badly-needed boost for loss-making Mitsubishi, after several profit warnings and poor sales. The SUVs will be built in Japan using Peugeot's diesel engines and sold mainly in the European market. Falling sales have left Mitsubishi Motors with underused capacity, and the production deal with Peugeot gives it a chance to utilise some of it.\n\nIn January, Mitsubishi Motors issued its third profits warning in nine months, and cut its sales forecasts for the year to March 2005. Its sales have slid 41% in the past year, catalysed by the revelation that the company had systematically been hiding records of faults and then secretly repairing vehicles. As a result, the Japanese car maker has sought a series of financial bailouts. Last month it said it was looking for a further 540bn yen ($5.2bn; £2.77bn) in fresh financial backing, half of it from other companies in the Mitsubishi group. US-German carmaker DaimlerChrylser, a 30% shareholder in Mitsubishi Motors, decided in April 2004 not to pump in any more money. The deal with Peugeot was celebrated by Mitsubishi's newly-appointed chief executive Takashi Nishioka, who took over after three top bosses stood down last month to shoulder responsibility for the firm's troubles. Mitsubishi Motors has forecast a net loss of 472bn yen in its current financial year to March 2005. Last month, it signed a production agreement with Japanese rival Nissan Motor to supply it with 36,000 small cars for sale in Japan. It has been making cars for Nissan since 2003.\n\nPeugeot deal boosts Mitsubishi\n\nStruggling Japanese car maker Mitsubishi Motors has struck a deal to supply French car maker Peugeot with 30,000 sports utility vehicles (SUV).\n\nThe two firms signed a Memorandum of Understanding, and say they expect to seal a final agreement by Spring 2005. The alliance comes as a badly-needed boost for loss-making Mitsubishi, after several profit warnings and poor sales. The SUVs will be built in Japan using Peugeot's diesel engines and sold mainly in the European market. Falling sales have left Mitsubishi Motors with underused capacity, and the production deal with Peugeot gives it a chance to utilise some of it.\n\nIn January, Mitsubishi Motors issued its third profits warning in nine months, and cut its sales forecasts for the year to March 2005. Its sales have slid 41% in the past year, catalysed by the revelation that the company had systematically been hiding records of faults and then secretly repairing vehicles. As a result, the Japanese car maker has sought a series of financial bailouts. Last month it said it was looking for a further 540bn yen ($5.2bn; £2.77bn) in fresh financial backing, half of it from other companies in the Mitsubishi group. US-German carmaker DaimlerChrylser, a 30% shareholder in Mitsubishi Motors, decided in April 2004 not to pump in any more money. The deal with Peugeot was celebrated by Mitsubishi's newly-appointed chief executive Takashi Nishioka, who took over after three top bosses stood down last month to shoulder responsibility for the firm's troubles. Mitsubishi Motors has forecast a net loss of 472bn yen in its current financial year to March 2005. Last month, it signed a production agreement with Japanese rival Nissan Motor to supply it with 36,000 small cars for sale in Japan. It has been making cars for Nissan since 2003.\n\nPeugeot deal boosts Mitsubishi\n\nStruggling Japanese car maker Mitsubishi Motors has struck a deal to supply French car maker Peugeot with 30,000 sports utility vehicles (SUV).\n\nThe two firms signed a Memorandum of Understanding, and say they expect to seal a final agreement by Spring 2005. The alliance comes as a badly-needed boost for loss-making Mitsubishi, after several profit warnings and poor sales. The SUVs will be built in Japan using Peugeot's diesel engines and sold mainly in the European market. Falling sales have left Mitsubishi Motors with underused capacity, and the production deal with Peugeot gives it a chance to utilise some of it.\n\nIn January, Mitsubishi Motors issued its third profits warning in nine months, and cut its sales forecasts for the year to March 2005. Its sales have slid 41% in the past year, catalysed by the revelation that the company had systematically been hiding records of faults and then secretly repairing vehicles. As a result, the Japanese car maker has sought a series of financial bailouts. Last month it said it was looking for a further 540bn yen ($5.2bn; £2.77bn) in fresh financial backing, half of it from other companies in the Mitsubishi group. US-German carmaker DaimlerChrylser, a 30% shareholder in Mitsubishi Motors, decided in April 2004 not to pump in any more money. The deal with Peugeot was celebrated by Mitsubishi's newly-appointed chief executive Takashi Nishioka, who took over after three top bosses stood down last month to shoulder responsibility for the firm's troubles. Mitsubishi Motors has forecast a net loss of 472bn yen in its current financial year to March 2005. Last month, it signed a production agreement with Japanese rival Nissan Motor to supply it with 36,000 small cars for sale in Japan. It has been making cars for Nissan since 2003.\n"}
-2024-11-03 18:23:40,056 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 60176)>
-2024-11-03 18:23:40,056 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'read_complete', 'content': "This file is uploaded to HyDFS\nThis append is from the client1's local directory\nThis is the second append is from the client1's local directory\nThis is the third append is from the client1's local directory\nThis is the fourth append is from the client1's local directory\nThis append is from the client2's local directory\nPeugeot deal boosts Mitsubishi\n\nStruggling Japanese car maker Mitsubishi Motors has struck a deal to supply French car maker Peugeot with 30,000 sports utility vehicles (SUV).\n\nThe two firms signed a Memorandum of Understanding, and say they expect to seal a final agreement by Spring 2005. The alliance comes as a badly-needed boost for loss-making Mitsubishi, after several profit warnings and poor sales. The SUVs will be built in Japan using Peugeot's diesel engines and sold mainly in the European market. Falling sales have left Mitsubishi Motors with underused capacity, and the production deal with Peugeot gives it a chance to utilise some of it.\n\nIn January, Mitsubishi Motors issued its third profits warning in nine months, and cut its sales forecasts for the year to March 2005. Its sales have slid 41% in the past year, catalysed by the revelation that the company had systematically been hiding records of faults and then secretly repairing vehicles. As a result, the Japanese car maker has sought a series of financial bailouts. Last month it said it was looking for a further 540bn yen ($5.2bn; £2.77bn) in fresh financial backing, half of it from other companies in the Mitsubishi group. US-German carmaker DaimlerChrylser, a 30% shareholder in Mitsubishi Motors, decided in April 2004 not to pump in any more money. The deal with Peugeot was celebrated by Mitsubishi's newly-appointed chief executive Takashi Nishioka, who took over after three top bosses stood down last month to shoulder responsibility for the firm's troubles. Mitsubishi Motors has forecast a net loss of 472bn yen in its current financial year to March 2005. Last month, it signed a production agreement with Japanese rival Nissan Motor to supply it with 36,000 small cars for sale in Japan. It has been making cars for Nissan since 2003.\n\nPeugeot deal boosts Mitsubishi\n\nStruggling Japanese car maker Mitsubishi Motors has struck a deal to supply French car maker Peugeot with 30,000 sports utility vehicles (SUV).\n\nThe two firms signed a Memorandum of Understanding, and say they expect to seal a final agreement by Spring 2005. The alliance comes as a badly-needed boost for loss-making Mitsubishi, after several profit warnings and poor sales. The SUVs will be built in Japan using Peugeot's diesel engines and sold mainly in the European market. Falling sales have left Mitsubishi Motors with underused capacity, and the production deal with Peugeot gives it a chance to utilise some of it.\n\nIn January, Mitsubishi Motors issued its third profits warning in nine months, and cut its sales forecasts for the year to March 2005. Its sales have slid 41% in the past year, catalysed by the revelation that the company had systematically been hiding records of faults and then secretly repairing vehicles. As a result, the Japanese car maker has sought a series of financial bailouts. Last month it said it was looking for a further 540bn yen ($5.2bn; £2.77bn) in fresh financial backing, half of it from other companies in the Mitsubishi group. US-German carmaker DaimlerChrylser, a 30% shareholder in Mitsubishi Motors, decided in April 2004 not to pump in any more money. The deal with Peugeot was celebrated by Mitsubishi's newly-appointed chief executive Takashi Nishioka, who took over after three top bosses stood down last month to shoulder responsibility for the firm's troubles. Mitsubishi Motors has forecast a net loss of 472bn yen in its current financial year to March 2005. Last month, it signed a production agreement with Japanese rival Nissan Motor to supply it with 36,000 small cars for sale in Japan. It has been making cars for Nissan since 2003.\n\nPeugeot deal boosts Mitsubishi\n\nStruggling Japanese car maker Mitsubishi Motors has struck a deal to supply French car maker Peugeot with 30,000 sports utility vehicles (SUV).\n\nThe two firms signed a Memorandum of Understanding, and say they expect to seal a final agreement by Spring 2005. The alliance comes as a badly-needed boost for loss-making Mitsubishi, after several profit warnings and poor sales. The SUVs will be built in Japan using Peugeot's diesel engines and sold mainly in the European market. Falling sales have left Mitsubishi Motors with underused capacity, and the production deal with Peugeot gives it a chance to utilise some of it.\n\nIn January, Mitsubishi Motors issued its third profits warning in nine months, and cut its sales forecasts for the year to March 2005. Its sales have slid 41% in the past year, catalysed by the revelation that the company had systematically been hiding records of faults and then secretly repairing vehicles. As a result, the Japanese car maker has sought a series of financial bailouts. Last month it said it was looking for a further 540bn yen ($5.2bn; £2.77bn) in fresh financial backing, half of it from other companies in the Mitsubishi group. US-German carmaker DaimlerChrylser, a 30% shareholder in Mitsubishi Motors, decided in April 2004 not to pump in any more money. The deal with Peugeot was celebrated by Mitsubishi's newly-appointed chief executive Takashi Nishioka, who took over after three top bosses stood down last month to shoulder responsibility for the firm's troubles. Mitsubishi Motors has forecast a net loss of 472bn yen in its current financial year to March 2005. Last month, it signed a production agreement with Japanese rival Nissan Motor to supply it with 36,000 small cars for sale in Japan. It has been making cars for Nissan since 2003.\n"}
-2024-11-03 18:23:40,061 - Acknowledgment sent to client1 for file 'file_1194.txt'.
-2024-11-03 18:23:41,108 - No change in membership list
-2024-11-03 18:23:43,115 - No change in membership list
-2024-11-03 18:23:45,122 - No change in membership list
-2024-11-03 18:23:47,130 - No change in membership list
-2024-11-03 18:23:49,137 - No change in membership list
-2024-11-03 18:23:51,145 - No change in membership list
-2024-11-03 18:23:53,152 - No change in membership list
-2024-11-03 18:23:53,882 - Shutting down HyDFS...
-2024-11-03 18:23:53,883 - Listener thread is still running; proceeding to join...
-2024-11-03 18:23:55,091 - Listener thread joined successfully.
-2024-11-03 18:23:55,092 - Membership thread is still running; proceeding to join...
-2024-11-03 18:23:55,160 - No change in membership list
-2024-11-03 18:23:55,164 - Membership thread joined successfully.
-2024-11-03 18:23:55,382 - HyDFS Node shut down gracefully.
+2024-11-03 18:48:48,063 - Logging initialized for RingNode
+2024-11-03 18:48:48,071 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-11-03 18:49:08,095 - Monitoring membership list started
+2024-11-03 18:49:10,097 - No change in membership list
+2024-11-03 18:49:12,100 - No change in membership list
+2024-11-03 18:49:14,102 - No change in membership list
+2024-11-03 18:49:16,104 - No change in membership list
+2024-11-03 18:49:18,106 - No change in membership list
+2024-11-03 18:49:20,109 - No change in membership list
+2024-11-03 18:49:22,111 - No change in membership list
+2024-11-03 18:49:24,113 - No change in membership list
+2024-11-03 18:49:24,134 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-03 18:49:24,135 - Next 3 nodes after 915: [{'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1730681339', 'ring_id': 56}, {'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1730681335', 'ring_id': 58}, {'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1730681334', 'ring_id': 140}]
+2024-11-03 18:49:24,135 - Sending write to fa24-cs425-6910.cs.illinois.edu:5001 for file business_20.txt
+2024-11-03 18:49:24,136 - Sending write to fa24-cs425-6908.cs.illinois.edu:5001 for file business_20.txt
+2024-11-03 18:49:24,136 - Sending write to fa24-cs425-6907.cs.illinois.edu:5001 for file business_20.txt
+2024-11-03 18:49:24,137 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xafbusiness_20.txt\xa7content\xc5\x08\x94Brewers\' profits lose their fizz\n\nHeineken and Carlsberg, two of the world\'s largest brewers, have reported falling profits after beer sales in western Europe fell flat.\n\nDutch firm Heineken saw its annual profits drop 33% and warned that earnings in 2005 may also slide. Danish brewer Carlsberg suffered a 3% fall in profits due to waning demand and increased marketing costs. Both are looking to Russia and China to provide future growth as western European markets are largely mature.\n\nHeineken\'s net income fell to 537m euros ($701m; \xc2\xa3371m) during 2004, from 798m euro a year ago. It blamed weak demand in western Europe and currency losses. It had warned in September that the weakening US dollar, which has cut the value of foreign sales, would knock 125m euros off its operating profits. Despite the dip in profits, Heineken\'s sales have been improving and total revenue for the year was 10bn euros, up 8.1% from 9.26bn euros in 2003. Heineken said it now plans to invest 100m euros in "aggressive" and "high-impact" marketing in Europe and the US in 2005. Heineken, which also owns the Amstel and Murphy\'s stout brands, said it would also seek to cut costs. This may involve closing down breweries.\n\nHeineken increased its dividend payment by 25% to 40 euro cents, but warned that the continued impact of a weaker dollar and an increased marketing spend may lead to a drop in 2005 net profit.\n\nCarlsberg, the world\'s fifth-largest brewer, saw annual pre-tax profits fall to 3.4bn Danish kroner (456m euros). Its beer sales have been affected by the sluggish European economy and by the banning of smoking in pubs in several European countries. Nevertheless, total sales increased 4% to 36bn kroner, thanks to strong sales of Carlsberg lager in Russia and Poland. Carlsberg is more optimistic than Heineken about 2005, projecting a 15% rise in net profits for the year. However, it also plans to cut 200 jobs in Sweden, where sales have been hit by demand for cheap, imported brands. "We remain cautious about the medium-to-long term outlook for revenue growth across western Europe for a host of economic, social and structural reasons," investment bank Merrill Lynch said of Carlsberg.\n<EOF>'
+2024-11-03 18:49:24,138 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xafbusiness_20.txt\xa7content\xc5\x08\x94Brewers\' profits lose their fizz\n\nHeineken and Carlsberg, two of the world\'s largest brewers, have reported falling profits after beer sales in western Europe fell flat.\n\nDutch firm Heineken saw its annual profits drop 33% and warned that earnings in 2005 may also slide. Danish brewer Carlsberg suffered a 3% fall in profits due to waning demand and increased marketing costs. Both are looking to Russia and China to provide future growth as western European markets are largely mature.\n\nHeineken\'s net income fell to 537m euros ($701m; \xc2\xa3371m) during 2004, from 798m euro a year ago. It blamed weak demand in western Europe and currency losses. It had warned in September that the weakening US dollar, which has cut the value of foreign sales, would knock 125m euros off its operating profits. Despite the dip in profits, Heineken\'s sales have been improving and total revenue for the year was 10bn euros, up 8.1% from 9.26bn euros in 2003. Heineken said it now plans to invest 100m euros in "aggressive" and "high-impact" marketing in Europe and the US in 2005. Heineken, which also owns the Amstel and Murphy\'s stout brands, said it would also seek to cut costs. This may involve closing down breweries.\n\nHeineken increased its dividend payment by 25% to 40 euro cents, but warned that the continued impact of a weaker dollar and an increased marketing spend may lead to a drop in 2005 net profit.\n\nCarlsberg, the world\'s fifth-largest brewer, saw annual pre-tax profits fall to 3.4bn Danish kroner (456m euros). Its beer sales have been affected by the sluggish European economy and by the banning of smoking in pubs in several European countries. Nevertheless, total sales increased 4% to 36bn kroner, thanks to strong sales of Carlsberg lager in Russia and Poland. Carlsberg is more optimistic than Heineken about 2005, projecting a 15% rise in net profits for the year. However, it also plans to cut 200 jobs in Sweden, where sales have been hit by demand for cheap, imported brands. "We remain cautious about the medium-to-long term outlook for revenue growth across western Europe for a host of economic, social and structural reasons," investment bank Merrill Lynch said of Carlsberg.\n<EOF>'
+2024-11-03 18:49:24,138 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'write_complete'}
+2024-11-03 18:49:24,138 - Quorum not yet met, received ack from 1 replicas
+2024-11-03 18:49:24,139 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xafbusiness_20.txt\xa7content\xc5\x08\x94Brewers\' profits lose their fizz\n\nHeineken and Carlsberg, two of the world\'s largest brewers, have reported falling profits after beer sales in western Europe fell flat.\n\nDutch firm Heineken saw its annual profits drop 33% and warned that earnings in 2005 may also slide. Danish brewer Carlsberg suffered a 3% fall in profits due to waning demand and increased marketing costs. Both are looking to Russia and China to provide future growth as western European markets are largely mature.\n\nHeineken\'s net income fell to 537m euros ($701m; \xc2\xa3371m) during 2004, from 798m euro a year ago. It blamed weak demand in western Europe and currency losses. It had warned in September that the weakening US dollar, which has cut the value of foreign sales, would knock 125m euros off its operating profits. Despite the dip in profits, Heineken\'s sales have been improving and total revenue for the year was 10bn euros, up 8.1% from 9.26bn euros in 2003. Heineken said it now plans to invest 100m euros in "aggressive" and "high-impact" marketing in Europe and the US in 2005. Heineken, which also owns the Amstel and Murphy\'s stout brands, said it would also seek to cut costs. This may involve closing down breweries.\n\nHeineken increased its dividend payment by 25% to 40 euro cents, but warned that the continued impact of a weaker dollar and an increased marketing spend may lead to a drop in 2005 net profit.\n\nCarlsberg, the world\'s fifth-largest brewer, saw annual pre-tax profits fall to 3.4bn Danish kroner (456m euros). Its beer sales have been affected by the sluggish European economy and by the banning of smoking in pubs in several European countries. Nevertheless, total sales increased 4% to 36bn kroner, thanks to strong sales of Carlsberg lager in Russia and Poland. Carlsberg is more optimistic than Heineken about 2005, projecting a 15% rise in net profits for the year. However, it also plans to cut 200 jobs in Sweden, where sales have been hit by demand for cheap, imported brands. "We remain cautious about the medium-to-long term outlook for revenue growth across western Europe for a host of economic, social and structural reasons," investment bank Merrill Lynch said of Carlsberg.\n<EOF>'
+2024-11-03 18:49:24,139 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'write_complete'}
+2024-11-03 18:49:24,139 - Quorum not yet met, received ack from 2 replicas
+2024-11-03 18:49:24,139 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'write_complete'}
+2024-11-03 18:49:24,140 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 36638)>
+2024-11-03 18:49:24,140 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'write_complete'}
+2024-11-03 18:49:24,140 - Acknowledgment sent to client1 for file 'business_20.txt'.
+2024-11-03 18:49:26,115 - No change in membership list
+2024-11-03 18:49:28,118 - No change in membership list
+2024-11-03 18:49:30,120 - No change in membership list
+2024-11-03 18:49:32,122 - No change in membership list
+2024-11-03 18:49:34,125 - No change in membership list
+2024-11-03 18:49:36,127 - No change in membership list
+2024-11-03 18:49:38,128 - No change in membership list
+2024-11-03 18:49:40,130 - No change in membership list
+2024-11-03 18:49:42,133 - No change in membership list
+2024-11-03 18:49:44,135 - No change in membership list
+2024-11-03 18:49:46,137 - No change in membership list
+2024-11-03 18:49:48,139 - No change in membership list
+2024-11-03 18:49:50,141 - No change in membership list
+2024-11-03 18:49:52,143 - No change in membership list
+2024-11-03 18:49:54,145 - No change in membership list
+2024-11-03 18:49:56,148 - No change in membership list
+2024-11-03 18:49:58,150 - No change in membership list
+2024-11-03 18:50:00,151 - No change in membership list
+2024-11-03 18:50:02,154 - No change in membership list
+2024-11-03 18:50:04,156 - No change in membership list
+2024-11-03 18:50:06,159 - No change in membership list
+2024-11-03 18:50:08,161 - No change in membership list
+2024-11-03 18:50:10,163 - No change in membership list
+2024-11-03 18:50:12,166 - No change in membership list
+2024-11-03 18:50:14,168 - No change in membership list
+2024-11-03 18:50:16,170 - No change in membership list
+2024-11-03 18:50:18,172 - No change in membership list
+2024-11-03 18:50:20,174 - No change in membership list
+2024-11-03 18:50:22,176 - No change in membership list
+2024-11-03 18:50:24,178 - No change in membership list
+2024-11-03 18:50:26,179 - No change in membership list
+2024-11-03 18:50:28,180 - No change in membership list
+2024-11-03 18:50:30,181 - No change in membership list
+2024-11-03 18:50:32,182 - No change in membership list
+2024-11-03 18:50:34,184 - No change in membership list
+2024-11-03 18:50:36,186 - No change in membership list
+2024-11-03 18:50:38,189 - No change in membership list
+2024-11-03 18:50:40,189 - No change in membership list
+2024-11-03 18:50:42,192 - No change in membership list
+2024-11-03 18:50:44,194 - No change in membership list
+2024-11-03 18:50:46,196 - No change in membership list
+2024-11-03 18:50:48,197 - No change in membership list
+2024-11-03 18:50:50,199 - No change in membership list
+2024-11-03 18:50:52,202 - No change in membership list
+2024-11-03 18:50:54,204 - No change in membership list
+2024-11-03 18:50:56,206 - No change in membership list
+2024-11-03 18:50:58,209 - No change in membership list
+2024-11-03 18:51:00,211 - No change in membership list
+2024-11-03 18:51:02,214 - No change in membership list
+2024-11-03 18:51:04,216 - No change in membership list
+2024-11-03 18:51:06,218 - No change in membership list
+2024-11-03 18:51:08,221 - No change in membership list
+2024-11-03 18:51:10,223 - No change in membership list
+2024-11-03 18:51:12,225 - No change in membership list
+2024-11-03 18:51:14,228 - No change in membership list
+2024-11-03 18:51:16,230 - No change in membership list
+2024-11-03 18:51:18,232 - No change in membership list
+2024-11-03 18:51:20,234 - No change in membership list
+2024-11-03 18:51:22,237 - No change in membership list
+2024-11-03 18:51:24,239 - No change in membership list
+2024-11-03 18:51:26,242 - No change in membership list
+2024-11-03 18:51:28,246 - No change in membership list
+2024-11-03 18:51:30,248 - No change in membership list
+2024-11-03 18:51:32,251 - No change in membership list
+2024-11-03 18:51:34,253 - No change in membership list
+2024-11-03 18:51:36,255 - No change in membership list
+2024-11-03 18:51:38,257 - No change in membership list
+2024-11-03 18:51:40,260 - No change in membership list
+2024-11-03 18:51:42,262 - No change in membership list
+2024-11-03 18:51:44,264 - No change in membership list
+2024-11-03 18:51:46,267 - No change in membership list
+2024-11-03 18:51:48,269 - No change in membership list
+2024-11-03 18:51:50,271 - No change in membership list
+2024-11-03 18:51:52,273 - No change in membership list
+2024-11-03 18:51:54,276 - No change in membership list
+2024-11-03 18:51:56,278 - No change in membership list
+2024-11-03 18:51:58,279 - No change in membership list
+2024-11-03 18:52:00,281 - No change in membership list
+2024-11-03 18:52:02,283 - No change in membership list
+2024-11-03 18:52:04,285 - No change in membership list
+2024-11-03 18:52:06,287 - No change in membership list
+2024-11-03 18:52:08,289 - Membership lists are not equal
+2024-11-03 18:52:08,290 - No change in membership list
+2024-11-03 18:52:10,292 - No change in membership list
+2024-11-03 18:52:12,294 - No change in membership list
+2024-11-03 18:52:14,297 - No change in membership list
+2024-11-03 18:52:16,299 - No change in membership list
+2024-11-03 18:52:18,301 - No change in membership list
+2024-11-03 18:52:20,304 - No change in membership list
+2024-11-03 18:52:22,306 - No change in membership list
+2024-11-03 18:52:24,308 - No change in membership list
+2024-11-03 18:52:26,311 - No change in membership list
+2024-11-03 18:52:28,313 - No change in membership list
+2024-11-03 18:52:30,315 - No change in membership list
+2024-11-03 18:52:32,317 - No change in membership list
+2024-11-03 18:52:34,319 - No change in membership list
+2024-11-03 18:52:36,322 - No change in membership list
+2024-11-03 18:52:38,324 - No change in membership list
+2024-11-03 18:52:40,326 - No change in membership list
+2024-11-03 18:52:42,328 - No change in membership list
+2024-11-03 18:52:44,331 - No change in membership list
+2024-11-03 18:52:46,333 - No change in membership list
+2024-11-03 18:52:48,336 - No change in membership list
+2024-11-03 18:52:50,338 - No change in membership list
+2024-11-03 18:52:52,341 - No change in membership list
+2024-11-03 18:52:54,343 - No change in membership list
+2024-11-03 18:52:56,345 - No change in membership list
+2024-11-03 18:52:58,348 - No change in membership list
+2024-11-03 18:53:00,350 - No change in membership list
+2024-11-03 18:53:02,352 - No change in membership list
+2024-11-03 18:53:04,355 - No change in membership list
+2024-11-03 18:53:06,357 - No change in membership list
+2024-11-03 18:53:08,360 - No change in membership list
+2024-11-03 18:53:10,362 - No change in membership list
+2024-11-03 18:53:12,363 - No change in membership list
+2024-11-03 18:53:14,366 - No change in membership list
+2024-11-03 18:53:16,368 - No change in membership list
+2024-11-03 18:53:18,370 - No change in membership list
+2024-11-03 18:53:20,373 - No change in membership list
+2024-11-03 18:53:22,375 - No change in membership list
+2024-11-03 18:53:24,377 - No change in membership list
+2024-11-03 18:53:26,380 - No change in membership list
+2024-11-03 18:53:28,382 - No change in membership list
+2024-11-03 18:53:30,385 - No change in membership list
+2024-11-03 18:53:32,388 - No change in membership list
+2024-11-03 18:53:34,390 - No change in membership list
+2024-11-03 18:53:36,392 - No change in membership list
+2024-11-03 18:53:38,393 - No change in membership list
+2024-11-03 18:53:40,396 - No change in membership list
+2024-11-03 18:53:42,398 - No change in membership list
+2024-11-03 18:53:44,400 - No change in membership list
+2024-11-03 18:53:46,401 - No change in membership list
+2024-11-03 18:53:48,402 - No change in membership list
+2024-11-03 18:53:50,405 - No change in membership list
+2024-11-03 18:53:52,407 - No change in membership list
+2024-11-03 18:53:54,409 - No change in membership list
+2024-11-03 18:53:56,072 - Connection from ('fa24-cs425-6909.cs.illinois.edu', [], ['172.22.158.231'])
+2024-11-03 18:53:56,072 - ls reply sent to client for file 'business_20.py'.
+2024-11-03 18:53:56,410 - No change in membership list
+2024-11-03 18:53:58,412 - No change in membership list
+2024-11-03 18:54:00,413 - No change in membership list
+2024-11-03 18:54:02,415 - No change in membership list
+2024-11-03 18:54:04,417 - No change in membership list
+2024-11-03 18:54:06,419 - No change in membership list
+2024-11-03 18:54:07,627 - Connection from ('fa24-cs425-6909.cs.illinois.edu', [], ['172.22.158.231'])
+2024-11-03 18:54:07,628 - ls reply sent to client for file 'business_20.txt'.
+2024-11-03 18:54:08,420 - No change in membership list
+2024-11-03 18:54:10,421 - No change in membership list
+2024-11-03 18:54:12,423 - No change in membership list
+2024-11-03 18:54:14,425 - No change in membership list
+2024-11-03 18:54:16,427 - No change in membership list
+2024-11-03 18:54:18,429 - No change in membership list
+2024-11-03 18:54:20,431 - No change in membership list
+2024-11-03 18:54:22,433 - No change in membership list
+2024-11-03 18:54:24,435 - No change in membership list
+2024-11-03 18:54:26,437 - No change in membership list
+2024-11-03 18:54:27,189 - Connection from ('fa24-cs425-6909.cs.illinois.edu', [], ['172.22.158.231'])
+2024-11-03 18:54:27,189 - ls reply sent to client for file 'client_1--business_20.txt.log'.
+2024-11-03 18:54:28,438 - No change in membership list
+2024-11-03 18:54:30,440 - No change in membership list
+2024-11-03 18:54:32,442 - No change in membership list
+2024-11-03 18:54:34,445 - No change in membership list
+2024-11-03 18:54:36,445 - No change in membership list
+2024-11-03 18:54:38,447 - No change in membership list
+2024-11-03 18:54:40,450 - No change in membership list
+2024-11-03 18:54:42,452 - No change in membership list
+2024-11-03 18:54:44,454 - No change in membership list
+2024-11-03 18:54:46,456 - No change in membership list
+2024-11-03 18:54:48,458 - No change in membership list
+2024-11-03 18:54:50,461 - No change in membership list
+2024-11-03 18:54:52,463 - No change in membership list
+2024-11-03 18:54:54,465 - No change in membership list
+2024-11-03 18:54:56,467 - No change in membership list
+2024-11-03 18:54:58,469 - No change in membership list
+2024-11-03 18:55:00,471 - No change in membership list
+2024-11-03 18:55:02,473 - No change in membership list
+2024-11-03 18:55:04,476 - No change in membership list
+2024-11-03 18:55:06,478 - No change in membership list
+2024-11-03 18:55:08,480 - Membership lists are not equal
+2024-11-03 18:55:08,481 - No change in membership list
+2024-11-03 18:55:10,483 - No change in membership list
+2024-11-03 18:55:12,486 - No change in membership list
+2024-11-03 18:55:14,487 - No change in membership list
+2024-11-03 18:55:16,489 - No change in membership list
+2024-11-03 18:55:18,492 - No change in membership list
+2024-11-03 18:55:20,494 - No change in membership list
+2024-11-03 18:55:22,496 - No change in membership list
+2024-11-03 18:55:24,499 - No change in membership list
+2024-11-03 18:55:26,501 - No change in membership list
+2024-11-03 18:55:28,503 - No change in membership list
+2024-11-03 18:55:30,506 - No change in membership list
+2024-11-03 18:55:32,507 - No change in membership list
+2024-11-03 18:55:34,509 - No change in membership list
+2024-11-03 18:55:36,512 - No change in membership list
+2024-11-03 18:55:38,513 - No change in membership list
+2024-11-03 18:55:40,514 - No change in membership list
+2024-11-03 18:55:40,846 - Connection from ('fa24-cs425-6909.cs.illinois.edu', [], ['172.22.158.231'])
+2024-11-03 18:55:40,846 - ls reply sent to client for file 'client_1--business_20.txt.log'.
+2024-11-03 18:55:42,517 - No change in membership list
+2024-11-03 18:55:44,519 - No change in membership list
+2024-11-03 18:55:46,522 - No change in membership list
+2024-11-03 18:55:48,523 - No change in membership list
+2024-11-03 18:55:50,525 - No change in membership list
+2024-11-03 18:55:52,528 - No change in membership list
+2024-11-03 18:55:54,529 - No change in membership list
+2024-11-03 18:55:56,531 - No change in membership list
+2024-11-03 18:55:58,533 - No change in membership list
+2024-11-03 18:56:00,536 - No change in membership list
+2024-11-03 18:56:02,538 - No change in membership list
+2024-11-03 18:56:04,540 - No change in membership list
+2024-11-03 18:56:06,543 - No change in membership list
+2024-11-03 18:56:08,545 - No change in membership list
+2024-11-03 18:56:10,547 - No change in membership list
+2024-11-03 18:56:12,549 - No change in membership list
+2024-11-03 18:56:14,552 - No change in membership list
+2024-11-03 18:56:16,554 - No change in membership list
+2024-11-03 18:56:18,556 - No change in membership list
+2024-11-03 18:56:20,559 - No change in membership list
+2024-11-03 18:56:22,561 - No change in membership list
+2024-11-03 18:56:24,563 - No change in membership list
+2024-11-03 18:56:26,566 - No change in membership list
+2024-11-03 18:56:28,568 - No change in membership list
+2024-11-03 18:56:30,570 - No change in membership list
+2024-11-03 18:56:32,573 - No change in membership list
+2024-11-03 18:56:34,575 - No change in membership list
+2024-11-03 18:56:36,576 - No change in membership list
+2024-11-03 18:56:38,578 - No change in membership list
+2024-11-03 18:56:40,581 - No change in membership list
+2024-11-03 18:56:42,583 - No change in membership list
+2024-11-03 18:56:44,584 - No change in membership list
+2024-11-03 18:56:46,586 - No change in membership list
+2024-11-03 18:56:48,589 - No change in membership list
+2024-11-03 18:56:50,591 - No change in membership list
+2024-11-03 18:56:52,592 - No change in membership list
+2024-11-03 18:56:54,594 - No change in membership list
+2024-11-03 18:56:56,596 - No change in membership list
+2024-11-03 18:56:58,599 - No change in membership list
+2024-11-03 18:57:00,600 - No change in membership list
+2024-11-03 18:57:02,603 - No change in membership list
+2024-11-03 18:57:04,605 - No change in membership list
+2024-11-03 18:57:06,607 - No change in membership list
+2024-11-03 18:57:08,608 - No change in membership list
+2024-11-03 18:57:10,610 - No change in membership list
+2024-11-03 18:57:12,613 - No change in membership list
+2024-11-03 18:57:14,615 - No change in membership list
+2024-11-03 18:57:16,616 - No change in membership list
+2024-11-03 18:57:18,619 - No change in membership list
+2024-11-03 18:57:20,621 - No change in membership list
+2024-11-03 18:57:22,623 - No change in membership list
+2024-11-03 18:57:24,624 - No change in membership list
+2024-11-03 18:57:26,626 - No change in membership list
+2024-11-03 18:57:28,628 - No change in membership list
+2024-11-03 18:57:30,630 - No change in membership list
+2024-11-03 18:57:32,632 - No change in membership list
+2024-11-03 18:57:34,634 - No change in membership list
+2024-11-03 18:57:36,635 - No change in membership list
+2024-11-03 18:57:38,637 - No change in membership list
+2024-11-03 18:57:40,640 - No change in membership list
+2024-11-03 18:57:42,640 - No change in membership list
+2024-11-03 18:57:44,642 - No change in membership list
+2024-11-03 18:57:46,644 - No change in membership list
+2024-11-03 18:57:48,646 - No change in membership list
+2024-11-03 18:57:50,649 - No change in membership list
+2024-11-03 18:57:52,651 - No change in membership list
+2024-11-03 18:57:54,425 - Connection from ('fa24-cs425-6909.cs.illinois.edu', [], ['172.22.158.231'])
+2024-11-03 18:57:54,426 - ls reply sent to client for file 'client_1--business_20.txt.log'.
+2024-11-03 18:57:54,653 - No change in membership list
+2024-11-03 18:57:56,656 - No change in membership list
+2024-11-03 18:57:58,657 - No change in membership list
+2024-11-03 18:58:00,659 - No change in membership list
+2024-11-03 18:58:02,661 - No change in membership list
+2024-11-03 18:58:04,662 - No change in membership list
+2024-11-03 18:58:06,664 - No change in membership list
+2024-11-03 18:58:08,666 - Membership lists are not equal
+2024-11-03 18:58:08,667 - Hydfs node marked as DEAD: {'ring_id': 403, 'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1730681329', 'status': 'DEAD', 'inc_num': 0}
+2024-11-03 18:58:47,559 - Connection from ('fa24-cs425-6909.cs.illinois.edu', [], ['172.22.158.231'])
+2024-11-03 18:58:47,559 - ls reply sent to client for file 'client_1--business_20.txt.log'.
+2024-11-03 18:58:48,707 - Dead node fa24-cs425-6903.cs.illinois.edu_5000_1730681329 - 1st predecessor: fa24-cs425-6908.cs.illinois.edu_5000_1730681335, 2nd predecessor: fa24-cs425-6910.cs.illinois.edu_5000_1730681339, 1st successor: fa24-cs425-6902.cs.illinois.edu_5000_1730681329
+2024-11-03 18:58:48,707 - Added fa24-cs425-6905.cs.illinois.edu_5000_1730681332 to replica list
+2024-11-03 18:58:48,707 - Added fa24-cs425-6904.cs.illinois.edu_5000_1730681330 to replica list
+2024-11-03 18:58:48,707 - No change in membership list
+2024-11-03 18:58:50,708 - Membership lists are not equal
+2024-11-03 18:58:50,708 - Hydfs node marked as DEAD: {'ring_id': 140, 'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1730681334', 'status': 'DEAD', 'inc_num': 0}
+2024-11-03 18:59:30,748 - Dead node fa24-cs425-6907.cs.illinois.edu_5000_1730681334 - 1st predecessor: fa24-cs425-6908.cs.illinois.edu_5000_1730681335, 2nd predecessor: fa24-cs425-6910.cs.illinois.edu_5000_1730681339, 1st successor: fa24-cs425-6902.cs.illinois.edu_5000_1730681329
+2024-11-03 18:59:30,748 - Added fa24-cs425-6905.cs.illinois.edu_5000_1730681332 to replica list
+2024-11-03 18:59:30,748 - Added fa24-cs425-6904.cs.illinois.edu_5000_1730681330 to replica list
+2024-11-03 18:59:30,748 - No change in membership list
+2024-11-03 18:59:32,751 - No change in membership list
+2024-11-03 18:59:34,751 - No change in membership list
+2024-11-03 18:59:36,754 - No change in membership list
+2024-11-03 18:59:38,756 - No change in membership list
+2024-11-03 18:59:40,757 - No change in membership list
+2024-11-03 18:59:42,759 - No change in membership list
+2024-11-03 18:59:44,762 - No change in membership list
+2024-11-03 18:59:46,763 - No change in membership list
+2024-11-03 18:59:48,765 - No change in membership list
+2024-11-03 18:59:50,767 - No change in membership list
+2024-11-03 18:59:52,768 - No change in membership list
+2024-11-03 18:59:54,771 - No change in membership list
+2024-11-03 18:59:56,773 - No change in membership list
+2024-11-03 18:59:58,775 - No change in membership list
+2024-11-03 19:00:00,777 - No change in membership list
+2024-11-03 19:00:02,779 - No change in membership list
+2024-11-03 19:00:04,780 - No change in membership list
+2024-11-03 19:00:06,781 - No change in membership list
+2024-11-03 19:00:08,783 - No change in membership list
+2024-11-03 19:00:10,783 - No change in membership list
+2024-11-03 19:00:12,786 - No change in membership list
+2024-11-03 19:00:14,787 - No change in membership list
+2024-11-03 19:00:16,790 - No change in membership list
+2024-11-03 19:00:18,791 - No change in membership list
+2024-11-03 19:00:20,794 - No change in membership list
+2024-11-03 19:00:22,796 - No change in membership list
+2024-11-03 19:00:24,797 - No change in membership list
+2024-11-03 19:00:26,799 - No change in membership list
+2024-11-03 19:00:28,801 - Membership lists are not equal
+2024-11-03 19:00:28,801 - No change in membership list
+2024-11-03 19:00:30,803 - No change in membership list
+2024-11-03 19:00:32,804 - No change in membership list
+2024-11-03 19:00:34,807 - No change in membership list
+2024-11-03 19:00:36,807 - No change in membership list
+2024-11-03 19:00:38,808 - No change in membership list
+2024-11-03 19:00:40,695 - Connection from ('fa24-cs425-6909.cs.illinois.edu', [], ['172.22.158.231'])
+2024-11-03 19:00:40,695 - ls reply sent to client for file 'client_1--business_20.txt.log'.
+2024-11-03 19:00:40,811 - No change in membership list
+2024-11-03 19:00:42,813 - No change in membership list
+2024-11-03 19:00:44,815 - No change in membership list
+2024-11-03 19:00:46,817 - No change in membership list
+2024-11-03 19:00:48,819 - No change in membership list
+2024-11-03 19:00:50,820 - No change in membership list
+2024-11-03 19:00:52,823 - No change in membership list
+2024-11-03 19:00:54,825 - No change in membership list
+2024-11-03 19:00:56,827 - No change in membership list
+2024-11-03 19:00:58,829 - No change in membership list
+2024-11-03 19:01:00,830 - No change in membership list
+2024-11-03 19:01:02,833 - No change in membership list
+2024-11-03 19:01:04,834 - No change in membership list
+2024-11-03 19:01:06,836 - No change in membership list
+2024-11-03 19:01:08,837 - No change in membership list
+2024-11-03 19:01:10,839 - No change in membership list
+2024-11-03 19:01:12,840 - No change in membership list
+2024-11-03 19:01:14,841 - No change in membership list
+2024-11-03 19:01:16,842 - No change in membership list
+2024-11-03 19:01:18,844 - No change in membership list
+2024-11-03 19:01:20,845 - No change in membership list
+2024-11-03 19:01:22,846 - No change in membership list
+2024-11-03 19:01:24,848 - No change in membership list
+2024-11-03 19:01:26,851 - No change in membership list
+2024-11-03 19:01:28,853 - No change in membership list
+2024-11-03 19:01:30,855 - No change in membership list
+2024-11-03 19:01:32,857 - No change in membership list
+2024-11-03 19:01:34,859 - No change in membership list
+2024-11-03 19:01:36,861 - No change in membership list
+2024-11-03 19:01:38,863 - No change in membership list
+2024-11-03 19:01:40,865 - No change in membership list
+2024-11-03 19:01:42,867 - No change in membership list
+2024-11-03 19:01:44,869 - No change in membership list
+2024-11-03 19:01:46,870 - No change in membership list
+2024-11-03 19:01:48,872 - No change in membership list
+2024-11-03 19:01:50,873 - No change in membership list
+2024-11-03 19:01:52,875 - No change in membership list
+2024-11-03 19:01:54,877 - No change in membership list
+2024-11-03 19:01:56,879 - No change in membership list
+2024-11-03 19:01:58,881 - No change in membership list
+2024-11-03 19:02:00,883 - No change in membership list
+2024-11-03 19:02:02,885 - No change in membership list
+2024-11-03 19:02:04,888 - No change in membership list
+2024-11-03 19:02:06,890 - No change in membership list
+2024-11-03 19:02:08,892 - No change in membership list
+2024-11-03 19:02:10,895 - No change in membership list
+2024-11-03 19:02:12,896 - No change in membership list
+2024-11-03 19:02:14,898 - No change in membership list
+2024-11-03 19:02:16,900 - No change in membership list
+2024-11-03 19:02:18,901 - No change in membership list
+2024-11-03 19:02:20,903 - No change in membership list
+2024-11-03 19:02:22,905 - No change in membership list
+2024-11-03 19:02:24,907 - No change in membership list
+2024-11-03 19:02:26,909 - No change in membership list
+2024-11-03 19:02:28,912 - No change in membership list
+2024-11-03 19:02:30,912 - No change in membership list
+2024-11-03 19:02:32,914 - No change in membership list
+2024-11-03 19:02:34,916 - No change in membership list
+2024-11-03 19:02:36,919 - No change in membership list
+2024-11-03 19:02:38,921 - No change in membership list
+2024-11-03 19:02:39,696 - Connection from ('fa24-cs425-6909.cs.illinois.edu', [], ['172.22.158.231'])
+2024-11-03 19:02:39,697 - ls reply sent to client for file 'client_1--business_20.txt.log'.
+2024-11-03 19:02:40,924 - No change in membership list
+2024-11-03 19:02:42,926 - No change in membership list
+2024-11-03 19:02:44,928 - No change in membership list
+2024-11-03 19:02:46,931 - No change in membership list
+2024-11-03 19:02:48,933 - Membership lists are not equal
+2024-11-03 19:02:48,934 - No change in membership list
+2024-11-03 19:02:50,936 - No change in membership list
+2024-11-03 19:02:52,938 - No change in membership list
+2024-11-03 19:02:54,941 - No change in membership list
+2024-11-03 19:02:56,943 - No change in membership list
+2024-11-03 19:02:58,945 - No change in membership list
+2024-11-03 19:03:00,948 - No change in membership list
+2024-11-03 19:03:02,950 - No change in membership list
+2024-11-03 19:03:04,951 - No change in membership list
+2024-11-03 19:03:06,953 - No change in membership list
+2024-11-03 19:03:08,956 - No change in membership list
+2024-11-03 19:03:10,958 - No change in membership list
+2024-11-03 19:03:12,960 - No change in membership list
+2024-11-03 19:03:14,963 - No change in membership list
+2024-11-03 19:03:16,964 - No change in membership list
+2024-11-03 19:03:18,966 - No change in membership list
+2024-11-03 19:03:20,968 - No change in membership list
+2024-11-03 19:03:22,970 - No change in membership list
+2024-11-03 19:03:24,972 - No change in membership list
+2024-11-03 19:03:26,975 - No change in membership list
+2024-11-03 19:03:28,976 - No change in membership list
+2024-11-03 19:03:30,978 - No change in membership list
+2024-11-03 19:03:32,980 - No change in membership list
+2024-11-03 19:03:34,983 - No change in membership list
+2024-11-03 19:03:36,985 - No change in membership list
+2024-11-03 19:03:38,987 - No change in membership list
+2024-11-03 19:03:40,990 - No change in membership list
+2024-11-03 19:03:42,992 - No change in membership list
+2024-11-03 19:03:44,994 - No change in membership list
+2024-11-03 19:03:46,997 - No change in membership list
+2024-11-03 19:03:48,999 - No change in membership list
+2024-11-03 19:03:51,001 - No change in membership list
+2024-11-03 19:03:53,004 - No change in membership list
+2024-11-03 19:03:55,006 - No change in membership list
+2024-11-03 19:03:57,008 - No change in membership list
+2024-11-03 19:03:59,011 - No change in membership list
+2024-11-03 19:04:01,013 - No change in membership list
+2024-11-03 19:04:03,016 - No change in membership list
+2024-11-03 19:04:05,018 - No change in membership list
+2024-11-03 19:04:07,020 - No change in membership list
+2024-11-03 19:04:09,022 - No change in membership list
+2024-11-03 19:04:11,024 - No change in membership list
+2024-11-03 19:04:13,026 - No change in membership list
+2024-11-03 19:04:15,028 - No change in membership list
+2024-11-03 19:04:17,031 - No change in membership list
+2024-11-03 19:04:19,033 - No change in membership list
+2024-11-03 19:04:21,035 - No change in membership list
+2024-11-03 19:04:23,037 - No change in membership list
+2024-11-03 19:04:25,039 - No change in membership list
+2024-11-03 19:04:27,041 - No change in membership list
+2024-11-03 19:04:29,042 - No change in membership list
+2024-11-03 19:04:31,044 - No change in membership list
+2024-11-03 19:04:33,047 - No change in membership list
+2024-11-03 19:04:35,049 - No change in membership list
+2024-11-03 19:04:37,051 - No change in membership list
+2024-11-03 19:04:39,053 - No change in membership list
+2024-11-03 19:04:41,056 - No change in membership list
+2024-11-03 19:04:43,058 - No change in membership list
+2024-11-03 19:04:45,060 - No change in membership list
+2024-11-03 19:04:47,063 - No change in membership list
+2024-11-03 19:04:49,065 - No change in membership list
+2024-11-03 19:04:51,067 - No change in membership list
+2024-11-03 19:04:53,070 - No change in membership list
+2024-11-03 19:04:55,071 - No change in membership list
+2024-11-03 19:04:57,073 - No change in membership list
+2024-11-03 19:04:59,075 - No change in membership list
+2024-11-03 19:05:01,077 - No change in membership list
+2024-11-03 19:05:03,079 - No change in membership list
+2024-11-03 19:05:05,082 - No change in membership list
+2024-11-03 19:05:07,084 - No change in membership list
+2024-11-03 19:05:09,086 - Membership lists are not equal
+2024-11-03 19:05:09,086 - No change in membership list
+2024-11-03 19:05:11,088 - No change in membership list
+2024-11-03 19:05:13,090 - No change in membership list
+2024-11-03 19:05:15,093 - No change in membership list
+2024-11-03 19:05:17,095 - No change in membership list

@@ -118,87 +118,91 @@ class RingNode:
         print(message)
     
     def listen_for_messages(self):
-        self.log(f"Server listening on {self.host_name}:{self.hydfs_host_port}")
+        try:
 
-        while not self.shutdown_flag.is_set():
-            readable, writable, exceptional = select.select(self.inputs, self.outputs, self.inputs, 5)
+            self.log(f"Server listening on {self.host_name}:{self.hydfs_host_port}")
 
-        
-            # Handle readable sockets
-            for s in readable:
-                if s is self.server_socket:
-                    # Accept new client connection
-                    client_socket, client_address = self.server_socket.accept()
-                    client_socket.setblocking(False)
-                    self.inputs.append(client_socket)
-                    self.data_buffer[client_socket] = b""
-                    # self.log(f"Connection from {client_address}")
-                    self.log(f"Connection from {socket.gethostbyaddr(client_address[0])}")
-                else:
-                    # Read data from an existing client
-                    data = s.recv(4096)
-                    if data:
-                        self.data_buffer[s] += data
+            while not self.shutdown_flag.is_set():
+                readable, writable, exceptional = select.select(self.inputs, self.outputs, self.inputs, 5)
 
-                        # Check if we have received the complete dictionary with "<EOF>"
-                        if b"<EOF>" in self.data_buffer[s]:
-                            # Extract the complete data before <EOF>
-                            complete_data, _, _ = self.data_buffer[s].partition(b"<EOF>")
-                            file_info = msgpack.unpackb(complete_data)
-                            action = file_info.get("action")
+            
+                # Handle readable sockets
+                for s in readable:
+                    if s is self.server_socket:
+                        # Accept new client connection
+                        client_socket, client_address = self.server_socket.accept()
+                        client_socket.setblocking(False)
+                        self.inputs.append(client_socket)
+                        self.data_buffer[client_socket] = b""
+                        # self.log(f"Connection from {client_address}")
+                        self.log(f"Connection from {socket.gethostbyaddr(client_address[0])}")
+                    else:
+                        # Read data from an existing client
+                        data = s.recv(4096)
+                        if data:
+                            self.data_buffer[s] += data
 
-                            # Only create socket mapping when message is received from client
-                            if action in ["create", "get", "append", "merge"]:
-                                client_name = file_info["client_name"]
-                                self.client_socket_map[client_name] = s
-                            
-                            # remove socket after receiving complete client request data
+                            # Check if we have received the complete dictionary with "<EOF>"
+                            if b"<EOF>" in self.data_buffer[s]:
+                                # Extract the complete data before <EOF>
+                                complete_data, _, _ = self.data_buffer[s].partition(b"<EOF>")
+                                file_info = msgpack.unpackb(complete_data)
+                                action = file_info.get("action")
+
+                                # Only create socket mapping when message is received from client
+                                if action in ["create", "get", "append", "merge"]:
+                                    client_name = file_info["client_name"]
+                                    self.client_socket_map[client_name] = s
+                                
+                                # remove socket after receiving complete client request data
+                                if s in self.inputs:
+                                    self.inputs.remove(s)
+
+                                self.handle_message(file_info, s)
+
+                                # Add to outputs list if there's a response to be sent
+                                # if s not in self.outputs:
+                                #     self.outputs.append(s)
+                        else:
+                            # Client disconnected unexpectedly
+                            self.log("Client disconnected")
                             if s in self.inputs:
                                 self.inputs.remove(s)
+                            if s in self.client_socket_map:
+                                del self.client_socket_map[s]
+                            s.close()
+                            if s in self.data_buffer:
+                                del self.data_buffer[s]
 
-                            self.handle_message(file_info, s)
-
-                            # Add to outputs list if there's a response to be sent
-                            # if s not in self.outputs:
-                            #     self.outputs.append(s)
+                # Handle writable sockets
+                for s in writable:
+                    if s in self.data_buffer and self.data_buffer[s]:
+                        # Send all data from data_buffer and clear it
+                        try:
+                            s.sendall(self.data_buffer[s])
+                            self.log(f"Sent data_buffer message {self.data_buffer[s]}")
+                            self.data_buffer[s] = b""
+                            self.outputs.remove(s)
+                        except Exception as e:
+                            self.log(f"Error sending data: {e}")
+                            self.outputs.remove(s)
+                            s.close()
                     else:
-                        # Client disconnected unexpectedly
-                        self.log("Client disconnected")
-                        if s in self.inputs:
-                            self.inputs.remove(s)
-                        if s in self.client_socket_map:
-                            del self.client_socket_map[s]
-                        s.close()
-                        if s in self.data_buffer:
-                            del self.data_buffer[s]
-
-            # Handle writable sockets
-            for s in writable:
-                if s in self.data_buffer and self.data_buffer[s]:
-                    # Send all data from data_buffer and clear it
-                    try:
-                        s.sendall(self.data_buffer[s])
-                        self.log(f"Sent data_buffer message {self.data_buffer[s]}")
-                        self.data_buffer[s] = b""
+                        # No more data to send, remove from outputs
                         self.outputs.remove(s)
-                    except Exception as e:
-                        self.log(f"Error sending data: {e}")
-                        self.outputs.remove(s)
-                        s.close()
-                else:
-                    # No more data to send, remove from outputs
-                    self.outputs.remove(s)
 
-            # Handle exceptional sockets
-            for s in exceptional:
-                self.log(f"Handling exceptional condition for {s.getpeername()}")
-                if s in self.outputs:
-                    self.inputs.remove(s)
-                if s in self.outputs:
-                    self.outputs.remove(s)
-                s.close()
-                if s in self.data_buffer:
-                    del self.data_buffer[s]
+                # Handle exceptional sockets
+                for s in exceptional:
+                    self.log(f"Handling exceptional condition for {s.getpeername()}")
+                    if s in self.outputs:
+                        self.inputs.remove(s)
+                    if s in self.outputs:
+                        self.outputs.remove(s)
+                    s.close()
+                    if s in self.data_buffer:
+                        del self.data_buffer[s]
+        except Exception as e:
+            self.log(f"Error in listen_for_messages: {e}")
 
 
                         
