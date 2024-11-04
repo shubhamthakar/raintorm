@@ -82,10 +82,10 @@ if __name__ == "__main__":
     servers = [(f'fa24-cs425-69{i:02d}.cs.illinois.edu', 5001) for i in range(1, 11)]
 
     # Number of clients to create
-    num_clients = 4
+    num_clients = 1000
     action = "append"
-    filenames = ["business_20.txt", "business_20.txt", "business_20.txt", "business_20.txt"]
-    append_filenames = ["business_20_append.txt", "business_20_append.txt", "business_20_append.txt", "business_20_append.txt"]
-    file_paths = ["../local/business_20_append.txt", "../local/business_20_append.txt", "../local/business_20_append.txt", "../local/business_20_append.txt"]
+    filenames = ["business_20.txt", "business_20.txt", "business_20.txt", "business_20.txt"]*250
+    append_filenames = ["business_20_append.txt", "business_20_append.txt", "business_20_append.txt", "business_20_append.txt"]*250
+    file_paths = ["../local/business_20_append.txt", "../local/business_20_append.txt", "../local/business_20_append.txt", "../local/business_20_append.txt"]*250
 
     main(servers, num_clients, action, filenames, append_filenames, file_paths)

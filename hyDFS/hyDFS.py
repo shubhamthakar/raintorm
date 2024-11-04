@@ -151,6 +151,10 @@ class RingNode:
                             if action in ["create", "get", "append", "merge"]:
                                 client_name = file_info["client_name"]
                                 self.client_socket_map[client_name] = s
+                            
+                            # remove socket after receiving complete client request data
+                            if s in self.inputs:
+                                self.inputs.remove(s)
 
                             self.handle_message(file_info, s)
 
@@ -160,7 +164,8 @@ class RingNode:
                     else:
                         # Client disconnected unexpectedly
                         self.log("Client disconnected")
-                        self.inputs.remove(s)
+                        if s in self.inputs:
+                            self.inputs.remove(s)
                         if s in self.client_socket_map:
                             del self.client_socket_map[s]
                         s.close()
@@ -252,6 +257,10 @@ class RingNode:
             # Send the ack message using msgpack for serialization
             client_socket.sendall(msgpack.packb(response) + b"<EOF>")
             self.log(f"ls reply sent to client for file '{filename}'.")
+
+            # close client socket after sending ack
+            client_socket.close()
+
         except (BlockingIOError, socket.error) as e:
             self.log(f"Failed to send ls reply for file '{filename}' - {e}")
 
@@ -559,6 +568,10 @@ class RingNode:
             # Send ack message using msgpack for serialization
             client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
             self.log(f"Acknowledgment sent to client for existing file '{filename}'.")
+
+            # close client socket after sending ack
+            client_socket.close()
+
         except (BlockingIOError, socket.error) as e:
             self.log(f"Failed to send acknowledgment for existing file '{filename}' - {e}")
 
@@ -596,6 +609,10 @@ class RingNode:
             # Send ack message using msgpack for serialization
             client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
             self.log(f"Acknowledgment sent to client '{filename}'.")
+
+            # close client socket after sending ack
+            client_socket.close()
+
         except (BlockingIOError, socket.error) as e:
             self.log(f"Failed to send acknowledgment '{filename}' - {e}")
 
@@ -660,6 +677,10 @@ class RingNode:
         try:
             # Send the ack message using msgpack for serialization
             client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
+
+            # close client socket after sending ack
+            client_socket.close()
+
             self.log(f"Acknowledgment sent to client with status '{ack_message['status']}' for file '{filename}'.")
         except (BlockingIOError, socket.error) as e:
             self.log(f"Failed to send acknowledgment for file '{filename}' - {e}")
@@ -694,6 +715,10 @@ class RingNode:
             try:
                 client_socket.sendall(msgpack.packb(error_message) + b"<EOF>")
                 self.log(f"Error message sent to client '{client_name}' - File '{filename}' does not exist.")
+
+                # close client socket after sending ack
+                client_socket.close()
+            
             except (BlockingIOError, socket.error) as e:
                 self.log(f"Failed to send error message for file '{filename}' - {e}")
             
@@ -736,6 +761,10 @@ class RingNode:
             # Send the ack message to the client
             client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
             self.log(f"Acknowledgment sent to client '{client_name}' for file '{filename}'.")
+
+            # close client socket after sending ack
+            client_socket.close()
+
         except (BlockingIOError, socket.error) as e:
             self.log(f"Failed to send acknowledgment for file '{filename}' - {e}")
 
@@ -814,6 +843,10 @@ class RingNode:
             # Send the acknowledgment message using msgpack for serialization
             client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
             self.log(f"Acknowledgment sent to client with status '{ack_message['status']}' for file '{filename}'.")
+
+            # close client socket after sending ack
+            client_socket.close()
+
         except (BlockingIOError, socket.error) as e:
             self.log(f"Failed to send acknowledgment for file '{filename}' - {e}")
 
@@ -848,6 +881,11 @@ class RingNode:
                     # Send the acknowledgment message using msgpack for serialization
                     client_socket_to_use.sendall(msgpack.packb(file_info) + b"<EOF>")
                     self.log(f"Acknowledgment sent to {client_name} for file '{file_info['filename']}'.")
+
+                    # close client socket after sending ack
+                    client_socket_to_use.close()
+
+
 
                     # Cleanup ack count
                     del self.acktracker[(client_name, filename, action)]

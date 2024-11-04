@@ -1,4 +1,6 @@
 This file is uploaded to HyDFS
 This append is from the client1's local directory
-This append is from the client1's local directory
-This append is from the client1's local directory
+This is the second append is from the client1's local directory
+This is the third append is from the client1's local directory
+This is the fourth append is from the client1's local directory
+This append is from the client2's local directory
