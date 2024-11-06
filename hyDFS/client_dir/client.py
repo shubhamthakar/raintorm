@@ -59,6 +59,10 @@ class FileClient:
         elif self.action == "merge":
             pass
 
+        elif self.action == "store":
+
+
+
         return msgpack.packb(message) + b"<EOF>"
 
     def send_message(self, message):
@@ -118,7 +122,7 @@ if __name__ == "__main__":
     server_port = int(sys.argv[2])
     client_name = sys.argv[3]
     action = sys.argv[4]
-    file_name = sys.argv[5]
+    file_name = sys.argv[5] if len(sys.argv) > 5 else None
     file_path = sys.argv[6] if len(sys.argv) > 6 else None
     append_file_name = sys.argv[7] if len(sys.argv) > 7 else None
     append_file_path = sys.argv[8] if len(sys.argv) > 8 else None
