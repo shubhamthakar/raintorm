@@ -51,6 +51,9 @@ class RingNode:
         self.data_buffer = defaultdict(lambda: b"")
         self.client_socket_map = {}
 
+        #input tracking for closing sockets after final write
+        self.inputtracker = defaultdict(lambda: False)
+
         # Ack Tracking
         # key: client_name, file_name, action
         self.acktracker = defaultdict(lambda: 0)
@@ -157,6 +160,9 @@ class RingNode:
                                 # remove socket after receiving complete client request data
                                 if s in self.inputs:
                                     self.inputs.remove(s)
+                                
+
+                                self.inputtracker[client_socket] = True
 
                                 self.handle_message(file_info, s)
 
@@ -183,6 +189,11 @@ class RingNode:
                             self.log(f"Sent data_buffer message {self.data_buffer[s]}")
                             self.data_buffer[s] = b""
                             self.outputs.remove(s)
+
+                            if self.inputtracker[s]:
+                                del self.inputtracker[s]
+                                s.close()
+
                         except Exception as e:
                             self.log(f"Error sending data: {e}")
                             self.outputs.remove(s)
@@ -259,11 +270,17 @@ class RingNode:
 
         try:
             # Send the ack message using msgpack for serialization
-            client_socket.sendall(msgpack.packb(response) + b"<EOF>")
+            # client_socket.sendall(msgpack.packb(response) + b"<EOF>")
+            
+            
+            # Adding message to data_buffer and and outputs list, select.select will check when sock is avail and send data
+            self.data_buffer[client_socket] = msgpack.packb(response) + b"<EOF>"
+            self.outputs.append(client_socket)
+
             self.log(f"ls reply sent to client for file '{filename}'.")
 
             # close client socket after sending ack
-            client_socket.close()
+            # client_socket.close()
 
         except (BlockingIOError, socket.error) as e:
             self.log(f"Failed to send ls reply for file '{filename}' - {e}")
@@ -570,11 +587,16 @@ class RingNode:
             
         try:
             # Send ack message using msgpack for serialization
-            client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
+            # client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
+            # self.log(f"Acknowledgment sent to client for existing file '{filename}'.")
+
+            # Adding message to data_buffer and and outputs list, select.select will check when sock is avail and send data
+            self.data_buffer[client_socket] = msgpack.packb(ack_message) + b"<EOF>"
+            self.outputs.append(client_socket)
             self.log(f"Acknowledgment sent to client for existing file '{filename}'.")
 
             # close client socket after sending ack
-            client_socket.close()
+            # client_socket.close()
 
         except (BlockingIOError, socket.error) as e:
             self.log(f"Failed to send acknowledgment for existing file '{filename}' - {e}")
@@ -611,11 +633,17 @@ class RingNode:
             
         try:
             # Send ack message using msgpack for serialization
-            client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
+            # client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
+            
+
+            # Adding message to data_buffer and and outputs list, select.select will check when sock is avail and send data
+            self.data_buffer[client_socket] = msgpack.packb(ack_message) + b"<EOF>"
+            self.outputs.append(client_socket)
             self.log(f"Acknowledgment sent to client '{filename}'.")
 
+
             # close client socket after sending ack
-            client_socket.close()
+            # client_socket.close()
 
         except (BlockingIOError, socket.error) as e:
             self.log(f"Failed to send acknowledgment '{filename}' - {e}")
@@ -680,10 +708,15 @@ class RingNode:
 
         try:
             # Send the ack message using msgpack for serialization
-            client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
+            # client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
+
+            # Adding message to data_buffer and and outputs list, select.select will check when sock is avail and send data
+            self.data_buffer[client_socket] = msgpack.packb(ack_message) + b"<EOF>"
+            self.outputs.append(client_socket)
+            self.log(f'File read succsefully {filename}')
 
             # close client socket after sending ack
-            client_socket.close()
+            # client_socket.close()
 
             self.log(f"Acknowledgment sent to client with status '{ack_message['status']}' for file '{filename}'.")
         except (BlockingIOError, socket.error) as e:
@@ -717,11 +750,17 @@ class RingNode:
             
             # Send error message back to the client
             try:
-                client_socket.sendall(msgpack.packb(error_message) + b"<EOF>")
+                # client_socket.sendall(msgpack.packb(error_message) + b"<EOF>")
+                # self.log(f"Error message sent to client '{client_name}' - File '{filename}' does not exist.")
+
+                # Adding message to data_buffer and and outputs list, select.select will check when sock is avail and send data
+                self.data_buffer[client_socket] = msgpack.packb(error_message) + b"<EOF>"
+                self.outputs.append(client_socket)
                 self.log(f"Error message sent to client '{client_name}' - File '{filename}' does not exist.")
 
+
                 # close client socket after sending ack
-                client_socket.close()
+                # client_socket.close()
             
             except (BlockingIOError, socket.error) as e:
                 self.log(f"Failed to send error message for file '{filename}' - {e}")
@@ -763,11 +802,16 @@ class RingNode:
 
         try:
             # Send the ack message to the client
-            client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
+            # client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
+            
+
+            # Adding message to data_buffer and and outputs list, select.select will check when sock is avail and send data
+            self.data_buffer[client_socket] = msgpack.packb(ack_message) + b"<EOF>"
+            self.outputs.append(client_socket)
             self.log(f"Acknowledgment sent to client '{client_name}' for file '{filename}'.")
 
             # close client socket after sending ack
-            client_socket.close()
+            # client_socket.close()
 
         except (BlockingIOError, socket.error) as e:
             self.log(f"Failed to send acknowledgment for file '{filename}' - {e}")
@@ -845,11 +889,16 @@ class RingNode:
 
         try:
             # Send the acknowledgment message using msgpack for serialization
-            client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
+            # client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
+
+            # Adding message to data_buffer and and outputs list, select.select will check when sock is avail and send data
+            self.data_buffer[client_socket] = msgpack.packb(ack_message) + b"<EOF>"
+            self.outputs.append(client_socket)
             self.log(f"Acknowledgment sent to client with status '{ack_message['status']}' for file '{filename}'.")
 
+
             # close client socket after sending ack
-            client_socket.close()
+            # client_socket.close()
 
         except (BlockingIOError, socket.error) as e:
             self.log(f"Failed to send acknowledgment for file '{filename}' - {e}")
@@ -883,11 +932,16 @@ class RingNode:
             if client_socket_to_use:
                 try:
                     # Send the acknowledgment message using msgpack for serialization
-                    client_socket_to_use.sendall(msgpack.packb(file_info) + b"<EOF>")
+                    # client_socket_to_use.sendall(msgpack.packb(file_info) + b"<EOF>")
+
+                    # Adding message to data_buffer and and outputs list, select.select will check when sock is avail and send data
+                    self.data_buffer[client_socket_to_use] = msgpack.packb(file_info) + b"<EOF>"
+                    self.outputs.append(client_socket_to_use)
                     self.log(f"Acknowledgment sent to {client_name} for file '{file_info['filename']}'.")
 
+
                     # close client socket after sending ack
-                    client_socket_to_use.close()
+                    # client_socket_to_use.close()
 
 
 

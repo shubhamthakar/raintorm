@@ -4,6 +4,7 @@ import os
 import threading
 import time
 import msgpack
+import sys
 
 class Client:
     def __init__(self, client_name, action, filename, append_filename, file_path):
@@ -60,6 +61,7 @@ class Client:
 def client_thread(server_list, client_name, action, filename, append_filename, file_path):
     # Choose a random server from the list
     server_address = random.choice(server_list)
+    print(server_address)
     client = Client(client_name, action, filename, append_filename, file_path)
     client.send_request(server_address)
 
@@ -78,14 +80,23 @@ def main(server_list, num_clients, action, filenames, append_filenames, file_pat
 
 # Example usage:
 if __name__ == "__main__":
+
+    if len(sys.argv) < 2:
+        print("Usage: python client_multi_append.py <filename>")
+        sys.exit(1)
+
+    filename = sys.argv[1]
+
     # List of server addresses (IP, port)
     servers = [(f'fa24-cs425-69{i:02d}.cs.illinois.edu', 5001) for i in range(1, 11)]
 
     # Number of clients to create
     num_clients = 4
     action = "append"
-    filenames = ["business_20.txt", "business_20.txt", "business_20.txt", "business_20.txt"]
-    append_filenames = ["business_20_append.txt", "business_20_append.txt", "business_20_append.txt", "business_20_append.txt"]
-    file_paths = ["../local/business_20_append.txt", "../local/business_20_append.txt", "../local/business_20_append.txt", "../local/business_20_append.txt"]
+    filenames = [f"{filename}"]*4
+    append_filenames = [f"test_multi_append_client{i}.txt" for i in range(1,5)]
+    # file_paths = [f"../local/test_multi_append_client{i}.txt" for i in range(1,5)]
+    file_paths = [f"../local/10Mb_file.txt" for i in range(1,5)]
+
 
     main(servers, num_clients, action, filenames, append_filenames, file_paths)
