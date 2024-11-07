@@ -2,8 +2,8 @@ import socket
 import os
 import msgpack
 
-class FileClient:
-    def __init__(self, server_ip, server_port, client_name, action, file_name=None, file_path=None, append_file_name=None, append_file_path=None):
+class ReplicaClient:
+    def __init__(self, server_ip, server_port, client_name, action, file_name=None, file_path=None, append_file_name=None, append_file_path=None, hydfs_file_name=None):
         self.server_ip = server_ip
         self.server_port = server_port
         self.client_name = client_name
@@ -13,6 +13,7 @@ class FileClient:
         self.append_file_name = append_file_name
         self.append_file_path = append_file_path
         self.client_socket = None
+        self.hydfs_file_name = hydfs_file_name
         
 
     def connect(self):
@@ -31,7 +32,8 @@ class FileClient:
         message = {
             "client_name": self.client_name,
             "action": self.action,
-            "filename": self.file_name
+            "filename": self.file_name,
+            "hydfs_file_name": self.hydfs_file_name
         }
 
         # For "create" action, add file size and content if file_path is provided
@@ -116,14 +118,11 @@ if __name__ == "__main__":
     # Command-line arguments
     server_ip = sys.argv[1]
     server_port = int(sys.argv[2])
-    client_name = sys.argv[3]
-    action = sys.argv[4]
-    file_name = sys.argv[5] if len(sys.argv) > 5 else None
-    file_path = sys.argv[6] if len(sys.argv) > 6 else None
-    append_file_name = sys.argv[7] if len(sys.argv) > 7 else None
-    append_file_path = sys.argv[8] if len(sys.argv) > 8 else None
+    hydfs_file_name = sys.argv[3] if len(sys.argv) > 3 else None
+    file_name = sys.argv[4] if len(sys.argv) > 4 else None
+    action = "get_from_replica"
 
 
     # Initialize and perform action
-    client = FileClient(server_ip, server_port, client_name, action, file_name, file_path, append_file_name, append_file_path)
+    client = ReplicaClient(server_ip, server_port, client_name, action, file_name, file_path, append_file_name, append_file_path, hydfs_file_name)
     client.perform_action()

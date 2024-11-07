@@ -150,7 +150,7 @@ class RingNode:
                                 action = file_info.get("action")
 
                                 # Only create socket mapping when message is received from client
-                                if action in ["create", "get", "append", "merge"]:
+                                if action in ["create", "get", "append", "merge", "get_from_replica"]:
                                     client_name = file_info["client_name"]
                                     self.client_socket_map[client_name] = s
                                 

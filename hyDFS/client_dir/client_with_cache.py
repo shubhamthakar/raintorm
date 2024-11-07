@@ -1,6 +1,62 @@
 import socket
 import os
 import msgpack
+import json
+
+def invalidate_entry_in_all_caches(file_name):
+    """Invalidates the specific file entry from all client caches."""
+    for cache_file in os.listdir('./cache'):
+        if cache_file.endswith("_cache.json"):
+            file_path = f'./cache/{cache_file}'
+            with open(file_path, 'r') as file:
+                try:
+                    cache_data = json.load(file)
+                except json.JSONDecodeError:
+                    cache_data = {}
+            
+            if file_name in cache_data:
+                del cache_data[file_name]
+                with open(file_path, 'w') as file:
+                    json.dump(cache_data, file)
+
+class LRUCache:
+
+    def __init__(self, capacity: int, client_name: str):
+        self.dic = {}
+        self.capacity = capacity
+        self.client_name = client_name
+        self.cache_file = f"./cache/{client_name}_cache.json"
+        self.load_cache()
+
+    def get(self, key: int) -> int:
+        if key in self.dic:
+            value = self.dic[key]
+            del self.dic[key]
+            self.dic[key] = value  # Move to the end to mark as recently used
+            return value
+        return -1
+
+    def put(self, key: int, value: int) -> None:
+        if key in self.dic:
+            del self.dic[key]
+        elif len(self.dic) == self.capacity:
+            del self.dic[next(iter(self.dic))]  # Remove the least recently used
+        self.dic[key] = value
+        self.save_cache()
+
+    def invalidate(self, key: int) -> None:
+        if key in self.dic:
+            del self.dic[key]
+            self.save_cache()
+
+    def save_cache(self):
+        with open(self.cache_file, 'w') as cache_file:
+            json.dump(self.dic, cache_file)
+
+    def load_cache(self):
+        if os.path.exists(self.cache_file):
+            with open(self.cache_file, 'r') as cache_file:
+                self.dic = json.load(cache_file)
 
 class FileClient:
     def __init__(self, server_ip, server_port, client_name, action, file_name=None, file_path=None, append_file_name=None, append_file_path=None):
@@ -13,8 +69,8 @@ class FileClient:
         self.append_file_name = append_file_name
         self.append_file_path = append_file_path
         self.client_socket = None
+        self.cache = LRUCache(capacity=5, client_name=client_name)
         
-
     def connect(self):
         """Establishes a connection to the server."""
         try:
@@ -34,8 +90,7 @@ class FileClient:
             "filename": self.file_name
         }
 
-        # For "create" action, add file size and content if file_path is provided
-        if (self.action == "create" ) and self.file_path:
+        if self.action == "create" and self.file_path:
             if os.path.exists(self.file_path):
                 message["filesize"] = os.path.getsize(self.file_path)
                 with open(self.file_path, 'rb') as file:
@@ -43,21 +98,14 @@ class FileClient:
             else:
                 print(f"Error: File at {self.file_path} does not exist.")
                 return None
-        elif (self.action == "append") and self.append_file_path:
-            if os.path.exists(self.file_path):
+        elif self.action == "append" and self.append_file_path:
+            if os.path.exists(self.append_file_path):
                 message["filesize"] = os.path.getsize(self.append_file_path)
                 with open(self.append_file_path, 'rb') as file:
                     message["content"] = file.read()
             else:
-                print(f"Error: File at {self.file_path} does not exist.")
+                print(f"Error: File at {self.append_file_path} does not exist.")
                 return None
-
-        elif self.action == "get":
-        # No additional data needed for "get" action
-            pass
-        
-        elif self.action == "merge":
-            pass
 
         return msgpack.packb(message) + b"<EOF>"
 
@@ -92,6 +140,15 @@ class FileClient:
 
     def perform_action(self):
         """Main function to perform the action."""
+        if self.action == "get":
+            cached_content = self.cache.get(self.file_name)
+            if cached_content != -1:
+                print(f"Cache hit: {self.file_name}")
+                print("Cached content:", cached_content)
+                return
+            else:
+                print(f"Cache miss: {self.file_name}")
+        
         self.connect()
         if self.client_socket:
             message = self.prepare_message()
@@ -100,17 +157,22 @@ class FileClient:
                 response = self.receive_response()
                 if response:
                     print("Server response:", response)
-                    if response["status"] == 'read_complete':
+                    if self.action == "get" and response.get("status") == 'read_complete':
+                        content = response.get("content")
+                        self.cache.put(self.file_name, content)
                         with open(response["filename"], 'w') as file:
-                            file.write(response["content"])
+                            file.write(content)
+                    elif self.action == "append":
+                        self.cache.invalidate(self.file_name)
+                    elif self.action == "merge":
+                        invalidate_entry_in_all_caches(self.file_name)
             self.close()
-
 
 if __name__ == "__main__":
     import sys
 
-    if len(sys.argv) < 7:
-        print("Usage: python client.py <server_ip> <server_port> <client_name> <action> <file_name> <file_path> <append_file_name>")
+    if len(sys.argv) < 5:
+        print("Usage: python client.py <server_ip> <server_port> <client_name> <action> [<file_name>] [<file_path>] [<append_file_path>]")
         sys.exit(1)
 
     # Command-line arguments
@@ -120,10 +182,9 @@ if __name__ == "__main__":
     action = sys.argv[4]
     file_name = sys.argv[5] if len(sys.argv) > 5 else None
     file_path = sys.argv[6] if len(sys.argv) > 6 else None
-    append_file_name = sys.argv[7] if len(sys.argv) > 7 else None
-    append_file_path = sys.argv[8] if len(sys.argv) > 8 else None
-
+    append_file_path = sys.argv[7] if len(sys.argv) > 7 else None
 
     # Initialize and perform action
-    client = FileClient(server_ip, server_port, client_name, action, file_name, file_path, append_file_name, append_file_path)
+    client = FileClient(server_ip, server_port, client_name, action, file_name, file_path, append_file_path=append_file_path)
     client.perform_action()
+
