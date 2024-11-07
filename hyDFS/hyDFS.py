@@ -183,24 +183,35 @@ class RingNode:
                 # Handle writable sockets
                 for s in writable:
                     if s in self.data_buffer and self.data_buffer[s]:
-                        # Send all data from data_buffer and clear it
                         try:
-                            s.sendall(self.data_buffer[s])
-                            self.log(f"Sent data_buffer message {self.data_buffer[s]}")
-                            self.data_buffer[s] = b""
-                            self.outputs.remove(s)
+                            # Send all data from data_buffer and clear it if successful
+                            sent = s.send(self.data_buffer[s])
+                            self.log(f"Sent {sent} bytes from data_buffer")
+                            self.data_buffer[s] = self.data_buffer[s][sent:]
 
-                            if self.inputtracker[s]:
-                                del self.inputtracker[s]
-                                s.close()
+                            # Remove from outputs when all data is sent
+                            if not self.data_buffer[s]:
+                                self.outputs.remove(s)
+                                if s in self.inputtracker:
+                                    del self.inputtracker[s]
+                                    s.close()
+
+                        except BlockingIOError as e:
+                            # Buffer is full, will retry in the next loop iteration
+                            self.log("Buffer full, retrying send operation later...")
+                            continue
 
                         except Exception as e:
+                            self.log(f"Exception type: {type(e).__name__}")
                             self.log(f"Error sending data: {e}")
-                            self.outputs.remove(s)
+                            if s in self.outputs:
+                                self.outputs.remove(s)
                             s.close()
+
                     else:
                         # No more data to send, remove from outputs
-                        self.outputs.remove(s)
+                        if s in self.outputs:
+                            self.outputs.remove(s)
 
                 # Handle exceptional sockets
                 for s in exceptional:
