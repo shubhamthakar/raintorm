@@ -803,8 +803,7 @@ class RingNode:
         with open(append_log_filepath, 'a') as json_file:
             json_file.write(json.dumps(file_info_append) + '\n')
 
-        time.sleep(0.00001)
-        self.log("sleeping")
+        time.sleep(0.1)
 
         
 
