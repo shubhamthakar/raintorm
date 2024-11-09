@@ -163,8 +163,10 @@ class RingNode:
                                 
 
                                 self.inputtracker[client_socket] = True
+                                #creating a new thread for each handle message
+                                threading.Thread(target=self.handle_message, args=(file_info, s), daemon=True).start()
 
-                                self.handle_message(file_info, s)
+                                #self.handle_message(file_info, s)
 
                                 # Add to outputs list if there's a response to be sent
                                 # if s not in self.outputs:
@@ -738,6 +740,8 @@ class RingNode:
 
     def add_file(self, file_info, client_socket):
         # Extract client name and filename from the file_info
+        self.log(f"Stated append action to file {file_info['filename']}")
+
         client_name = file_info["client_name"]
         filename = file_info["filename"]
         
@@ -800,7 +804,10 @@ class RingNode:
         with open(append_log_filepath, 'a') as json_file:
             json_file.write(json.dumps(file_info_append) + '\n')
 
-        self.log(f"Append action added to '{append_log_filename}' with sequence number {sequence_number}.")
+        time.sleep(0.1)
+        self.log("sleeping")
+
+        
 
         # Send acknowledgment back to the client
         ack_message = {
@@ -811,6 +818,8 @@ class RingNode:
             "sequence_number": sequence_number
         }
 
+        self.log(f"Performed append action to '{append_log_filename}' with sequence number {sequence_number}.")
+
         try:
             # Send the ack message to the client
             # client_socket.sendall(msgpack.packb(ack_message) + b"<EOF>")
@@ -819,7 +828,7 @@ class RingNode:
             # Adding message to data_buffer and and outputs list, select.select will check when sock is avail and send data
             self.data_buffer[client_socket] = msgpack.packb(ack_message) + b"<EOF>"
             self.outputs.append(client_socket)
-            self.log(f"Acknowledgment sent to client '{client_name}' for file '{filename}'.")
+            self.log(f"Append acknowledgment sent to client '{client_name}' for file '{filename}'.")
 
             # close client socket after sending ack
             # client_socket.close()

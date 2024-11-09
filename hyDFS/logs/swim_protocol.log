@@ -1,427 +1,109 @@
-2024-11-07 17:18:33,638 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
-2024-11-07 17:18:33,640 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
-2024-11-07 17:18:33,641 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
-2024-11-07 17:18:33,651 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
-2024-11-07 17:18:33,652 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
-2024-11-07 17:18:33,653 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731021513', 'status': 'LIVE', 'inc_num': 0}]
-2024-11-07 17:18:35,278 - New join request received from fa24-cs425-6902.cs.illinois.edu:5000
-2024-11-07 17:18:35,279 - Sent membership list to fa24-cs425-6902.cs.illinois.edu:5000
-2024-11-07 17:18:36,824 - New join request received from fa24-cs425-6903.cs.illinois.edu:5000
-2024-11-07 17:18:36,824 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 403, 'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1731021516', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:36,825 - Sent membership list to fa24-cs425-6903.cs.illinois.edu:5000
-2024-11-07 17:18:37,993 - New join request received from fa24-cs425-6904.cs.illinois.edu:5000
-2024-11-07 17:18:37,993 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 859, 'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1731021517', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:37,994 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 859, 'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1731021517', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:37,994 - Sent membership list to fa24-cs425-6904.cs.illinois.edu:5000
-2024-11-07 17:18:39,019 - New join request received from fa24-cs425-6905.cs.illinois.edu:5000
-2024-11-07 17:18:39,019 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 845, 'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1731021519', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:39,020 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 845, 'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1731021519', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:39,020 - Notified fa24-cs425-6904.cs.illinois.edu:5000 of new node {'ring_id': 845, 'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1731021519', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:39,021 - Sent membership list to fa24-cs425-6905.cs.illinois.edu:5000
-2024-11-07 17:18:40,180 - New join request received from fa24-cs425-6906.cs.illinois.edu:5000
-2024-11-07 17:18:40,181 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 620, 'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1731021520', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:40,182 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 620, 'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1731021520', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:40,182 - Notified fa24-cs425-6904.cs.illinois.edu:5000 of new node {'ring_id': 620, 'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1731021520', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:40,183 - Notified fa24-cs425-6905.cs.illinois.edu:5000 of new node {'ring_id': 620, 'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1731021520', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:40,183 - Sent membership list to fa24-cs425-6906.cs.illinois.edu:5000
-2024-11-07 17:18:40,905 - New join request received from fa24-cs425-6907.cs.illinois.edu:5000
-2024-11-07 17:18:40,906 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 140, 'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1731021520', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:40,906 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 140, 'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1731021520', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:40,907 - Notified fa24-cs425-6904.cs.illinois.edu:5000 of new node {'ring_id': 140, 'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1731021520', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:40,907 - Notified fa24-cs425-6905.cs.illinois.edu:5000 of new node {'ring_id': 140, 'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1731021520', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:40,908 - Notified fa24-cs425-6906.cs.illinois.edu:5000 of new node {'ring_id': 140, 'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1731021520', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:40,909 - Sent membership list to fa24-cs425-6907.cs.illinois.edu:5000
-2024-11-07 17:18:42,999 - New join request received from fa24-cs425-6908.cs.illinois.edu:5000
-2024-11-07 17:18:43,000 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1731021522', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:43,000 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1731021522', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:43,001 - Notified fa24-cs425-6904.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1731021522', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:43,001 - Notified fa24-cs425-6905.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1731021522', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:43,002 - Notified fa24-cs425-6906.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1731021522', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:43,002 - Notified fa24-cs425-6907.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1731021522', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:43,003 - Sent membership list to fa24-cs425-6908.cs.illinois.edu:5000
-2024-11-07 17:18:45,086 - New join request received from fa24-cs425-6909.cs.illinois.edu:5000
-2024-11-07 17:18:45,087 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1731021525', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:45,088 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1731021525', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:45,088 - Notified fa24-cs425-6904.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1731021525', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:45,089 - Notified fa24-cs425-6905.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1731021525', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:45,089 - Notified fa24-cs425-6906.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1731021525', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:45,090 - Notified fa24-cs425-6907.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1731021525', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:45,091 - Notified fa24-cs425-6908.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1731021525', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:45,091 - Sent membership list to fa24-cs425-6909.cs.illinois.edu:5000
-2024-11-07 17:18:46,254 - New join request received from fa24-cs425-6910.cs.illinois.edu:5000
-2024-11-07 17:18:46,255 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1731021526', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:46,256 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1731021526', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:46,256 - Notified fa24-cs425-6904.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1731021526', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:46,257 - Notified fa24-cs425-6905.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1731021526', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:46,258 - Notified fa24-cs425-6906.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1731021526', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:46,258 - Notified fa24-cs425-6907.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1731021526', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:46,259 - Notified fa24-cs425-6908.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1731021526', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:46,259 - Notified fa24-cs425-6909.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1731021526', 'status': 'LIVE', 'inc_num': 0}
-2024-11-07 17:18:46,260 - Sent membership list to fa24-cs425-6910.cs.illinois.edu:5000
-2024-11-07 17:18:53,659 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
-2024-11-07 17:18:53,660 - Monitoring membership list started
-2024-11-07 17:18:53,660 - Actually sent ping out
-2024-11-07 17:18:53,663 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
-2024-11-07 17:18:53,663 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
-2024-11-07 17:18:53,663 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
-2024-11-07 17:18:55,294 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
-2024-11-07 17:18:55,295 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
-2024-11-07 17:18:55,662 - No change in membership list
-2024-11-07 17:18:56,841 - Recieved a ping from ('fa24-cs425-6903.cs.illinois.edu', 5000)
-2024-11-07 17:18:56,842 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
-2024-11-07 17:18:57,665 - No change in membership list
-2024-11-07 17:18:57,993 - Recieved a ping from ('fa24-cs425-6904.cs.illinois.edu', 5000)
-2024-11-07 17:18:57,994 - Sent ack to ('fa24-cs425-6904.cs.illinois.edu', 5000)
-2024-11-07 17:18:59,028 - Recieved a ping from ('fa24-cs425-6905.cs.illinois.edu', 5000)
-2024-11-07 17:18:59,028 - Sent ack to ('fa24-cs425-6905.cs.illinois.edu', 5000)
-2024-11-07 17:18:59,667 - No change in membership list
-2024-11-07 17:19:00,199 - Recieved a ping from ('fa24-cs425-6906.cs.illinois.edu', 5000)
-2024-11-07 17:19:00,199 - Sent ack to ('fa24-cs425-6906.cs.illinois.edu', 5000)
-2024-11-07 17:19:00,910 - Recieved a ping from ('fa24-cs425-6907.cs.illinois.edu', 5000)
-2024-11-07 17:19:00,911 - Sent ack to ('fa24-cs425-6907.cs.illinois.edu', 5000)
-2024-11-07 17:19:01,669 - No change in membership list
-2024-11-07 17:19:03,007 - Recieved a ping from ('fa24-cs425-6908.cs.illinois.edu', 5000)
-2024-11-07 17:19:03,008 - Sent ack to ('fa24-cs425-6908.cs.illinois.edu', 5000)
-2024-11-07 17:19:03,672 - No change in membership list
-2024-11-07 17:19:05,088 - Recieved a ping from ('fa24-cs425-6909.cs.illinois.edu', 5000)
-2024-11-07 17:19:05,089 - Sent ack to ('fa24-cs425-6909.cs.illinois.edu', 5000)
-2024-11-07 17:19:05,674 - No change in membership list
-2024-11-07 17:19:06,270 - Recieved a ping from ('fa24-cs425-6910.cs.illinois.edu', 5000)
-2024-11-07 17:19:06,271 - Sent ack to ('fa24-cs425-6910.cs.illinois.edu', 5000)
-2024-11-07 17:19:07,677 - No change in membership list
-2024-11-07 17:19:09,679 - No change in membership list
-2024-11-07 17:19:11,680 - No change in membership list
-2024-11-07 17:19:13,671 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
-2024-11-07 17:19:13,672 - Actually sent ping out
-2024-11-07 17:19:13,674 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
-2024-11-07 17:19:13,675 - Popped this from queue: {'node_ip': 'fa24-cs425-6903.cs.illinois.edu', 'node_port': 5000}
-2024-11-07 17:19:13,675 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
-2024-11-07 17:19:13,682 - No change in membership list
-2024-11-07 17:19:15,684 - No change in membership list
-2024-11-07 17:19:17,687 - No change in membership list
-2024-11-07 17:19:19,689 - No change in membership list
-2024-11-07 17:19:21,692 - No change in membership list
-2024-11-07 17:19:23,693 - No change in membership list
-2024-11-07 17:19:25,695 - No change in membership list
-2024-11-07 17:19:27,697 - No change in membership list
-2024-11-07 17:19:29,699 - No change in membership list
-2024-11-07 17:19:31,701 - No change in membership list
-2024-11-07 17:19:33,684 - Pinging fa24-cs425-6904.cs.illinois.edu:5000
-2024-11-07 17:19:33,685 - Actually sent ping out
-2024-11-07 17:19:33,686 - Received ack from ('fa24-cs425-6904.cs.illinois.edu', 5000)
-2024-11-07 17:19:33,687 - Popped this from queue: {'node_ip': 'fa24-cs425-6904.cs.illinois.edu', 'node_port': 5000}
-2024-11-07 17:19:33,687 - Node fa24-cs425-6904.cs.illinois.edu:5000 is alive
-2024-11-07 17:19:33,704 - No change in membership list
-2024-11-07 17:19:35,706 - No change in membership list
-2024-11-07 17:19:37,709 - No change in membership list
-2024-11-07 17:19:39,711 - No change in membership list
-2024-11-07 17:19:41,713 - No change in membership list
-2024-11-07 17:19:43,716 - No change in membership list
-2024-11-07 17:19:45,718 - No change in membership list
-2024-11-07 17:19:47,721 - No change in membership list
-2024-11-07 17:19:49,723 - No change in membership list
-2024-11-07 17:19:51,725 - No change in membership list
-2024-11-07 17:19:53,702 - Pinging fa24-cs425-6905.cs.illinois.edu:5000
-2024-11-07 17:19:53,703 - Actually sent ping out
-2024-11-07 17:19:53,705 - Received ack from ('fa24-cs425-6905.cs.illinois.edu', 5000)
-2024-11-07 17:19:53,705 - Popped this from queue: {'node_ip': 'fa24-cs425-6905.cs.illinois.edu', 'node_port': 5000}
-2024-11-07 17:19:53,705 - Node fa24-cs425-6905.cs.illinois.edu:5000 is alive
-2024-11-07 17:19:53,728 - No change in membership list
-2024-11-07 17:19:55,730 - No change in membership list
-2024-11-07 17:19:57,732 - No change in membership list
-2024-11-07 17:19:59,734 - No change in membership list
-2024-11-07 17:20:01,736 - No change in membership list
-2024-11-07 17:20:03,738 - No change in membership list
-2024-11-07 17:20:05,741 - No change in membership list
-2024-11-07 17:20:07,743 - No change in membership list
-2024-11-07 17:20:08,109 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-07 17:20:08,110 - Next 3 nodes after 915: [{'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1731021526', 'ring_id': 56}, {'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1731021522', 'ring_id': 58}, {'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1731021520', 'ring_id': 140}]
-2024-11-07 17:20:08,111 - Sending write to fa24-cs425-6910.cs.illinois.edu:5001 for file business_20.txt
-2024-11-07 17:20:08,111 - Sending write to fa24-cs425-6908.cs.illinois.edu:5001 for file business_20.txt
-2024-11-07 17:20:08,112 - Sending write to fa24-cs425-6907.cs.illinois.edu:5001 for file business_20.txt
-2024-11-07 17:20:08,113 - Sent 2272 bytes from data_buffer
-2024-11-07 17:20:08,113 - Sent 2272 bytes from data_buffer
-2024-11-07 17:20:08,113 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'write_complete'}
-2024-11-07 17:20:08,114 - Quorum not yet met, received ack from 1 replicas
-2024-11-07 17:20:08,114 - Sent 2272 bytes from data_buffer
-2024-11-07 17:20:08,114 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'write_complete'}
-2024-11-07 17:20:08,114 - Quorum not yet met, received ack from 2 replicas
-2024-11-07 17:20:08,115 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'write_complete'}
-2024-11-07 17:20:08,115 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 38888)>
-2024-11-07 17:20:08,116 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'write_complete'}
-2024-11-07 17:20:08,116 - Acknowledgment sent to client_1 for file 'business_20.txt'.
-2024-11-07 17:20:08,116 - Sent 85 bytes from data_buffer
-2024-11-07 17:20:09,744 - No change in membership list
-2024-11-07 17:20:11,746 - No change in membership list
-2024-11-07 17:20:13,722 - Pinging fa24-cs425-6906.cs.illinois.edu:5000
-2024-11-07 17:20:13,722 - Actually sent ping out
-2024-11-07 17:20:13,725 - Received ack from ('fa24-cs425-6906.cs.illinois.edu', 5000)
-2024-11-07 17:20:13,725 - Popped this from queue: {'node_ip': 'fa24-cs425-6906.cs.illinois.edu', 'node_port': 5000}
-2024-11-07 17:20:13,725 - Node fa24-cs425-6906.cs.illinois.edu:5000 is alive
-2024-11-07 17:20:13,749 - No change in membership list
-2024-11-07 17:20:14,718 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-07 17:20:15,753 - No change in membership list
-2024-11-07 17:20:16,439 - Next 3 nodes after 915: [{'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1731021526', 'ring_id': 56}, {'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1731021522', 'ring_id': 58}, {'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1731021520', 'ring_id': 140}]
-2024-11-07 17:20:16,439 - Sending add to fa24-cs425-6910.cs.illinois.edu:5001 for file business_20.txt
-2024-11-07 17:20:16,448 - Sending add to fa24-cs425-6908.cs.illinois.edu:5001 for file business_20.txt
-2024-11-07 17:20:16,452 - Sending add to fa24-cs425-6907.cs.illinois.edu:5001 for file business_20.txt
-2024-11-07 17:20:16,456 - Sent 94120 bytes from data_buffer
-2024-11-07 17:20:16,457 - Sent 94120 bytes from data_buffer
-2024-11-07 17:20:16,459 - Sent 94120 bytes from data_buffer
-2024-11-07 17:20:16,460 - Sent 175208 bytes from data_buffer
-2024-11-07 17:20:16,461 - Sent 175208 bytes from data_buffer
-2024-11-07 17:20:16,463 - Sent 175208 bytes from data_buffer
-2024-11-07 17:20:16,464 - Sent 416384 bytes from data_buffer
-2024-11-07 17:20:16,465 - Sent 562624 bytes from data_buffer
-2024-11-07 17:20:16,466 - Sent 450408 bytes from data_buffer
-2024-11-07 17:20:16,468 - Sent 683456 bytes from data_buffer
-2024-11-07 17:20:16,469 - Sent 1113512 bytes from data_buffer
-2024-11-07 17:20:16,471 - Sent 175208 bytes from data_buffer
-2024-11-07 17:20:16,478 - Sent 403992 bytes from data_buffer
-2024-11-07 17:20:16,481 - Sent 175208 bytes from data_buffer
-2024-11-07 17:20:16,494 - Sent 586440 bytes from data_buffer
-2024-11-07 17:20:16,497 - Sent 159280 bytes from data_buffer
-2024-11-07 17:20:16,521 - Sent 175208 bytes from data_buffer
-2024-11-07 17:20:16,527 - Sent 403992 bytes from data_buffer
-2024-11-07 17:20:16,543 - Sent 159280 bytes from data_buffer
-2024-11-07 17:20:16,576 - Sent 175208 bytes from data_buffer
-2024-11-07 17:20:16,582 - Sent 586440 bytes from data_buffer
-2024-11-07 17:20:16,597 - Sent 403992 bytes from data_buffer
-2024-11-07 17:20:16,605 - Sent 159280 bytes from data_buffer
-2024-11-07 17:20:16,649 - Sent 175208 bytes from data_buffer
-2024-11-07 17:20:16,687 - Sent 159280 bytes from data_buffer
-2024-11-07 17:20:16,703 - Sent 403992 bytes from data_buffer
-2024-11-07 17:20:16,734 - Sent 586440 bytes from data_buffer
-2024-11-07 17:20:16,740 - Sent 175208 bytes from data_buffer
-2024-11-07 17:20:16,785 - Sent 159280 bytes from data_buffer
-2024-11-07 17:20:16,827 - Sent 403992 bytes from data_buffer
-2024-11-07 17:20:16,848 - Sent 175208 bytes from data_buffer
-2024-11-07 17:20:16,893 - Sent 159280 bytes from data_buffer
-2024-11-07 17:20:16,924 - Sent 586440 bytes from data_buffer
-2024-11-07 17:20:16,951 - Sent 175208 bytes from data_buffer
-2024-11-07 17:20:16,976 - Sent 403992 bytes from data_buffer
-2024-11-07 17:20:17,000 - Sent 159280 bytes from data_buffer
-2024-11-07 17:20:17,066 - Sent 175208 bytes from data_buffer
-2024-11-07 17:20:17,122 - Sent 159280 bytes from data_buffer
-2024-11-07 17:20:17,147 - Sent 403992 bytes from data_buffer
-2024-11-07 17:20:17,169 - Sent 586440 bytes from data_buffer
-2024-11-07 17:20:17,199 - Sent 175208 bytes from data_buffer
-2024-11-07 17:20:17,263 - Sent 159280 bytes from data_buffer
-2024-11-07 17:20:17,349 - Sent 175208 bytes from data_buffer
-2024-11-07 17:20:17,352 - Sent 403992 bytes from data_buffer
-2024-11-07 17:20:17,421 - Sent 159280 bytes from data_buffer
-2024-11-07 17:20:17,472 - Sent 242412 bytes from data_buffer
-2024-11-07 17:20:17,516 - Sent 175208 bytes from data_buffer
-2024-11-07 17:20:17,543 - Sent 403992 bytes from data_buffer
-2024-11-07 17:20:17,595 - Sent 159280 bytes from data_buffer
-2024-11-07 17:20:17,699 - Sent 175208 bytes from data_buffer
-2024-11-07 17:20:17,755 - No change in membership list
-2024-11-07 17:20:17,775 - Sent 159280 bytes from data_buffer
-2024-11-07 17:20:17,796 - Sent 114980 bytes from data_buffer
-2024-11-07 17:20:17,881 - Sent 175208 bytes from data_buffer
-2024-11-07 17:20:17,964 - Sent 36068 bytes from data_buffer
-2024-11-07 17:20:18,241 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'append_logged', 'sequence_number': 1}
-2024-11-07 17:20:18,242 - Quorum not yet met, received ack from 1 replicas
-2024-11-07 17:20:18,435 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'append_logged', 'sequence_number': 1}
-2024-11-07 17:20:18,435 - Quorum not yet met, received ack from 2 replicas
-2024-11-07 17:20:18,446 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'append_logged', 'sequence_number': 1}
-2024-11-07 17:20:18,447 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 38902)>
-2024-11-07 17:20:18,447 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'append_logged', 'sequence_number': 1}
-2024-11-07 17:20:18,447 - Acknowledgment sent to client_1 for file 'business_20.txt'.
-2024-11-07 17:20:18,452 - Sent 101 bytes from data_buffer
-2024-11-07 17:20:19,756 - No change in membership list
-2024-11-07 17:20:21,758 - No change in membership list
-2024-11-07 17:20:23,760 - No change in membership list
-2024-11-07 17:20:25,763 - No change in membership list
-2024-11-07 17:20:27,765 - No change in membership list
-2024-11-07 17:20:29,767 - No change in membership list
-2024-11-07 17:20:31,770 - No change in membership list
-2024-11-07 17:20:33,738 - Pinging fa24-cs425-6907.cs.illinois.edu:5000
-2024-11-07 17:20:33,739 - Actually sent ping out
-2024-11-07 17:20:33,741 - Received ack from ('fa24-cs425-6907.cs.illinois.edu', 5000)
-2024-11-07 17:20:33,741 - Popped this from queue: {'node_ip': 'fa24-cs425-6907.cs.illinois.edu', 'node_port': 5000}
-2024-11-07 17:20:33,742 - Node fa24-cs425-6907.cs.illinois.edu:5000 is alive
-2024-11-07 17:20:33,772 - No change in membership list
-2024-11-07 17:20:35,774 - No change in membership list
-2024-11-07 17:20:37,776 - No change in membership list
-2024-11-07 17:20:39,779 - No change in membership list
-2024-11-07 17:20:41,781 - No change in membership list
-2024-11-07 17:20:43,783 - No change in membership list
-2024-11-07 17:20:45,785 - No change in membership list
-2024-11-07 17:20:47,788 - No change in membership list
-2024-11-07 17:20:49,790 - No change in membership list
-2024-11-07 17:20:51,792 - No change in membership list
-2024-11-07 17:20:53,750 - Pinging fa24-cs425-6908.cs.illinois.edu:5000
-2024-11-07 17:20:53,751 - Actually sent ping out
-2024-11-07 17:20:53,753 - Received ack from ('fa24-cs425-6908.cs.illinois.edu', 5000)
-2024-11-07 17:20:53,753 - Popped this from queue: {'node_ip': 'fa24-cs425-6908.cs.illinois.edu', 'node_port': 5000}
-2024-11-07 17:20:53,753 - Node fa24-cs425-6908.cs.illinois.edu:5000 is alive
-2024-11-07 17:20:53,795 - No change in membership list
-2024-11-07 17:20:55,797 - No change in membership list
-2024-11-07 17:20:57,798 - No change in membership list
-2024-11-07 17:20:59,800 - No change in membership list
-2024-11-07 17:21:01,802 - No change in membership list
-2024-11-07 17:21:03,805 - No change in membership list
-2024-11-07 17:21:05,806 - No change in membership list
-2024-11-07 17:21:07,808 - No change in membership list
-2024-11-07 17:21:09,809 - No change in membership list
-2024-11-07 17:21:11,811 - No change in membership list
-2024-11-07 17:21:13,751 - Pinging fa24-cs425-6909.cs.illinois.edu:5000
-2024-11-07 17:21:13,752 - Actually sent ping out
-2024-11-07 17:21:13,754 - Received ack from ('fa24-cs425-6909.cs.illinois.edu', 5000)
-2024-11-07 17:21:13,754 - Popped this from queue: {'node_ip': 'fa24-cs425-6909.cs.illinois.edu', 'node_port': 5000}
-2024-11-07 17:21:13,754 - Node fa24-cs425-6909.cs.illinois.edu:5000 is alive
-2024-11-07 17:21:13,814 - No change in membership list
-2024-11-07 17:21:15,816 - No change in membership list
-2024-11-07 17:21:17,818 - No change in membership list
-2024-11-07 17:21:19,820 - No change in membership list
-2024-11-07 17:21:21,822 - No change in membership list
-2024-11-07 17:21:23,824 - No change in membership list
-2024-11-07 17:21:25,827 - No change in membership list
-2024-11-07 17:21:27,829 - No change in membership list
-2024-11-07 17:21:29,831 - No change in membership list
-2024-11-07 17:21:31,834 - No change in membership list
-2024-11-07 17:21:33,764 - Pinging fa24-cs425-6910.cs.illinois.edu:5000
-2024-11-07 17:21:33,765 - Actually sent ping out
-2024-11-07 17:21:33,767 - Received ack from ('fa24-cs425-6910.cs.illinois.edu', 5000)
-2024-11-07 17:21:33,768 - Popped this from queue: {'node_ip': 'fa24-cs425-6910.cs.illinois.edu', 'node_port': 5000}
-2024-11-07 17:21:33,768 - Node fa24-cs425-6910.cs.illinois.edu:5000 is alive
-2024-11-07 17:21:33,836 - No change in membership list
-2024-11-07 17:21:35,837 - No change in membership list
-2024-11-07 17:21:37,839 - No change in membership list
-2024-11-07 17:21:39,840 - No change in membership list
-2024-11-07 17:21:41,842 - No change in membership list
-2024-11-07 17:21:43,843 - No change in membership list
-2024-11-07 17:21:45,846 - No change in membership list
-2024-11-07 17:21:47,848 - No change in membership list
-2024-11-07 17:21:49,850 - No change in membership list
-2024-11-07 17:21:51,851 - No change in membership list
-2024-11-07 17:21:53,782 - Pinging fa24-cs425-6908.cs.illinois.edu:5000
-2024-11-07 17:21:53,783 - Actually sent ping out
-2024-11-07 17:21:53,784 - Received ack from ('fa24-cs425-6908.cs.illinois.edu', 5000)
-2024-11-07 17:21:53,785 - Popped this from queue: {'node_ip': 'fa24-cs425-6908.cs.illinois.edu', 'node_port': 5000}
-2024-11-07 17:21:53,785 - Node fa24-cs425-6908.cs.illinois.edu:5000 is alive
-2024-11-07 17:21:53,854 - Membership lists are not equal
-2024-11-07 17:21:53,854 - No change in membership list
-2024-11-07 17:21:55,854 - No change in membership list
-2024-11-07 17:21:57,857 - No change in membership list
-2024-11-07 17:21:59,859 - No change in membership list
-2024-11-07 17:22:01,861 - No change in membership list
-2024-11-07 17:22:03,862 - No change in membership list
-2024-11-07 17:22:05,864 - No change in membership list
-2024-11-07 17:22:06,379 - Recieved a ping from ('fa24-cs425-6910.cs.illinois.edu', 5000)
-2024-11-07 17:22:06,379 - Sent ack to ('fa24-cs425-6910.cs.illinois.edu', 5000)
-2024-11-07 17:22:07,866 - No change in membership list
-2024-11-07 17:22:09,869 - No change in membership list
-2024-11-07 17:22:11,871 - No change in membership list
-2024-11-07 17:22:13,789 - Pinging fa24-cs425-6904.cs.illinois.edu:5000
-2024-11-07 17:22:13,789 - Actually sent ping out
-2024-11-07 17:22:13,791 - Received ack from ('fa24-cs425-6904.cs.illinois.edu', 5000)
-2024-11-07 17:22:13,791 - Popped this from queue: {'node_ip': 'fa24-cs425-6904.cs.illinois.edu', 'node_port': 5000}
-2024-11-07 17:22:13,792 - Node fa24-cs425-6904.cs.illinois.edu:5000 is alive
-2024-11-07 17:22:13,872 - No change in membership list
-2024-11-07 17:22:15,874 - No change in membership list
-2024-11-07 17:22:17,877 - No change in membership list
-2024-11-07 17:22:19,138 - Recieved a ping from ('fa24-cs425-6905.cs.illinois.edu', 5000)
-2024-11-07 17:22:19,138 - Sent ack to ('fa24-cs425-6905.cs.illinois.edu', 5000)
-2024-11-07 17:22:19,879 - No change in membership list
-2024-11-07 17:22:20,291 - Recieved a ping from ('fa24-cs425-6906.cs.illinois.edu', 5000)
-2024-11-07 17:22:20,292 - Sent ack to ('fa24-cs425-6906.cs.illinois.edu', 5000)
-2024-11-07 17:22:21,882 - No change in membership list
-2024-11-07 17:22:23,884 - No change in membership list
-2024-11-07 17:22:25,886 - No change in membership list
-2024-11-07 17:22:27,889 - No change in membership list
-2024-11-07 17:22:29,891 - No change in membership list
-2024-11-07 17:22:31,893 - No change in membership list
-2024-11-07 17:22:33,790 - Pinging fa24-cs425-6907.cs.illinois.edu:5000
-2024-11-07 17:22:33,790 - Actually sent ping out
-2024-11-07 17:22:33,792 - Received ack from ('fa24-cs425-6907.cs.illinois.edu', 5000)
-2024-11-07 17:22:33,792 - Popped this from queue: {'node_ip': 'fa24-cs425-6907.cs.illinois.edu', 'node_port': 5000}
-2024-11-07 17:22:33,792 - Node fa24-cs425-6907.cs.illinois.edu:5000 is alive
-2024-11-07 17:22:33,894 - No change in membership list
-2024-11-07 17:22:35,896 - No change in membership list
-2024-11-07 17:22:37,899 - No change in membership list
-2024-11-07 17:22:39,901 - No change in membership list
-2024-11-07 17:22:41,902 - No change in membership list
-2024-11-07 17:22:43,904 - No change in membership list
-2024-11-07 17:22:45,906 - No change in membership list
-2024-11-07 17:22:47,909 - No change in membership list
-2024-11-07 17:22:49,911 - No change in membership list
-2024-11-07 17:22:51,913 - No change in membership list
-2024-11-07 17:22:53,810 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
-2024-11-07 17:22:53,810 - Actually sent ping out
-2024-11-07 17:22:53,828 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
-2024-11-07 17:22:53,828 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
-2024-11-07 17:22:53,828 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
-2024-11-07 17:22:53,916 - No change in membership list
-2024-11-07 17:22:55,918 - No change in membership list
-2024-11-07 17:22:57,920 - No change in membership list
-2024-11-07 17:22:58,182 - Recieved a ping from ('fa24-cs425-6904.cs.illinois.edu', 5000)
-2024-11-07 17:22:58,183 - Sent ack to ('fa24-cs425-6904.cs.illinois.edu', 5000)
-2024-11-07 17:22:59,922 - No change in membership list
-2024-11-07 17:23:01,924 - No change in membership list
-2024-11-07 17:23:03,180 - Recieved a ping from ('fa24-cs425-6908.cs.illinois.edu', 5000)
-2024-11-07 17:23:03,182 - Sent ack to ('fa24-cs425-6908.cs.illinois.edu', 5000)
-2024-11-07 17:23:03,927 - No change in membership list
-2024-11-07 17:23:05,929 - No change in membership list
-2024-11-07 17:23:07,932 - No change in membership list
-2024-11-07 17:23:09,934 - No change in membership list
-2024-11-07 17:23:11,936 - No change in membership list
-2024-11-07 17:23:13,830 - Pinging fa24-cs425-6905.cs.illinois.edu:5000
-2024-11-07 17:23:13,830 - Actually sent ping out
-2024-11-07 17:23:13,833 - Received ack from ('fa24-cs425-6905.cs.illinois.edu', 5000)
-2024-11-07 17:23:13,833 - Popped this from queue: {'node_ip': 'fa24-cs425-6905.cs.illinois.edu', 'node_port': 5000}
-2024-11-07 17:23:13,833 - Node fa24-cs425-6905.cs.illinois.edu:5000 is alive
-2024-11-07 17:23:13,937 - No change in membership list
-2024-11-07 17:23:15,457 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
-2024-11-07 17:23:15,458 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
-2024-11-07 17:23:15,939 - No change in membership list
-2024-11-07 17:23:17,941 - No change in membership list
-2024-11-07 17:23:19,943 - No change in membership list
-2024-11-07 17:23:21,946 - No change in membership list
-2024-11-07 17:23:23,948 - No change in membership list
-2024-11-07 17:23:25,951 - No change in membership list
-2024-11-07 17:23:27,953 - No change in membership list
-2024-11-07 17:23:29,954 - No change in membership list
-2024-11-07 17:23:31,956 - No change in membership list
-2024-11-07 17:23:33,841 - Pinging fa24-cs425-6909.cs.illinois.edu:5000
-2024-11-07 17:23:33,841 - Actually sent ping out
-2024-11-07 17:23:33,843 - Received ack from ('fa24-cs425-6909.cs.illinois.edu', 5000)
-2024-11-07 17:23:33,843 - Popped this from queue: {'node_ip': 'fa24-cs425-6909.cs.illinois.edu', 'node_port': 5000}
-2024-11-07 17:23:33,843 - Node fa24-cs425-6909.cs.illinois.edu:5000 is alive
-2024-11-07 17:23:33,958 - No change in membership list
-2024-11-07 17:23:35,960 - No change in membership list
-2024-11-07 17:23:37,962 - No change in membership list
-2024-11-07 17:23:39,964 - No change in membership list
-2024-11-07 17:23:41,965 - No change in membership list
-2024-11-07 17:23:43,967 - No change in membership list
-2024-11-07 17:23:45,969 - No change in membership list
-2024-11-07 17:23:47,972 - No change in membership list
-2024-11-07 17:23:49,974 - No change in membership list
-2024-11-07 17:23:51,977 - No change in membership list
-2024-11-07 17:23:53,847 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
-2024-11-07 17:23:53,848 - Actually sent ping out
-2024-11-07 17:23:53,850 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
-2024-11-07 17:23:53,850 - Popped this from queue: {'node_ip': 'fa24-cs425-6903.cs.illinois.edu', 'node_port': 5000}
-2024-11-07 17:23:53,850 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
-2024-11-07 17:23:53,979 - No change in membership list
-2024-11-07 17:23:55,982 - No change in membership list
-2024-11-07 17:23:57,079 - Recieved a ping from ('fa24-cs425-6903.cs.illinois.edu', 5000)
-2024-11-07 17:23:57,080 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
-2024-11-07 17:23:57,984 - No change in membership list
-2024-11-07 17:23:59,986 - No change in membership list
-2024-11-07 17:24:01,989 - No change in membership list
-2024-11-07 17:24:03,990 - No change in membership list
-2024-11-07 17:24:05,275 - Recieved a ping from ('fa24-cs425-6909.cs.illinois.edu', 5000)
-2024-11-07 17:24:05,276 - Sent ack to ('fa24-cs425-6909.cs.illinois.edu', 5000)
-2024-11-07 17:24:05,992 - No change in membership list
-2024-11-07 17:24:07,995 - No change in membership list
-2024-11-07 17:24:09,997 - No change in membership list
-2024-11-07 17:24:11,533 - Shutting down HyDFS...
-2024-11-07 17:24:11,533 - Listener thread is still running; proceeding to join...
-2024-11-07 17:24:11,999 - No change in membership list
-2024-11-07 17:24:13,652 - Listener thread joined successfully.
-2024-11-07 17:24:13,652 - Membership thread is not running, skipping join.
-2024-11-07 17:24:13,652 - Shutting down...
-2024-11-07 17:24:14,285 - Node shut down gracefully.
-2024-11-07 17:24:14,285 - HyDFS Node shut down gracefully.
+2024-11-08 22:47:16,375 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-11-08 22:47:16,376 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/business_20.txt
+2024-11-08 22:47:16,376 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/client_1--business_20.txt.log
+2024-11-08 22:47:16,377 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-11-08 22:47:16,378 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-11-08 22:47:16,383 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-11-08 22:47:16,385 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-11-08 22:47:16,385 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731127636', 'status': 'LIVE', 'inc_num': 0}]
+2024-11-08 22:47:22,322 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-08 22:47:22,323 - Next 3 nodes after 915: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731127636', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731127636', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731127636', 'ring_id': 715}]
+2024-11-08 22:47:22,323 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file business_20.txt
+2024-11-08 22:47:22,324 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file business_20.txt
+2024-11-08 22:47:22,325 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file business_20.txt
+2024-11-08 22:47:22,326 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-08 22:47:22,326 - Sent 2272 bytes from data_buffer
+2024-11-08 22:47:22,326 - Sent 2272 bytes from data_buffer
+2024-11-08 22:47:22,327 - Sent 2272 bytes from data_buffer
+2024-11-08 22:47:22,327 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-08 22:47:22,328 - File 'business_20.txt' written successfully.
+2024-11-08 22:47:22,328 - Acknowledgment sent to client 'business_20.txt'.
+2024-11-08 22:47:22,329 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-08 22:47:22,329 - File 'business_20.txt' already exists. Not writing to it.
+2024-11-08 22:47:22,329 - Acknowledgment sent to client 'business_20.txt'.
+2024-11-08 22:47:22,329 - Sent 85 bytes from data_buffer
+2024-11-08 22:47:22,330 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'write_complete'}
+2024-11-08 22:47:22,330 - Quorum not yet met, received ack from 1 replicas
+2024-11-08 22:47:22,330 - File 'business_20.txt' already exists. Not writing to it.
+2024-11-08 22:47:22,330 - Acknowledgment sent to client 'business_20.txt'.
+2024-11-08 22:47:22,331 - Sent 82 bytes from data_buffer
+2024-11-08 22:47:22,331 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'file_exists'}
+2024-11-08 22:47:22,331 - Quorum not yet met, received ack from 2 replicas
+2024-11-08 22:47:22,331 - Sent 82 bytes from data_buffer
+2024-11-08 22:47:22,331 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'file_exists'}
+2024-11-08 22:47:22,332 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 49698)>
+2024-11-08 22:47:22,332 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'file_exists'}
+2024-11-08 22:47:22,332 - Acknowledgment sent to client_1 for file 'business_20.txt'.
+2024-11-08 22:47:22,337 - Sent 82 bytes from data_buffer
+2024-11-08 22:47:25,898 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-08 22:47:25,899 - Next 3 nodes after 915: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731127636', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731127636', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731127636', 'ring_id': 715}]
+2024-11-08 22:47:25,900 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file business_20.txt
+2024-11-08 22:47:25,900 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file business_20.txt
+2024-11-08 22:47:25,901 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file business_20.txt
+2024-11-08 22:47:25,902 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-08 22:47:25,903 - Sent 104 bytes from data_buffer
+2024-11-08 22:47:25,903 - Sent 104 bytes from data_buffer
+2024-11-08 22:47:25,903 - Sent 104 bytes from data_buffer
+2024-11-08 22:47:25,904 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-08 22:47:25,904 - Stated append action to file business_20.txt
+2024-11-08 22:47:26,004 - sleeping
+2024-11-08 22:47:26,005 - Performed append action to 'client_1--business_20.txt.log' with sequence number 1.
+2024-11-08 22:47:26,006 - Append acknowledgment sent to client 'client_1' for file 'business_20.txt'.
+2024-11-08 22:47:26,007 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-08 22:47:26,007 - Stated append action to file business_20.txt
+2024-11-08 22:47:26,108 - sleeping
+2024-11-08 22:47:26,108 - Performed append action to 'client_1--business_20.txt.log' with sequence number 2.
+2024-11-08 22:47:26,108 - Append acknowledgment sent to client 'client_1' for file 'business_20.txt'.
+2024-11-08 22:47:26,109 - Sent 101 bytes from data_buffer
+2024-11-08 22:47:26,109 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'append_logged', 'sequence_number': 1}
+2024-11-08 22:47:26,109 - Quorum not yet met, received ack from 1 replicas
+2024-11-08 22:47:26,109 - Stated append action to file business_20.txt
+2024-11-08 22:47:26,210 - sleeping
+2024-11-08 22:47:26,211 - Performed append action to 'client_1--business_20.txt.log' with sequence number 3.
+2024-11-08 22:47:26,211 - Append acknowledgment sent to client 'client_1' for file 'business_20.txt'.
+2024-11-08 22:47:26,211 - Sent 101 bytes from data_buffer
+2024-11-08 22:47:26,211 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'append_logged', 'sequence_number': 2}
+2024-11-08 22:47:26,212 - Quorum not yet met, received ack from 2 replicas
+2024-11-08 22:47:26,212 - Sent 101 bytes from data_buffer
+2024-11-08 22:47:26,212 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'append_logged', 'sequence_number': 3}
+2024-11-08 22:47:26,212 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 49732)>
+2024-11-08 22:47:26,213 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'append_logged', 'sequence_number': 3}
+2024-11-08 22:47:26,213 - Acknowledgment sent to client_1 for file 'business_20.txt'.
+2024-11-08 22:47:26,218 - Sent 101 bytes from data_buffer
+2024-11-08 22:47:36,403 - Monitoring membership list started
+2024-11-08 22:47:38,410 - No change in membership list
+2024-11-08 22:47:40,417 - No change in membership list
+2024-11-08 22:47:42,424 - No change in membership list
+2024-11-08 22:47:44,431 - No change in membership list
+2024-11-08 22:47:46,439 - No change in membership list
+2024-11-08 22:47:48,446 - No change in membership list
+2024-11-08 22:47:50,454 - No change in membership list
+2024-11-08 22:47:52,461 - No change in membership list
+2024-11-08 22:47:54,469 - No change in membership list
+2024-11-08 22:47:56,476 - No change in membership list
+2024-11-08 22:47:58,484 - No change in membership list
+2024-11-08 22:48:00,491 - No change in membership list
+2024-11-08 22:48:02,499 - No change in membership list
+2024-11-08 22:48:04,506 - No change in membership list
+2024-11-08 22:48:06,513 - No change in membership list
+2024-11-08 22:48:08,521 - No change in membership list
+2024-11-08 22:48:10,528 - No change in membership list
+2024-11-08 22:48:12,535 - No change in membership list
+2024-11-08 22:48:14,543 - No change in membership list
+2024-11-08 22:48:16,550 - No change in membership list
+2024-11-08 22:48:18,557 - No change in membership list
+2024-11-08 22:48:20,565 - No change in membership list
+2024-11-08 22:48:22,572 - No change in membership list
+2024-11-08 22:48:24,579 - No change in membership list
+2024-11-08 22:48:26,587 - No change in membership list
+2024-11-08 22:48:28,594 - No change in membership list
+2024-11-08 22:48:30,602 - No change in membership list
+2024-11-08 22:48:32,609 - No change in membership list
+2024-11-08 22:48:34,616 - No change in membership list
+2024-11-08 22:48:36,623 - No change in membership list
+2024-11-08 22:48:38,631 - No change in membership list
+2024-11-08 22:48:40,638 - No change in membership list
+2024-11-08 22:48:42,645 - No change in membership list
+2024-11-08 22:48:44,653 - No change in membership list
+2024-11-08 22:48:46,660 - No change in membership list
+2024-11-08 22:48:48,667 - No change in membership list
