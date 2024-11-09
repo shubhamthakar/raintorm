@@ -96,7 +96,7 @@ if __name__ == "__main__":
     filenames = [f"{filename}"]*4
     append_filenames = [f"test_multi_append_client{i}.txt" for i in range(1,5)]
     # file_paths = [f"../local/test_multi_append_client{i}.txt" for i in range(1,5)]
-    file_paths = [f"../local/random_file.txt" for i in range(1,5)]
+    file_paths = [f"../local/business_20.txt" for i in range(1,5)]
 
 
     main(servers, num_clients, action, filenames, append_filenames, file_paths)

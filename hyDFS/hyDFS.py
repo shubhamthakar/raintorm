@@ -164,9 +164,8 @@ class RingNode:
 
                                 self.inputtracker[client_socket] = True
                                 #creating a new thread for each handle message
-                                threading.Thread(target=self.handle_message, args=(file_info, s), daemon=True).start()
 
-                                #self.handle_message(file_info, s)
+                                self.handle_message(file_info, s)
 
                                 # Add to outputs list if there's a response to be sent
                                 # if s not in self.outputs:
@@ -252,7 +251,7 @@ class RingNode:
             self.append_file(file_info, client_socket)
         
         elif action == "add":
-            self.add_file(file_info, client_socket)
+            threading.Thread(target=self.add_file, args=(file_info, client_socket), daemon=True).start()
         
         elif action == "merge":
             self.merge_file(file_info, client_socket)
@@ -804,7 +803,7 @@ class RingNode:
         with open(append_log_filepath, 'a') as json_file:
             json_file.write(json.dumps(file_info_append) + '\n')
 
-        time.sleep(0.1)
+        time.sleep(0.00001)
         self.log("sleeping")
 
         

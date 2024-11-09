@@ -1,105 +1,81 @@
-2024-11-08 22:47:16,373 - Logging initialized for RingNode
-2024-11-08 22:47:16,376 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/business_20.txt
-2024-11-08 22:47:16,376 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/client_1--business_20.txt.log
-2024-11-08 22:47:16,377 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
-2024-11-08 22:47:22,322 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-08 22:47:22,323 - Next 3 nodes after 915: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731127636', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731127636', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731127636', 'ring_id': 715}]
-2024-11-08 22:47:22,323 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file business_20.txt
-2024-11-08 22:47:22,324 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file business_20.txt
-2024-11-08 22:47:22,325 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file business_20.txt
-2024-11-08 22:47:22,326 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-08 22:47:22,326 - Sent 2272 bytes from data_buffer
-2024-11-08 22:47:22,326 - Sent 2272 bytes from data_buffer
-2024-11-08 22:47:22,327 - Sent 2272 bytes from data_buffer
-2024-11-08 22:47:22,327 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-08 22:47:22,328 - File 'business_20.txt' written successfully.
-2024-11-08 22:47:22,328 - Acknowledgment sent to client 'business_20.txt'.
-2024-11-08 22:47:22,329 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-08 22:47:22,329 - File 'business_20.txt' already exists. Not writing to it.
-2024-11-08 22:47:22,329 - Acknowledgment sent to client 'business_20.txt'.
-2024-11-08 22:47:22,329 - Sent 85 bytes from data_buffer
-2024-11-08 22:47:22,330 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'write_complete'}
-2024-11-08 22:47:22,330 - Quorum not yet met, received ack from 1 replicas
-2024-11-08 22:47:22,330 - File 'business_20.txt' already exists. Not writing to it.
-2024-11-08 22:47:22,330 - Acknowledgment sent to client 'business_20.txt'.
-2024-11-08 22:47:22,331 - Sent 82 bytes from data_buffer
-2024-11-08 22:47:22,331 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'file_exists'}
-2024-11-08 22:47:22,331 - Quorum not yet met, received ack from 2 replicas
-2024-11-08 22:47:22,331 - Sent 82 bytes from data_buffer
-2024-11-08 22:47:22,331 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'file_exists'}
-2024-11-08 22:47:22,332 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 49698)>
-2024-11-08 22:47:22,332 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'file_exists'}
-2024-11-08 22:47:22,332 - Acknowledgment sent to client_1 for file 'business_20.txt'.
-2024-11-08 22:47:22,337 - Sent 82 bytes from data_buffer
-2024-11-08 22:47:25,898 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-08 22:47:25,899 - Next 3 nodes after 915: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731127636', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731127636', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731127636', 'ring_id': 715}]
-2024-11-08 22:47:25,900 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file business_20.txt
-2024-11-08 22:47:25,900 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file business_20.txt
-2024-11-08 22:47:25,901 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file business_20.txt
-2024-11-08 22:47:25,902 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-08 22:47:25,903 - Sent 104 bytes from data_buffer
-2024-11-08 22:47:25,903 - Sent 104 bytes from data_buffer
-2024-11-08 22:47:25,903 - Sent 104 bytes from data_buffer
-2024-11-08 22:47:25,904 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-08 22:47:25,904 - Stated append action to file business_20.txt
-2024-11-08 22:47:26,004 - sleeping
-2024-11-08 22:47:26,005 - Performed append action to 'client_1--business_20.txt.log' with sequence number 1.
-2024-11-08 22:47:26,006 - Append acknowledgment sent to client 'client_1' for file 'business_20.txt'.
-2024-11-08 22:47:26,007 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-08 22:47:26,007 - Stated append action to file business_20.txt
-2024-11-08 22:47:26,108 - sleeping
-2024-11-08 22:47:26,108 - Performed append action to 'client_1--business_20.txt.log' with sequence number 2.
-2024-11-08 22:47:26,108 - Append acknowledgment sent to client 'client_1' for file 'business_20.txt'.
-2024-11-08 22:47:26,109 - Sent 101 bytes from data_buffer
-2024-11-08 22:47:26,109 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'append_logged', 'sequence_number': 1}
-2024-11-08 22:47:26,109 - Quorum not yet met, received ack from 1 replicas
-2024-11-08 22:47:26,109 - Stated append action to file business_20.txt
-2024-11-08 22:47:26,210 - sleeping
-2024-11-08 22:47:26,211 - Performed append action to 'client_1--business_20.txt.log' with sequence number 3.
-2024-11-08 22:47:26,211 - Append acknowledgment sent to client 'client_1' for file 'business_20.txt'.
-2024-11-08 22:47:26,211 - Sent 101 bytes from data_buffer
-2024-11-08 22:47:26,211 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'append_logged', 'sequence_number': 2}
-2024-11-08 22:47:26,212 - Quorum not yet met, received ack from 2 replicas
-2024-11-08 22:47:26,212 - Sent 101 bytes from data_buffer
-2024-11-08 22:47:26,212 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'append_logged', 'sequence_number': 3}
-2024-11-08 22:47:26,212 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 49732)>
-2024-11-08 22:47:26,213 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'append_logged', 'sequence_number': 3}
-2024-11-08 22:47:26,213 - Acknowledgment sent to client_1 for file 'business_20.txt'.
-2024-11-08 22:47:26,218 - Sent 101 bytes from data_buffer
-2024-11-08 22:47:36,403 - Monitoring membership list started
-2024-11-08 22:47:38,410 - No change in membership list
-2024-11-08 22:47:40,417 - No change in membership list
-2024-11-08 22:47:42,424 - No change in membership list
-2024-11-08 22:47:44,431 - No change in membership list
-2024-11-08 22:47:46,439 - No change in membership list
-2024-11-08 22:47:48,446 - No change in membership list
-2024-11-08 22:47:50,454 - No change in membership list
-2024-11-08 22:47:52,461 - No change in membership list
-2024-11-08 22:47:54,469 - No change in membership list
-2024-11-08 22:47:56,476 - No change in membership list
-2024-11-08 22:47:58,484 - No change in membership list
-2024-11-08 22:48:00,491 - No change in membership list
-2024-11-08 22:48:02,499 - No change in membership list
-2024-11-08 22:48:04,506 - No change in membership list
-2024-11-08 22:48:06,513 - No change in membership list
-2024-11-08 22:48:08,521 - No change in membership list
-2024-11-08 22:48:10,528 - No change in membership list
-2024-11-08 22:48:12,535 - No change in membership list
-2024-11-08 22:48:14,543 - No change in membership list
-2024-11-08 22:48:16,550 - No change in membership list
-2024-11-08 22:48:18,557 - No change in membership list
-2024-11-08 22:48:20,565 - No change in membership list
-2024-11-08 22:48:22,572 - No change in membership list
-2024-11-08 22:48:24,579 - No change in membership list
-2024-11-08 22:48:26,587 - No change in membership list
-2024-11-08 22:48:28,594 - No change in membership list
-2024-11-08 22:48:30,602 - No change in membership list
-2024-11-08 22:48:32,609 - No change in membership list
-2024-11-08 22:48:34,616 - No change in membership list
-2024-11-08 22:48:36,623 - No change in membership list
-2024-11-08 22:48:38,631 - No change in membership list
-2024-11-08 22:48:40,638 - No change in membership list
-2024-11-08 22:48:42,645 - No change in membership list
-2024-11-08 22:48:44,653 - No change in membership list
-2024-11-08 22:48:46,660 - No change in membership list
-2024-11-08 22:48:48,667 - No change in membership list
+2024-11-08 23:05:43,321 - Logging initialized for RingNode
+2024-11-08 23:05:43,324 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/business_20.txt
+2024-11-08 23:05:43,324 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/client_1--business_20.txt.log
+2024-11-08 23:05:43,324 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-11-08 23:05:48,051 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-08 23:05:48,051 - Next 3 nodes after 915: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731128743', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731128743', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731128743', 'ring_id': 715}]
+2024-11-08 23:05:48,052 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file business_20.txt
+2024-11-08 23:05:48,053 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file business_20.txt
+2024-11-08 23:05:48,053 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file business_20.txt
+2024-11-08 23:05:48,055 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-08 23:05:48,055 - Sent 2272 bytes from data_buffer
+2024-11-08 23:05:48,056 - Sent 2272 bytes from data_buffer
+2024-11-08 23:05:48,056 - Sent 2272 bytes from data_buffer
+2024-11-08 23:05:48,057 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-08 23:05:48,057 - File 'business_20.txt' written successfully.
+2024-11-08 23:05:48,057 - Acknowledgment sent to client 'business_20.txt'.
+2024-11-08 23:05:48,058 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-08 23:05:48,058 - File 'business_20.txt' already exists. Not writing to it.
+2024-11-08 23:05:48,058 - Acknowledgment sent to client 'business_20.txt'.
+2024-11-08 23:05:48,059 - Sent 85 bytes from data_buffer
+2024-11-08 23:05:48,059 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'write_complete'}
+2024-11-08 23:05:48,059 - Quorum not yet met, received ack from 1 replicas
+2024-11-08 23:05:48,059 - File 'business_20.txt' already exists. Not writing to it.
+2024-11-08 23:05:48,059 - Acknowledgment sent to client 'business_20.txt'.
+2024-11-08 23:05:48,059 - Sent 82 bytes from data_buffer
+2024-11-08 23:05:48,060 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'file_exists'}
+2024-11-08 23:05:48,060 - Quorum not yet met, received ack from 2 replicas
+2024-11-08 23:05:48,060 - Sent 82 bytes from data_buffer
+2024-11-08 23:05:48,060 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'file_exists'}
+2024-11-08 23:05:48,061 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 34560)>
+2024-11-08 23:05:48,061 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'file_exists'}
+2024-11-08 23:05:48,061 - Acknowledgment sent to client_1 for file 'business_20.txt'.
+2024-11-08 23:05:48,065 - Sent 82 bytes from data_buffer
+2024-11-08 23:05:49,841 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-08 23:05:49,842 - Next 3 nodes after 915: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731128743', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731128743', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1731128743', 'ring_id': 715}]
+2024-11-08 23:05:49,842 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file business_20.txt
+2024-11-08 23:05:49,844 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file business_20.txt
+2024-11-08 23:05:49,844 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file business_20.txt
+2024-11-08 23:05:49,845 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-08 23:05:49,846 - Sent 104 bytes from data_buffer
+2024-11-08 23:05:49,846 - Sent 104 bytes from data_buffer
+2024-11-08 23:05:49,846 - Sent 104 bytes from data_buffer
+2024-11-08 23:05:49,847 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-08 23:05:49,847 - Stated append action to file business_20.txt
+2024-11-08 23:05:49,848 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-08 23:05:49,848 - sleeping
+2024-11-08 23:05:49,849 - Performed append action to 'client_1--business_20.txt.log' with sequence number 1.
+2024-11-08 23:05:49,849 - Append acknowledgment sent to client 'client_1' for file 'business_20.txt'.
+2024-11-08 23:05:49,849 - Stated append action to file business_20.txt
+2024-11-08 23:05:49,850 - Stated append action to file business_20.txt
+2024-11-08 23:05:49,850 - Sent 101 bytes from data_buffer
+2024-11-08 23:05:49,850 - sleeping
+2024-11-08 23:05:49,851 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'append_logged', 'sequence_number': 1}
+2024-11-08 23:05:49,851 - Quorum not yet met, received ack from 1 replicas
+2024-11-08 23:05:49,851 - Performed append action to 'client_1--business_20.txt.log' with sequence number 2.
+2024-11-08 23:05:49,851 - Append acknowledgment sent to client 'client_1' for file 'business_20.txt'.
+2024-11-08 23:05:49,852 - sleeping
+2024-11-08 23:05:49,852 - Performed append action to 'client_1--business_20.txt.log' with sequence number 3.
+2024-11-08 23:05:49,852 - Append acknowledgment sent to client 'client_1' for file 'business_20.txt'.
+2024-11-08 23:05:54,856 - Sent 101 bytes from data_buffer
+2024-11-08 23:05:54,857 - Sent 101 bytes from data_buffer
+2024-11-08 23:05:54,857 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'append_logged', 'sequence_number': 2}
+2024-11-08 23:05:54,857 - Quorum not yet met, received ack from 2 replicas
+2024-11-08 23:05:54,857 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'append_logged', 'sequence_number': 3}
+2024-11-08 23:05:54,857 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 34590)>
+2024-11-08 23:05:54,857 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'append_logged', 'sequence_number': 3}
+2024-11-08 23:05:54,857 - Acknowledgment sent to client_1 for file 'business_20.txt'.
+2024-11-08 23:05:54,859 - Sent 101 bytes from data_buffer
+2024-11-08 23:06:03,339 - Monitoring membership list started
+2024-11-08 23:06:05,346 - No change in membership list
+2024-11-08 23:06:07,354 - No change in membership list
+2024-11-08 23:06:09,361 - No change in membership list
+2024-11-08 23:06:11,369 - No change in membership list
+2024-11-08 23:06:13,376 - No change in membership list
+2024-11-08 23:06:15,383 - No change in membership list
+2024-11-08 23:06:17,391 - No change in membership list
+2024-11-08 23:06:19,399 - No change in membership list
+2024-11-08 23:06:21,406 - No change in membership list
+2024-11-08 23:06:23,413 - No change in membership list
+2024-11-08 23:06:25,420 - No change in membership list
+2024-11-08 23:06:27,428 - No change in membership list
