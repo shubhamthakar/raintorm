@@ -1,6 +1,7 @@
 import socket
 import os
 import msgpack
+import time
 
 class FileClient:
     def __init__(self, server_ip, server_port, client_name, action, file_name=None, file_path=None, append_file_name=None, append_file_path=None):
@@ -91,7 +92,9 @@ class FileClient:
             print("Connection closed.")
 
     def perform_action(self):
-        """Main function to perform the action."""
+        """Main function to perform the action with overall time measurement."""
+        start_time = time.time()
+
         self.connect()
         if self.client_socket:
             message = self.prepare_message()
@@ -103,7 +106,11 @@ class FileClient:
                     if response["status"] == 'read_complete':
                         with open(response["filename"], 'w') as file:
                             file.write(response["content"])
-            self.close()
+                self.close()
+
+        end_time = time.time()
+        total_time = end_time - start_time
+        print(f"Total time taken for the action: {total_time:.2f} seconds")
 
 
 if __name__ == "__main__":

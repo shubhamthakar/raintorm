@@ -20,7 +20,7 @@ def measure_bandwidth(interval=1, interface='eth0'):
 
 if __name__ == "__main__":
     # Define the network interface (default is 'eth0')
-    interface = input("Enter the network interface to monitor (default 'eth0'): ") or 'eth0'
+    interface = input("Enter the network interface to monitor (default 'ens33'): ") or 'ens33'
     
     # Define the interval for measuring bandwidth (in seconds)
     interval = float(input("Enter the measurement interval in seconds (default 1 sec): ") or 1)
