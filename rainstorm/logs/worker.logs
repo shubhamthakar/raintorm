@@ -1,0 +1,4 @@
+2024-11-22 20:58:01,100 - Logging initialized for Rainstorm worker
+2024-11-22 20:58:01,100 - Extracted details task_type: source partition_num: 0, total_partitions: 1, next_stage_tasks: {'0': 'fa24-cs425-6902.cs.illinois.edu:5002'}
+2024-11-22 20:58:01,109 - Connected to the HyDFS coordinator.
+2024-11-22 20:58:01,168 - {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'file_not_found'}
