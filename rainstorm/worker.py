@@ -149,32 +149,38 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         """
         Monitors the queue and sends data using the gRPC stub. If sending fails, re-adds data to the queue.
         """
-        remote_server_address = self.next_stage_tasks[self.partition_num]
 
-        async with grpc.aio.insecure_channel(remote_server_address) as channel:
-            stub = worker_pb2_grpc.WorkerStub(channel)
+        if self.next_stage_tasks is None:
+            # Write to hyDFS
+            pass
+        else:
 
-            while True:
-                data_to_send = await self.queue.get()  # Wait for an item in the queue
-                self.log(f"Dequeued data: {data_to_send} for sending.")
-                
-                response = await self.send_data_with_retries(
-                    stub=stub,
-                    data_to_send=data_to_send,
-                    remote_server_address=remote_server_address,
-                    timeout_seconds=5
-                )
+            remote_server_address = self.next_stage_tasks[self.partition_num]
 
-                if response:
-                    self.log(f"Data sent successfully: {data_to_send}")
-                else:
-                    self.log(f"Failed to send data: {data_to_send}. Re-queuing.")
-                    await self.queue.put(data_to_send)  # Re-add to the queue for retry
+            async with grpc.aio.insecure_channel(remote_server_address) as channel:
+                stub = worker_pb2_grpc.WorkerStub(channel)
+
+                while True:
+                    data_to_send = await self.queue.get()  # Wait for an item in the queue
+                    self.log(f"Dequeued data: {data_to_send} for sending.")
+                    
+                    response = await self.send_data_with_retries(
+                        stub=stub,
+                        data_to_send=data_to_send,
+                        remote_server_address=remote_server_address,
+                        timeout_seconds=5
+                    )
+
+                    if response:
+                        self.log(f"Data sent successfully: {data_to_send}")
+                    else:
+                        self.log(f"Failed to send data: {data_to_send}. Re-queuing.")
+                        await self.queue.put(data_to_send)  # Re-add to the queue for retry
 
 
 
     async def start_stream(self):
-        remote_server_address = self.next_stage_tasks[self.partition_num]
+        
         response = await self.get_file_from_hydfs()
         self.log(f"{response}")
         self.log(f"Retrieved file with {len(file_content)} lines.")
@@ -243,7 +249,7 @@ async def serve(port, mapping, exe_file, src_file, dest_file):
     if worker_servicer.task_type == 'source':
         await worker_servicer.start_stream()
     # Start monitoring the queue
-    await self.monitor_queue()
+    await worker_servicer.monitor_queue()
     await server.wait_for_termination()
 
 if __name__ == "__main__":

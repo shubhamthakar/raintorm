@@ -24,17 +24,17 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0cworker.proto\"\x07\n\x05\x45mpty\".\n\x0cWorkResponse\x12\x0e\n\x06status\x18\x01 \x01(\t\x12\x0e\n\x06result\x18\x02 \x01(\t2-\n\x06Worker\x12#\n\nstart_task\x12\x06.Empty\x1a\r.WorkResponseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0cworker.proto\x12\x06worker\"\x1b\n\x0b\x44\x61taRequest\x12\x0c\n\x04\x64\x61ta\x18\x01 \x01(\t\"\x1a\n\x0b\x41\x63kResponse\x12\x0b\n\x03\x61\x63k\x18\x01 \x01(\t2>\n\x06Worker\x12\x34\n\x08RecvData\x12\x13.worker.DataRequest\x1a\x13.worker.AckResponseb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'worker_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
-  _globals['_EMPTY']._serialized_start=16
-  _globals['_EMPTY']._serialized_end=23
-  _globals['_WORKRESPONSE']._serialized_start=25
-  _globals['_WORKRESPONSE']._serialized_end=71
-  _globals['_WORKER']._serialized_start=73
-  _globals['_WORKER']._serialized_end=118
+  _globals['_DATAREQUEST']._serialized_start=24
+  _globals['_DATAREQUEST']._serialized_end=51
+  _globals['_ACKRESPONSE']._serialized_start=53
+  _globals['_ACKRESPONSE']._serialized_end=79
+  _globals['_WORKER']._serialized_start=81
+  _globals['_WORKER']._serialized_end=143
 # @@protoc_insertion_point(module_scope)

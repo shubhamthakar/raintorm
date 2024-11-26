@@ -26,7 +26,8 @@ if _version_not_supported:
 
 
 class WorkerStub(object):
-    """Missing associated documentation comment in .proto file."""
+    """The service definition for the Worker.
+    """
 
     def __init__(self, channel):
         """Constructor.
@@ -34,18 +35,20 @@ class WorkerStub(object):
         Args:
             channel: A grpc.Channel.
         """
-        self.start_task = channel.unary_unary(
-                '/Worker/start_task',
-                request_serializer=worker__pb2.Empty.SerializeToString,
-                response_deserializer=worker__pb2.WorkResponse.FromString,
+        self.RecvData = channel.unary_unary(
+                '/worker.Worker/RecvData',
+                request_serializer=worker__pb2.DataRequest.SerializeToString,
+                response_deserializer=worker__pb2.AckResponse.FromString,
                 _registered_method=True)
 
 
 class WorkerServicer(object):
-    """Missing associated documentation comment in .proto file."""
+    """The service definition for the Worker.
+    """
 
-    def start_task(self, request, context):
-        """Missing associated documentation comment in .proto file."""
+    def RecvData(self, request, context):
+        """Receives data and responds with an acknowledgment.
+        """
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
@@ -53,24 +56,25 @@ class WorkerServicer(object):
 
 def add_WorkerServicer_to_server(servicer, server):
     rpc_method_handlers = {
-            'start_task': grpc.unary_unary_rpc_method_handler(
-                    servicer.start_task,
-                    request_deserializer=worker__pb2.Empty.FromString,
-                    response_serializer=worker__pb2.WorkResponse.SerializeToString,
+            'RecvData': grpc.unary_unary_rpc_method_handler(
+                    servicer.RecvData,
+                    request_deserializer=worker__pb2.DataRequest.FromString,
+                    response_serializer=worker__pb2.AckResponse.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-            'Worker', rpc_method_handlers)
+            'worker.Worker', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
-    server.add_registered_method_handlers('Worker', rpc_method_handlers)
+    server.add_registered_method_handlers('worker.Worker', rpc_method_handlers)
 
 
  # This class is part of an EXPERIMENTAL API.
 class Worker(object):
-    """Missing associated documentation comment in .proto file."""
+    """The service definition for the Worker.
+    """
 
     @staticmethod
-    def start_task(request,
+    def RecvData(request,
             target,
             options=(),
             channel_credentials=None,
@@ -83,9 +87,9 @@ class Worker(object):
         return grpc.experimental.unary_unary(
             request,
             target,
-            '/Worker/start_task',
-            worker__pb2.Empty.SerializeToString,
-            worker__pb2.WorkResponse.FromString,
+            '/worker.Worker/RecvData',
+            worker__pb2.DataRequest.SerializeToString,
+            worker__pb2.AckResponse.FromString,
             options,
             channel_credentials,
             insecure,
