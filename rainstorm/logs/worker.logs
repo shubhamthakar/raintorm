@@ -1,2 +1,2 @@
-2024-11-26 17:36:06,238 - Logging initialized for Rainstorm worker
-2024-11-26 17:36:06,238 - Extracted details task_type: op1 partition_num: 0, total_partitions: 1, next_stage_tasks: None
+2024-11-27 15:36:09,953 - Logging initialized for Rainstorm worker
+2024-11-27 15:36:09,954 - Extracted details task_type: op2 partition_num: 1, total_partitions: 3, next_stage_tasks: {'0': 'fa24-cs425-6903.cs.illinois.edu:5000', '1': 'fa24-cs425-6904.cs.illinois.edu:5000', '2': 'fa24-cs425-6905.cs.illinois.edu:5001'}

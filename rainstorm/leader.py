@@ -88,16 +88,22 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
 
     
     async def create_task_mapping(self, op_exes, num_tasks):
-        task_mapping = defaultdict(dict) 
+        task_mapping = defaultdict(dict)
         
-        # appending source, special task
+        # Appending source, special task
+
+        print(f"Printing op_exes {op_exes}")
+
         op_exes.append("source")
+
+        # Dictionary to keep track of the next available port for each server
+        server_ports = defaultdict(lambda: 5000)
 
         # Loop over each op_exe to assign servers
         for idx, op in enumerate(op_exes):
             assigned_servers = {}
-            
-            # Assign 3 servers for each op_exe
+
+            # Assign `num_tasks` servers for each op_exe
             for i in range(num_tasks):
                 # Extract the server with the minimum load
                 min_server = heapq.heappop(self.worker_load)
@@ -112,16 +118,28 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
                 
                 # If the server is in the membership list, increment its load and push back into the heap
                 if server_found:
+                    # Assign the next available port for the server
+                    assigned_port = server_ports[server_ip]
+
+                    # Increment the next available port for the server
+                    server_ports[server_ip] += 1
+
+                    # Assign the server IP and port as a single string
+                    assigned_servers[i] = f"{server_ip}:{assigned_port}"
+
+                    # Update the load and push back into the heap
                     new_load = load + 1
                     heapq.heappush(self.worker_load, (new_load, server_ip))
-
-                # Assign the server to the task
-                assigned_servers[i] = server_ip
+                else:
+                    # If the server is not found, push it back with the same load
+                    heapq.heappush(self.worker_load, min_server)
+                    # raise ValueError(f"Server {server_ip} not found in membership list")
 
             # Add the assigned servers for the op_exe
             task_mapping[op] = assigned_servers
 
         return task_mapping
+
 
     def log(self, message):
         self.logger.info(message)
@@ -147,10 +165,29 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
 
         self.log("Logging initialized for Rainstorm worker")
 
-    async def SubmitJob(self, request, context):
-
-        self.log(request.op_exe_names)
+    
+    def extract_servers_and_ports_from_mapping(self, task_mapping):
         
+        server_list = []
+        port_list = []
+
+        for task, servers in task_mapping.items():
+            print(f"Task: {task}")
+            for task_id, server in servers.items():
+                hostname, port = server.split(":") 
+        
+                server_list.append(hostname)
+                port_list.append(port)
+
+        return server_list, port_list
+
+    async def SubmitJob(self, request, context):
+        self.log(request.op_exe_names)
+
+        src_file = request.hydfs_src_file
+        dest_file = request.hydfs_dest_filename
+
+        # Save and set permissions for the op_exes
         for i, binary in enumerate(request.op_exes):
             op_path = os.path.join(self.base_dir, f"{request.op_exe_names[i]}")
             with open(op_path, "wb") as f:
@@ -159,52 +196,16 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
 
         task_mapping = await self.create_task_mapping(request.op_exe_names, request.num_tasks)
 
-        # copy op exes to all the workers
-        self.copy_exes_to_workers()
+        # Copy op exes to all the workers asynchronously
+        await self.copy_exes_to_workers()
 
-        # start worker processes
-        self.start_rainstorm_workers(mapping_dict, src_file, dest_file)
+        # Get servers and ports to start the workers
+        servers, ports = self.extract_servers_and_ports_from_mapping(task_mapping)
 
-        
+        # Start worker processes asynchronously
+        await self.start_rainstorm_workers(task_mapping, src_file, dest_file, ports, servers)
+
         return rainstorm_pb2.JobResponse(message="Job submitted successfully!")
-
-
-
-
-    def start_rainstorm_workers(task_mapping, src_file, dest_file):
-        """
-        Start Rainstorm workers based on the task mapping.
-
-        Args:
-            task_mapping (dict): Dictionary containing the task-to-server mapping.
-            src_file (str): Path to the source file.
-            dest_file (str): Path to the destination file.
-        """
-        # Extract unique server hostnames from task_mapping
-        servers = set()
-        for task, server_mapping in task_mapping.items():
-            servers.update(server_mapping.values())
-
-        # Convert set to a sorted list for consistent behavior
-        server_list = sorted(servers)
-
-        # Log the servers being started
-        print(f"Starting workers on servers: {server_list}")
-
-        # Path to the shell script
-        script_path = "../scripts/start_rainstorm_workers.sh"
-
-        try:
-            # Call the shell script with the dynamic parameters
-            subprocess.run(
-                [script_path, json.dumps(task_mapping), src_file, dest_file, *server_list],
-                check=True
-            )
-            print("Successfully started Rainstorm workers.")
-        except subprocess.CalledProcessError as e:
-            print(f"Error occurred while starting workers: {e}")
-
-
 
 
     def shutdown(self, signum, frame):
@@ -239,24 +240,76 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
             print(f"The script {script_path} was not found.")
 
 
-    def copy_exes_to_workers(self):
-        """Runs the copy_exes_to_workers.sh script."""
-        
-        script_path = './scripts/copy_exes_to_workers.sh'
-        source_folder = '../temp_files'
-        target_folder = '/home/chaskar2/distributed-logger/rainstorm/exe_files'
 
-        # fa24-cs425-6902.cs.illinois.edu
+    async def start_rainstorm_workers(self, task_mapping, src_file, dest_file, ports, servers):
+        """Starts the rainstorm workers by running the start_rainstorm_workers.sh script asynchronously using create_subprocess_exec."""
+        # Convert mapping dictionary to JSON string
+        mapping_dict_json = json.dumps(task_mapping)
+
+        # Convert list of ports to a comma-separated string
+        ports_str = ",".join(map(str, ports))
+
+        # Command to execute the shell script
+        command = [
+            "./scripts/start_rainstorm_workers.sh",
+            mapping_dict_json,
+            src_file,
+            dest_file,
+            ports_str,
+            *servers  # Unpack the server list
+        ]
 
         try:
-            print(f"Running script: {script_path}")
-            result = subprocess.run([script_path, source_folder, target_folder], check=True, text=True, capture_output=True)
-            print("Script output:", result.stdout)
-        except subprocess.CalledProcessError as e:
-            print(f"Script failed with error: {e}")
-            print("Error output:", e.stderr)
+            # Run the script using create_subprocess_exec for non-blocking execution
+            print(f"Running script: {command}")
+            process = await asyncio.create_subprocess_exec(
+                *command, 
+                stdout=asyncio.subprocess.PIPE, 
+                stderr=asyncio.subprocess.PIPE
+            )
+
+            stdout, stderr = await process.communicate()  # Capture output and error
+
+            if stdout:
+                print(f"Script output: {stdout.decode()}")
+            if stderr:
+                print(f"Script error: {stderr.decode()}")
+        except FileNotFoundError:
+            print(f"The script was not found: {command[0]}")
+        except Exception as e:
+            print(f"Error occurred while running script: {e}")
+
+
+    async def copy_exes_to_workers(self):
+        """Runs the copy_exes_to_workers.sh script asynchronously using create_subprocess_exec."""
+        script_path = '/home/chaskar2/distributed-logger/rainstorm/scripts/copy_exes_to_workers.sh'
+        source_folder = '/home/chaskar2/distributed-logger/rainstorm/temp_files'
+        target_folder = '/home/chaskar2/distributed-logger/rainstorm/exe_files'
+
+        print(f"Running script: {script_path}")
+
+        try:
+            # Run the script using create_subprocess_exec for non-blocking execution
+            process = await asyncio.create_subprocess_exec(
+                script_path, 
+                source_folder, 
+                target_folder, 
+                stdout=asyncio.subprocess.PIPE, 
+                stderr=asyncio.subprocess.PIPE
+            )
+
+            stdout, stderr = await process.communicate()  # Capture output and error
+
+            if stdout:
+                print(f"Script output: {stdout.decode()}")
+            if stderr:
+                print(f"Script error: {stderr.decode()}")
         except FileNotFoundError:
             print(f"The script {script_path} was not found.")
+        except Exception as e:
+            print(f"Error occurred while running script: {e}")
+
+
             
 
 async def main():

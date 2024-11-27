@@ -11,9 +11,8 @@ import msgpack
 import math
 
 class WorkerServicer(worker_pb2_grpc.WorkerServicer):
-    def __init__(self, mapping, exe_file, src_file, dest_file):
+    def __init__(self, mapping, src_file, dest_file):
         self.mapping = json.loads(mapping)
-        self.exe_file = exe_file
         self.src_file = src_file
         self.dest_file = dest_file
 
@@ -183,15 +182,15 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         
         response = await self.get_file_from_hydfs()
         self.log(f"{response}")
-        self.log(f"Retrieved file with {len(file_content)} lines.")
         if response["status"] == "file_not_found":
             return
         file_content = response["content"].splitlines()
+        self.log(f"Retrieved file with {len(file_content)} lines.")
 
         # Compute partition ranges
         total_lines = len(file_content)
         lines_per_partition = total_lines // self.total_partitions
-        start_index = self.partition_num * lines_per_partition
+        start_index = int(self.partition_num) * lines_per_partition
         if self.partition_num == self.total_partitions - 1:  # Last partition
             end_index = total_lines
         else:
@@ -205,7 +204,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         for data in partition_data:
             self.log(f"Queueing data: {data}")
             # Appending dic of format {(line_num, file_name): line}
-            await self.queue.put({(data[0], self.src_file) : data[1]})
+            await self.queue.put({f"{data[0]}|{self.src_file}" : data[1]})
 
 
 
@@ -237,9 +236,9 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
 
 
 
-async def serve(port, mapping, exe_file, src_file, dest_file):
+async def serve(port, mapping, src_file, dest_file):
     server = grpc.aio.server(ThreadPoolExecutor(max_workers=10))
-    worker_servicer = WorkerServicer(mapping, exe_file, src_file, dest_file)
+    worker_servicer = WorkerServicer(mapping, src_file, dest_file)
     worker_pb2_grpc.add_WorkerServicer_to_server(worker_servicer, server)
     listen_addr = f"{worker_servicer.hostname}:{port}"
     server.add_insecure_port(listen_addr)
@@ -256,9 +255,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Start the gRPC Worker")
     parser.add_argument("--port", type=int, required=True, help="Port to run the gRPC server on")
     parser.add_argument("--mapping", type=str, required=True, help="Mapping dict")
-    parser.add_argument("--exe_file", type=str, required=True, help="The executable file")
     parser.add_argument("--src_file", type=str, required=True, help="Source file on hydfs")
     parser.add_argument("--dest_file", type=str, required=True, help="Destination file on hydfs")
     args = parser.parse_args()
     
-    asyncio.run(serve(args.port, args.mapping, args.exe_file, args.src_file, args.dest_file))
+    asyncio.run(serve(args.port, args.mapping, args.src_file, args.dest_file))

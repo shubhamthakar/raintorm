@@ -12,7 +12,7 @@ for i in $(seq -w 01 10); do
     echo "Successfully installed pip on $HOST"
     
     # Install msgpack using pip
-    ssh "$HOST" "pip3 install grpcio"
+    ssh "$HOST" "pip3 install grpcio grpcio-tools"
     
     if [ $? -eq 0 ]; then
       echo "Successfully installed msgpack on $HOST"
