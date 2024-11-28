@@ -19,7 +19,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         self.exe_file_path = '/home/chaskar2/distributed-logger/rainstorm/exe_files'
         self.src_file = src_file
         self.dest_file = dest_file
-        self.state = {"inp_id_processed": set(), "state": {}, "output_rec": []}
+        self.state = {"inp_id_processed": {}, "state": {}, "output_rec": []}
 
         # Logging
         self.log_file = '/home/chaskar2/distributed-logger/rainstorm/logs/worker.logs'
@@ -182,7 +182,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
                 hashed_partition = int(hashlib.sha256(key.encode('utf-8')).hexdigest(), 16) % self.total_partitions
 
                 # Get the remote server address based on the hashed partition
-                remote_server_address = self.next_stage_tasks[hashed_partition]
+                remote_server_address = self.next_stage_tasks[str(hashed_partition)]
 
                 # Create a gRPC channel and stub
                 async with grpc.aio.insecure_channel(remote_server_address) as channel:
@@ -217,8 +217,8 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         total_lines = len(file_content)
         lines_per_partition = total_lines // self.total_partitions
         start_index = int(self.partition_num) * lines_per_partition
-        if self.partition_num == self.total_partitions - 1:  # Last partition
-            end_index = total_lines
+        if int(self.partition_num) == self.total_partitions - 1:  # Last partition
+            end_index = total_lines + 1
         else:
             end_index = start_index + lines_per_partition
 
@@ -247,10 +247,10 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             # Convert state and input_tuple to strings for command-line arguments
             state_arg = json.dumps(self.state)  # Safely serialize the dictionary to a JSON string
             input_arg = str(input_tuple)  # Convert tuple to string
-
+            
             # Execute the .exe file with the arguments
             result = subprocess.run(
-                [self.exe_path, "--state", state_arg, "--input", input_arg],
+                [self.exe_file_path, "--state", state_arg, "--input", input_arg],
                 capture_output=True, text=True, check=True
             )
 
@@ -267,7 +267,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             # Return the list of processed tuples
             return generated_list_of_tuples
         except subprocess.CalledProcessError as e:
-            print(f"Error running {self.exe_path}: {e.stderr}")
+            print(f"Error running {self.exe_file_path}: {e.stderr}")
             return None
 
 
@@ -287,8 +287,8 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             # Deserialize the JSON string from the request
             data = json.loads(request.data)
             self.log(f"Received data: {data}")
-
-            generated_list_of_tuples = await self.run_transform_exe(tuple(data.items()))
+            key = next(iter(data.keys()))
+            generated_list_of_tuples = await self.run_transform_exe((key, data[key]))
 
             # add to queue
             for data in generated_list_of_tuples:
