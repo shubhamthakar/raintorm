@@ -1,6 +1,0 @@
-{"client_name": "rainstorm_source_0", "action": "append", "filename": "dest", "content": "{\"1|business_19.txt\": \"Deutsche Boerse boosts dividend\"}", "sequence_number": 1}
-{"client_name": "rainstorm_source_0", "action": "append", "filename": "dest", "content": "{\"1|business_19.txt\": \"Deutsche Boerse boosts dividend\"}", "sequence_number": 2}
-{"client_name": "rainstorm_source_0", "action": "append", "filename": "dest", "content": "{\"2|business_19.txt\": \"\"}", "sequence_number": 3}
-{"client_name": "rainstorm_source_0", "action": "append", "filename": "dest", "content": "{\"2|business_19.txt\": \"\"}", "sequence_number": 4}
-{"client_name": "rainstorm_source_0", "action": "append", "filename": "dest", "content": "{\"3|business_19.txt\": \"Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\"}", "sequence_number": 5}
-{"client_name": "rainstorm_source_0", "action": "append", "filename": "dest", "content": "{\"3|business_19.txt\": \"Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\"}", "sequence_number": 6}

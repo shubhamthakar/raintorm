@@ -1,6 +1,7 @@
 import asyncio
 import grpc
 import os
+import shutil
 import threading
 import signal
 import logging
@@ -25,6 +26,12 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         
         # temp file to store the operations
         self.base_dir = base_dir
+        
+        # If the directory exists, clear it
+        if os.path.exists(self.base_dir):
+            shutil.rmtree(self.base_dir)
+
+        # Recreate the directory
         os.makedirs(base_dir, exist_ok=True)
 
         # hyDFS node instance
@@ -97,7 +104,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         op_exes.append("source")
 
         # Dictionary to keep track of the next available port for each server
-        server_ports = defaultdict(lambda: 5000)
+        server_ports = defaultdict(lambda: 5002)
 
         # Loop over each op_exe to assign servers
         for idx, op in enumerate(op_exes):
@@ -190,9 +197,11 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         # Save and set permissions for the op_exes
         for i, binary in enumerate(request.op_exes):
             op_path = os.path.join(self.base_dir, f"{request.op_exe_names[i]}")
+            print("Here")
             with open(op_path, "wb") as f:
                 f.write(binary)
             os.chmod(op_path, 0o777)
+        
 
         task_mapping = await self.create_task_mapping(request.op_exe_names, request.num_tasks)
 
@@ -244,14 +253,17 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
     async def start_rainstorm_workers(self, task_mapping, src_file, dest_file, ports, servers):
         """Starts the rainstorm workers by running the start_rainstorm_workers.sh script asynchronously using create_subprocess_exec."""
         # Convert mapping dictionary to JSON string
-        mapping_dict_json = json.dumps(task_mapping)
+        mapping_dict_json = json.dumps(task_mapping, ensure_ascii=True)
+        mapping_dict_json = mapping_dict_json.replace('"', '\\"')  # Escape quotes for shell
+        
+        print(f"Generated mapping dict: {mapping_dict_json}")
 
         # Convert list of ports to a comma-separated string
         ports_str = ",".join(map(str, ports))
 
         # Command to execute the shell script
         command = [
-            "./scripts/start_rainstorm_workers.sh",
+            "/home/chaskar2/distributed-logger/rainstorm/scripts/start_rainstorm_workers.sh",
             mapping_dict_json,
             src_file,
             dest_file,

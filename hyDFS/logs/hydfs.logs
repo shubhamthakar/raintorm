@@ -1,216 +1,118 @@
-2024-11-27 19:00:07,283 - Logging initialized for RingNode
-2024-11-27 19:00:07,289 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/business_19.txt
-2024-11-27 19:00:07,290 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/dest
-2024-11-27 19:00:07,291 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_source_0--dest.log
-2024-11-27 19:00:07,291 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
-2024-11-27 19:00:25,825 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-27 19:00:25,826 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755612', 'ring_id': 444}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755612', 'ring_id': 444}]
-2024-11-27 19:00:25,828 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
-2024-11-27 19:00:25,829 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file business_19.txt
-2024-11-27 19:00:25,831 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
-2024-11-27 19:00:25,833 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-27 19:00:25,834 - Sent 1362 bytes from data_buffer
-2024-11-27 19:00:25,834 - Sent 1362 bytes from data_buffer
-2024-11-27 19:00:25,834 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
-2024-11-27 19:00:25,834 - Quorum not yet met, received ack from 1 replicas
-2024-11-27 19:00:25,835 - File 'business_19.txt' written successfully.
-2024-11-27 19:00:25,837 - Acknowledgment sent to client 'business_19.txt'.
-2024-11-27 19:00:25,837 - Sent 1362 bytes from data_buffer
-2024-11-27 19:00:25,837 - Sent 85 bytes from data_buffer
-2024-11-27 19:00:25,838 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
-2024-11-27 19:00:25,838 - Quorum not yet met, received ack from 2 replicas
-2024-11-27 19:00:25,839 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'file_exists'}
-2024-11-27 19:00:25,839 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 46466)>
-2024-11-27 19:00:25,839 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'file_exists'}
-2024-11-27 19:00:25,839 - Acknowledgment sent to client_1 for file 'business_19.txt'.
-2024-11-27 19:00:25,839 - Sent 82 bytes from data_buffer
-2024-11-27 19:00:27,302 - Monitoring membership list started
-2024-11-27 19:00:29,305 - No change in membership list
-2024-11-27 19:00:31,308 - No change in membership list
-2024-11-27 19:00:32,994 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-27 19:00:32,996 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755612', 'ring_id': 444}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755612', 'ring_id': 444}]
-2024-11-27 19:00:32,996 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
-2024-11-27 19:00:32,997 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file business_19.txt
-2024-11-27 19:00:32,999 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
-2024-11-27 19:00:33,001 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-27 19:00:33,001 - Sent 74 bytes from data_buffer
-2024-11-27 19:00:33,001 - Sent 74 bytes from data_buffer
-2024-11-27 19:00:33,002 - File 'business_19.txt' and append log 'rainstorm_source_0--business_19.txt.log' read successfully.
-2024-11-27 19:00:33,003 - File read succsefully business_19.txt
-2024-11-27 19:00:33,003 - Acknowledgment sent to client with status 'read_complete' for file 'business_19.txt'.
-2024-11-27 19:00:33,003 - Sent 74 bytes from data_buffer
-2024-11-27 19:00:33,005 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-27 19:00:33,005 - Quorum not yet met, received ack from 1 replicas
-2024-11-27 19:00:33,005 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-27 19:00:33,006 - Quorum not yet met, received ack from 2 replicas
-2024-11-27 19:00:33,006 - Sent 1391 bytes from data_buffer
-2024-11-27 19:00:33,007 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-27 19:00:33,007 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 46470)>
-2024-11-27 19:00:33,007 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-27 19:00:33,008 - Acknowledgment sent to rainstorm_source_0 for file 'business_19.txt'.
-2024-11-27 19:00:33,008 - Sent 1391 bytes from data_buffer
-2024-11-27 19:00:33,014 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-27 19:00:33,014 - Next 3 nodes after 476: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755612', 'ring_id': 444}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}]
-2024-11-27 19:00:33,014 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file dest
-2024-11-27 19:00:33,016 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file dest
-2024-11-27 19:00:33,018 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file dest
-2024-11-27 19:00:33,021 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-27 19:00:33,022 - Sent 74 bytes from data_buffer
-2024-11-27 19:00:33,022 - Sent 74 bytes from data_buffer
-2024-11-27 19:00:33,022 - Sent 74 bytes from data_buffer
-2024-11-27 19:00:33,024 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-27 19:00:33,024 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'write_complete'}
-2024-11-27 19:00:33,024 - Quorum not yet met, received ack from 1 replicas
-2024-11-27 19:00:33,025 - File 'dest' written successfully.
-2024-11-27 19:00:33,026 - Acknowledgment sent to client 'dest'.
-2024-11-27 19:00:33,026 - File 'dest' already exists. Not writing to it.
-2024-11-27 19:00:33,026 - Acknowledgment sent to client 'dest'.
-2024-11-27 19:00:33,027 - Sent 84 bytes from data_buffer
-2024-11-27 19:00:33,027 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'write_complete'}
-2024-11-27 19:00:33,027 - Quorum not yet met, received ack from 2 replicas
-2024-11-27 19:00:33,027 - Sent 81 bytes from data_buffer
-2024-11-27 19:00:33,028 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'file_exists'}
-2024-11-27 19:00:33,028 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 43610)>
-2024-11-27 19:00:33,028 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'file_exists'}
-2024-11-27 19:00:33,028 - Acknowledgment sent to rainstorm_source_0 for file 'dest'.
-2024-11-27 19:00:33,030 - Sent 81 bytes from data_buffer
-2024-11-27 19:00:33,033 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-27 19:00:33,033 - Next 3 nodes after 476: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755612', 'ring_id': 444}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}]
-2024-11-27 19:00:33,033 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file dest
-2024-11-27 19:00:33,036 - Sending add to fa24-cs425-6902.cs.illinois.edu:5001 for file dest
-2024-11-27 19:00:33,037 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file dest
-2024-11-27 19:00:33,040 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-27 19:00:33,040 - Sent 128 bytes from data_buffer
-2024-11-27 19:00:33,041 - Sent 128 bytes from data_buffer
-2024-11-27 19:00:33,042 - Sent 128 bytes from data_buffer
-2024-11-27 19:00:33,043 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-27 19:00:33,043 - Stated append action to file dest
-2024-11-27 19:00:33,044 - Performed append action to 'rainstorm_source_0--dest.log' with sequence number 1.
-2024-11-27 19:00:33,045 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'dest'.
-2024-11-27 19:00:33,045 - Stated append action to file dest
-2024-11-27 19:00:33,046 - Performed append action to 'rainstorm_source_0--dest.log' with sequence number 2.
-2024-11-27 19:00:33,047 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'dest'.
-2024-11-27 19:00:33,047 - Sent 100 bytes from data_buffer
-2024-11-27 19:00:33,047 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 1}
-2024-11-27 19:00:33,047 - Quorum not yet met, received ack from 1 replicas
-2024-11-27 19:00:33,048 - Sent 100 bytes from data_buffer
-2024-11-27 19:00:33,048 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 2}
-2024-11-27 19:00:33,049 - Quorum not yet met, received ack from 2 replicas
-2024-11-27 19:00:33,310 - No change in membership list
-2024-11-27 19:00:35,313 - No change in membership list
-2024-11-27 19:00:37,316 - No change in membership list
-2024-11-27 19:00:38,047 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 1}
-2024-11-27 19:00:38,047 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 43640)>
-2024-11-27 19:00:38,048 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 1}
-2024-11-27 19:00:38,048 - Acknowledgment sent to rainstorm_source_0 for file 'dest'.
-2024-11-27 19:00:38,048 - Sent 100 bytes from data_buffer
-2024-11-27 19:00:38,054 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-27 19:00:38,054 - Next 3 nodes after 476: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755612', 'ring_id': 444}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}]
-2024-11-27 19:00:38,054 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file dest
-2024-11-27 19:00:38,056 - Sending add to fa24-cs425-6902.cs.illinois.edu:5001 for file dest
-2024-11-27 19:00:38,059 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file dest
-2024-11-27 19:00:38,061 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-27 19:00:38,061 - Sent 97 bytes from data_buffer
-2024-11-27 19:00:38,061 - Sent 97 bytes from data_buffer
-2024-11-27 19:00:38,062 - Sent 97 bytes from data_buffer
-2024-11-27 19:00:38,064 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-27 19:00:38,064 - Stated append action to file dest
-2024-11-27 19:00:38,065 - Performed append action to 'rainstorm_source_0--dest.log' with sequence number 3.
-2024-11-27 19:00:38,066 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'dest'.
-2024-11-27 19:00:38,066 - Stated append action to file dest
-2024-11-27 19:00:38,066 - Performed append action to 'rainstorm_source_0--dest.log' with sequence number 4.
-2024-11-27 19:00:38,067 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'dest'.
-2024-11-27 19:00:38,067 - Sent 100 bytes from data_buffer
-2024-11-27 19:00:38,067 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 3}
-2024-11-27 19:00:38,067 - Quorum not yet met, received ack from 1 replicas
-2024-11-27 19:00:38,068 - Sent 100 bytes from data_buffer
-2024-11-27 19:00:38,068 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 4}
-2024-11-27 19:00:38,068 - Quorum not yet met, received ack from 2 replicas
-2024-11-27 19:00:39,319 - No change in membership list
-2024-11-27 19:00:41,321 - No change in membership list
-2024-11-27 19:00:43,067 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 2}
-2024-11-27 19:00:43,068 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 43680)>
-2024-11-27 19:00:43,068 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 2}
-2024-11-27 19:00:43,068 - Acknowledgment sent to rainstorm_source_0 for file 'dest'.
-2024-11-27 19:00:43,069 - Sent 100 bytes from data_buffer
-2024-11-27 19:00:43,074 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-27 19:00:43,075 - Next 3 nodes after 476: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755612', 'ring_id': 444}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}]
-2024-11-27 19:00:43,075 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file dest
-2024-11-27 19:00:43,076 - Sending add to fa24-cs425-6902.cs.illinois.edu:5001 for file dest
-2024-11-27 19:00:43,078 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file dest
-2024-11-27 19:00:43,080 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-27 19:00:43,080 - Sent 236 bytes from data_buffer
-2024-11-27 19:00:43,080 - Sent 236 bytes from data_buffer
-2024-11-27 19:00:43,081 - Sent 236 bytes from data_buffer
-2024-11-27 19:00:43,082 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-27 19:00:43,082 - Stated append action to file dest
-2024-11-27 19:00:43,083 - Performed append action to 'rainstorm_source_0--dest.log' with sequence number 5.
-2024-11-27 19:00:43,084 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'dest'.
-2024-11-27 19:00:43,084 - Stated append action to file dest
-2024-11-27 19:00:43,085 - Performed append action to 'rainstorm_source_0--dest.log' with sequence number 6.
-2024-11-27 19:00:43,086 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'dest'.
-2024-11-27 19:00:43,086 - Sent 100 bytes from data_buffer
-2024-11-27 19:00:43,086 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 5}
-2024-11-27 19:00:43,086 - Quorum not yet met, received ack from 1 replicas
-2024-11-27 19:00:43,087 - Sent 100 bytes from data_buffer
-2024-11-27 19:00:43,087 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 6}
-2024-11-27 19:00:43,087 - Quorum not yet met, received ack from 2 replicas
-2024-11-27 19:00:43,323 - No change in membership list
-2024-11-27 19:00:45,325 - No change in membership list
-2024-11-27 19:00:47,328 - No change in membership list
-2024-11-27 19:00:48,086 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 3}
-2024-11-27 19:00:48,087 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 50850)>
-2024-11-27 19:00:48,087 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 3}
-2024-11-27 19:00:48,088 - Acknowledgment sent to rainstorm_source_0 for file 'dest'.
-2024-11-27 19:00:48,088 - Sent 100 bytes from data_buffer
-2024-11-27 19:00:49,330 - No change in membership list
-2024-11-27 19:00:51,333 - No change in membership list
-2024-11-27 19:00:53,334 - No change in membership list
-2024-11-27 19:00:55,336 - No change in membership list
-2024-11-27 19:00:57,339 - No change in membership list
-2024-11-27 19:00:59,342 - No change in membership list
-2024-11-27 19:01:01,344 - No change in membership list
-2024-11-27 19:01:03,347 - No change in membership list
-2024-11-27 19:01:05,350 - No change in membership list
-2024-11-27 19:01:07,352 - Membership lists are not equal
-2024-11-27 19:01:07,352 - No change in membership list
-2024-11-27 19:01:09,355 - No change in membership list
-2024-11-27 19:01:11,357 - No change in membership list
-2024-11-27 19:01:13,360 - No change in membership list
-2024-11-27 19:01:15,362 - No change in membership list
-2024-11-27 19:01:17,365 - No change in membership list
-2024-11-27 19:01:19,367 - No change in membership list
-2024-11-27 19:01:21,370 - No change in membership list
-2024-11-27 19:01:23,373 - No change in membership list
-2024-11-27 19:01:25,376 - No change in membership list
-2024-11-27 19:01:27,378 - Membership lists are not equal
-2024-11-27 19:01:27,379 - No change in membership list
-2024-11-27 19:01:27,771 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-11-27 19:01:27,771 - File 'business_19.txt' and append log 'rainstorm_source_1--business_19.txt.log' read successfully.
-2024-11-27 19:01:27,772 - File read succsefully business_19.txt
-2024-11-27 19:01:27,772 - Acknowledgment sent to client with status 'read_complete' for file 'business_19.txt'.
-2024-11-27 19:01:27,772 - Sent 1391 bytes from data_buffer
-2024-11-27 19:01:29,381 - No change in membership list
-2024-11-27 19:01:31,383 - No change in membership list
-2024-11-27 19:01:33,385 - No change in membership list
-2024-11-27 19:01:35,388 - No change in membership list
-2024-11-27 19:01:37,391 - No change in membership list
-2024-11-27 19:01:39,393 - No change in membership list
-2024-11-27 19:01:41,396 - No change in membership list
-2024-11-27 19:01:43,398 - No change in membership list
-2024-11-27 19:01:45,401 - No change in membership list
-2024-11-27 19:01:47,404 - No change in membership list
-2024-11-27 19:01:49,406 - No change in membership list
-2024-11-27 19:01:51,408 - No change in membership list
-2024-11-27 19:01:53,411 - No change in membership list
-2024-11-27 19:01:55,413 - No change in membership list
-2024-11-27 19:01:57,416 - No change in membership list
-2024-11-27 19:01:59,419 - No change in membership list
-2024-11-27 19:02:01,422 - No change in membership list
-2024-11-27 19:02:02,581 - Shutting down HyDFS...
-2024-11-27 19:02:02,582 - Listener thread is still running; proceeding to join...
-2024-11-27 19:02:02,803 - Listener thread joined successfully.
-2024-11-27 19:02:02,803 - Membership thread is still running; proceeding to join...
-2024-11-27 19:02:03,424 - No change in membership list
-2024-11-27 19:02:03,425 - Membership thread joined successfully.
-2024-11-27 19:02:07,361 - HyDFS Node shut down gracefully.
+2024-11-27 19:04:40,867 - Logging initialized for RingNode
+2024-11-27 19:04:40,874 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/business_19.txt
+2024-11-27 19:04:40,875 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/dest
+2024-11-27 19:04:40,875 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_source_0--dest.log
+2024-11-27 19:04:40,875 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-11-27 19:04:56,392 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:04:56,395 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755890', 'ring_id': 444}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755880', 'ring_id': 715}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755890', 'ring_id': 444}]
+2024-11-27 19:04:56,396 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
+2024-11-27 19:04:56,398 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file business_19.txt
+2024-11-27 19:04:56,402 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
+2024-11-27 19:04:56,405 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:04:56,406 - Sent 1362 bytes from data_buffer
+2024-11-27 19:04:56,406 - Sent 1362 bytes from data_buffer
+2024-11-27 19:04:56,407 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-11-27 19:04:56,409 - Quorum not yet met, received ack from 1 replicas
+2024-11-27 19:04:56,409 - File 'business_19.txt' written successfully.
+2024-11-27 19:04:56,411 - Acknowledgment sent to client 'business_19.txt'.
+2024-11-27 19:04:56,413 - Sent 1362 bytes from data_buffer
+2024-11-27 19:04:56,414 - Sent 85 bytes from data_buffer
+2024-11-27 19:04:56,415 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-11-27 19:04:56,416 - Quorum not yet met, received ack from 2 replicas
+2024-11-27 19:04:56,417 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'file_exists'}
+2024-11-27 19:04:56,422 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 51484)>
+2024-11-27 19:04:56,422 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'file_exists'}
+2024-11-27 19:04:56,423 - Acknowledgment sent to client_1 for file 'business_19.txt'.
+2024-11-27 19:04:56,429 - Sent 82 bytes from data_buffer
+2024-11-27 19:05:00,896 - Monitoring membership list started
+2024-11-27 19:05:01,149 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:05:01,150 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755890', 'ring_id': 444}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755880', 'ring_id': 715}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755890', 'ring_id': 444}]
+2024-11-27 19:05:01,151 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
+2024-11-27 19:05:01,153 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file business_19.txt
+2024-11-27 19:05:01,154 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
+2024-11-27 19:05:01,156 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:05:01,156 - Sent 74 bytes from data_buffer
+2024-11-27 19:05:01,156 - Sent 74 bytes from data_buffer
+2024-11-27 19:05:01,157 - File 'business_19.txt' and append log 'rainstorm_source_0--business_19.txt.log' read successfully.
+2024-11-27 19:05:01,158 - File read succsefully business_19.txt
+2024-11-27 19:05:01,158 - Acknowledgment sent to client with status 'read_complete' for file 'business_19.txt'.
+2024-11-27 19:05:01,158 - Sent 74 bytes from data_buffer
+2024-11-27 19:05:01,160 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-11-27 19:05:01,160 - Quorum not yet met, received ack from 1 replicas
+2024-11-27 19:05:01,160 - Sent 1391 bytes from data_buffer
+2024-11-27 19:05:01,161 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-11-27 19:05:01,162 - Quorum not yet met, received ack from 2 replicas
+2024-11-27 19:05:01,162 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-11-27 19:05:01,162 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 51514)>
+2024-11-27 19:05:01,163 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-11-27 19:05:01,163 - Acknowledgment sent to rainstorm_source_0 for file 'business_19.txt'.
+2024-11-27 19:05:01,165 - Sent 1391 bytes from data_buffer
+2024-11-27 19:05:02,899 - No change in membership list
+2024-11-27 19:05:04,902 - No change in membership list
+2024-11-27 19:05:06,904 - No change in membership list
+2024-11-27 19:05:08,907 - No change in membership list
+2024-11-27 19:05:10,909 - No change in membership list
+2024-11-27 19:05:12,911 - No change in membership list
+2024-11-27 19:05:14,913 - No change in membership list
+2024-11-27 19:05:14,921 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
+2024-11-27 19:05:14,922 - File 'business_19.txt' and append log 'rainstorm_source_1--business_19.txt.log' read successfully.
+2024-11-27 19:05:14,923 - File read succsefully business_19.txt
+2024-11-27 19:05:14,923 - Acknowledgment sent to client with status 'read_complete' for file 'business_19.txt'.
+2024-11-27 19:05:14,923 - Sent 1391 bytes from data_buffer
+2024-11-27 19:05:16,916 - No change in membership list
+2024-11-27 19:05:18,918 - No change in membership list
+2024-11-27 19:05:20,920 - No change in membership list
+2024-11-27 19:05:22,922 - No change in membership list
+2024-11-27 19:05:24,924 - No change in membership list
+2024-11-27 19:05:26,927 - No change in membership list
+2024-11-27 19:05:28,930 - No change in membership list
+2024-11-27 19:05:30,933 - No change in membership list
+2024-11-27 19:05:32,935 - No change in membership list
+2024-11-27 19:05:34,938 - No change in membership list
+2024-11-27 19:05:36,940 - No change in membership list
+2024-11-27 19:05:38,943 - No change in membership list
+2024-11-27 19:05:40,946 - No change in membership list
+2024-11-27 19:05:42,948 - No change in membership list
+2024-11-27 19:05:44,951 - No change in membership list
+2024-11-27 19:05:46,953 - No change in membership list
+2024-11-27 19:05:48,956 - No change in membership list
+2024-11-27 19:05:50,959 - No change in membership list
+2024-11-27 19:05:52,961 - No change in membership list
+2024-11-27 19:05:54,964 - No change in membership list
+2024-11-27 19:05:56,965 - No change in membership list
+2024-11-27 19:05:58,968 - No change in membership list
+2024-11-27 19:06:00,969 - No change in membership list
+2024-11-27 19:06:02,972 - No change in membership list
+2024-11-27 19:06:04,974 - No change in membership list
+2024-11-27 19:06:06,977 - No change in membership list
+2024-11-27 19:06:08,980 - No change in membership list
+2024-11-27 19:06:10,982 - No change in membership list
+2024-11-27 19:06:12,985 - No change in membership list
+2024-11-27 19:06:14,987 - No change in membership list
+2024-11-27 19:06:16,990 - No change in membership list
+2024-11-27 19:06:18,993 - No change in membership list
+2024-11-27 19:06:20,995 - Membership lists are not equal
+2024-11-27 19:06:20,995 - No change in membership list
+2024-11-27 19:06:22,998 - No change in membership list
+2024-11-27 19:06:25,000 - No change in membership list
+2024-11-27 19:06:27,003 - No change in membership list
+2024-11-27 19:06:29,005 - No change in membership list
+2024-11-27 19:06:31,008 - No change in membership list
+2024-11-27 19:06:33,011 - No change in membership list
+2024-11-27 19:06:35,013 - No change in membership list
+2024-11-27 19:06:37,016 - No change in membership list
+2024-11-27 19:06:39,019 - No change in membership list
+2024-11-27 19:06:41,022 - Membership lists are not equal
+2024-11-27 19:06:41,022 - No change in membership list
+2024-11-27 19:06:43,024 - No change in membership list
+2024-11-27 19:06:45,027 - No change in membership list
+2024-11-27 19:06:46,034 - Shutting down HyDFS...
+2024-11-27 19:06:46,034 - Listener thread is still running; proceeding to join...
+2024-11-27 19:06:47,030 - No change in membership list
+2024-11-27 19:06:49,996 - Listener thread joined successfully.
+2024-11-27 19:06:49,996 - Membership thread is not running, skipping join.
+2024-11-27 19:06:58,853 - Shutting down HyDFS...
+2024-11-27 19:06:58,854 - Listener thread is not running, skipping join.
+2024-11-27 19:06:58,854 - Membership thread is not running, skipping join.
+2024-11-27 19:07:00,976 - HyDFS Node shut down gracefully.
+2024-11-27 19:07:00,977 - HyDFS Node shut down gracefully.

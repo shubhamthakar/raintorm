@@ -8,13 +8,18 @@ import socket
 import logging
 import json
 import msgpack
+import subprocess
+import os
+import hashlib
 import math
 
 class WorkerServicer(worker_pb2_grpc.WorkerServicer):
     def __init__(self, mapping, src_file, dest_file):
         self.mapping = json.loads(mapping)
+        self.exe_file_path = '/home/chaskar2/distributed-logger/rainstorm/exe_files'
         self.src_file = src_file
         self.dest_file = dest_file
+        self.state = {"inp_id_processed": set(), "state": {}, "output_rec": []}
 
         # Logging
         self.log_file = '/home/chaskar2/distributed-logger/rainstorm/logs/worker.logs'
@@ -57,19 +62,19 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         mapping_keys = list(mapping.keys())
         for i, task_type in enumerate(mapping_keys):
             task_dict = mapping[task_type]
-            print(task_dict)
             for partition_num, details in task_dict.items():
                 hostname, ip = details.split(":")
                 if hostname == self.hostname:
                     # Populate the attributes based on the match
                     print(partition_num)
                     self.task_type = task_type
+                    self.exe_file_path = os.path.join(self.exe_file_path, self.task_type)
                     self.partition_num = partition_num
                     self.total_partitions = len(task_dict)
                     self.next_stage_tasks = mapping[mapping_keys[i + 1]] if i + 1 < len(mapping_keys) else None
-        self.log(f"Extracted details task_type: {self.task_type} partition_num: {self.partition_num}, total_partitions: {self.total_partitions}, next_stage_tasks: {self.next_stage_tasks}")
+        self.log(f"Extracted details task_type: {self.task_type} exe_file_path: {self.exe_file_path} partition_num: {self.partition_num}, total_partitions: {self.total_partitions}, next_stage_tasks: {self.next_stage_tasks}")
             
-    async def get_file_from_hydfs(self):
+    async def interact_with_hydfs(self, action, filename, generated_tuple=None):
         # Connect to coord
         try:
             client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -83,13 +88,20 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         # send get req to hyDFS
         message = {
             "client_name": f'rainstorm_source_{self.partition_num}',
-            "action": 'get',
-            "filename": self.src_file
+            "action": action,
+            "filename": filename
         }
+
+        if (action == "create" ):
+            message["filesize"] = 0
+            message["content"] = ''.encode('utf-8')
+        elif (action == "append"):
+            message["filesize"] = 0
+            message["content"] = json.dumps(generated_tuple).encode('utf-8')
 
         try:
             client_socket.sendall(msgpack.packb(message) + b"<EOF>")
-            print(f"Message for get sent successfully to hydfs.")
+            print(f"Message for {action} sent successfully to hydfs.")
         except Exception as e:
             print(f"Error sending message: {e}")
 
@@ -146,23 +158,37 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
 
     async def monitor_queue(self):
         """
-        Monitors the queue and sends data using the gRPC stub. If sending fails, re-adds data to the queue.
+        Monitors the queue, hashes the key in data_to_send to determine the partition,
+        selects the remote address, and sends data using the gRPC stub. If sending fails,
+        re-adds data to the queue.
         """
-
         if self.next_stage_tasks is None:
-            # Write to hyDFS
+            response = await self.interact_with_hydfs('create', self.dest_file)
+            self.log(f"HyDFS response for create dest file : {response}")
             pass
-        else:
+        while True:
+            data_to_send = await self.queue.get()  # Wait for an item in the queue
+            self.log(f"Dequeued data: {data_to_send} for sending.")
 
-            remote_server_address = self.next_stage_tasks[self.partition_num]
+            if self.next_stage_tasks is None:
+                response = await self.interact_with_hydfs('append', self.dest_file, data_to_send)
+                self.log(f"HyDFS response for append to dest file : {response}")
+            else:
 
-            async with grpc.aio.insecure_channel(remote_server_address) as channel:
-                stub = worker_pb2_grpc.WorkerStub(channel)
+                # Extract the key from data_to_send (assuming it's a dictionary with one element)
+                key = next(iter(data_to_send.keys()))
 
-                while True:
-                    data_to_send = await self.queue.get()  # Wait for an item in the queue
-                    self.log(f"Dequeued data: {data_to_send} for sending.")
-                    
+                # Hash the key to determine the partition
+                hashed_partition = int(hashlib.sha256(key.encode('utf-8')).hexdigest(), 16) % self.total_partitions
+
+                # Get the remote server address based on the hashed partition
+                remote_server_address = self.next_stage_tasks[hashed_partition]
+
+                # Create a gRPC channel and stub
+                async with grpc.aio.insecure_channel(remote_server_address) as channel:
+                    stub = worker_pb2_grpc.WorkerStub(channel)
+
+                    # Attempt to send the data
                     response = await self.send_data_with_retries(
                         stub=stub,
                         data_to_send=data_to_send,
@@ -171,16 +197,16 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
                     )
 
                     if response:
-                        self.log(f"Data sent successfully: {data_to_send}")
+                        self.log(f"Response from server : {response}")
                     else:
-                        self.log(f"Failed to send data: {data_to_send}. Re-queuing.")
+                        self.log(f"Failed to send data to partition {hashed_partition}: {data_to_send}. Re-queuing.")
                         await self.queue.put(data_to_send)  # Re-add to the queue for retry
 
 
 
     async def start_stream(self):
         
-        response = await self.get_file_from_hydfs()
+        response = await self.interact_with_hydfs('get', self.src_file)
         self.log(f"{response}")
         if response["status"] == "file_not_found":
             return
@@ -207,6 +233,44 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             await self.queue.put({f"{data[0]}|{self.src_file}" : data[1]})
 
 
+    async def run_transform_exe(self, input_tuple):
+        """
+        Runs the `transform.exe` file with the specified arguments and returns the output.
+        
+        Args:
+            input_tuple (tuple): The input tuple.
+
+        Returns:
+            str: The list of processed tuples
+        """
+        try:
+            # Convert state and input_tuple to strings for command-line arguments
+            state_arg = json.dumps(self.state)  # Safely serialize the dictionary to a JSON string
+            input_arg = str(input_tuple)  # Convert tuple to string
+
+            # Execute the .exe file with the arguments
+            result = subprocess.run(
+                [self.exe_path, "--state", state_arg, "--input", input_arg],
+                capture_output=True, text=True, check=True
+            )
+
+            # Parse the .exe output (stdout) as JSON
+            exe_output = json.loads(result.stdout)
+
+            # Extract updated_state and processed from the .exe output
+            updated_state = exe_output["updated_state"]
+            generated_list_of_tuples = exe_output["processed"]
+
+            # Update self.state with the new state from the .exe
+            self.state = updated_state
+
+            # Return the list of processed tuples
+            return generated_list_of_tuples
+        except subprocess.CalledProcessError as e:
+            print(f"Error running {self.exe_path}: {e.stderr}")
+            return None
+
+
 
     async def RecvData(self, request, context):
         """
@@ -224,6 +288,14 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             data = json.loads(request.data)
             self.log(f"Received data: {data}")
 
+            generated_list_of_tuples = await self.run_transform_exe(tuple(data.items()))
+
+            # add to queue
+            for data in generated_list_of_tuples:
+                self.log(f"Queueing data: {data}")
+                # Appending dic of format {(line_num, file_name): line}
+                await self.queue.put({data[0] : data[1]})
+
             # Create an acknowledgment as a JSON dictionary
             ack = {"status": "received", "details": "Data processed successfully"}
 
@@ -237,6 +309,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
 
 
 async def serve(port, mapping, src_file, dest_file):
+    print(f"Recieved Mapping: {mapping}")
     server = grpc.aio.server(ThreadPoolExecutor(max_workers=10))
     worker_servicer = WorkerServicer(mapping, src_file, dest_file)
     worker_pb2_grpc.add_WorkerServicer_to_server(worker_servicer, server)
