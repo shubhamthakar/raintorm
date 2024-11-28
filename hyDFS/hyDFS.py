@@ -251,7 +251,8 @@ class RingNode:
             self.append_file(file_info, client_socket)
         
         elif action == "add":
-            threading.Thread(target=self.add_file, args=(file_info, client_socket), daemon=True).start()
+            #threading.Thread(target=self.add_file, args=(file_info, client_socket), daemon=True).start()
+            self.add_file(file_info, client_socket)
         
         elif action == "merge":
             self.merge_file(file_info, client_socket)
@@ -802,8 +803,6 @@ class RingNode:
         # Write the new entry to the JSON file in append mode
         with open(append_log_filepath, 'a') as json_file:
             json_file.write(json.dumps(file_info_append) + '\n')
-
-        time.sleep(0.1)
 
         
 

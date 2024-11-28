@@ -1,525 +1,216 @@
-2024-11-27 15:20:01,999 - Logging initialized for RingNode
-2024-11-27 15:20:02,005 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
-2024-11-27 15:20:22,024 - Monitoring membership list started
-2024-11-27 15:20:24,026 - No change in membership list
-2024-11-27 15:20:26,029 - No change in membership list
-2024-11-27 15:20:28,031 - No change in membership list
-2024-11-27 15:20:30,034 - No change in membership list
-2024-11-27 15:20:32,036 - No change in membership list
-2024-11-27 15:20:34,039 - No change in membership list
-2024-11-27 15:20:36,043 - No change in membership list
-2024-11-27 15:20:38,046 - No change in membership list
-2024-11-27 15:20:40,048 - No change in membership list
-2024-11-27 15:20:42,051 - No change in membership list
-2024-11-27 15:20:44,053 - No change in membership list
-2024-11-27 15:20:46,054 - No change in membership list
-2024-11-27 15:20:48,056 - No change in membership list
-2024-11-27 15:20:50,059 - No change in membership list
-2024-11-27 15:20:52,061 - No change in membership list
-2024-11-27 15:20:54,062 - No change in membership list
-2024-11-27 15:20:56,065 - No change in membership list
-2024-11-27 15:20:58,067 - No change in membership list
-2024-11-27 15:21:00,069 - No change in membership list
-2024-11-27 15:21:02,072 - No change in membership list
-2024-11-27 15:21:04,074 - No change in membership list
-2024-11-27 15:21:06,076 - No change in membership list
-2024-11-27 15:21:08,078 - No change in membership list
-2024-11-27 15:21:10,081 - No change in membership list
-2024-11-27 15:21:12,083 - No change in membership list
-2024-11-27 15:21:14,085 - No change in membership list
-2024-11-27 15:21:16,087 - No change in membership list
-2024-11-27 15:21:18,089 - No change in membership list
-2024-11-27 15:21:20,092 - No change in membership list
-2024-11-27 15:21:22,094 - No change in membership list
-2024-11-27 15:21:24,096 - No change in membership list
-2024-11-27 15:21:26,098 - No change in membership list
-2024-11-27 15:21:28,099 - No change in membership list
-2024-11-27 15:21:30,101 - No change in membership list
-2024-11-27 15:21:32,102 - No change in membership list
-2024-11-27 15:21:34,103 - No change in membership list
-2024-11-27 15:21:36,106 - No change in membership list
-2024-11-27 15:21:38,108 - No change in membership list
-2024-11-27 15:21:40,111 - No change in membership list
-2024-11-27 15:21:42,113 - No change in membership list
-2024-11-27 15:21:44,115 - No change in membership list
-2024-11-27 15:21:46,118 - No change in membership list
-2024-11-27 15:21:48,120 - No change in membership list
-2024-11-27 15:21:50,121 - No change in membership list
-2024-11-27 15:21:52,124 - No change in membership list
-2024-11-27 15:21:54,126 - No change in membership list
-2024-11-27 15:21:56,129 - No change in membership list
-2024-11-27 15:21:58,130 - No change in membership list
-2024-11-27 15:22:00,133 - No change in membership list
-2024-11-27 15:22:02,135 - No change in membership list
-2024-11-27 15:22:04,138 - No change in membership list
-2024-11-27 15:22:06,140 - No change in membership list
-2024-11-27 15:22:08,143 - No change in membership list
-2024-11-27 15:22:10,144 - No change in membership list
-2024-11-27 15:22:12,146 - No change in membership list
-2024-11-27 15:22:14,149 - No change in membership list
-2024-11-27 15:22:16,152 - No change in membership list
-2024-11-27 15:22:18,155 - No change in membership list
-2024-11-27 15:22:20,158 - No change in membership list
-2024-11-27 15:22:22,160 - No change in membership list
-2024-11-27 15:22:24,162 - No change in membership list
-2024-11-27 15:22:26,165 - No change in membership list
-2024-11-27 15:22:28,166 - No change in membership list
-2024-11-27 15:22:30,168 - No change in membership list
-2024-11-27 15:22:32,171 - No change in membership list
-2024-11-27 15:22:34,173 - No change in membership list
-2024-11-27 15:22:36,175 - No change in membership list
-2024-11-27 15:22:38,177 - No change in membership list
-2024-11-27 15:22:40,180 - No change in membership list
-2024-11-27 15:22:42,182 - No change in membership list
-2024-11-27 15:22:44,184 - No change in membership list
-2024-11-27 15:22:46,187 - No change in membership list
-2024-11-27 15:22:48,189 - No change in membership list
-2024-11-27 15:22:50,191 - No change in membership list
-2024-11-27 15:22:52,191 - No change in membership list
-2024-11-27 15:22:54,194 - No change in membership list
-2024-11-27 15:22:56,196 - No change in membership list
-2024-11-27 15:22:58,198 - No change in membership list
-2024-11-27 15:23:00,201 - No change in membership list
-2024-11-27 15:23:02,203 - No change in membership list
-2024-11-27 15:23:04,205 - No change in membership list
-2024-11-27 15:23:06,208 - No change in membership list
-2024-11-27 15:23:08,210 - No change in membership list
-2024-11-27 15:23:10,211 - No change in membership list
-2024-11-27 15:23:12,213 - No change in membership list
-2024-11-27 15:23:14,215 - No change in membership list
-2024-11-27 15:23:16,217 - No change in membership list
-2024-11-27 15:23:18,218 - No change in membership list
-2024-11-27 15:23:20,220 - No change in membership list
-2024-11-27 15:23:22,222 - Membership lists are not equal
-2024-11-27 15:23:22,222 - No change in membership list
-2024-11-27 15:23:24,223 - No change in membership list
-2024-11-27 15:23:26,226 - No change in membership list
-2024-11-27 15:23:28,228 - No change in membership list
-2024-11-27 15:23:30,229 - No change in membership list
-2024-11-27 15:23:32,230 - No change in membership list
-2024-11-27 15:23:34,232 - No change in membership list
-2024-11-27 15:23:36,235 - No change in membership list
-2024-11-27 15:23:38,237 - No change in membership list
-2024-11-27 15:23:40,239 - No change in membership list
-2024-11-27 15:23:42,241 - No change in membership list
-2024-11-27 15:23:44,244 - No change in membership list
-2024-11-27 15:23:46,246 - No change in membership list
-2024-11-27 15:23:48,248 - No change in membership list
-2024-11-27 15:23:50,250 - No change in membership list
-2024-11-27 15:23:52,252 - No change in membership list
-2024-11-27 15:23:54,254 - No change in membership list
-2024-11-27 15:23:56,257 - No change in membership list
-2024-11-27 15:23:58,259 - No change in membership list
-2024-11-27 15:24:00,261 - No change in membership list
-2024-11-27 15:24:02,263 - No change in membership list
-2024-11-27 15:24:04,265 - No change in membership list
-2024-11-27 15:24:06,267 - No change in membership list
-2024-11-27 15:24:08,272 - No change in membership list
-2024-11-27 15:24:10,274 - No change in membership list
-2024-11-27 15:24:12,276 - No change in membership list
-2024-11-27 15:24:14,279 - No change in membership list
-2024-11-27 15:24:16,280 - No change in membership list
-2024-11-27 15:24:18,282 - No change in membership list
-2024-11-27 15:24:20,285 - No change in membership list
-2024-11-27 15:24:22,287 - No change in membership list
-2024-11-27 15:24:24,289 - No change in membership list
-2024-11-27 15:24:26,292 - No change in membership list
-2024-11-27 15:24:28,294 - No change in membership list
-2024-11-27 15:24:30,297 - No change in membership list
-2024-11-27 15:24:32,298 - No change in membership list
-2024-11-27 15:24:34,301 - No change in membership list
-2024-11-27 15:24:36,302 - No change in membership list
-2024-11-27 15:24:38,304 - No change in membership list
-2024-11-27 15:24:40,307 - No change in membership list
-2024-11-27 15:24:42,309 - No change in membership list
-2024-11-27 15:24:44,311 - No change in membership list
-2024-11-27 15:24:46,314 - No change in membership list
-2024-11-27 15:24:48,316 - No change in membership list
-2024-11-27 15:24:50,318 - No change in membership list
-2024-11-27 15:24:52,320 - No change in membership list
-2024-11-27 15:24:54,322 - No change in membership list
-2024-11-27 15:24:56,327 - No change in membership list
-2024-11-27 15:24:58,329 - No change in membership list
-2024-11-27 15:25:00,331 - No change in membership list
-2024-11-27 15:25:02,334 - No change in membership list
-2024-11-27 15:25:04,336 - No change in membership list
-2024-11-27 15:25:06,338 - No change in membership list
-2024-11-27 15:25:08,341 - No change in membership list
-2024-11-27 15:25:10,343 - No change in membership list
-2024-11-27 15:25:12,346 - No change in membership list
-2024-11-27 15:25:14,348 - No change in membership list
-2024-11-27 15:25:16,349 - No change in membership list
-2024-11-27 15:25:18,351 - No change in membership list
-2024-11-27 15:25:20,354 - No change in membership list
-2024-11-27 15:25:22,356 - No change in membership list
-2024-11-27 15:25:24,359 - No change in membership list
-2024-11-27 15:25:26,361 - No change in membership list
-2024-11-27 15:25:28,364 - No change in membership list
-2024-11-27 15:25:30,366 - No change in membership list
-2024-11-27 15:25:32,368 - No change in membership list
-2024-11-27 15:25:34,371 - No change in membership list
-2024-11-27 15:25:36,373 - No change in membership list
-2024-11-27 15:25:38,376 - No change in membership list
-2024-11-27 15:25:40,378 - No change in membership list
-2024-11-27 15:25:42,380 - No change in membership list
-2024-11-27 15:25:44,382 - No change in membership list
-2024-11-27 15:25:46,384 - No change in membership list
-2024-11-27 15:25:48,386 - No change in membership list
-2024-11-27 15:25:50,388 - No change in membership list
-2024-11-27 15:25:52,390 - No change in membership list
-2024-11-27 15:25:54,392 - No change in membership list
-2024-11-27 15:25:56,395 - No change in membership list
-2024-11-27 15:25:58,397 - No change in membership list
-2024-11-27 15:26:00,400 - No change in membership list
-2024-11-27 15:26:02,401 - No change in membership list
-2024-11-27 15:26:04,404 - No change in membership list
-2024-11-27 15:26:06,406 - No change in membership list
-2024-11-27 15:26:08,408 - No change in membership list
-2024-11-27 15:26:10,411 - No change in membership list
-2024-11-27 15:26:12,413 - No change in membership list
-2024-11-27 15:26:14,415 - No change in membership list
-2024-11-27 15:26:16,417 - No change in membership list
-2024-11-27 15:26:18,420 - No change in membership list
-2024-11-27 15:26:20,422 - No change in membership list
-2024-11-27 15:26:22,423 - Membership lists are not equal
-2024-11-27 15:26:22,423 - No change in membership list
-2024-11-27 15:26:24,426 - No change in membership list
-2024-11-27 15:26:26,428 - No change in membership list
-2024-11-27 15:26:28,431 - No change in membership list
-2024-11-27 15:26:30,433 - No change in membership list
-2024-11-27 15:26:32,434 - No change in membership list
-2024-11-27 15:26:34,436 - No change in membership list
-2024-11-27 15:26:36,439 - No change in membership list
-2024-11-27 15:26:38,442 - No change in membership list
-2024-11-27 15:26:40,444 - No change in membership list
-2024-11-27 15:26:42,446 - No change in membership list
-2024-11-27 15:26:44,448 - No change in membership list
-2024-11-27 15:26:46,451 - No change in membership list
-2024-11-27 15:26:48,453 - No change in membership list
-2024-11-27 15:26:50,455 - No change in membership list
-2024-11-27 15:26:52,458 - No change in membership list
-2024-11-27 15:26:54,460 - No change in membership list
-2024-11-27 15:26:56,462 - No change in membership list
-2024-11-27 15:26:58,465 - No change in membership list
-2024-11-27 15:27:00,467 - No change in membership list
-2024-11-27 15:27:02,470 - No change in membership list
-2024-11-27 15:27:04,472 - No change in membership list
-2024-11-27 15:27:06,474 - No change in membership list
-2024-11-27 15:27:08,477 - No change in membership list
-2024-11-27 15:27:10,479 - No change in membership list
-2024-11-27 15:27:12,481 - No change in membership list
-2024-11-27 15:27:14,484 - No change in membership list
-2024-11-27 15:27:16,486 - No change in membership list
-2024-11-27 15:27:18,489 - No change in membership list
-2024-11-27 15:27:20,491 - No change in membership list
-2024-11-27 15:27:22,494 - No change in membership list
-2024-11-27 15:27:24,496 - No change in membership list
-2024-11-27 15:27:26,499 - No change in membership list
-2024-11-27 15:27:28,501 - No change in membership list
-2024-11-27 15:27:30,503 - No change in membership list
-2024-11-27 15:27:32,505 - No change in membership list
-2024-11-27 15:27:34,507 - No change in membership list
-2024-11-27 15:27:36,509 - No change in membership list
-2024-11-27 15:27:38,511 - No change in membership list
-2024-11-27 15:27:40,513 - No change in membership list
-2024-11-27 15:27:42,516 - No change in membership list
-2024-11-27 15:27:44,518 - No change in membership list
-2024-11-27 15:27:46,519 - No change in membership list
-2024-11-27 15:27:48,521 - No change in membership list
-2024-11-27 15:27:50,523 - No change in membership list
-2024-11-27 15:27:52,526 - No change in membership list
-2024-11-27 15:27:54,528 - No change in membership list
-2024-11-27 15:27:56,531 - No change in membership list
-2024-11-27 15:27:58,533 - No change in membership list
-2024-11-27 15:28:00,535 - No change in membership list
-2024-11-27 15:28:02,538 - No change in membership list
-2024-11-27 15:28:04,540 - No change in membership list
-2024-11-27 15:28:06,542 - No change in membership list
-2024-11-27 15:28:08,545 - No change in membership list
-2024-11-27 15:28:10,547 - No change in membership list
-2024-11-27 15:28:12,550 - No change in membership list
-2024-11-27 15:28:14,554 - No change in membership list
-2024-11-27 15:28:16,554 - No change in membership list
-2024-11-27 15:28:18,557 - No change in membership list
-2024-11-27 15:28:20,559 - No change in membership list
-2024-11-27 15:28:22,562 - No change in membership list
-2024-11-27 15:28:24,564 - No change in membership list
-2024-11-27 15:28:26,566 - No change in membership list
-2024-11-27 15:28:28,568 - No change in membership list
-2024-11-27 15:28:30,570 - No change in membership list
-2024-11-27 15:28:32,572 - No change in membership list
-2024-11-27 15:28:34,574 - No change in membership list
-2024-11-27 15:28:36,576 - No change in membership list
-2024-11-27 15:28:38,577 - No change in membership list
-2024-11-27 15:28:40,580 - No change in membership list
-2024-11-27 15:28:42,580 - No change in membership list
-2024-11-27 15:28:44,582 - No change in membership list
-2024-11-27 15:28:46,585 - No change in membership list
-2024-11-27 15:28:48,587 - No change in membership list
-2024-11-27 15:28:50,589 - No change in membership list
-2024-11-27 15:28:52,592 - No change in membership list
-2024-11-27 15:28:54,594 - No change in membership list
-2024-11-27 15:28:56,596 - No change in membership list
-2024-11-27 15:28:58,598 - No change in membership list
-2024-11-27 15:29:00,601 - No change in membership list
-2024-11-27 15:29:02,603 - No change in membership list
-2024-11-27 15:29:04,605 - No change in membership list
-2024-11-27 15:29:06,608 - No change in membership list
-2024-11-27 15:29:08,610 - No change in membership list
-2024-11-27 15:29:10,612 - No change in membership list
-2024-11-27 15:29:12,614 - No change in membership list
-2024-11-27 15:29:14,616 - No change in membership list
-2024-11-27 15:29:16,619 - No change in membership list
-2024-11-27 15:29:18,621 - No change in membership list
-2024-11-27 15:29:20,623 - No change in membership list
-2024-11-27 15:29:22,626 - Membership lists are not equal
-2024-11-27 15:29:22,626 - No change in membership list
-2024-11-27 15:29:24,628 - No change in membership list
-2024-11-27 15:29:26,630 - No change in membership list
-2024-11-27 15:29:28,632 - No change in membership list
-2024-11-27 15:29:30,635 - No change in membership list
-2024-11-27 15:29:32,637 - No change in membership list
-2024-11-27 15:29:34,639 - No change in membership list
-2024-11-27 15:29:36,640 - No change in membership list
-2024-11-27 15:29:38,642 - No change in membership list
-2024-11-27 15:29:40,645 - No change in membership list
-2024-11-27 15:29:42,647 - No change in membership list
-2024-11-27 15:29:44,650 - No change in membership list
-2024-11-27 15:29:46,652 - No change in membership list
-2024-11-27 15:29:48,655 - No change in membership list
-2024-11-27 15:29:50,657 - No change in membership list
-2024-11-27 15:29:52,660 - No change in membership list
-2024-11-27 15:29:54,662 - No change in membership list
-2024-11-27 15:29:56,664 - No change in membership list
-2024-11-27 15:29:58,665 - No change in membership list
-2024-11-27 15:30:00,667 - No change in membership list
-2024-11-27 15:30:02,670 - No change in membership list
-2024-11-27 15:30:04,672 - No change in membership list
-2024-11-27 15:30:06,675 - No change in membership list
-2024-11-27 15:30:08,677 - No change in membership list
-2024-11-27 15:30:10,680 - No change in membership list
-2024-11-27 15:30:12,682 - No change in membership list
-2024-11-27 15:30:14,685 - No change in membership list
-2024-11-27 15:30:16,686 - No change in membership list
-2024-11-27 15:30:18,688 - No change in membership list
-2024-11-27 15:30:20,691 - No change in membership list
-2024-11-27 15:30:22,693 - No change in membership list
-2024-11-27 15:30:24,695 - No change in membership list
-2024-11-27 15:30:26,698 - No change in membership list
-2024-11-27 15:30:28,700 - No change in membership list
-2024-11-27 15:30:30,703 - No change in membership list
-2024-11-27 15:30:32,705 - No change in membership list
-2024-11-27 15:30:34,708 - No change in membership list
-2024-11-27 15:30:36,710 - No change in membership list
-2024-11-27 15:30:38,713 - No change in membership list
-2024-11-27 15:30:40,715 - No change in membership list
-2024-11-27 15:30:42,718 - No change in membership list
-2024-11-27 15:30:44,720 - No change in membership list
-2024-11-27 15:30:46,722 - No change in membership list
-2024-11-27 15:30:48,724 - No change in membership list
-2024-11-27 15:30:50,727 - No change in membership list
-2024-11-27 15:30:52,729 - No change in membership list
-2024-11-27 15:30:54,732 - No change in membership list
-2024-11-27 15:30:56,734 - No change in membership list
-2024-11-27 15:30:58,737 - No change in membership list
-2024-11-27 15:31:00,739 - No change in membership list
-2024-11-27 15:31:02,742 - No change in membership list
-2024-11-27 15:31:04,744 - No change in membership list
-2024-11-27 15:31:06,746 - No change in membership list
-2024-11-27 15:31:08,749 - No change in membership list
-2024-11-27 15:31:10,751 - No change in membership list
-2024-11-27 15:31:12,754 - No change in membership list
-2024-11-27 15:31:14,755 - No change in membership list
-2024-11-27 15:31:16,757 - No change in membership list
-2024-11-27 15:31:18,759 - No change in membership list
-2024-11-27 15:31:20,761 - No change in membership list
-2024-11-27 15:31:22,762 - No change in membership list
-2024-11-27 15:31:24,764 - No change in membership list
-2024-11-27 15:31:26,766 - No change in membership list
-2024-11-27 15:31:28,768 - No change in membership list
-2024-11-27 15:31:30,771 - No change in membership list
-2024-11-27 15:31:32,773 - Membership lists are not equal
-2024-11-27 15:31:32,774 - Hydfs node marked as DEAD: {'ring_id': 845, 'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1732742408', 'status': 'DEAD', 'inc_num': 0}
-2024-11-27 15:32:12,798 - Dead node fa24-cs425-6905.cs.illinois.edu_5000_1732742408 - 1st predecessor: fa24-cs425-6901.cs.illinois.edu_5000_1732742402, 2nd predecessor: fa24-cs425-6906.cs.illinois.edu_5000_1732742409, 1st successor: fa24-cs425-6904.cs.illinois.edu_5000_1732742406
-2024-11-27 15:32:12,798 - Added fa24-cs425-6904.cs.illinois.edu_5000_1732742406 to replica list
-2024-11-27 15:32:12,798 - Added fa24-cs425-6910.cs.illinois.edu_5000_1732742414 to replica list
-2024-11-27 15:32:12,799 - No change in membership list
-2024-11-27 15:32:14,801 - No change in membership list
-2024-11-27 15:32:16,803 - No change in membership list
-2024-11-27 15:32:18,805 - No change in membership list
-2024-11-27 15:32:20,807 - No change in membership list
-2024-11-27 15:32:22,810 - Membership lists are not equal
-2024-11-27 15:32:22,810 - No change in membership list
-2024-11-27 15:32:24,812 - No change in membership list
-2024-11-27 15:32:26,814 - No change in membership list
-2024-11-27 15:32:28,816 - No change in membership list
-2024-11-27 15:32:30,818 - No change in membership list
-2024-11-27 15:32:32,820 - No change in membership list
-2024-11-27 15:32:34,822 - No change in membership list
-2024-11-27 15:32:36,824 - No change in membership list
-2024-11-27 15:32:38,827 - No change in membership list
-2024-11-27 15:32:40,829 - No change in membership list
-2024-11-27 15:32:42,831 - No change in membership list
-2024-11-27 15:32:44,833 - No change in membership list
-2024-11-27 15:32:46,835 - No change in membership list
-2024-11-27 15:32:48,838 - No change in membership list
-2024-11-27 15:32:50,840 - No change in membership list
-2024-11-27 15:32:52,843 - No change in membership list
-2024-11-27 15:32:54,844 - No change in membership list
-2024-11-27 15:32:56,847 - No change in membership list
-2024-11-27 15:32:58,849 - No change in membership list
-2024-11-27 15:33:00,852 - No change in membership list
-2024-11-27 15:33:02,855 - No change in membership list
-2024-11-27 15:33:04,857 - No change in membership list
-2024-11-27 15:33:06,860 - No change in membership list
-2024-11-27 15:33:08,861 - No change in membership list
-2024-11-27 15:33:10,863 - No change in membership list
-2024-11-27 15:33:12,865 - No change in membership list
-2024-11-27 15:33:14,867 - No change in membership list
-2024-11-27 15:33:16,869 - No change in membership list
-2024-11-27 15:33:18,871 - No change in membership list
-2024-11-27 15:33:20,873 - No change in membership list
-2024-11-27 15:33:22,875 - No change in membership list
-2024-11-27 15:33:24,877 - No change in membership list
-2024-11-27 15:33:26,879 - No change in membership list
-2024-11-27 15:33:28,881 - No change in membership list
-2024-11-27 15:33:30,883 - No change in membership list
-2024-11-27 15:33:32,887 - No change in membership list
-2024-11-27 15:33:34,890 - No change in membership list
-2024-11-27 15:33:36,892 - No change in membership list
-2024-11-27 15:33:38,896 - No change in membership list
-2024-11-27 15:33:40,898 - No change in membership list
-2024-11-27 15:33:42,900 - No change in membership list
-2024-11-27 15:33:44,902 - No change in membership list
-2024-11-27 15:33:46,904 - No change in membership list
-2024-11-27 15:33:48,906 - No change in membership list
-2024-11-27 15:33:50,908 - No change in membership list
-2024-11-27 15:33:52,910 - No change in membership list
-2024-11-27 15:33:54,912 - No change in membership list
-2024-11-27 15:33:56,914 - No change in membership list
-2024-11-27 15:33:58,916 - No change in membership list
-2024-11-27 15:34:00,921 - No change in membership list
-2024-11-27 15:34:02,923 - No change in membership list
-2024-11-27 15:34:04,925 - No change in membership list
-2024-11-27 15:34:06,927 - No change in membership list
-2024-11-27 15:34:08,929 - No change in membership list
-2024-11-27 15:34:10,931 - No change in membership list
-2024-11-27 15:34:12,933 - No change in membership list
-2024-11-27 15:34:14,935 - No change in membership list
-2024-11-27 15:34:16,937 - No change in membership list
-2024-11-27 15:34:18,939 - No change in membership list
-2024-11-27 15:34:20,941 - No change in membership list
-2024-11-27 15:34:22,943 - No change in membership list
-2024-11-27 15:34:24,945 - No change in membership list
-2024-11-27 15:34:26,947 - No change in membership list
-2024-11-27 15:34:28,949 - No change in membership list
-2024-11-27 15:34:30,951 - No change in membership list
-2024-11-27 15:34:32,953 - No change in membership list
-2024-11-27 15:34:34,957 - No change in membership list
-2024-11-27 15:34:36,959 - No change in membership list
-2024-11-27 15:34:38,961 - No change in membership list
-2024-11-27 15:34:40,963 - No change in membership list
-2024-11-27 15:34:42,965 - No change in membership list
-2024-11-27 15:34:44,967 - No change in membership list
-2024-11-27 15:34:46,969 - No change in membership list
-2024-11-27 15:34:48,971 - No change in membership list
-2024-11-27 15:34:50,973 - No change in membership list
-2024-11-27 15:34:52,975 - No change in membership list
-2024-11-27 15:34:54,977 - No change in membership list
-2024-11-27 15:34:56,979 - No change in membership list
-2024-11-27 15:34:58,981 - No change in membership list
-2024-11-27 15:35:00,983 - No change in membership list
-2024-11-27 15:35:02,985 - Membership lists are not equal
-2024-11-27 15:35:02,985 - No change in membership list
-2024-11-27 15:35:04,987 - No change in membership list
-2024-11-27 15:35:06,989 - No change in membership list
-2024-11-27 15:35:08,991 - No change in membership list
-2024-11-27 15:35:10,993 - No change in membership list
-2024-11-27 15:35:12,997 - No change in membership list
-2024-11-27 15:35:14,999 - No change in membership list
-2024-11-27 15:35:17,001 - No change in membership list
-2024-11-27 15:35:19,003 - No change in membership list
-2024-11-27 15:35:20,122 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-27 15:35:20,122 - Next 3 nodes after 915: [{'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1732742414', 'ring_id': 56}, {'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1732742412', 'ring_id': 58}, {'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1732742410', 'ring_id': 140}]
-2024-11-27 15:35:20,123 - Sending read to fa24-cs425-6910.cs.illinois.edu:5001 for file business_20.txt
-2024-11-27 15:35:20,124 - Sending read to fa24-cs425-6908.cs.illinois.edu:5001 for file business_20.txt
-2024-11-27 15:35:20,125 - Sending read to fa24-cs425-6907.cs.illinois.edu:5001 for file business_20.txt
-2024-11-27 15:35:20,126 - Sent 74 bytes from data_buffer
-2024-11-27 15:35:20,126 - Sent 74 bytes from data_buffer
-2024-11-27 15:35:20,126 - Sent 74 bytes from data_buffer
-2024-11-27 15:35:20,127 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'file_not_found'}
-2024-11-27 15:35:20,127 - Quorum not yet met, received ack from 1 replicas
-2024-11-27 15:35:20,127 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'file_not_found'}
-2024-11-27 15:35:20,128 - Quorum not yet met, received ack from 2 replicas
-2024-11-27 15:35:20,129 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'file_not_found'}
-2024-11-27 15:35:20,129 - client_socket_to_use <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 60072)>
-2024-11-27 15:35:20,129 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_20.txt', 'status': 'file_not_found'}
-2024-11-27 15:35:20,129 - Acknowledgment sent to rainstorm_source_0 for file 'business_20.txt'.
-2024-11-27 15:35:20,129 - Sent 95 bytes from data_buffer
-2024-11-27 15:35:21,005 - No change in membership list
-2024-11-27 15:35:23,007 - No change in membership list
-2024-11-27 15:35:25,009 - No change in membership list
-2024-11-27 15:35:27,011 - No change in membership list
-2024-11-27 15:35:29,013 - No change in membership list
-2024-11-27 15:35:31,015 - No change in membership list
-2024-11-27 15:35:33,019 - No change in membership list
-2024-11-27 15:35:35,021 - No change in membership list
-2024-11-27 15:35:37,023 - No change in membership list
-2024-11-27 15:35:39,025 - No change in membership list
-2024-11-27 15:35:41,027 - No change in membership list
-2024-11-27 15:35:43,029 - No change in membership list
-2024-11-27 15:35:45,032 - No change in membership list
-2024-11-27 15:35:47,037 - No change in membership list
-2024-11-27 15:35:49,039 - No change in membership list
-2024-11-27 15:35:51,041 - No change in membership list
-2024-11-27 15:35:53,043 - No change in membership list
-2024-11-27 15:35:55,045 - No change in membership list
-2024-11-27 15:35:57,047 - No change in membership list
-2024-11-27 15:35:59,049 - No change in membership list
-2024-11-27 15:36:01,051 - No change in membership list
-2024-11-27 15:36:03,053 - No change in membership list
-2024-11-27 15:36:05,055 - No change in membership list
-2024-11-27 15:36:07,057 - No change in membership list
-2024-11-27 15:36:09,059 - No change in membership list
-2024-11-27 15:36:11,061 - No change in membership list
-2024-11-27 15:36:13,063 - No change in membership list
-2024-11-27 15:36:15,065 - No change in membership list
-2024-11-27 15:36:17,068 - No change in membership list
-2024-11-27 15:36:19,070 - No change in membership list
-2024-11-27 15:36:21,072 - No change in membership list
-2024-11-27 15:36:23,074 - No change in membership list
-2024-11-27 15:36:25,076 - No change in membership list
-2024-11-27 15:36:27,078 - No change in membership list
-2024-11-27 15:36:29,080 - No change in membership list
-2024-11-27 15:36:31,082 - No change in membership list
-2024-11-27 15:36:33,084 - No change in membership list
-2024-11-27 15:36:35,086 - No change in membership list
-2024-11-27 15:36:37,088 - No change in membership list
-2024-11-27 15:36:39,090 - No change in membership list
-2024-11-27 15:36:41,092 - No change in membership list
-2024-11-27 15:36:43,094 - No change in membership list
-2024-11-27 15:36:45,096 - No change in membership list
-2024-11-27 15:36:47,098 - No change in membership list
-2024-11-27 15:36:49,103 - No change in membership list
-2024-11-27 15:36:51,105 - No change in membership list
-2024-11-27 15:36:53,107 - No change in membership list
-2024-11-27 15:36:55,109 - No change in membership list
-2024-11-27 15:36:57,111 - No change in membership list
-2024-11-27 15:36:59,113 - No change in membership list
-2024-11-27 15:37:01,115 - No change in membership list
-2024-11-27 15:37:03,117 - No change in membership list
-2024-11-27 15:37:05,119 - No change in membership list
-2024-11-27 15:37:07,121 - No change in membership list
-2024-11-27 15:37:09,123 - No change in membership list
-2024-11-27 15:37:11,125 - No change in membership list
-2024-11-27 15:37:13,127 - No change in membership list
-2024-11-27 15:37:15,129 - No change in membership list
-2024-11-27 15:37:17,131 - No change in membership list
-2024-11-27 15:37:19,133 - No change in membership list
-2024-11-27 15:37:21,136 - No change in membership list
-2024-11-27 15:37:22,529 - Shutting down HyDFS...
-2024-11-27 15:37:22,530 - Listener thread is still running; proceeding to join...
-2024-11-27 15:37:23,138 - No change in membership list
-2024-11-27 15:37:25,254 - Listener thread joined successfully.
-2024-11-27 15:37:25,255 - Membership thread is not running, skipping join.
-2024-11-27 15:37:42,779 - HyDFS Node shut down gracefully.
+2024-11-27 19:00:07,283 - Logging initialized for RingNode
+2024-11-27 19:00:07,289 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/business_19.txt
+2024-11-27 19:00:07,290 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/dest
+2024-11-27 19:00:07,291 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_source_0--dest.log
+2024-11-27 19:00:07,291 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-11-27 19:00:25,825 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:00:25,826 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755612', 'ring_id': 444}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755612', 'ring_id': 444}]
+2024-11-27 19:00:25,828 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
+2024-11-27 19:00:25,829 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file business_19.txt
+2024-11-27 19:00:25,831 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
+2024-11-27 19:00:25,833 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:00:25,834 - Sent 1362 bytes from data_buffer
+2024-11-27 19:00:25,834 - Sent 1362 bytes from data_buffer
+2024-11-27 19:00:25,834 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-11-27 19:00:25,834 - Quorum not yet met, received ack from 1 replicas
+2024-11-27 19:00:25,835 - File 'business_19.txt' written successfully.
+2024-11-27 19:00:25,837 - Acknowledgment sent to client 'business_19.txt'.
+2024-11-27 19:00:25,837 - Sent 1362 bytes from data_buffer
+2024-11-27 19:00:25,837 - Sent 85 bytes from data_buffer
+2024-11-27 19:00:25,838 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-11-27 19:00:25,838 - Quorum not yet met, received ack from 2 replicas
+2024-11-27 19:00:25,839 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'file_exists'}
+2024-11-27 19:00:25,839 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 46466)>
+2024-11-27 19:00:25,839 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'file_exists'}
+2024-11-27 19:00:25,839 - Acknowledgment sent to client_1 for file 'business_19.txt'.
+2024-11-27 19:00:25,839 - Sent 82 bytes from data_buffer
+2024-11-27 19:00:27,302 - Monitoring membership list started
+2024-11-27 19:00:29,305 - No change in membership list
+2024-11-27 19:00:31,308 - No change in membership list
+2024-11-27 19:00:32,994 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:00:32,996 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755612', 'ring_id': 444}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755612', 'ring_id': 444}]
+2024-11-27 19:00:32,996 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
+2024-11-27 19:00:32,997 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file business_19.txt
+2024-11-27 19:00:32,999 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
+2024-11-27 19:00:33,001 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:00:33,001 - Sent 74 bytes from data_buffer
+2024-11-27 19:00:33,001 - Sent 74 bytes from data_buffer
+2024-11-27 19:00:33,002 - File 'business_19.txt' and append log 'rainstorm_source_0--business_19.txt.log' read successfully.
+2024-11-27 19:00:33,003 - File read succsefully business_19.txt
+2024-11-27 19:00:33,003 - Acknowledgment sent to client with status 'read_complete' for file 'business_19.txt'.
+2024-11-27 19:00:33,003 - Sent 74 bytes from data_buffer
+2024-11-27 19:00:33,005 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-11-27 19:00:33,005 - Quorum not yet met, received ack from 1 replicas
+2024-11-27 19:00:33,005 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-11-27 19:00:33,006 - Quorum not yet met, received ack from 2 replicas
+2024-11-27 19:00:33,006 - Sent 1391 bytes from data_buffer
+2024-11-27 19:00:33,007 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-11-27 19:00:33,007 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 46470)>
+2024-11-27 19:00:33,007 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-11-27 19:00:33,008 - Acknowledgment sent to rainstorm_source_0 for file 'business_19.txt'.
+2024-11-27 19:00:33,008 - Sent 1391 bytes from data_buffer
+2024-11-27 19:00:33,014 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:00:33,014 - Next 3 nodes after 476: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755612', 'ring_id': 444}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}]
+2024-11-27 19:00:33,014 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file dest
+2024-11-27 19:00:33,016 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file dest
+2024-11-27 19:00:33,018 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file dest
+2024-11-27 19:00:33,021 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:00:33,022 - Sent 74 bytes from data_buffer
+2024-11-27 19:00:33,022 - Sent 74 bytes from data_buffer
+2024-11-27 19:00:33,022 - Sent 74 bytes from data_buffer
+2024-11-27 19:00:33,024 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:00:33,024 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'write_complete'}
+2024-11-27 19:00:33,024 - Quorum not yet met, received ack from 1 replicas
+2024-11-27 19:00:33,025 - File 'dest' written successfully.
+2024-11-27 19:00:33,026 - Acknowledgment sent to client 'dest'.
+2024-11-27 19:00:33,026 - File 'dest' already exists. Not writing to it.
+2024-11-27 19:00:33,026 - Acknowledgment sent to client 'dest'.
+2024-11-27 19:00:33,027 - Sent 84 bytes from data_buffer
+2024-11-27 19:00:33,027 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'write_complete'}
+2024-11-27 19:00:33,027 - Quorum not yet met, received ack from 2 replicas
+2024-11-27 19:00:33,027 - Sent 81 bytes from data_buffer
+2024-11-27 19:00:33,028 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'file_exists'}
+2024-11-27 19:00:33,028 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 43610)>
+2024-11-27 19:00:33,028 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'file_exists'}
+2024-11-27 19:00:33,028 - Acknowledgment sent to rainstorm_source_0 for file 'dest'.
+2024-11-27 19:00:33,030 - Sent 81 bytes from data_buffer
+2024-11-27 19:00:33,033 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:00:33,033 - Next 3 nodes after 476: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755612', 'ring_id': 444}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}]
+2024-11-27 19:00:33,033 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file dest
+2024-11-27 19:00:33,036 - Sending add to fa24-cs425-6902.cs.illinois.edu:5001 for file dest
+2024-11-27 19:00:33,037 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file dest
+2024-11-27 19:00:33,040 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:00:33,040 - Sent 128 bytes from data_buffer
+2024-11-27 19:00:33,041 - Sent 128 bytes from data_buffer
+2024-11-27 19:00:33,042 - Sent 128 bytes from data_buffer
+2024-11-27 19:00:33,043 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:00:33,043 - Stated append action to file dest
+2024-11-27 19:00:33,044 - Performed append action to 'rainstorm_source_0--dest.log' with sequence number 1.
+2024-11-27 19:00:33,045 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'dest'.
+2024-11-27 19:00:33,045 - Stated append action to file dest
+2024-11-27 19:00:33,046 - Performed append action to 'rainstorm_source_0--dest.log' with sequence number 2.
+2024-11-27 19:00:33,047 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'dest'.
+2024-11-27 19:00:33,047 - Sent 100 bytes from data_buffer
+2024-11-27 19:00:33,047 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 1}
+2024-11-27 19:00:33,047 - Quorum not yet met, received ack from 1 replicas
+2024-11-27 19:00:33,048 - Sent 100 bytes from data_buffer
+2024-11-27 19:00:33,048 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 2}
+2024-11-27 19:00:33,049 - Quorum not yet met, received ack from 2 replicas
+2024-11-27 19:00:33,310 - No change in membership list
+2024-11-27 19:00:35,313 - No change in membership list
+2024-11-27 19:00:37,316 - No change in membership list
+2024-11-27 19:00:38,047 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 1}
+2024-11-27 19:00:38,047 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 43640)>
+2024-11-27 19:00:38,048 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 1}
+2024-11-27 19:00:38,048 - Acknowledgment sent to rainstorm_source_0 for file 'dest'.
+2024-11-27 19:00:38,048 - Sent 100 bytes from data_buffer
+2024-11-27 19:00:38,054 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:00:38,054 - Next 3 nodes after 476: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755612', 'ring_id': 444}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}]
+2024-11-27 19:00:38,054 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file dest
+2024-11-27 19:00:38,056 - Sending add to fa24-cs425-6902.cs.illinois.edu:5001 for file dest
+2024-11-27 19:00:38,059 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file dest
+2024-11-27 19:00:38,061 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:00:38,061 - Sent 97 bytes from data_buffer
+2024-11-27 19:00:38,061 - Sent 97 bytes from data_buffer
+2024-11-27 19:00:38,062 - Sent 97 bytes from data_buffer
+2024-11-27 19:00:38,064 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:00:38,064 - Stated append action to file dest
+2024-11-27 19:00:38,065 - Performed append action to 'rainstorm_source_0--dest.log' with sequence number 3.
+2024-11-27 19:00:38,066 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'dest'.
+2024-11-27 19:00:38,066 - Stated append action to file dest
+2024-11-27 19:00:38,066 - Performed append action to 'rainstorm_source_0--dest.log' with sequence number 4.
+2024-11-27 19:00:38,067 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'dest'.
+2024-11-27 19:00:38,067 - Sent 100 bytes from data_buffer
+2024-11-27 19:00:38,067 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 3}
+2024-11-27 19:00:38,067 - Quorum not yet met, received ack from 1 replicas
+2024-11-27 19:00:38,068 - Sent 100 bytes from data_buffer
+2024-11-27 19:00:38,068 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 4}
+2024-11-27 19:00:38,068 - Quorum not yet met, received ack from 2 replicas
+2024-11-27 19:00:39,319 - No change in membership list
+2024-11-27 19:00:41,321 - No change in membership list
+2024-11-27 19:00:43,067 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 2}
+2024-11-27 19:00:43,068 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 43680)>
+2024-11-27 19:00:43,068 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 2}
+2024-11-27 19:00:43,068 - Acknowledgment sent to rainstorm_source_0 for file 'dest'.
+2024-11-27 19:00:43,069 - Sent 100 bytes from data_buffer
+2024-11-27 19:00:43,074 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:00:43,075 - Next 3 nodes after 476: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1732755612', 'ring_id': 444}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1732755607', 'ring_id': 715}]
+2024-11-27 19:00:43,075 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file dest
+2024-11-27 19:00:43,076 - Sending add to fa24-cs425-6902.cs.illinois.edu:5001 for file dest
+2024-11-27 19:00:43,078 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file dest
+2024-11-27 19:00:43,080 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:00:43,080 - Sent 236 bytes from data_buffer
+2024-11-27 19:00:43,080 - Sent 236 bytes from data_buffer
+2024-11-27 19:00:43,081 - Sent 236 bytes from data_buffer
+2024-11-27 19:00:43,082 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-27 19:00:43,082 - Stated append action to file dest
+2024-11-27 19:00:43,083 - Performed append action to 'rainstorm_source_0--dest.log' with sequence number 5.
+2024-11-27 19:00:43,084 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'dest'.
+2024-11-27 19:00:43,084 - Stated append action to file dest
+2024-11-27 19:00:43,085 - Performed append action to 'rainstorm_source_0--dest.log' with sequence number 6.
+2024-11-27 19:00:43,086 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'dest'.
+2024-11-27 19:00:43,086 - Sent 100 bytes from data_buffer
+2024-11-27 19:00:43,086 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 5}
+2024-11-27 19:00:43,086 - Quorum not yet met, received ack from 1 replicas
+2024-11-27 19:00:43,087 - Sent 100 bytes from data_buffer
+2024-11-27 19:00:43,087 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 6}
+2024-11-27 19:00:43,087 - Quorum not yet met, received ack from 2 replicas
+2024-11-27 19:00:43,323 - No change in membership list
+2024-11-27 19:00:45,325 - No change in membership list
+2024-11-27 19:00:47,328 - No change in membership list
+2024-11-27 19:00:48,086 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 3}
+2024-11-27 19:00:48,087 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 50850)>
+2024-11-27 19:00:48,087 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 3}
+2024-11-27 19:00:48,088 - Acknowledgment sent to rainstorm_source_0 for file 'dest'.
+2024-11-27 19:00:48,088 - Sent 100 bytes from data_buffer
+2024-11-27 19:00:49,330 - No change in membership list
+2024-11-27 19:00:51,333 - No change in membership list
+2024-11-27 19:00:53,334 - No change in membership list
+2024-11-27 19:00:55,336 - No change in membership list
+2024-11-27 19:00:57,339 - No change in membership list
+2024-11-27 19:00:59,342 - No change in membership list
+2024-11-27 19:01:01,344 - No change in membership list
+2024-11-27 19:01:03,347 - No change in membership list
+2024-11-27 19:01:05,350 - No change in membership list
+2024-11-27 19:01:07,352 - Membership lists are not equal
+2024-11-27 19:01:07,352 - No change in membership list
+2024-11-27 19:01:09,355 - No change in membership list
+2024-11-27 19:01:11,357 - No change in membership list
+2024-11-27 19:01:13,360 - No change in membership list
+2024-11-27 19:01:15,362 - No change in membership list
+2024-11-27 19:01:17,365 - No change in membership list
+2024-11-27 19:01:19,367 - No change in membership list
+2024-11-27 19:01:21,370 - No change in membership list
+2024-11-27 19:01:23,373 - No change in membership list
+2024-11-27 19:01:25,376 - No change in membership list
+2024-11-27 19:01:27,378 - Membership lists are not equal
+2024-11-27 19:01:27,379 - No change in membership list
+2024-11-27 19:01:27,771 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
+2024-11-27 19:01:27,771 - File 'business_19.txt' and append log 'rainstorm_source_1--business_19.txt.log' read successfully.
+2024-11-27 19:01:27,772 - File read succsefully business_19.txt
+2024-11-27 19:01:27,772 - Acknowledgment sent to client with status 'read_complete' for file 'business_19.txt'.
+2024-11-27 19:01:27,772 - Sent 1391 bytes from data_buffer
+2024-11-27 19:01:29,381 - No change in membership list
+2024-11-27 19:01:31,383 - No change in membership list
+2024-11-27 19:01:33,385 - No change in membership list
+2024-11-27 19:01:35,388 - No change in membership list
+2024-11-27 19:01:37,391 - No change in membership list
+2024-11-27 19:01:39,393 - No change in membership list
+2024-11-27 19:01:41,396 - No change in membership list
+2024-11-27 19:01:43,398 - No change in membership list
+2024-11-27 19:01:45,401 - No change in membership list
+2024-11-27 19:01:47,404 - No change in membership list
+2024-11-27 19:01:49,406 - No change in membership list
+2024-11-27 19:01:51,408 - No change in membership list
+2024-11-27 19:01:53,411 - No change in membership list
+2024-11-27 19:01:55,413 - No change in membership list
+2024-11-27 19:01:57,416 - No change in membership list
+2024-11-27 19:01:59,419 - No change in membership list
+2024-11-27 19:02:01,422 - No change in membership list
+2024-11-27 19:02:02,581 - Shutting down HyDFS...
+2024-11-27 19:02:02,582 - Listener thread is still running; proceeding to join...
+2024-11-27 19:02:02,803 - Listener thread joined successfully.
+2024-11-27 19:02:02,803 - Membership thread is still running; proceeding to join...
+2024-11-27 19:02:03,424 - No change in membership list
+2024-11-27 19:02:03,425 - Membership thread joined successfully.
+2024-11-27 19:02:07,361 - HyDFS Node shut down gracefully.
