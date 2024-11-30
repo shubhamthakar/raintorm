@@ -11,6 +11,7 @@ import msgpack
 import subprocess
 import os
 import hashlib
+import traceback
 import math
 
 class WorkerServicer(worker_pb2_grpc.WorkerServicer):
@@ -106,7 +107,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         if last_line:
             self.ack_rec = json.loads(last_line)
 
-        self.send_unacked_tuples()
+        await self.send_unacked_tuples()
 
 
     async def send_unacked_tuples(self):
@@ -366,10 +367,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             # Deserialize the JSON string from the request
             data = json.loads(request.data)
             self.log(f"Received data: {data}")
-            data_itr = iter(data.keys())
-            next(data_itr)
-            key = next(data_itr)
-            generated_list_of_tuples = await self.run_transform_exe((key, data[key]))
+            generated_list_of_tuples = await self.run_transform_exe(data)
 
             # add to queue
             for data in generated_list_of_tuples:
@@ -390,6 +388,8 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             return worker_pb2.AckResponse(ack=json.dumps(ack))
         except Exception as e:
             self.log(f"Error processing request: {e}")
+            traceback_str = traceback.format_exc()
+            self.log(f"Traceback: {traceback_str}")
             ack = {"status": "error", "details": str(e)}
             return worker_pb2.AckResponse(ack=json.dumps(ack))
 
