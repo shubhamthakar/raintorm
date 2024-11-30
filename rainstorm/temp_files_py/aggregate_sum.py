@@ -1,6 +1,6 @@
 # This is op1
 
-def transform(state_dict, input_tuple):
+def transform(state, input_tuple):
     """
     Splits the line into words and returns a list of tuples (word, 1).
     Args:
@@ -10,7 +10,6 @@ def transform(state_dict, input_tuple):
         updated_state (dict): Updated state dictionary.
         processed (list): List of tuples in the form (word, 1).
     """
-    inp_id_processed, state, output_rec = state_dict.values()
 
     # Extract key and line from input_tuple
     word, count = input_tuple
@@ -19,7 +18,7 @@ def transform(state_dict, input_tuple):
         state[word] = 0
     state[word] += 1
 
-    return state_dict, [(word, state[word])]
+    return state, [(word, state[word])]
 
 
 if __name__ == "__main__":

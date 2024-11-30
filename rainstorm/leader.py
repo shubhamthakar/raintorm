@@ -8,7 +8,8 @@ import logging
 import subprocess
 from collections import defaultdict
 import json
-
+import time
+import copy
 
 import rainstorm_pb2
 import rainstorm_pb2_grpc
@@ -47,28 +48,34 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         signal.signal(signal.SIGTERM, self.shutdown)
         self.stop_event = asyncio.Event()
 
+        # Membership List
+        self.membership_monitor_thread = threading.Thread(target=self.monitor_membership_list)
+        self.membership_monitor_thread.start()
+
         # Logging
         self.log_file = '/home/chaskar2/distributed-logger/rainstorm/logs/leader.logs'
         self.init_logging()
 
         # Given list of worker nodes with their load (second value in the tuple)
         self.worker_load = [
-            (2,'fa24-cs425-6901.cs.illinois.edu'),
             (0,'fa24-cs425-6902.cs.illinois.edu'),
             (0,'fa24-cs425-6903.cs.illinois.edu'),
             (0,'fa24-cs425-6904.cs.illinois.edu'),
             (0,'fa24-cs425-6905.cs.illinois.edu'),
-            (3,'fa24-cs425-6906.cs.illinois.edu'),
+            (0,'fa24-cs425-6906.cs.illinois.edu'),
             (0,'fa24-cs425-6907.cs.illinois.edu'),
             (0,'fa24-cs425-6908.cs.illinois.edu'),
             (0,'fa24-cs425-6909.cs.illinois.edu'),
-            (5,'fa24-cs425-6910.cs.illinois.edu')
+            (0,'fa24-cs425-6910.cs.illinois.edu')
         ]
         # Heapify the list
         heapq.heapify(self.worker_load)
 
         # num of tasks per stage
         self.num_tasks = 0
+
+        # store task mapping
+        self.task_mapping = defaultdict(dict)
 
     async def serve(self):
         max_message_length = 128 * 1024 * 1024  # Set max message size to 128 MB
@@ -95,13 +102,12 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
 
     
     async def create_task_mapping(self, op_exes, num_tasks):
-        task_mapping = defaultdict(dict)
+        
         
         # Appending source, special task
 
         print(f"Printing op_exes {op_exes}")
-
-        op_exes.append("source")
+        # op_exes.append("source")
 
         # Dictionary to keep track of the next available port for each server
         server_ports = defaultdict(lambda: 5002)
@@ -117,6 +123,9 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
                 load, server_ip = min_server
 
                 # Check if the server is in the membership list
+
+                print(f"Membership List: {self.hydfs_node.process.membership_list}")
+
                 server_found = False
                 for node in self.hydfs_node.process.membership_list:
                     if node['node_id'].startswith(server_ip):  # Check if the IP matches
@@ -143,9 +152,9 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
                     # raise ValueError(f"Server {server_ip} not found in membership list")
 
             # Add the assigned servers for the op_exe
-            task_mapping[op] = assigned_servers
+            self.task_mapping[op] = assigned_servers
 
-        return task_mapping
+        return self.task_mapping
 
 
     def log(self, message):
@@ -173,12 +182,12 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         self.log("Logging initialized for Rainstorm worker")
 
     
-    def extract_servers_and_ports_from_mapping(self, task_mapping):
+    def extract_servers_and_ports_from_mapping(self):
         
         server_list = []
         port_list = []
 
-        for task, servers in task_mapping.items():
+        for task, servers in self.task_mapping.items():
             print(f"Task: {task}")
             for task_id, server in servers.items():
                 hostname, port = server.split(":") 
@@ -203,16 +212,19 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
             os.chmod(op_path, 0o777)
         
 
-        task_mapping = await self.create_task_mapping(request.op_exe_names, request.num_tasks)
+        ops_with_source = ["source"]
+        ops_with_source.extend(request.op_exe_names)
+
+        self.task_mapping = await self.create_task_mapping(ops_with_source, request.num_tasks)
 
         # Copy op exes to all the workers asynchronously
         await self.copy_exes_to_workers()
 
         # Get servers and ports to start the workers
-        servers, ports = self.extract_servers_and_ports_from_mapping(task_mapping)
+        servers, ports = self.extract_servers_and_ports_from_mapping()
 
         # Start worker processes asynchronously
-        await self.start_rainstorm_workers(task_mapping, src_file, dest_file, ports, servers)
+        await self.start_rainstorm_workers( src_file, dest_file, ports, servers)
 
         return rainstorm_pb2.JobResponse(message="Job submitted successfully!")
 
@@ -222,6 +234,11 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         self.log("Shutting down Rainstorm Leader ...")
         self.shutdown_flag.set()  # Signal the listener thread to stop
         self.hydfs_node.shutdown(signum, frame)
+
+        if self.membership_monitor_thread.is_alive():
+            self.log("Membership thread is still running; proceeding to join...")
+            self.membership_monitor_thread.join()  # Wait for the listener thread to finish
+            self.log("Membership thread joined successfully.")
 
         self.log("Rainstorm Leader shut down gracefully.")
         self.stop_event.set()
@@ -250,11 +267,11 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
 
 
 
-    async def start_rainstorm_workers(self, task_mapping, src_file, dest_file, ports, servers):
+    async def start_rainstorm_workers(self, src_file, dest_file, ports, servers):
         """Starts the rainstorm workers by running the start_rainstorm_workers.sh script asynchronously using create_subprocess_exec."""
         # Convert mapping dictionary to JSON string
-        mapping_dict_json = json.dumps(task_mapping, ensure_ascii=True)
-        mapping_dict_json = mapping_dict_json.replace('"', '\\"')  # Escape quotes for shell
+        mapping_dict_json = json.dumps(self.task_mapping, ensure_ascii=True)
+        # mapping_dict_json = mapping_dict_json.replace('"', '\\"')  # Escape quotes for shell
         
         print(f"Generated mapping dict: {mapping_dict_json}")
 
@@ -320,6 +337,108 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
             print(f"The script {script_path} was not found.")
         except Exception as e:
             print(f"Error occurred while running script: {e}")
+
+
+    def handle_node_change(self, current_node, action):
+        """
+        Handle changes to the cluster when a node dies or joins.
+
+        Parameters:
+        current_node (str): The node that changed.
+        action (str): "dead" if the node has shut down, "joined" if a node joins.
+        """
+        if action == "dead":
+            self.log(f"Node {current_node} is dead. Reassigning tasks...")
+
+            # Maintain a dictionary to track current tasks per node
+            node_task_count = {node: 0 for _, node in self.worker_load}
+            for tasks in self.task_mapping.values():
+                for assigned_node in tasks.values():
+                    node, port = assigned_node.split(":")
+                    if node in node_task_count:
+                        node_task_count[node] += 1
+
+            # Remove tasks associated with the dead node from self.task_mapping
+            updated_task_mapping = {}
+            tasks_to_reassign = []  # List of tasks that need reassignment
+
+            for stage, tasks in self.task_mapping.items():
+                updated_task_mapping[stage] = {}
+                for task_id, assigned_node in tasks.items():
+                    node, port = assigned_node.split(":")
+                    if current_node['node_id'].startswith(node):
+                        # Collect tasks to reassign
+                        tasks_to_reassign.append((stage, task_id))
+                    else:
+                        # Keep existing assignments
+                        updated_task_mapping[stage][task_id] = assigned_node
+
+            # Reassign tasks to the most underutilized nodes
+            for stage, task_id in tasks_to_reassign:
+                if not self.worker_load:
+                    raise RuntimeError("No available nodes to reassign tasks!")
+
+                # Get the most underutilized node
+                least_loaded_node = heapq.heappop(self.worker_load)
+                new_node, new_load = least_loaded_node[1], least_loaded_node[0]
+
+                # Assign the task to the new node
+                next_port = 5002 + node_task_count[new_node]
+                updated_task_mapping[stage][task_id] = f"{new_node}:{next_port}"
+
+                # Update the task count and node's load
+                node_task_count[new_node] += 1
+                heapq.heappush(self.worker_load, (new_load + 1, new_node))
+
+            # Update the self.task_mapping with reassigned tasks
+            self.task_mapping = updated_task_mapping
+            self.log(f"New Task Mapping: {self.task_mapping}")
+            self.log("Task mapping updated successfully.")
+
+        elif action == "joined":
+            # Do nothing for now when a node joins
+            self.log(f"Node {current_node} joined. No action required.")
+
+
+        
+
+    def monitor_membership_list(self):
+        """
+        Monitor the membership list for changes. If a new node joins or a node status changes to 'DEAD',
+        find its 2 predecessors and 1 successor.
+        """
+        time.sleep(20)
+        self.log("Rainstorm Tasks: Monitoring membership list started")
+        previous_membership_list = copy.deepcopy(self.hydfs_node.process.membership_list)
+
+        while not self.shutdown_flag.is_set():
+            # Check for changes in the membership list every 2 seconds
+            time.sleep(2)
+            current_membership_list = copy.deepcopy(self.hydfs_node.process.membership_list)
+
+            if previous_membership_list != current_membership_list:
+                self.log(f"Rainstorm Tasks: Membership lists are not equal")
+                for current_node in current_membership_list:
+                    if not any(previous_node['node_id'] == current_node['node_id']
+                            for previous_node in previous_membership_list):
+                        # New node detected
+                        self.log(f"Rainstorm Tasks: New node detected: {current_node}")
+                        self.task_mapping = self.handle_node_change(current_node, "joined")
+
+                    elif current_node['status'] == 'DEAD' and any(
+                            previous_node['node_id'] == current_node['node_id'] and previous_node['status'] != 'DEAD'
+                            for previous_node in previous_membership_list):
+                        # Node status changed to DEAD
+                        self.log(f"Rainstorm Tasks: Hydfs node marked as DEAD: {current_node}")
+                        try:
+                            time.sleep(2*self.hydfs_node.process.protocol_period)
+                            self.task_mapping = self.handle_node_change(current_node, "dead")
+                        except Exception as e:
+                            self.log(f"Rainstorm Tasks: Exception caught in thread: {e}")
+
+                previous_membership_list = copy.deepcopy(current_membership_list)
+            
+            self.log("Rainstorm Tasks: No change in membership list")
 
 
             
