@@ -231,7 +231,9 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             else:
 
                 # Extract the key from data_to_send (assuming it's a dictionary with 2 element)
-                key = next(next(iter(data_to_send.keys())))
+                data_itr = iter(data_to_send.keys())
+                next(data_itr)
+                key = next(data_itr)
 
                 # Hash the key to determine the partition
                 hashed_partition = int(hashlib.sha256(key.encode('utf-8')).hexdigest(), 16) % self.total_partitions
@@ -316,7 +318,9 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             input_id = data['id']
             if input_id in self.state['inp_id_processed']:
                 return []
-            key = next(next(iter(data.keys())))
+            data_itr = iter(data.keys())
+            next(data_itr)
+            key = next(data_itr)
             input_tuple = (key, data[key])
             # Convert state and input_tuple to strings for command-line arguments
             state_arg = json.dumps(self.state['state'])  # Safely serialize the dictionary to a JSON string
@@ -362,7 +366,9 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             # Deserialize the JSON string from the request
             data = json.loads(request.data)
             self.log(f"Received data: {data}")
-            key = next(next(iter(data.keys())))
+            data_itr = iter(data.keys())
+            next(data_itr)
+            key = next(data_itr)
             generated_list_of_tuples = await self.run_transform_exe((key, data[key]))
 
             # add to queue
