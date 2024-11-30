@@ -1,688 +1,290 @@
-2024-11-30 15:41:36,443 - Logging initialized for RingNode
-2024-11-30 15:41:36,446 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/business_19.txt
-2024-11-30 15:41:36,446 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/source_0_state
-2024-11-30 15:41:36,447 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/source_0_ack
-2024-11-30 15:41:36,447 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/dest
-2024-11-30 15:41:36,447 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_source_0--dest.log
-2024-11-30 15:41:36,447 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_source_0--source_0_state.log
-2024-11-30 15:41:36,447 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_source_0--source_0_ack.log
-2024-11-30 15:41:36,447 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
-2024-11-30 15:41:56,466 - Monitoring membership list started
-2024-11-30 15:41:58,468 - No change in membership list
-2024-11-30 15:42:00,470 - No change in membership list
-2024-11-30 15:42:02,473 - No change in membership list
-2024-11-30 15:42:04,475 - No change in membership list
-2024-11-30 15:42:06,478 - No change in membership list
-2024-11-30 15:42:08,480 - No change in membership list
-2024-11-30 15:42:10,482 - No change in membership list
-2024-11-30 15:42:12,485 - No change in membership list
-2024-11-30 15:42:14,487 - No change in membership list
-2024-11-30 15:42:16,489 - No change in membership list
-2024-11-30 15:42:18,491 - No change in membership list
-2024-11-30 15:42:20,493 - No change in membership list
-2024-11-30 15:42:22,495 - No change in membership list
-2024-11-30 15:42:24,495 - No change in membership list
-2024-11-30 15:42:26,498 - No change in membership list
-2024-11-30 15:42:28,500 - No change in membership list
-2024-11-30 15:42:30,502 - No change in membership list
-2024-11-30 15:42:32,504 - No change in membership list
-2024-11-30 15:42:34,506 - No change in membership list
-2024-11-30 15:42:36,508 - No change in membership list
-2024-11-30 15:42:38,509 - No change in membership list
-2024-11-30 15:42:40,511 - No change in membership list
-2024-11-30 15:42:42,514 - No change in membership list
-2024-11-30 15:42:44,516 - No change in membership list
-2024-11-30 15:42:46,519 - No change in membership list
-2024-11-30 15:42:48,521 - No change in membership list
-2024-11-30 15:42:50,523 - No change in membership list
-2024-11-30 15:42:52,526 - No change in membership list
-2024-11-30 15:42:54,528 - No change in membership list
-2024-11-30 15:42:55,717 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:42:55,719 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733002899', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733002898', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733002907', 'ring_id': 578}]
-2024-11-30 15:42:55,720 - Sending write to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 15:42:55,722 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 15:42:55,723 - Sending write to fa24-cs425-6909.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 15:42:55,723 - Sent 1361 bytes from data_buffer
-2024-11-30 15:42:55,724 - Sent 1361 bytes from data_buffer
-2024-11-30 15:42:55,724 - Sent 1361 bytes from data_buffer
-2024-11-30 15:42:55,724 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
-2024-11-30 15:42:55,724 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:42:55,725 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
-2024-11-30 15:42:55,725 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:42:55,725 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
-2024-11-30 15:42:55,726 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 55278)>
-2024-11-30 15:42:55,726 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
-2024-11-30 15:42:55,726 - Acknowledgment sent to client1 for file 'business_19.txt'.
-2024-11-30 15:42:55,726 - Sent 84 bytes from data_buffer
-2024-11-30 15:42:56,530 - No change in membership list
-2024-11-30 15:42:58,532 - No change in membership list
-2024-11-30 15:43:00,535 - No change in membership list
-2024-11-30 15:43:02,537 - No change in membership list
-2024-11-30 15:43:03,134 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:43:03,135 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733002899', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733002898', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733002907', 'ring_id': 578}]
-2024-11-30 15:43:03,135 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 15:43:03,136 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 15:43:03,138 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 15:43:03,139 - Sent 63 bytes from data_buffer
-2024-11-30 15:43:03,139 - Sent 63 bytes from data_buffer
-2024-11-30 15:43:03,139 - Sent 63 bytes from data_buffer
-2024-11-30 15:43:03,140 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 15:43:03,140 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:43:03,140 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 15:43:03,140 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:43:03,141 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 15:43:03,141 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 59012)>
-2024-11-30 15:43:03,141 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 15:43:03,141 - Acknowledgment sent to client1 for file 'business_19.txt'.
-2024-11-30 15:43:03,141 - Sent 1380 bytes from data_buffer
-2024-11-30 15:43:04,539 - No change in membership list
-2024-11-30 15:43:06,540 - No change in membership list
-2024-11-30 15:43:08,540 - No change in membership list
-2024-11-30 15:43:10,543 - No change in membership list
-2024-11-30 15:43:12,545 - No change in membership list
-2024-11-30 15:43:14,546 - No change in membership list
-2024-11-30 15:43:16,548 - Membership lists are not equal
-2024-11-30 15:43:16,548 - Hydfs node marked as DEAD: {'ring_id': 444, 'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733002898', 'status': 'DEAD', 'inc_num': 0}
-2024-11-30 15:43:56,581 - Dead node fa24-cs425-6902.cs.illinois.edu_5000_1733002898 - 1st predecessor: fa24-cs425-6903.cs.illinois.edu_5000_1733002899, 2nd predecessor: fa24-cs425-6907.cs.illinois.edu_5000_1733002905, 1st successor: fa24-cs425-6909.cs.illinois.edu_5000_1733002907
-2024-11-30 15:43:56,581 - Added fa24-cs425-6905.cs.illinois.edu_5000_1733002902 to replica list
-2024-11-30 15:43:56,581 - Added fa24-cs425-6904.cs.illinois.edu_5000_1733002900 to replica list
-2024-11-30 15:43:56,581 - No change in membership list
-2024-11-30 15:43:58,584 - No change in membership list
-2024-11-30 15:44:00,586 - No change in membership list
-2024-11-30 15:44:02,588 - No change in membership list
-2024-11-30 15:44:04,591 - No change in membership list
-2024-11-30 15:44:06,593 - No change in membership list
-2024-11-30 15:44:08,595 - No change in membership list
-2024-11-30 15:44:10,597 - No change in membership list
-2024-11-30 15:44:12,600 - No change in membership list
-2024-11-30 15:44:14,602 - No change in membership list
-2024-11-30 15:44:16,604 - No change in membership list
-2024-11-30 15:44:18,607 - No change in membership list
-2024-11-30 15:44:20,609 - No change in membership list
-2024-11-30 15:44:22,612 - No change in membership list
-2024-11-30 15:44:24,614 - No change in membership list
-2024-11-30 15:44:26,616 - No change in membership list
-2024-11-30 15:44:28,619 - No change in membership list
-2024-11-30 15:44:30,621 - No change in membership list
-2024-11-30 15:44:32,623 - No change in membership list
-2024-11-30 15:44:34,625 - No change in membership list
-2024-11-30 15:44:36,627 - No change in membership list
-2024-11-30 15:44:38,629 - No change in membership list
-2024-11-30 15:44:40,630 - No change in membership list
-2024-11-30 15:44:42,632 - No change in membership list
-2024-11-30 15:44:44,635 - No change in membership list
-2024-11-30 15:44:46,637 - No change in membership list
-2024-11-30 15:44:48,639 - No change in membership list
-2024-11-30 15:44:50,061 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-11-30 15:44:50,061 - File 'op2_0_state' written successfully.
-2024-11-30 15:44:50,061 - Acknowledgment sent to client 'op2_0_state'.
-2024-11-30 15:44:50,061 - Sent 91 bytes from data_buffer
-2024-11-30 15:44:50,067 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-11-30 15:44:50,068 - File 'op2_0_state' and append log 'rainstorm_source_0--op2_0_state.log' read successfully.
-2024-11-30 15:44:50,068 - File read succsefully op2_0_state
-2024-11-30 15:44:50,068 - Acknowledgment sent to client with status 'read_complete' for file 'op2_0_state'.
-2024-11-30 15:44:50,068 - Sent 99 bytes from data_buffer
-2024-11-30 15:44:50,092 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-11-30 15:44:50,092 - File 'dest' written successfully.
-2024-11-30 15:44:50,092 - Acknowledgment sent to client 'dest'.
-2024-11-30 15:44:50,092 - Sent 84 bytes from data_buffer
-2024-11-30 15:44:50,642 - No change in membership list
-2024-11-30 15:44:52,644 - No change in membership list
-2024-11-30 15:44:54,646 - No change in membership list
-2024-11-30 15:44:56,649 - Membership lists are not equal
-2024-11-30 15:44:56,649 - No change in membership list
-2024-11-30 15:44:58,651 - No change in membership list
-2024-11-30 15:45:00,654 - No change in membership list
-2024-11-30 15:45:02,656 - No change in membership list
-2024-11-30 15:45:04,659 - No change in membership list
-2024-11-30 15:45:06,660 - No change in membership list
-2024-11-30 15:45:08,663 - No change in membership list
-2024-11-30 15:45:10,665 - No change in membership list
-2024-11-30 15:45:12,667 - No change in membership list
-2024-11-30 15:45:14,668 - No change in membership list
-2024-11-30 15:45:16,670 - No change in membership list
-2024-11-30 15:45:18,673 - No change in membership list
-2024-11-30 15:45:20,675 - No change in membership list
-2024-11-30 15:45:22,678 - No change in membership list
-2024-11-30 15:45:24,680 - No change in membership list
-2024-11-30 15:45:26,682 - No change in membership list
-2024-11-30 15:45:28,684 - No change in membership list
-2024-11-30 15:45:30,686 - No change in membership list
-2024-11-30 15:45:32,687 - No change in membership list
-2024-11-30 15:45:34,690 - No change in membership list
-2024-11-30 15:45:36,691 - No change in membership list
-2024-11-30 15:45:38,693 - No change in membership list
-2024-11-30 15:45:40,696 - No change in membership list
-2024-11-30 15:45:42,698 - No change in membership list
-2024-11-30 15:45:44,700 - No change in membership list
-2024-11-30 15:45:46,703 - No change in membership list
-2024-11-30 15:45:48,705 - No change in membership list
-2024-11-30 15:45:50,705 - No change in membership list
-2024-11-30 15:45:52,708 - No change in membership list
-2024-11-30 15:45:54,710 - No change in membership list
-2024-11-30 15:45:56,712 - No change in membership list
-2024-11-30 15:45:58,714 - No change in membership list
-2024-11-30 15:46:00,717 - No change in membership list
-2024-11-30 15:46:02,719 - No change in membership list
-2024-11-30 15:46:04,722 - No change in membership list
-2024-11-30 15:46:06,724 - No change in membership list
-2024-11-30 15:46:08,725 - No change in membership list
-2024-11-30 15:46:10,727 - No change in membership list
-2024-11-30 15:46:11,353 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-11-30 15:46:11,353 - File 'op1_0_ack' written successfully.
-2024-11-30 15:46:11,353 - Acknowledgment sent to client 'op1_0_ack'.
-2024-11-30 15:46:11,353 - Sent 89 bytes from data_buffer
-2024-11-30 15:46:11,358 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-11-30 15:46:11,358 - File 'op1_0_ack' and append log 'rainstorm_source_0--op1_0_ack.log' read successfully.
-2024-11-30 15:46:11,359 - File read succsefully op1_0_ack
-2024-11-30 15:46:11,359 - Acknowledgment sent to client with status 'read_complete' for file 'op1_0_ack'.
-2024-11-30 15:46:11,359 - Sent 97 bytes from data_buffer
-2024-11-30 15:46:12,729 - No change in membership list
-2024-11-30 15:46:14,732 - No change in membership list
-2024-11-30 15:46:16,734 - No change in membership list
-2024-11-30 15:46:17,664 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:46:17,665 - Next 3 nodes after 618: [{'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733002903', 'ring_id': 620}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733002896', 'ring_id': 715}, {'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1733002902', 'ring_id': 845}]
-2024-11-30 15:46:17,665 - Sending write to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:46:17,666 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:46:17,668 - Sending write to fa24-cs425-6905.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:46:17,669 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:46:17,669 - Sent 84 bytes from data_buffer
-2024-11-30 15:46:17,670 - Sent 84 bytes from data_buffer
-2024-11-30 15:46:17,670 - File 'source_0_state' written successfully.
-2024-11-30 15:46:17,670 - Acknowledgment sent to client 'source_0_state'.
-2024-11-30 15:46:17,670 - Sent 84 bytes from data_buffer
-2024-11-30 15:46:17,670 - Sent 94 bytes from data_buffer
-2024-11-30 15:46:17,670 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'write_complete'}
-2024-11-30 15:46:17,670 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:46:17,671 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'write_complete'}
-2024-11-30 15:46:17,671 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:46:17,671 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'write_complete'}
-2024-11-30 15:46:17,671 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40298)>
-2024-11-30 15:46:17,671 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'write_complete'}
-2024-11-30 15:46:17,671 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_state'.
-2024-11-30 15:46:17,672 - Sent 94 bytes from data_buffer
-2024-11-30 15:46:17,674 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:46:17,674 - Next 3 nodes after 618: [{'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733002903', 'ring_id': 620}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733002896', 'ring_id': 715}, {'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1733002902', 'ring_id': 845}]
-2024-11-30 15:46:17,674 - Sending read to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:46:17,675 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:46:17,675 - Sending read to fa24-cs425-6905.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:46:17,676 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:46:17,676 - Sent 73 bytes from data_buffer
-2024-11-30 15:46:17,676 - Sent 73 bytes from data_buffer
-2024-11-30 15:46:17,677 - File 'source_0_state' and append log 'rainstorm_source_0--source_0_state.log' read successfully.
-2024-11-30 15:46:17,677 - File read succsefully source_0_state
-2024-11-30 15:46:17,677 - Acknowledgment sent to client with status 'read_complete' for file 'source_0_state'.
-2024-11-30 15:46:17,677 - Sent 73 bytes from data_buffer
-2024-11-30 15:46:17,677 - Sent 102 bytes from data_buffer
-2024-11-30 15:46:17,677 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
-2024-11-30 15:46:17,677 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:46:17,677 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
-2024-11-30 15:46:17,677 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:46:17,677 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
-2024-11-30 15:46:17,678 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40320)>
-2024-11-30 15:46:17,678 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
-2024-11-30 15:46:17,678 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_state'.
-2024-11-30 15:46:17,679 - Sent 102 bytes from data_buffer
-2024-11-30 15:46:17,681 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:46:17,681 - Next 3 nodes after 382: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733002899', 'ring_id': 403}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733002907', 'ring_id': 578}, {'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733002903', 'ring_id': 620}]
-2024-11-30 15:46:17,681 - Sending write to fa24-cs425-6903.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 15:46:17,682 - Sending write to fa24-cs425-6909.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 15:46:17,683 - Sending write to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 15:46:17,683 - Sent 82 bytes from data_buffer
-2024-11-30 15:46:17,683 - Sent 82 bytes from data_buffer
-2024-11-30 15:46:17,683 - Sent 82 bytes from data_buffer
-2024-11-30 15:46:17,684 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'write_complete'}
-2024-11-30 15:46:17,684 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:46:17,684 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'write_complete'}
-2024-11-30 15:46:17,684 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:46:17,684 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'write_complete'}
-2024-11-30 15:46:17,685 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40332)>
-2024-11-30 15:46:17,685 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'write_complete'}
-2024-11-30 15:46:17,685 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_ack'.
-2024-11-30 15:46:17,685 - Sent 92 bytes from data_buffer
-2024-11-30 15:46:17,687 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:46:17,687 - Next 3 nodes after 382: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733002899', 'ring_id': 403}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733002907', 'ring_id': 578}, {'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733002903', 'ring_id': 620}]
-2024-11-30 15:46:17,687 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 15:46:17,688 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 15:46:17,688 - Sending read to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 15:46:17,689 - Sent 71 bytes from data_buffer
-2024-11-30 15:46:17,689 - Sent 71 bytes from data_buffer
-2024-11-30 15:46:17,689 - Sent 71 bytes from data_buffer
-2024-11-30 15:46:17,689 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 15:46:17,690 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:46:17,690 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 15:46:17,690 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:46:17,690 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 15:46:17,690 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40344)>
-2024-11-30 15:46:17,690 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 15:46:17,690 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_ack'.
-2024-11-30 15:46:17,691 - Sent 100 bytes from data_buffer
-2024-11-30 15:46:17,697 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:46:17,697 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733002899', 'ring_id': 403}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733002907', 'ring_id': 578}, {'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733002903', 'ring_id': 620}]
-2024-11-30 15:46:17,698 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 15:46:17,698 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 15:46:17,699 - Sending read to fa24-cs425-6906.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 15:46:17,700 - Sent 74 bytes from data_buffer
-2024-11-30 15:46:17,700 - Sent 74 bytes from data_buffer
-2024-11-30 15:46:17,700 - Sent 74 bytes from data_buffer
-2024-11-30 15:46:17,701 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 15:46:17,701 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:46:17,701 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 15:46:17,701 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:46:17,701 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 15:46:17,702 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40354)>
-2024-11-30 15:46:17,702 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 15:46:17,702 - Acknowledgment sent to rainstorm_source_0 for file 'business_19.txt'.
-2024-11-30 15:46:17,704 - Sent 1391 bytes from data_buffer
-2024-11-30 15:46:17,706 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:46:17,706 - Next 3 nodes after 618: [{'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733002903', 'ring_id': 620}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733002896', 'ring_id': 715}, {'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1733002902', 'ring_id': 845}]
-2024-11-30 15:46:17,706 - Sending add to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:46:17,707 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:46:17,707 - Sending add to fa24-cs425-6905.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:46:17,709 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:46:17,709 - Sent 1674 bytes from data_buffer
-2024-11-30 15:46:17,709 - Sent 1674 bytes from data_buffer
-2024-11-30 15:46:17,709 - Stated append action to file source_0_state
-2024-11-30 15:46:17,709 - Performed append action to 'rainstorm_source_0--source_0_state.log' with sequence number 1.
-2024-11-30 15:46:17,709 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_state'.
-2024-11-30 15:46:17,709 - Sent 1674 bytes from data_buffer
-2024-11-30 15:46:17,710 - Sent 110 bytes from data_buffer
-2024-11-30 15:46:17,710 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 1}
-2024-11-30 15:46:17,710 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:46:17,710 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 1}
-2024-11-30 15:46:17,710 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:46:17,711 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 1}
-2024-11-30 15:46:17,711 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40360)>
-2024-11-30 15:46:17,711 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 1}
-2024-11-30 15:46:17,711 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_state'.
-2024-11-30 15:46:17,713 - Sent 110 bytes from data_buffer
-2024-11-30 15:46:18,736 - No change in membership list
-2024-11-30 15:46:20,738 - No change in membership list
-2024-11-30 15:46:22,740 - No change in membership list
-2024-11-30 15:46:24,742 - No change in membership list
-2024-11-30 15:46:26,744 - No change in membership list
-2024-11-30 15:46:28,746 - No change in membership list
-2024-11-30 15:46:30,748 - No change in membership list
-2024-11-30 15:46:32,750 - No change in membership list
-2024-11-30 15:46:34,752 - No change in membership list
-2024-11-30 15:46:36,754 - No change in membership list
-2024-11-30 15:46:38,756 - No change in membership list
-2024-11-30 15:46:40,758 - No change in membership list
-2024-11-30 15:46:42,760 - No change in membership list
-2024-11-30 15:46:44,762 - No change in membership list
-2024-11-30 15:46:46,764 - No change in membership list
-2024-11-30 15:46:48,766 - No change in membership list
-2024-11-30 15:46:50,768 - No change in membership list
-2024-11-30 15:46:52,770 - No change in membership list
-2024-11-30 15:46:54,772 - No change in membership list
-2024-11-30 15:46:56,774 - No change in membership list
-2024-11-30 15:46:58,776 - No change in membership list
-2024-11-30 15:47:00,778 - No change in membership list
-2024-11-30 15:47:02,780 - No change in membership list
-2024-11-30 15:47:04,782 - No change in membership list
-2024-11-30 15:47:06,784 - No change in membership list
-2024-11-30 15:47:08,789 - No change in membership list
-2024-11-30 15:47:10,791 - No change in membership list
-2024-11-30 15:47:12,793 - No change in membership list
-2024-11-30 15:47:14,795 - No change in membership list
-2024-11-30 15:47:16,797 - No change in membership list
-2024-11-30 15:47:18,799 - No change in membership list
-2024-11-30 15:47:20,801 - No change in membership list
-2024-11-30 15:47:22,803 - No change in membership list
-2024-11-30 15:47:24,805 - No change in membership list
-2024-11-30 15:47:26,807 - No change in membership list
-2024-11-30 15:47:28,809 - No change in membership list
-2024-11-30 15:47:30,811 - No change in membership list
-2024-11-30 15:47:32,813 - No change in membership list
-2024-11-30 15:47:34,815 - No change in membership list
-2024-11-30 15:47:36,817 - Membership lists are not equal
-2024-11-30 15:47:36,817 - No change in membership list
-2024-11-30 15:47:38,819 - No change in membership list
-2024-11-30 15:47:40,821 - No change in membership list
-2024-11-30 15:47:42,823 - No change in membership list
-2024-11-30 15:47:44,825 - No change in membership list
-2024-11-30 15:47:46,827 - No change in membership list
-2024-11-30 15:47:48,829 - No change in membership list
-2024-11-30 15:47:50,831 - No change in membership list
-2024-11-30 15:47:52,833 - No change in membership list
-2024-11-30 15:47:54,835 - No change in membership list
-2024-11-30 15:47:56,837 - No change in membership list
-2024-11-30 15:47:58,839 - No change in membership list
-2024-11-30 15:48:00,841 - No change in membership list
-2024-11-30 15:48:02,843 - No change in membership list
-2024-11-30 15:48:04,845 - No change in membership list
-2024-11-30 15:48:06,847 - No change in membership list
-2024-11-30 15:48:08,849 - No change in membership list
-2024-11-30 15:48:10,851 - No change in membership list
-2024-11-30 15:48:12,853 - No change in membership list
-2024-11-30 15:48:14,855 - No change in membership list
-2024-11-30 15:48:16,857 - No change in membership list
-2024-11-30 15:48:18,859 - No change in membership list
-2024-11-30 15:48:20,861 - No change in membership list
-2024-11-30 15:48:22,863 - No change in membership list
-2024-11-30 15:48:24,865 - No change in membership list
-2024-11-30 15:48:26,867 - No change in membership list
-2024-11-30 15:48:28,869 - No change in membership list
-2024-11-30 15:48:30,871 - No change in membership list
-2024-11-30 15:48:32,873 - No change in membership list
-2024-11-30 15:48:34,875 - No change in membership list
-2024-11-30 15:48:36,877 - No change in membership list
-2024-11-30 15:48:38,879 - No change in membership list
-2024-11-30 15:48:40,881 - No change in membership list
-2024-11-30 15:48:42,883 - No change in membership list
-2024-11-30 15:48:44,885 - No change in membership list
-2024-11-30 15:48:46,887 - No change in membership list
-2024-11-30 15:48:48,889 - No change in membership list
-2024-11-30 15:48:50,891 - No change in membership list
-2024-11-30 15:48:52,893 - No change in membership list
-2024-11-30 15:48:54,895 - No change in membership list
-2024-11-30 15:48:56,897 - No change in membership list
-2024-11-30 15:48:58,899 - No change in membership list
-2024-11-30 15:49:00,901 - No change in membership list
-2024-11-30 15:49:02,903 - No change in membership list
-2024-11-30 15:49:04,905 - No change in membership list
-2024-11-30 15:49:06,907 - No change in membership list
-2024-11-30 15:49:08,909 - No change in membership list
-2024-11-30 15:49:10,911 - No change in membership list
-2024-11-30 15:49:12,913 - No change in membership list
-2024-11-30 15:49:13,325 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:49:13,326 - Next 3 nodes after 618: [{'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733002903', 'ring_id': 620}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733002896', 'ring_id': 715}, {'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1733002902', 'ring_id': 845}]
-2024-11-30 15:49:13,326 - Sending write to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:49:13,327 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:49:13,329 - Sending write to fa24-cs425-6905.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:49:13,331 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:49:13,331 - Sent 84 bytes from data_buffer
-2024-11-30 15:49:13,331 - Sent 84 bytes from data_buffer
-2024-11-30 15:49:13,331 - File 'source_0_state' already exists. Not writing to it.
-2024-11-30 15:49:13,331 - Acknowledgment sent to client 'source_0_state'.
-2024-11-30 15:49:13,332 - Sent 84 bytes from data_buffer
-2024-11-30 15:49:13,332 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'file_exists'}
-2024-11-30 15:49:13,332 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:49:13,332 - Sent 91 bytes from data_buffer
-2024-11-30 15:49:13,332 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'file_exists'}
-2024-11-30 15:49:13,332 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:49:13,333 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'file_exists'}
-2024-11-30 15:49:13,334 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 33334)>
-2024-11-30 15:49:13,334 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'file_exists'}
-2024-11-30 15:49:13,334 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_state'.
-2024-11-30 15:49:13,336 - Sent 91 bytes from data_buffer
-2024-11-30 15:49:13,339 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:49:13,339 - Next 3 nodes after 618: [{'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733002903', 'ring_id': 620}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733002896', 'ring_id': 715}, {'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1733002902', 'ring_id': 845}]
-2024-11-30 15:49:13,339 - Sending read to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:49:13,341 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:49:13,342 - Sending read to fa24-cs425-6905.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:49:13,343 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:49:13,343 - Sent 73 bytes from data_buffer
-2024-11-30 15:49:13,343 - Sent 73 bytes from data_buffer
-2024-11-30 15:49:13,344 - File 'source_0_state' and append log 'rainstorm_source_0--source_0_state.log' read successfully.
-2024-11-30 15:49:13,344 - File read succsefully source_0_state
-2024-11-30 15:49:13,344 - Acknowledgment sent to client with status 'read_complete' for file 'source_0_state'.
-2024-11-30 15:49:13,344 - Sent 73 bytes from data_buffer
-2024-11-30 15:49:13,345 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': '\n{"inp_id_processed": {}, "state": {}, "output_rec": [[1, ["1|business_19.txt", "Deutsche Boerse boosts dividend"]], [2, ["2|business_19.txt", ""]], [3, ["3|business_19.txt", "Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%."]], [4, ["4|business_19.txt", ""]], [5, ["5|business_19.txt", "Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; \\u00a383.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros."]], [6, ["6|business_19.txt", ""]], [7, ["7|business_19.txt", "Frankfurt-based Deutsche Boerse has offered \\u00a31.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (\\u00a30.48; $0.98) from 55 euro cents a year earlier. \\"There is a whiff of a sweetener in there,\\" Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. \\"Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends,\\" Mr Faraj continued. Deutsche Boerse is \\"trying to buy them off in a sense\\", he said."]]], "id_counter": 7}'}
-2024-11-30 15:49:13,346 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:49:13,346 - Sent 1696 bytes from data_buffer
-2024-11-30 15:49:13,347 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': '\n{"inp_id_processed": {}, "state": {}, "output_rec": [[1, ["1|business_19.txt", "Deutsche Boerse boosts dividend"]], [2, ["2|business_19.txt", ""]], [3, ["3|business_19.txt", "Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%."]], [4, ["4|business_19.txt", ""]], [5, ["5|business_19.txt", "Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; \\u00a383.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros."]], [6, ["6|business_19.txt", ""]], [7, ["7|business_19.txt", "Frankfurt-based Deutsche Boerse has offered \\u00a31.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (\\u00a30.48; $0.98) from 55 euro cents a year earlier. \\"There is a whiff of a sweetener in there,\\" Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. \\"Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends,\\" Mr Faraj continued. Deutsche Boerse is \\"trying to buy them off in a sense\\", he said."]]], "id_counter": 7}'}
-2024-11-30 15:49:13,347 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:49:13,347 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': '\n{"inp_id_processed": {}, "state": {}, "output_rec": [[1, ["1|business_19.txt", "Deutsche Boerse boosts dividend"]], [2, ["2|business_19.txt", ""]], [3, ["3|business_19.txt", "Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%."]], [4, ["4|business_19.txt", ""]], [5, ["5|business_19.txt", "Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; \\u00a383.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros."]], [6, ["6|business_19.txt", ""]], [7, ["7|business_19.txt", "Frankfurt-based Deutsche Boerse has offered \\u00a31.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (\\u00a30.48; $0.98) from 55 euro cents a year earlier. \\"There is a whiff of a sweetener in there,\\" Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. \\"Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends,\\" Mr Faraj continued. Deutsche Boerse is \\"trying to buy them off in a sense\\", he said."]]], "id_counter": 7}'}
-2024-11-30 15:49:13,347 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 33352)>
-2024-11-30 15:49:13,347 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': '\n{"inp_id_processed": {}, "state": {}, "output_rec": [[1, ["1|business_19.txt", "Deutsche Boerse boosts dividend"]], [2, ["2|business_19.txt", ""]], [3, ["3|business_19.txt", "Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%."]], [4, ["4|business_19.txt", ""]], [5, ["5|business_19.txt", "Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; \\u00a383.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros."]], [6, ["6|business_19.txt", ""]], [7, ["7|business_19.txt", "Frankfurt-based Deutsche Boerse has offered \\u00a31.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (\\u00a30.48; $0.98) from 55 euro cents a year earlier. \\"There is a whiff of a sweetener in there,\\" Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. \\"Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends,\\" Mr Faraj continued. Deutsche Boerse is \\"trying to buy them off in a sense\\", he said."]]], "id_counter": 7}'}
-2024-11-30 15:49:13,348 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_state'.
-2024-11-30 15:49:13,349 - Sent 1696 bytes from data_buffer
-2024-11-30 15:49:13,352 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:49:13,352 - Next 3 nodes after 382: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733002899', 'ring_id': 403}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733002907', 'ring_id': 578}, {'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733002903', 'ring_id': 620}]
-2024-11-30 15:49:13,352 - Sending write to fa24-cs425-6903.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 15:49:13,353 - Sending write to fa24-cs425-6909.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 15:49:13,354 - Sending write to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 15:49:13,355 - Sent 82 bytes from data_buffer
-2024-11-30 15:49:13,355 - Sent 82 bytes from data_buffer
-2024-11-30 15:49:13,355 - Sent 82 bytes from data_buffer
-2024-11-30 15:49:13,355 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'file_exists'}
-2024-11-30 15:49:13,356 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:49:13,357 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'file_exists'}
-2024-11-30 15:49:13,357 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:49:13,357 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'file_exists'}
-2024-11-30 15:49:13,357 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 33362)>
-2024-11-30 15:49:13,358 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'file_exists'}
-2024-11-30 15:49:13,358 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_ack'.
-2024-11-30 15:49:13,360 - Sent 89 bytes from data_buffer
-2024-11-30 15:49:13,362 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:49:13,362 - Next 3 nodes after 382: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733002899', 'ring_id': 403}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733002907', 'ring_id': 578}, {'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733002903', 'ring_id': 620}]
-2024-11-30 15:49:13,362 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 15:49:13,363 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 15:49:13,364 - Sending read to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 15:49:13,365 - Sent 71 bytes from data_buffer
-2024-11-30 15:49:13,365 - Sent 71 bytes from data_buffer
-2024-11-30 15:49:13,365 - Sent 71 bytes from data_buffer
-2024-11-30 15:49:13,365 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 15:49:13,366 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:49:13,367 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 15:49:13,367 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:49:13,367 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 15:49:13,367 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 33366)>
-2024-11-30 15:49:13,368 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 15:49:13,368 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_ack'.
-2024-11-30 15:49:13,373 - Sent 100 bytes from data_buffer
-2024-11-30 15:49:13,376 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:49:13,376 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733002899', 'ring_id': 403}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733002907', 'ring_id': 578}, {'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733002903', 'ring_id': 620}]
-2024-11-30 15:49:13,376 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 15:49:13,377 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 15:49:13,378 - Sending read to fa24-cs425-6906.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 15:49:13,379 - Sent 74 bytes from data_buffer
-2024-11-30 15:49:13,379 - Sent 74 bytes from data_buffer
-2024-11-30 15:49:13,380 - Sent 74 bytes from data_buffer
-2024-11-30 15:49:13,380 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 15:49:13,380 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:49:13,380 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 15:49:13,380 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:49:13,381 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 15:49:13,382 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 33382)>
-2024-11-30 15:49:13,383 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 15:49:13,383 - Acknowledgment sent to rainstorm_source_0 for file 'business_19.txt'.
-2024-11-30 15:49:13,387 - Sent 1391 bytes from data_buffer
-2024-11-30 15:49:13,390 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:49:13,390 - Next 3 nodes after 618: [{'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733002903', 'ring_id': 620}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733002896', 'ring_id': 715}, {'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1733002902', 'ring_id': 845}]
-2024-11-30 15:49:13,390 - Sending add to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:49:13,391 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:49:13,392 - Sending add to fa24-cs425-6905.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:49:13,393 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:49:13,394 - Sent 3201 bytes from data_buffer
-2024-11-30 15:49:13,394 - Sent 3201 bytes from data_buffer
-2024-11-30 15:49:13,394 - Stated append action to file source_0_state
-2024-11-30 15:49:13,394 - Performed append action to 'rainstorm_source_0--source_0_state.log' with sequence number 2.
-2024-11-30 15:49:13,395 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_state'.
-2024-11-30 15:49:13,396 - Sent 3201 bytes from data_buffer
-2024-11-30 15:49:13,396 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 2}
-2024-11-30 15:49:13,396 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:49:13,396 - Sent 110 bytes from data_buffer
-2024-11-30 15:49:13,397 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 2}
-2024-11-30 15:49:13,398 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:49:13,398 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 2}
-2024-11-30 15:49:13,398 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 33396)>
-2024-11-30 15:49:13,398 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 2}
-2024-11-30 15:49:13,398 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_state'.
-2024-11-30 15:49:13,410 - Sent 110 bytes from data_buffer
-2024-11-30 15:49:14,915 - No change in membership list
-2024-11-30 15:49:16,917 - No change in membership list
-2024-11-30 15:49:18,919 - No change in membership list
-2024-11-30 15:49:20,921 - No change in membership list
-2024-11-30 15:49:22,923 - No change in membership list
-2024-11-30 15:49:24,925 - No change in membership list
-2024-11-30 15:49:26,927 - No change in membership list
-2024-11-30 15:49:28,929 - No change in membership list
-2024-11-30 15:49:30,931 - No change in membership list
-2024-11-30 15:49:32,933 - No change in membership list
-2024-11-30 15:49:34,935 - No change in membership list
-2024-11-30 15:49:36,944 - No change in membership list
-2024-11-30 15:49:38,946 - No change in membership list
-2024-11-30 15:49:40,948 - No change in membership list
-2024-11-30 15:49:42,950 - No change in membership list
-2024-11-30 15:49:44,952 - No change in membership list
-2024-11-30 15:49:46,954 - No change in membership list
-2024-11-30 15:49:48,956 - No change in membership list
-2024-11-30 15:49:50,962 - No change in membership list
-2024-11-30 15:49:52,964 - No change in membership list
-2024-11-30 15:49:54,966 - No change in membership list
-2024-11-30 15:49:56,253 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:49:56,254 - Next 3 nodes after 618: [{'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733002903', 'ring_id': 620}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733002896', 'ring_id': 715}, {'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1733002902', 'ring_id': 845}]
-2024-11-30 15:49:56,254 - Sending write to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:49:56,255 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:49:56,257 - Sending write to fa24-cs425-6905.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:49:56,259 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:49:56,259 - Sent 84 bytes from data_buffer
-2024-11-30 15:49:56,260 - Sent 84 bytes from data_buffer
-2024-11-30 15:49:56,260 - File 'source_0_state' already exists. Not writing to it.
-2024-11-30 15:49:56,260 - Acknowledgment sent to client 'source_0_state'.
-2024-11-30 15:49:56,260 - Sent 84 bytes from data_buffer
-2024-11-30 15:49:56,260 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'file_exists'}
-2024-11-30 15:49:56,261 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:49:56,262 - Sent 91 bytes from data_buffer
-2024-11-30 15:49:56,263 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'file_exists'}
-2024-11-30 15:49:56,263 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:49:56,263 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'file_exists'}
-2024-11-30 15:49:56,263 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 43602)>
-2024-11-30 15:49:56,263 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'file_exists'}
-2024-11-30 15:49:56,263 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_state'.
-2024-11-30 15:49:56,264 - Sent 91 bytes from data_buffer
-2024-11-30 15:49:56,267 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:49:56,267 - Next 3 nodes after 618: [{'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733002903', 'ring_id': 620}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733002896', 'ring_id': 715}, {'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1733002902', 'ring_id': 845}]
-2024-11-30 15:49:56,267 - Sending read to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:49:56,269 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:49:56,270 - Sending read to fa24-cs425-6905.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:49:56,271 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:49:56,271 - Sent 73 bytes from data_buffer
-2024-11-30 15:49:56,272 - Sent 73 bytes from data_buffer
-2024-11-30 15:49:56,272 - File 'source_0_state' and append log 'rainstorm_source_0--source_0_state.log' read successfully.
-2024-11-30 15:49:56,272 - File read succsefully source_0_state
-2024-11-30 15:49:56,272 - Acknowledgment sent to client with status 'read_complete' for file 'source_0_state'.
-2024-11-30 15:49:56,272 - Sent 73 bytes from data_buffer
-2024-11-30 15:49:56,274 - Sent 4815 bytes from data_buffer
-2024-11-30 15:49:56,274 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': '\n{"inp_id_processed": {}, "state": {}, "output_rec": [[1, ["1|business_19.txt", "Deutsche Boerse boosts dividend"]], [2, ["2|business_19.txt", ""]], [3, ["3|business_19.txt", "Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%."]], [4, ["4|business_19.txt", ""]], [5, ["5|business_19.txt", "Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; \\u00a383.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros."]], [6, ["6|business_19.txt", ""]], [7, ["7|business_19.txt", "Frankfurt-based Deutsche Boerse has offered \\u00a31.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (\\u00a30.48; $0.98) from 55 euro cents a year earlier. \\"There is a whiff of a sweetener in there,\\" Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. \\"Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends,\\" Mr Faraj continued. Deutsche Boerse is \\"trying to buy them off in a sense\\", he said."]]], "id_counter": 7}\n{"inp_id_processed": {}, "state": {}, "output_rec": [[1, ["1|business_19.txt", "Deutsche Boerse boosts dividend"]], [2, ["2|business_19.txt", ""]], [3, ["3|business_19.txt", "Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%."]], [4, ["4|business_19.txt", ""]], [5, ["5|business_19.txt", "Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; \\u00a383.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros."]], [6, ["6|business_19.txt", ""]], [7, ["7|business_19.txt", "Frankfurt-based Deutsche Boerse has offered \\u00a31.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (\\u00a30.48; $0.98) from 55 euro cents a year earlier. \\"There is a whiff of a sweetener in there,\\" Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. \\"Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends,\\" Mr Faraj continued. Deutsche Boerse is \\"trying to buy them off in a sense\\", he said."]], [8, ["1|business_19.txt", "Deutsche Boerse boosts dividend"]], [9, ["2|business_19.txt", ""]], [10, ["3|business_19.txt", "Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%."]], [11, ["4|business_19.txt", ""]], [12, ["5|business_19.txt", "Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; \\u00a383.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros."]], [13, ["6|business_19.txt", ""]], [14, ["7|business_19.txt", "Frankfurt-based Deutsche Boerse has offered \\u00a31.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (\\u00a30.48; $0.98) from 55 euro cents a year earlier. \\"There is a whiff of a sweetener in there,\\" Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. \\"Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends,\\" Mr Faraj continued. Deutsche Boerse is \\"trying to buy them off in a sense\\", he said."]]], "id_counter": 14}'}
-2024-11-30 15:49:56,274 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:49:56,274 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': '\n{"inp_id_processed": {}, "state": {}, "output_rec": [[1, ["1|business_19.txt", "Deutsche Boerse boosts dividend"]], [2, ["2|business_19.txt", ""]], [3, ["3|business_19.txt", "Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%."]], [4, ["4|business_19.txt", ""]], [5, ["5|business_19.txt", "Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; \\u00a383.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros."]], [6, ["6|business_19.txt", ""]], [7, ["7|business_19.txt", "Frankfurt-based Deutsche Boerse has offered \\u00a31.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (\\u00a30.48; $0.98) from 55 euro cents a year earlier. \\"There is a whiff of a sweetener in there,\\" Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. \\"Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends,\\" Mr Faraj continued. Deutsche Boerse is \\"trying to buy them off in a sense\\", he said."]]], "id_counter": 7}\n{"inp_id_processed": {}, "state": {}, "output_rec": [[1, ["1|business_19.txt", "Deutsche Boerse boosts dividend"]], [2, ["2|business_19.txt", ""]], [3, ["3|business_19.txt", "Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%."]], [4, ["4|business_19.txt", ""]], [5, ["5|business_19.txt", "Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; \\u00a383.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros."]], [6, ["6|business_19.txt", ""]], [7, ["7|business_19.txt", "Frankfurt-based Deutsche Boerse has offered \\u00a31.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (\\u00a30.48; $0.98) from 55 euro cents a year earlier. \\"There is a whiff of a sweetener in there,\\" Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. \\"Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends,\\" Mr Faraj continued. Deutsche Boerse is \\"trying to buy them off in a sense\\", he said."]], [8, ["1|business_19.txt", "Deutsche Boerse boosts dividend"]], [9, ["2|business_19.txt", ""]], [10, ["3|business_19.txt", "Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%."]], [11, ["4|business_19.txt", ""]], [12, ["5|business_19.txt", "Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; \\u00a383.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros."]], [13, ["6|business_19.txt", ""]], [14, ["7|business_19.txt", "Frankfurt-based Deutsche Boerse has offered \\u00a31.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (\\u00a30.48; $0.98) from 55 euro cents a year earlier. \\"There is a whiff of a sweetener in there,\\" Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. \\"Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends,\\" Mr Faraj continued. Deutsche Boerse is \\"trying to buy them off in a sense\\", he said."]]], "id_counter": 14}'}
-2024-11-30 15:49:56,275 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:49:56,276 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': '\n{"inp_id_processed": {}, "state": {}, "output_rec": [[1, ["1|business_19.txt", "Deutsche Boerse boosts dividend"]], [2, ["2|business_19.txt", ""]], [3, ["3|business_19.txt", "Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%."]], [4, ["4|business_19.txt", ""]], [5, ["5|business_19.txt", "Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; \\u00a383.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros."]], [6, ["6|business_19.txt", ""]], [7, ["7|business_19.txt", "Frankfurt-based Deutsche Boerse has offered \\u00a31.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (\\u00a30.48; $0.98) from 55 euro cents a year earlier. \\"There is a whiff of a sweetener in there,\\" Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. \\"Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends,\\" Mr Faraj continued. Deutsche Boerse is \\"trying to buy them off in a sense\\", he said."]]], "id_counter": 7}\n{"inp_id_processed": {}, "state": {}, "output_rec": [[1, ["1|business_19.txt", "Deutsche Boerse boosts dividend"]], [2, ["2|business_19.txt", ""]], [3, ["3|business_19.txt", "Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%."]], [4, ["4|business_19.txt", ""]], [5, ["5|business_19.txt", "Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; \\u00a383.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros."]], [6, ["6|business_19.txt", ""]], [7, ["7|business_19.txt", "Frankfurt-based Deutsche Boerse has offered \\u00a31.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (\\u00a30.48; $0.98) from 55 euro cents a year earlier. \\"There is a whiff of a sweetener in there,\\" Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. \\"Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends,\\" Mr Faraj continued. Deutsche Boerse is \\"trying to buy them off in a sense\\", he said."]], [8, ["1|business_19.txt", "Deutsche Boerse boosts dividend"]], [9, ["2|business_19.txt", ""]], [10, ["3|business_19.txt", "Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%."]], [11, ["4|business_19.txt", ""]], [12, ["5|business_19.txt", "Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; \\u00a383.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros."]], [13, ["6|business_19.txt", ""]], [14, ["7|business_19.txt", "Frankfurt-based Deutsche Boerse has offered \\u00a31.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (\\u00a30.48; $0.98) from 55 euro cents a year earlier. \\"There is a whiff of a sweetener in there,\\" Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. \\"Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends,\\" Mr Faraj continued. Deutsche Boerse is \\"trying to buy them off in a sense\\", he said."]]], "id_counter": 14}'}
-2024-11-30 15:49:56,276 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 43622)>
-2024-11-30 15:49:56,276 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': '\n{"inp_id_processed": {}, "state": {}, "output_rec": [[1, ["1|business_19.txt", "Deutsche Boerse boosts dividend"]], [2, ["2|business_19.txt", ""]], [3, ["3|business_19.txt", "Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%."]], [4, ["4|business_19.txt", ""]], [5, ["5|business_19.txt", "Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; \\u00a383.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros."]], [6, ["6|business_19.txt", ""]], [7, ["7|business_19.txt", "Frankfurt-based Deutsche Boerse has offered \\u00a31.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (\\u00a30.48; $0.98) from 55 euro cents a year earlier. \\"There is a whiff of a sweetener in there,\\" Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. \\"Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends,\\" Mr Faraj continued. Deutsche Boerse is \\"trying to buy them off in a sense\\", he said."]]], "id_counter": 7}\n{"inp_id_processed": {}, "state": {}, "output_rec": [[1, ["1|business_19.txt", "Deutsche Boerse boosts dividend"]], [2, ["2|business_19.txt", ""]], [3, ["3|business_19.txt", "Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%."]], [4, ["4|business_19.txt", ""]], [5, ["5|business_19.txt", "Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; \\u00a383.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros."]], [6, ["6|business_19.txt", ""]], [7, ["7|business_19.txt", "Frankfurt-based Deutsche Boerse has offered \\u00a31.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (\\u00a30.48; $0.98) from 55 euro cents a year earlier. \\"There is a whiff of a sweetener in there,\\" Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. \\"Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends,\\" Mr Faraj continued. Deutsche Boerse is \\"trying to buy them off in a sense\\", he said."]], [8, ["1|business_19.txt", "Deutsche Boerse boosts dividend"]], [9, ["2|business_19.txt", ""]], [10, ["3|business_19.txt", "Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%."]], [11, ["4|business_19.txt", ""]], [12, ["5|business_19.txt", "Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; \\u00a383.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros."]], [13, ["6|business_19.txt", ""]], [14, ["7|business_19.txt", "Frankfurt-based Deutsche Boerse has offered \\u00a31.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (\\u00a30.48; $0.98) from 55 euro cents a year earlier. \\"There is a whiff of a sweetener in there,\\" Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. \\"Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends,\\" Mr Faraj continued. Deutsche Boerse is \\"trying to buy them off in a sense\\", he said."]]], "id_counter": 14}'}
-2024-11-30 15:49:56,277 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_state'.
-2024-11-30 15:49:56,278 - Sent 4815 bytes from data_buffer
-2024-11-30 15:49:56,281 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:49:56,281 - Next 3 nodes after 382: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733002899', 'ring_id': 403}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733002907', 'ring_id': 578}, {'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733002903', 'ring_id': 620}]
-2024-11-30 15:49:56,282 - Sending write to fa24-cs425-6903.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 15:49:56,283 - Sending write to fa24-cs425-6909.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 15:49:56,283 - Sending write to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 15:49:56,284 - Sent 82 bytes from data_buffer
-2024-11-30 15:49:56,285 - Sent 82 bytes from data_buffer
-2024-11-30 15:49:56,285 - Sent 82 bytes from data_buffer
-2024-11-30 15:49:56,285 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'file_exists'}
-2024-11-30 15:49:56,285 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:49:56,285 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'file_exists'}
-2024-11-30 15:49:56,286 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:49:56,287 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'file_exists'}
-2024-11-30 15:49:56,287 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 43630)>
-2024-11-30 15:49:56,288 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'file_exists'}
-2024-11-30 15:49:56,288 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_ack'.
-2024-11-30 15:49:56,289 - Sent 89 bytes from data_buffer
-2024-11-30 15:49:56,291 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:49:56,291 - Next 3 nodes after 382: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733002899', 'ring_id': 403}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733002907', 'ring_id': 578}, {'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733002903', 'ring_id': 620}]
-2024-11-30 15:49:56,291 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 15:49:56,292 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 15:49:56,293 - Sending read to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 15:49:56,294 - Sent 71 bytes from data_buffer
-2024-11-30 15:49:56,294 - Sent 71 bytes from data_buffer
-2024-11-30 15:49:56,294 - Sent 71 bytes from data_buffer
-2024-11-30 15:49:56,294 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 15:49:56,295 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:49:56,296 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 15:49:56,296 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:49:56,296 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 15:49:56,296 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 43632)>
-2024-11-30 15:49:56,297 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 15:49:56,297 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_ack'.
-2024-11-30 15:49:56,301 - Sent 100 bytes from data_buffer
-2024-11-30 15:49:56,305 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:49:56,305 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733002899', 'ring_id': 403}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733002907', 'ring_id': 578}, {'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733002903', 'ring_id': 620}]
-2024-11-30 15:49:56,305 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 15:49:56,306 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 15:49:56,309 - Sending read to fa24-cs425-6906.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 15:49:56,310 - Sent 74 bytes from data_buffer
-2024-11-30 15:49:56,311 - Sent 74 bytes from data_buffer
-2024-11-30 15:49:56,311 - Sent 74 bytes from data_buffer
-2024-11-30 15:49:56,311 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 15:49:56,311 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:49:56,312 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 15:49:56,312 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:49:56,312 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 15:49:56,312 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 43646)>
-2024-11-30 15:49:56,312 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 15:49:56,313 - Acknowledgment sent to rainstorm_source_0 for file 'business_19.txt'.
-2024-11-30 15:49:56,318 - Sent 1391 bytes from data_buffer
-2024-11-30 15:49:56,319 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:49:56,319 - Next 3 nodes after 618: [{'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733002903', 'ring_id': 620}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733002896', 'ring_id': 715}, {'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1733002902', 'ring_id': 845}]
-2024-11-30 15:49:56,320 - Sending add to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:49:56,321 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:49:56,322 - Sending add to fa24-cs425-6905.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 15:49:56,324 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 15:49:56,324 - Sent 4729 bytes from data_buffer
-2024-11-30 15:49:56,324 - Sent 4729 bytes from data_buffer
-2024-11-30 15:49:56,325 - Sent 4729 bytes from data_buffer
-2024-11-30 15:49:56,325 - Stated append action to file source_0_state
-2024-11-30 15:49:56,325 - Performed append action to 'rainstorm_source_0--source_0_state.log' with sequence number 3.
-2024-11-30 15:49:56,326 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_state'.
-2024-11-30 15:49:56,327 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 3}
-2024-11-30 15:49:56,327 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 15:49:56,327 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 3}
-2024-11-30 15:49:56,327 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 15:49:56,328 - Sent 110 bytes from data_buffer
-2024-11-30 15:49:56,329 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 3}
-2024-11-30 15:49:56,329 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 43662)>
-2024-11-30 15:49:56,329 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 3}
-2024-11-30 15:49:56,329 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_state'.
-2024-11-30 15:49:56,332 - Sent 110 bytes from data_buffer
-2024-11-30 15:49:56,968 - No change in membership list
-2024-11-30 15:49:58,970 - No change in membership list
-2024-11-30 15:50:00,972 - No change in membership list
-2024-11-30 15:50:02,974 - No change in membership list
-2024-11-30 15:50:04,976 - No change in membership list
-2024-11-30 15:50:06,978 - No change in membership list
-2024-11-30 15:50:08,980 - No change in membership list
-2024-11-30 15:50:10,982 - No change in membership list
-2024-11-30 15:50:12,984 - No change in membership list
-2024-11-30 15:50:14,986 - No change in membership list
-2024-11-30 15:50:16,988 - Membership lists are not equal
-2024-11-30 15:50:16,988 - No change in membership list
-2024-11-30 15:50:18,990 - No change in membership list
-2024-11-30 15:50:20,992 - No change in membership list
-2024-11-30 15:50:22,994 - No change in membership list
-2024-11-30 15:50:24,996 - No change in membership list
-2024-11-30 15:50:26,998 - No change in membership list
-2024-11-30 15:50:29,000 - No change in membership list
-2024-11-30 15:50:31,002 - No change in membership list
-2024-11-30 15:50:33,005 - No change in membership list
-2024-11-30 15:50:35,007 - No change in membership list
-2024-11-30 15:50:37,010 - No change in membership list
-2024-11-30 15:50:39,012 - No change in membership list
-2024-11-30 15:50:41,014 - No change in membership list
-2024-11-30 15:50:43,017 - No change in membership list
-2024-11-30 15:50:45,019 - No change in membership list
-2024-11-30 15:50:47,022 - No change in membership list
-2024-11-30 15:50:49,023 - No change in membership list
-2024-11-30 15:50:51,024 - No change in membership list
-2024-11-30 15:50:53,027 - No change in membership list
-2024-11-30 15:50:55,029 - No change in membership list
-2024-11-30 15:50:57,030 - No change in membership list
-2024-11-30 15:50:59,031 - No change in membership list
-2024-11-30 15:51:01,032 - No change in membership list
-2024-11-30 15:51:03,034 - No change in membership list
-2024-11-30 15:51:05,039 - No change in membership list
-2024-11-30 15:51:07,041 - No change in membership list
-2024-11-30 15:51:09,046 - No change in membership list
-2024-11-30 15:51:11,048 - No change in membership list
-2024-11-30 15:51:13,050 - No change in membership list
-2024-11-30 15:51:15,052 - No change in membership list
-2024-11-30 15:51:17,054 - No change in membership list
-2024-11-30 15:51:19,057 - No change in membership list
-2024-11-30 15:51:21,059 - No change in membership list
-2024-11-30 15:51:23,061 - No change in membership list
-2024-11-30 15:51:25,064 - No change in membership list
-2024-11-30 15:51:27,066 - No change in membership list
-2024-11-30 15:51:29,069 - No change in membership list
+2024-11-30 16:36:19,272 - Logging initialized for RingNode
+2024-11-30 16:36:19,284 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/op2_0_state
+2024-11-30 16:36:19,284 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/dest
+2024-11-30 16:36:19,284 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/op1_0_ack
+2024-11-30 16:36:19,285 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/source_0_state
+2024-11-30 16:36:19,285 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_source_0--source_0_state.log
+2024-11-30 16:36:19,285 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_source_0--op2_0_state.log
+2024-11-30 16:36:19,286 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_source_0--dest.log
+2024-11-30 16:36:19,286 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_source_0--op1_0_ack.log
+2024-11-30 16:36:19,290 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-11-30 16:36:33,565 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-30 16:36:33,566 - Next 3 nodes after 618: [{'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733006184', 'ring_id': 620}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733006179', 'ring_id': 715}, {'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733006188', 'ring_id': 56}]
+2024-11-30 16:36:33,566 - Sending write to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_state
+2024-11-30 16:36:33,568 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file source_0_state
+2024-11-30 16:36:33,569 - Sending write to fa24-cs425-6910.cs.illinois.edu:5001 for file source_0_state
+2024-11-30 16:36:33,571 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-30 16:36:33,572 - Sent 84 bytes from data_buffer
+2024-11-30 16:36:33,572 - Sent 84 bytes from data_buffer
+2024-11-30 16:36:33,572 - File 'source_0_state' written successfully.
+2024-11-30 16:36:33,572 - Acknowledgment sent to client 'source_0_state'.
+2024-11-30 16:36:33,574 - Sent 84 bytes from data_buffer
+2024-11-30 16:36:33,574 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'write_complete'}
+2024-11-30 16:36:33,574 - Quorum not yet met, received ack from 1 replicas
+2024-11-30 16:36:33,574 - Sent 94 bytes from data_buffer
+2024-11-30 16:36:33,575 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'write_complete'}
+2024-11-30 16:36:33,576 - Quorum not yet met, received ack from 2 replicas
+2024-11-30 16:36:33,576 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'write_complete'}
+2024-11-30 16:36:33,576 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 59384)>
+2024-11-30 16:36:33,576 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'write_complete'}
+2024-11-30 16:36:33,577 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_state'.
+2024-11-30 16:36:33,577 - Sent 94 bytes from data_buffer
+2024-11-30 16:36:33,580 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-30 16:36:33,580 - Next 3 nodes after 618: [{'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733006184', 'ring_id': 620}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733006179', 'ring_id': 715}, {'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733006188', 'ring_id': 56}]
+2024-11-30 16:36:33,580 - Sending read to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_state
+2024-11-30 16:36:33,582 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file source_0_state
+2024-11-30 16:36:33,583 - Sending read to fa24-cs425-6910.cs.illinois.edu:5001 for file source_0_state
+2024-11-30 16:36:33,584 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-30 16:36:33,584 - Sent 73 bytes from data_buffer
+2024-11-30 16:36:33,585 - Sent 73 bytes from data_buffer
+2024-11-30 16:36:33,585 - File 'source_0_state' and append log 'rainstorm_source_0--source_0_state.log' read successfully.
+2024-11-30 16:36:33,585 - File read succsefully source_0_state
+2024-11-30 16:36:33,585 - Acknowledgment sent to client with status 'read_complete' for file 'source_0_state'.
+2024-11-30 16:36:33,585 - Sent 73 bytes from data_buffer
+2024-11-30 16:36:33,586 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
+2024-11-30 16:36:33,587 - Quorum not yet met, received ack from 1 replicas
+2024-11-30 16:36:33,587 - Sent 102 bytes from data_buffer
+2024-11-30 16:36:33,587 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
+2024-11-30 16:36:33,587 - Quorum not yet met, received ack from 2 replicas
+2024-11-30 16:36:33,588 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
+2024-11-30 16:36:33,589 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 59406)>
+2024-11-30 16:36:33,589 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
+2024-11-30 16:36:33,589 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_state'.
+2024-11-30 16:36:33,591 - Sent 102 bytes from data_buffer
+2024-11-30 16:36:33,593 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-30 16:36:33,593 - Next 3 nodes after 382: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733006181', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733006180', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'ring_id': 578}]
+2024-11-30 16:36:33,593 - Sending write to fa24-cs425-6903.cs.illinois.edu:5001 for file source_0_ack
+2024-11-30 16:36:33,595 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file source_0_ack
+2024-11-30 16:36:33,595 - Sending write to fa24-cs425-6909.cs.illinois.edu:5001 for file source_0_ack
+2024-11-30 16:36:33,596 - Sent 82 bytes from data_buffer
+2024-11-30 16:36:33,596 - Sent 82 bytes from data_buffer
+2024-11-30 16:36:33,597 - Sent 82 bytes from data_buffer
+2024-11-30 16:36:33,597 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'write_complete'}
+2024-11-30 16:36:33,597 - Quorum not yet met, received ack from 1 replicas
+2024-11-30 16:36:33,598 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'write_complete'}
+2024-11-30 16:36:33,598 - Quorum not yet met, received ack from 2 replicas
+2024-11-30 16:36:33,598 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'write_complete'}
+2024-11-30 16:36:33,598 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 59412)>
+2024-11-30 16:36:33,598 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'write_complete'}
+2024-11-30 16:36:33,599 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_ack'.
+2024-11-30 16:36:33,601 - Sent 92 bytes from data_buffer
+2024-11-30 16:36:33,603 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-30 16:36:33,603 - Next 3 nodes after 382: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733006181', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733006180', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'ring_id': 578}]
+2024-11-30 16:36:33,603 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file source_0_ack
+2024-11-30 16:36:33,605 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file source_0_ack
+2024-11-30 16:36:33,606 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file source_0_ack
+2024-11-30 16:36:33,607 - Sent 71 bytes from data_buffer
+2024-11-30 16:36:33,607 - Sent 71 bytes from data_buffer
+2024-11-30 16:36:33,608 - Sent 71 bytes from data_buffer
+2024-11-30 16:36:33,608 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
+2024-11-30 16:36:33,608 - Quorum not yet met, received ack from 1 replicas
+2024-11-30 16:36:33,608 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
+2024-11-30 16:36:33,608 - Quorum not yet met, received ack from 2 replicas
+2024-11-30 16:36:33,608 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
+2024-11-30 16:36:33,609 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 59420)>
+2024-11-30 16:36:33,609 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
+2024-11-30 16:36:33,609 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_ack'.
+2024-11-30 16:36:33,611 - Sent 100 bytes from data_buffer
+2024-11-30 16:36:33,615 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-30 16:36:33,615 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733006181', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733006180', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'ring_id': 578}]
+2024-11-30 16:36:33,615 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
+2024-11-30 16:36:33,616 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
+2024-11-30 16:36:33,617 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file business_19.txt
+2024-11-30 16:36:33,618 - Sent 74 bytes from data_buffer
+2024-11-30 16:36:33,618 - Sent 74 bytes from data_buffer
+2024-11-30 16:36:33,618 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'file_not_found'}
+2024-11-30 16:36:33,619 - Quorum not yet met, received ack from 1 replicas
+2024-11-30 16:36:33,619 - Sent 74 bytes from data_buffer
+2024-11-30 16:36:33,620 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'file_not_found'}
+2024-11-30 16:36:33,620 - Quorum not yet met, received ack from 2 replicas
+2024-11-30 16:36:33,620 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'file_not_found'}
+2024-11-30 16:36:33,620 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 59434)>
+2024-11-30 16:36:33,620 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'file_not_found'}
+2024-11-30 16:36:33,621 - Acknowledgment sent to rainstorm_source_0 for file 'business_19.txt'.
+2024-11-30 16:36:33,623 - Sent 95 bytes from data_buffer
+2024-11-30 16:36:39,311 - Monitoring membership list started
+2024-11-30 16:36:41,313 - No change in membership list
+2024-11-30 16:36:43,316 - No change in membership list
+2024-11-30 16:36:45,318 - No change in membership list
+2024-11-30 16:36:47,321 - No change in membership list
+2024-11-30 16:36:49,323 - No change in membership list
+2024-11-30 16:36:51,325 - No change in membership list
+2024-11-30 16:36:53,327 - No change in membership list
+2024-11-30 16:36:55,330 - No change in membership list
+2024-11-30 16:36:57,332 - No change in membership list
+2024-11-30 16:36:59,334 - No change in membership list
+2024-11-30 16:37:01,336 - No change in membership list
+2024-11-30 16:37:03,338 - No change in membership list
+2024-11-30 16:37:05,339 - No change in membership list
+2024-11-30 16:37:07,341 - No change in membership list
+2024-11-30 16:37:09,344 - No change in membership list
+2024-11-30 16:37:11,346 - No change in membership list
+2024-11-30 16:37:13,348 - No change in membership list
+2024-11-30 16:37:15,351 - No change in membership list
+2024-11-30 16:37:17,353 - No change in membership list
+2024-11-30 16:37:18,824 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-30 16:37:18,825 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733006181', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733006180', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'ring_id': 578}]
+2024-11-30 16:37:18,825 - Sending write to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
+2024-11-30 16:37:18,827 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
+2024-11-30 16:37:18,829 - Sending write to fa24-cs425-6909.cs.illinois.edu:5001 for file business_19.txt
+2024-11-30 16:37:18,830 - Sent 1362 bytes from data_buffer
+2024-11-30 16:37:18,830 - Sent 1362 bytes from data_buffer
+2024-11-30 16:37:18,831 - Sent 1362 bytes from data_buffer
+2024-11-30 16:37:18,832 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-11-30 16:37:18,832 - Quorum not yet met, received ack from 1 replicas
+2024-11-30 16:37:18,832 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-11-30 16:37:18,834 - Quorum not yet met, received ack from 2 replicas
+2024-11-30 16:37:18,834 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-11-30 16:37:18,835 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 54670)>
+2024-11-30 16:37:18,835 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-11-30 16:37:18,835 - Acknowledgment sent to client_1 for file 'business_19.txt'.
+2024-11-30 16:37:18,836 - Sent 85 bytes from data_buffer
+2024-11-30 16:37:19,355 - No change in membership list
+2024-11-30 16:37:21,357 - No change in membership list
+2024-11-30 16:37:23,359 - No change in membership list
+2024-11-30 16:37:25,317 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-30 16:37:25,318 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733006181', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733006180', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'ring_id': 578}]
+2024-11-30 16:37:25,319 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
+2024-11-30 16:37:25,320 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
+2024-11-30 16:37:25,322 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file business_19.txt
+2024-11-30 16:37:25,323 - Sent 64 bytes from data_buffer
+2024-11-30 16:37:25,323 - Sent 64 bytes from data_buffer
+2024-11-30 16:37:25,324 - Sent 64 bytes from data_buffer
+2024-11-30 16:37:25,324 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-11-30 16:37:25,324 - Quorum not yet met, received ack from 1 replicas
+2024-11-30 16:37:25,326 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-11-30 16:37:25,326 - Quorum not yet met, received ack from 2 replicas
+2024-11-30 16:37:25,326 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-11-30 16:37:25,326 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40424)>
+2024-11-30 16:37:25,327 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-11-30 16:37:25,327 - Acknowledgment sent to client_1 for file 'business_19.txt'.
+2024-11-30 16:37:25,327 - Sent 1381 bytes from data_buffer
+2024-11-30 16:37:25,361 - No change in membership list
+2024-11-30 16:37:27,363 - No change in membership list
+2024-11-30 16:37:27,725 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-30 16:37:27,726 - Next 3 nodes after 618: [{'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733006184', 'ring_id': 620}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733006179', 'ring_id': 715}, {'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733006188', 'ring_id': 56}]
+2024-11-30 16:37:27,726 - Sending write to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_state
+2024-11-30 16:37:27,727 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file source_0_state
+2024-11-30 16:37:27,729 - Sending write to fa24-cs425-6910.cs.illinois.edu:5001 for file source_0_state
+2024-11-30 16:37:27,731 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-30 16:37:27,731 - Sent 84 bytes from data_buffer
+2024-11-30 16:37:27,731 - Sent 84 bytes from data_buffer
+2024-11-30 16:37:27,731 - File 'source_0_state' already exists. Not writing to it.
+2024-11-30 16:37:27,731 - Acknowledgment sent to client 'source_0_state'.
+2024-11-30 16:37:27,732 - Sent 84 bytes from data_buffer
+2024-11-30 16:37:27,732 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'file_exists'}
+2024-11-30 16:37:27,732 - Quorum not yet met, received ack from 1 replicas
+2024-11-30 16:37:27,732 - Sent 91 bytes from data_buffer
+2024-11-30 16:37:27,732 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'file_exists'}
+2024-11-30 16:37:27,733 - Quorum not yet met, received ack from 2 replicas
+2024-11-30 16:37:27,734 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'file_exists'}
+2024-11-30 16:37:27,734 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40428)>
+2024-11-30 16:37:27,734 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'file_exists'}
+2024-11-30 16:37:27,734 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_state'.
+2024-11-30 16:37:27,736 - Sent 91 bytes from data_buffer
+2024-11-30 16:37:27,739 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-30 16:37:27,739 - Next 3 nodes after 618: [{'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733006184', 'ring_id': 620}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733006179', 'ring_id': 715}, {'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733006188', 'ring_id': 56}]
+2024-11-30 16:37:27,739 - Sending read to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_state
+2024-11-30 16:37:27,740 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file source_0_state
+2024-11-30 16:37:27,741 - Sending read to fa24-cs425-6910.cs.illinois.edu:5001 for file source_0_state
+2024-11-30 16:37:27,742 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-30 16:37:27,743 - Sent 73 bytes from data_buffer
+2024-11-30 16:37:27,743 - Sent 73 bytes from data_buffer
+2024-11-30 16:37:27,743 - File 'source_0_state' and append log 'rainstorm_source_0--source_0_state.log' read successfully.
+2024-11-30 16:37:27,743 - File read succsefully source_0_state
+2024-11-30 16:37:27,744 - Acknowledgment sent to client with status 'read_complete' for file 'source_0_state'.
+2024-11-30 16:37:27,744 - Sent 73 bytes from data_buffer
+2024-11-30 16:37:27,745 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
+2024-11-30 16:37:27,745 - Quorum not yet met, received ack from 1 replicas
+2024-11-30 16:37:27,745 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
+2024-11-30 16:37:27,745 - Quorum not yet met, received ack from 2 replicas
+2024-11-30 16:37:27,746 - Sent 102 bytes from data_buffer
+2024-11-30 16:37:27,746 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
+2024-11-30 16:37:27,746 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40452)>
+2024-11-30 16:37:27,746 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
+2024-11-30 16:37:27,746 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_state'.
+2024-11-30 16:37:27,749 - Sent 102 bytes from data_buffer
+2024-11-30 16:37:27,751 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-30 16:37:27,751 - Next 3 nodes after 382: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733006181', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733006180', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'ring_id': 578}]
+2024-11-30 16:37:27,752 - Sending write to fa24-cs425-6903.cs.illinois.edu:5001 for file source_0_ack
+2024-11-30 16:37:27,753 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file source_0_ack
+2024-11-30 16:37:27,754 - Sending write to fa24-cs425-6909.cs.illinois.edu:5001 for file source_0_ack
+2024-11-30 16:37:27,754 - Sent 82 bytes from data_buffer
+2024-11-30 16:37:27,754 - Sent 82 bytes from data_buffer
+2024-11-30 16:37:27,755 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'file_exists'}
+2024-11-30 16:37:27,755 - Quorum not yet met, received ack from 1 replicas
+2024-11-30 16:37:27,755 - Sent 82 bytes from data_buffer
+2024-11-30 16:37:27,755 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'file_exists'}
+2024-11-30 16:37:27,755 - Quorum not yet met, received ack from 2 replicas
+2024-11-30 16:37:27,757 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'file_exists'}
+2024-11-30 16:37:27,757 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40458)>
+2024-11-30 16:37:27,758 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'file_exists'}
+2024-11-30 16:37:27,758 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_ack'.
+2024-11-30 16:37:27,759 - Sent 89 bytes from data_buffer
+2024-11-30 16:37:27,761 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-30 16:37:27,761 - Next 3 nodes after 382: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733006181', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733006180', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'ring_id': 578}]
+2024-11-30 16:37:27,761 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file source_0_ack
+2024-11-30 16:37:27,763 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file source_0_ack
+2024-11-30 16:37:27,764 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file source_0_ack
+2024-11-30 16:37:27,765 - Sent 71 bytes from data_buffer
+2024-11-30 16:37:27,765 - Sent 71 bytes from data_buffer
+2024-11-30 16:37:27,765 - Sent 71 bytes from data_buffer
+2024-11-30 16:37:27,765 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
+2024-11-30 16:37:27,766 - Quorum not yet met, received ack from 1 replicas
+2024-11-30 16:37:27,766 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
+2024-11-30 16:37:27,766 - Quorum not yet met, received ack from 2 replicas
+2024-11-30 16:37:27,768 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
+2024-11-30 16:37:27,768 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40464)>
+2024-11-30 16:37:27,768 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
+2024-11-30 16:37:27,768 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_ack'.
+2024-11-30 16:37:27,769 - Sent 100 bytes from data_buffer
+2024-11-30 16:37:27,773 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-30 16:37:27,773 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733006181', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733006180', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'ring_id': 578}]
+2024-11-30 16:37:27,773 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
+2024-11-30 16:37:27,774 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
+2024-11-30 16:37:27,775 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file business_19.txt
+2024-11-30 16:37:27,776 - Sent 74 bytes from data_buffer
+2024-11-30 16:37:27,776 - Sent 74 bytes from data_buffer
+2024-11-30 16:37:27,776 - Sent 74 bytes from data_buffer
+2024-11-30 16:37:27,776 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-11-30 16:37:27,778 - Quorum not yet met, received ack from 1 replicas
+2024-11-30 16:37:27,778 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-11-30 16:37:27,778 - Quorum not yet met, received ack from 2 replicas
+2024-11-30 16:37:27,778 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-11-30 16:37:27,779 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40480)>
+2024-11-30 16:37:27,779 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-11-30 16:37:27,779 - Acknowledgment sent to rainstorm_source_0 for file 'business_19.txt'.
+2024-11-30 16:37:27,784 - Sent 1391 bytes from data_buffer
+2024-11-30 16:37:27,787 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-30 16:37:27,787 - Next 3 nodes after 618: [{'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733006184', 'ring_id': 620}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733006179', 'ring_id': 715}, {'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733006188', 'ring_id': 56}]
+2024-11-30 16:37:27,787 - Sending add to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_state
+2024-11-30 16:37:27,788 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file source_0_state
+2024-11-30 16:37:27,789 - Sending add to fa24-cs425-6910.cs.illinois.edu:5001 for file source_0_state
+2024-11-30 16:37:27,791 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-11-30 16:37:27,791 - Sent 1674 bytes from data_buffer
+2024-11-30 16:37:27,791 - Sent 1674 bytes from data_buffer
+2024-11-30 16:37:27,791 - Stated append action to file source_0_state
+2024-11-30 16:37:27,793 - Performed append action to 'rainstorm_source_0--source_0_state.log' with sequence number 1.
+2024-11-30 16:37:27,793 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_state'.
+2024-11-30 16:37:27,794 - Sent 1674 bytes from data_buffer
+2024-11-30 16:37:27,794 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 1}
+2024-11-30 16:37:27,794 - Quorum not yet met, received ack from 1 replicas
+2024-11-30 16:37:27,794 - Sent 110 bytes from data_buffer
+2024-11-30 16:37:27,794 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 1}
+2024-11-30 16:37:27,795 - Quorum not yet met, received ack from 2 replicas
+2024-11-30 16:37:27,796 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 1}
+2024-11-30 16:37:27,796 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40488)>
+2024-11-30 16:37:27,796 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 1}
+2024-11-30 16:37:27,796 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_state'.
+2024-11-30 16:37:27,799 - Sent 110 bytes from data_buffer
+2024-11-30 16:37:29,365 - No change in membership list
+2024-11-30 16:37:31,370 - No change in membership list
+2024-11-30 16:37:33,372 - No change in membership list
+2024-11-30 16:37:35,374 - No change in membership list
+2024-11-30 16:37:37,376 - No change in membership list
+2024-11-30 16:37:39,378 - No change in membership list
+2024-11-30 16:37:41,381 - No change in membership list
+2024-11-30 16:37:43,383 - No change in membership list
+2024-11-30 16:37:45,385 - No change in membership list
+2024-11-30 16:37:47,388 - No change in membership list
+2024-11-30 16:37:49,390 - No change in membership list

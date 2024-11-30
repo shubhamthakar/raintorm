@@ -135,7 +135,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
 
         # send get req to hyDFS
         message = {
-            "client_name": f'rainstorm_source_{self.partition_num}',
+            "client_name": f'rainstorm_{self.task_type}_{self.partition_num}',
             "action": action,
             "filename": filename
         }
@@ -163,12 +163,12 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
                     break
                 response += chunk
             client_socket.close()
-            print("Connection closed.")
+            self.log("Connection from worker to hydfs closed.")
             return msgpack.unpackb(response)
         except Exception as e:
-            print(f"Error receiving response: {e}")
+            self.log(f"Error receiving response: {e}")
             client_socket.close()
-            print("Connection closed.")
+            self.log("Connection from worker to hydfs closed.")
             return None            
         
     
@@ -347,7 +347,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             # Return the list of processed tuples
             return generated_list_of_tuples
         except subprocess.CalledProcessError as e:
-            print(f"Error running {self.exe_file_path}: {e.stderr}")
+            self.log(f"Error running {self.exe_file_path}: {e.stderr}")
             return None
 
 
