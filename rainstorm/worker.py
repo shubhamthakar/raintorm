@@ -12,7 +12,6 @@ import subprocess
 import os
 import hashlib
 import traceback
-import math
 
 class WorkerServicer(worker_pb2_grpc.WorkerServicer):
     def __init__(self, mapping, src_file, dest_file):
@@ -392,6 +391,38 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             self.log(f"Traceback: {traceback_str}")
             ack = {"status": "error", "details": str(e)}
             return worker_pb2.AckResponse(ack=json.dumps(ack))
+
+
+    async def UpdateMapping(self, request, context):
+        """
+        Handles the UpdateMapping gRPC method to update the mapping.
+        Args:
+            request: The MappingUpdateRequest object containing the new mapping JSON string.
+            context: The gRPC context.
+
+        Returns:
+            UpdateResponse object with the update status.
+        """
+        try:
+            # Parse the new mapping JSON string
+            new_mapping = json.loads(request.mapping)
+            
+            # Update self.mapping and reinitialize task-related attributes
+            self.mapping = new_mapping
+            self.get_task_type(self.mapping)
+            
+            # Log success
+            self.log(f"Mapping updated successfully: {new_mapping}")
+            return worker_pb2.UpdateResponse(status="Mapping updated successfully.")
+        except json.JSONDecodeError as e:
+            error_message = f"Invalid JSON format: {str(e)}"
+            self.log(error_message)
+            return worker_pb2.UpdateResponse(status=error_message)
+        except Exception as e:
+            error_message = f"Error updating mapping: {str(e)}"
+            self.log(error_message)
+            return worker_pb2.UpdateResponse(status=error_message)
+
 
 
 

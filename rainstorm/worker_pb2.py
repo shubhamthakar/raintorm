@@ -24,7 +24,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0cworker.proto\x12\x06worker\"\x1b\n\x0b\x44\x61taRequest\x12\x0c\n\x04\x64\x61ta\x18\x01 \x01(\t\"\x1a\n\x0b\x41\x63kResponse\x12\x0b\n\x03\x61\x63k\x18\x01 \x01(\t2>\n\x06Worker\x12\x34\n\x08RecvData\x12\x13.worker.DataRequest\x1a\x13.worker.AckResponseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0cworker.proto\x12\x06worker\"\x1b\n\x0b\x44\x61taRequest\x12\x0c\n\x04\x64\x61ta\x18\x01 \x01(\t\"\x1a\n\x0b\x41\x63kResponse\x12\x0b\n\x03\x61\x63k\x18\x01 \x01(\t\"\'\n\x14MappingUpdateRequest\x12\x0f\n\x07mapping\x18\x01 \x01(\t\" \n\x0eUpdateResponse\x12\x0e\n\x06status\x18\x01 \x01(\t2\x85\x01\n\x06Worker\x12\x34\n\x08RecvData\x12\x13.worker.DataRequest\x1a\x13.worker.AckResponse\x12\x45\n\rUpdateMapping\x12\x1c.worker.MappingUpdateRequest\x1a\x16.worker.UpdateResponseb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -35,6 +35,10 @@ if not _descriptor._USE_C_DESCRIPTORS:
   _globals['_DATAREQUEST']._serialized_end=51
   _globals['_ACKRESPONSE']._serialized_start=53
   _globals['_ACKRESPONSE']._serialized_end=79
-  _globals['_WORKER']._serialized_start=81
-  _globals['_WORKER']._serialized_end=143
+  _globals['_MAPPINGUPDATEREQUEST']._serialized_start=81
+  _globals['_MAPPINGUPDATEREQUEST']._serialized_end=120
+  _globals['_UPDATERESPONSE']._serialized_start=122
+  _globals['_UPDATERESPONSE']._serialized_end=154
+  _globals['_WORKER']._serialized_start=157
+  _globals['_WORKER']._serialized_end=290
 # @@protoc_insertion_point(module_scope)

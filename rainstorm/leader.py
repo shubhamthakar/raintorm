@@ -39,7 +39,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         self.hydfs_node = RingNode()
 
         # Start other hyDFS nodes
-        self.start_worker_hydfs_nodes()
+        self.execute_shell_script('./scripts/hydfs_run_all_worker.sh')
 
         # handle shutdown
         self.shutdown_flag = threading.Event()
@@ -60,13 +60,14 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         self.worker_load = [
             (0,'fa24-cs425-6902.cs.illinois.edu'),
             (0,'fa24-cs425-6903.cs.illinois.edu'),
-            (0,'fa24-cs425-6904.cs.illinois.edu'),
-            (0,'fa24-cs425-6905.cs.illinois.edu'),
-            (0,'fa24-cs425-6906.cs.illinois.edu'),
-            (0,'fa24-cs425-6907.cs.illinois.edu'),
-            (0,'fa24-cs425-6908.cs.illinois.edu'),
-            (0,'fa24-cs425-6909.cs.illinois.edu'),
-            (0,'fa24-cs425-6910.cs.illinois.edu')
+            (0,'fa24-cs425-6904.cs.illinois.edu')
+            # ,
+            # (0,'fa24-cs425-6905.cs.illinois.edu'),
+            # (0,'fa24-cs425-6906.cs.illinois.edu'),
+            # (0,'fa24-cs425-6907.cs.illinois.edu'),
+            # (0,'fa24-cs425-6908.cs.illinois.edu'),
+            # (0,'fa24-cs425-6909.cs.illinois.edu'),
+            # (0,'fa24-cs425-6910.cs.illinois.edu')
         ]
         # Heapify the list
         heapq.heapify(self.worker_load)
@@ -122,13 +123,12 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
                 min_server = heapq.heappop(self.worker_load)
                 load, server_ip = min_server
 
+                self.log(f"min server extracted: {min_server} with load {load}")
+
                 # Check if the server is in the membership list
-
-                print(f"Membership List: {self.hydfs_node.process.membership_list}")
-
                 server_found = False
                 for node in self.hydfs_node.process.membership_list:
-                    if node['node_id'].startswith(server_ip):  # Check if the IP matches
+                    if node['node_id'].startswith(server_ip) and node['status'] == 'LIVE':  # Check if the IP matches
                         server_found = True
                         break
                 
@@ -179,7 +179,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
             # Add handler to logger
             self.logger.addHandler(file_handler)
 
-        self.log("Logging initialized for Rainstorm worker")
+        self.log("Logging initialized for Rainstorm Leader")
 
     
     def extract_servers_and_ports_from_mapping(self):
@@ -243,6 +243,13 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         self.log("Rainstorm Leader shut down gracefully.")
         self.stop_event.set()
 
+        # shutdown rainstorm workers
+        self.execute_shell_script('./scripts/rainstorm_worker_cleanup.sh')
+
+        # shutdown HyDFS
+        self.execute_shell_script('./scripts/hydfs_process_cleanup.sh')
+
+        
     async def monitor_shutdown_flag(self):
         """Monitor threading.Event and set asyncio.Event when triggered."""
         print("Monitoring threading.Event for shutdown...")
@@ -251,19 +258,19 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         self.stop_event.set()
         
 
-    def start_worker_hydfs_nodes(self):
+    def execute_shell_script(self, shell_script):
         """Runs the hydfs_run_all_worker.sh script."""
-        script_path = './scripts/hydfs_run_all_worker.sh'
 
         try:
-            print(f"Running script: {script_path}")
-            result = subprocess.run([script_path], check=True, text=True, capture_output=True)
+            print(f"Running script: {shell_script}")
+            result = subprocess.run([shell_script], check=True, text=True, capture_output=True)
             print("Script output:", result.stdout)
         except subprocess.CalledProcessError as e:
             print(f"Script failed with error: {e}")
             print("Error output:", e.stderr)
         except FileNotFoundError:
-            print(f"The script {script_path} was not found.")
+            print(f"The script {shell_script} was not found.")
+
 
 
 
@@ -308,6 +315,53 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         except Exception as e:
             print(f"Error occurred while running script: {e}")
 
+    
+
+    def sync_start_rainstorm_workers(self, src_file, dest_file, ports, servers):
+        """Starts the rainstorm workers by running the start_rainstorm_workers.sh script synchronously."""
+        # Convert mapping dictionary to JSON string
+        mapping_dict_json = json.dumps(self.task_mapping, ensure_ascii=True)
+
+        print(f"Generated mapping dict: {mapping_dict_json}")
+
+        # Convert list of ports to a comma-separated string
+        ports_str = ",".join(map(str, ports))
+
+        # Command to execute the shell script
+        command = [
+            "/home/chaskar2/distributed-logger/rainstorm/scripts/start_rainstorm_workers.sh",
+            mapping_dict_json,
+            src_file,
+            dest_file,
+            ports_str,
+            *servers  # Unpack the server list
+        ]
+
+        try:
+            # Run the script synchronously
+            print(f"Running script: {command}")
+            result = subprocess.run(
+                command, 
+                stdout=subprocess.PIPE, 
+                stderr=subprocess.PIPE, 
+                text=True  # Ensures output is returned as string
+            )
+
+            # Handle stdout and stderr
+            if result.stdout:
+                print(f"Script output: {result.stdout}")
+            if result.stderr:
+                print(f"Script error: {result.stderr}")
+
+            # Raise an exception if the script failed
+            if result.returncode != 0:
+                raise RuntimeError(f"Script failed with return code {result.returncode}")
+        except FileNotFoundError:
+            print(f"The script was not found: {command[0]}")
+        except Exception as e:
+            print(f"Error occurred while running script: {e}")
+
+
 
     async def copy_exes_to_workers(self):
         """Runs the copy_exes_to_workers.sh script asynchronously using create_subprocess_exec."""
@@ -347,8 +401,16 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         current_node (str): The node that changed.
         action (str): "dead" if the node has shut down, "joined" if a node joins.
         """
+
+        self.log(f"handle node change called for action: {action}")
+
         if action == "dead":
             self.log(f"Node {current_node} is dead. Reassigning tasks...")
+
+            # Filter alive workers from self.worker_load to remove the matching element
+            self.worker_load = [
+                node for node in self.worker_load if not current_node_ip.startswith(node[1])
+            ]
 
             # Maintain a dictionary to track current tasks per node
             node_task_count = {node: 0 for _, node in self.worker_load}
@@ -357,6 +419,9 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
                     node, port = assigned_node.split(":")
                     if node in node_task_count:
                         node_task_count[node] += 1
+
+            # Keep a copy of the old task mapping
+            old_task_mapping = self.task_mapping.copy()
 
             # Remove tasks associated with the dead node from self.task_mapping
             updated_task_mapping = {}
@@ -374,6 +439,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
                         updated_task_mapping[stage][task_id] = assigned_node
 
             # Reassign tasks to the most underutilized nodes
+            new_node_ports = []  # To track new node:port pairs
             for stage, task_id in tasks_to_reassign:
                 if not self.worker_load:
                     raise RuntimeError("No available nodes to reassign tasks!")
@@ -384,7 +450,12 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
 
                 # Assign the task to the new node
                 next_port = 5002 + node_task_count[new_node]
-                updated_task_mapping[stage][task_id] = f"{new_node}:{next_port}"
+                new_node_port = f"{new_node}:{next_port}"
+                updated_task_mapping[stage][task_id] = new_node_port
+
+                # If the node:port pair is new, track it
+                if new_node_port not in old_task_mapping.get(stage, {}).values():
+                    new_node_ports.append(new_node_port)
 
                 # Update the task count and node's load
                 node_task_count[new_node] += 1
@@ -395,12 +466,54 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
             self.log(f"New Task Mapping: {self.task_mapping}")
             self.log("Task mapping updated successfully.")
 
+            # Start workers only on new node:port pairs
+            for new_node_port in new_node_ports:
+                node, port = new_node_port.split(":")
+                self.log(f"Starting worker on new node:port pair: {new_node_port}")
+                src_file = "/path/to/src_file"  # Replace with actual source file path
+                dest_file = "/path/to/dest_file"  # Replace with actual destination file path
+                ports = [int(port)]
+                servers = [node]
+                self.sync_start_rainstorm_workers(src_file, dest_file, ports, servers)
+
+            # Notify all workers about the updated mapping
+            self.notify_workers(self.task_mapping)
+
+            return self.task_mapping
+
         elif action == "joined":
-            # Do nothing for now when a node joins
-            self.log(f"Node {current_node} joined. No action required.")
+            self.log(f"Node {current_node} joined. Assigning tasks to the new node...")
+
+            # For now, handle newly joined nodes as idle nodes unless specific tasks are assigned
+            self.log(f"Node {current_node} joined. No immediate tasks reassigned.")
 
 
-        
+    
+    def notify_workers(self, updated_task_mapping):
+        """
+        Notify all workers about the updated task mapping via gRPC.
+
+        Parameters:
+        updated_task_mapping (dict): The updated task mapping to send to workers.
+        """
+        for node in self.worker_load:
+            node_address = f"{node[1]}:5002"  # Assuming port 5002 is the worker's gRPC port
+            try:
+                # Create a synchronous gRPC channel and stub
+                with grpc.insecure_channel(node_address) as channel:
+                    stub = worker_pb2_grpc.WorkerStub(channel)
+
+                    # Create the request message
+                    request = worker_pb2.DataRequest(data=json.dumps(updated_task_mapping))
+
+                    # Call the update_mapping RPC synchronously
+                    response = stub.RecvData(request)
+                    self.log(f"Worker {node_address} acknowledged: {response.ack}")
+            except Exception as e:
+                self.log(f"Failed to notify worker {node_address}: {e}")
+
+
+
 
     def monitor_membership_list(self):
         """
@@ -431,7 +544,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
                         # Node status changed to DEAD
                         self.log(f"Rainstorm Tasks: Hydfs node marked as DEAD: {current_node}")
                         try:
-                            time.sleep(2*self.hydfs_node.process.protocol_period)
+                            # time.sleep(2*self.hydfs_node.process.protocol_period)
                             self.task_mapping = self.handle_node_change(current_node, "dead")
                         except Exception as e:
                             self.log(f"Rainstorm Tasks: Exception caught in thread: {e}")

@@ -1,363 +1,268 @@
-2024-11-30 16:36:19,281 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
-2024-11-30 16:36:19,284 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/op2_0_state
-2024-11-30 16:36:19,284 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/dest
-2024-11-30 16:36:19,284 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/op1_0_ack
-2024-11-30 16:36:19,285 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/source_0_state
-2024-11-30 16:36:19,285 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_source_0--source_0_state.log
-2024-11-30 16:36:19,285 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_source_0--op2_0_state.log
-2024-11-30 16:36:19,286 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_source_0--dest.log
-2024-11-30 16:36:19,286 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_source_0--op1_0_ack.log
-2024-11-30 16:36:19,290 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
-2024-11-30 16:36:19,293 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
-2024-11-30 16:36:19,298 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
-2024-11-30 16:36:19,300 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
-2024-11-30 16:36:19,302 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733006179', 'status': 'LIVE', 'inc_num': 0}]
-2024-11-30 16:36:20,553 - New join request received from fa24-cs425-6902.cs.illinois.edu:5000
-2024-11-30 16:36:20,555 - Sent membership list to fa24-cs425-6902.cs.illinois.edu:5000
-2024-11-30 16:36:21,221 - New join request received from fa24-cs425-6903.cs.illinois.edu:5000
-2024-11-30 16:36:21,224 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 403, 'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733006181', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:21,226 - Sent membership list to fa24-cs425-6903.cs.illinois.edu:5000
-2024-11-30 16:36:24,093 - New join request received from fa24-cs425-6906.cs.illinois.edu:5000
-2024-11-30 16:36:24,095 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 620, 'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733006184', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:24,097 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 620, 'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733006184', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:24,099 - Sent membership list to fa24-cs425-6906.cs.illinois.edu:5000
-2024-11-30 16:36:25,211 - New join request received from fa24-cs425-6907.cs.illinois.edu:5000
-2024-11-30 16:36:25,213 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 140, 'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1733006185', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:25,215 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 140, 'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1733006185', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:25,216 - Notified fa24-cs425-6906.cs.illinois.edu:5000 of new node {'ring_id': 140, 'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1733006185', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:25,218 - Sent membership list to fa24-cs425-6907.cs.illinois.edu:5000
-2024-11-30 16:36:26,341 - New join request received from fa24-cs425-6908.cs.illinois.edu:5000
-2024-11-30 16:36:26,343 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1733006186', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:26,345 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1733006186', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:26,346 - Notified fa24-cs425-6906.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1733006186', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:26,348 - Notified fa24-cs425-6907.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1733006186', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:26,348 - Sent membership list to fa24-cs425-6908.cs.illinois.edu:5000
-2024-11-30 16:36:27,465 - New join request received from fa24-cs425-6909.cs.illinois.edu:5000
-2024-11-30 16:36:27,467 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:27,469 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:27,470 - Notified fa24-cs425-6906.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:27,472 - Notified fa24-cs425-6907.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:27,473 - Notified fa24-cs425-6908.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:27,475 - Sent membership list to fa24-cs425-6909.cs.illinois.edu:5000
-2024-11-30 16:36:28,583 - New join request received from fa24-cs425-6910.cs.illinois.edu:5000
-2024-11-30 16:36:28,585 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733006188', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:28,586 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733006188', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:28,588 - Notified fa24-cs425-6906.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733006188', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:28,590 - Notified fa24-cs425-6907.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733006188', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:28,591 - Notified fa24-cs425-6908.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733006188', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:28,592 - Notified fa24-cs425-6909.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733006188', 'status': 'LIVE', 'inc_num': 0}
-2024-11-30 16:36:28,594 - Sent membership list to fa24-cs425-6910.cs.illinois.edu:5000
-2024-11-30 16:36:33,565 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 16:36:33,566 - Next 3 nodes after 618: [{'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733006184', 'ring_id': 620}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733006179', 'ring_id': 715}, {'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733006188', 'ring_id': 56}]
-2024-11-30 16:36:33,566 - Sending write to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 16:36:33,568 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 16:36:33,569 - Sending write to fa24-cs425-6910.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 16:36:33,571 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 16:36:33,572 - Sent 84 bytes from data_buffer
-2024-11-30 16:36:33,572 - Sent 84 bytes from data_buffer
-2024-11-30 16:36:33,572 - File 'source_0_state' written successfully.
-2024-11-30 16:36:33,572 - Acknowledgment sent to client 'source_0_state'.
-2024-11-30 16:36:33,574 - Sent 84 bytes from data_buffer
-2024-11-30 16:36:33,574 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'write_complete'}
-2024-11-30 16:36:33,574 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 16:36:33,574 - Sent 94 bytes from data_buffer
-2024-11-30 16:36:33,575 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'write_complete'}
-2024-11-30 16:36:33,576 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 16:36:33,576 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'write_complete'}
-2024-11-30 16:36:33,576 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 59384)>
-2024-11-30 16:36:33,576 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'write_complete'}
-2024-11-30 16:36:33,577 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_state'.
-2024-11-30 16:36:33,577 - Sent 94 bytes from data_buffer
-2024-11-30 16:36:33,580 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 16:36:33,580 - Next 3 nodes after 618: [{'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733006184', 'ring_id': 620}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733006179', 'ring_id': 715}, {'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733006188', 'ring_id': 56}]
-2024-11-30 16:36:33,580 - Sending read to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 16:36:33,582 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 16:36:33,583 - Sending read to fa24-cs425-6910.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 16:36:33,584 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 16:36:33,584 - Sent 73 bytes from data_buffer
-2024-11-30 16:36:33,585 - Sent 73 bytes from data_buffer
-2024-11-30 16:36:33,585 - File 'source_0_state' and append log 'rainstorm_source_0--source_0_state.log' read successfully.
-2024-11-30 16:36:33,585 - File read succsefully source_0_state
-2024-11-30 16:36:33,585 - Acknowledgment sent to client with status 'read_complete' for file 'source_0_state'.
-2024-11-30 16:36:33,585 - Sent 73 bytes from data_buffer
-2024-11-30 16:36:33,586 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
-2024-11-30 16:36:33,587 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 16:36:33,587 - Sent 102 bytes from data_buffer
-2024-11-30 16:36:33,587 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
-2024-11-30 16:36:33,587 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 16:36:33,588 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
-2024-11-30 16:36:33,589 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 59406)>
-2024-11-30 16:36:33,589 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
-2024-11-30 16:36:33,589 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_state'.
-2024-11-30 16:36:33,591 - Sent 102 bytes from data_buffer
-2024-11-30 16:36:33,593 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 16:36:33,593 - Next 3 nodes after 382: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733006181', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733006180', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'ring_id': 578}]
-2024-11-30 16:36:33,593 - Sending write to fa24-cs425-6903.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 16:36:33,595 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 16:36:33,595 - Sending write to fa24-cs425-6909.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 16:36:33,596 - Sent 82 bytes from data_buffer
-2024-11-30 16:36:33,596 - Sent 82 bytes from data_buffer
-2024-11-30 16:36:33,597 - Sent 82 bytes from data_buffer
-2024-11-30 16:36:33,597 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'write_complete'}
-2024-11-30 16:36:33,597 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 16:36:33,598 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'write_complete'}
-2024-11-30 16:36:33,598 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 16:36:33,598 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'write_complete'}
-2024-11-30 16:36:33,598 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 59412)>
-2024-11-30 16:36:33,598 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'write_complete'}
-2024-11-30 16:36:33,599 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_ack'.
-2024-11-30 16:36:33,601 - Sent 92 bytes from data_buffer
-2024-11-30 16:36:33,603 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 16:36:33,603 - Next 3 nodes after 382: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733006181', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733006180', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'ring_id': 578}]
-2024-11-30 16:36:33,603 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 16:36:33,605 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 16:36:33,606 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 16:36:33,607 - Sent 71 bytes from data_buffer
-2024-11-30 16:36:33,607 - Sent 71 bytes from data_buffer
-2024-11-30 16:36:33,608 - Sent 71 bytes from data_buffer
-2024-11-30 16:36:33,608 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 16:36:33,608 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 16:36:33,608 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 16:36:33,608 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 16:36:33,608 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 16:36:33,609 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 59420)>
-2024-11-30 16:36:33,609 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 16:36:33,609 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_ack'.
-2024-11-30 16:36:33,611 - Sent 100 bytes from data_buffer
-2024-11-30 16:36:33,615 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 16:36:33,615 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733006181', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733006180', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'ring_id': 578}]
-2024-11-30 16:36:33,615 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 16:36:33,616 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 16:36:33,617 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 16:36:33,618 - Sent 74 bytes from data_buffer
-2024-11-30 16:36:33,618 - Sent 74 bytes from data_buffer
-2024-11-30 16:36:33,618 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'file_not_found'}
-2024-11-30 16:36:33,619 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 16:36:33,619 - Sent 74 bytes from data_buffer
-2024-11-30 16:36:33,620 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'file_not_found'}
-2024-11-30 16:36:33,620 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 16:36:33,620 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'file_not_found'}
-2024-11-30 16:36:33,620 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 59434)>
-2024-11-30 16:36:33,620 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'file_not_found'}
-2024-11-30 16:36:33,621 - Acknowledgment sent to rainstorm_source_0 for file 'business_19.txt'.
-2024-11-30 16:36:33,623 - Sent 95 bytes from data_buffer
-2024-11-30 16:36:39,284 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
-2024-11-30 16:36:39,285 - Actually sent ping out
-2024-11-30 16:36:39,289 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
-2024-11-30 16:36:39,289 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
-2024-11-30 16:36:39,289 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
-2024-11-30 16:36:39,311 - Monitoring membership list started
-2024-11-30 16:36:40,563 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
-2024-11-30 16:36:40,564 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
-2024-11-30 16:36:41,231 - Recieved a ping from ('fa24-cs425-6903.cs.illinois.edu', 5000)
-2024-11-30 16:36:41,232 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
-2024-11-30 16:36:41,313 - No change in membership list
-2024-11-30 16:36:43,316 - No change in membership list
-2024-11-30 16:36:44,088 - Recieved a ping from ('fa24-cs425-6906.cs.illinois.edu', 5000)
-2024-11-30 16:36:44,089 - Sent ack to ('fa24-cs425-6906.cs.illinois.edu', 5000)
-2024-11-30 16:36:45,228 - Recieved a ping from ('fa24-cs425-6907.cs.illinois.edu', 5000)
-2024-11-30 16:36:45,229 - Sent ack to ('fa24-cs425-6907.cs.illinois.edu', 5000)
-2024-11-30 16:36:45,318 - No change in membership list
-2024-11-30 16:36:46,335 - Recieved a ping from ('fa24-cs425-6908.cs.illinois.edu', 5000)
-2024-11-30 16:36:46,335 - Sent ack to ('fa24-cs425-6908.cs.illinois.edu', 5000)
-2024-11-30 16:36:47,321 - No change in membership list
-2024-11-30 16:36:47,467 - Recieved a ping from ('fa24-cs425-6909.cs.illinois.edu', 5000)
-2024-11-30 16:36:47,468 - Sent ack to ('fa24-cs425-6909.cs.illinois.edu', 5000)
-2024-11-30 16:36:48,582 - Recieved a ping from ('fa24-cs425-6910.cs.illinois.edu', 5000)
-2024-11-30 16:36:48,583 - Sent ack to ('fa24-cs425-6910.cs.illinois.edu', 5000)
-2024-11-30 16:36:49,323 - No change in membership list
-2024-11-30 16:36:51,325 - No change in membership list
-2024-11-30 16:36:53,327 - No change in membership list
-2024-11-30 16:36:55,330 - No change in membership list
-2024-11-30 16:36:57,332 - No change in membership list
-2024-11-30 16:36:59,304 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
-2024-11-30 16:36:59,305 - Actually sent ping out
-2024-11-30 16:36:59,307 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
-2024-11-30 16:36:59,307 - Popped this from queue: {'node_ip': 'fa24-cs425-6903.cs.illinois.edu', 'node_port': 5000}
-2024-11-30 16:36:59,307 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
-2024-11-30 16:36:59,334 - No change in membership list
-2024-11-30 16:37:01,336 - No change in membership list
-2024-11-30 16:37:03,338 - No change in membership list
-2024-11-30 16:37:05,339 - No change in membership list
-2024-11-30 16:37:07,341 - No change in membership list
-2024-11-30 16:37:09,344 - No change in membership list
-2024-11-30 16:37:11,346 - No change in membership list
-2024-11-30 16:37:13,348 - No change in membership list
-2024-11-30 16:37:15,351 - No change in membership list
-2024-11-30 16:37:17,353 - No change in membership list
-2024-11-30 16:37:18,824 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 16:37:18,825 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733006181', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733006180', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'ring_id': 578}]
-2024-11-30 16:37:18,825 - Sending write to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 16:37:18,827 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 16:37:18,829 - Sending write to fa24-cs425-6909.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 16:37:18,830 - Sent 1362 bytes from data_buffer
-2024-11-30 16:37:18,830 - Sent 1362 bytes from data_buffer
-2024-11-30 16:37:18,831 - Sent 1362 bytes from data_buffer
-2024-11-30 16:37:18,832 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
-2024-11-30 16:37:18,832 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 16:37:18,832 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
-2024-11-30 16:37:18,834 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 16:37:18,834 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
-2024-11-30 16:37:18,835 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 54670)>
-2024-11-30 16:37:18,835 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
-2024-11-30 16:37:18,835 - Acknowledgment sent to client_1 for file 'business_19.txt'.
-2024-11-30 16:37:18,836 - Sent 85 bytes from data_buffer
-2024-11-30 16:37:19,318 - Pinging fa24-cs425-6906.cs.illinois.edu:5000
-2024-11-30 16:37:19,319 - Actually sent ping out
-2024-11-30 16:37:19,321 - Received ack from ('fa24-cs425-6906.cs.illinois.edu', 5000)
-2024-11-30 16:37:19,321 - Popped this from queue: {'node_ip': 'fa24-cs425-6906.cs.illinois.edu', 'node_port': 5000}
-2024-11-30 16:37:19,321 - Node fa24-cs425-6906.cs.illinois.edu:5000 is alive
-2024-11-30 16:37:19,355 - No change in membership list
-2024-11-30 16:37:21,357 - No change in membership list
-2024-11-30 16:37:23,359 - No change in membership list
-2024-11-30 16:37:25,317 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 16:37:25,318 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733006181', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733006180', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'ring_id': 578}]
-2024-11-30 16:37:25,319 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 16:37:25,320 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 16:37:25,322 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 16:37:25,323 - Sent 64 bytes from data_buffer
-2024-11-30 16:37:25,323 - Sent 64 bytes from data_buffer
-2024-11-30 16:37:25,324 - Sent 64 bytes from data_buffer
-2024-11-30 16:37:25,324 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 16:37:25,324 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 16:37:25,326 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 16:37:25,326 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 16:37:25,326 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 16:37:25,326 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40424)>
-2024-11-30 16:37:25,327 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 16:37:25,327 - Acknowledgment sent to client_1 for file 'business_19.txt'.
-2024-11-30 16:37:25,327 - Sent 1381 bytes from data_buffer
-2024-11-30 16:37:25,361 - No change in membership list
-2024-11-30 16:37:27,363 - No change in membership list
-2024-11-30 16:37:27,725 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 16:37:27,726 - Next 3 nodes after 618: [{'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733006184', 'ring_id': 620}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733006179', 'ring_id': 715}, {'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733006188', 'ring_id': 56}]
-2024-11-30 16:37:27,726 - Sending write to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 16:37:27,727 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 16:37:27,729 - Sending write to fa24-cs425-6910.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 16:37:27,731 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 16:37:27,731 - Sent 84 bytes from data_buffer
-2024-11-30 16:37:27,731 - Sent 84 bytes from data_buffer
-2024-11-30 16:37:27,731 - File 'source_0_state' already exists. Not writing to it.
-2024-11-30 16:37:27,731 - Acknowledgment sent to client 'source_0_state'.
-2024-11-30 16:37:27,732 - Sent 84 bytes from data_buffer
-2024-11-30 16:37:27,732 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'file_exists'}
-2024-11-30 16:37:27,732 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 16:37:27,732 - Sent 91 bytes from data_buffer
-2024-11-30 16:37:27,732 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'file_exists'}
-2024-11-30 16:37:27,733 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 16:37:27,734 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'file_exists'}
-2024-11-30 16:37:27,734 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40428)>
-2024-11-30 16:37:27,734 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'file_exists'}
-2024-11-30 16:37:27,734 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_state'.
-2024-11-30 16:37:27,736 - Sent 91 bytes from data_buffer
-2024-11-30 16:37:27,739 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 16:37:27,739 - Next 3 nodes after 618: [{'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733006184', 'ring_id': 620}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733006179', 'ring_id': 715}, {'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733006188', 'ring_id': 56}]
-2024-11-30 16:37:27,739 - Sending read to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 16:37:27,740 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 16:37:27,741 - Sending read to fa24-cs425-6910.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 16:37:27,742 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 16:37:27,743 - Sent 73 bytes from data_buffer
-2024-11-30 16:37:27,743 - Sent 73 bytes from data_buffer
-2024-11-30 16:37:27,743 - File 'source_0_state' and append log 'rainstorm_source_0--source_0_state.log' read successfully.
-2024-11-30 16:37:27,743 - File read succsefully source_0_state
-2024-11-30 16:37:27,744 - Acknowledgment sent to client with status 'read_complete' for file 'source_0_state'.
-2024-11-30 16:37:27,744 - Sent 73 bytes from data_buffer
-2024-11-30 16:37:27,745 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
-2024-11-30 16:37:27,745 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 16:37:27,745 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
-2024-11-30 16:37:27,745 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 16:37:27,746 - Sent 102 bytes from data_buffer
-2024-11-30 16:37:27,746 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
-2024-11-30 16:37:27,746 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40452)>
-2024-11-30 16:37:27,746 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
-2024-11-30 16:37:27,746 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_state'.
-2024-11-30 16:37:27,749 - Sent 102 bytes from data_buffer
-2024-11-30 16:37:27,751 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 16:37:27,751 - Next 3 nodes after 382: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733006181', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733006180', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'ring_id': 578}]
-2024-11-30 16:37:27,752 - Sending write to fa24-cs425-6903.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 16:37:27,753 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 16:37:27,754 - Sending write to fa24-cs425-6909.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 16:37:27,754 - Sent 82 bytes from data_buffer
-2024-11-30 16:37:27,754 - Sent 82 bytes from data_buffer
-2024-11-30 16:37:27,755 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'file_exists'}
-2024-11-30 16:37:27,755 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 16:37:27,755 - Sent 82 bytes from data_buffer
-2024-11-30 16:37:27,755 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'file_exists'}
-2024-11-30 16:37:27,755 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 16:37:27,757 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'file_exists'}
-2024-11-30 16:37:27,757 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40458)>
-2024-11-30 16:37:27,758 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'file_exists'}
-2024-11-30 16:37:27,758 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_ack'.
-2024-11-30 16:37:27,759 - Sent 89 bytes from data_buffer
-2024-11-30 16:37:27,761 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 16:37:27,761 - Next 3 nodes after 382: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733006181', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733006180', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'ring_id': 578}]
-2024-11-30 16:37:27,761 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 16:37:27,763 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 16:37:27,764 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file source_0_ack
-2024-11-30 16:37:27,765 - Sent 71 bytes from data_buffer
-2024-11-30 16:37:27,765 - Sent 71 bytes from data_buffer
-2024-11-30 16:37:27,765 - Sent 71 bytes from data_buffer
-2024-11-30 16:37:27,765 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 16:37:27,766 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 16:37:27,766 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 16:37:27,766 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 16:37:27,768 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 16:37:27,768 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40464)>
-2024-11-30 16:37:27,768 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 16:37:27,768 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_ack'.
-2024-11-30 16:37:27,769 - Sent 100 bytes from data_buffer
-2024-11-30 16:37:27,773 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 16:37:27,773 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733006181', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733006180', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733006187', 'ring_id': 578}]
-2024-11-30 16:37:27,773 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 16:37:27,774 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 16:37:27,775 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file business_19.txt
-2024-11-30 16:37:27,776 - Sent 74 bytes from data_buffer
-2024-11-30 16:37:27,776 - Sent 74 bytes from data_buffer
-2024-11-30 16:37:27,776 - Sent 74 bytes from data_buffer
-2024-11-30 16:37:27,776 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 16:37:27,778 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 16:37:27,778 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 16:37:27,778 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 16:37:27,778 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 16:37:27,779 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40480)>
-2024-11-30 16:37:27,779 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 16:37:27,779 - Acknowledgment sent to rainstorm_source_0 for file 'business_19.txt'.
-2024-11-30 16:37:27,784 - Sent 1391 bytes from data_buffer
-2024-11-30 16:37:27,787 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 16:37:27,787 - Next 3 nodes after 618: [{'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733006184', 'ring_id': 620}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733006179', 'ring_id': 715}, {'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733006188', 'ring_id': 56}]
-2024-11-30 16:37:27,787 - Sending add to fa24-cs425-6906.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 16:37:27,788 - Sending add to fa24-cs425-6901.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 16:37:27,789 - Sending add to fa24-cs425-6910.cs.illinois.edu:5001 for file source_0_state
-2024-11-30 16:37:27,791 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-11-30 16:37:27,791 - Sent 1674 bytes from data_buffer
-2024-11-30 16:37:27,791 - Sent 1674 bytes from data_buffer
-2024-11-30 16:37:27,791 - Stated append action to file source_0_state
-2024-11-30 16:37:27,793 - Performed append action to 'rainstorm_source_0--source_0_state.log' with sequence number 1.
-2024-11-30 16:37:27,793 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_state'.
-2024-11-30 16:37:27,794 - Sent 1674 bytes from data_buffer
-2024-11-30 16:37:27,794 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 1}
-2024-11-30 16:37:27,794 - Quorum not yet met, received ack from 1 replicas
-2024-11-30 16:37:27,794 - Sent 110 bytes from data_buffer
-2024-11-30 16:37:27,794 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 1}
-2024-11-30 16:37:27,795 - Quorum not yet met, received ack from 2 replicas
-2024-11-30 16:37:27,796 - Acknowledgment received for file info: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 1}
-2024-11-30 16:37:27,796 - client_socket_to_use <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40488)>
-2024-11-30 16:37:27,796 - file_info received from replicas: {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 1}
-2024-11-30 16:37:27,796 - Acknowledgment sent to rainstorm_source_0 for file 'source_0_state'.
-2024-11-30 16:37:27,799 - Sent 110 bytes from data_buffer
-2024-11-30 16:37:29,365 - No change in membership list
-2024-11-30 16:37:31,370 - No change in membership list
-2024-11-30 16:37:33,372 - No change in membership list
-2024-11-30 16:37:35,374 - No change in membership list
-2024-11-30 16:37:37,376 - No change in membership list
-2024-11-30 16:37:39,335 - Pinging fa24-cs425-6907.cs.illinois.edu:5000
-2024-11-30 16:37:39,336 - Actually sent ping out
-2024-11-30 16:37:39,340 - Received ack from ('fa24-cs425-6907.cs.illinois.edu', 5000)
-2024-11-30 16:37:39,340 - Popped this from queue: {'node_ip': 'fa24-cs425-6907.cs.illinois.edu', 'node_port': 5000}
-2024-11-30 16:37:39,340 - Node fa24-cs425-6907.cs.illinois.edu:5000 is alive
-2024-11-30 16:37:39,378 - No change in membership list
-2024-11-30 16:37:41,381 - No change in membership list
-2024-11-30 16:37:43,383 - No change in membership list
-2024-11-30 16:37:45,385 - No change in membership list
-2024-11-30 16:37:47,388 - No change in membership list
-2024-11-30 16:37:49,390 - No change in membership list
+2024-12-01 00:46:54,316 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-12-01 00:46:54,319 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-12-01 00:46:54,321 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-12-01 00:46:54,326 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-12-01 00:46:54,328 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-12-01 00:46:54,329 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733035614', 'status': 'LIVE', 'inc_num': 0}]
+2024-12-01 00:46:55,568 - New join request received from fa24-cs425-6902.cs.illinois.edu:5000
+2024-12-01 00:46:55,569 - Sent membership list to fa24-cs425-6902.cs.illinois.edu:5000
+2024-12-01 00:46:56,601 - New join request received from fa24-cs425-6903.cs.illinois.edu:5000
+2024-12-01 00:46:56,603 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 403, 'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733035616', 'status': 'LIVE', 'inc_num': 0}
+2024-12-01 00:46:56,605 - Sent membership list to fa24-cs425-6903.cs.illinois.edu:5000
+2024-12-01 00:46:57,637 - Logging initialized for Rainstorm worker
+2024-12-01 00:46:57,743 - New join request received from fa24-cs425-6904.cs.illinois.edu:5000
+2024-12-01 00:46:57,745 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 859, 'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1733035617', 'status': 'LIVE', 'inc_num': 0}
+2024-12-01 00:46:57,746 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 859, 'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1733035617', 'status': 'LIVE', 'inc_num': 0}
+2024-12-01 00:46:57,747 - Sent membership list to fa24-cs425-6904.cs.illinois.edu:5000
+2024-12-01 00:47:14,323 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-12-01 00:47:14,324 - Actually sent ping out
+2024-12-01 00:47:14,327 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-12-01 00:47:14,327 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-12-01 00:47:14,328 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-12-01 00:47:14,339 - Monitoring membership list started
+2024-12-01 00:47:15,584 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-12-01 00:47:15,585 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-12-01 00:47:16,341 - No change in membership list
+2024-12-01 00:47:16,617 - Recieved a ping from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-12-01 00:47:16,618 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-12-01 00:47:17,657 - Rainstorm Tasks: Monitoring membership list started
+2024-12-01 00:47:17,760 - Recieved a ping from ('fa24-cs425-6904.cs.illinois.edu', 5000)
+2024-12-01 00:47:17,760 - Sent ack to ('fa24-cs425-6904.cs.illinois.edu', 5000)
+2024-12-01 00:47:18,344 - No change in membership list
+2024-12-01 00:47:19,659 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:20,346 - No change in membership list
+2024-12-01 00:47:21,661 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:22,348 - No change in membership list
+2024-12-01 00:47:23,664 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:24,023 - ['op1', 'op2']
+2024-12-01 00:47:24,047 - min server extracted: (0, 'fa24-cs425-6902.cs.illinois.edu') with load 0
+2024-12-01 00:47:24,047 - min server extracted: (0, 'fa24-cs425-6903.cs.illinois.edu') with load 0
+2024-12-01 00:47:24,047 - min server extracted: (0, 'fa24-cs425-6904.cs.illinois.edu') with load 0
+2024-12-01 00:47:24,047 - min server extracted: (1, 'fa24-cs425-6902.cs.illinois.edu') with load 1
+2024-12-01 00:47:24,047 - min server extracted: (1, 'fa24-cs425-6903.cs.illinois.edu') with load 1
+2024-12-01 00:47:24,048 - min server extracted: (1, 'fa24-cs425-6904.cs.illinois.edu') with load 1
+2024-12-01 00:47:24,048 - min server extracted: (2, 'fa24-cs425-6902.cs.illinois.edu') with load 2
+2024-12-01 00:47:24,048 - min server extracted: (2, 'fa24-cs425-6903.cs.illinois.edu') with load 2
+2024-12-01 00:47:24,049 - min server extracted: (2, 'fa24-cs425-6904.cs.illinois.edu') with load 2
+2024-12-01 00:47:24,350 - No change in membership list
+2024-12-01 00:47:25,666 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:26,352 - No change in membership list
+2024-12-01 00:47:27,668 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:28,354 - No change in membership list
+2024-12-01 00:47:29,670 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:30,356 - No change in membership list
+2024-12-01 00:47:31,673 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:32,359 - No change in membership list
+2024-12-01 00:47:33,675 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:34,343 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-12-01 00:47:34,345 - Actually sent ping out
+2024-12-01 00:47:34,348 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-12-01 00:47:34,348 - Popped this from queue: {'node_ip': 'fa24-cs425-6903.cs.illinois.edu', 'node_port': 5000}
+2024-12-01 00:47:34,348 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
+2024-12-01 00:47:34,361 - No change in membership list
+2024-12-01 00:47:35,677 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:36,363 - No change in membership list
+2024-12-01 00:47:37,680 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:38,365 - No change in membership list
+2024-12-01 00:47:39,682 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:40,367 - No change in membership list
+2024-12-01 00:47:41,684 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:42,370 - No change in membership list
+2024-12-01 00:47:43,686 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:43,760 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
+2024-12-01 00:47:43,763 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
+2024-12-01 00:47:43,764 - File 'op2_0_state' written successfully.
+2024-12-01 00:47:43,764 - Acknowledgment sent to client 'op2_0_state'.
+2024-12-01 00:47:43,766 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
+2024-12-01 00:47:43,767 - Sent 88 bytes from data_buffer
+2024-12-01 00:47:43,767 - File 'op2_0_state' already exists. Not writing to it.
+2024-12-01 00:47:43,767 - Acknowledgment sent to client 'op2_0_state'.
+2024-12-01 00:47:43,767 - File 'op2_0_state' already exists. Not writing to it.
+2024-12-01 00:47:43,767 - Acknowledgment sent to client 'op2_0_state'.
+2024-12-01 00:47:43,767 - Sent 85 bytes from data_buffer
+2024-12-01 00:47:43,768 - Sent 85 bytes from data_buffer
+2024-12-01 00:47:43,795 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-01 00:47:43,797 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-01 00:47:43,800 - File 'op2_2_state' written successfully.
+2024-12-01 00:47:43,800 - Acknowledgment sent to client 'op2_2_state'.
+2024-12-01 00:47:43,801 - File 'op2_2_state' already exists. Not writing to it.
+2024-12-01 00:47:43,801 - Acknowledgment sent to client 'op2_2_state'.
+2024-12-01 00:47:43,801 - Sent 88 bytes from data_buffer
+2024-12-01 00:47:43,801 - Sent 85 bytes from data_buffer
+2024-12-01 00:47:43,807 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-01 00:47:43,809 - File 'op2_2_state' already exists. Not writing to it.
+2024-12-01 00:47:43,809 - Acknowledgment sent to client 'op2_2_state'.
+2024-12-01 00:47:43,809 - Sent 85 bytes from data_buffer
+2024-12-01 00:47:43,814 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-01 00:47:43,816 - File 'op2_2_state' and append log 'rainstorm_op2_2--op2_2_state.log' read successfully.
+2024-12-01 00:47:43,816 - File read succsefully op2_2_state
+2024-12-01 00:47:43,816 - Acknowledgment sent to client with status 'read_complete' for file 'op2_2_state'.
+2024-12-01 00:47:43,817 - Sent 96 bytes from data_buffer
+2024-12-01 00:47:43,819 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-01 00:47:43,823 - File 'op2_2_state' and append log 'rainstorm_op2_2--op2_2_state.log' read successfully.
+2024-12-01 00:47:43,823 - File read succsefully op2_2_state
+2024-12-01 00:47:43,823 - Acknowledgment sent to client with status 'read_complete' for file 'op2_2_state'.
+2024-12-01 00:47:43,823 - Sent 96 bytes from data_buffer
+2024-12-01 00:47:43,830 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-01 00:47:43,832 - File 'op2_2_ack' written successfully.
+2024-12-01 00:47:43,832 - Acknowledgment sent to client 'op2_2_ack'.
+2024-12-01 00:47:43,832 - Sent 86 bytes from data_buffer
+2024-12-01 00:47:43,840 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-01 00:47:43,842 - File 'op2_2_ack' already exists. Not writing to it.
+2024-12-01 00:47:43,843 - Acknowledgment sent to client 'op2_2_ack'.
+2024-12-01 00:47:43,844 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-01 00:47:43,844 - Sent 83 bytes from data_buffer
+2024-12-01 00:47:43,844 - File 'op2_2_ack' and append log 'rainstorm_op2_2--op2_2_ack.log' read successfully.
+2024-12-01 00:47:43,844 - File read succsefully op2_2_ack
+2024-12-01 00:47:43,844 - Acknowledgment sent to client with status 'read_complete' for file 'op2_2_ack'.
+2024-12-01 00:47:43,845 - Sent 94 bytes from data_buffer
+2024-12-01 00:47:44,173 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-01 00:47:44,175 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-01 00:47:44,177 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-01 00:47:44,178 - File 'op2_1_state' written successfully.
+2024-12-01 00:47:44,178 - Acknowledgment sent to client 'op2_1_state'.
+2024-12-01 00:47:44,179 - File 'op2_1_state' already exists. Not writing to it.
+2024-12-01 00:47:44,179 - Acknowledgment sent to client 'op2_1_state'.
+2024-12-01 00:47:44,179 - Sent 88 bytes from data_buffer
+2024-12-01 00:47:44,179 - File 'op2_1_state' already exists. Not writing to it.
+2024-12-01 00:47:44,179 - Acknowledgment sent to client 'op2_1_state'.
+2024-12-01 00:47:44,179 - Sent 85 bytes from data_buffer
+2024-12-01 00:47:44,179 - Sent 85 bytes from data_buffer
+2024-12-01 00:47:44,372 - No change in membership list
+2024-12-01 00:47:45,689 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:46,373 - No change in membership list
+2024-12-01 00:47:47,691 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:48,375 - No change in membership list
+2024-12-01 00:47:49,693 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:50,377 - No change in membership list
+2024-12-01 00:47:51,695 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:52,379 - No change in membership list
+2024-12-01 00:47:53,697 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:54,347 - Pinging fa24-cs425-6904.cs.illinois.edu:5000
+2024-12-01 00:47:54,348 - Actually sent ping out
+2024-12-01 00:47:54,350 - Received ack from ('fa24-cs425-6904.cs.illinois.edu', 5000)
+2024-12-01 00:47:54,350 - Popped this from queue: {'node_ip': 'fa24-cs425-6904.cs.illinois.edu', 'node_port': 5000}
+2024-12-01 00:47:54,350 - Node fa24-cs425-6904.cs.illinois.edu:5000 is alive
+2024-12-01 00:47:54,381 - No change in membership list
+2024-12-01 00:47:55,700 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:56,383 - No change in membership list
+2024-12-01 00:47:57,702 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:47:58,386 - No change in membership list
+2024-12-01 00:47:59,705 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:00,389 - No change in membership list
+2024-12-01 00:48:01,707 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:02,391 - No change in membership list
+2024-12-01 00:48:03,709 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:04,394 - No change in membership list
+2024-12-01 00:48:05,712 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:06,396 - No change in membership list
+2024-12-01 00:48:07,714 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:08,399 - No change in membership list
+2024-12-01 00:48:09,715 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:10,401 - No change in membership list
+2024-12-01 00:48:11,717 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:12,403 - No change in membership list
+2024-12-01 00:48:13,719 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:14,363 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-12-01 00:48:14,365 - Actually sent ping out
+2024-12-01 00:48:14,405 - Membership lists are not equal
+2024-12-01 00:48:14,405 - No change in membership list
+2024-12-01 00:48:15,623 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-12-01 00:48:15,624 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-12-01 00:48:15,721 - Rainstorm Tasks: Membership lists are not equal
+2024-12-01 00:48:15,721 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:16,406 - No change in membership list
+2024-12-01 00:48:17,723 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:17,808 - Recieved a ping from ('fa24-cs425-6904.cs.illinois.edu', 5000)
+2024-12-01 00:48:17,809 - Updated status of fa24-cs425-6903.cs.illinois.edu_5000_1733035616 to DEAD
+2024-12-01 00:48:17,809 - [{'ring_id': 403, 'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733035616', 'status': 'DEAD', 'inc_num': 0}, {'ring_id': 444, 'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733035615', 'status': 'LIVE', 'inc_num': 0}, {'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733035614', 'status': 'LIVE', 'inc_num': 0}, {'ring_id': 859, 'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1733035617', 'status': 'LIVE', 'inc_num': 0}]
+2024-12-01 00:48:17,809 - Node fa24-cs425-6903.cs.illinois.edu_5000_1733035616 marked as DEAD with suspicion flag off
+2024-12-01 00:48:17,810 - Sent ack to ('fa24-cs425-6904.cs.illinois.edu', 5000)
+2024-12-01 00:48:18,408 - Membership lists are not equal
+2024-12-01 00:48:18,409 - Hydfs node marked as DEAD: {'ring_id': 403, 'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733035616', 'status': 'DEAD', 'inc_num': 0}
+2024-12-01 00:48:19,724 - Rainstorm Tasks: Membership lists are not equal
+2024-12-01 00:48:19,724 - Rainstorm Tasks: Hydfs node marked as DEAD: {'ring_id': 403, 'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733035616', 'status': 'DEAD', 'inc_num': 0}
+2024-12-01 00:48:19,724 - handle node change called for action: dead
+2024-12-01 00:48:19,725 - Node {'ring_id': 403, 'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733035616', 'status': 'DEAD', 'inc_num': 0} is dead. Reassigning tasks...
+2024-12-01 00:48:19,725 - New Task Mapping: {'source': {0: 'fa24-cs425-6902.cs.illinois.edu:5002', 2: 'fa24-cs425-6904.cs.illinois.edu:5002', 1: 'fa24-cs425-6902.cs.illinois.edu:5005'}, 'op1': {0: 'fa24-cs425-6902.cs.illinois.edu:5003', 2: 'fa24-cs425-6904.cs.illinois.edu:5003', 1: 'fa24-cs425-6903.cs.illinois.edu:5005'}, 'op2': {0: 'fa24-cs425-6902.cs.illinois.edu:5004', 2: 'fa24-cs425-6904.cs.illinois.edu:5004', 1: 'fa24-cs425-6904.cs.illinois.edu:5005'}}
+2024-12-01 00:48:19,725 - Task mapping updated successfully.
+2024-12-01 00:48:19,725 - Starting worker on new node:port pair: fa24-cs425-6902.cs.illinois.edu:5005
+2024-12-01 00:48:20,489 - Starting worker on new node:port pair: fa24-cs425-6903.cs.illinois.edu:5005
+2024-12-01 00:48:21,775 - Starting worker on new node:port pair: fa24-cs425-6904.cs.illinois.edu:5005
+2024-12-01 00:48:22,520 - Failed to notify worker fa24-cs425-6902.cs.illinois.edu:5002: name 'worker_pb2_grpc' is not defined
+2024-12-01 00:48:22,520 - Failed to notify worker fa24-cs425-6903.cs.illinois.edu:5002: name 'worker_pb2_grpc' is not defined
+2024-12-01 00:48:22,521 - Failed to notify worker fa24-cs425-6904.cs.illinois.edu:5002: name 'worker_pb2_grpc' is not defined
+2024-12-01 00:48:22,521 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:24,366 - Queue was empty after timeout
+2024-12-01 00:48:24,366 - Node fa24-cs425-6903.cs.illinois.edu:5000 did not respond, marking as DEAD
+2024-12-01 00:48:24,366 - Updated status of fa24-cs425-6903.cs.illinois.edu_5000_1733035616 to DEAD
+2024-12-01 00:48:24,366 - [{'ring_id': 403, 'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733035616', 'status': 'DEAD', 'inc_num': 0}, {'ring_id': 444, 'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733035615', 'status': 'LIVE', 'inc_num': 0}, {'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733035614', 'status': 'LIVE', 'inc_num': 0}, {'ring_id': 859, 'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1733035617', 'status': 'LIVE', 'inc_num': 0}]
+2024-12-01 00:48:24,523 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:26,525 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:28,527 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:30,529 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:32,532 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:34,370 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-12-01 00:48:34,370 - Actually sent ping out
+2024-12-01 00:48:34,373 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-12-01 00:48:34,373 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-12-01 00:48:34,373 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-12-01 00:48:34,534 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:36,536 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:38,539 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:40,541 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:42,543 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:44,546 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:46,548 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:48,551 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:50,553 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:52,555 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:54,387 - Pinging fa24-cs425-6904.cs.illinois.edu:5000
+2024-12-01 00:48:54,388 - Actually sent ping out
+2024-12-01 00:48:54,390 - Received ack from ('fa24-cs425-6904.cs.illinois.edu', 5000)
+2024-12-01 00:48:54,390 - Popped this from queue: {'node_ip': 'fa24-cs425-6904.cs.illinois.edu', 'node_port': 5000}
+2024-12-01 00:48:54,390 - Node fa24-cs425-6904.cs.illinois.edu:5000 is alive
+2024-12-01 00:48:54,557 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:55,644 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-12-01 00:48:55,646 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-12-01 00:48:56,560 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:58,441 - Dead node fa24-cs425-6903.cs.illinois.edu_5000_1733035616 - 1st predecessor: fa24-cs425-6904.cs.illinois.edu_5000_1733035617, 2nd predecessor: fa24-cs425-6901.cs.illinois.edu_5000_1733035614, 1st successor: fa24-cs425-6902.cs.illinois.edu_5000_1733035615
+2024-12-01 00:48:58,442 - Added fa24-cs425-6904.cs.illinois.edu_5000_1733035617 to replica list
+2024-12-01 00:48:58,442 - Added fa24-cs425-6902.cs.illinois.edu_5000_1733035615 to replica list
+2024-12-01 00:48:58,442 - Next 1 nodes after 486: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733035614', 'ring_id': 715}]
+2024-12-01 00:48:58,443 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733035614
+2024-12-01 00:48:58,443 - I am a predecessor/succesor of dead node fa24-cs425-6903.cs.illinois.edu_5000_1733035616 with ring_id 403
+2024-12-01 00:48:58,443 - Sending write_replica to fa24-cs425-6904.cs.illinois.edu:5001 for file op2_0_state
+2024-12-01 00:48:58,445 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file op2_0_state
+2024-12-01 00:48:58,447 - Next 1 nodes after 639: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733035614', 'ring_id': 715}]
+2024-12-01 00:48:58,447 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733035614
+2024-12-01 00:48:58,447 - I am a predecessor/succesor of dead node fa24-cs425-6903.cs.illinois.edu_5000_1733035616 with ring_id 403
+2024-12-01 00:48:58,447 - Sending write_replica to fa24-cs425-6904.cs.illinois.edu:5001 for file op2_2_state
+2024-12-01 00:48:58,448 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file op2_2_state
+2024-12-01 00:48:58,449 - Next 1 nodes after 240: [{'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733035615', 'ring_id': 444}]
+2024-12-01 00:48:58,449 - Primary replica is fa24-cs425-6902.cs.illinois.edu_5000_1733035615
+2024-12-01 00:48:58,449 - Next 1 nodes after 886: [{'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733035615', 'ring_id': 444}]
+2024-12-01 00:48:58,449 - Primary replica is fa24-cs425-6902.cs.illinois.edu_5000_1733035615
+2024-12-01 00:48:58,449 - No change in membership list
+2024-12-01 00:48:58,562 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:48:59,232 - Sent 68 bytes from data_buffer
+2024-12-01 00:48:59,232 - Sent 68 bytes from data_buffer
+2024-12-01 00:48:59,232 - Sent 68 bytes from data_buffer
+2024-12-01 00:48:59,232 - Sent 68 bytes from data_buffer
+2024-12-01 00:49:00,452 - No change in membership list
+2024-12-01 00:49:00,564 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:49:02,454 - No change in membership list
+2024-12-01 00:49:02,566 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:49:04,456 - No change in membership list
+2024-12-01 00:49:04,569 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:49:05,550 - Shutting down Rainstorm Leader ...
+2024-12-01 00:49:05,550 - Shutting down HyDFS...
+2024-12-01 00:49:05,550 - Listener thread is still running; proceeding to join...
+2024-12-01 00:49:06,459 - No change in membership list
+2024-12-01 00:49:06,571 - Rainstorm Tasks: No change in membership list
+2024-12-01 00:49:09,241 - Listener thread joined successfully.
+2024-12-01 00:49:09,241 - Membership thread is not running, skipping join.
+2024-12-01 00:49:09,241 - Shutting down...
+2024-12-01 00:49:14,397 - Node shut down gracefully.
+2024-12-01 00:49:14,397 - HyDFS Node shut down gracefully.
+2024-12-01 00:49:14,397 - Rainstorm Leader shut down gracefully.

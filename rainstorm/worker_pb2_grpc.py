@@ -40,6 +40,11 @@ class WorkerStub(object):
                 request_serializer=worker__pb2.DataRequest.SerializeToString,
                 response_deserializer=worker__pb2.AckResponse.FromString,
                 _registered_method=True)
+        self.UpdateMapping = channel.unary_unary(
+                '/worker.Worker/UpdateMapping',
+                request_serializer=worker__pb2.MappingUpdateRequest.SerializeToString,
+                response_deserializer=worker__pb2.UpdateResponse.FromString,
+                _registered_method=True)
 
 
 class WorkerServicer(object):
@@ -53,6 +58,13 @@ class WorkerServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def UpdateMapping(self, request, context):
+        """Updates the mapping and responds with a status.
+        """
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
 
 def add_WorkerServicer_to_server(servicer, server):
     rpc_method_handlers = {
@@ -60,6 +72,11 @@ def add_WorkerServicer_to_server(servicer, server):
                     servicer.RecvData,
                     request_deserializer=worker__pb2.DataRequest.FromString,
                     response_serializer=worker__pb2.AckResponse.SerializeToString,
+            ),
+            'UpdateMapping': grpc.unary_unary_rpc_method_handler(
+                    servicer.UpdateMapping,
+                    request_deserializer=worker__pb2.MappingUpdateRequest.FromString,
+                    response_serializer=worker__pb2.UpdateResponse.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -90,6 +107,33 @@ class Worker(object):
             '/worker.Worker/RecvData',
             worker__pb2.DataRequest.SerializeToString,
             worker__pb2.AckResponse.FromString,
+            options,
+            channel_credentials,
+            insecure,
+            call_credentials,
+            compression,
+            wait_for_ready,
+            timeout,
+            metadata,
+            _registered_method=True)
+
+    @staticmethod
+    def UpdateMapping(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(
+            request,
+            target,
+            '/worker.Worker/UpdateMapping',
+            worker__pb2.MappingUpdateRequest.SerializeToString,
+            worker__pb2.UpdateResponse.FromString,
             options,
             channel_credentials,
             insecure,
