@@ -1,268 +1,933 @@
-2024-12-01 00:46:54,316 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
-2024-12-01 00:46:54,319 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
-2024-12-01 00:46:54,321 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
-2024-12-01 00:46:54,326 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
-2024-12-01 00:46:54,328 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
-2024-12-01 00:46:54,329 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733035614', 'status': 'LIVE', 'inc_num': 0}]
-2024-12-01 00:46:55,568 - New join request received from fa24-cs425-6902.cs.illinois.edu:5000
-2024-12-01 00:46:55,569 - Sent membership list to fa24-cs425-6902.cs.illinois.edu:5000
-2024-12-01 00:46:56,601 - New join request received from fa24-cs425-6903.cs.illinois.edu:5000
-2024-12-01 00:46:56,603 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 403, 'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733035616', 'status': 'LIVE', 'inc_num': 0}
-2024-12-01 00:46:56,605 - Sent membership list to fa24-cs425-6903.cs.illinois.edu:5000
-2024-12-01 00:46:57,637 - Logging initialized for Rainstorm worker
-2024-12-01 00:46:57,743 - New join request received from fa24-cs425-6904.cs.illinois.edu:5000
-2024-12-01 00:46:57,745 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 859, 'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1733035617', 'status': 'LIVE', 'inc_num': 0}
-2024-12-01 00:46:57,746 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 859, 'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1733035617', 'status': 'LIVE', 'inc_num': 0}
-2024-12-01 00:46:57,747 - Sent membership list to fa24-cs425-6904.cs.illinois.edu:5000
-2024-12-01 00:47:14,323 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
-2024-12-01 00:47:14,324 - Actually sent ping out
-2024-12-01 00:47:14,327 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
-2024-12-01 00:47:14,327 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
-2024-12-01 00:47:14,328 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
-2024-12-01 00:47:14,339 - Monitoring membership list started
-2024-12-01 00:47:15,584 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
-2024-12-01 00:47:15,585 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
-2024-12-01 00:47:16,341 - No change in membership list
-2024-12-01 00:47:16,617 - Recieved a ping from ('fa24-cs425-6903.cs.illinois.edu', 5000)
-2024-12-01 00:47:16,618 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
-2024-12-01 00:47:17,657 - Rainstorm Tasks: Monitoring membership list started
-2024-12-01 00:47:17,760 - Recieved a ping from ('fa24-cs425-6904.cs.illinois.edu', 5000)
-2024-12-01 00:47:17,760 - Sent ack to ('fa24-cs425-6904.cs.illinois.edu', 5000)
-2024-12-01 00:47:18,344 - No change in membership list
-2024-12-01 00:47:19,659 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:20,346 - No change in membership list
-2024-12-01 00:47:21,661 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:22,348 - No change in membership list
-2024-12-01 00:47:23,664 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:24,023 - ['op1', 'op2']
-2024-12-01 00:47:24,047 - min server extracted: (0, 'fa24-cs425-6902.cs.illinois.edu') with load 0
-2024-12-01 00:47:24,047 - min server extracted: (0, 'fa24-cs425-6903.cs.illinois.edu') with load 0
-2024-12-01 00:47:24,047 - min server extracted: (0, 'fa24-cs425-6904.cs.illinois.edu') with load 0
-2024-12-01 00:47:24,047 - min server extracted: (1, 'fa24-cs425-6902.cs.illinois.edu') with load 1
-2024-12-01 00:47:24,047 - min server extracted: (1, 'fa24-cs425-6903.cs.illinois.edu') with load 1
-2024-12-01 00:47:24,048 - min server extracted: (1, 'fa24-cs425-6904.cs.illinois.edu') with load 1
-2024-12-01 00:47:24,048 - min server extracted: (2, 'fa24-cs425-6902.cs.illinois.edu') with load 2
-2024-12-01 00:47:24,048 - min server extracted: (2, 'fa24-cs425-6903.cs.illinois.edu') with load 2
-2024-12-01 00:47:24,049 - min server extracted: (2, 'fa24-cs425-6904.cs.illinois.edu') with load 2
-2024-12-01 00:47:24,350 - No change in membership list
-2024-12-01 00:47:25,666 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:26,352 - No change in membership list
-2024-12-01 00:47:27,668 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:28,354 - No change in membership list
-2024-12-01 00:47:29,670 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:30,356 - No change in membership list
-2024-12-01 00:47:31,673 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:32,359 - No change in membership list
-2024-12-01 00:47:33,675 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:34,343 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
-2024-12-01 00:47:34,345 - Actually sent ping out
-2024-12-01 00:47:34,348 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
-2024-12-01 00:47:34,348 - Popped this from queue: {'node_ip': 'fa24-cs425-6903.cs.illinois.edu', 'node_port': 5000}
-2024-12-01 00:47:34,348 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
-2024-12-01 00:47:34,361 - No change in membership list
-2024-12-01 00:47:35,677 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:36,363 - No change in membership list
-2024-12-01 00:47:37,680 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:38,365 - No change in membership list
-2024-12-01 00:47:39,682 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:40,367 - No change in membership list
-2024-12-01 00:47:41,684 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:42,370 - No change in membership list
-2024-12-01 00:47:43,686 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:43,760 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-01 00:47:43,763 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-01 00:47:43,764 - File 'op2_0_state' written successfully.
-2024-12-01 00:47:43,764 - Acknowledgment sent to client 'op2_0_state'.
-2024-12-01 00:47:43,766 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-01 00:47:43,767 - Sent 88 bytes from data_buffer
-2024-12-01 00:47:43,767 - File 'op2_0_state' already exists. Not writing to it.
-2024-12-01 00:47:43,767 - Acknowledgment sent to client 'op2_0_state'.
-2024-12-01 00:47:43,767 - File 'op2_0_state' already exists. Not writing to it.
-2024-12-01 00:47:43,767 - Acknowledgment sent to client 'op2_0_state'.
-2024-12-01 00:47:43,767 - Sent 85 bytes from data_buffer
-2024-12-01 00:47:43,768 - Sent 85 bytes from data_buffer
-2024-12-01 00:47:43,795 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-01 00:47:43,797 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-01 00:47:43,800 - File 'op2_2_state' written successfully.
-2024-12-01 00:47:43,800 - Acknowledgment sent to client 'op2_2_state'.
-2024-12-01 00:47:43,801 - File 'op2_2_state' already exists. Not writing to it.
-2024-12-01 00:47:43,801 - Acknowledgment sent to client 'op2_2_state'.
-2024-12-01 00:47:43,801 - Sent 88 bytes from data_buffer
-2024-12-01 00:47:43,801 - Sent 85 bytes from data_buffer
-2024-12-01 00:47:43,807 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-01 00:47:43,809 - File 'op2_2_state' already exists. Not writing to it.
-2024-12-01 00:47:43,809 - Acknowledgment sent to client 'op2_2_state'.
-2024-12-01 00:47:43,809 - Sent 85 bytes from data_buffer
-2024-12-01 00:47:43,814 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-01 00:47:43,816 - File 'op2_2_state' and append log 'rainstorm_op2_2--op2_2_state.log' read successfully.
-2024-12-01 00:47:43,816 - File read succsefully op2_2_state
-2024-12-01 00:47:43,816 - Acknowledgment sent to client with status 'read_complete' for file 'op2_2_state'.
-2024-12-01 00:47:43,817 - Sent 96 bytes from data_buffer
-2024-12-01 00:47:43,819 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-01 00:47:43,823 - File 'op2_2_state' and append log 'rainstorm_op2_2--op2_2_state.log' read successfully.
-2024-12-01 00:47:43,823 - File read succsefully op2_2_state
-2024-12-01 00:47:43,823 - Acknowledgment sent to client with status 'read_complete' for file 'op2_2_state'.
-2024-12-01 00:47:43,823 - Sent 96 bytes from data_buffer
-2024-12-01 00:47:43,830 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-01 00:47:43,832 - File 'op2_2_ack' written successfully.
-2024-12-01 00:47:43,832 - Acknowledgment sent to client 'op2_2_ack'.
-2024-12-01 00:47:43,832 - Sent 86 bytes from data_buffer
-2024-12-01 00:47:43,840 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-01 00:47:43,842 - File 'op2_2_ack' already exists. Not writing to it.
-2024-12-01 00:47:43,843 - Acknowledgment sent to client 'op2_2_ack'.
-2024-12-01 00:47:43,844 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-01 00:47:43,844 - Sent 83 bytes from data_buffer
-2024-12-01 00:47:43,844 - File 'op2_2_ack' and append log 'rainstorm_op2_2--op2_2_ack.log' read successfully.
-2024-12-01 00:47:43,844 - File read succsefully op2_2_ack
-2024-12-01 00:47:43,844 - Acknowledgment sent to client with status 'read_complete' for file 'op2_2_ack'.
-2024-12-01 00:47:43,845 - Sent 94 bytes from data_buffer
-2024-12-01 00:47:44,173 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-01 00:47:44,175 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-01 00:47:44,177 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-01 00:47:44,178 - File 'op2_1_state' written successfully.
-2024-12-01 00:47:44,178 - Acknowledgment sent to client 'op2_1_state'.
-2024-12-01 00:47:44,179 - File 'op2_1_state' already exists. Not writing to it.
-2024-12-01 00:47:44,179 - Acknowledgment sent to client 'op2_1_state'.
-2024-12-01 00:47:44,179 - Sent 88 bytes from data_buffer
-2024-12-01 00:47:44,179 - File 'op2_1_state' already exists. Not writing to it.
-2024-12-01 00:47:44,179 - Acknowledgment sent to client 'op2_1_state'.
-2024-12-01 00:47:44,179 - Sent 85 bytes from data_buffer
-2024-12-01 00:47:44,179 - Sent 85 bytes from data_buffer
-2024-12-01 00:47:44,372 - No change in membership list
-2024-12-01 00:47:45,689 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:46,373 - No change in membership list
-2024-12-01 00:47:47,691 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:48,375 - No change in membership list
-2024-12-01 00:47:49,693 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:50,377 - No change in membership list
-2024-12-01 00:47:51,695 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:52,379 - No change in membership list
-2024-12-01 00:47:53,697 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:54,347 - Pinging fa24-cs425-6904.cs.illinois.edu:5000
-2024-12-01 00:47:54,348 - Actually sent ping out
-2024-12-01 00:47:54,350 - Received ack from ('fa24-cs425-6904.cs.illinois.edu', 5000)
-2024-12-01 00:47:54,350 - Popped this from queue: {'node_ip': 'fa24-cs425-6904.cs.illinois.edu', 'node_port': 5000}
-2024-12-01 00:47:54,350 - Node fa24-cs425-6904.cs.illinois.edu:5000 is alive
-2024-12-01 00:47:54,381 - No change in membership list
-2024-12-01 00:47:55,700 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:56,383 - No change in membership list
-2024-12-01 00:47:57,702 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:47:58,386 - No change in membership list
-2024-12-01 00:47:59,705 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:00,389 - No change in membership list
-2024-12-01 00:48:01,707 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:02,391 - No change in membership list
-2024-12-01 00:48:03,709 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:04,394 - No change in membership list
-2024-12-01 00:48:05,712 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:06,396 - No change in membership list
-2024-12-01 00:48:07,714 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:08,399 - No change in membership list
-2024-12-01 00:48:09,715 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:10,401 - No change in membership list
-2024-12-01 00:48:11,717 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:12,403 - No change in membership list
-2024-12-01 00:48:13,719 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:14,363 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
-2024-12-01 00:48:14,365 - Actually sent ping out
-2024-12-01 00:48:14,405 - Membership lists are not equal
-2024-12-01 00:48:14,405 - No change in membership list
-2024-12-01 00:48:15,623 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
-2024-12-01 00:48:15,624 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
-2024-12-01 00:48:15,721 - Rainstorm Tasks: Membership lists are not equal
-2024-12-01 00:48:15,721 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:16,406 - No change in membership list
-2024-12-01 00:48:17,723 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:17,808 - Recieved a ping from ('fa24-cs425-6904.cs.illinois.edu', 5000)
-2024-12-01 00:48:17,809 - Updated status of fa24-cs425-6903.cs.illinois.edu_5000_1733035616 to DEAD
-2024-12-01 00:48:17,809 - [{'ring_id': 403, 'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733035616', 'status': 'DEAD', 'inc_num': 0}, {'ring_id': 444, 'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733035615', 'status': 'LIVE', 'inc_num': 0}, {'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733035614', 'status': 'LIVE', 'inc_num': 0}, {'ring_id': 859, 'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1733035617', 'status': 'LIVE', 'inc_num': 0}]
-2024-12-01 00:48:17,809 - Node fa24-cs425-6903.cs.illinois.edu_5000_1733035616 marked as DEAD with suspicion flag off
-2024-12-01 00:48:17,810 - Sent ack to ('fa24-cs425-6904.cs.illinois.edu', 5000)
-2024-12-01 00:48:18,408 - Membership lists are not equal
-2024-12-01 00:48:18,409 - Hydfs node marked as DEAD: {'ring_id': 403, 'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733035616', 'status': 'DEAD', 'inc_num': 0}
-2024-12-01 00:48:19,724 - Rainstorm Tasks: Membership lists are not equal
-2024-12-01 00:48:19,724 - Rainstorm Tasks: Hydfs node marked as DEAD: {'ring_id': 403, 'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733035616', 'status': 'DEAD', 'inc_num': 0}
-2024-12-01 00:48:19,724 - handle node change called for action: dead
-2024-12-01 00:48:19,725 - Node {'ring_id': 403, 'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733035616', 'status': 'DEAD', 'inc_num': 0} is dead. Reassigning tasks...
-2024-12-01 00:48:19,725 - New Task Mapping: {'source': {0: 'fa24-cs425-6902.cs.illinois.edu:5002', 2: 'fa24-cs425-6904.cs.illinois.edu:5002', 1: 'fa24-cs425-6902.cs.illinois.edu:5005'}, 'op1': {0: 'fa24-cs425-6902.cs.illinois.edu:5003', 2: 'fa24-cs425-6904.cs.illinois.edu:5003', 1: 'fa24-cs425-6903.cs.illinois.edu:5005'}, 'op2': {0: 'fa24-cs425-6902.cs.illinois.edu:5004', 2: 'fa24-cs425-6904.cs.illinois.edu:5004', 1: 'fa24-cs425-6904.cs.illinois.edu:5005'}}
-2024-12-01 00:48:19,725 - Task mapping updated successfully.
-2024-12-01 00:48:19,725 - Starting worker on new node:port pair: fa24-cs425-6902.cs.illinois.edu:5005
-2024-12-01 00:48:20,489 - Starting worker on new node:port pair: fa24-cs425-6903.cs.illinois.edu:5005
-2024-12-01 00:48:21,775 - Starting worker on new node:port pair: fa24-cs425-6904.cs.illinois.edu:5005
-2024-12-01 00:48:22,520 - Failed to notify worker fa24-cs425-6902.cs.illinois.edu:5002: name 'worker_pb2_grpc' is not defined
-2024-12-01 00:48:22,520 - Failed to notify worker fa24-cs425-6903.cs.illinois.edu:5002: name 'worker_pb2_grpc' is not defined
-2024-12-01 00:48:22,521 - Failed to notify worker fa24-cs425-6904.cs.illinois.edu:5002: name 'worker_pb2_grpc' is not defined
-2024-12-01 00:48:22,521 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:24,366 - Queue was empty after timeout
-2024-12-01 00:48:24,366 - Node fa24-cs425-6903.cs.illinois.edu:5000 did not respond, marking as DEAD
-2024-12-01 00:48:24,366 - Updated status of fa24-cs425-6903.cs.illinois.edu_5000_1733035616 to DEAD
-2024-12-01 00:48:24,366 - [{'ring_id': 403, 'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733035616', 'status': 'DEAD', 'inc_num': 0}, {'ring_id': 444, 'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733035615', 'status': 'LIVE', 'inc_num': 0}, {'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733035614', 'status': 'LIVE', 'inc_num': 0}, {'ring_id': 859, 'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1733035617', 'status': 'LIVE', 'inc_num': 0}]
-2024-12-01 00:48:24,523 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:26,525 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:28,527 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:30,529 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:32,532 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:34,370 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
-2024-12-01 00:48:34,370 - Actually sent ping out
-2024-12-01 00:48:34,373 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
-2024-12-01 00:48:34,373 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
-2024-12-01 00:48:34,373 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
-2024-12-01 00:48:34,534 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:36,536 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:38,539 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:40,541 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:42,543 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:44,546 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:46,548 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:48,551 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:50,553 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:52,555 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:54,387 - Pinging fa24-cs425-6904.cs.illinois.edu:5000
-2024-12-01 00:48:54,388 - Actually sent ping out
-2024-12-01 00:48:54,390 - Received ack from ('fa24-cs425-6904.cs.illinois.edu', 5000)
-2024-12-01 00:48:54,390 - Popped this from queue: {'node_ip': 'fa24-cs425-6904.cs.illinois.edu', 'node_port': 5000}
-2024-12-01 00:48:54,390 - Node fa24-cs425-6904.cs.illinois.edu:5000 is alive
-2024-12-01 00:48:54,557 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:55,644 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
-2024-12-01 00:48:55,646 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
-2024-12-01 00:48:56,560 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:58,441 - Dead node fa24-cs425-6903.cs.illinois.edu_5000_1733035616 - 1st predecessor: fa24-cs425-6904.cs.illinois.edu_5000_1733035617, 2nd predecessor: fa24-cs425-6901.cs.illinois.edu_5000_1733035614, 1st successor: fa24-cs425-6902.cs.illinois.edu_5000_1733035615
-2024-12-01 00:48:58,442 - Added fa24-cs425-6904.cs.illinois.edu_5000_1733035617 to replica list
-2024-12-01 00:48:58,442 - Added fa24-cs425-6902.cs.illinois.edu_5000_1733035615 to replica list
-2024-12-01 00:48:58,442 - Next 1 nodes after 486: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733035614', 'ring_id': 715}]
-2024-12-01 00:48:58,443 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733035614
-2024-12-01 00:48:58,443 - I am a predecessor/succesor of dead node fa24-cs425-6903.cs.illinois.edu_5000_1733035616 with ring_id 403
-2024-12-01 00:48:58,443 - Sending write_replica to fa24-cs425-6904.cs.illinois.edu:5001 for file op2_0_state
-2024-12-01 00:48:58,445 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file op2_0_state
-2024-12-01 00:48:58,447 - Next 1 nodes after 639: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733035614', 'ring_id': 715}]
-2024-12-01 00:48:58,447 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733035614
-2024-12-01 00:48:58,447 - I am a predecessor/succesor of dead node fa24-cs425-6903.cs.illinois.edu_5000_1733035616 with ring_id 403
-2024-12-01 00:48:58,447 - Sending write_replica to fa24-cs425-6904.cs.illinois.edu:5001 for file op2_2_state
-2024-12-01 00:48:58,448 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file op2_2_state
-2024-12-01 00:48:58,449 - Next 1 nodes after 240: [{'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733035615', 'ring_id': 444}]
-2024-12-01 00:48:58,449 - Primary replica is fa24-cs425-6902.cs.illinois.edu_5000_1733035615
-2024-12-01 00:48:58,449 - Next 1 nodes after 886: [{'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733035615', 'ring_id': 444}]
-2024-12-01 00:48:58,449 - Primary replica is fa24-cs425-6902.cs.illinois.edu_5000_1733035615
-2024-12-01 00:48:58,449 - No change in membership list
-2024-12-01 00:48:58,562 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:48:59,232 - Sent 68 bytes from data_buffer
-2024-12-01 00:48:59,232 - Sent 68 bytes from data_buffer
-2024-12-01 00:48:59,232 - Sent 68 bytes from data_buffer
-2024-12-01 00:48:59,232 - Sent 68 bytes from data_buffer
-2024-12-01 00:49:00,452 - No change in membership list
-2024-12-01 00:49:00,564 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:49:02,454 - No change in membership list
-2024-12-01 00:49:02,566 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:49:04,456 - No change in membership list
-2024-12-01 00:49:04,569 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:49:05,550 - Shutting down Rainstorm Leader ...
-2024-12-01 00:49:05,550 - Shutting down HyDFS...
-2024-12-01 00:49:05,550 - Listener thread is still running; proceeding to join...
-2024-12-01 00:49:06,459 - No change in membership list
-2024-12-01 00:49:06,571 - Rainstorm Tasks: No change in membership list
-2024-12-01 00:49:09,241 - Listener thread joined successfully.
-2024-12-01 00:49:09,241 - Membership thread is not running, skipping join.
-2024-12-01 00:49:09,241 - Shutting down...
-2024-12-01 00:49:14,397 - Node shut down gracefully.
-2024-12-01 00:49:14,397 - HyDFS Node shut down gracefully.
-2024-12-01 00:49:14,397 - Rainstorm Leader shut down gracefully.
+2024-12-02 12:59:30,502 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-12-02 12:59:30,505 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-12-02 12:59:30,506 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-12-02 12:59:30,512 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-12-02 12:59:30,514 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-12-02 12:59:30,517 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733165970', 'status': 'LIVE', 'inc_num': 0}]
+2024-12-02 12:59:31,390 - New join request received from fa24-cs425-6902.cs.illinois.edu:5000
+2024-12-02 12:59:31,391 - Sent membership list to fa24-cs425-6902.cs.illinois.edu:5000
+2024-12-02 12:59:32,126 - New join request received from fa24-cs425-6903.cs.illinois.edu:5000
+2024-12-02 12:59:32,127 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 403, 'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733165972', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:32,127 - Sent membership list to fa24-cs425-6903.cs.illinois.edu:5000
+2024-12-02 12:59:33,785 - New join request received from fa24-cs425-6904.cs.illinois.edu:5000
+2024-12-02 12:59:33,785 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 859, 'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1733165973', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:33,786 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 859, 'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1733165973', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:33,787 - Sent membership list to fa24-cs425-6904.cs.illinois.edu:5000
+2024-12-02 12:59:34,831 - New join request received from fa24-cs425-6905.cs.illinois.edu:5000
+2024-12-02 12:59:34,832 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 845, 'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1733165974', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:34,833 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 845, 'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1733165974', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:34,833 - Notified fa24-cs425-6904.cs.illinois.edu:5000 of new node {'ring_id': 845, 'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1733165974', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:34,834 - Sent membership list to fa24-cs425-6905.cs.illinois.edu:5000
+2024-12-02 12:59:36,677 - New join request received from fa24-cs425-6906.cs.illinois.edu:5000
+2024-12-02 12:59:36,679 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 620, 'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733165976', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:36,680 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 620, 'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733165976', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:36,682 - Notified fa24-cs425-6904.cs.illinois.edu:5000 of new node {'ring_id': 620, 'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733165976', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:36,683 - Notified fa24-cs425-6905.cs.illinois.edu:5000 of new node {'ring_id': 620, 'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1733165976', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:36,684 - Sent membership list to fa24-cs425-6906.cs.illinois.edu:5000
+2024-12-02 12:59:37,809 - New join request received from fa24-cs425-6907.cs.illinois.edu:5000
+2024-12-02 12:59:37,810 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 140, 'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1733165977', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:37,813 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 140, 'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1733165977', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:37,813 - Notified fa24-cs425-6904.cs.illinois.edu:5000 of new node {'ring_id': 140, 'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1733165977', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:37,814 - Notified fa24-cs425-6905.cs.illinois.edu:5000 of new node {'ring_id': 140, 'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1733165977', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:37,815 - Notified fa24-cs425-6906.cs.illinois.edu:5000 of new node {'ring_id': 140, 'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1733165977', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:37,815 - Sent membership list to fa24-cs425-6907.cs.illinois.edu:5000
+2024-12-02 12:59:38,960 - New join request received from fa24-cs425-6908.cs.illinois.edu:5000
+2024-12-02 12:59:38,961 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1733165978', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:38,962 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1733165978', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:38,962 - Notified fa24-cs425-6904.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1733165978', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:38,963 - Notified fa24-cs425-6905.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1733165978', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:38,963 - Notified fa24-cs425-6906.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1733165978', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:38,964 - Notified fa24-cs425-6907.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1733165978', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:38,964 - Sent membership list to fa24-cs425-6908.cs.illinois.edu:5000
+2024-12-02 12:59:40,067 - New join request received from fa24-cs425-6909.cs.illinois.edu:5000
+2024-12-02 12:59:40,068 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733165980', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:40,068 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733165980', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:40,069 - Notified fa24-cs425-6904.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733165980', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:40,069 - Notified fa24-cs425-6905.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733165980', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:40,070 - Notified fa24-cs425-6906.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733165980', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:40,070 - Notified fa24-cs425-6907.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733165980', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:40,071 - Notified fa24-cs425-6908.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733165980', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:40,072 - Sent membership list to fa24-cs425-6909.cs.illinois.edu:5000
+2024-12-02 12:59:41,099 - Logging initialized for Rainstorm Leader
+2024-12-02 12:59:41,210 - New join request received from fa24-cs425-6910.cs.illinois.edu:5000
+2024-12-02 12:59:41,212 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733165981', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:41,213 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733165981', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:41,215 - Notified fa24-cs425-6904.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733165981', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:41,216 - Notified fa24-cs425-6905.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733165981', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:41,217 - Notified fa24-cs425-6906.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733165981', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:41,218 - Notified fa24-cs425-6907.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733165981', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:41,219 - Notified fa24-cs425-6908.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733165981', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:41,220 - Notified fa24-cs425-6909.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1733165981', 'status': 'LIVE', 'inc_num': 0}
+2024-12-02 12:59:41,220 - Sent membership list to fa24-cs425-6910.cs.illinois.edu:5000
+2024-12-02 12:59:50,521 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-12-02 12:59:50,525 - Monitoring membership list started
+2024-12-02 12:59:50,611 - Actually sent ping out
+2024-12-02 12:59:50,614 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-12-02 12:59:50,614 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 12:59:50,614 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-12-02 12:59:51,409 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-12-02 12:59:51,409 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-12-02 12:59:52,143 - Recieved a ping from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-12-02 12:59:52,144 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-12-02 12:59:52,527 - No change in membership list
+2024-12-02 12:59:53,798 - Recieved a ping from ('fa24-cs425-6904.cs.illinois.edu', 5000)
+2024-12-02 12:59:53,799 - Sent ack to ('fa24-cs425-6904.cs.illinois.edu', 5000)
+2024-12-02 12:59:54,530 - No change in membership list
+2024-12-02 12:59:54,846 - Recieved a ping from ('fa24-cs425-6905.cs.illinois.edu', 5000)
+2024-12-02 12:59:54,847 - Sent ack to ('fa24-cs425-6905.cs.illinois.edu', 5000)
+2024-12-02 12:59:56,532 - No change in membership list
+2024-12-02 12:59:56,687 - Recieved a ping from ('fa24-cs425-6906.cs.illinois.edu', 5000)
+2024-12-02 12:59:56,689 - Sent ack to ('fa24-cs425-6906.cs.illinois.edu', 5000)
+2024-12-02 12:59:57,818 - Recieved a ping from ('fa24-cs425-6907.cs.illinois.edu', 5000)
+2024-12-02 12:59:57,819 - Sent ack to ('fa24-cs425-6907.cs.illinois.edu', 5000)
+2024-12-02 12:59:58,534 - No change in membership list
+2024-12-02 12:59:58,980 - Recieved a ping from ('fa24-cs425-6908.cs.illinois.edu', 5000)
+2024-12-02 12:59:58,982 - Sent ack to ('fa24-cs425-6908.cs.illinois.edu', 5000)
+2024-12-02 13:00:00,089 - Recieved a ping from ('fa24-cs425-6909.cs.illinois.edu', 5000)
+2024-12-02 13:00:00,091 - Sent ack to ('fa24-cs425-6909.cs.illinois.edu', 5000)
+2024-12-02 13:00:00,536 - No change in membership list
+2024-12-02 13:00:01,119 - Rainstorm Tasks: Monitoring membership list started
+2024-12-02 13:00:01,214 - Recieved a ping from ('fa24-cs425-6910.cs.illinois.edu', 5000)
+2024-12-02 13:00:01,216 - Sent ack to ('fa24-cs425-6910.cs.illinois.edu', 5000)
+2024-12-02 13:00:02,539 - No change in membership list
+2024-12-02 13:00:03,121 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:04,541 - No change in membership list
+2024-12-02 13:00:05,123 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:06,543 - No change in membership list
+2024-12-02 13:00:07,126 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:08,546 - No change in membership list
+2024-12-02 13:00:09,128 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:10,539 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-12-02 13:00:10,540 - Actually sent ping out
+2024-12-02 13:00:10,542 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-12-02 13:00:10,542 - Popped this from queue: {'node_ip': 'fa24-cs425-6903.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:00:10,542 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
+2024-12-02 13:00:10,548 - No change in membership list
+2024-12-02 13:00:11,131 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:12,550 - No change in membership list
+2024-12-02 13:00:13,133 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:14,552 - No change in membership list
+2024-12-02 13:00:15,136 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:16,552 - No change in membership list
+2024-12-02 13:00:17,138 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:18,555 - No change in membership list
+2024-12-02 13:00:19,141 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:20,557 - No change in membership list
+2024-12-02 13:00:21,005 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-12-02 13:00:21,006 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733165972', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733165971', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733165980', 'ring_id': 578}]
+2024-12-02 13:00:21,007 - Sending write to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
+2024-12-02 13:00:21,008 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
+2024-12-02 13:00:21,015 - Sending write to fa24-cs425-6909.cs.illinois.edu:5001 for file business_19.txt
+2024-12-02 13:00:21,017 - Sent 1362 bytes from data_buffer
+2024-12-02 13:00:21,017 - Sent 1362 bytes from data_buffer
+2024-12-02 13:00:21,017 - Sent 1362 bytes from data_buffer
+2024-12-02 13:00:21,018 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-12-02 13:00:21,018 - Quorum not yet met, received ack from 1 replicas
+2024-12-02 13:00:21,018 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-12-02 13:00:21,018 - Quorum not yet met, received ack from 2 replicas
+2024-12-02 13:00:21,019 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-12-02 13:00:21,019 - client_socket_to_use <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 43778)>
+2024-12-02 13:00:21,019 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-12-02 13:00:21,019 - Acknowledgment sent to client_1 for file 'business_19.txt'.
+2024-12-02 13:00:21,019 - Sent 85 bytes from data_buffer
+2024-12-02 13:00:21,143 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:22,560 - No change in membership list
+2024-12-02 13:00:23,145 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:24,074 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-12-02 13:00:24,075 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733165972', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733165971', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733165980', 'ring_id': 578}]
+2024-12-02 13:00:24,075 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
+2024-12-02 13:00:24,076 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
+2024-12-02 13:00:24,077 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file business_19.txt
+2024-12-02 13:00:24,079 - Sent 64 bytes from data_buffer
+2024-12-02 13:00:24,079 - Sent 64 bytes from data_buffer
+2024-12-02 13:00:24,079 - Sent 64 bytes from data_buffer
+2024-12-02 13:00:24,080 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-12-02 13:00:24,080 - Quorum not yet met, received ack from 1 replicas
+2024-12-02 13:00:24,080 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-12-02 13:00:24,081 - Quorum not yet met, received ack from 2 replicas
+2024-12-02 13:00:24,081 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-12-02 13:00:24,082 - client_socket_to_use <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 43788)>
+2024-12-02 13:00:24,082 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-12-02 13:00:24,082 - Acknowledgment sent to client_1 for file 'business_19.txt'.
+2024-12-02 13:00:24,082 - Sent 1381 bytes from data_buffer
+2024-12-02 13:00:24,562 - No change in membership list
+2024-12-02 13:00:25,147 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:26,564 - No change in membership list
+2024-12-02 13:00:27,150 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:28,567 - No change in membership list
+2024-12-02 13:00:29,152 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:30,547 - Pinging fa24-cs425-6904.cs.illinois.edu:5000
+2024-12-02 13:00:30,548 - Actually sent ping out
+2024-12-02 13:00:30,550 - Received ack from ('fa24-cs425-6904.cs.illinois.edu', 5000)
+2024-12-02 13:00:30,550 - Popped this from queue: {'node_ip': 'fa24-cs425-6904.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:00:30,551 - Node fa24-cs425-6904.cs.illinois.edu:5000 is alive
+2024-12-02 13:00:30,569 - No change in membership list
+2024-12-02 13:00:31,155 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:32,571 - No change in membership list
+2024-12-02 13:00:33,157 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:34,573 - No change in membership list
+2024-12-02 13:00:35,159 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:36,576 - No change in membership list
+2024-12-02 13:00:37,161 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:38,578 - No change in membership list
+2024-12-02 13:00:39,164 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:40,579 - No change in membership list
+2024-12-02 13:00:41,166 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:42,581 - No change in membership list
+2024-12-02 13:00:43,169 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:44,584 - No change in membership list
+2024-12-02 13:00:45,171 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:45,840 - ['op1', 'op2']
+2024-12-02 13:00:45,865 - min server extracted: (0, 'fa24-cs425-6902.cs.illinois.edu') with load 0
+2024-12-02 13:00:45,865 - min server extracted: (0, 'fa24-cs425-6903.cs.illinois.edu') with load 0
+2024-12-02 13:00:45,865 - min server extracted: (0, 'fa24-cs425-6904.cs.illinois.edu') with load 0
+2024-12-02 13:00:46,586 - No change in membership list
+2024-12-02 13:00:47,173 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:48,588 - No change in membership list
+2024-12-02 13:00:49,175 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:50,558 - Pinging fa24-cs425-6905.cs.illinois.edu:5000
+2024-12-02 13:00:50,561 - Actually sent ping out
+2024-12-02 13:00:50,565 - Received ack from ('fa24-cs425-6905.cs.illinois.edu', 5000)
+2024-12-02 13:00:50,565 - Popped this from queue: {'node_ip': 'fa24-cs425-6905.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:00:50,565 - Node fa24-cs425-6905.cs.illinois.edu:5000 is alive
+2024-12-02 13:00:50,589 - No change in membership list
+2024-12-02 13:00:51,177 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:52,591 - No change in membership list
+2024-12-02 13:00:53,179 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:54,594 - No change in membership list
+2024-12-02 13:00:55,181 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:56,595 - No change in membership list
+2024-12-02 13:00:57,184 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:00:58,597 - No change in membership list
+2024-12-02 13:00:59,186 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:00,599 - No change in membership list
+2024-12-02 13:01:01,188 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:02,601 - No change in membership list
+2024-12-02 13:01:03,190 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:04,603 - No change in membership list
+2024-12-02 13:01:05,193 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:06,605 - No change in membership list
+2024-12-02 13:01:07,195 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:08,608 - No change in membership list
+2024-12-02 13:01:09,198 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:10,571 - Pinging fa24-cs425-6906.cs.illinois.edu:5000
+2024-12-02 13:01:10,572 - Actually sent ping out
+2024-12-02 13:01:10,574 - Received ack from ('fa24-cs425-6906.cs.illinois.edu', 5000)
+2024-12-02 13:01:10,574 - Popped this from queue: {'node_ip': 'fa24-cs425-6906.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:01:10,574 - Node fa24-cs425-6906.cs.illinois.edu:5000 is alive
+2024-12-02 13:01:10,610 - No change in membership list
+2024-12-02 13:01:11,200 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:12,611 - No change in membership list
+2024-12-02 13:01:13,203 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:14,613 - No change in membership list
+2024-12-02 13:01:15,205 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:16,616 - No change in membership list
+2024-12-02 13:01:17,207 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:18,618 - No change in membership list
+2024-12-02 13:01:19,209 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:20,620 - No change in membership list
+2024-12-02 13:01:21,212 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:22,621 - No change in membership list
+2024-12-02 13:01:23,214 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:24,623 - No change in membership list
+2024-12-02 13:01:25,217 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:26,626 - No change in membership list
+2024-12-02 13:01:27,219 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:28,628 - No change in membership list
+2024-12-02 13:01:29,221 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:30,585 - Pinging fa24-cs425-6907.cs.illinois.edu:5000
+2024-12-02 13:01:30,586 - Actually sent ping out
+2024-12-02 13:01:30,588 - Received ack from ('fa24-cs425-6907.cs.illinois.edu', 5000)
+2024-12-02 13:01:30,588 - Popped this from queue: {'node_ip': 'fa24-cs425-6907.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:01:30,589 - Node fa24-cs425-6907.cs.illinois.edu:5000 is alive
+2024-12-02 13:01:30,630 - No change in membership list
+2024-12-02 13:01:31,224 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:32,633 - No change in membership list
+2024-12-02 13:01:33,225 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:34,635 - No change in membership list
+2024-12-02 13:01:35,228 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:36,637 - No change in membership list
+2024-12-02 13:01:37,228 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:38,640 - No change in membership list
+2024-12-02 13:01:39,231 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:40,642 - No change in membership list
+2024-12-02 13:01:41,233 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:42,644 - No change in membership list
+2024-12-02 13:01:43,236 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:44,647 - No change in membership list
+2024-12-02 13:01:45,238 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:46,649 - No change in membership list
+2024-12-02 13:01:47,240 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:48,650 - No change in membership list
+2024-12-02 13:01:49,243 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:50,603 - Pinging fa24-cs425-6908.cs.illinois.edu:5000
+2024-12-02 13:01:50,605 - Actually sent ping out
+2024-12-02 13:01:50,609 - Received ack from ('fa24-cs425-6908.cs.illinois.edu', 5000)
+2024-12-02 13:01:50,609 - Popped this from queue: {'node_ip': 'fa24-cs425-6908.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:01:50,609 - Node fa24-cs425-6908.cs.illinois.edu:5000 is alive
+2024-12-02 13:01:50,652 - No change in membership list
+2024-12-02 13:01:51,245 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:52,654 - No change in membership list
+2024-12-02 13:01:53,248 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:54,656 - No change in membership list
+2024-12-02 13:01:55,250 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:56,658 - No change in membership list
+2024-12-02 13:01:57,253 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:01:58,660 - No change in membership list
+2024-12-02 13:01:59,255 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:00,662 - No change in membership list
+2024-12-02 13:02:01,257 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:02,664 - No change in membership list
+2024-12-02 13:02:03,260 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:04,666 - No change in membership list
+2024-12-02 13:02:05,263 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:06,668 - No change in membership list
+2024-12-02 13:02:07,265 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:08,671 - No change in membership list
+2024-12-02 13:02:09,267 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:10,621 - Pinging fa24-cs425-6909.cs.illinois.edu:5000
+2024-12-02 13:02:10,622 - Actually sent ping out
+2024-12-02 13:02:10,624 - Received ack from ('fa24-cs425-6909.cs.illinois.edu', 5000)
+2024-12-02 13:02:10,624 - Popped this from queue: {'node_ip': 'fa24-cs425-6909.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:02:10,624 - Node fa24-cs425-6909.cs.illinois.edu:5000 is alive
+2024-12-02 13:02:10,673 - No change in membership list
+2024-12-02 13:02:11,270 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:12,674 - No change in membership list
+2024-12-02 13:02:13,273 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:14,676 - No change in membership list
+2024-12-02 13:02:15,274 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:16,679 - No change in membership list
+2024-12-02 13:02:17,276 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:18,681 - No change in membership list
+2024-12-02 13:02:19,278 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:20,682 - No change in membership list
+2024-12-02 13:02:21,280 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:22,684 - No change in membership list
+2024-12-02 13:02:23,282 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:24,686 - No change in membership list
+2024-12-02 13:02:25,284 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:26,688 - No change in membership list
+2024-12-02 13:02:27,285 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:28,690 - No change in membership list
+2024-12-02 13:02:29,287 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:30,637 - Pinging fa24-cs425-6910.cs.illinois.edu:5000
+2024-12-02 13:02:30,638 - Actually sent ping out
+2024-12-02 13:02:30,640 - Received ack from ('fa24-cs425-6910.cs.illinois.edu', 5000)
+2024-12-02 13:02:30,640 - Popped this from queue: {'node_ip': 'fa24-cs425-6910.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:02:30,640 - Node fa24-cs425-6910.cs.illinois.edu:5000 is alive
+2024-12-02 13:02:30,692 - No change in membership list
+2024-12-02 13:02:31,290 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:32,695 - No change in membership list
+2024-12-02 13:02:33,292 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:34,697 - No change in membership list
+2024-12-02 13:02:35,293 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:36,698 - No change in membership list
+2024-12-02 13:02:37,294 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:38,700 - No change in membership list
+2024-12-02 13:02:39,294 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:40,703 - No change in membership list
+2024-12-02 13:02:41,297 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:42,706 - No change in membership list
+2024-12-02 13:02:43,299 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:44,708 - No change in membership list
+2024-12-02 13:02:45,302 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:46,711 - No change in membership list
+2024-12-02 13:02:47,304 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:48,713 - No change in membership list
+2024-12-02 13:02:49,307 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:50,644 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-12-02 13:02:50,645 - Actually sent ping out
+2024-12-02 13:02:50,647 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-12-02 13:02:50,647 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:02:50,647 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-12-02 13:02:50,715 - Membership lists are not equal
+2024-12-02 13:02:50,719 - No change in membership list
+2024-12-02 13:02:51,309 - Rainstorm Tasks: Membership lists are not equal
+2024-12-02 13:02:51,310 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:51,498 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-12-02 13:02:51,499 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-12-02 13:02:52,721 - No change in membership list
+2024-12-02 13:02:53,312 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:54,723 - No change in membership list
+2024-12-02 13:02:55,314 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:56,726 - No change in membership list
+2024-12-02 13:02:57,316 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:02:58,728 - No change in membership list
+2024-12-02 13:02:59,318 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:00,731 - No change in membership list
+2024-12-02 13:03:01,321 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:02,732 - No change in membership list
+2024-12-02 13:03:03,322 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:04,734 - No change in membership list
+2024-12-02 13:03:05,324 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:06,737 - No change in membership list
+2024-12-02 13:03:07,328 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:08,739 - No change in membership list
+2024-12-02 13:03:09,330 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:10,658 - Pinging fa24-cs425-6904.cs.illinois.edu:5000
+2024-12-02 13:03:10,659 - Actually sent ping out
+2024-12-02 13:03:10,661 - Received ack from ('fa24-cs425-6904.cs.illinois.edu', 5000)
+2024-12-02 13:03:10,661 - Popped this from queue: {'node_ip': 'fa24-cs425-6904.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:03:10,661 - Node fa24-cs425-6904.cs.illinois.edu:5000 is alive
+2024-12-02 13:03:10,741 - No change in membership list
+2024-12-02 13:03:11,332 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:12,744 - No change in membership list
+2024-12-02 13:03:13,335 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:14,746 - No change in membership list
+2024-12-02 13:03:15,337 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:16,748 - No change in membership list
+2024-12-02 13:03:17,339 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:17,967 - Recieved a ping from ('fa24-cs425-6907.cs.illinois.edu', 5000)
+2024-12-02 13:03:17,969 - Sent ack to ('fa24-cs425-6907.cs.illinois.edu', 5000)
+2024-12-02 13:03:18,751 - No change in membership list
+2024-12-02 13:03:19,340 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:20,753 - No change in membership list
+2024-12-02 13:03:21,342 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:22,756 - No change in membership list
+2024-12-02 13:03:23,345 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:24,758 - No change in membership list
+2024-12-02 13:03:25,347 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:26,761 - No change in membership list
+2024-12-02 13:03:27,349 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:28,764 - No change in membership list
+2024-12-02 13:03:29,352 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:30,674 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-12-02 13:03:30,675 - Actually sent ping out
+2024-12-02 13:03:30,677 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-12-02 13:03:30,677 - Popped this from queue: {'node_ip': 'fa24-cs425-6903.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:03:30,677 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
+2024-12-02 13:03:30,766 - No change in membership list
+2024-12-02 13:03:31,352 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:32,768 - No change in membership list
+2024-12-02 13:03:33,354 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:34,771 - No change in membership list
+2024-12-02 13:03:35,357 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:36,773 - No change in membership list
+2024-12-02 13:03:37,359 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:38,776 - No change in membership list
+2024-12-02 13:03:39,360 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:40,190 - Recieved a ping from ('fa24-cs425-6909.cs.illinois.edu', 5000)
+2024-12-02 13:03:40,191 - Sent ack to ('fa24-cs425-6909.cs.illinois.edu', 5000)
+2024-12-02 13:03:40,779 - No change in membership list
+2024-12-02 13:03:41,362 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:42,781 - No change in membership list
+2024-12-02 13:03:43,365 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:44,784 - No change in membership list
+2024-12-02 13:03:45,368 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:46,786 - No change in membership list
+2024-12-02 13:03:47,370 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:48,788 - No change in membership list
+2024-12-02 13:03:49,372 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:50,694 - Pinging fa24-cs425-6907.cs.illinois.edu:5000
+2024-12-02 13:03:50,695 - Actually sent ping out
+2024-12-02 13:03:50,696 - Received ack from ('fa24-cs425-6907.cs.illinois.edu', 5000)
+2024-12-02 13:03:50,697 - Popped this from queue: {'node_ip': 'fa24-cs425-6907.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:03:50,697 - Node fa24-cs425-6907.cs.illinois.edu:5000 is alive
+2024-12-02 13:03:50,792 - No change in membership list
+2024-12-02 13:03:51,375 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:52,247 - Recieved a ping from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-12-02 13:03:52,248 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-12-02 13:03:52,794 - No change in membership list
+2024-12-02 13:03:53,377 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:54,796 - No change in membership list
+2024-12-02 13:03:55,380 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:56,799 - No change in membership list
+2024-12-02 13:03:57,382 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:03:58,801 - No change in membership list
+2024-12-02 13:03:59,385 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:00,803 - No change in membership list
+2024-12-02 13:04:01,356 - Recieved a ping from ('fa24-cs425-6910.cs.illinois.edu', 5000)
+2024-12-02 13:04:01,357 - Sent ack to ('fa24-cs425-6910.cs.illinois.edu', 5000)
+2024-12-02 13:04:01,387 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:02,806 - No change in membership list
+2024-12-02 13:04:03,390 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:04,808 - No change in membership list
+2024-12-02 13:04:05,392 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:06,811 - No change in membership list
+2024-12-02 13:04:07,394 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:08,813 - No change in membership list
+2024-12-02 13:04:09,397 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:10,714 - Pinging fa24-cs425-6908.cs.illinois.edu:5000
+2024-12-02 13:04:10,715 - Actually sent ping out
+2024-12-02 13:04:10,717 - Received ack from ('fa24-cs425-6908.cs.illinois.edu', 5000)
+2024-12-02 13:04:10,717 - Popped this from queue: {'node_ip': 'fa24-cs425-6908.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:04:10,717 - Node fa24-cs425-6908.cs.illinois.edu:5000 is alive
+2024-12-02 13:04:10,816 - No change in membership list
+2024-12-02 13:04:11,399 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:12,818 - No change in membership list
+2024-12-02 13:04:13,401 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:14,821 - No change in membership list
+2024-12-02 13:04:15,023 - Recieved a ping from ('fa24-cs425-6905.cs.illinois.edu', 5000)
+2024-12-02 13:04:15,026 - Sent ack to ('fa24-cs425-6905.cs.illinois.edu', 5000)
+2024-12-02 13:04:15,403 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:16,823 - No change in membership list
+2024-12-02 13:04:17,405 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:18,825 - No change in membership list
+2024-12-02 13:04:19,408 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:20,827 - No change in membership list
+2024-12-02 13:04:21,410 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:22,830 - No change in membership list
+2024-12-02 13:04:23,412 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:24,832 - No change in membership list
+2024-12-02 13:04:25,415 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:26,834 - No change in membership list
+2024-12-02 13:04:27,417 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:28,836 - No change in membership list
+2024-12-02 13:04:29,420 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:30,730 - Pinging fa24-cs425-6905.cs.illinois.edu:5000
+2024-12-02 13:04:30,732 - Actually sent ping out
+2024-12-02 13:04:30,735 - Received ack from ('fa24-cs425-6905.cs.illinois.edu', 5000)
+2024-12-02 13:04:30,735 - Popped this from queue: {'node_ip': 'fa24-cs425-6905.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:04:30,735 - Node fa24-cs425-6905.cs.illinois.edu:5000 is alive
+2024-12-02 13:04:30,838 - No change in membership list
+2024-12-02 13:04:31,422 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:32,841 - No change in membership list
+2024-12-02 13:04:33,425 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:33,932 - Recieved a ping from ('fa24-cs425-6904.cs.illinois.edu', 5000)
+2024-12-02 13:04:33,934 - Sent ack to ('fa24-cs425-6904.cs.illinois.edu', 5000)
+2024-12-02 13:04:34,842 - No change in membership list
+2024-12-02 13:04:35,426 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:36,844 - No change in membership list
+2024-12-02 13:04:36,880 - Recieved a ping from ('fa24-cs425-6906.cs.illinois.edu', 5000)
+2024-12-02 13:04:36,883 - Sent ack to ('fa24-cs425-6906.cs.illinois.edu', 5000)
+2024-12-02 13:04:37,428 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:38,847 - No change in membership list
+2024-12-02 13:04:39,182 - Recieved a ping from ('fa24-cs425-6908.cs.illinois.edu', 5000)
+2024-12-02 13:04:39,184 - Sent ack to ('fa24-cs425-6908.cs.illinois.edu', 5000)
+2024-12-02 13:04:39,431 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:40,850 - No change in membership list
+2024-12-02 13:04:41,433 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:42,852 - No change in membership list
+2024-12-02 13:04:43,435 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:44,855 - No change in membership list
+2024-12-02 13:04:45,438 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:46,857 - No change in membership list
+2024-12-02 13:04:47,440 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:48,860 - No change in membership list
+2024-12-02 13:04:49,443 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:50,746 - Pinging fa24-cs425-6909.cs.illinois.edu:5000
+2024-12-02 13:04:50,747 - Actually sent ping out
+2024-12-02 13:04:50,765 - Received ack from ('fa24-cs425-6909.cs.illinois.edu', 5000)
+2024-12-02 13:04:50,766 - Popped this from queue: {'node_ip': 'fa24-cs425-6909.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:04:50,766 - Node fa24-cs425-6909.cs.illinois.edu:5000 is alive
+2024-12-02 13:04:50,863 - No change in membership list
+2024-12-02 13:04:51,445 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:52,866 - No change in membership list
+2024-12-02 13:04:53,448 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:54,868 - No change in membership list
+2024-12-02 13:04:55,450 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:56,871 - No change in membership list
+2024-12-02 13:04:57,453 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:04:58,873 - No change in membership list
+2024-12-02 13:04:59,455 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:00,876 - No change in membership list
+2024-12-02 13:05:01,458 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:02,878 - No change in membership list
+2024-12-02 13:05:03,460 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:04,881 - No change in membership list
+2024-12-02 13:05:05,462 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:06,883 - No change in membership list
+2024-12-02 13:05:07,465 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:08,886 - No change in membership list
+2024-12-02 13:05:09,466 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:10,754 - Pinging fa24-cs425-6906.cs.illinois.edu:5000
+2024-12-02 13:05:10,755 - Actually sent ping out
+2024-12-02 13:05:10,757 - Received ack from ('fa24-cs425-6906.cs.illinois.edu', 5000)
+2024-12-02 13:05:10,757 - Popped this from queue: {'node_ip': 'fa24-cs425-6906.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:05:10,757 - Node fa24-cs425-6906.cs.illinois.edu:5000 is alive
+2024-12-02 13:05:10,888 - No change in membership list
+2024-12-02 13:05:11,468 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:12,890 - No change in membership list
+2024-12-02 13:05:13,470 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:14,893 - No change in membership list
+2024-12-02 13:05:15,473 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:16,895 - No change in membership list
+2024-12-02 13:05:17,475 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:18,898 - No change in membership list
+2024-12-02 13:05:19,478 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:20,900 - No change in membership list
+2024-12-02 13:05:21,480 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:22,903 - No change in membership list
+2024-12-02 13:05:23,482 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:24,905 - No change in membership list
+2024-12-02 13:05:25,485 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:26,908 - No change in membership list
+2024-12-02 13:05:27,487 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:28,910 - No change in membership list
+2024-12-02 13:05:29,490 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:30,766 - Pinging fa24-cs425-6910.cs.illinois.edu:5000
+2024-12-02 13:05:30,768 - Actually sent ping out
+2024-12-02 13:05:30,771 - Received ack from ('fa24-cs425-6910.cs.illinois.edu', 5000)
+2024-12-02 13:05:30,771 - Popped this from queue: {'node_ip': 'fa24-cs425-6910.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:05:30,771 - Node fa24-cs425-6910.cs.illinois.edu:5000 is alive
+2024-12-02 13:05:30,913 - No change in membership list
+2024-12-02 13:05:31,492 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:32,915 - No change in membership list
+2024-12-02 13:05:33,495 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:34,918 - No change in membership list
+2024-12-02 13:05:35,497 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:36,920 - No change in membership list
+2024-12-02 13:05:37,500 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:38,922 - No change in membership list
+2024-12-02 13:05:39,503 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:40,925 - No change in membership list
+2024-12-02 13:05:41,505 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:42,927 - No change in membership list
+2024-12-02 13:05:43,508 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:44,930 - No change in membership list
+2024-12-02 13:05:45,510 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:46,932 - No change in membership list
+2024-12-02 13:05:47,511 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:48,934 - No change in membership list
+2024-12-02 13:05:49,514 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:50,775 - Pinging fa24-cs425-6908.cs.illinois.edu:5000
+2024-12-02 13:05:50,777 - Actually sent ping out
+2024-12-02 13:05:50,779 - Received ack from ('fa24-cs425-6908.cs.illinois.edu', 5000)
+2024-12-02 13:05:50,779 - Popped this from queue: {'node_ip': 'fa24-cs425-6908.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:05:50,779 - Node fa24-cs425-6908.cs.illinois.edu:5000 is alive
+2024-12-02 13:05:50,937 - Membership lists are not equal
+2024-12-02 13:05:50,937 - No change in membership list
+2024-12-02 13:05:51,516 - Rainstorm Tasks: Membership lists are not equal
+2024-12-02 13:05:51,517 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:52,314 - Recieved a ping from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-12-02 13:05:52,315 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-12-02 13:05:52,938 - No change in membership list
+2024-12-02 13:05:53,519 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:54,940 - No change in membership list
+2024-12-02 13:05:55,074 - Recieved a ping from ('fa24-cs425-6905.cs.illinois.edu', 5000)
+2024-12-02 13:05:55,075 - Sent ack to ('fa24-cs425-6905.cs.illinois.edu', 5000)
+2024-12-02 13:05:55,521 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:56,942 - No change in membership list
+2024-12-02 13:05:57,522 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:05:58,945 - No change in membership list
+2024-12-02 13:05:59,524 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:00,947 - No change in membership list
+2024-12-02 13:06:01,527 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:02,950 - No change in membership list
+2024-12-02 13:06:03,529 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:04,952 - No change in membership list
+2024-12-02 13:06:05,530 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:06,955 - No change in membership list
+2024-12-02 13:06:07,532 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:08,958 - No change in membership list
+2024-12-02 13:06:09,535 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:10,790 - Pinging fa24-cs425-6906.cs.illinois.edu:5000
+2024-12-02 13:06:10,791 - Actually sent ping out
+2024-12-02 13:06:10,793 - Received ack from ('fa24-cs425-6906.cs.illinois.edu', 5000)
+2024-12-02 13:06:10,793 - Popped this from queue: {'node_ip': 'fa24-cs425-6906.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:06:10,793 - Node fa24-cs425-6906.cs.illinois.edu:5000 is alive
+2024-12-02 13:06:10,960 - No change in membership list
+2024-12-02 13:06:11,535 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:11,611 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-12-02 13:06:11,612 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-12-02 13:06:12,962 - No change in membership list
+2024-12-02 13:06:13,536 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:14,964 - No change in membership list
+2024-12-02 13:06:15,537 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:16,967 - No change in membership list
+2024-12-02 13:06:17,537 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:18,969 - No change in membership list
+2024-12-02 13:06:19,231 - Recieved a ping from ('fa24-cs425-6908.cs.illinois.edu', 5000)
+2024-12-02 13:06:19,232 - Sent ack to ('fa24-cs425-6908.cs.illinois.edu', 5000)
+2024-12-02 13:06:19,539 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:20,972 - No change in membership list
+2024-12-02 13:06:21,541 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:22,973 - No change in membership list
+2024-12-02 13:06:23,544 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:24,975 - No change in membership list
+2024-12-02 13:06:25,546 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:26,978 - No change in membership list
+2024-12-02 13:06:27,549 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:28,981 - No change in membership list
+2024-12-02 13:06:29,551 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:30,802 - Pinging fa24-cs425-6907.cs.illinois.edu:5000
+2024-12-02 13:06:30,805 - Actually sent ping out
+2024-12-02 13:06:30,814 - Received ack from ('fa24-cs425-6907.cs.illinois.edu', 5000)
+2024-12-02 13:06:30,815 - Popped this from queue: {'node_ip': 'fa24-cs425-6907.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:06:30,815 - Node fa24-cs425-6907.cs.illinois.edu:5000 is alive
+2024-12-02 13:06:30,983 - No change in membership list
+2024-12-02 13:06:31,554 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:32,986 - No change in membership list
+2024-12-02 13:06:33,555 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:34,988 - No change in membership list
+2024-12-02 13:06:35,556 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:36,924 - Recieved a ping from ('fa24-cs425-6906.cs.illinois.edu', 5000)
+2024-12-02 13:06:36,926 - Sent ack to ('fa24-cs425-6906.cs.illinois.edu', 5000)
+2024-12-02 13:06:36,991 - No change in membership list
+2024-12-02 13:06:37,558 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:38,993 - No change in membership list
+2024-12-02 13:06:39,561 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:40,296 - Recieved a ping from ('fa24-cs425-6909.cs.illinois.edu', 5000)
+2024-12-02 13:06:40,297 - Sent ack to ('fa24-cs425-6909.cs.illinois.edu', 5000)
+2024-12-02 13:06:40,994 - No change in membership list
+2024-12-02 13:06:41,563 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:42,996 - No change in membership list
+2024-12-02 13:06:43,564 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:44,998 - No change in membership list
+2024-12-02 13:06:45,566 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:47,001 - No change in membership list
+2024-12-02 13:06:47,568 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:49,002 - No change in membership list
+2024-12-02 13:06:49,571 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:50,822 - Pinging fa24-cs425-6905.cs.illinois.edu:5000
+2024-12-02 13:06:50,823 - Actually sent ping out
+2024-12-02 13:06:50,825 - Received ack from ('fa24-cs425-6905.cs.illinois.edu', 5000)
+2024-12-02 13:06:50,825 - Popped this from queue: {'node_ip': 'fa24-cs425-6905.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:06:50,825 - Node fa24-cs425-6905.cs.illinois.edu:5000 is alive
+2024-12-02 13:06:51,005 - No change in membership list
+2024-12-02 13:06:51,573 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:53,007 - No change in membership list
+2024-12-02 13:06:53,576 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:55,009 - No change in membership list
+2024-12-02 13:06:55,578 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:57,010 - No change in membership list
+2024-12-02 13:06:57,580 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:06:59,012 - No change in membership list
+2024-12-02 13:06:59,582 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:01,015 - No change in membership list
+2024-12-02 13:07:01,584 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:03,016 - No change in membership list
+2024-12-02 13:07:03,585 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:05,018 - No change in membership list
+2024-12-02 13:07:05,587 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:07,020 - No change in membership list
+2024-12-02 13:07:07,590 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:09,023 - No change in membership list
+2024-12-02 13:07:09,592 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:10,828 - Pinging fa24-cs425-6910.cs.illinois.edu:5000
+2024-12-02 13:07:10,829 - Actually sent ping out
+2024-12-02 13:07:10,831 - Received ack from ('fa24-cs425-6910.cs.illinois.edu', 5000)
+2024-12-02 13:07:10,831 - Popped this from queue: {'node_ip': 'fa24-cs425-6910.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:07:10,831 - Node fa24-cs425-6910.cs.illinois.edu:5000 is alive
+2024-12-02 13:07:11,025 - No change in membership list
+2024-12-02 13:07:11,593 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:13,026 - No change in membership list
+2024-12-02 13:07:13,595 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:15,028 - No change in membership list
+2024-12-02 13:07:15,596 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:17,031 - No change in membership list
+2024-12-02 13:07:17,598 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:19,032 - No change in membership list
+2024-12-02 13:07:19,600 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:21,034 - No change in membership list
+2024-12-02 13:07:21,603 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:23,036 - No change in membership list
+2024-12-02 13:07:23,604 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:25,037 - No change in membership list
+2024-12-02 13:07:25,606 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:27,040 - No change in membership list
+2024-12-02 13:07:27,609 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:29,042 - No change in membership list
+2024-12-02 13:07:29,611 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:30,846 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-12-02 13:07:30,848 - Actually sent ping out
+2024-12-02 13:07:30,851 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-12-02 13:07:30,851 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:07:30,851 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-12-02 13:07:31,044 - No change in membership list
+2024-12-02 13:07:31,612 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:33,047 - No change in membership list
+2024-12-02 13:07:33,614 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:35,049 - No change in membership list
+2024-12-02 13:07:35,617 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:37,052 - No change in membership list
+2024-12-02 13:07:37,619 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:38,106 - Recieved a ping from ('fa24-cs425-6907.cs.illinois.edu', 5000)
+2024-12-02 13:07:38,107 - Sent ack to ('fa24-cs425-6907.cs.illinois.edu', 5000)
+2024-12-02 13:07:39,055 - No change in membership list
+2024-12-02 13:07:39,621 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:41,057 - No change in membership list
+2024-12-02 13:07:41,624 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:43,059 - No change in membership list
+2024-12-02 13:07:43,626 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:45,062 - No change in membership list
+2024-12-02 13:07:45,629 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:47,064 - No change in membership list
+2024-12-02 13:07:47,631 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:49,067 - No change in membership list
+2024-12-02 13:07:49,632 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:50,846 - Pinging fa24-cs425-6909.cs.illinois.edu:5000
+2024-12-02 13:07:50,847 - Actually sent ping out
+2024-12-02 13:07:50,850 - Received ack from ('fa24-cs425-6909.cs.illinois.edu', 5000)
+2024-12-02 13:07:50,850 - Popped this from queue: {'node_ip': 'fa24-cs425-6909.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:07:50,850 - Node fa24-cs425-6909.cs.illinois.edu:5000 is alive
+2024-12-02 13:07:51,070 - No change in membership list
+2024-12-02 13:07:51,634 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:53,072 - No change in membership list
+2024-12-02 13:07:53,637 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:54,049 - Recieved a ping from ('fa24-cs425-6904.cs.illinois.edu', 5000)
+2024-12-02 13:07:54,051 - Sent ack to ('fa24-cs425-6904.cs.illinois.edu', 5000)
+2024-12-02 13:07:55,074 - No change in membership list
+2024-12-02 13:07:55,639 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:57,076 - No change in membership list
+2024-12-02 13:07:57,642 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:07:59,079 - No change in membership list
+2024-12-02 13:07:59,644 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:01,081 - No change in membership list
+2024-12-02 13:08:01,529 - Recieved a ping from ('fa24-cs425-6910.cs.illinois.edu', 5000)
+2024-12-02 13:08:01,530 - Sent ack to ('fa24-cs425-6910.cs.illinois.edu', 5000)
+2024-12-02 13:08:01,646 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:03,084 - No change in membership list
+2024-12-02 13:08:03,649 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:05,086 - No change in membership list
+2024-12-02 13:08:05,650 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:07,089 - No change in membership list
+2024-12-02 13:08:07,652 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:09,091 - No change in membership list
+2024-12-02 13:08:09,654 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:10,850 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-12-02 13:08:10,851 - Actually sent ping out
+2024-12-02 13:08:10,854 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-12-02 13:08:10,854 - Popped this from queue: {'node_ip': 'fa24-cs425-6903.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:08:10,854 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
+2024-12-02 13:08:11,094 - No change in membership list
+2024-12-02 13:08:11,656 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:13,096 - No change in membership list
+2024-12-02 13:08:13,658 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:15,099 - No change in membership list
+2024-12-02 13:08:15,660 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:17,101 - No change in membership list
+2024-12-02 13:08:17,663 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:19,104 - No change in membership list
+2024-12-02 13:08:19,665 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:21,106 - No change in membership list
+2024-12-02 13:08:21,666 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:23,109 - No change in membership list
+2024-12-02 13:08:23,668 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:25,111 - No change in membership list
+2024-12-02 13:08:25,671 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:27,114 - No change in membership list
+2024-12-02 13:08:27,673 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:29,117 - No change in membership list
+2024-12-02 13:08:29,674 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:30,870 - Pinging fa24-cs425-6904.cs.illinois.edu:5000
+2024-12-02 13:08:30,872 - Actually sent ping out
+2024-12-02 13:08:30,875 - Received ack from ('fa24-cs425-6904.cs.illinois.edu', 5000)
+2024-12-02 13:08:30,875 - Popped this from queue: {'node_ip': 'fa24-cs425-6904.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:08:30,875 - Node fa24-cs425-6904.cs.illinois.edu:5000 is alive
+2024-12-02 13:08:31,119 - No change in membership list
+2024-12-02 13:08:31,676 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:33,122 - No change in membership list
+2024-12-02 13:08:33,679 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:35,124 - No change in membership list
+2024-12-02 13:08:35,681 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:37,127 - No change in membership list
+2024-12-02 13:08:37,684 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:39,129 - No change in membership list
+2024-12-02 13:08:39,686 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:41,131 - No change in membership list
+2024-12-02 13:08:41,689 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:43,134 - No change in membership list
+2024-12-02 13:08:43,690 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:45,137 - No change in membership list
+2024-12-02 13:08:45,692 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:47,139 - No change in membership list
+2024-12-02 13:08:47,695 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:49,142 - No change in membership list
+2024-12-02 13:08:49,697 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:50,890 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-12-02 13:08:50,891 - Actually sent ping out
+2024-12-02 13:08:50,893 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-12-02 13:08:50,893 - Popped this from queue: {'node_ip': 'fa24-cs425-6903.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:08:50,893 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
+2024-12-02 13:08:51,144 - Membership lists are not equal
+2024-12-02 13:08:51,145 - No change in membership list
+2024-12-02 13:08:51,700 - Rainstorm Tasks: Membership lists are not equal
+2024-12-02 13:08:51,701 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:52,415 - Recieved a ping from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-12-02 13:08:52,415 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-12-02 13:08:53,147 - No change in membership list
+2024-12-02 13:08:53,701 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:55,149 - No change in membership list
+2024-12-02 13:08:55,703 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:57,152 - No change in membership list
+2024-12-02 13:08:57,704 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:08:59,154 - No change in membership list
+2024-12-02 13:08:59,295 - Recieved a ping from ('fa24-cs425-6908.cs.illinois.edu', 5000)
+2024-12-02 13:08:59,296 - Sent ack to ('fa24-cs425-6908.cs.illinois.edu', 5000)
+2024-12-02 13:08:59,706 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:01,157 - No change in membership list
+2024-12-02 13:09:01,708 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:03,159 - No change in membership list
+2024-12-02 13:09:03,710 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:05,162 - No change in membership list
+2024-12-02 13:09:05,713 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:07,164 - No change in membership list
+2024-12-02 13:09:07,715 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:09,167 - No change in membership list
+2024-12-02 13:09:09,718 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:10,898 - Pinging fa24-cs425-6909.cs.illinois.edu:5000
+2024-12-02 13:09:10,901 - Actually sent ping out
+2024-12-02 13:09:10,904 - Received ack from ('fa24-cs425-6909.cs.illinois.edu', 5000)
+2024-12-02 13:09:10,905 - Popped this from queue: {'node_ip': 'fa24-cs425-6909.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:09:10,905 - Node fa24-cs425-6909.cs.illinois.edu:5000 is alive
+2024-12-02 13:09:11,170 - No change in membership list
+2024-12-02 13:09:11,720 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:13,172 - No change in membership list
+2024-12-02 13:09:13,722 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:15,174 - No change in membership list
+2024-12-02 13:09:15,724 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:17,177 - No change in membership list
+2024-12-02 13:09:17,727 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:18,194 - Recieved a ping from ('fa24-cs425-6907.cs.illinois.edu', 5000)
+2024-12-02 13:09:18,196 - Sent ack to ('fa24-cs425-6907.cs.illinois.edu', 5000)
+2024-12-02 13:09:19,178 - No change in membership list
+2024-12-02 13:09:19,729 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:21,180 - No change in membership list
+2024-12-02 13:09:21,732 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:23,183 - No change in membership list
+2024-12-02 13:09:23,734 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:25,184 - No change in membership list
+2024-12-02 13:09:25,736 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:27,186 - No change in membership list
+2024-12-02 13:09:27,739 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:29,188 - No change in membership list
+2024-12-02 13:09:29,741 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:30,906 - Pinging fa24-cs425-6910.cs.illinois.edu:5000
+2024-12-02 13:09:30,909 - Actually sent ping out
+2024-12-02 13:09:30,911 - Received ack from ('fa24-cs425-6910.cs.illinois.edu', 5000)
+2024-12-02 13:09:30,912 - Popped this from queue: {'node_ip': 'fa24-cs425-6910.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:09:30,912 - Node fa24-cs425-6910.cs.illinois.edu:5000 is alive
+2024-12-02 13:09:31,191 - No change in membership list
+2024-12-02 13:09:31,744 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:33,193 - No change in membership list
+2024-12-02 13:09:33,746 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:35,194 - No change in membership list
+2024-12-02 13:09:35,749 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:37,196 - No change in membership list
+2024-12-02 13:09:37,751 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:39,198 - No change in membership list
+2024-12-02 13:09:39,754 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:40,393 - Recieved a ping from ('fa24-cs425-6909.cs.illinois.edu', 5000)
+2024-12-02 13:09:40,393 - Sent ack to ('fa24-cs425-6909.cs.illinois.edu', 5000)
+2024-12-02 13:09:41,201 - No change in membership list
+2024-12-02 13:09:41,756 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:43,202 - No change in membership list
+2024-12-02 13:09:43,759 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:45,204 - No change in membership list
+2024-12-02 13:09:45,762 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:47,207 - No change in membership list
+2024-12-02 13:09:47,764 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:49,209 - No change in membership list
+2024-12-02 13:09:49,767 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:50,926 - Pinging fa24-cs425-6905.cs.illinois.edu:5000
+2024-12-02 13:09:50,928 - Actually sent ping out
+2024-12-02 13:09:50,931 - Received ack from ('fa24-cs425-6905.cs.illinois.edu', 5000)
+2024-12-02 13:09:50,931 - Popped this from queue: {'node_ip': 'fa24-cs425-6905.cs.illinois.edu', 'node_port': 5000}
+2024-12-02 13:09:50,931 - Node fa24-cs425-6905.cs.illinois.edu:5000 is alive
+2024-12-02 13:09:51,210 - No change in membership list
+2024-12-02 13:09:51,769 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:53,212 - No change in membership list
+2024-12-02 13:09:53,771 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:55,215 - No change in membership list
+2024-12-02 13:09:55,247 - Shutting down Rainstorm Leader ...
+2024-12-02 13:09:55,247 - Shutting down HyDFS...
+2024-12-02 13:09:55,247 - Listener thread is still running; proceeding to join...
+2024-12-02 13:09:55,773 - Rainstorm Tasks: No change in membership list
+2024-12-02 13:09:57,217 - No change in membership list
+2024-12-02 13:09:59,543 - Listener thread joined successfully.
+2024-12-02 13:09:59,543 - Membership thread is not running, skipping join.
+2024-12-02 13:09:59,543 - Shutting down...
+2024-12-02 13:10:10,945 - Node shut down gracefully.
+2024-12-02 13:10:10,945 - HyDFS Node shut down gracefully.
+2024-12-02 13:10:10,945 - Rainstorm Leader shut down gracefully.

@@ -1,127 +1,348 @@
-2024-12-01 00:46:54,312 - Logging initialized for RingNode
-2024-12-01 00:46:54,319 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
-2024-12-01 00:47:14,339 - Monitoring membership list started
-2024-12-01 00:47:16,341 - No change in membership list
-2024-12-01 00:47:18,344 - No change in membership list
-2024-12-01 00:47:20,346 - No change in membership list
-2024-12-01 00:47:22,348 - No change in membership list
-2024-12-01 00:47:24,350 - No change in membership list
-2024-12-01 00:47:26,352 - No change in membership list
-2024-12-01 00:47:28,354 - No change in membership list
-2024-12-01 00:47:30,356 - No change in membership list
-2024-12-01 00:47:32,359 - No change in membership list
-2024-12-01 00:47:34,361 - No change in membership list
-2024-12-01 00:47:36,363 - No change in membership list
-2024-12-01 00:47:38,365 - No change in membership list
-2024-12-01 00:47:40,367 - No change in membership list
-2024-12-01 00:47:42,370 - No change in membership list
-2024-12-01 00:47:43,760 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-01 00:47:43,763 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-01 00:47:43,764 - File 'op2_0_state' written successfully.
-2024-12-01 00:47:43,764 - Acknowledgment sent to client 'op2_0_state'.
-2024-12-01 00:47:43,766 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-01 00:47:43,767 - Sent 88 bytes from data_buffer
-2024-12-01 00:47:43,767 - File 'op2_0_state' already exists. Not writing to it.
-2024-12-01 00:47:43,767 - Acknowledgment sent to client 'op2_0_state'.
-2024-12-01 00:47:43,767 - File 'op2_0_state' already exists. Not writing to it.
-2024-12-01 00:47:43,767 - Acknowledgment sent to client 'op2_0_state'.
-2024-12-01 00:47:43,767 - Sent 85 bytes from data_buffer
-2024-12-01 00:47:43,768 - Sent 85 bytes from data_buffer
-2024-12-01 00:47:43,795 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-01 00:47:43,797 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-01 00:47:43,800 - File 'op2_2_state' written successfully.
-2024-12-01 00:47:43,800 - Acknowledgment sent to client 'op2_2_state'.
-2024-12-01 00:47:43,801 - File 'op2_2_state' already exists. Not writing to it.
-2024-12-01 00:47:43,801 - Acknowledgment sent to client 'op2_2_state'.
-2024-12-01 00:47:43,801 - Sent 88 bytes from data_buffer
-2024-12-01 00:47:43,801 - Sent 85 bytes from data_buffer
-2024-12-01 00:47:43,807 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-01 00:47:43,809 - File 'op2_2_state' already exists. Not writing to it.
-2024-12-01 00:47:43,809 - Acknowledgment sent to client 'op2_2_state'.
-2024-12-01 00:47:43,809 - Sent 85 bytes from data_buffer
-2024-12-01 00:47:43,814 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-01 00:47:43,816 - File 'op2_2_state' and append log 'rainstorm_op2_2--op2_2_state.log' read successfully.
-2024-12-01 00:47:43,816 - File read succsefully op2_2_state
-2024-12-01 00:47:43,816 - Acknowledgment sent to client with status 'read_complete' for file 'op2_2_state'.
-2024-12-01 00:47:43,817 - Sent 96 bytes from data_buffer
-2024-12-01 00:47:43,819 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-01 00:47:43,823 - File 'op2_2_state' and append log 'rainstorm_op2_2--op2_2_state.log' read successfully.
-2024-12-01 00:47:43,823 - File read succsefully op2_2_state
-2024-12-01 00:47:43,823 - Acknowledgment sent to client with status 'read_complete' for file 'op2_2_state'.
-2024-12-01 00:47:43,823 - Sent 96 bytes from data_buffer
-2024-12-01 00:47:43,830 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-01 00:47:43,832 - File 'op2_2_ack' written successfully.
-2024-12-01 00:47:43,832 - Acknowledgment sent to client 'op2_2_ack'.
-2024-12-01 00:47:43,832 - Sent 86 bytes from data_buffer
-2024-12-01 00:47:43,840 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-01 00:47:43,842 - File 'op2_2_ack' already exists. Not writing to it.
-2024-12-01 00:47:43,843 - Acknowledgment sent to client 'op2_2_ack'.
-2024-12-01 00:47:43,844 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-01 00:47:43,844 - Sent 83 bytes from data_buffer
-2024-12-01 00:47:43,844 - File 'op2_2_ack' and append log 'rainstorm_op2_2--op2_2_ack.log' read successfully.
-2024-12-01 00:47:43,844 - File read succsefully op2_2_ack
-2024-12-01 00:47:43,844 - Acknowledgment sent to client with status 'read_complete' for file 'op2_2_ack'.
-2024-12-01 00:47:43,845 - Sent 94 bytes from data_buffer
-2024-12-01 00:47:44,173 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-01 00:47:44,175 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-01 00:47:44,177 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-01 00:47:44,178 - File 'op2_1_state' written successfully.
-2024-12-01 00:47:44,178 - Acknowledgment sent to client 'op2_1_state'.
-2024-12-01 00:47:44,179 - File 'op2_1_state' already exists. Not writing to it.
-2024-12-01 00:47:44,179 - Acknowledgment sent to client 'op2_1_state'.
-2024-12-01 00:47:44,179 - Sent 88 bytes from data_buffer
-2024-12-01 00:47:44,179 - File 'op2_1_state' already exists. Not writing to it.
-2024-12-01 00:47:44,179 - Acknowledgment sent to client 'op2_1_state'.
-2024-12-01 00:47:44,179 - Sent 85 bytes from data_buffer
-2024-12-01 00:47:44,179 - Sent 85 bytes from data_buffer
-2024-12-01 00:47:44,372 - No change in membership list
-2024-12-01 00:47:46,373 - No change in membership list
-2024-12-01 00:47:48,375 - No change in membership list
-2024-12-01 00:47:50,377 - No change in membership list
-2024-12-01 00:47:52,379 - No change in membership list
-2024-12-01 00:47:54,381 - No change in membership list
-2024-12-01 00:47:56,383 - No change in membership list
-2024-12-01 00:47:58,386 - No change in membership list
-2024-12-01 00:48:00,389 - No change in membership list
-2024-12-01 00:48:02,391 - No change in membership list
-2024-12-01 00:48:04,394 - No change in membership list
-2024-12-01 00:48:06,396 - No change in membership list
-2024-12-01 00:48:08,399 - No change in membership list
-2024-12-01 00:48:10,401 - No change in membership list
-2024-12-01 00:48:12,403 - No change in membership list
-2024-12-01 00:48:14,405 - Membership lists are not equal
-2024-12-01 00:48:14,405 - No change in membership list
-2024-12-01 00:48:16,406 - No change in membership list
-2024-12-01 00:48:18,408 - Membership lists are not equal
-2024-12-01 00:48:18,409 - Hydfs node marked as DEAD: {'ring_id': 403, 'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733035616', 'status': 'DEAD', 'inc_num': 0}
-2024-12-01 00:48:58,441 - Dead node fa24-cs425-6903.cs.illinois.edu_5000_1733035616 - 1st predecessor: fa24-cs425-6904.cs.illinois.edu_5000_1733035617, 2nd predecessor: fa24-cs425-6901.cs.illinois.edu_5000_1733035614, 1st successor: fa24-cs425-6902.cs.illinois.edu_5000_1733035615
-2024-12-01 00:48:58,442 - Added fa24-cs425-6904.cs.illinois.edu_5000_1733035617 to replica list
-2024-12-01 00:48:58,442 - Added fa24-cs425-6902.cs.illinois.edu_5000_1733035615 to replica list
-2024-12-01 00:48:58,442 - Next 1 nodes after 486: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733035614', 'ring_id': 715}]
-2024-12-01 00:48:58,443 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733035614
-2024-12-01 00:48:58,443 - I am a predecessor/succesor of dead node fa24-cs425-6903.cs.illinois.edu_5000_1733035616 with ring_id 403
-2024-12-01 00:48:58,443 - Sending write_replica to fa24-cs425-6904.cs.illinois.edu:5001 for file op2_0_state
-2024-12-01 00:48:58,445 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file op2_0_state
-2024-12-01 00:48:58,447 - Next 1 nodes after 639: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733035614', 'ring_id': 715}]
-2024-12-01 00:48:58,447 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733035614
-2024-12-01 00:48:58,447 - I am a predecessor/succesor of dead node fa24-cs425-6903.cs.illinois.edu_5000_1733035616 with ring_id 403
-2024-12-01 00:48:58,447 - Sending write_replica to fa24-cs425-6904.cs.illinois.edu:5001 for file op2_2_state
-2024-12-01 00:48:58,448 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file op2_2_state
-2024-12-01 00:48:58,449 - Next 1 nodes after 240: [{'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733035615', 'ring_id': 444}]
-2024-12-01 00:48:58,449 - Primary replica is fa24-cs425-6902.cs.illinois.edu_5000_1733035615
-2024-12-01 00:48:58,449 - Next 1 nodes after 886: [{'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733035615', 'ring_id': 444}]
-2024-12-01 00:48:58,449 - Primary replica is fa24-cs425-6902.cs.illinois.edu_5000_1733035615
-2024-12-01 00:48:58,449 - No change in membership list
-2024-12-01 00:48:59,232 - Sent 68 bytes from data_buffer
-2024-12-01 00:48:59,232 - Sent 68 bytes from data_buffer
-2024-12-01 00:48:59,232 - Sent 68 bytes from data_buffer
-2024-12-01 00:48:59,232 - Sent 68 bytes from data_buffer
-2024-12-01 00:49:00,452 - No change in membership list
-2024-12-01 00:49:02,454 - No change in membership list
-2024-12-01 00:49:04,456 - No change in membership list
-2024-12-01 00:49:05,550 - Shutting down HyDFS...
-2024-12-01 00:49:05,550 - Listener thread is still running; proceeding to join...
-2024-12-01 00:49:06,459 - No change in membership list
-2024-12-01 00:49:09,241 - Listener thread joined successfully.
-2024-12-01 00:49:09,241 - Membership thread is not running, skipping join.
-2024-12-01 00:49:14,397 - HyDFS Node shut down gracefully.
+2024-12-02 12:59:30,498 - Logging initialized for RingNode
+2024-12-02 12:59:30,505 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-12-02 12:59:50,525 - Monitoring membership list started
+2024-12-02 12:59:52,527 - No change in membership list
+2024-12-02 12:59:54,530 - No change in membership list
+2024-12-02 12:59:56,532 - No change in membership list
+2024-12-02 12:59:58,534 - No change in membership list
+2024-12-02 13:00:00,536 - No change in membership list
+2024-12-02 13:00:02,539 - No change in membership list
+2024-12-02 13:00:04,541 - No change in membership list
+2024-12-02 13:00:06,543 - No change in membership list
+2024-12-02 13:00:08,546 - No change in membership list
+2024-12-02 13:00:10,548 - No change in membership list
+2024-12-02 13:00:12,550 - No change in membership list
+2024-12-02 13:00:14,552 - No change in membership list
+2024-12-02 13:00:16,552 - No change in membership list
+2024-12-02 13:00:18,555 - No change in membership list
+2024-12-02 13:00:20,557 - No change in membership list
+2024-12-02 13:00:21,005 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-12-02 13:00:21,006 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733165972', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733165971', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733165980', 'ring_id': 578}]
+2024-12-02 13:00:21,007 - Sending write to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
+2024-12-02 13:00:21,008 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
+2024-12-02 13:00:21,015 - Sending write to fa24-cs425-6909.cs.illinois.edu:5001 for file business_19.txt
+2024-12-02 13:00:21,017 - Sent 1362 bytes from data_buffer
+2024-12-02 13:00:21,017 - Sent 1362 bytes from data_buffer
+2024-12-02 13:00:21,017 - Sent 1362 bytes from data_buffer
+2024-12-02 13:00:21,018 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-12-02 13:00:21,018 - Quorum not yet met, received ack from 1 replicas
+2024-12-02 13:00:21,018 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-12-02 13:00:21,018 - Quorum not yet met, received ack from 2 replicas
+2024-12-02 13:00:21,019 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-12-02 13:00:21,019 - client_socket_to_use <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 43778)>
+2024-12-02 13:00:21,019 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-12-02 13:00:21,019 - Acknowledgment sent to client_1 for file 'business_19.txt'.
+2024-12-02 13:00:21,019 - Sent 85 bytes from data_buffer
+2024-12-02 13:00:22,560 - No change in membership list
+2024-12-02 13:00:24,074 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-12-02 13:00:24,075 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733165972', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733165971', 'ring_id': 444}, {'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1733165980', 'ring_id': 578}]
+2024-12-02 13:00:24,075 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
+2024-12-02 13:00:24,076 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
+2024-12-02 13:00:24,077 - Sending read to fa24-cs425-6909.cs.illinois.edu:5001 for file business_19.txt
+2024-12-02 13:00:24,079 - Sent 64 bytes from data_buffer
+2024-12-02 13:00:24,079 - Sent 64 bytes from data_buffer
+2024-12-02 13:00:24,079 - Sent 64 bytes from data_buffer
+2024-12-02 13:00:24,080 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-12-02 13:00:24,080 - Quorum not yet met, received ack from 1 replicas
+2024-12-02 13:00:24,080 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-12-02 13:00:24,081 - Quorum not yet met, received ack from 2 replicas
+2024-12-02 13:00:24,081 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-12-02 13:00:24,082 - client_socket_to_use <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 43788)>
+2024-12-02 13:00:24,082 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-12-02 13:00:24,082 - Acknowledgment sent to client_1 for file 'business_19.txt'.
+2024-12-02 13:00:24,082 - Sent 1381 bytes from data_buffer
+2024-12-02 13:00:24,562 - No change in membership list
+2024-12-02 13:00:26,564 - No change in membership list
+2024-12-02 13:00:28,567 - No change in membership list
+2024-12-02 13:00:30,569 - No change in membership list
+2024-12-02 13:00:32,571 - No change in membership list
+2024-12-02 13:00:34,573 - No change in membership list
+2024-12-02 13:00:36,576 - No change in membership list
+2024-12-02 13:00:38,578 - No change in membership list
+2024-12-02 13:00:40,579 - No change in membership list
+2024-12-02 13:00:42,581 - No change in membership list
+2024-12-02 13:00:44,584 - No change in membership list
+2024-12-02 13:00:46,586 - No change in membership list
+2024-12-02 13:00:48,588 - No change in membership list
+2024-12-02 13:00:50,589 - No change in membership list
+2024-12-02 13:00:52,591 - No change in membership list
+2024-12-02 13:00:54,594 - No change in membership list
+2024-12-02 13:00:56,595 - No change in membership list
+2024-12-02 13:00:58,597 - No change in membership list
+2024-12-02 13:01:00,599 - No change in membership list
+2024-12-02 13:01:02,601 - No change in membership list
+2024-12-02 13:01:04,603 - No change in membership list
+2024-12-02 13:01:06,605 - No change in membership list
+2024-12-02 13:01:08,608 - No change in membership list
+2024-12-02 13:01:10,610 - No change in membership list
+2024-12-02 13:01:12,611 - No change in membership list
+2024-12-02 13:01:14,613 - No change in membership list
+2024-12-02 13:01:16,616 - No change in membership list
+2024-12-02 13:01:18,618 - No change in membership list
+2024-12-02 13:01:20,620 - No change in membership list
+2024-12-02 13:01:22,621 - No change in membership list
+2024-12-02 13:01:24,623 - No change in membership list
+2024-12-02 13:01:26,626 - No change in membership list
+2024-12-02 13:01:28,628 - No change in membership list
+2024-12-02 13:01:30,630 - No change in membership list
+2024-12-02 13:01:32,633 - No change in membership list
+2024-12-02 13:01:34,635 - No change in membership list
+2024-12-02 13:01:36,637 - No change in membership list
+2024-12-02 13:01:38,640 - No change in membership list
+2024-12-02 13:01:40,642 - No change in membership list
+2024-12-02 13:01:42,644 - No change in membership list
+2024-12-02 13:01:44,647 - No change in membership list
+2024-12-02 13:01:46,649 - No change in membership list
+2024-12-02 13:01:48,650 - No change in membership list
+2024-12-02 13:01:50,652 - No change in membership list
+2024-12-02 13:01:52,654 - No change in membership list
+2024-12-02 13:01:54,656 - No change in membership list
+2024-12-02 13:01:56,658 - No change in membership list
+2024-12-02 13:01:58,660 - No change in membership list
+2024-12-02 13:02:00,662 - No change in membership list
+2024-12-02 13:02:02,664 - No change in membership list
+2024-12-02 13:02:04,666 - No change in membership list
+2024-12-02 13:02:06,668 - No change in membership list
+2024-12-02 13:02:08,671 - No change in membership list
+2024-12-02 13:02:10,673 - No change in membership list
+2024-12-02 13:02:12,674 - No change in membership list
+2024-12-02 13:02:14,676 - No change in membership list
+2024-12-02 13:02:16,679 - No change in membership list
+2024-12-02 13:02:18,681 - No change in membership list
+2024-12-02 13:02:20,682 - No change in membership list
+2024-12-02 13:02:22,684 - No change in membership list
+2024-12-02 13:02:24,686 - No change in membership list
+2024-12-02 13:02:26,688 - No change in membership list
+2024-12-02 13:02:28,690 - No change in membership list
+2024-12-02 13:02:30,692 - No change in membership list
+2024-12-02 13:02:32,695 - No change in membership list
+2024-12-02 13:02:34,697 - No change in membership list
+2024-12-02 13:02:36,698 - No change in membership list
+2024-12-02 13:02:38,700 - No change in membership list
+2024-12-02 13:02:40,703 - No change in membership list
+2024-12-02 13:02:42,706 - No change in membership list
+2024-12-02 13:02:44,708 - No change in membership list
+2024-12-02 13:02:46,711 - No change in membership list
+2024-12-02 13:02:48,713 - No change in membership list
+2024-12-02 13:02:50,715 - Membership lists are not equal
+2024-12-02 13:02:50,719 - No change in membership list
+2024-12-02 13:02:52,721 - No change in membership list
+2024-12-02 13:02:54,723 - No change in membership list
+2024-12-02 13:02:56,726 - No change in membership list
+2024-12-02 13:02:58,728 - No change in membership list
+2024-12-02 13:03:00,731 - No change in membership list
+2024-12-02 13:03:02,732 - No change in membership list
+2024-12-02 13:03:04,734 - No change in membership list
+2024-12-02 13:03:06,737 - No change in membership list
+2024-12-02 13:03:08,739 - No change in membership list
+2024-12-02 13:03:10,741 - No change in membership list
+2024-12-02 13:03:12,744 - No change in membership list
+2024-12-02 13:03:14,746 - No change in membership list
+2024-12-02 13:03:16,748 - No change in membership list
+2024-12-02 13:03:18,751 - No change in membership list
+2024-12-02 13:03:20,753 - No change in membership list
+2024-12-02 13:03:22,756 - No change in membership list
+2024-12-02 13:03:24,758 - No change in membership list
+2024-12-02 13:03:26,761 - No change in membership list
+2024-12-02 13:03:28,764 - No change in membership list
+2024-12-02 13:03:30,766 - No change in membership list
+2024-12-02 13:03:32,768 - No change in membership list
+2024-12-02 13:03:34,771 - No change in membership list
+2024-12-02 13:03:36,773 - No change in membership list
+2024-12-02 13:03:38,776 - No change in membership list
+2024-12-02 13:03:40,779 - No change in membership list
+2024-12-02 13:03:42,781 - No change in membership list
+2024-12-02 13:03:44,784 - No change in membership list
+2024-12-02 13:03:46,786 - No change in membership list
+2024-12-02 13:03:48,788 - No change in membership list
+2024-12-02 13:03:50,792 - No change in membership list
+2024-12-02 13:03:52,794 - No change in membership list
+2024-12-02 13:03:54,796 - No change in membership list
+2024-12-02 13:03:56,799 - No change in membership list
+2024-12-02 13:03:58,801 - No change in membership list
+2024-12-02 13:04:00,803 - No change in membership list
+2024-12-02 13:04:02,806 - No change in membership list
+2024-12-02 13:04:04,808 - No change in membership list
+2024-12-02 13:04:06,811 - No change in membership list
+2024-12-02 13:04:08,813 - No change in membership list
+2024-12-02 13:04:10,816 - No change in membership list
+2024-12-02 13:04:12,818 - No change in membership list
+2024-12-02 13:04:14,821 - No change in membership list
+2024-12-02 13:04:16,823 - No change in membership list
+2024-12-02 13:04:18,825 - No change in membership list
+2024-12-02 13:04:20,827 - No change in membership list
+2024-12-02 13:04:22,830 - No change in membership list
+2024-12-02 13:04:24,832 - No change in membership list
+2024-12-02 13:04:26,834 - No change in membership list
+2024-12-02 13:04:28,836 - No change in membership list
+2024-12-02 13:04:30,838 - No change in membership list
+2024-12-02 13:04:32,841 - No change in membership list
+2024-12-02 13:04:34,842 - No change in membership list
+2024-12-02 13:04:36,844 - No change in membership list
+2024-12-02 13:04:38,847 - No change in membership list
+2024-12-02 13:04:40,850 - No change in membership list
+2024-12-02 13:04:42,852 - No change in membership list
+2024-12-02 13:04:44,855 - No change in membership list
+2024-12-02 13:04:46,857 - No change in membership list
+2024-12-02 13:04:48,860 - No change in membership list
+2024-12-02 13:04:50,863 - No change in membership list
+2024-12-02 13:04:52,866 - No change in membership list
+2024-12-02 13:04:54,868 - No change in membership list
+2024-12-02 13:04:56,871 - No change in membership list
+2024-12-02 13:04:58,873 - No change in membership list
+2024-12-02 13:05:00,876 - No change in membership list
+2024-12-02 13:05:02,878 - No change in membership list
+2024-12-02 13:05:04,881 - No change in membership list
+2024-12-02 13:05:06,883 - No change in membership list
+2024-12-02 13:05:08,886 - No change in membership list
+2024-12-02 13:05:10,888 - No change in membership list
+2024-12-02 13:05:12,890 - No change in membership list
+2024-12-02 13:05:14,893 - No change in membership list
+2024-12-02 13:05:16,895 - No change in membership list
+2024-12-02 13:05:18,898 - No change in membership list
+2024-12-02 13:05:20,900 - No change in membership list
+2024-12-02 13:05:22,903 - No change in membership list
+2024-12-02 13:05:24,905 - No change in membership list
+2024-12-02 13:05:26,908 - No change in membership list
+2024-12-02 13:05:28,910 - No change in membership list
+2024-12-02 13:05:30,913 - No change in membership list
+2024-12-02 13:05:32,915 - No change in membership list
+2024-12-02 13:05:34,918 - No change in membership list
+2024-12-02 13:05:36,920 - No change in membership list
+2024-12-02 13:05:38,922 - No change in membership list
+2024-12-02 13:05:40,925 - No change in membership list
+2024-12-02 13:05:42,927 - No change in membership list
+2024-12-02 13:05:44,930 - No change in membership list
+2024-12-02 13:05:46,932 - No change in membership list
+2024-12-02 13:05:48,934 - No change in membership list
+2024-12-02 13:05:50,937 - Membership lists are not equal
+2024-12-02 13:05:50,937 - No change in membership list
+2024-12-02 13:05:52,938 - No change in membership list
+2024-12-02 13:05:54,940 - No change in membership list
+2024-12-02 13:05:56,942 - No change in membership list
+2024-12-02 13:05:58,945 - No change in membership list
+2024-12-02 13:06:00,947 - No change in membership list
+2024-12-02 13:06:02,950 - No change in membership list
+2024-12-02 13:06:04,952 - No change in membership list
+2024-12-02 13:06:06,955 - No change in membership list
+2024-12-02 13:06:08,958 - No change in membership list
+2024-12-02 13:06:10,960 - No change in membership list
+2024-12-02 13:06:12,962 - No change in membership list
+2024-12-02 13:06:14,964 - No change in membership list
+2024-12-02 13:06:16,967 - No change in membership list
+2024-12-02 13:06:18,969 - No change in membership list
+2024-12-02 13:06:20,972 - No change in membership list
+2024-12-02 13:06:22,973 - No change in membership list
+2024-12-02 13:06:24,975 - No change in membership list
+2024-12-02 13:06:26,978 - No change in membership list
+2024-12-02 13:06:28,981 - No change in membership list
+2024-12-02 13:06:30,983 - No change in membership list
+2024-12-02 13:06:32,986 - No change in membership list
+2024-12-02 13:06:34,988 - No change in membership list
+2024-12-02 13:06:36,991 - No change in membership list
+2024-12-02 13:06:38,993 - No change in membership list
+2024-12-02 13:06:40,994 - No change in membership list
+2024-12-02 13:06:42,996 - No change in membership list
+2024-12-02 13:06:44,998 - No change in membership list
+2024-12-02 13:06:47,001 - No change in membership list
+2024-12-02 13:06:49,002 - No change in membership list
+2024-12-02 13:06:51,005 - No change in membership list
+2024-12-02 13:06:53,007 - No change in membership list
+2024-12-02 13:06:55,009 - No change in membership list
+2024-12-02 13:06:57,010 - No change in membership list
+2024-12-02 13:06:59,012 - No change in membership list
+2024-12-02 13:07:01,015 - No change in membership list
+2024-12-02 13:07:03,016 - No change in membership list
+2024-12-02 13:07:05,018 - No change in membership list
+2024-12-02 13:07:07,020 - No change in membership list
+2024-12-02 13:07:09,023 - No change in membership list
+2024-12-02 13:07:11,025 - No change in membership list
+2024-12-02 13:07:13,026 - No change in membership list
+2024-12-02 13:07:15,028 - No change in membership list
+2024-12-02 13:07:17,031 - No change in membership list
+2024-12-02 13:07:19,032 - No change in membership list
+2024-12-02 13:07:21,034 - No change in membership list
+2024-12-02 13:07:23,036 - No change in membership list
+2024-12-02 13:07:25,037 - No change in membership list
+2024-12-02 13:07:27,040 - No change in membership list
+2024-12-02 13:07:29,042 - No change in membership list
+2024-12-02 13:07:31,044 - No change in membership list
+2024-12-02 13:07:33,047 - No change in membership list
+2024-12-02 13:07:35,049 - No change in membership list
+2024-12-02 13:07:37,052 - No change in membership list
+2024-12-02 13:07:39,055 - No change in membership list
+2024-12-02 13:07:41,057 - No change in membership list
+2024-12-02 13:07:43,059 - No change in membership list
+2024-12-02 13:07:45,062 - No change in membership list
+2024-12-02 13:07:47,064 - No change in membership list
+2024-12-02 13:07:49,067 - No change in membership list
+2024-12-02 13:07:51,070 - No change in membership list
+2024-12-02 13:07:53,072 - No change in membership list
+2024-12-02 13:07:55,074 - No change in membership list
+2024-12-02 13:07:57,076 - No change in membership list
+2024-12-02 13:07:59,079 - No change in membership list
+2024-12-02 13:08:01,081 - No change in membership list
+2024-12-02 13:08:03,084 - No change in membership list
+2024-12-02 13:08:05,086 - No change in membership list
+2024-12-02 13:08:07,089 - No change in membership list
+2024-12-02 13:08:09,091 - No change in membership list
+2024-12-02 13:08:11,094 - No change in membership list
+2024-12-02 13:08:13,096 - No change in membership list
+2024-12-02 13:08:15,099 - No change in membership list
+2024-12-02 13:08:17,101 - No change in membership list
+2024-12-02 13:08:19,104 - No change in membership list
+2024-12-02 13:08:21,106 - No change in membership list
+2024-12-02 13:08:23,109 - No change in membership list
+2024-12-02 13:08:25,111 - No change in membership list
+2024-12-02 13:08:27,114 - No change in membership list
+2024-12-02 13:08:29,117 - No change in membership list
+2024-12-02 13:08:31,119 - No change in membership list
+2024-12-02 13:08:33,122 - No change in membership list
+2024-12-02 13:08:35,124 - No change in membership list
+2024-12-02 13:08:37,127 - No change in membership list
+2024-12-02 13:08:39,129 - No change in membership list
+2024-12-02 13:08:41,131 - No change in membership list
+2024-12-02 13:08:43,134 - No change in membership list
+2024-12-02 13:08:45,137 - No change in membership list
+2024-12-02 13:08:47,139 - No change in membership list
+2024-12-02 13:08:49,142 - No change in membership list
+2024-12-02 13:08:51,144 - Membership lists are not equal
+2024-12-02 13:08:51,145 - No change in membership list
+2024-12-02 13:08:53,147 - No change in membership list
+2024-12-02 13:08:55,149 - No change in membership list
+2024-12-02 13:08:57,152 - No change in membership list
+2024-12-02 13:08:59,154 - No change in membership list
+2024-12-02 13:09:01,157 - No change in membership list
+2024-12-02 13:09:03,159 - No change in membership list
+2024-12-02 13:09:05,162 - No change in membership list
+2024-12-02 13:09:07,164 - No change in membership list
+2024-12-02 13:09:09,167 - No change in membership list
+2024-12-02 13:09:11,170 - No change in membership list
+2024-12-02 13:09:13,172 - No change in membership list
+2024-12-02 13:09:15,174 - No change in membership list
+2024-12-02 13:09:17,177 - No change in membership list
+2024-12-02 13:09:19,178 - No change in membership list
+2024-12-02 13:09:21,180 - No change in membership list
+2024-12-02 13:09:23,183 - No change in membership list
+2024-12-02 13:09:25,184 - No change in membership list
+2024-12-02 13:09:27,186 - No change in membership list
+2024-12-02 13:09:29,188 - No change in membership list
+2024-12-02 13:09:31,191 - No change in membership list
+2024-12-02 13:09:33,193 - No change in membership list
+2024-12-02 13:09:35,194 - No change in membership list
+2024-12-02 13:09:37,196 - No change in membership list
+2024-12-02 13:09:39,198 - No change in membership list
+2024-12-02 13:09:41,201 - No change in membership list
+2024-12-02 13:09:43,202 - No change in membership list
+2024-12-02 13:09:45,204 - No change in membership list
+2024-12-02 13:09:47,207 - No change in membership list
+2024-12-02 13:09:49,209 - No change in membership list
+2024-12-02 13:09:51,210 - No change in membership list
+2024-12-02 13:09:53,212 - No change in membership list
+2024-12-02 13:09:55,215 - No change in membership list
+2024-12-02 13:09:55,247 - Shutting down HyDFS...
+2024-12-02 13:09:55,247 - Listener thread is still running; proceeding to join...
+2024-12-02 13:09:57,217 - No change in membership list
+2024-12-02 13:09:59,543 - Listener thread joined successfully.
+2024-12-02 13:09:59,543 - Membership thread is not running, skipping join.
+2024-12-02 13:10:10,945 - HyDFS Node shut down gracefully.

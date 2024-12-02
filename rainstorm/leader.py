@@ -10,9 +10,16 @@ from collections import defaultdict
 import json
 import time
 import copy
+import shlex
+import base64
+
 
 import rainstorm_pb2
 import rainstorm_pb2_grpc
+
+import worker_pb2
+import worker_pb2_grpc
+
 
 from hyDFS import RingNode
 
@@ -75,8 +82,10 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         # num of tasks per stage
         self.num_tasks = 0
 
-        # store task mapping
+        # store job related attributes
         self.task_mapping = defaultdict(dict)
+        self.src_file = ""
+        self.dest_file = ""
 
     async def serve(self):
         max_message_length = 128 * 1024 * 1024  # Set max message size to 128 MB
@@ -203,6 +212,9 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         src_file = request.hydfs_src_file
         dest_file = request.hydfs_dest_filename
 
+        self.src_file = request.hydfs_src_file
+        self.dest_file = request.hydfs_dest_filename
+
         # Save and set permissions for the op_exes
         for i, binary in enumerate(request.op_exes):
             op_path = os.path.join(self.base_dir, f"{request.op_exe_names[i]}")
@@ -278,9 +290,9 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         """Starts the rainstorm workers by running the start_rainstorm_workers.sh script asynchronously using create_subprocess_exec."""
         # Convert mapping dictionary to JSON string
         mapping_dict_json = json.dumps(self.task_mapping, ensure_ascii=True)
-        # mapping_dict_json = mapping_dict_json.replace('"', '\\"')  # Escape quotes for shell
-        
-        print(f"Generated mapping dict: {mapping_dict_json}")
+        mapping_dict_json = base64.b64encode(mapping_dict_json.encode()).decode()  # Escape quotes for shell
+
+        print(f"Encoded mapping: {mapping_dict_json}")
 
         # Convert list of ports to a comma-separated string
         ports_str = ",".join(map(str, ports))
@@ -409,7 +421,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
 
             # Filter alive workers from self.worker_load to remove the matching element
             self.worker_load = [
-                node for node in self.worker_load if not current_node_ip.startswith(node[1])
+                node for node in self.worker_load if not current_node['node_id'].startswith(node[1])
             ]
 
             # Maintain a dictionary to track current tasks per node
@@ -470,9 +482,9 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
             for new_node_port in new_node_ports:
                 node, port = new_node_port.split(":")
                 self.log(f"Starting worker on new node:port pair: {new_node_port}")
-                src_file = "/path/to/src_file"  # Replace with actual source file path
-                dest_file = "/path/to/dest_file"  # Replace with actual destination file path
-                ports = [int(port)]
+                src_file = self.src_file  # Replace with actual source file path
+                dest_file = self.dest_file # Replace with actual destination file path
+                ports = [port]
                 servers = [node]
                 self.sync_start_rainstorm_workers(src_file, dest_file, ports, servers)
 
@@ -489,18 +501,28 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
 
 
     
-    def notify_workers(self, updated_task_mapping):
+    def notify_workers(self, updated_task_mapping): 
         """
-        Notify all workers about the updated task mapping via gRPC.
+        Notify relevant workers about the updated task mapping via gRPC.
 
         Parameters:
         updated_task_mapping (dict): The updated task mapping to send to workers.
         """
-        for node in self.worker_load:
-            node_address = f"{node[1]}:5002"  # Assuming port 5002 is the worker's gRPC port
+        # Extract all worker addresses and ports from the updated task mapping
+        worker_addresses = set()  # Use a set to avoid duplicates
+        for task_type, task_map in updated_task_mapping.items():
+            for node_index, node_address in task_map.items():
+                # The port for each worker is included in the task mapping values
+                worker_addresses.add(node_address)
+
+        # Now notify only the workers that are part of the updated task mapping
+        for node_address in worker_addresses:
             try:
-                # Create a synchronous gRPC channel and stub
-                with grpc.insecure_channel(node_address) as channel:
+                # Assuming the worker address in the mapping contains the full address (hostname:port)
+                host, port = node_address.split(':')
+
+                # Create a synchronous gRPC channel and stub with the correct port
+                with grpc.insecure_channel(f"{host}:{port}") as channel:
                     stub = worker_pb2_grpc.WorkerStub(channel)
 
                     # Create the request message
@@ -511,6 +533,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
                     self.log(f"Worker {node_address} acknowledged: {response.ack}")
             except Exception as e:
                 self.log(f"Failed to notify worker {node_address}: {e}")
+
 
 
 

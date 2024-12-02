@@ -30,12 +30,18 @@ for SERVER in "$@"; do
   echo "Starting worker.py on $SERVER with port $PORT"
 
   # Run the worker script on the remote server
-  ssh -n "$SERVER" "nohup python3 $WORKER_SCRIPT_PATH \
+  COMMAND="ssh -n \"$SERVER\" \"nohup python3 $WORKER_SCRIPT_PATH \
     --port $PORT \
     --mapping '$MAPPING_DICT_JSON' \
     --src_file $SRC_FILE \
-    --dest_file $DEST_FILE > /dev/null 2>&1 &" &
+    --dest_file $DEST_FILE > /dev/null 2>&1 &\" &"
 
+  # Echo the command
+  echo "Executing: $COMMAND"
+
+  # Execute the command
+  eval $COMMAND
+  
   i=$((i + 1))
 done
 

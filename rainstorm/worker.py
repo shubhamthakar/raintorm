@@ -12,10 +12,17 @@ import subprocess
 import os
 import hashlib
 import traceback
+import base64
 
 class WorkerServicer(worker_pb2_grpc.WorkerServicer):
     def __init__(self, mapping, src_file, dest_file):
-        self.mapping = json.loads(mapping)
+
+        # Decode and parse
+        decoded_mapping = base64.b64decode(mapping).decode()
+        self.mapping = json.loads(decoded_mapping)
+
+        print(f"Decoded mapping: {self.mapping}")
+
         self.exe_file_path = '/home/chaskar2/distributed-logger/rainstorm/exe_files'
         self.src_file = src_file
         self.dest_file = dest_file
@@ -427,7 +434,8 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
 
 
 async def serve(port, mapping, src_file, dest_file):
-    print(f"Recieved Mapping: {mapping}")
+    print(f"Recieved Mapping: {base64.b64decode(mapping).decode()}")
+    decoded_mapping = base64.b64decode(mapping).decode()
     server = grpc.aio.server(ThreadPoolExecutor(max_workers=10))
     worker_servicer = WorkerServicer(mapping, src_file, dest_file)
     await worker_servicer.create_files_for_state_recovery()

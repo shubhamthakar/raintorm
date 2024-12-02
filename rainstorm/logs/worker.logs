@@ -1,113 +1,83 @@
-2024-11-30 16:42:06,886 - Logging initialized for Rainstorm worker
-2024-11-30 16:42:06,886 - Extracted details task_type: source exe_file_path: /home/chaskar2/distributed-logger/rainstorm/exe_files/source partition_num: 0, total_partitions: 1, next_stage_tasks: {'0': 'fa24-cs425-6902.cs.illinois.edu:5002'}
-2024-11-30 16:42:06,890 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:06,897 - Connection from worker to hydfs closed.
-2024-11-30 16:42:06,899 - HyDFS response for create state recovery file : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'file_exists'}
-2024-11-30 16:42:06,900 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:06,906 - Connection from worker to hydfs closed.
-2024-11-30 16:42:06,907 - HyDFS response for get state recovery file : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': '\n{"inp_id_processed": {}, "state": {}, "output_rec": [[1, ["1|business_19.txt", "Deutsche Boerse boosts dividend"]], [2, ["2|business_19.txt", ""]], [3, ["3|business_19.txt", "Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%."]], [4, ["4|business_19.txt", ""]], [5, ["5|business_19.txt", "Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; \\u00a383.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros."]], [6, ["6|business_19.txt", ""]], [7, ["7|business_19.txt", "Frankfurt-based Deutsche Boerse has offered \\u00a31.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (\\u00a30.48; $0.98) from 55 euro cents a year earlier. \\"There is a whiff of a sweetener in there,\\" Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. \\"Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends,\\" Mr Faraj continued. Deutsche Boerse is \\"trying to buy them off in a sense\\", he said."]]], "id_counter": 7}'}
-2024-11-30 16:42:06,908 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:06,916 - Connection from worker to hydfs closed.
-2024-11-30 16:42:06,916 - HyDFS response for create ack rec storing file : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'file_exists'}
-2024-11-30 16:42:06,916 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:06,923 - Connection from worker to hydfs closed.
-2024-11-30 16:42:06,923 - HyDFS response for get ack rec file : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
-2024-11-30 16:42:06,925 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:06,931 - Connection from worker to hydfs closed.
-2024-11-30 16:42:06,931 - {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-11-30 16:42:06,932 - Retrieved file with 7 lines.
-2024-11-30 16:42:06,932 - Streaming partition 0 with 7 lines (lines 1-8).
-2024-11-30 16:42:06,932 - Queueing data: (1, 'Deutsche Boerse boosts dividend') with id 8
-2024-11-30 16:42:06,932 - Queueing data: (2, '') with id 9
-2024-11-30 16:42:06,934 - Queueing data: (3, 'Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.') with id 10
-2024-11-30 16:42:06,934 - Queueing data: (4, '') with id 11
-2024-11-30 16:42:06,935 - Queueing data: (5, 'Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.') with id 12
-2024-11-30 16:42:06,935 - Queueing data: (6, '') with id 13
-2024-11-30 16:42:06,935 - Queueing data: (7, 'Frankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.') with id 14
-2024-11-30 16:42:06,936 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:06,943 - Connection from worker to hydfs closed.
-2024-11-30 16:42:06,943 - HyDFS response for append to f'source_0_state' : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 2}
-2024-11-30 16:42:06,943 - Dequeued data: {'id': 1, '1|business_19.txt': 'Deutsche Boerse boosts dividend'} for sending.
-2024-11-30 16:42:07,293 - Received acknowledgment: {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:07,293 - Response from server : {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:07,296 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:07,306 - Connection from worker to hydfs closed.
-2024-11-30 16:42:07,307 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 1}
-2024-11-30 16:42:07,307 - Dequeued data: {'id': 2, '2|business_19.txt': ''} for sending.
-2024-11-30 16:42:07,592 - Received acknowledgment: {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:07,593 - Response from server : {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:07,596 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:07,606 - Connection from worker to hydfs closed.
-2024-11-30 16:42:07,606 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 2}
-2024-11-30 16:42:07,607 - Dequeued data: {'id': 3, '3|business_19.txt': 'Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.'} for sending.
-2024-11-30 16:42:07,970 - Received acknowledgment: {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:07,971 - Response from server : {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:07,972 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:07,979 - Connection from worker to hydfs closed.
-2024-11-30 16:42:07,981 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 3}
-2024-11-30 16:42:07,981 - Dequeued data: {'id': 4, '4|business_19.txt': ''} for sending.
-2024-11-30 16:42:08,245 - Received acknowledgment: {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:08,245 - Response from server : {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:08,246 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:08,255 - Connection from worker to hydfs closed.
-2024-11-30 16:42:08,255 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 4}
-2024-11-30 16:42:08,256 - Dequeued data: {'id': 5, '5|business_19.txt': 'Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.'} for sending.
-2024-11-30 16:42:08,532 - Received acknowledgment: {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:08,532 - Response from server : {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:08,534 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:08,542 - Connection from worker to hydfs closed.
-2024-11-30 16:42:08,543 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 5}
-2024-11-30 16:42:08,543 - Dequeued data: {'id': 6, '6|business_19.txt': ''} for sending.
-2024-11-30 16:42:08,816 - Received acknowledgment: {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:08,817 - Response from server : {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:08,819 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:08,832 - Connection from worker to hydfs closed.
-2024-11-30 16:42:08,833 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 6}
-2024-11-30 16:42:08,833 - Dequeued data: {'id': 7, '7|business_19.txt': 'Frankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.'} for sending.
-2024-11-30 16:42:09,325 - Received acknowledgment: {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:09,326 - Response from server : {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:09,328 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:09,337 - Connection from worker to hydfs closed.
-2024-11-30 16:42:09,338 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 7}
-2024-11-30 16:42:09,339 - Dequeued data: {'id': 8, '1|business_19.txt': 'Deutsche Boerse boosts dividend'} for sending.
-2024-11-30 16:42:09,677 - Received acknowledgment: {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:09,678 - Response from server : {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:09,680 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:09,689 - Connection from worker to hydfs closed.
-2024-11-30 16:42:09,689 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 8}
-2024-11-30 16:42:09,690 - Dequeued data: {'id': 9, '2|business_19.txt': ''} for sending.
-2024-11-30 16:42:10,032 - Received acknowledgment: {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:10,032 - Response from server : {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:10,035 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:10,045 - Connection from worker to hydfs closed.
-2024-11-30 16:42:10,046 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 9}
-2024-11-30 16:42:10,046 - Dequeued data: {'id': 10, '3|business_19.txt': 'Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.'} for sending.
-2024-11-30 16:42:10,394 - Received acknowledgment: {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:10,394 - Response from server : {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:10,395 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:10,401 - Connection from worker to hydfs closed.
-2024-11-30 16:42:10,402 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 10}
-2024-11-30 16:42:10,402 - Dequeued data: {'id': 11, '4|business_19.txt': ''} for sending.
-2024-11-30 16:42:10,745 - Received acknowledgment: {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:10,746 - Response from server : {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:10,747 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:10,753 - Connection from worker to hydfs closed.
-2024-11-30 16:42:10,755 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 11}
-2024-11-30 16:42:10,755 - Dequeued data: {'id': 12, '5|business_19.txt': 'Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.'} for sending.
-2024-11-30 16:42:11,120 - Received acknowledgment: {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:11,120 - Response from server : {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:11,122 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:11,130 - Connection from worker to hydfs closed.
-2024-11-30 16:42:11,131 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 12}
-2024-11-30 16:42:11,132 - Dequeued data: {'id': 13, '6|business_19.txt': ''} for sending.
-2024-11-30 16:42:11,585 - Received acknowledgment: {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:11,585 - Response from server : {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:11,588 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:11,598 - Connection from worker to hydfs closed.
-2024-11-30 16:42:11,598 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 13}
-2024-11-30 16:42:11,599 - Dequeued data: {'id': 14, '7|business_19.txt': 'Frankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.'} for sending.
-2024-11-30 16:42:11,966 - Received acknowledgment: {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:11,967 - Response from server : {'status': 'received', 'details': 'Data processed successfully'}
-2024-11-30 16:42:11,968 - Connected to the HyDFS coordinator.
-2024-11-30 16:42:11,975 - Connection from worker to hydfs closed.
-2024-11-30 16:42:11,976 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 14}
+2024-12-02 10:50:23,677 - Logging initialized for Rainstorm worker
+2024-12-02 10:50:23,677 - Extracted details task_type: source exe_file_path: /home/chaskar2/distributed-logger/rainstorm/exe_files/source partition_num: 0, total_partitions: 1, next_stage_tasks: None
+2024-12-02 10:50:23,683 - Connected to the HyDFS coordinator.
+2024-12-02 10:50:23,693 - Connection from worker to hydfs closed.
+2024-12-02 10:50:23,693 - HyDFS response for create state recovery file : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'write_complete'}
+2024-12-02 10:50:23,694 - Connected to the HyDFS coordinator.
+2024-12-02 10:50:23,709 - Connection from worker to hydfs closed.
+2024-12-02 10:50:23,709 - HyDFS response for get state recovery file : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'read_complete', 'content': ''}
+2024-12-02 10:50:23,711 - Connected to the HyDFS coordinator.
+2024-12-02 10:50:23,724 - Connection from worker to hydfs closed.
+2024-12-02 10:50:23,724 - HyDFS response for create ack rec storing file : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'write_complete'}
+2024-12-02 10:50:23,726 - Connected to the HyDFS coordinator.
+2024-12-02 10:50:23,740 - Connection from worker to hydfs closed.
+2024-12-02 10:50:23,740 - HyDFS response for get ack rec file : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'read_complete', 'content': ''}
+2024-12-02 10:50:23,745 - Connected to the HyDFS coordinator.
+2024-12-02 10:50:23,759 - Connection from worker to hydfs closed.
+2024-12-02 10:50:23,760 - {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-12-02 10:50:23,760 - Retrieved file with 7 lines.
+2024-12-02 10:50:23,760 - Streaming partition 0 with 7 lines (lines 1-8).
+2024-12-02 10:50:23,760 - Queueing data: (1, 'Deutsche Boerse boosts dividend') with id 1
+2024-12-02 10:50:23,760 - Queueing data: (2, '') with id 2
+2024-12-02 10:50:23,760 - Queueing data: (3, 'Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.') with id 3
+2024-12-02 10:50:23,760 - Queueing data: (4, '') with id 4
+2024-12-02 10:50:23,760 - Queueing data: (5, 'Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.') with id 5
+2024-12-02 10:50:23,760 - Queueing data: (6, '') with id 6
+2024-12-02 10:50:23,761 - Queueing data: (7, 'Frankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.') with id 7
+2024-12-02 10:50:23,763 - Connected to the HyDFS coordinator.
+2024-12-02 10:50:28,786 - Connection from worker to hydfs closed.
+2024-12-02 10:50:28,786 - HyDFS response for append to f'source_0_state' : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_state', 'status': 'append_logged', 'sequence_number': 1}
+2024-12-02 10:50:28,788 - Connected to the HyDFS coordinator.
+2024-12-02 10:50:28,795 - Connection from worker to hydfs closed.
+2024-12-02 10:50:28,796 - HyDFS response for create dest file : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'write_complete'}
+2024-12-02 10:50:28,796 - Dequeued data: {'id': 1, '1|business_19.txt': 'Deutsche Boerse boosts dividend'} for sending.
+2024-12-02 10:50:28,797 - Connected to the HyDFS coordinator.
+2024-12-02 10:50:33,809 - Connection from worker to hydfs closed.
+2024-12-02 10:50:33,809 - HyDFS response for append to dest file : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 1}
+2024-12-02 10:50:33,810 - Connected to the HyDFS coordinator.
+2024-12-02 10:50:33,817 - Connection from worker to hydfs closed.
+2024-12-02 10:50:33,817 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 1}
+2024-12-02 10:50:33,818 - Dequeued data: {'id': 2, '2|business_19.txt': ''} for sending.
+2024-12-02 10:50:33,819 - Connected to the HyDFS coordinator.
+2024-12-02 10:50:38,834 - Connection from worker to hydfs closed.
+2024-12-02 10:50:38,835 - HyDFS response for append to dest file : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 2}
+2024-12-02 10:50:38,837 - Connected to the HyDFS coordinator.
+2024-12-02 10:50:38,846 - Connection from worker to hydfs closed.
+2024-12-02 10:50:38,846 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 2}
+2024-12-02 10:50:38,847 - Dequeued data: {'id': 3, '3|business_19.txt': 'Deutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.'} for sending.
+2024-12-02 10:50:38,848 - Connected to the HyDFS coordinator.
+2024-12-02 10:50:43,859 - Connection from worker to hydfs closed.
+2024-12-02 10:50:43,860 - HyDFS response for append to dest file : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 3}
+2024-12-02 10:50:43,862 - Connected to the HyDFS coordinator.
+2024-12-02 10:50:43,871 - Connection from worker to hydfs closed.
+2024-12-02 10:50:43,872 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 3}
+2024-12-02 10:50:43,873 - Dequeued data: {'id': 4, '4|business_19.txt': ''} for sending.
+2024-12-02 10:50:43,874 - Connected to the HyDFS coordinator.
+2024-12-02 10:50:48,889 - Connection from worker to hydfs closed.
+2024-12-02 10:50:48,890 - HyDFS response for append to dest file : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 4}
+2024-12-02 10:50:48,892 - Connected to the HyDFS coordinator.
+2024-12-02 10:50:48,903 - Connection from worker to hydfs closed.
+2024-12-02 10:50:48,903 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 4}
+2024-12-02 10:50:48,903 - Dequeued data: {'id': 5, '5|business_19.txt': 'Analysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.'} for sending.
+2024-12-02 10:50:48,904 - Connected to the HyDFS coordinator.
+2024-12-02 10:50:53,919 - Connection from worker to hydfs closed.
+2024-12-02 10:50:53,920 - HyDFS response for append to dest file : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 5}
+2024-12-02 10:50:53,921 - Connected to the HyDFS coordinator.
+2024-12-02 10:50:53,929 - Connection from worker to hydfs closed.
+2024-12-02 10:50:53,929 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 5}
+2024-12-02 10:50:53,929 - Dequeued data: {'id': 6, '6|business_19.txt': ''} for sending.
+2024-12-02 10:50:53,930 - Connected to the HyDFS coordinator.
+2024-12-02 10:50:58,944 - Connection from worker to hydfs closed.
+2024-12-02 10:50:58,945 - HyDFS response for append to dest file : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 6}
+2024-12-02 10:50:58,946 - Connected to the HyDFS coordinator.
+2024-12-02 10:50:58,953 - Connection from worker to hydfs closed.
+2024-12-02 10:50:58,953 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 6}
+2024-12-02 10:50:58,953 - Dequeued data: {'id': 7, '7|business_19.txt': 'Frankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.'} for sending.
+2024-12-02 10:50:58,955 - Connected to the HyDFS coordinator.
+2024-12-02 10:51:03,970 - Connection from worker to hydfs closed.
+2024-12-02 10:51:03,970 - HyDFS response for append to dest file : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'dest', 'status': 'append_logged', 'sequence_number': 7}
+2024-12-02 10:51:03,973 - Connected to the HyDFS coordinator.
+2024-12-02 10:51:03,982 - Connection from worker to hydfs closed.
+2024-12-02 10:51:03,983 - HyDFS response for append to source_0_ack : {'client_name': 'rainstorm_source_0', 'action': 'ack', 'filename': 'source_0_ack', 'status': 'append_logged', 'sequence_number': 7}
+2024-12-02 10:55:19,991 - Extracted details task_type: source exe_file_path: /home/chaskar2/distributed-logger/rainstorm/exe_files/source partition_num: 0, total_partitions: 1, next_stage_tasks: None
+2024-12-02 10:55:19,991 - Mapping updated successfully: {'source': {'0': 'fa24-cs425-6902.cs.illinois.edu:5002'}}
