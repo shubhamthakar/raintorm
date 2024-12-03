@@ -413,16 +413,16 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         """
         try:
             # Parse the new mapping JSON string
-            decoded_mapping = base64.b64decode(request.mapping).decode()
-            self.mapping = json.loads(decoded_mapping)
+            # decoded_mapping = base64.b64decode(request.mapping).decode()
+            # self.mapping = json.loads(decoded_mapping)
             
             # Update self.mapping and reinitialize task-related attributes
-            # self.mapping = new_mapping
+            self.mapping = request.mapping
             
             # self.get_task_type(self.mapping)
             
             # Log success
-            self.log(f"Mapping updated successfully: {new_mapping}")
+            self.log(f"Mapping updated successfully: {self.mapping}")
             return worker_pb2.UpdateResponse(status="Mapping updated successfully.")
         except json.JSONDecodeError as e:
             error_message = f"Invalid JSON format: {str(e)}"
