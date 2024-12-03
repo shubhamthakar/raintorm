@@ -67,14 +67,13 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         self.worker_load = [
             (0,'fa24-cs425-6902.cs.illinois.edu'),
             (0,'fa24-cs425-6903.cs.illinois.edu'),
-            (0,'fa24-cs425-6904.cs.illinois.edu')
-            # ,
-            # (0,'fa24-cs425-6905.cs.illinois.edu'),
-            # (0,'fa24-cs425-6906.cs.illinois.edu'),
-            # (0,'fa24-cs425-6907.cs.illinois.edu'),
-            # (0,'fa24-cs425-6908.cs.illinois.edu'),
-            # (0,'fa24-cs425-6909.cs.illinois.edu'),
-            # (0,'fa24-cs425-6910.cs.illinois.edu')
+            (0,'fa24-cs425-6904.cs.illinois.edu'),
+            (0,'fa24-cs425-6905.cs.illinois.edu'),
+            (0,'fa24-cs425-6906.cs.illinois.edu'),
+            (0,'fa24-cs425-6907.cs.illinois.edu'),
+            (0,'fa24-cs425-6908.cs.illinois.edu'),
+            (0,'fa24-cs425-6909.cs.illinois.edu'),
+            (0,'fa24-cs425-6910.cs.illinois.edu')
         ]
         # Heapify the list
         heapq.heapify(self.worker_load)
@@ -332,9 +331,11 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
     def sync_start_rainstorm_workers(self, src_file, dest_file, ports, servers):
         """Starts the rainstorm workers by running the start_rainstorm_workers.sh script synchronously."""
         # Convert mapping dictionary to JSON string
+        # Convert mapping dictionary to JSON string
         mapping_dict_json = json.dumps(self.task_mapping, ensure_ascii=True)
+        mapping_dict_json = base64.b64encode(mapping_dict_json.encode()).decode()  # Escape quotes for shell
 
-        print(f"Generated mapping dict: {mapping_dict_json}")
+        print(f"Encoded mapping from Synchronous Worker Starting Function: {mapping_dict_json}")
 
         # Convert list of ports to a comma-separated string
         ports_str = ",".join(map(str, ports))
@@ -474,6 +475,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
                 heapq.heappush(self.worker_load, (new_load + 1, new_node))
 
             # Update the self.task_mapping with reassigned tasks
+            old_task_mapping = self.task_mapping
             self.task_mapping = updated_task_mapping
             self.log(f"New Task Mapping: {self.task_mapping}")
             self.log("Task mapping updated successfully.")
@@ -489,7 +491,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
                 self.sync_start_rainstorm_workers(src_file, dest_file, ports, servers)
 
             # Notify all workers about the updated mapping
-            self.notify_workers(self.task_mapping)
+            self.notify_workers(self.task_mapping, old_task_mapping)
 
             return self.task_mapping
 
@@ -501,7 +503,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
 
 
     
-    def notify_workers(self, updated_task_mapping): 
+    def notify_workers(self, updated_task_mapping, old_task_mapping): 
         """
         Notify relevant workers about the updated task mapping via gRPC.
 
@@ -510,13 +512,25 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         """
         # Extract all worker addresses and ports from the updated task mapping
         worker_addresses = set()  # Use a set to avoid duplicates
+        existing_worker_addresses = set() # Use this to get existing workers
+
+        for task_type, task_map in old_task_mapping.items():
+            for node_index, node_address in task_map.items():
+                # The port for each worker is included in the task mapping values
+                existing_worker_addresses.add(node_address)
+
         for task_type, task_map in updated_task_mapping.items():
             for node_index, node_address in task_map.items():
                 # The port for each worker is included in the task mapping values
                 worker_addresses.add(node_address)
 
+        workers_to_notify = set()
+        workers_to_notify = worker_addresses & existing_worker_addresses
+
+        self.log(f"Workers to notify: {workers_to_notify}")
+
         # Now notify only the workers that are part of the updated task mapping
-        for node_address in worker_addresses:
+        for node_address in workers_to_notify:
             try:
                 # Assuming the worker address in the mapping contains the full address (hostname:port)
                 host, port = node_address.split(':')

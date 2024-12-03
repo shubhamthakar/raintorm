@@ -21,7 +21,7 @@ class FileClient:
         try:
             self.client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             self.client_socket.connect((self.server_ip, self.server_port))
-            self.client_socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+            # self.client_socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
             print("Connected to the server.")
         except Exception as e:
             print(f"Connection error: {e}")
@@ -101,11 +101,10 @@ class FileClient:
             if message:
                 self.send_message(message)
                 response = self.receive_response()
-                if response:
-                    print("Server response:", response)
-                    if response["status"] == 'read_complete':
-                        with open(response["filename"], 'w') as file:
-                            file.write(response["content"])
+                print("Server response:", response)
+                if response["status"] == 'read_complete':
+                    with open(response["filename"], 'w') as file:
+                        file.write(response["content"])
                 self.close()
 
         end_time = time.time()
