@@ -67,13 +67,14 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         self.worker_load = [
             (0,'fa24-cs425-6902.cs.illinois.edu'),
             (0,'fa24-cs425-6903.cs.illinois.edu'),
-            (0,'fa24-cs425-6904.cs.illinois.edu'),
-            (0,'fa24-cs425-6905.cs.illinois.edu'),
-            (0,'fa24-cs425-6906.cs.illinois.edu'),
-            (0,'fa24-cs425-6907.cs.illinois.edu'),
-            (0,'fa24-cs425-6908.cs.illinois.edu'),
-            (0,'fa24-cs425-6909.cs.illinois.edu'),
-            (0,'fa24-cs425-6910.cs.illinois.edu')
+            (0,'fa24-cs425-6904.cs.illinois.edu')
+            # ,
+            # (0,'fa24-cs425-6905.cs.illinois.edu'),
+            # (0,'fa24-cs425-6906.cs.illinois.edu'),
+            # (0,'fa24-cs425-6907.cs.illinois.edu'),
+            # (0,'fa24-cs425-6908.cs.illinois.edu'),
+            # (0,'fa24-cs425-6909.cs.illinois.edu'),
+            # (0,'fa24-cs425-6910.cs.illinois.edu')
         ]
         # Heapify the list
         heapq.heapify(self.worker_load)
@@ -540,11 +541,11 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
                     stub = worker_pb2_grpc.WorkerStub(channel)
 
                     # Create the request message
-                    request = worker_pb2.DataRequest(data=json.dumps(updated_task_mapping))
+                    request = worker_pb2.MappingUpdateRequest(mapping=json.dumps(updated_task_mapping))
 
                     # Call the update_mapping RPC synchronously
                     response = stub.UpdateMapping(request)
-                    self.log(f"Worker {node_address} acknowledged: {response.ack}")
+                    self.log(f"Worker {node_address} acknowledged: {response.status}")
             except Exception as e:
                 self.log(f"Failed to notify worker {node_address}: {e}")
 

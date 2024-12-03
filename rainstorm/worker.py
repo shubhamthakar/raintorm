@@ -413,11 +413,13 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         """
         try:
             # Parse the new mapping JSON string
-            new_mapping = json.loads(request.mapping)
+            decoded_mapping = base64.b64decode(request.data).decode()
+            self.mapping = json.loads(decoded_mapping)
             
             # Update self.mapping and reinitialize task-related attributes
-            self.mapping = new_mapping
-            self.get_task_type(self.mapping)
+            # self.mapping = new_mapping
+            
+            # self.get_task_type(self.mapping)
             
             # Log success
             self.log(f"Mapping updated successfully: {new_mapping}")
