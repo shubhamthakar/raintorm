@@ -413,7 +413,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         """
         try:
             # Parse the new mapping JSON string
-            decoded_mapping = base64.b64decode(request.data).decode()
+            decoded_mapping = base64.b64decode(request.mapping).decode()
             self.mapping = json.loads(decoded_mapping)
             
             # Update self.mapping and reinitialize task-related attributes

@@ -1,916 +1,1200 @@
-2024-12-03 12:31:09,886 - Logging initialized for RingNode
-2024-12-03 12:31:09,892 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/business_19.txt
-2024-12-03 12:31:09,893 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/op2_0_state
-2024-12-03 12:31:09,893 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/op2_0_ack
-2024-12-03 12:31:09,893 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/output_1_business_19.txt
-2024-12-03 12:31:09,893 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/op1_0_state
-2024-12-03 12:31:09,894 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/op1_0_ack
-2024-12-03 12:31:09,894 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/source_0_state
-2024-12-03 12:31:09,894 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/source_0_ack
-2024-12-03 12:31:09,894 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_source_0--source_0_state.log
-2024-12-03 12:31:09,894 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_op1_0--op1_0_state.log
-2024-12-03 12:31:09,895 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_source_0--source_0_ack.log
-2024-12-03 12:31:09,895 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_op2_0--op2_0_state.log
-2024-12-03 12:31:09,895 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_op2_0--output_1_business_19.txt.log
-2024-12-03 12:31:09,895 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_op2_0--op2_0_ack.log
-2024-12-03 12:31:09,896 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/rainstorm_op1_0--op1_0_ack.log
-2024-12-03 12:31:09,896 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
-2024-12-03 12:31:29,918 - Monitoring membership list started
-2024-12-03 12:31:31,920 - No change in membership list
-2024-12-03 12:31:33,922 - No change in membership list
-2024-12-03 12:31:35,925 - No change in membership list
-2024-12-03 12:31:37,926 - No change in membership list
-2024-12-03 12:31:39,929 - No change in membership list
-2024-12-03 12:31:41,931 - No change in membership list
-2024-12-03 12:31:43,933 - No change in membership list
-2024-12-03 12:31:45,935 - No change in membership list
-2024-12-03 12:31:47,937 - No change in membership list
-2024-12-03 12:31:49,939 - No change in membership list
-2024-12-03 12:31:51,942 - No change in membership list
-2024-12-03 12:31:53,944 - No change in membership list
-2024-12-03 12:31:55,946 - No change in membership list
-2024-12-03 12:31:57,949 - No change in membership list
-2024-12-03 12:31:59,951 - No change in membership list
-2024-12-03 12:32:01,953 - No change in membership list
-2024-12-03 12:32:03,956 - No change in membership list
-2024-12-03 12:32:05,958 - No change in membership list
-2024-12-03 12:32:07,960 - No change in membership list
-2024-12-03 12:32:09,963 - No change in membership list
-2024-12-03 12:32:11,965 - No change in membership list
-2024-12-03 12:32:13,968 - No change in membership list
-2024-12-03 12:32:15,970 - No change in membership list
-2024-12-03 12:32:17,973 - No change in membership list
-2024-12-03 12:32:19,977 - No change in membership list
-2024-12-03 12:32:21,979 - No change in membership list
-2024-12-03 12:32:23,982 - No change in membership list
-2024-12-03 12:32:25,983 - No change in membership list
-2024-12-03 12:32:27,985 - No change in membership list
-2024-12-03 12:32:29,988 - Membership lists are not equal
-2024-12-03 12:32:29,988 - No change in membership list
-2024-12-03 12:32:31,990 - No change in membership list
-2024-12-03 12:32:33,993 - No change in membership list
-2024-12-03 12:32:35,995 - No change in membership list
-2024-12-03 12:32:37,998 - No change in membership list
-2024-12-03 12:32:40,000 - No change in membership list
-2024-12-03 12:32:42,002 - No change in membership list
-2024-12-03 12:32:44,004 - No change in membership list
-2024-12-03 12:32:46,007 - No change in membership list
-2024-12-03 12:32:48,009 - No change in membership list
-2024-12-03 12:32:50,011 - No change in membership list
-2024-12-03 12:32:52,014 - No change in membership list
-2024-12-03 12:32:54,016 - No change in membership list
-2024-12-03 12:32:56,018 - No change in membership list
-2024-12-03 12:32:58,020 - No change in membership list
-2024-12-03 12:33:00,022 - No change in membership list
-2024-12-03 12:33:02,025 - No change in membership list
-2024-12-03 12:33:04,027 - No change in membership list
-2024-12-03 12:33:06,029 - No change in membership list
-2024-12-03 12:33:08,031 - No change in membership list
-2024-12-03 12:33:10,033 - No change in membership list
-2024-12-03 12:33:12,035 - No change in membership list
-2024-12-03 12:33:14,038 - No change in membership list
-2024-12-03 12:33:16,040 - No change in membership list
-2024-12-03 12:33:18,043 - No change in membership list
-2024-12-03 12:33:20,045 - No change in membership list
-2024-12-03 12:33:22,047 - No change in membership list
-2024-12-03 12:33:24,049 - No change in membership list
-2024-12-03 12:33:26,052 - No change in membership list
-2024-12-03 12:33:28,054 - No change in membership list
-2024-12-03 12:33:30,057 - Membership lists are not equal
-2024-12-03 12:33:30,057 - No change in membership list
-2024-12-03 12:33:32,059 - No change in membership list
-2024-12-03 12:33:34,061 - No change in membership list
-2024-12-03 12:33:36,063 - No change in membership list
-2024-12-03 12:33:38,066 - No change in membership list
-2024-12-03 12:33:40,068 - No change in membership list
-2024-12-03 12:33:42,070 - No change in membership list
-2024-12-03 12:33:44,073 - No change in membership list
-2024-12-03 12:33:46,075 - No change in membership list
-2024-12-03 12:33:48,077 - No change in membership list
-2024-12-03 12:33:50,080 - No change in membership list
-2024-12-03 12:33:52,081 - No change in membership list
-2024-12-03 12:33:54,083 - No change in membership list
-2024-12-03 12:33:56,086 - No change in membership list
-2024-12-03 12:33:58,088 - No change in membership list
-2024-12-03 12:34:00,089 - No change in membership list
-2024-12-03 12:34:02,091 - No change in membership list
-2024-12-03 12:34:04,094 - No change in membership list
-2024-12-03 12:34:06,096 - No change in membership list
-2024-12-03 12:34:08,098 - No change in membership list
-2024-12-03 12:34:10,101 - No change in membership list
-2024-12-03 12:34:12,103 - No change in membership list
-2024-12-03 12:34:14,106 - No change in membership list
-2024-12-03 12:34:16,108 - No change in membership list
-2024-12-03 12:34:18,109 - No change in membership list
-2024-12-03 12:34:20,112 - No change in membership list
-2024-12-03 12:34:22,113 - No change in membership list
-2024-12-03 12:34:24,116 - No change in membership list
-2024-12-03 12:34:26,118 - No change in membership list
-2024-12-03 12:34:28,121 - No change in membership list
-2024-12-03 12:34:30,123 - Membership lists are not equal
-2024-12-03 12:34:30,124 - No change in membership list
-2024-12-03 12:34:32,126 - No change in membership list
-2024-12-03 12:34:34,130 - No change in membership list
-2024-12-03 12:34:36,132 - No change in membership list
-2024-12-03 12:34:36,402 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-12-03 12:34:36,403 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733250671', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733250670', 'ring_id': 444}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733250669', 'ring_id': 715}]
-2024-12-03 12:34:36,404 - Sending write to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
-2024-12-03 12:34:36,405 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
-2024-12-03 12:34:36,406 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file business_19.txt
-2024-12-03 12:34:36,408 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-12-03 12:34:36,409 - Sent 1362 bytes from data_buffer
-2024-12-03 12:34:36,409 - Sent 1362 bytes from data_buffer
-2024-12-03 12:34:36,409 - Sent 1362 bytes from data_buffer
-2024-12-03 12:34:36,409 - File 'business_19.txt' written successfully.
-2024-12-03 12:34:36,410 - Acknowledgment sent to client 'business_19.txt'.
-2024-12-03 12:34:36,410 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
-2024-12-03 12:34:36,411 - Quorum not yet met, received ack from 1 replicas
-2024-12-03 12:34:36,411 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
-2024-12-03 12:34:36,411 - Quorum not yet met, received ack from 2 replicas
-2024-12-03 12:34:36,411 - Sent 85 bytes from data_buffer
-2024-12-03 12:34:36,411 - Connection closed by server
-2024-12-03 12:34:36,412 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
-2024-12-03 12:34:36,412 - client_socket_to_use <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 53660)>
-2024-12-03 12:34:36,413 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
-2024-12-03 12:34:36,413 - Acknowledgment sent to client_1 for file 'business_19.txt'.
-2024-12-03 12:34:36,413 - Sent 85 bytes from data_buffer
-2024-12-03 12:34:36,415 - Connection closed by server
-2024-12-03 12:34:38,134 - No change in membership list
-2024-12-03 12:34:39,793 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-12-03 12:34:39,794 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733250671', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733250670', 'ring_id': 444}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733250669', 'ring_id': 715}]
-2024-12-03 12:34:39,794 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
-2024-12-03 12:34:39,796 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
-2024-12-03 12:34:39,797 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file business_19.txt
-2024-12-03 12:34:39,799 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
-2024-12-03 12:34:39,800 - Sent 64 bytes from data_buffer
-2024-12-03 12:34:39,800 - Sent 64 bytes from data_buffer
-2024-12-03 12:34:39,800 - Sent 64 bytes from data_buffer
-2024-12-03 12:34:39,801 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-12-03 12:34:39,801 - Quorum not yet met, received ack from 1 replicas
-2024-12-03 12:34:39,802 - File 'business_19.txt' and append log 'client_1--business_19.txt.log' read successfully.
-2024-12-03 12:34:39,802 - File read succsefully business_19.txt
-2024-12-03 12:34:39,802 - Acknowledgment sent to client with status 'read_complete' for file 'business_19.txt'.
-2024-12-03 12:34:39,803 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-12-03 12:34:39,803 - Quorum not yet met, received ack from 2 replicas
-2024-12-03 12:34:39,803 - Sent 1381 bytes from data_buffer
-2024-12-03 12:34:39,803 - Connection closed by server
-2024-12-03 12:34:39,803 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-12-03 12:34:39,804 - client_socket_to_use <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 60872)>
-2024-12-03 12:34:39,804 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
-2024-12-03 12:34:39,804 - Acknowledgment sent to client_1 for file 'business_19.txt'.
-2024-12-03 12:34:39,804 - Sent 1381 bytes from data_buffer
-2024-12-03 12:34:39,807 - Connection closed by server
-2024-12-03 12:34:40,137 - No change in membership list
-2024-12-03 12:34:42,139 - No change in membership list
-2024-12-03 12:34:44,142 - No change in membership list
-2024-12-03 12:34:46,144 - No change in membership list
-2024-12-03 12:34:48,146 - No change in membership list
-2024-12-03 12:34:50,147 - No change in membership list
-2024-12-03 12:34:52,150 - No change in membership list
-2024-12-03 12:34:54,152 - No change in membership list
-2024-12-03 12:34:56,154 - No change in membership list
-2024-12-03 12:34:58,155 - No change in membership list
-2024-12-03 12:35:00,158 - No change in membership list
-2024-12-03 12:35:02,159 - No change in membership list
-2024-12-03 12:35:04,161 - No change in membership list
-2024-12-03 12:35:06,162 - No change in membership list
-2024-12-03 12:35:08,164 - No change in membership list
-2024-12-03 12:35:10,167 - No change in membership list
-2024-12-03 12:35:12,169 - No change in membership list
-2024-12-03 12:35:14,171 - No change in membership list
-2024-12-03 12:35:16,174 - No change in membership list
-2024-12-03 12:35:18,177 - No change in membership list
-2024-12-03 12:35:20,180 - No change in membership list
-2024-12-03 12:35:22,182 - No change in membership list
-2024-12-03 12:35:24,186 - No change in membership list
-2024-12-03 12:35:26,188 - No change in membership list
-2024-12-03 12:35:28,191 - No change in membership list
-2024-12-03 12:35:30,193 - Membership lists are not equal
-2024-12-03 12:35:30,194 - No change in membership list
-2024-12-03 12:35:32,196 - No change in membership list
-2024-12-03 12:35:34,198 - No change in membership list
-2024-12-03 12:35:36,200 - No change in membership list
-2024-12-03 12:35:38,203 - No change in membership list
-2024-12-03 12:35:38,861 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:38,862 - File 'op2_0_state' written successfully.
-2024-12-03 12:35:38,862 - Acknowledgment sent to client 'op2_0_state'.
-2024-12-03 12:35:38,862 - Sent 88 bytes from data_buffer
-2024-12-03 12:35:38,863 - Connection closed by server
-2024-12-03 12:35:38,868 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:38,869 - File 'op2_0_state' and append log 'rainstorm_op2_0--op2_0_state.log' read successfully.
-2024-12-03 12:35:38,869 - File read succsefully op2_0_state
-2024-12-03 12:35:38,869 - Acknowledgment sent to client with status 'read_complete' for file 'op2_0_state'.
-2024-12-03 12:35:38,870 - Sent 96 bytes from data_buffer
-2024-12-03 12:35:38,870 - Connection closed by server
-2024-12-03 12:35:38,871 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-03 12:35:38,872 - File 'source_0_state' written successfully.
-2024-12-03 12:35:38,872 - Acknowledgment sent to client 'source_0_state'.
-2024-12-03 12:35:38,872 - Sent 94 bytes from data_buffer
-2024-12-03 12:35:38,873 - Connection closed by server
-2024-12-03 12:35:38,880 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-03 12:35:38,881 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:38,882 - File 'source_0_state' and append log 'rainstorm_source_0--source_0_state.log' read successfully.
-2024-12-03 12:35:38,882 - File read succsefully source_0_state
-2024-12-03 12:35:38,882 - Acknowledgment sent to client with status 'read_complete' for file 'source_0_state'.
-2024-12-03 12:35:38,882 - File 'op2_0_ack' written successfully.
-2024-12-03 12:35:38,883 - Acknowledgment sent to client 'op2_0_ack'.
-2024-12-03 12:35:38,883 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:38,883 - Sent 86 bytes from data_buffer
-2024-12-03 12:35:38,883 - Connection closed by server
-2024-12-03 12:35:38,889 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:38,891 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-03 12:35:38,891 - File 'op2_0_ack' and append log 'rainstorm_op2_0--op2_0_ack.log' read successfully.
-2024-12-03 12:35:38,892 - File read succsefully op2_0_ack
-2024-12-03 12:35:38,892 - Acknowledgment sent to client with status 'read_complete' for file 'op2_0_ack'.
-2024-12-03 12:35:38,892 - File 'source_0_ack' written successfully.
-2024-12-03 12:35:38,893 - Acknowledgment sent to client 'source_0_ack'.
-2024-12-03 12:35:38,893 - Sent 94 bytes from data_buffer
-2024-12-03 12:35:38,893 - Sent 92 bytes from data_buffer
-2024-12-03 12:35:38,893 - Connection closed by server
-2024-12-03 12:35:38,897 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-03 12:35:38,899 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:38,899 - File 'source_0_ack' and append log 'rainstorm_source_0--source_0_ack.log' read successfully.
-2024-12-03 12:35:38,899 - File read succsefully source_0_ack
-2024-12-03 12:35:38,900 - Acknowledgment sent to client with status 'read_complete' for file 'source_0_ack'.
-2024-12-03 12:35:38,900 - File 'output_1_business_19.txt' written successfully.
-2024-12-03 12:35:38,900 - Acknowledgment sent to client 'output_1_business_19.txt'.
-2024-12-03 12:35:38,901 - Sent 100 bytes from data_buffer
-2024-12-03 12:35:38,901 - Sent 101 bytes from data_buffer
-2024-12-03 12:35:38,901 - Connection closed by server
-2024-12-03 12:35:38,907 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-03 12:35:38,908 - File 'business_19.txt' and append log 'rainstorm_source_0--business_19.txt.log' read successfully.
-2024-12-03 12:35:38,908 - File read succsefully business_19.txt
-2024-12-03 12:35:38,908 - Acknowledgment sent to client with status 'read_complete' for file 'business_19.txt'.
-2024-12-03 12:35:38,909 - Sent 1391 bytes from data_buffer
-2024-12-03 12:35:38,909 - Connection closed by server
-2024-12-03 12:35:38,913 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-03 12:35:38,914 - Stated append action to file source_0_state
-2024-12-03 12:35:38,914 - Performed append action to 'rainstorm_source_0--source_0_state.log' with sequence number 1.
-2024-12-03 12:35:38,915 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_state'.
-2024-12-03 12:35:38,915 - Sent 110 bytes from data_buffer
-2024-12-03 12:35:38,915 - Connection closed by server
-2024-12-03 12:35:38,967 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:38,968 - File 'op1_0_state' written successfully.
-2024-12-03 12:35:38,969 - Acknowledgment sent to client 'op1_0_state'.
-2024-12-03 12:35:38,969 - Sent 88 bytes from data_buffer
-2024-12-03 12:35:38,969 - Connection closed by server
-2024-12-03 12:35:38,975 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:38,975 - File 'op1_0_state' and append log 'rainstorm_op1_0--op1_0_state.log' read successfully.
-2024-12-03 12:35:38,976 - File read succsefully op1_0_state
-2024-12-03 12:35:38,976 - Acknowledgment sent to client with status 'read_complete' for file 'op1_0_state'.
-2024-12-03 12:35:38,976 - Sent 96 bytes from data_buffer
-2024-12-03 12:35:38,976 - Connection closed by server
-2024-12-03 12:35:38,981 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:38,982 - File 'op1_0_ack' written successfully.
-2024-12-03 12:35:38,982 - Acknowledgment sent to client 'op1_0_ack'.
-2024-12-03 12:35:38,982 - Sent 86 bytes from data_buffer
-2024-12-03 12:35:38,982 - Connection closed by server
-2024-12-03 12:35:38,987 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:38,988 - File 'op1_0_ack' and append log 'rainstorm_op1_0--op1_0_ack.log' read successfully.
-2024-12-03 12:35:38,988 - File read succsefully op1_0_ack
-2024-12-03 12:35:38,989 - Acknowledgment sent to client with status 'read_complete' for file 'op1_0_ack'.
-2024-12-03 12:35:38,989 - Sent 94 bytes from data_buffer
-2024-12-03 12:35:38,989 - Connection closed by server
-2024-12-03 12:35:39,393 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:39,393 - Stated append action to file op1_0_state
-2024-12-03 12:35:39,394 - Performed append action to 'rainstorm_op1_0--op1_0_state.log' with sequence number 1.
-2024-12-03 12:35:39,394 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_state'.
-2024-12-03 12:35:39,395 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:39,395 - Connection closed by server
-2024-12-03 12:35:39,402 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-03 12:35:39,402 - Stated append action to file source_0_ack
-2024-12-03 12:35:39,403 - Performed append action to 'rainstorm_source_0--source_0_ack.log' with sequence number 1.
-2024-12-03 12:35:39,403 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_ack'.
-2024-12-03 12:35:39,403 - Sent 108 bytes from data_buffer
-2024-12-03 12:35:39,403 - Connection closed by server
-2024-12-03 12:35:39,668 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:39,669 - Stated append action to file op1_0_state
-2024-12-03 12:35:39,669 - Performed append action to 'rainstorm_op1_0--op1_0_state.log' with sequence number 2.
-2024-12-03 12:35:39,670 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_state'.
-2024-12-03 12:35:39,670 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:39,670 - Connection closed by server
-2024-12-03 12:35:39,675 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-03 12:35:39,676 - Stated append action to file source_0_ack
-2024-12-03 12:35:39,676 - Performed append action to 'rainstorm_source_0--source_0_ack.log' with sequence number 2.
-2024-12-03 12:35:39,676 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_ack'.
-2024-12-03 12:35:39,676 - Sent 108 bytes from data_buffer
-2024-12-03 12:35:39,677 - Connection closed by server
-2024-12-03 12:35:39,695 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:39,698 - Stated append action to file op2_0_state
-2024-12-03 12:35:39,698 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 1.
-2024-12-03 12:35:39,698 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
-2024-12-03 12:35:39,698 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:39,698 - Connection closed by server
-2024-12-03 12:35:39,705 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:39,706 - Stated append action to file output_1_business_19.txt
-2024-12-03 12:35:39,707 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 1.
-2024-12-03 12:35:39,707 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
-2024-12-03 12:35:39,707 - Sent 117 bytes from data_buffer
-2024-12-03 12:35:39,707 - Connection closed by server
-2024-12-03 12:35:39,714 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:39,714 - Stated append action to file op2_0_ack
-2024-12-03 12:35:39,714 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 1.
-2024-12-03 12:35:39,714 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
-2024-12-03 12:35:39,714 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:39,714 - Connection closed by server
-2024-12-03 12:35:39,959 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:39,960 - Stated append action to file op1_0_state
-2024-12-03 12:35:39,960 - Performed append action to 'rainstorm_op1_0--op1_0_state.log' with sequence number 3.
-2024-12-03 12:35:39,960 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_state'.
-2024-12-03 12:35:39,960 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:39,960 - Connection closed by server
-2024-12-03 12:35:39,966 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-03 12:35:39,967 - Stated append action to file source_0_ack
-2024-12-03 12:35:39,967 - Performed append action to 'rainstorm_source_0--source_0_ack.log' with sequence number 3.
-2024-12-03 12:35:39,967 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_ack'.
-2024-12-03 12:35:39,967 - Sent 108 bytes from data_buffer
-2024-12-03 12:35:39,967 - Connection closed by server
-2024-12-03 12:35:39,968 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:39,969 - Stated append action to file op1_0_ack
-2024-12-03 12:35:39,969 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 1.
-2024-12-03 12:35:39,969 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
-2024-12-03 12:35:39,969 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:39,969 - Connection closed by server
-2024-12-03 12:35:40,205 - No change in membership list
-2024-12-03 12:35:40,238 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:40,241 - Stated append action to file op2_0_state
-2024-12-03 12:35:40,241 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 2.
-2024-12-03 12:35:40,241 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
-2024-12-03 12:35:40,241 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:40,241 - Connection closed by server
-2024-12-03 12:35:40,243 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:40,244 - Stated append action to file op1_0_state
-2024-12-03 12:35:40,245 - Performed append action to 'rainstorm_op1_0--op1_0_state.log' with sequence number 4.
-2024-12-03 12:35:40,245 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_state'.
-2024-12-03 12:35:40,245 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:40,245 - Connection closed by server
-2024-12-03 12:35:40,249 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:40,251 - Stated append action to file output_1_business_19.txt
-2024-12-03 12:35:40,251 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 2.
-2024-12-03 12:35:40,251 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
-2024-12-03 12:35:40,252 - Sent 117 bytes from data_buffer
-2024-12-03 12:35:40,252 - Connection closed by server
-2024-12-03 12:35:40,252 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-03 12:35:40,254 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:40,254 - Stated append action to file source_0_ack
-2024-12-03 12:35:40,254 - Performed append action to 'rainstorm_source_0--source_0_ack.log' with sequence number 4.
-2024-12-03 12:35:40,254 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_ack'.
-2024-12-03 12:35:40,254 - Sent 108 bytes from data_buffer
-2024-12-03 12:35:40,255 - Stated append action to file op1_0_ack
-2024-12-03 12:35:40,256 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 2.
-2024-12-03 12:35:40,256 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
-2024-12-03 12:35:40,256 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:40,256 - Connection closed by server
-2024-12-03 12:35:40,262 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:40,262 - Stated append action to file op2_0_ack
-2024-12-03 12:35:40,262 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 2.
-2024-12-03 12:35:40,262 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
-2024-12-03 12:35:40,262 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:40,263 - Connection closed by server
-2024-12-03 12:35:40,520 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:40,523 - Stated append action to file op2_0_state
-2024-12-03 12:35:40,523 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 3.
-2024-12-03 12:35:40,523 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
-2024-12-03 12:35:40,524 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:40,524 - Connection closed by server
-2024-12-03 12:35:40,530 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:40,532 - Stated append action to file output_1_business_19.txt
-2024-12-03 12:35:40,532 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 3.
-2024-12-03 12:35:40,532 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
-2024-12-03 12:35:40,532 - Sent 117 bytes from data_buffer
-2024-12-03 12:35:40,532 - Connection closed by server
-2024-12-03 12:35:40,538 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:40,539 - Stated append action to file op1_0_state
-2024-12-03 12:35:40,540 - Performed append action to 'rainstorm_op1_0--op1_0_state.log' with sequence number 5.
-2024-12-03 12:35:40,540 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_state'.
-2024-12-03 12:35:40,540 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:40,540 - Connection closed by server
-2024-12-03 12:35:40,543 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:40,543 - Stated append action to file op2_0_ack
-2024-12-03 12:35:40,543 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 3.
-2024-12-03 12:35:40,543 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
-2024-12-03 12:35:40,543 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:40,544 - Connection closed by server
-2024-12-03 12:35:40,548 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-03 12:35:40,548 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:40,549 - Stated append action to file source_0_ack
-2024-12-03 12:35:40,549 - Performed append action to 'rainstorm_source_0--source_0_ack.log' with sequence number 5.
-2024-12-03 12:35:40,549 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_ack'.
-2024-12-03 12:35:40,549 - Sent 108 bytes from data_buffer
-2024-12-03 12:35:40,551 - Stated append action to file op1_0_ack
-2024-12-03 12:35:40,551 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 3.
-2024-12-03 12:35:40,551 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
-2024-12-03 12:35:40,551 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:40,552 - Connection closed by server
-2024-12-03 12:35:40,809 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:40,811 - Stated append action to file op2_0_state
-2024-12-03 12:35:40,812 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 4.
-2024-12-03 12:35:40,812 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
-2024-12-03 12:35:40,812 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:40,812 - Connection closed by server
-2024-12-03 12:35:40,820 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:40,821 - Stated append action to file output_1_business_19.txt
-2024-12-03 12:35:40,821 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 4.
-2024-12-03 12:35:40,821 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
-2024-12-03 12:35:40,821 - Sent 117 bytes from data_buffer
-2024-12-03 12:35:40,821 - Connection closed by server
-2024-12-03 12:35:40,828 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:40,828 - Stated append action to file op2_0_ack
-2024-12-03 12:35:40,829 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 4.
-2024-12-03 12:35:40,829 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
-2024-12-03 12:35:40,829 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:40,829 - Connection closed by server
-2024-12-03 12:35:40,840 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:40,840 - Stated append action to file op1_0_state
-2024-12-03 12:35:40,841 - Performed append action to 'rainstorm_op1_0--op1_0_state.log' with sequence number 6.
-2024-12-03 12:35:40,841 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_state'.
-2024-12-03 12:35:40,841 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:40,841 - Connection closed by server
-2024-12-03 12:35:40,849 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-03 12:35:40,850 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:40,851 - Stated append action to file source_0_ack
-2024-12-03 12:35:40,851 - Performed append action to 'rainstorm_source_0--source_0_ack.log' with sequence number 6.
-2024-12-03 12:35:40,851 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_ack'.
-2024-12-03 12:35:40,851 - Stated append action to file op1_0_ack
-2024-12-03 12:35:40,852 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 4.
-2024-12-03 12:35:40,852 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
-2024-12-03 12:35:40,852 - Sent 108 bytes from data_buffer
-2024-12-03 12:35:40,852 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:40,852 - Connection closed by server
-2024-12-03 12:35:41,114 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:41,117 - Stated append action to file op2_0_state
-2024-12-03 12:35:41,117 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 5.
-2024-12-03 12:35:41,118 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
-2024-12-03 12:35:41,118 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:41,118 - Connection closed by server
-2024-12-03 12:35:41,122 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:41,125 - Stated append action to file op1_0_state
-2024-12-03 12:35:41,125 - Performed append action to 'rainstorm_op1_0--op1_0_state.log' with sequence number 7.
-2024-12-03 12:35:41,125 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_state'.
-2024-12-03 12:35:41,126 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:41,126 - Connection closed by server
-2024-12-03 12:35:41,130 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:41,132 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-03 12:35:41,133 - Stated append action to file source_0_ack
-2024-12-03 12:35:41,133 - Performed append action to 'rainstorm_source_0--source_0_ack.log' with sequence number 7.
-2024-12-03 12:35:41,133 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_ack'.
-2024-12-03 12:35:41,134 - Stated append action to file output_1_business_19.txt
-2024-12-03 12:35:41,134 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 5.
-2024-12-03 12:35:41,134 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
-2024-12-03 12:35:41,134 - Sent 108 bytes from data_buffer
-2024-12-03 12:35:41,134 - Connection closed by server
-2024-12-03 12:35:41,136 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:41,136 - Sent 117 bytes from data_buffer
-2024-12-03 12:35:41,137 - Stated append action to file op1_0_ack
-2024-12-03 12:35:41,138 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 5.
-2024-12-03 12:35:41,138 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
-2024-12-03 12:35:41,138 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:41,138 - Connection closed by server
-2024-12-03 12:35:41,143 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:41,144 - Stated append action to file op2_0_ack
-2024-12-03 12:35:41,144 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 5.
-2024-12-03 12:35:41,144 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
-2024-12-03 12:35:41,144 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:41,144 - Connection closed by server
-2024-12-03 12:35:41,400 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:41,403 - Stated append action to file op2_0_state
-2024-12-03 12:35:41,403 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 6.
-2024-12-03 12:35:41,404 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
-2024-12-03 12:35:41,404 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:41,404 - Connection closed by server
-2024-12-03 12:35:41,409 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:41,411 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:41,411 - Stated append action to file op1_0_ack
-2024-12-03 12:35:41,411 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 6.
-2024-12-03 12:35:41,411 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
-2024-12-03 12:35:41,412 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:41,412 - Stated append action to file output_1_business_19.txt
-2024-12-03 12:35:41,412 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 6.
-2024-12-03 12:35:41,412 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
-2024-12-03 12:35:41,412 - Sent 117 bytes from data_buffer
-2024-12-03 12:35:41,413 - Connection closed by server
-2024-12-03 12:35:41,422 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:41,422 - Stated append action to file op2_0_ack
-2024-12-03 12:35:41,422 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 6.
-2024-12-03 12:35:41,422 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
-2024-12-03 12:35:41,423 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:41,423 - Connection closed by server
-2024-12-03 12:35:41,677 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:41,679 - Stated append action to file op2_0_state
-2024-12-03 12:35:41,679 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 7.
-2024-12-03 12:35:41,679 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
-2024-12-03 12:35:41,680 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:41,680 - Connection closed by server
-2024-12-03 12:35:41,685 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:41,686 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:41,687 - Stated append action to file op1_0_ack
-2024-12-03 12:35:41,687 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 7.
-2024-12-03 12:35:41,687 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
-2024-12-03 12:35:41,687 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:41,688 - Stated append action to file output_1_business_19.txt
-2024-12-03 12:35:41,688 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 7.
-2024-12-03 12:35:41,688 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
-2024-12-03 12:35:41,688 - Sent 117 bytes from data_buffer
-2024-12-03 12:35:41,689 - Connection closed by server
-2024-12-03 12:35:41,698 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:41,698 - Stated append action to file op2_0_ack
-2024-12-03 12:35:41,698 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 7.
-2024-12-03 12:35:41,698 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
-2024-12-03 12:35:41,698 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:41,698 - Connection closed by server
-2024-12-03 12:35:41,953 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:41,957 - Stated append action to file op2_0_state
-2024-12-03 12:35:41,957 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 8.
-2024-12-03 12:35:41,957 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
-2024-12-03 12:35:41,958 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:41,958 - Connection closed by server
-2024-12-03 12:35:41,963 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:41,965 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:41,965 - Stated append action to file op1_0_ack
-2024-12-03 12:35:41,965 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 8.
-2024-12-03 12:35:41,965 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
-2024-12-03 12:35:41,965 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:41,966 - Stated append action to file output_1_business_19.txt
-2024-12-03 12:35:41,966 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 8.
-2024-12-03 12:35:41,966 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
-2024-12-03 12:35:41,966 - Sent 117 bytes from data_buffer
-2024-12-03 12:35:41,966 - Connection closed by server
-2024-12-03 12:35:41,976 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:41,976 - Stated append action to file op2_0_ack
-2024-12-03 12:35:41,976 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 8.
-2024-12-03 12:35:41,976 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
-2024-12-03 12:35:41,976 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:41,976 - Connection closed by server
-2024-12-03 12:35:42,208 - No change in membership list
-2024-12-03 12:35:42,236 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:42,239 - Stated append action to file op2_0_state
-2024-12-03 12:35:42,239 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 9.
-2024-12-03 12:35:42,239 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
-2024-12-03 12:35:42,239 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:42,239 - Connection closed by server
-2024-12-03 12:35:42,245 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:42,245 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:42,246 - Stated append action to file op1_0_ack
-2024-12-03 12:35:42,246 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 9.
-2024-12-03 12:35:42,246 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
-2024-12-03 12:35:42,246 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:42,247 - Stated append action to file output_1_business_19.txt
-2024-12-03 12:35:42,247 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 9.
-2024-12-03 12:35:42,247 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
-2024-12-03 12:35:42,247 - Sent 117 bytes from data_buffer
-2024-12-03 12:35:42,247 - Connection closed by server
-2024-12-03 12:35:42,256 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:42,256 - Stated append action to file op2_0_ack
-2024-12-03 12:35:42,257 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 9.
-2024-12-03 12:35:42,257 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
-2024-12-03 12:35:42,257 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:42,257 - Connection closed by server
-2024-12-03 12:35:42,516 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:42,519 - Stated append action to file op2_0_state
-2024-12-03 12:35:42,519 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 10.
-2024-12-03 12:35:42,519 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
-2024-12-03 12:35:42,520 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:42,520 - Connection closed by server
-2024-12-03 12:35:42,526 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:42,527 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:42,528 - Stated append action to file output_1_business_19.txt
-2024-12-03 12:35:42,528 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 10.
-2024-12-03 12:35:42,528 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
-2024-12-03 12:35:42,528 - Sent 117 bytes from data_buffer
-2024-12-03 12:35:42,528 - Stated append action to file op1_0_ack
-2024-12-03 12:35:42,528 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 10.
-2024-12-03 12:35:42,528 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
-2024-12-03 12:35:42,529 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:42,529 - Connection closed by server
-2024-12-03 12:35:42,537 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:42,538 - Stated append action to file op2_0_ack
-2024-12-03 12:35:42,538 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 10.
-2024-12-03 12:35:42,538 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
-2024-12-03 12:35:42,538 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:42,538 - Connection closed by server
-2024-12-03 12:35:42,798 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:42,801 - Stated append action to file op2_0_state
-2024-12-03 12:35:42,801 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 11.
-2024-12-03 12:35:42,802 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
-2024-12-03 12:35:42,802 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:42,802 - Connection closed by server
-2024-12-03 12:35:42,807 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:42,808 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:42,809 - Stated append action to file op1_0_ack
-2024-12-03 12:35:42,809 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 11.
-2024-12-03 12:35:42,809 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
-2024-12-03 12:35:42,809 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:42,810 - Stated append action to file output_1_business_19.txt
-2024-12-03 12:35:42,810 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 11.
-2024-12-03 12:35:42,810 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
-2024-12-03 12:35:42,810 - Sent 117 bytes from data_buffer
-2024-12-03 12:35:42,810 - Connection closed by server
-2024-12-03 12:35:42,822 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:42,822 - Stated append action to file op2_0_ack
-2024-12-03 12:35:42,822 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 11.
-2024-12-03 12:35:42,822 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
-2024-12-03 12:35:42,822 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:42,822 - Connection closed by server
-2024-12-03 12:35:43,080 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:43,082 - Stated append action to file op2_0_state
-2024-12-03 12:35:43,082 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 12.
-2024-12-03 12:35:43,083 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
-2024-12-03 12:35:43,083 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:43,083 - Connection closed by server
-2024-12-03 12:35:43,089 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:43,091 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:43,091 - Stated append action to file op1_0_ack
-2024-12-03 12:35:43,091 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 12.
-2024-12-03 12:35:43,091 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
-2024-12-03 12:35:43,092 - Stated append action to file output_1_business_19.txt
-2024-12-03 12:35:43,092 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 12.
-2024-12-03 12:35:43,092 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
-2024-12-03 12:35:43,092 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:43,092 - Sent 117 bytes from data_buffer
-2024-12-03 12:35:43,093 - Connection closed by server
-2024-12-03 12:35:43,101 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:43,101 - Stated append action to file op2_0_ack
-2024-12-03 12:35:43,102 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 12.
-2024-12-03 12:35:43,102 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
-2024-12-03 12:35:43,102 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:43,102 - Connection closed by server
-2024-12-03 12:35:43,361 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:43,362 - Stated append action to file op2_0_state
-2024-12-03 12:35:43,363 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 13.
-2024-12-03 12:35:43,363 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
-2024-12-03 12:35:43,363 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:43,364 - Connection closed by server
-2024-12-03 12:35:43,370 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:43,372 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:43,372 - Stated append action to file op1_0_ack
-2024-12-03 12:35:43,373 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 13.
-2024-12-03 12:35:43,373 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
-2024-12-03 12:35:43,373 - Stated append action to file output_1_business_19.txt
-2024-12-03 12:35:43,373 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 13.
-2024-12-03 12:35:43,374 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
-2024-12-03 12:35:43,374 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:43,374 - Sent 117 bytes from data_buffer
-2024-12-03 12:35:43,374 - Connection closed by server
-2024-12-03 12:35:43,382 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:43,383 - Stated append action to file op2_0_ack
-2024-12-03 12:35:43,383 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 13.
-2024-12-03 12:35:43,383 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
-2024-12-03 12:35:43,383 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:43,384 - Connection closed by server
-2024-12-03 12:35:43,636 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:43,639 - Stated append action to file op2_0_state
-2024-12-03 12:35:43,639 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 14.
-2024-12-03 12:35:43,640 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
-2024-12-03 12:35:43,640 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:43,640 - Connection closed by server
-2024-12-03 12:35:43,646 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:43,648 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:43,648 - Stated append action to file op1_0_ack
-2024-12-03 12:35:43,648 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 14.
-2024-12-03 12:35:43,648 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
-2024-12-03 12:35:43,648 - Stated append action to file output_1_business_19.txt
-2024-12-03 12:35:43,649 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 14.
-2024-12-03 12:35:43,649 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
-2024-12-03 12:35:43,649 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:43,650 - Sent 117 bytes from data_buffer
-2024-12-03 12:35:43,650 - Connection closed by server
-2024-12-03 12:35:43,658 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:43,658 - Stated append action to file op2_0_ack
-2024-12-03 12:35:43,658 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 14.
-2024-12-03 12:35:43,659 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
-2024-12-03 12:35:43,659 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:43,659 - Connection closed by server
-2024-12-03 12:35:43,993 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:43,998 - Stated append action to file op2_0_state
-2024-12-03 12:35:43,998 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 15.
-2024-12-03 12:35:43,998 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
-2024-12-03 12:35:43,998 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:43,998 - Connection closed by server
-2024-12-03 12:35:44,003 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:44,004 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:44,005 - Stated append action to file op1_0_ack
-2024-12-03 12:35:44,005 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 15.
-2024-12-03 12:35:44,005 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
-2024-12-03 12:35:44,005 - Stated append action to file output_1_business_19.txt
-2024-12-03 12:35:44,005 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 15.
-2024-12-03 12:35:44,005 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
-2024-12-03 12:35:44,005 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:44,005 - Sent 117 bytes from data_buffer
-2024-12-03 12:35:44,005 - Connection closed by server
-2024-12-03 12:35:44,015 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:44,015 - Stated append action to file op2_0_ack
-2024-12-03 12:35:44,015 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 15.
-2024-12-03 12:35:44,015 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
-2024-12-03 12:35:44,015 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:44,015 - Connection closed by server
-2024-12-03 12:35:44,209 - No change in membership list
-2024-12-03 12:35:44,347 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:44,349 - Stated append action to file op2_0_state
-2024-12-03 12:35:44,349 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 16.
-2024-12-03 12:35:44,349 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
-2024-12-03 12:35:44,349 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:44,349 - Connection closed by server
-2024-12-03 12:35:44,356 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:44,356 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:44,357 - Stated append action to file op1_0_ack
-2024-12-03 12:35:44,358 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 16.
-2024-12-03 12:35:44,358 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
-2024-12-03 12:35:44,358 - Stated append action to file output_1_business_19.txt
-2024-12-03 12:35:44,358 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 16.
-2024-12-03 12:35:44,358 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
-2024-12-03 12:35:44,358 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:44,358 - Sent 117 bytes from data_buffer
-2024-12-03 12:35:44,358 - Connection closed by server
-2024-12-03 12:35:44,367 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:44,367 - Stated append action to file op2_0_ack
-2024-12-03 12:35:44,368 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 16.
-2024-12-03 12:35:44,368 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
-2024-12-03 12:35:44,368 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:44,368 - Connection closed by server
-2024-12-03 12:35:44,715 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:44,718 - Stated append action to file op2_0_state
-2024-12-03 12:35:44,718 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 17.
-2024-12-03 12:35:44,718 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
-2024-12-03 12:35:44,719 - Sent 104 bytes from data_buffer
-2024-12-03 12:35:44,719 - Connection closed by server
-2024-12-03 12:35:44,726 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:44,727 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
-2024-12-03 12:35:44,729 - Stated append action to file op1_0_ack
-2024-12-03 12:35:44,729 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 17.
-2024-12-03 12:35:44,729 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
-2024-12-03 12:35:44,731 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:44,731 - Connection closed by server
-2024-12-03 12:35:44,731 - Stated append action to file output_1_business_19.txt
-2024-12-03 12:35:44,731 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 17.
-2024-12-03 12:35:44,732 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
-2024-12-03 12:35:44,732 - Sent 117 bytes from data_buffer
-2024-12-03 12:35:44,742 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
-2024-12-03 12:35:44,742 - Stated append action to file op2_0_ack
-2024-12-03 12:35:44,742 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 17.
-2024-12-03 12:35:44,742 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
-2024-12-03 12:35:44,742 - Sent 102 bytes from data_buffer
-2024-12-03 12:35:44,742 - Connection closed by server
-2024-12-03 12:35:46,211 - No change in membership list
-2024-12-03 12:35:48,214 - No change in membership list
-2024-12-03 12:35:50,216 - No change in membership list
-2024-12-03 12:35:52,218 - No change in membership list
-2024-12-03 12:35:54,221 - No change in membership list
-2024-12-03 12:35:56,223 - No change in membership list
-2024-12-03 12:35:58,226 - No change in membership list
-2024-12-03 12:36:00,228 - No change in membership list
-2024-12-03 12:36:02,231 - No change in membership list
-2024-12-03 12:36:04,234 - No change in membership list
-2024-12-03 12:36:06,236 - No change in membership list
-2024-12-03 12:36:08,237 - No change in membership list
-2024-12-03 12:36:10,239 - No change in membership list
-2024-12-03 12:36:12,242 - No change in membership list
-2024-12-03 12:36:14,244 - No change in membership list
-2024-12-03 12:36:16,247 - No change in membership list
-2024-12-03 12:36:18,248 - No change in membership list
-2024-12-03 12:36:20,250 - No change in membership list
-2024-12-03 12:36:22,252 - No change in membership list
-2024-12-03 12:36:24,255 - No change in membership list
-2024-12-03 12:36:26,257 - No change in membership list
-2024-12-03 12:36:28,260 - No change in membership list
-2024-12-03 12:36:30,262 - Membership lists are not equal
-2024-12-03 12:36:30,262 - No change in membership list
-2024-12-03 12:36:32,263 - No change in membership list
-2024-12-03 12:36:34,266 - No change in membership list
-2024-12-03 12:36:36,268 - No change in membership list
-2024-12-03 12:36:38,271 - No change in membership list
-2024-12-03 12:36:40,273 - Membership lists are not equal
-2024-12-03 12:36:40,273 - Hydfs node marked as DEAD: {'ring_id': 859, 'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1733250672', 'status': 'DEAD', 'inc_num': 0}
-2024-12-03 12:36:40,273 - Dead node fa24-cs425-6904.cs.illinois.edu_5000_1733250672 - 1st predecessor: fa24-cs425-6901.cs.illinois.edu_5000_1733250669, 2nd predecessor: fa24-cs425-6902.cs.illinois.edu_5000_1733250670, 1st successor: fa24-cs425-6903.cs.illinois.edu_5000_1733250671
-2024-12-03 12:36:40,273 - Added fa24-cs425-6903.cs.illinois.edu_5000_1733250671 to replica list
-2024-12-03 12:36:40,273 - Added fa24-cs425-6902.cs.illinois.edu_5000_1733250670 to replica list
-2024-12-03 12:36:40,274 - Next 1 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733250671', 'ring_id': 403}]
-2024-12-03 12:36:40,274 - Primary replica is fa24-cs425-6903.cs.illinois.edu_5000_1733250671
-2024-12-03 12:36:40,274 - Next 1 nodes after 486: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733250669', 'ring_id': 715}]
-2024-12-03 12:36:40,274 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733250669
-2024-12-03 12:36:40,274 - I am a predecessor/succesor of dead node fa24-cs425-6904.cs.illinois.edu_5000_1733250672 with ring_id 859
-2024-12-03 12:36:40,274 - Sending write_replica to fa24-cs425-6903.cs.illinois.edu:5001 for file op2_0_state
-2024-12-03 12:36:40,275 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file op2_0_state
-2024-12-03 12:36:40,276 - Next 1 nodes after 618: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733250669', 'ring_id': 715}]
-2024-12-03 12:36:40,276 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733250669
-2024-12-03 12:36:40,276 - I am a predecessor/succesor of dead node fa24-cs425-6904.cs.illinois.edu_5000_1733250672 with ring_id 859
-2024-12-03 12:36:40,276 - Sending write_replica to fa24-cs425-6903.cs.illinois.edu:5001 for file source_0_state
-2024-12-03 12:36:40,277 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file source_0_state
-2024-12-03 12:36:40,278 - Next 1 nodes after 991: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733250671', 'ring_id': 403}]
-2024-12-03 12:36:40,278 - Primary replica is fa24-cs425-6903.cs.illinois.edu_5000_1733250671
-2024-12-03 12:36:40,278 - Next 1 nodes after 382: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733250671', 'ring_id': 403}]
-2024-12-03 12:36:40,278 - Primary replica is fa24-cs425-6903.cs.illinois.edu_5000_1733250671
-2024-12-03 12:36:40,278 - Next 1 nodes after 462: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733250669', 'ring_id': 715}]
-2024-12-03 12:36:40,279 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733250669
-2024-12-03 12:36:40,279 - I am a predecessor/succesor of dead node fa24-cs425-6904.cs.illinois.edu_5000_1733250672 with ring_id 859
-2024-12-03 12:36:40,279 - Sending write_replica to fa24-cs425-6903.cs.illinois.edu:5001 for file output_1_business_19.txt
-2024-12-03 12:36:40,280 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file output_1_business_19.txt
-2024-12-03 12:36:40,281 - Next 1 nodes after 618: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733250669', 'ring_id': 715}]
-2024-12-03 12:36:40,281 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733250669
-2024-12-03 12:36:40,281 - I am a predecessor/succesor of dead node fa24-cs425-6904.cs.illinois.edu_5000_1733250672 with ring_id 859
-2024-12-03 12:36:40,281 - Sending write_replica to fa24-cs425-6903.cs.illinois.edu:5001 for file rainstorm_source_0--source_0_state.log
-2024-12-03 12:36:40,283 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file rainstorm_source_0--source_0_state.log
-2024-12-03 12:36:40,283 - Next 1 nodes after 8: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733250671', 'ring_id': 403}]
-2024-12-03 12:36:40,284 - Primary replica is fa24-cs425-6903.cs.illinois.edu_5000_1733250671
-2024-12-03 12:36:40,284 - Next 1 nodes after 615: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733250669', 'ring_id': 715}]
-2024-12-03 12:36:40,284 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733250669
-2024-12-03 12:36:40,284 - I am a predecessor/succesor of dead node fa24-cs425-6904.cs.illinois.edu_5000_1733250672 with ring_id 859
-2024-12-03 12:36:40,284 - Sending write_replica to fa24-cs425-6903.cs.illinois.edu:5001 for file op1_0_ack
-2024-12-03 12:36:40,285 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file op1_0_ack
-2024-12-03 12:36:40,286 - Next 1 nodes after 8: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733250671', 'ring_id': 403}]
-2024-12-03 12:36:40,286 - Primary replica is fa24-cs425-6903.cs.illinois.edu_5000_1733250671
-2024-12-03 12:36:40,286 - Next 1 nodes after 382: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733250671', 'ring_id': 403}]
-2024-12-03 12:36:40,286 - Primary replica is fa24-cs425-6903.cs.illinois.edu_5000_1733250671
-2024-12-03 12:36:40,286 - Next 1 nodes after 486: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733250669', 'ring_id': 715}]
-2024-12-03 12:36:40,287 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733250669
-2024-12-03 12:36:40,287 - I am a predecessor/succesor of dead node fa24-cs425-6904.cs.illinois.edu_5000_1733250672 with ring_id 859
-2024-12-03 12:36:40,287 - Sending write_replica to fa24-cs425-6903.cs.illinois.edu:5001 for file rainstorm_op2_0--op2_0_state.log
-2024-12-03 12:36:40,289 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file rainstorm_op2_0--op2_0_state.log
-2024-12-03 12:36:40,290 - Next 1 nodes after 462: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733250669', 'ring_id': 715}]
-2024-12-03 12:36:40,290 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733250669
-2024-12-03 12:36:40,290 - I am a predecessor/succesor of dead node fa24-cs425-6904.cs.illinois.edu_5000_1733250672 with ring_id 859
-2024-12-03 12:36:40,290 - Sending write_replica to fa24-cs425-6903.cs.illinois.edu:5001 for file rainstorm_op2_0--output_1_business_19.txt.log
-2024-12-03 12:36:40,291 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file rainstorm_op2_0--output_1_business_19.txt.log
-2024-12-03 12:36:40,292 - Next 1 nodes after 991: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733250671', 'ring_id': 403}]
-2024-12-03 12:36:40,292 - Primary replica is fa24-cs425-6903.cs.illinois.edu_5000_1733250671
-2024-12-03 12:36:40,292 - Next 1 nodes after 615: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733250669', 'ring_id': 715}]
-2024-12-03 12:36:40,292 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733250669
-2024-12-03 12:36:40,293 - I am a predecessor/succesor of dead node fa24-cs425-6904.cs.illinois.edu_5000_1733250672 with ring_id 859
-2024-12-03 12:36:40,293 - Sending write_replica to fa24-cs425-6903.cs.illinois.edu:5001 for file rainstorm_op1_0--op1_0_ack.log
-2024-12-03 12:36:40,294 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file rainstorm_op1_0--op1_0_ack.log
-2024-12-03 12:36:40,295 - No change in membership list
-2024-12-03 12:36:41,686 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-03 12:36:41,687 - File 'op2_0_state' already exists. Not writing to it.
-2024-12-03 12:36:41,687 - Acknowledgment sent to client 'op2_0_state'.
-2024-12-03 12:36:41,687 - Sent 68 bytes from data_buffer
-2024-12-03 12:36:41,688 - Sent 68 bytes from data_buffer
-2024-12-03 12:36:41,688 - Sent 71 bytes from data_buffer
-2024-12-03 12:36:41,688 - Sent 71 bytes from data_buffer
-2024-12-03 12:36:41,688 - Sent 81 bytes from data_buffer
-2024-12-03 12:36:41,688 - Sent 81 bytes from data_buffer
-2024-12-03 12:36:41,688 - Sent 1866 bytes from data_buffer
-2024-12-03 12:36:41,688 - Sent 1866 bytes from data_buffer
-2024-12-03 12:36:41,688 - Sent 66 bytes from data_buffer
-2024-12-03 12:36:41,689 - Sent 66 bytes from data_buffer
-2024-12-03 12:36:41,689 - Sent 10191 bytes from data_buffer
-2024-12-03 12:36:41,689 - Sent 10191 bytes from data_buffer
-2024-12-03 12:36:41,689 - Sent 2779 bytes from data_buffer
-2024-12-03 12:36:41,689 - Sent 2779 bytes from data_buffer
-2024-12-03 12:36:41,689 - Sent 3653 bytes from data_buffer
-2024-12-03 12:36:41,689 - Sent 3653 bytes from data_buffer
-2024-12-03 12:36:41,689 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'op2_0_state', 'status': 'write_complete'}
-2024-12-03 12:36:41,690 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'source_0_state', 'status': 'write_complete'}
-2024-12-03 12:36:41,690 - Sent 85 bytes from data_buffer
-2024-12-03 12:36:41,690 - Connection closed by server
-2024-12-03 12:36:41,691 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'output_1_business_19.txt', 'status': 'write_complete'}
-2024-12-03 12:36:41,691 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'op2_0_state', 'status': 'write_complete'}
-2024-12-03 12:36:41,692 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'rainstorm_source_0--source_0_state.log', 'status': 'write_complete'}
-2024-12-03 12:36:41,692 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'op1_0_ack', 'status': 'write_complete'}
-2024-12-03 12:36:41,692 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'rainstorm_op2_0--output_1_business_19.txt.log', 'status': 'write_complete'}
-2024-12-03 12:36:41,693 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'rainstorm_op1_0--op1_0_ack.log', 'status': 'write_complete'}
-2024-12-03 12:36:41,693 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'source_0_state', 'status': 'write_complete'}
-2024-12-03 12:36:41,694 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'rainstorm_op2_0--op2_0_state.log', 'status': 'write_complete'}
-2024-12-03 12:36:41,694 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'output_1_business_19.txt', 'status': 'write_complete'}
-2024-12-03 12:36:41,694 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'rainstorm_source_0--source_0_state.log', 'status': 'write_complete'}
-2024-12-03 12:36:41,694 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'op1_0_ack', 'status': 'write_complete'}
-2024-12-03 12:36:41,695 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'rainstorm_op2_0--output_1_business_19.txt.log', 'status': 'write_complete'}
-2024-12-03 12:36:41,695 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'rainstorm_op1_0--op1_0_ack.log', 'status': 'write_complete'}
-2024-12-03 12:36:41,698 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'rainstorm_op2_0--op2_0_state.log', 'status': 'write_complete'}
-2024-12-03 12:36:41,701 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-03 12:36:41,702 - File 'op2_0_state' and append log 'rainstorm_op2_0--op2_0_state.log' read successfully.
-2024-12-03 12:36:41,702 - File read succsefully op2_0_state
-2024-12-03 12:36:41,702 - Acknowledgment sent to client with status 'read_complete' for file 'op2_0_state'.
-2024-12-03 12:36:41,703 - Sent 7130 bytes from data_buffer
-2024-12-03 12:36:41,703 - Connection closed by server
-2024-12-03 12:36:41,713 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-03 12:36:41,713 - File 'op2_0_ack' already exists. Not writing to it.
-2024-12-03 12:36:41,713 - Acknowledgment sent to client 'op2_0_ack'.
-2024-12-03 12:36:41,713 - Sent 83 bytes from data_buffer
-2024-12-03 12:36:41,713 - Connection closed by server
-2024-12-03 12:36:41,720 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-03 12:36:41,721 - File 'op2_0_ack' and append log 'rainstorm_op2_0--op2_0_ack.log' read successfully.
-2024-12-03 12:36:41,721 - File read succsefully op2_0_ack
-2024-12-03 12:36:41,721 - Acknowledgment sent to client with status 'read_complete' for file 'op2_0_ack'.
-2024-12-03 12:36:41,721 - Sent 1373 bytes from data_buffer
-2024-12-03 12:36:41,721 - Connection closed by server
-2024-12-03 12:36:41,729 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
-2024-12-03 12:36:41,730 - File 'output_1_business_19.txt' already exists. Not writing to it.
-2024-12-03 12:36:41,730 - Acknowledgment sent to client 'output_1_business_19.txt'.
-2024-12-03 12:36:41,730 - Sent 98 bytes from data_buffer
-2024-12-03 12:36:41,730 - Connection closed by server
-2024-12-03 12:36:42,297 - No change in membership list
-2024-12-03 12:36:44,300 - No change in membership list
-2024-12-03 12:36:46,302 - No change in membership list
-2024-12-03 12:36:48,305 - No change in membership list
-2024-12-03 12:36:50,307 - No change in membership list
-2024-12-03 12:36:52,309 - No change in membership list
-2024-12-03 12:36:54,311 - No change in membership list
-2024-12-03 12:36:56,313 - No change in membership list
-2024-12-03 12:36:58,315 - No change in membership list
-2024-12-03 12:37:00,317 - No change in membership list
-2024-12-03 12:37:00,577 - Shutting down HyDFS...
-2024-12-03 12:37:00,577 - Listener thread is still running; proceeding to join...
-2024-12-03 12:37:01,748 - Listener thread joined successfully.
-2024-12-03 12:37:01,749 - Membership thread is still running; proceeding to join...
-2024-12-03 12:37:02,320 - No change in membership list
-2024-12-03 12:37:02,320 - Membership thread joined successfully.
-2024-12-03 12:37:10,118 - HyDFS Node shut down gracefully.
+2024-12-03 12:58:28,184 - Logging initialized for RingNode
+2024-12-03 12:58:28,190 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/op2_0_state
+2024-12-03 12:58:28,191 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/op2_0_ack
+2024-12-03 12:58:28,191 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/output_1_business_19.txt
+2024-12-03 12:58:28,191 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/source_0_state
+2024-12-03 12:58:28,191 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/source_0_ack
+2024-12-03 12:58:28,192 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/op1_0_state
+2024-12-03 12:58:28,192 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/op1_0_ack
+2024-12-03 12:58:28,192 - Deleted file: /home/chaskar2/distributed-logger/hyDFS/filesystem/business_19.txt
+2024-12-03 12:58:28,192 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-12-03 12:58:48,209 - Monitoring membership list started
+2024-12-03 12:58:50,212 - No change in membership list
+2024-12-03 12:58:52,214 - No change in membership list
+2024-12-03 12:58:54,216 - No change in membership list
+2024-12-03 12:58:56,219 - No change in membership list
+2024-12-03 12:58:58,221 - No change in membership list
+2024-12-03 12:59:00,223 - No change in membership list
+2024-12-03 12:59:02,225 - No change in membership list
+2024-12-03 12:59:04,227 - No change in membership list
+2024-12-03 12:59:06,229 - No change in membership list
+2024-12-03 12:59:08,231 - No change in membership list
+2024-12-03 12:59:10,233 - No change in membership list
+2024-12-03 12:59:12,236 - No change in membership list
+2024-12-03 12:59:13,349 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-12-03 12:59:13,350 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733252310', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733252309', 'ring_id': 444}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733252308', 'ring_id': 715}]
+2024-12-03 12:59:13,351 - Sending write to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
+2024-12-03 12:59:13,352 - Sending write to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
+2024-12-03 12:59:13,354 - Sending write to fa24-cs425-6901.cs.illinois.edu:5001 for file business_19.txt
+2024-12-03 12:59:13,356 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-12-03 12:59:13,356 - Sent 1362 bytes from data_buffer
+2024-12-03 12:59:13,356 - Sent 1362 bytes from data_buffer
+2024-12-03 12:59:13,356 - Sent 1362 bytes from data_buffer
+2024-12-03 12:59:13,356 - File 'business_19.txt' written successfully.
+2024-12-03 12:59:13,357 - Acknowledgment sent to client 'business_19.txt'.
+2024-12-03 12:59:13,358 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-12-03 12:59:13,358 - Quorum not yet met, received ack from 1 replicas
+2024-12-03 12:59:13,358 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-12-03 12:59:13,358 - Quorum not yet met, received ack from 2 replicas
+2024-12-03 12:59:13,358 - Sent 85 bytes from data_buffer
+2024-12-03 12:59:13,358 - Connection closed by server
+2024-12-03 12:59:13,359 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-12-03 12:59:13,359 - client_socket_to_use <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 49106)>
+2024-12-03 12:59:13,359 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'write_complete'}
+2024-12-03 12:59:13,360 - Acknowledgment sent to client_1 for file 'business_19.txt'.
+2024-12-03 12:59:13,360 - Sent 85 bytes from data_buffer
+2024-12-03 12:59:13,362 - Connection closed by server
+2024-12-03 12:59:14,238 - No change in membership list
+2024-12-03 12:59:15,325 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-12-03 12:59:15,326 - Next 3 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733252310', 'ring_id': 403}, {'node_id': 'fa24-cs425-6902.cs.illinois.edu_5000_1733252309', 'ring_id': 444}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733252308', 'ring_id': 715}]
+2024-12-03 12:59:15,327 - Sending read to fa24-cs425-6903.cs.illinois.edu:5001 for file business_19.txt
+2024-12-03 12:59:15,328 - Sending read to fa24-cs425-6902.cs.illinois.edu:5001 for file business_19.txt
+2024-12-03 12:59:15,330 - Sending read to fa24-cs425-6901.cs.illinois.edu:5001 for file business_19.txt
+2024-12-03 12:59:15,332 - Connection from ('fa24-cs425-6901.cs.illinois.edu', [], ['172.22.94.228'])
+2024-12-03 12:59:15,333 - Sent 64 bytes from data_buffer
+2024-12-03 12:59:15,333 - Sent 64 bytes from data_buffer
+2024-12-03 12:59:15,333 - Sent 64 bytes from data_buffer
+2024-12-03 12:59:15,333 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-12-03 12:59:15,334 - Quorum not yet met, received ack from 1 replicas
+2024-12-03 12:59:15,334 - File 'business_19.txt' and append log 'client_1--business_19.txt.log' read successfully.
+2024-12-03 12:59:15,335 - File read succsefully business_19.txt
+2024-12-03 12:59:15,335 - Acknowledgment sent to client with status 'read_complete' for file 'business_19.txt'.
+2024-12-03 12:59:15,335 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-12-03 12:59:15,336 - Quorum not yet met, received ack from 2 replicas
+2024-12-03 12:59:15,336 - Sent 1381 bytes from data_buffer
+2024-12-03 12:59:15,336 - Connection closed by server
+2024-12-03 12:59:15,336 - Acknowledgment received for file info: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-12-03 12:59:15,337 - client_socket_to_use <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 49126)>
+2024-12-03 12:59:15,337 - file_info received from replicas: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_19.txt', 'status': 'read_complete', 'content': 'Deutsche Boerse boosts dividend\n\nDeutsche Boerse, the German stock exchange that is trying to buy its London rival, has said it will boost its 2004 dividend payment by 27%.\n\nAnalysts said that the move is aimed at winning over investors opposed to its bid for the London Stock Exchange. Critics of the takeover have complained that the money could be better used by returning cash to shareholders. Deutsche Boerse also said profit in the three months to 31 December was 120.7m euros ($158.8m; £83.3m). Sales climbed to 364.4m euros, lifting revenue for the year to a record 1.45bn euros.\n\nFrankfurt-based Deutsche Boerse has offered £1.3bn ($2.48bn; 1.88bn euros) for the London Stock Exchange. Rival pan-European bourse Euronext is working also on a bid. Late on Monday, Deutsche Boerse said it would lift its 2004 dividend payment to 70 euro cents (£0.48; $0.98) from 55 euro cents a year earlier. "There is a whiff of a sweetener in there," Anais Faraj, an analyst at Nomura told the BBC\'s World Business Report. "Most of the disgruntled shareholders of Deutsche Boerse are complaining that the money that is being used for the bid could be better placed in their hands, paid out in dividends," Mr Faraj continued. Deutsche Boerse is "trying to buy them off in a sense", he said.\n'}
+2024-12-03 12:59:15,337 - Acknowledgment sent to client_1 for file 'business_19.txt'.
+2024-12-03 12:59:15,337 - Sent 1381 bytes from data_buffer
+2024-12-03 12:59:15,340 - Connection closed by server
+2024-12-03 12:59:16,239 - No change in membership list
+2024-12-03 12:59:18,240 - No change in membership list
+2024-12-03 12:59:20,242 - No change in membership list
+2024-12-03 12:59:22,245 - No change in membership list
+2024-12-03 12:59:24,247 - No change in membership list
+2024-12-03 12:59:26,249 - No change in membership list
+2024-12-03 12:59:28,252 - No change in membership list
+2024-12-03 12:59:30,254 - No change in membership list
+2024-12-03 12:59:32,256 - No change in membership list
+2024-12-03 12:59:34,258 - No change in membership list
+2024-12-03 12:59:36,260 - No change in membership list
+2024-12-03 12:59:38,263 - No change in membership list
+2024-12-03 12:59:40,265 - No change in membership list
+2024-12-03 12:59:42,267 - No change in membership list
+2024-12-03 12:59:44,269 - No change in membership list
+2024-12-03 12:59:46,271 - No change in membership list
+2024-12-03 12:59:48,273 - Membership lists are not equal
+2024-12-03 12:59:48,273 - No change in membership list
+2024-12-03 12:59:50,275 - No change in membership list
+2024-12-03 12:59:52,178 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:52,180 - File 'op2_0_state' written successfully.
+2024-12-03 12:59:52,180 - Acknowledgment sent to client 'op2_0_state'.
+2024-12-03 12:59:52,180 - Sent 88 bytes from data_buffer
+2024-12-03 12:59:52,180 - Connection closed by server
+2024-12-03 12:59:52,185 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:52,186 - File 'op2_0_state' and append log 'rainstorm_op2_0--op2_0_state.log' read successfully.
+2024-12-03 12:59:52,187 - File read succsefully op2_0_state
+2024-12-03 12:59:52,187 - Acknowledgment sent to client with status 'read_complete' for file 'op2_0_state'.
+2024-12-03 12:59:52,187 - Sent 96 bytes from data_buffer
+2024-12-03 12:59:52,187 - Connection closed by server
+2024-12-03 12:59:52,193 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:52,194 - File 'op2_0_ack' written successfully.
+2024-12-03 12:59:52,194 - Acknowledgment sent to client 'op2_0_ack'.
+2024-12-03 12:59:52,194 - Sent 86 bytes from data_buffer
+2024-12-03 12:59:52,194 - Connection closed by server
+2024-12-03 12:59:52,199 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:52,200 - File 'op2_0_ack' and append log 'rainstorm_op2_0--op2_0_ack.log' read successfully.
+2024-12-03 12:59:52,200 - File read succsefully op2_0_ack
+2024-12-03 12:59:52,200 - Acknowledgment sent to client with status 'read_complete' for file 'op2_0_ack'.
+2024-12-03 12:59:52,200 - Sent 94 bytes from data_buffer
+2024-12-03 12:59:52,200 - Connection closed by server
+2024-12-03 12:59:52,206 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:52,208 - File 'output_1_business_19.txt' written successfully.
+2024-12-03 12:59:52,208 - Acknowledgment sent to client 'output_1_business_19.txt'.
+2024-12-03 12:59:52,209 - Sent 101 bytes from data_buffer
+2024-12-03 12:59:52,209 - Connection closed by server
+2024-12-03 12:59:52,277 - No change in membership list
+2024-12-03 12:59:52,460 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:52,461 - File 'op1_0_state' written successfully.
+2024-12-03 12:59:52,461 - Acknowledgment sent to client 'op1_0_state'.
+2024-12-03 12:59:52,461 - Sent 88 bytes from data_buffer
+2024-12-03 12:59:52,461 - Connection closed by server
+2024-12-03 12:59:52,468 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:52,468 - File 'op1_0_state' and append log 'rainstorm_op1_0--op1_0_state.log' read successfully.
+2024-12-03 12:59:52,469 - File read succsefully op1_0_state
+2024-12-03 12:59:52,469 - Acknowledgment sent to client with status 'read_complete' for file 'op1_0_state'.
+2024-12-03 12:59:52,469 - Sent 96 bytes from data_buffer
+2024-12-03 12:59:52,469 - Connection closed by server
+2024-12-03 12:59:52,473 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:52,474 - File 'op1_0_ack' written successfully.
+2024-12-03 12:59:52,474 - Acknowledgment sent to client 'op1_0_ack'.
+2024-12-03 12:59:52,474 - Sent 86 bytes from data_buffer
+2024-12-03 12:59:52,474 - Connection closed by server
+2024-12-03 12:59:52,480 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:52,481 - File 'op1_0_ack' and append log 'rainstorm_op1_0--op1_0_ack.log' read successfully.
+2024-12-03 12:59:52,481 - File read succsefully op1_0_ack
+2024-12-03 12:59:52,481 - Acknowledgment sent to client with status 'read_complete' for file 'op1_0_ack'.
+2024-12-03 12:59:52,481 - Sent 94 bytes from data_buffer
+2024-12-03 12:59:52,481 - Connection closed by server
+2024-12-03 12:59:52,488 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
+2024-12-03 12:59:52,488 - File 'source_0_state' written successfully.
+2024-12-03 12:59:52,488 - Acknowledgment sent to client 'source_0_state'.
+2024-12-03 12:59:52,489 - Sent 94 bytes from data_buffer
+2024-12-03 12:59:52,489 - Connection closed by server
+2024-12-03 12:59:52,496 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
+2024-12-03 12:59:52,496 - File 'source_0_state' and append log 'rainstorm_source_0--source_0_state.log' read successfully.
+2024-12-03 12:59:52,496 - File read succsefully source_0_state
+2024-12-03 12:59:52,496 - Acknowledgment sent to client with status 'read_complete' for file 'source_0_state'.
+2024-12-03 12:59:52,496 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:52,497 - Connection closed by server
+2024-12-03 12:59:52,505 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
+2024-12-03 12:59:52,505 - File 'source_0_ack' written successfully.
+2024-12-03 12:59:52,505 - Acknowledgment sent to client 'source_0_ack'.
+2024-12-03 12:59:52,505 - Sent 92 bytes from data_buffer
+2024-12-03 12:59:52,506 - Connection closed by server
+2024-12-03 12:59:52,514 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
+2024-12-03 12:59:52,515 - File 'source_0_ack' and append log 'rainstorm_source_0--source_0_ack.log' read successfully.
+2024-12-03 12:59:52,515 - File read succsefully source_0_ack
+2024-12-03 12:59:52,515 - Acknowledgment sent to client with status 'read_complete' for file 'source_0_ack'.
+2024-12-03 12:59:52,515 - Sent 100 bytes from data_buffer
+2024-12-03 12:59:52,515 - Connection closed by server
+2024-12-03 12:59:52,525 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
+2024-12-03 12:59:52,525 - File 'business_19.txt' and append log 'rainstorm_source_0--business_19.txt.log' read successfully.
+2024-12-03 12:59:52,525 - File read succsefully business_19.txt
+2024-12-03 12:59:52,526 - Acknowledgment sent to client with status 'read_complete' for file 'business_19.txt'.
+2024-12-03 12:59:52,526 - Sent 1391 bytes from data_buffer
+2024-12-03 12:59:52,526 - Connection closed by server
+2024-12-03 12:59:52,534 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
+2024-12-03 12:59:52,534 - Stated append action to file source_0_state
+2024-12-03 12:59:52,535 - Performed append action to 'rainstorm_source_0--source_0_state.log' with sequence number 1.
+2024-12-03 12:59:52,535 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_state'.
+2024-12-03 12:59:52,535 - Sent 110 bytes from data_buffer
+2024-12-03 12:59:52,535 - Connection closed by server
+2024-12-03 12:59:52,856 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:52,857 - Stated append action to file op1_0_state
+2024-12-03 12:59:52,857 - Performed append action to 'rainstorm_op1_0--op1_0_state.log' with sequence number 1.
+2024-12-03 12:59:52,857 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_state'.
+2024-12-03 12:59:52,857 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:52,858 - Connection closed by server
+2024-12-03 12:59:52,864 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
+2024-12-03 12:59:52,864 - Stated append action to file source_0_ack
+2024-12-03 12:59:52,864 - Performed append action to 'rainstorm_source_0--source_0_ack.log' with sequence number 1.
+2024-12-03 12:59:52,865 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_ack'.
+2024-12-03 12:59:52,865 - Sent 108 bytes from data_buffer
+2024-12-03 12:59:52,865 - Connection closed by server
+2024-12-03 12:59:53,126 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:53,126 - Stated append action to file op1_0_state
+2024-12-03 12:59:53,126 - Performed append action to 'rainstorm_op1_0--op1_0_state.log' with sequence number 2.
+2024-12-03 12:59:53,127 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_state'.
+2024-12-03 12:59:53,127 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:53,127 - Connection closed by server
+2024-12-03 12:59:53,133 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
+2024-12-03 12:59:53,134 - Stated append action to file source_0_ack
+2024-12-03 12:59:53,134 - Performed append action to 'rainstorm_source_0--source_0_ack.log' with sequence number 2.
+2024-12-03 12:59:53,134 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_ack'.
+2024-12-03 12:59:53,134 - Sent 108 bytes from data_buffer
+2024-12-03 12:59:53,134 - Connection closed by server
+2024-12-03 12:59:53,151 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:53,155 - Stated append action to file op2_0_state
+2024-12-03 12:59:53,155 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 1.
+2024-12-03 12:59:53,155 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:53,155 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:53,155 - Connection closed by server
+2024-12-03 12:59:53,161 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:53,163 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:53,163 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 1.
+2024-12-03 12:59:53,163 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:53,163 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:53,163 - Connection closed by server
+2024-12-03 12:59:53,170 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:53,170 - Stated append action to file op2_0_ack
+2024-12-03 12:59:53,170 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 1.
+2024-12-03 12:59:53,170 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:53,170 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:53,170 - Connection closed by server
+2024-12-03 12:59:53,408 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:53,409 - Stated append action to file op1_0_state
+2024-12-03 12:59:53,409 - Performed append action to 'rainstorm_op1_0--op1_0_state.log' with sequence number 3.
+2024-12-03 12:59:53,409 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_state'.
+2024-12-03 12:59:53,409 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:53,409 - Connection closed by server
+2024-12-03 12:59:53,415 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
+2024-12-03 12:59:53,416 - Stated append action to file source_0_ack
+2024-12-03 12:59:53,416 - Performed append action to 'rainstorm_source_0--source_0_ack.log' with sequence number 3.
+2024-12-03 12:59:53,416 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_ack'.
+2024-12-03 12:59:53,416 - Sent 108 bytes from data_buffer
+2024-12-03 12:59:53,416 - Connection closed by server
+2024-12-03 12:59:53,418 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:53,419 - Stated append action to file op1_0_ack
+2024-12-03 12:59:53,419 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 1.
+2024-12-03 12:59:53,419 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:53,419 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:53,419 - Connection closed by server
+2024-12-03 12:59:53,677 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:53,679 - Stated append action to file op2_0_state
+2024-12-03 12:59:53,679 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 2.
+2024-12-03 12:59:53,680 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:53,680 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:53,680 - Connection closed by server
+2024-12-03 12:59:53,688 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:53,689 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:53,690 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 2.
+2024-12-03 12:59:53,690 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:53,690 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:53,690 - Connection closed by server
+2024-12-03 12:59:53,692 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:53,693 - Stated append action to file op1_0_state
+2024-12-03 12:59:53,694 - Performed append action to 'rainstorm_op1_0--op1_0_state.log' with sequence number 4.
+2024-12-03 12:59:53,694 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_state'.
+2024-12-03 12:59:53,694 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:53,694 - Connection closed by server
+2024-12-03 12:59:53,701 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:53,701 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
+2024-12-03 12:59:53,701 - Stated append action to file op2_0_ack
+2024-12-03 12:59:53,701 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 2.
+2024-12-03 12:59:53,702 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:53,702 - Stated append action to file source_0_ack
+2024-12-03 12:59:53,702 - Performed append action to 'rainstorm_source_0--source_0_ack.log' with sequence number 4.
+2024-12-03 12:59:53,702 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_ack'.
+2024-12-03 12:59:53,702 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:53,702 - Sent 108 bytes from data_buffer
+2024-12-03 12:59:53,702 - Connection closed by server
+2024-12-03 12:59:53,705 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:53,707 - Stated append action to file op1_0_ack
+2024-12-03 12:59:53,707 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 2.
+2024-12-03 12:59:53,707 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:53,707 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:53,707 - Connection closed by server
+2024-12-03 12:59:53,964 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:53,967 - Stated append action to file op2_0_state
+2024-12-03 12:59:53,967 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 3.
+2024-12-03 12:59:53,967 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:53,967 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:53,967 - Connection closed by server
+2024-12-03 12:59:53,974 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:53,975 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:53,976 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 3.
+2024-12-03 12:59:53,976 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:53,976 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:53,976 - Connection closed by server
+2024-12-03 12:59:53,982 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:53,982 - Stated append action to file op2_0_ack
+2024-12-03 12:59:53,982 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 3.
+2024-12-03 12:59:53,983 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:53,983 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:53,983 - Connection closed by server
+2024-12-03 12:59:54,010 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:54,011 - Stated append action to file op1_0_state
+2024-12-03 12:59:54,011 - Performed append action to 'rainstorm_op1_0--op1_0_state.log' with sequence number 5.
+2024-12-03 12:59:54,011 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_state'.
+2024-12-03 12:59:54,011 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:54,011 - Connection closed by server
+2024-12-03 12:59:54,017 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
+2024-12-03 12:59:54,018 - Stated append action to file source_0_ack
+2024-12-03 12:59:54,018 - Performed append action to 'rainstorm_source_0--source_0_ack.log' with sequence number 5.
+2024-12-03 12:59:54,018 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_ack'.
+2024-12-03 12:59:54,018 - Sent 108 bytes from data_buffer
+2024-12-03 12:59:54,018 - Connection closed by server
+2024-12-03 12:59:54,019 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:54,021 - Stated append action to file op1_0_ack
+2024-12-03 12:59:54,021 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 3.
+2024-12-03 12:59:54,021 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:54,021 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:54,021 - Connection closed by server
+2024-12-03 12:59:54,279 - No change in membership list
+2024-12-03 12:59:54,287 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:54,289 - Stated append action to file op2_0_state
+2024-12-03 12:59:54,289 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 4.
+2024-12-03 12:59:54,290 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:54,290 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:54,290 - Connection closed by server
+2024-12-03 12:59:54,293 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:54,295 - Stated append action to file op1_0_state
+2024-12-03 12:59:54,295 - Performed append action to 'rainstorm_op1_0--op1_0_state.log' with sequence number 6.
+2024-12-03 12:59:54,295 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_state'.
+2024-12-03 12:59:54,295 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:54,295 - Connection closed by server
+2024-12-03 12:59:54,302 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
+2024-12-03 12:59:54,303 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:54,303 - Stated append action to file source_0_ack
+2024-12-03 12:59:54,303 - Performed append action to 'rainstorm_source_0--source_0_ack.log' with sequence number 6.
+2024-12-03 12:59:54,303 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_ack'.
+2024-12-03 12:59:54,303 - Sent 108 bytes from data_buffer
+2024-12-03 12:59:54,304 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:54,304 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:54,304 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 4.
+2024-12-03 12:59:54,304 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:54,304 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:54,305 - Connection closed by server
+2024-12-03 12:59:54,305 - Stated append action to file op1_0_ack
+2024-12-03 12:59:54,306 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 4.
+2024-12-03 12:59:54,306 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:54,306 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:54,306 - Connection closed by server
+2024-12-03 12:59:54,313 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:54,313 - Stated append action to file op2_0_ack
+2024-12-03 12:59:54,313 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 4.
+2024-12-03 12:59:54,313 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:54,313 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:54,313 - Connection closed by server
+2024-12-03 12:59:54,569 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:54,575 - Stated append action to file op2_0_state
+2024-12-03 12:59:54,575 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 5.
+2024-12-03 12:59:54,575 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:54,575 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:54,575 - Connection closed by server
+2024-12-03 12:59:54,582 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:54,584 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:54,584 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 5.
+2024-12-03 12:59:54,584 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:54,584 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:54,584 - Connection closed by server
+2024-12-03 12:59:54,590 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:54,590 - Stated append action to file op2_0_ack
+2024-12-03 12:59:54,590 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 5.
+2024-12-03 12:59:54,590 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:54,590 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:54,590 - Connection closed by server
+2024-12-03 12:59:54,594 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:54,595 - Stated append action to file op1_0_state
+2024-12-03 12:59:54,595 - Performed append action to 'rainstorm_op1_0--op1_0_state.log' with sequence number 7.
+2024-12-03 12:59:54,595 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_state'.
+2024-12-03 12:59:54,595 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:54,595 - Connection closed by server
+2024-12-03 12:59:54,602 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
+2024-12-03 12:59:54,602 - Stated append action to file source_0_ack
+2024-12-03 12:59:54,603 - Performed append action to 'rainstorm_source_0--source_0_ack.log' with sequence number 7.
+2024-12-03 12:59:54,603 - Append acknowledgment sent to client 'rainstorm_source_0' for file 'source_0_ack'.
+2024-12-03 12:59:54,603 - Sent 108 bytes from data_buffer
+2024-12-03 12:59:54,603 - Connection closed by server
+2024-12-03 12:59:54,603 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:54,607 - Stated append action to file op1_0_ack
+2024-12-03 12:59:54,607 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 5.
+2024-12-03 12:59:54,607 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:54,608 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:54,608 - Connection closed by server
+2024-12-03 12:59:54,866 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:54,869 - Stated append action to file op2_0_state
+2024-12-03 12:59:54,869 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 6.
+2024-12-03 12:59:54,870 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:54,870 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:54,870 - Connection closed by server
+2024-12-03 12:59:54,875 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:54,876 - Stated append action to file op1_0_ack
+2024-12-03 12:59:54,876 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 6.
+2024-12-03 12:59:54,876 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:54,877 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:54,877 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:54,877 - Connection closed by server
+2024-12-03 12:59:54,878 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:54,878 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 6.
+2024-12-03 12:59:54,878 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:54,878 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:54,878 - Connection closed by server
+2024-12-03 12:59:54,889 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:54,889 - Stated append action to file op2_0_ack
+2024-12-03 12:59:54,889 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 6.
+2024-12-03 12:59:54,889 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:54,889 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:54,889 - Connection closed by server
+2024-12-03 12:59:55,140 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:55,143 - Stated append action to file op2_0_state
+2024-12-03 12:59:55,144 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 7.
+2024-12-03 12:59:55,144 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:55,144 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:55,144 - Connection closed by server
+2024-12-03 12:59:55,149 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:55,151 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:55,151 - Stated append action to file op1_0_ack
+2024-12-03 12:59:55,151 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 7.
+2024-12-03 12:59:55,151 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:55,151 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:55,152 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:55,152 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 7.
+2024-12-03 12:59:55,152 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:55,153 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:55,153 - Connection closed by server
+2024-12-03 12:59:55,161 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:55,161 - Stated append action to file op2_0_ack
+2024-12-03 12:59:55,161 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 7.
+2024-12-03 12:59:55,161 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:55,162 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:55,162 - Connection closed by server
+2024-12-03 12:59:55,417 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:55,420 - Stated append action to file op2_0_state
+2024-12-03 12:59:55,420 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 8.
+2024-12-03 12:59:55,421 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:55,421 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:55,421 - Connection closed by server
+2024-12-03 12:59:55,426 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:55,426 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:55,427 - Stated append action to file op1_0_ack
+2024-12-03 12:59:55,427 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 8.
+2024-12-03 12:59:55,427 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:55,427 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:55,430 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:55,430 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 8.
+2024-12-03 12:59:55,430 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:55,430 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:55,430 - Connection closed by server
+2024-12-03 12:59:55,439 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:55,440 - Stated append action to file op2_0_ack
+2024-12-03 12:59:55,440 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 8.
+2024-12-03 12:59:55,440 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:55,440 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:55,440 - Connection closed by server
+2024-12-03 12:59:55,692 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:55,695 - Stated append action to file op2_0_state
+2024-12-03 12:59:55,695 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 9.
+2024-12-03 12:59:55,696 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:55,696 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:55,696 - Connection closed by server
+2024-12-03 12:59:55,701 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:55,703 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:55,703 - Stated append action to file op1_0_ack
+2024-12-03 12:59:55,703 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 9.
+2024-12-03 12:59:55,703 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:55,703 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:55,704 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:55,704 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 9.
+2024-12-03 12:59:55,704 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:55,704 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:55,704 - Connection closed by server
+2024-12-03 12:59:55,714 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:55,714 - Stated append action to file op2_0_ack
+2024-12-03 12:59:55,715 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 9.
+2024-12-03 12:59:55,715 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:55,715 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:55,715 - Connection closed by server
+2024-12-03 12:59:55,965 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:55,969 - Stated append action to file op2_0_state
+2024-12-03 12:59:55,969 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 10.
+2024-12-03 12:59:55,969 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:55,969 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:55,969 - Connection closed by server
+2024-12-03 12:59:55,975 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:55,976 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:55,977 - Stated append action to file op1_0_ack
+2024-12-03 12:59:55,977 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 10.
+2024-12-03 12:59:55,977 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:55,977 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:55,978 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:55,978 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 10.
+2024-12-03 12:59:55,978 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:55,978 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:55,978 - Connection closed by server
+2024-12-03 12:59:55,988 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:55,988 - Stated append action to file op2_0_ack
+2024-12-03 12:59:55,988 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 10.
+2024-12-03 12:59:55,988 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:55,989 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:55,989 - Connection closed by server
+2024-12-03 12:59:56,248 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:56,251 - Stated append action to file op2_0_state
+2024-12-03 12:59:56,251 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 11.
+2024-12-03 12:59:56,252 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:56,252 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:56,252 - Connection closed by server
+2024-12-03 12:59:56,257 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:56,259 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:56,259 - Stated append action to file op1_0_ack
+2024-12-03 12:59:56,259 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 11.
+2024-12-03 12:59:56,259 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:56,259 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:56,260 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:56,260 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 11.
+2024-12-03 12:59:56,260 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:56,261 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:56,261 - Connection closed by server
+2024-12-03 12:59:56,272 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:56,273 - Stated append action to file op2_0_ack
+2024-12-03 12:59:56,273 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 11.
+2024-12-03 12:59:56,273 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:56,273 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:56,273 - Connection closed by server
+2024-12-03 12:59:56,282 - No change in membership list
+2024-12-03 12:59:56,524 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:56,527 - Stated append action to file op2_0_state
+2024-12-03 12:59:56,528 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 12.
+2024-12-03 12:59:56,528 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:56,528 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:56,528 - Connection closed by server
+2024-12-03 12:59:56,532 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:56,534 - Stated append action to file op1_0_ack
+2024-12-03 12:59:56,535 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 12.
+2024-12-03 12:59:56,535 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:56,535 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:56,535 - Connection closed by server
+2024-12-03 12:59:56,536 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:56,537 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:56,538 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 12.
+2024-12-03 12:59:56,538 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:56,538 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:56,538 - Connection closed by server
+2024-12-03 12:59:56,546 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:56,546 - Stated append action to file op2_0_ack
+2024-12-03 12:59:56,547 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 12.
+2024-12-03 12:59:56,547 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:56,547 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:56,547 - Connection closed by server
+2024-12-03 12:59:56,803 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:56,806 - Stated append action to file op2_0_state
+2024-12-03 12:59:56,806 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 13.
+2024-12-03 12:59:56,807 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:56,807 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:56,807 - Connection closed by server
+2024-12-03 12:59:56,812 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:56,813 - Stated append action to file op1_0_ack
+2024-12-03 12:59:56,813 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 13.
+2024-12-03 12:59:56,813 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:56,813 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:56,813 - Connection closed by server
+2024-12-03 12:59:56,814 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:56,816 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:56,816 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 13.
+2024-12-03 12:59:56,816 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:56,816 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:56,817 - Connection closed by server
+2024-12-03 12:59:56,824 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:56,824 - Stated append action to file op2_0_ack
+2024-12-03 12:59:56,825 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 13.
+2024-12-03 12:59:56,825 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:56,825 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:56,825 - Connection closed by server
+2024-12-03 12:59:57,077 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:57,080 - Stated append action to file op2_0_state
+2024-12-03 12:59:57,080 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 14.
+2024-12-03 12:59:57,081 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:57,081 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:57,081 - Connection closed by server
+2024-12-03 12:59:57,086 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:57,088 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:57,088 - Stated append action to file op1_0_ack
+2024-12-03 12:59:57,089 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 14.
+2024-12-03 12:59:57,089 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:57,089 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:57,089 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:57,090 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 14.
+2024-12-03 12:59:57,090 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:57,090 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:57,090 - Connection closed by server
+2024-12-03 12:59:57,098 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:57,099 - Stated append action to file op2_0_ack
+2024-12-03 12:59:57,099 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 14.
+2024-12-03 12:59:57,099 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:57,099 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:57,099 - Connection closed by server
+2024-12-03 12:59:57,357 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:57,360 - Stated append action to file op2_0_state
+2024-12-03 12:59:57,361 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 15.
+2024-12-03 12:59:57,361 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:57,361 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:57,361 - Connection closed by server
+2024-12-03 12:59:57,366 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:57,368 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:57,368 - Stated append action to file op1_0_ack
+2024-12-03 12:59:57,368 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 15.
+2024-12-03 12:59:57,368 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:57,368 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:57,369 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:57,369 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 15.
+2024-12-03 12:59:57,370 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:57,370 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:57,370 - Connection closed by server
+2024-12-03 12:59:57,378 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:57,378 - Stated append action to file op2_0_ack
+2024-12-03 12:59:57,379 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 15.
+2024-12-03 12:59:57,379 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:57,379 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:57,379 - Connection closed by server
+2024-12-03 12:59:57,637 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:57,639 - Stated append action to file op2_0_state
+2024-12-03 12:59:57,640 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 16.
+2024-12-03 12:59:57,640 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:57,640 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:57,640 - Connection closed by server
+2024-12-03 12:59:57,647 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:57,648 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:57,648 - Stated append action to file op1_0_ack
+2024-12-03 12:59:57,648 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 16.
+2024-12-03 12:59:57,648 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:57,648 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:57,648 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:57,649 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 16.
+2024-12-03 12:59:57,650 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:57,650 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:57,650 - Connection closed by server
+2024-12-03 12:59:57,658 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:57,658 - Stated append action to file op2_0_ack
+2024-12-03 12:59:57,658 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 16.
+2024-12-03 12:59:57,658 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:57,658 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:57,659 - Connection closed by server
+2024-12-03 12:59:57,916 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:57,919 - Stated append action to file op2_0_state
+2024-12-03 12:59:57,919 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 17.
+2024-12-03 12:59:57,920 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:57,920 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:57,920 - Connection closed by server
+2024-12-03 12:59:57,927 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:57,927 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:57,928 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:57,929 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 17.
+2024-12-03 12:59:57,929 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:57,929 - Stated append action to file op1_0_ack
+2024-12-03 12:59:57,929 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 17.
+2024-12-03 12:59:57,929 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:57,929 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:57,929 - Connection closed by server
+2024-12-03 12:59:57,929 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:57,938 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:57,938 - Stated append action to file op2_0_ack
+2024-12-03 12:59:57,938 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 17.
+2024-12-03 12:59:57,938 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:57,938 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:57,938 - Connection closed by server
+2024-12-03 12:59:58,205 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:58,208 - Stated append action to file op2_0_state
+2024-12-03 12:59:58,208 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 18.
+2024-12-03 12:59:58,209 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:58,209 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:58,209 - Connection closed by server
+2024-12-03 12:59:58,214 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:58,215 - Stated append action to file op1_0_ack
+2024-12-03 12:59:58,216 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 18.
+2024-12-03 12:59:58,216 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:58,216 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:58,216 - Connection closed by server
+2024-12-03 12:59:58,219 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:58,219 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:58,219 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 18.
+2024-12-03 12:59:58,220 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:58,220 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:58,220 - Connection closed by server
+2024-12-03 12:59:58,228 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:58,228 - Stated append action to file op2_0_ack
+2024-12-03 12:59:58,228 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 18.
+2024-12-03 12:59:58,228 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:58,228 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:58,229 - Connection closed by server
+2024-12-03 12:59:58,284 - No change in membership list
+2024-12-03 12:59:58,484 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:58,487 - Stated append action to file op2_0_state
+2024-12-03 12:59:58,487 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 19.
+2024-12-03 12:59:58,488 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:58,488 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:58,488 - Connection closed by server
+2024-12-03 12:59:58,493 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:58,495 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:58,495 - Stated append action to file op1_0_ack
+2024-12-03 12:59:58,495 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 19.
+2024-12-03 12:59:58,495 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:58,495 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:58,496 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:58,497 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 19.
+2024-12-03 12:59:58,497 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:58,497 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:58,497 - Connection closed by server
+2024-12-03 12:59:58,506 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:58,506 - Stated append action to file op2_0_ack
+2024-12-03 12:59:58,506 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 19.
+2024-12-03 12:59:58,506 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:58,506 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:58,507 - Connection closed by server
+2024-12-03 12:59:58,758 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:58,761 - Stated append action to file op2_0_state
+2024-12-03 12:59:58,761 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 20.
+2024-12-03 12:59:58,762 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:58,762 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:58,762 - Connection closed by server
+2024-12-03 12:59:58,768 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:58,768 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:58,769 - Stated append action to file op1_0_ack
+2024-12-03 12:59:58,769 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 20.
+2024-12-03 12:59:58,769 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:58,769 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:58,770 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:58,770 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 20.
+2024-12-03 12:59:58,770 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:58,771 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:58,771 - Connection closed by server
+2024-12-03 12:59:58,780 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:58,780 - Stated append action to file op2_0_ack
+2024-12-03 12:59:58,780 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 20.
+2024-12-03 12:59:58,780 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:58,780 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:58,780 - Connection closed by server
+2024-12-03 12:59:59,033 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:59,036 - Stated append action to file op2_0_state
+2024-12-03 12:59:59,036 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 21.
+2024-12-03 12:59:59,037 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:59,037 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:59,037 - Connection closed by server
+2024-12-03 12:59:59,042 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:59,043 - Stated append action to file op1_0_ack
+2024-12-03 12:59:59,043 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 21.
+2024-12-03 12:59:59,043 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:59,043 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:59,043 - Connection closed by server
+2024-12-03 12:59:59,045 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:59,047 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:59,047 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 21.
+2024-12-03 12:59:59,047 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:59,047 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:59,047 - Connection closed by server
+2024-12-03 12:59:59,057 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:59,058 - Stated append action to file op2_0_ack
+2024-12-03 12:59:59,058 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 21.
+2024-12-03 12:59:59,058 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:59,058 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:59,058 - Connection closed by server
+2024-12-03 12:59:59,315 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:59,318 - Stated append action to file op2_0_state
+2024-12-03 12:59:59,318 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 22.
+2024-12-03 12:59:59,319 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:59,319 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:59,319 - Connection closed by server
+2024-12-03 12:59:59,324 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:59,326 - Stated append action to file op1_0_ack
+2024-12-03 12:59:59,326 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 22.
+2024-12-03 12:59:59,326 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:59,327 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:59,327 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:59,327 - Connection closed by server
+2024-12-03 12:59:59,328 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:59,328 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 22.
+2024-12-03 12:59:59,329 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:59,329 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:59,329 - Connection closed by server
+2024-12-03 12:59:59,337 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:59,337 - Stated append action to file op2_0_ack
+2024-12-03 12:59:59,337 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 22.
+2024-12-03 12:59:59,337 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:59,337 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:59,337 - Connection closed by server
+2024-12-03 12:59:59,597 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:59,600 - Stated append action to file op2_0_state
+2024-12-03 12:59:59,601 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 23.
+2024-12-03 12:59:59,601 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:59,601 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:59,601 - Connection closed by server
+2024-12-03 12:59:59,606 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:59,608 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:59,608 - Stated append action to file op1_0_ack
+2024-12-03 12:59:59,608 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 23.
+2024-12-03 12:59:59,608 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:59,608 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:59,610 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:59,610 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 23.
+2024-12-03 12:59:59,610 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:59,610 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:59,610 - Connection closed by server
+2024-12-03 12:59:59,620 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:59,620 - Stated append action to file op2_0_ack
+2024-12-03 12:59:59,620 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 23.
+2024-12-03 12:59:59,620 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:59,620 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:59,621 - Connection closed by server
+2024-12-03 12:59:59,874 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:59,877 - Stated append action to file op2_0_state
+2024-12-03 12:59:59,877 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 24.
+2024-12-03 12:59:59,878 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 12:59:59,878 - Sent 104 bytes from data_buffer
+2024-12-03 12:59:59,878 - Connection closed by server
+2024-12-03 12:59:59,884 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 12:59:59,885 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:59,885 - Stated append action to file op1_0_ack
+2024-12-03 12:59:59,885 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 24.
+2024-12-03 12:59:59,885 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 12:59:59,885 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:59,889 - Stated append action to file output_1_business_19.txt
+2024-12-03 12:59:59,890 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 24.
+2024-12-03 12:59:59,890 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 12:59:59,890 - Sent 117 bytes from data_buffer
+2024-12-03 12:59:59,890 - Connection closed by server
+2024-12-03 12:59:59,897 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 12:59:59,898 - Stated append action to file op2_0_ack
+2024-12-03 12:59:59,898 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 24.
+2024-12-03 12:59:59,898 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 12:59:59,898 - Sent 102 bytes from data_buffer
+2024-12-03 12:59:59,898 - Connection closed by server
+2024-12-03 13:00:00,154 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 13:00:00,158 - Stated append action to file op2_0_state
+2024-12-03 13:00:00,158 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 25.
+2024-12-03 13:00:00,158 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 13:00:00,158 - Sent 104 bytes from data_buffer
+2024-12-03 13:00:00,158 - Connection closed by server
+2024-12-03 13:00:00,163 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 13:00:00,165 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 13:00:00,166 - Stated append action to file op1_0_ack
+2024-12-03 13:00:00,166 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 25.
+2024-12-03 13:00:00,166 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 13:00:00,166 - Sent 102 bytes from data_buffer
+2024-12-03 13:00:00,167 - Stated append action to file output_1_business_19.txt
+2024-12-03 13:00:00,167 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 25.
+2024-12-03 13:00:00,167 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 13:00:00,167 - Sent 117 bytes from data_buffer
+2024-12-03 13:00:00,167 - Connection closed by server
+2024-12-03 13:00:00,177 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 13:00:00,177 - Stated append action to file op2_0_ack
+2024-12-03 13:00:00,177 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 25.
+2024-12-03 13:00:00,177 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 13:00:00,177 - Sent 102 bytes from data_buffer
+2024-12-03 13:00:00,177 - Connection closed by server
+2024-12-03 13:00:00,286 - No change in membership list
+2024-12-03 13:00:00,440 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 13:00:00,443 - Stated append action to file op2_0_state
+2024-12-03 13:00:00,443 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 26.
+2024-12-03 13:00:00,444 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 13:00:00,444 - Sent 104 bytes from data_buffer
+2024-12-03 13:00:00,444 - Connection closed by server
+2024-12-03 13:00:00,449 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 13:00:00,451 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 13:00:00,452 - Stated append action to file output_1_business_19.txt
+2024-12-03 13:00:00,453 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 26.
+2024-12-03 13:00:00,453 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 13:00:00,453 - Sent 117 bytes from data_buffer
+2024-12-03 13:00:00,453 - Connection closed by server
+2024-12-03 13:00:00,458 - Stated append action to file op1_0_ack
+2024-12-03 13:00:00,458 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 26.
+2024-12-03 13:00:00,458 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 13:00:00,458 - Sent 102 bytes from data_buffer
+2024-12-03 13:00:00,469 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 13:00:00,469 - Stated append action to file op2_0_ack
+2024-12-03 13:00:00,469 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 26.
+2024-12-03 13:00:00,469 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 13:00:00,469 - Sent 102 bytes from data_buffer
+2024-12-03 13:00:00,469 - Connection closed by server
+2024-12-03 13:00:00,745 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 13:00:00,747 - Stated append action to file op2_0_state
+2024-12-03 13:00:00,748 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 27.
+2024-12-03 13:00:00,748 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 13:00:00,748 - Sent 104 bytes from data_buffer
+2024-12-03 13:00:00,748 - Connection closed by server
+2024-12-03 13:00:00,754 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 13:00:00,754 - Stated append action to file op1_0_ack
+2024-12-03 13:00:00,755 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 27.
+2024-12-03 13:00:00,755 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 13:00:00,757 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 13:00:00,757 - Sent 102 bytes from data_buffer
+2024-12-03 13:00:00,757 - Connection closed by server
+2024-12-03 13:00:00,758 - Stated append action to file output_1_business_19.txt
+2024-12-03 13:00:00,758 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 27.
+2024-12-03 13:00:00,758 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 13:00:00,758 - Sent 117 bytes from data_buffer
+2024-12-03 13:00:00,759 - Connection closed by server
+2024-12-03 13:00:00,768 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 13:00:00,768 - Stated append action to file op2_0_ack
+2024-12-03 13:00:00,769 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 27.
+2024-12-03 13:00:00,769 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 13:00:00,769 - Sent 102 bytes from data_buffer
+2024-12-03 13:00:00,770 - Connection closed by server
+2024-12-03 13:00:01,099 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 13:00:01,101 - Stated append action to file op2_0_state
+2024-12-03 13:00:01,101 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 28.
+2024-12-03 13:00:01,101 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 13:00:01,101 - Sent 104 bytes from data_buffer
+2024-12-03 13:00:01,101 - Connection closed by server
+2024-12-03 13:00:01,109 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 13:00:01,109 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 13:00:01,110 - Stated append action to file output_1_business_19.txt
+2024-12-03 13:00:01,110 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 28.
+2024-12-03 13:00:01,110 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 13:00:01,111 - Stated append action to file op1_0_ack
+2024-12-03 13:00:01,111 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 28.
+2024-12-03 13:00:01,111 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 13:00:01,111 - Sent 117 bytes from data_buffer
+2024-12-03 13:00:01,111 - Sent 102 bytes from data_buffer
+2024-12-03 13:00:01,112 - Connection closed by server
+2024-12-03 13:00:01,119 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 13:00:01,119 - Stated append action to file op2_0_ack
+2024-12-03 13:00:01,120 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 28.
+2024-12-03 13:00:01,120 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 13:00:01,120 - Sent 102 bytes from data_buffer
+2024-12-03 13:00:01,120 - Connection closed by server
+2024-12-03 13:00:01,454 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 13:00:01,455 - Stated append action to file op2_0_state
+2024-12-03 13:00:01,456 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 29.
+2024-12-03 13:00:01,456 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 13:00:01,456 - Sent 104 bytes from data_buffer
+2024-12-03 13:00:01,456 - Connection closed by server
+2024-12-03 13:00:01,463 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 13:00:01,465 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 13:00:01,466 - Stated append action to file output_1_business_19.txt
+2024-12-03 13:00:01,466 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 29.
+2024-12-03 13:00:01,466 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 13:00:01,466 - Stated append action to file op1_0_ack
+2024-12-03 13:00:01,466 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 29.
+2024-12-03 13:00:01,466 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 13:00:01,466 - Sent 117 bytes from data_buffer
+2024-12-03 13:00:01,467 - Connection closed by server
+2024-12-03 13:00:01,467 - Sent 102 bytes from data_buffer
+2024-12-03 13:00:01,475 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 13:00:01,475 - Stated append action to file op2_0_ack
+2024-12-03 13:00:01,475 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 29.
+2024-12-03 13:00:01,475 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 13:00:01,475 - Sent 102 bytes from data_buffer
+2024-12-03 13:00:01,475 - Connection closed by server
+2024-12-03 13:00:01,819 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 13:00:01,821 - Stated append action to file op2_0_state
+2024-12-03 13:00:01,821 - Performed append action to 'rainstorm_op2_0--op2_0_state.log' with sequence number 30.
+2024-12-03 13:00:01,822 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_state'.
+2024-12-03 13:00:01,822 - Sent 104 bytes from data_buffer
+2024-12-03 13:00:01,822 - Connection closed by server
+2024-12-03 13:00:01,829 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 13:00:01,830 - Stated append action to file output_1_business_19.txt
+2024-12-03 13:00:01,830 - Performed append action to 'rainstorm_op2_0--output_1_business_19.txt.log' with sequence number 30.
+2024-12-03 13:00:01,831 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'output_1_business_19.txt'.
+2024-12-03 13:00:01,831 - Sent 117 bytes from data_buffer
+2024-12-03 13:00:01,831 - Connection closed by server
+2024-12-03 13:00:01,843 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 13:00:01,850 - Stated append action to file op1_0_ack
+2024-12-03 13:00:01,850 - Performed append action to 'rainstorm_op1_0--op1_0_ack.log' with sequence number 30.
+2024-12-03 13:00:01,851 - Append acknowledgment sent to client 'rainstorm_op1_0' for file 'op1_0_ack'.
+2024-12-03 13:00:01,851 - Sent 102 bytes from data_buffer
+2024-12-03 13:00:01,851 - Connection closed by server
+2024-12-03 13:00:01,857 - Connection from ('fa24-cs425-6904.cs.illinois.edu', [], ['172.22.94.229'])
+2024-12-03 13:00:01,857 - Stated append action to file op2_0_ack
+2024-12-03 13:00:01,857 - Performed append action to 'rainstorm_op2_0--op2_0_ack.log' with sequence number 30.
+2024-12-03 13:00:01,857 - Append acknowledgment sent to client 'rainstorm_op2_0' for file 'op2_0_ack'.
+2024-12-03 13:00:01,857 - Sent 102 bytes from data_buffer
+2024-12-03 13:00:01,858 - Connection closed by server
+2024-12-03 13:00:02,287 - No change in membership list
+2024-12-03 13:00:04,289 - No change in membership list
+2024-12-03 13:00:06,292 - No change in membership list
+2024-12-03 13:00:08,294 - No change in membership list
+2024-12-03 13:00:10,295 - No change in membership list
+2024-12-03 13:00:12,297 - No change in membership list
+2024-12-03 13:00:14,299 - No change in membership list
+2024-12-03 13:00:16,302 - No change in membership list
+2024-12-03 13:00:18,304 - No change in membership list
+2024-12-03 13:00:20,306 - No change in membership list
+2024-12-03 13:00:22,308 - No change in membership list
+2024-12-03 13:00:24,311 - No change in membership list
+2024-12-03 13:00:26,313 - No change in membership list
+2024-12-03 13:00:28,315 - No change in membership list
+2024-12-03 13:00:30,318 - Membership lists are not equal
+2024-12-03 13:00:30,318 - Hydfs node marked as DEAD: {'ring_id': 859, 'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1733252311', 'status': 'DEAD', 'inc_num': 0}
+2024-12-03 13:00:30,318 - Dead node fa24-cs425-6904.cs.illinois.edu_5000_1733252311 - 1st predecessor: fa24-cs425-6901.cs.illinois.edu_5000_1733252308, 2nd predecessor: fa24-cs425-6902.cs.illinois.edu_5000_1733252309, 1st successor: fa24-cs425-6903.cs.illinois.edu_5000_1733252310
+2024-12-03 13:00:30,318 - Added fa24-cs425-6903.cs.illinois.edu_5000_1733252310 to replica list
+2024-12-03 13:00:30,318 - Added fa24-cs425-6902.cs.illinois.edu_5000_1733252309 to replica list
+2024-12-03 13:00:30,318 - Next 1 nodes after 267: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733252310', 'ring_id': 403}]
+2024-12-03 13:00:30,318 - Primary replica is fa24-cs425-6903.cs.illinois.edu_5000_1733252310
+2024-12-03 13:00:30,318 - Next 1 nodes after 486: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733252308', 'ring_id': 715}]
+2024-12-03 13:00:30,318 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733252308
+2024-12-03 13:00:30,318 - I am a predecessor/succesor of dead node fa24-cs425-6904.cs.illinois.edu_5000_1733252311 with ring_id 859
+2024-12-03 13:00:30,319 - Sending write_replica to fa24-cs425-6903.cs.illinois.edu:5001 for file op2_0_state
+2024-12-03 13:00:30,319 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file op2_0_state
+2024-12-03 13:00:30,320 - Next 1 nodes after 991: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733252310', 'ring_id': 403}]
+2024-12-03 13:00:30,320 - Primary replica is fa24-cs425-6903.cs.illinois.edu_5000_1733252310
+2024-12-03 13:00:30,320 - Next 1 nodes after 462: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733252308', 'ring_id': 715}]
+2024-12-03 13:00:30,320 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733252308
+2024-12-03 13:00:30,321 - I am a predecessor/succesor of dead node fa24-cs425-6904.cs.illinois.edu_5000_1733252311 with ring_id 859
+2024-12-03 13:00:30,321 - Sending write_replica to fa24-cs425-6903.cs.illinois.edu:5001 for file output_1_business_19.txt
+2024-12-03 13:00:30,321 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file output_1_business_19.txt
+2024-12-03 13:00:30,322 - Next 1 nodes after 8: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733252310', 'ring_id': 403}]
+2024-12-03 13:00:30,322 - Primary replica is fa24-cs425-6903.cs.illinois.edu_5000_1733252310
+2024-12-03 13:00:30,322 - Next 1 nodes after 615: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733252308', 'ring_id': 715}]
+2024-12-03 13:00:30,322 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733252308
+2024-12-03 13:00:30,322 - I am a predecessor/succesor of dead node fa24-cs425-6904.cs.illinois.edu_5000_1733252311 with ring_id 859
+2024-12-03 13:00:30,323 - Sending write_replica to fa24-cs425-6903.cs.illinois.edu:5001 for file op1_0_ack
+2024-12-03 13:00:30,324 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file op1_0_ack
+2024-12-03 13:00:30,325 - Next 1 nodes after 618: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733252308', 'ring_id': 715}]
+2024-12-03 13:00:30,325 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733252308
+2024-12-03 13:00:30,325 - I am a predecessor/succesor of dead node fa24-cs425-6904.cs.illinois.edu_5000_1733252311 with ring_id 859
+2024-12-03 13:00:30,325 - Sending write_replica to fa24-cs425-6903.cs.illinois.edu:5001 for file source_0_state
+2024-12-03 13:00:30,326 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file source_0_state
+2024-12-03 13:00:30,327 - Next 1 nodes after 382: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733252310', 'ring_id': 403}]
+2024-12-03 13:00:30,327 - Primary replica is fa24-cs425-6903.cs.illinois.edu_5000_1733252310
+2024-12-03 13:00:30,327 - Next 1 nodes after 618: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733252308', 'ring_id': 715}]
+2024-12-03 13:00:30,327 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733252308
+2024-12-03 13:00:30,328 - I am a predecessor/succesor of dead node fa24-cs425-6904.cs.illinois.edu_5000_1733252311 with ring_id 859
+2024-12-03 13:00:30,328 - Sending write_replica to fa24-cs425-6903.cs.illinois.edu:5001 for file rainstorm_source_0--source_0_state.log
+2024-12-03 13:00:30,329 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file rainstorm_source_0--source_0_state.log
+2024-12-03 13:00:30,330 - Next 1 nodes after 8: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733252310', 'ring_id': 403}]
+2024-12-03 13:00:30,330 - Primary replica is fa24-cs425-6903.cs.illinois.edu_5000_1733252310
+2024-12-03 13:00:30,330 - Next 1 nodes after 382: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733252310', 'ring_id': 403}]
+2024-12-03 13:00:30,330 - Primary replica is fa24-cs425-6903.cs.illinois.edu_5000_1733252310
+2024-12-03 13:00:30,330 - Next 1 nodes after 486: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733252308', 'ring_id': 715}]
+2024-12-03 13:00:30,330 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733252308
+2024-12-03 13:00:30,331 - I am a predecessor/succesor of dead node fa24-cs425-6904.cs.illinois.edu_5000_1733252311 with ring_id 859
+2024-12-03 13:00:30,331 - Sending write_replica to fa24-cs425-6903.cs.illinois.edu:5001 for file rainstorm_op2_0--op2_0_state.log
+2024-12-03 13:00:30,332 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file rainstorm_op2_0--op2_0_state.log
+2024-12-03 13:00:30,334 - Next 1 nodes after 462: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733252308', 'ring_id': 715}]
+2024-12-03 13:00:30,334 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733252308
+2024-12-03 13:00:30,334 - I am a predecessor/succesor of dead node fa24-cs425-6904.cs.illinois.edu_5000_1733252311 with ring_id 859
+2024-12-03 13:00:30,335 - Sending write_replica to fa24-cs425-6903.cs.illinois.edu:5001 for file rainstorm_op2_0--output_1_business_19.txt.log
+2024-12-03 13:00:30,336 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file rainstorm_op2_0--output_1_business_19.txt.log
+2024-12-03 13:00:30,337 - Next 1 nodes after 991: [{'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1733252310', 'ring_id': 403}]
+2024-12-03 13:00:30,337 - Primary replica is fa24-cs425-6903.cs.illinois.edu_5000_1733252310
+2024-12-03 13:00:30,337 - Next 1 nodes after 615: [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1733252308', 'ring_id': 715}]
+2024-12-03 13:00:30,337 - Primary replica is fa24-cs425-6901.cs.illinois.edu_5000_1733252308
+2024-12-03 13:00:30,337 - I am a predecessor/succesor of dead node fa24-cs425-6904.cs.illinois.edu_5000_1733252311 with ring_id 859
+2024-12-03 13:00:30,337 - Sending write_replica to fa24-cs425-6903.cs.illinois.edu:5001 for file rainstorm_op1_0--op1_0_ack.log
+2024-12-03 13:00:30,346 - Sending write_replica to fa24-cs425-6902.cs.illinois.edu:5001 for file rainstorm_op1_0--op1_0_ack.log
+2024-12-03 13:00:30,346 - No change in membership list
+2024-12-03 13:00:31,883 - Sent 68 bytes from data_buffer
+2024-12-03 13:00:31,883 - Sent 68 bytes from data_buffer
+2024-12-03 13:00:31,884 - Sent 81 bytes from data_buffer
+2024-12-03 13:00:31,884 - Sent 81 bytes from data_buffer
+2024-12-03 13:00:31,884 - Sent 66 bytes from data_buffer
+2024-12-03 13:00:31,884 - Sent 66 bytes from data_buffer
+2024-12-03 13:00:31,884 - Sent 71 bytes from data_buffer
+2024-12-03 13:00:31,884 - Sent 71 bytes from data_buffer
+2024-12-03 13:00:31,884 - Sent 1866 bytes from data_buffer
+2024-12-03 13:00:31,884 - Sent 1866 bytes from data_buffer
+2024-12-03 13:00:31,884 - Sent 27041 bytes from data_buffer
+2024-12-03 13:00:31,884 - Sent 27041 bytes from data_buffer
+2024-12-03 13:00:31,885 - Sent 4859 bytes from data_buffer
+2024-12-03 13:00:31,885 - Sent 4859 bytes from data_buffer
+2024-12-03 13:00:31,885 - Sent 8502 bytes from data_buffer
+2024-12-03 13:00:31,885 - Sent 8502 bytes from data_buffer
+2024-12-03 13:00:31,885 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'op2_0_state', 'status': 'write_complete'}
+2024-12-03 13:00:31,885 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'op2_0_state', 'status': 'write_complete'}
+2024-12-03 13:00:31,886 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'output_1_business_19.txt', 'status': 'write_complete'}
+2024-12-03 13:00:31,886 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'op1_0_ack', 'status': 'write_complete'}
+2024-12-03 13:00:31,886 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'output_1_business_19.txt', 'status': 'write_complete'}
+2024-12-03 13:00:31,886 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'op1_0_ack', 'status': 'write_complete'}
+2024-12-03 13:00:31,886 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'source_0_state', 'status': 'write_complete'}
+2024-12-03 13:00:31,886 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'source_0_state', 'status': 'write_complete'}
+2024-12-03 13:00:31,886 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'rainstorm_source_0--source_0_state.log', 'status': 'write_complete'}
+2024-12-03 13:00:31,887 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'rainstorm_source_0--source_0_state.log', 'status': 'write_complete'}
+2024-12-03 13:00:31,887 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'rainstorm_op2_0--output_1_business_19.txt.log', 'status': 'write_complete'}
+2024-12-03 13:00:31,887 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'rainstorm_op2_0--output_1_business_19.txt.log', 'status': 'write_complete'}
+2024-12-03 13:00:31,887 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'rainstorm_op1_0--op1_0_ack.log', 'status': 'write_complete'}
+2024-12-03 13:00:31,887 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'rainstorm_op2_0--op2_0_state.log', 'status': 'write_complete'}
+2024-12-03 13:00:31,888 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'rainstorm_op1_0--op1_0_ack.log', 'status': 'write_complete'}
+2024-12-03 13:00:31,889 - Acknowledgment received for file info: {'action': 'ack_replica', 'filename': 'rainstorm_op2_0--op2_0_state.log', 'status': 'write_complete'}
+2024-12-03 13:00:32,348 - No change in membership list
+2024-12-03 13:00:32,958 - Connection from ('fa24-cs425-6902.cs.illinois.edu', [], ['172.22.156.229'])
+2024-12-03 13:00:34,350 - No change in membership list
+2024-12-03 13:00:36,353 - No change in membership list
+2024-12-03 13:00:38,355 - No change in membership list
+2024-12-03 13:00:40,357 - No change in membership list
+2024-12-03 13:00:42,360 - No change in membership list
+2024-12-03 13:00:44,362 - No change in membership list
+2024-12-03 13:00:46,364 - No change in membership list
+2024-12-03 13:00:48,367 - Membership lists are not equal
+2024-12-03 13:00:48,367 - No change in membership list
+2024-12-03 13:00:50,369 - No change in membership list
+2024-12-03 13:00:52,371 - No change in membership list
+2024-12-03 13:00:54,374 - No change in membership list
+2024-12-03 13:00:56,376 - No change in membership list
+2024-12-03 13:00:58,378 - No change in membership list
+2024-12-03 13:01:00,335 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 13:01:00,339 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 13:01:00,344 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 13:01:00,349 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 13:01:00,354 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 13:01:00,358 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 13:01:00,362 - Connection from ('fa24-cs425-6903.cs.illinois.edu', [], ['172.22.158.229'])
+2024-12-03 13:01:00,380 - No change in membership list
+2024-12-03 13:01:02,383 - No change in membership list
+2024-12-03 13:01:02,989 - File 'business_19.txt' already exists. Rewritting the file contents.
+2024-12-03 13:01:02,990 - File 'business_19.txt' written successfully.
+2024-12-03 13:01:02,990 - Acknowledgment sent to client for existing file 'business_19.txt'.
+2024-12-03 13:01:02,990 - File 'op2_0_ack' already exists. Rewritting the file contents.
+2024-12-03 13:01:02,990 - File 'op2_0_ack' written successfully.
+2024-12-03 13:01:02,991 - Acknowledgment sent to client for existing file 'op2_0_ack'.
+2024-12-03 13:01:02,991 - File 'op1_0_state' already exists. Rewritting the file contents.
+2024-12-03 13:01:02,991 - File 'op1_0_state' written successfully.
+2024-12-03 13:01:02,991 - Acknowledgment sent to client for existing file 'op1_0_state'.
+2024-12-03 13:01:02,991 - File 'source_0_ack' already exists. Rewritting the file contents.
+2024-12-03 13:01:02,991 - File 'source_0_ack' written successfully.
+2024-12-03 13:01:02,991 - Acknowledgment sent to client for existing file 'source_0_ack'.
+2024-12-03 13:01:02,991 - File 'rainstorm_source_0--source_0_ack.log' already exists. Rewritting the file contents.
+2024-12-03 13:01:02,992 - File 'rainstorm_source_0--source_0_ack.log' written successfully.
+2024-12-03 13:01:02,992 - Acknowledgment sent to client for existing file 'rainstorm_source_0--source_0_ack.log'.
+2024-12-03 13:01:02,992 - Sent 72 bytes from data_buffer
+2024-12-03 13:01:02,992 - Sent 66 bytes from data_buffer
+2024-12-03 13:01:02,992 - Sent 68 bytes from data_buffer
+2024-12-03 13:01:02,992 - Sent 69 bytes from data_buffer
+2024-12-03 13:01:02,993 - Sent 94 bytes from data_buffer
+2024-12-03 13:01:02,993 - File 'rainstorm_op2_0--op2_0_ack.log' already exists. Rewritting the file contents.
+2024-12-03 13:01:02,994 - File 'rainstorm_op2_0--op2_0_ack.log' written successfully.
+2024-12-03 13:01:02,994 - Acknowledgment sent to client for existing file 'rainstorm_op2_0--op2_0_ack.log'.
+2024-12-03 13:01:02,994 - File 'rainstorm_op1_0--op1_0_state.log' already exists. Rewritting the file contents.
+2024-12-03 13:01:02,995 - File 'rainstorm_op1_0--op1_0_state.log' written successfully.
+2024-12-03 13:01:02,995 - Acknowledgment sent to client for existing file 'rainstorm_op1_0--op1_0_state.log'.
+2024-12-03 13:01:02,995 - Sent 87 bytes from data_buffer
+2024-12-03 13:01:02,995 - Connection closed by server
+2024-12-03 13:01:02,995 - Sent 90 bytes from data_buffer
+2024-12-03 13:01:04,384 - No change in membership list
+2024-12-03 13:01:06,384 - No change in membership list
+2024-12-03 13:01:08,385 - No change in membership list
+2024-12-03 13:01:10,385 - No change in membership list
+2024-12-03 13:01:12,388 - No change in membership list
+2024-12-03 13:01:14,389 - No change in membership list
+2024-12-03 13:01:16,392 - No change in membership list
+2024-12-03 13:01:18,394 - No change in membership list
+2024-12-03 13:01:20,396 - No change in membership list
+2024-12-03 13:01:22,399 - No change in membership list
+2024-12-03 13:01:24,400 - No change in membership list
+2024-12-03 13:01:26,402 - No change in membership list
+2024-12-03 13:01:28,405 - Membership lists are not equal
+2024-12-03 13:01:28,405 - No change in membership list
+2024-12-03 13:01:30,407 - No change in membership list
+2024-12-03 13:01:32,409 - No change in membership list
+2024-12-03 13:01:34,412 - No change in membership list
+2024-12-03 13:01:36,414 - No change in membership list
+2024-12-03 13:01:38,416 - No change in membership list
+2024-12-03 13:01:40,419 - No change in membership list
+2024-12-03 13:01:42,421 - No change in membership list
+2024-12-03 13:01:44,423 - No change in membership list
+2024-12-03 13:01:46,426 - No change in membership list
+2024-12-03 13:01:48,427 - No change in membership list
+2024-12-03 13:01:50,430 - No change in membership list
+2024-12-03 13:01:52,432 - No change in membership list
+2024-12-03 13:01:54,434 - No change in membership list
+2024-12-03 13:01:56,437 - No change in membership list
+2024-12-03 13:01:58,438 - No change in membership list
+2024-12-03 13:02:00,440 - No change in membership list
+2024-12-03 13:02:02,442 - No change in membership list
+2024-12-03 13:02:04,444 - No change in membership list
+2024-12-03 13:02:06,445 - No change in membership list
+2024-12-03 13:02:08,447 - Membership lists are not equal
+2024-12-03 13:02:08,447 - No change in membership list
+2024-12-03 13:02:10,448 - No change in membership list
+2024-12-03 13:02:12,450 - No change in membership list
+2024-12-03 13:02:14,452 - No change in membership list
+2024-12-03 13:02:16,454 - No change in membership list
+2024-12-03 13:02:18,455 - No change in membership list
+2024-12-03 13:02:20,457 - No change in membership list
+2024-12-03 13:02:22,459 - No change in membership list
+2024-12-03 13:02:24,461 - No change in membership list
+2024-12-03 13:02:26,463 - No change in membership list
+2024-12-03 13:02:28,465 - No change in membership list
+2024-12-03 13:02:30,467 - No change in membership list
+2024-12-03 13:02:32,470 - No change in membership list
+2024-12-03 13:02:34,472 - No change in membership list
+2024-12-03 13:02:36,474 - No change in membership list
+2024-12-03 13:02:38,477 - No change in membership list
+2024-12-03 13:02:40,479 - No change in membership list
+2024-12-03 13:02:42,481 - No change in membership list
+2024-12-03 13:02:44,483 - No change in membership list
+2024-12-03 13:02:46,484 - No change in membership list
+2024-12-03 13:02:48,486 - Membership lists are not equal
+2024-12-03 13:02:48,486 - No change in membership list
+2024-12-03 13:02:50,488 - No change in membership list
+2024-12-03 13:02:52,490 - No change in membership list
+2024-12-03 13:02:54,492 - No change in membership list
+2024-12-03 13:02:56,494 - No change in membership list
+2024-12-03 13:02:58,496 - No change in membership list
+2024-12-03 13:03:00,498 - No change in membership list
+2024-12-03 13:03:02,501 - No change in membership list
+2024-12-03 13:03:04,503 - No change in membership list
+2024-12-03 13:03:06,506 - No change in membership list
+2024-12-03 13:03:08,508 - No change in membership list
+2024-12-03 13:03:10,511 - No change in membership list
+2024-12-03 13:03:12,513 - No change in membership list
+2024-12-03 13:03:14,515 - No change in membership list
+2024-12-03 13:03:16,518 - No change in membership list
+2024-12-03 13:03:18,520 - No change in membership list
+2024-12-03 13:03:18,579 - Shutting down HyDFS...
+2024-12-03 13:03:18,579 - Listener thread is still running; proceeding to join...
+2024-12-03 13:03:20,523 - No change in membership list
+2024-12-03 13:03:23,118 - Listener thread joined successfully.
+2024-12-03 13:03:23,119 - Membership thread is not running, skipping join.
+2024-12-03 13:03:28,415 - HyDFS Node shut down gracefully.
