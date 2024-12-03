@@ -88,15 +88,15 @@ if __name__ == "__main__":
     filename = sys.argv[1]
 
     # List of server addresses (IP, port)
-    servers = [(f'fa24-cs425-69{i:02d}.cs.illinois.edu', 5001) for i in range(1, 6)]
+    servers = [(f'fa24-cs425-69{i:02d}.cs.illinois.edu', 5001) for i in range(1, 11)]
 
     # Number of clients to create
-    num_clients = 4
+    num_clients = 1000
     action = "append"
-    filenames = ["business_5.txt", "business_5.txt", "business_5.txt", "business_5.txt"]
-    append_filenames = [f"business_{i}.txt" for i in range(13,17)]
+    filenames = ["business_19.txt", "business_19.txt", "business_19.txt", "business_19.txt"]*250
+    append_filenames = [f"business_{i}.txt" for i in range(0, 1000)]
     # file_paths = [f"../local/test_multi_append_client{i}.txt" for i in range(1,5)]
-    file_paths = [f"../local/business_{i}.txt" for i in range(13,17)]
+    file_paths = [f"../local/business_19.txt"]*1000
 
 
     main(servers, num_clients, action, filenames, append_filenames, file_paths)

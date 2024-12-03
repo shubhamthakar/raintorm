@@ -330,7 +330,7 @@ class RingNode:
                         # Node status changed to DEAD
                         self.log(f"Hydfs node marked as DEAD: {current_node}")
                         try:
-                            time.sleep(2*self.process.protocol_period)
+                            # time.sleep(2*self.process.protocol_period)
                             self.handle_node_change(current_node, "dead")
                         except Exception as e:
                             self.log(f"Exception caught in thread: {e}")

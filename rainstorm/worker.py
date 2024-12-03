@@ -122,7 +122,8 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         """
         for record in self.state["output_rec"]:
             rec_id, rec_data = record  # Unpack the tuple
-            if rec_id not in self.ack_rec:
+            # id in output_rec is in int
+            if str(rec_id) not in self.ack_rec:
                 await self.queue.put({'id' : rec_id, rec_data[0]: rec_data[1]})  # Append to the queue
                 print(f"Added {record} to the queue.")
 

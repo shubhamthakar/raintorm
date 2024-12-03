@@ -543,7 +543,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
                     request = worker_pb2.DataRequest(data=json.dumps(updated_task_mapping))
 
                     # Call the update_mapping RPC synchronously
-                    response = stub.RecvData(request)
+                    response = stub.UpdateMapping(request)
                     self.log(f"Worker {node_address} acknowledged: {response.ack}")
             except Exception as e:
                 self.log(f"Failed to notify worker {node_address}: {e}")
