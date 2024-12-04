@@ -15,7 +15,7 @@ import traceback
 import base64
 
 class WorkerServicer(worker_pb2_grpc.WorkerServicer):
-    def __init__(self, mapping, src_file, dest_file):
+    def __init__(self, mapping, src_file, dest_file, port):
 
         # Decode and parse
         decoded_mapping = base64.b64decode(mapping).decode()
@@ -26,6 +26,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         self.exe_file_path = '/home/chaskar2/distributed-logger/rainstorm/exe_files'
         self.src_file = src_file
         self.dest_file = dest_file
+        self.port = port
         # output_rec format [(id, data_in_tuple_format), ...]
         self.state = {"inp_id_processed": {}, "state": {}, "output_rec": [], "id_counter": 0}
         self.ack_rec = {}
@@ -71,8 +72,8 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         for i, task_type in enumerate(mapping_keys):
             task_dict = mapping[task_type]
             for partition_num, details in task_dict.items():
-                hostname, ip = details.split(":")
-                if hostname == self.hostname:
+                hostname, port = details.split(":")
+                if hostname == self.hostname and self.port == port:
                     # Populate the attributes based on the match
                     print(partition_num)
                     self.task_type = task_type
@@ -445,7 +446,7 @@ async def serve(port, mapping, src_file, dest_file):
     print(f"Recieved Mapping: {base64.b64decode(mapping).decode()}")
     decoded_mapping = base64.b64decode(mapping).decode()
     server = grpc.aio.server(ThreadPoolExecutor(max_workers=10))
-    worker_servicer = WorkerServicer(mapping, src_file, dest_file)
+    worker_servicer = WorkerServicer(mapping, src_file, dest_file, port)
     await worker_servicer.create_files_for_state_recovery()
     worker_pb2_grpc.add_WorkerServicer_to_server(worker_servicer, server)
     listen_addr = f"{worker_servicer.hostname}:{port}"
