@@ -121,13 +121,15 @@ class RingNode:
         print(message)
     
     def listen_for_messages(self):
+        IDLE_TIMEOUT = 10  # 5 minutes
+        last_activity = {}
         try:
 
             self.log(f"Server listening on {self.host_name}:{self.hydfs_host_port}")
 
             while not self.shutdown_flag.is_set():
                 readable, writable, exceptional = select.select(self.inputs, self.outputs, self.inputs, 5)
-
+                current_time = time.time()
             
                 # Handle readable sockets
                 for s in readable:
@@ -138,13 +140,14 @@ class RingNode:
                         self.inputs.append(client_socket)
                         self.data_buffer[client_socket] = b""
                         # self.log(f"Connection from {client_address}")
+                        last_activity[client_socket] = current_time
                         self.log(f"Connection from {socket.gethostbyaddr(client_address[0])}")
                     else:
                         # Read data from an existing client
                         data = s.recv(4096)
                         if data:
                             self.data_buffer[s] += data
-
+                            last_activity[s] = current_time
                             # Check if we have received the complete dictionary with "<EOF>"
                             if b"<EOF>" in self.data_buffer[s]:
                                 # Extract the complete data before <EOF>
@@ -157,15 +160,17 @@ class RingNode:
                                     client_name = file_info["client_name"]
                                     self.client_socket_map[client_name] = s
                                 
+
                                 # remove socket after receiving complete client request data
                                 if s in self.inputs:
                                     self.inputs.remove(s)
-                                
 
                                 self.inputtracker[client_socket] = True
                                 #creating a new thread for each handle message
 
                                 self.handle_message(file_info, s)
+
+                                
 
                                 # Add to outputs list if there's a response to be sent
                                 # if s not in self.outputs:
@@ -173,8 +178,8 @@ class RingNode:
                         else:
                             # Client disconnected unexpectedly
                             self.log("Client disconnected")
-                            if s in self.inputs:
-                                self.inputs.remove(s)
+                            # if s in self.inputs:
+                            #     self.inputs.remove(s)
                             if s in self.client_socket_map:
                                 del self.client_socket_map[s]
                             s.close()
@@ -193,9 +198,11 @@ class RingNode:
                             # Remove from outputs when all data is sent
                             if not self.data_buffer[s]:
                                 self.outputs.remove(s)
+                                # if s in self.inputs:
+                                #     self.inputs.remove(s)
                                 if s in self.inputtracker:
                                     del self.inputtracker[s]
-                                    self.log('Connection closed by server')
+                                    self.log('Closed connection on server side')
                                     s.close()
 
                         except BlockingIOError as e:
@@ -214,6 +221,19 @@ class RingNode:
                         # No more data to send, remove from outputs
                         if s in self.outputs:
                             self.outputs.remove(s)
+
+
+                # Periodically check for idle sockets
+                for s in list(last_activity.keys()):
+                    if current_time - last_activity[s] > IDLE_TIMEOUT:
+                        print(f"Closing idle socket: {s}")
+                        if s in self.inputs:
+                            self.inputs.remove(s)
+                        last_activity.pop(s, None)
+                        s.close()
+
+
+
 
                 # Handle exceptional sockets
                 for s in exceptional:
@@ -336,7 +356,7 @@ class RingNode:
                             self.log(f"Exception caught in thread: {e}")
 
                 previous_membership_list = copy.deepcopy(current_membership_list)
-            self.log("No change in membership list")
+            # self.log("No change in membership list")
 
     def handle_node_change(self, affected_node, change_type):
         """

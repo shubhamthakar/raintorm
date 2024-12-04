@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the path to the Python script on the remote machines
-PYTHON_SCRIPT_PATH="/home/chaskar2/distributed-logger/hyDFS/hyDFS.py"
+PYTHON_SCRIPT_PATH="/home/chaskar2/distributed-logger/rainstorm/hyDFS.py"
 
 # Loop over host-01 to host-10
 for i in $(seq -w 02 04); do
