@@ -424,7 +424,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             # Update self.mapping and reinitialize task-related attributes
             self.mapping = request.mapping
             
-            # self.get_task_type(self.mapping)
+            self.get_task_type(self.mapping)
             
             # Log success
             self.log(f"Mapping updated successfully: {self.mapping}")
