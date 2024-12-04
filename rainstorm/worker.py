@@ -41,7 +41,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         self.hostname = socket.gethostname()
         self.get_task_type(self.mapping)
         self.queue = asyncio.Queue()
-        
+
 
     def init_logging(self):
         # Create a specific logger for RingNode
@@ -73,26 +73,36 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             task_dict = mapping[task_type]
             for partition_num, details in task_dict.items():
                 hostname, port = details.split(":")
-                if hostname == self.hostname and self.port == port:
+                
+                self.log(f"hostname:{hostname}")
+                self.log(f"port:{port}")
+
+                self.log(f"self.hostname:{self.hostname}")
+                self.log(f"self.port:{self.port}")
+
+                self.log(f"type port {type(port)}")
+                self.log(f"type self.port {type(self.port)}")
+
+                if hostname == self.hostname and self.port == int(port):
                     # Populate the attributes based on the match
                     print(partition_num)
                     self.task_type = task_type
-                    
+
                     if not self.partition_num:
                         self.exe_file_path = os.path.join(self.exe_file_path, self.task_type)
                     else:
                         self.log(f"Updating the mapping, not updating exe file path")
-                    
+
                     self.partition_num = partition_num
                     self.total_partitions = len(task_dict)
                     self.next_stage_tasks = mapping[mapping_keys[i + 1]] if i + 1 < len(mapping_keys) else None
         self.log(f"Extracted details task_type: {self.task_type} exe_file_path: {self.exe_file_path} partition_num: {self.partition_num}, total_partitions: {self.total_partitions}, next_stage_tasks: {self.next_stage_tasks}")
-            
+
     async def create_files_for_state_recovery(self):
         # Create file for storing state_dict
         response = await self.interact_with_hydfs('create', f"{self.task_type}_{self.partition_num}_state")
         self.log(f"HyDFS response for create state recovery file : {response}")
-        
+
         # Get file for storing state_dict
         response = await self.interact_with_hydfs('get', f"{self.task_type}_{self.partition_num}_state")
         self.log(f"HyDFS response for get state recovery file : {response}")
@@ -182,9 +192,9 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             self.log(f"Error receiving response: {e}")
             client_socket.close()
             self.log("Connection from worker to hydfs closed.")
-            return None            
-        
-    
+            return None
+
+
     async def send_data_with_retries(self, stub, data_to_send, remote_server_address, timeout_seconds=10):
         """
         Sends data to the remote server with retries and a timeout.
@@ -215,7 +225,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             self.log(f"gRPC Error: {e}")
         return None  # Return None if call fails
 
-    
+
 
     async def monitor_queue(self):
         """
@@ -241,7 +251,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
                     self.log(f"HyDFS response for append to {self.task_type}_{self.partition_num}_ack : {response}")
                 else:
                     self.log('Result append to hydfs failed, readding data to queue')
-                    await self.queue.put(data_to_send) 
+                    await self.queue.put(data_to_send)
             else:
 
                 # Extract the key from data_to_send (assuming it's a dictionary with 2 element)
@@ -276,7 +286,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
                             self.ack_rec[data_to_send['id']] = 1
                             response = await self.interact_with_hydfs('append', f"{self.task_type}_{self.partition_num}_ack", self.ack_rec)
                             self.log(f"HyDFS response for append to {self.task_type}_{self.partition_num}_ack : {response}")
-                            
+
                     else:
                         self.log(f"Failed to send data to partition {hashed_partition}: {data_to_send}. Re-queuing.")
                         await self.queue.put(data_to_send)  # Re-add to the queue for retry
@@ -284,7 +294,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
 
 
     async def start_stream(self):
-        
+
         response = await self.interact_with_hydfs('get', self.src_file)
         self.log(f"{response}")
         if response["status"] == "file_not_found":
@@ -321,7 +331,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
     async def run_transform_exe(self, data):
         """
         Runs the `transform.exe` file with the specified arguments and returns the output.
-        
+
         Args:
             input_tuple (tuple): The input tuple.
 
@@ -339,7 +349,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             # Convert state and input_tuple to strings for command-line arguments
             state_arg = json.dumps(self.state['state'])  # Safely serialize the dictionary to a JSON string
             input_arg = str(input_tuple)  # Convert tuple to string
-            
+
             # Execute the .exe file with the arguments
             result = subprocess.run(
                 [self.exe_file_path, "--state", state_arg, "--input", input_arg],
@@ -421,12 +431,12 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             # Parse the new mapping JSON string
             # decoded_mapping = base64.b64decode(request.mapping).decode()
             # self.mapping = json.loads(decoded_mapping)
-            
+
             # Update self.mapping and reinitialize task-related attributes
             self.mapping = json.loads(request.mapping)
-            
+
             self.get_task_type(self.mapping)
-            
+
             # Log success
             self.log(f"Mapping updated successfully: {self.mapping}")
             return worker_pb2.UpdateResponse(status="Mapping updated successfully.")
@@ -467,5 +477,5 @@ if __name__ == "__main__":
     parser.add_argument("--src_file", type=str, required=True, help="Source file on hydfs")
     parser.add_argument("--dest_file", type=str, required=True, help="Destination file on hydfs")
     args = parser.parse_args()
-    
+
     asyncio.run(serve(args.port, args.mapping, args.src_file, args.dest_file))
