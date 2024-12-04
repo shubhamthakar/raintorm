@@ -422,7 +422,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             # self.mapping = json.loads(decoded_mapping)
             
             # Update self.mapping and reinitialize task-related attributes
-            self.mapping = request.mapping
+            self.mapping = json.loads(request.mapping)
             
             self.get_task_type(self.mapping)
             
