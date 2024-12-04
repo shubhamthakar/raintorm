@@ -76,7 +76,12 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
                     # Populate the attributes based on the match
                     print(partition_num)
                     self.task_type = task_type
-                    self.exe_file_path = os.path.join(self.exe_file_path, self.task_type)
+                    
+                    if not self.partition_num:
+                        self.exe_file_path = os.path.join(self.exe_file_path, self.task_type)
+                    else:
+                        self.log(f"Updating the mapping, not updating exe file path")
+                    
                     self.partition_num = partition_num
                     self.total_partitions = len(task_dict)
                     self.next_stage_tasks = mapping[mapping_keys[i + 1]] if i + 1 < len(mapping_keys) else None
