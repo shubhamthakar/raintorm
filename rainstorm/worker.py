@@ -3,6 +3,8 @@ import grpc
 from concurrent.futures import ThreadPoolExecutor
 import worker_pb2
 import worker_pb2_grpc
+import rainstorm_pb2
+import rainstorm_pb2_grpc
 import argparse
 import socket
 import logging

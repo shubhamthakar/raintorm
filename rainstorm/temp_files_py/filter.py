@@ -3,10 +3,10 @@
 def transform(state, input_tuple, pattern):
     # Extract key and line from input_tuple
     key, line = input_tuple
-    processed = ()
+    processed = []
     if pattern in line:
         parts = line.split(",")
-        processed = (parts[2], parts[3])
+        processed.append((parts[2], parts[3]))
     return state, processed
 
 
