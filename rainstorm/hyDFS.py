@@ -31,7 +31,9 @@ class RingNode:
 
         self.ring_id = self.hash_string(self.host_name)
         self.process = Process(socket.gethostname(), 5000, 'fa24-cs425-6901.cs.illinois.edu', 5000, False, 20, 10, 0, self.ring_id)
-        
+        self.membership_list = self.process.membership_list
+        self.node_id = self.process.node_id
+
         self.shutdown_flag = threading.Event() 
 
         self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -293,8 +295,15 @@ class RingNode:
         elif action == "ls":
             self.ls_filename(file_info, client_socket)
         
+        elif action == "stop_process":
+            self.stop_process()
+        
         else:
             self.log(f"Unknown action: {action}")
+
+    def stop_process(self):
+        self.log("sending signal to shutdown process.py ")
+        self.process.shutdown(signum=None, frame=None)
 
     def ls_filename(self, file_info, client_socket):
         filename = file_info["filename"]
@@ -325,14 +334,16 @@ class RingNode:
         find its 2 predecessors and 1 successor.
         """
         time.sleep(20)
+        self.log("Stabalizing membershipList")
+        self.membership_list = copy.deepcopy(self.process.membership_list)
         self.log("Monitoring membership list started")
-        previous_membership_list = copy.deepcopy(self.process.membership_list)
+        previous_membership_list = copy.deepcopy(self.membership_list)
         dead_nodes_count = 0
         dead_nodes_list = []
         while not self.shutdown_flag.is_set():
             # Check for changes in the membership list every 2 seconds
             time.sleep(2)
-            current_membership_list = copy.deepcopy(self.process.membership_list)
+            current_membership_list = copy.deepcopy(self.membership_list)
 
             if previous_membership_list != current_membership_list:
                 self.log(f"Membership lists are not equal")
@@ -356,8 +367,8 @@ class RingNode:
                             if dead_nodes_count == 2:
                                 dead_nodes_count = 0
                                 for ele in dead_nodes_list:
-                                    self.log('Handle dead node called')
-                                    self.handle_node_change(ele, "dead")
+                                    self.log('Handle dead node skipped in hyDFS')
+                                    #self.handle_node_change(ele, "dead")
                                 dead_nodes_list = []
                         except Exception as e:
                             self.log(f"Exception caught in thread: {e}")
@@ -371,7 +382,7 @@ class RingNode:
         Check if the current node (self.ring_id) is one of these.
         """
         # Sort the nodes in the ring by ring_id
-        sorted_nodes = sorted(self.process.membership_list, key=lambda x: x['ring_id'])
+        sorted_nodes = sorted(self.membership_list, key=lambda x: x['ring_id'])
 
         # Find the index of the affected node in the sorted list
         affected_node_index = next((i for i, node in enumerate(sorted_nodes) if node['node_id'] == affected_node['node_id']), None)
@@ -402,7 +413,7 @@ class RingNode:
         first_successor = succesor[0]
         self.log(f"{change_type.capitalize()} node {affected_node['node_id']} - 1st predecessor: {first_predecessor['node_id']}, 2nd predecessor: {second_predecessor['node_id']}, 1st successor: {first_successor['node_id']}")
 
-        curr_index = next((i for i, node in enumerate(sorted_nodes) if node['node_id'] == self.process.node_id), None)
+        curr_index = next((i for i, node in enumerate(sorted_nodes) if node['node_id'] == self.node_id), None)
         
         replica_list = []
         i = curr_index + 1  # Start from the next item
@@ -421,9 +432,9 @@ class RingNode:
             
 
             # Check if self.ring_id matches any of these roles
-            is_first_predecessor = self.process.node_id == first_predecessor['node_id']
-            is_second_predecessor = self.process.node_id == second_predecessor['node_id']
-            is_first_successor = self.process.node_id == first_successor['node_id']
+            is_first_predecessor = self.node_id == first_predecessor['node_id']
+            is_second_predecessor = self.node_id == second_predecessor['node_id']
+            is_first_successor = self.node_id == first_successor['node_id']
 
 
             for filename in os.listdir(self.fs_directory):
@@ -434,7 +445,7 @@ class RingNode:
                 file_hash = self.hash_string(actual_file_name)
                 primary_replica_list = self.get_next_n_nodes(file_hash, 1)
                 self.log(f"Primary replica is {primary_replica_list[0]['node_id']}")
-                is_primary_replica = self.process.node_id == primary_replica_list[0]['node_id']
+                is_primary_replica = self.node_id == primary_replica_list[0]['node_id']
                 if is_primary_replica:
                     if change_type == 'dead':
                         # If node is dead then predecessor sends file to next 2 replicas
@@ -1080,7 +1091,7 @@ class RingNode:
 
     def get_next_n_nodes(self, ring_id, n):
         # Filter for live nodes only
-        live_nodes = [node for node in self.process.membership_list if node['status'] == 'LIVE']
+        live_nodes = [node for node in self.membership_list if node['status'] == 'LIVE']
         
         # Sort nodes by ring_id in ascending order
         sorted_nodes = sorted(live_nodes, key=lambda x: x['ring_id'])

@@ -5,8 +5,8 @@ def transform(state, input_tuple, pattern):
     # Extract key and line from input_tuple
     key, line = input_tuple
     processed = []
-    if re.search(pattern, line):
-        processed.append((line))
+    parts = line.split(",")
+    processed.append((parts[2], parts[3]))
     return state, processed
 
 

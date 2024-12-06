@@ -406,7 +406,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
             print(f"Error occurred while running script: {e}")
 
 
-    def handle_node_change(self, current_node, action):
+    def handle_node_change(self, dead_nodes_list, action):
         """
         Handle changes to the cluster when a node dies or joins.
 
@@ -415,70 +415,73 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         action (str): "dead" if the node has shut down, "joined" if a node joins.
         """
 
-        self.log(f"handle node change called for action: {action}")
+        # Keep a copy of the old task mapping
+        old_task_mapping = self.task_mapping.copy()
+        original_task_mapping = self.task_mapping.copy()
+        # Remove tasks associated with the dead node from self.task_mapping
+        updated_task_mapping = {}
+        new_node_ports = []  # To track new node:port pairs  # List of tasks that need reassignment
 
         if action == "dead":
-            self.log(f"Node {current_node} is dead. Reassigning tasks...")
+            for current_node in dead_nodes_list:
+                tasks_to_reassign = []
+                self.log(f"Rainstorm: handle node change called for action: {current_node}: {action}")
+                self.log(f"Node {current_node} is dead. Reassigning tasks...")
 
-            # Filter alive workers from self.worker_load to remove the matching element
-            self.worker_load = [
-                node for node in self.worker_load if not current_node['node_id'].startswith(node[1])
-            ]
+                # Filter alive workers from self.worker_load to remove the matching element
+                self.worker_load = [
+                    node for node in self.worker_load if not current_node['node_id'].startswith(node[1])
+                ]
 
-            # Maintain a dictionary to track current tasks per node
-            node_task_count = {node: 0 for _, node in self.worker_load}
-            for tasks in self.task_mapping.values():
-                for assigned_node in tasks.values():
-                    node, port = assigned_node.split(":")
-                    if node in node_task_count:
-                        node_task_count[node] += 1
+                # Maintain a dictionary to track current tasks per node
+                node_task_count = {node: 0 for _, node in self.worker_load}
+                for tasks in self.task_mapping.values():
+                    for assigned_node in tasks.values():
+                        node, port = assigned_node.split(":")
+                        if node in node_task_count:
+                            node_task_count[node] += 1
 
-            # Keep a copy of the old task mapping
-            old_task_mapping = self.task_mapping.copy()
+                
 
-            # Remove tasks associated with the dead node from self.task_mapping
-            updated_task_mapping = {}
-            tasks_to_reassign = []  # List of tasks that need reassignment
+                for stage, tasks in self.task_mapping.items():
+                    updated_task_mapping[stage] = {}
+                    for task_id, assigned_node in tasks.items():
+                        node, port = assigned_node.split(":")
+                        if current_node['node_id'].startswith(node):
+                            # Collect tasks to reassign
+                            tasks_to_reassign.append((stage, task_id))
+                        else:
+                            # Keep existing assignments
+                            updated_task_mapping[stage][task_id] = assigned_node
 
-            for stage, tasks in self.task_mapping.items():
-                updated_task_mapping[stage] = {}
-                for task_id, assigned_node in tasks.items():
-                    node, port = assigned_node.split(":")
-                    if current_node['node_id'].startswith(node):
-                        # Collect tasks to reassign
-                        tasks_to_reassign.append((stage, task_id))
-                    else:
-                        # Keep existing assignments
-                        updated_task_mapping[stage][task_id] = assigned_node
+                # Reassign tasks to the most underutilized nodes
+                
+                for stage, task_id in tasks_to_reassign:
+                    if not self.worker_load:
+                        raise RuntimeError("No available nodes to reassign tasks!")
 
-            # Reassign tasks to the most underutilized nodes
-            new_node_ports = []  # To track new node:port pairs
-            for stage, task_id in tasks_to_reassign:
-                if not self.worker_load:
-                    raise RuntimeError("No available nodes to reassign tasks!")
+                    # Get the most underutilized node
+                    least_loaded_node = heapq.heappop(self.worker_load)
+                    new_node, new_load = least_loaded_node[1], least_loaded_node[0]
 
-                # Get the most underutilized node
-                least_loaded_node = heapq.heappop(self.worker_load)
-                new_node, new_load = least_loaded_node[1], least_loaded_node[0]
+                    # Assign the task to the new node
+                    next_port = 5002 + node_task_count[new_node]
+                    new_node_port = f"{new_node}:{next_port}"
+                    updated_task_mapping[stage][task_id] = new_node_port
 
-                # Assign the task to the new node
-                next_port = 5002 + node_task_count[new_node]
-                new_node_port = f"{new_node}:{next_port}"
-                updated_task_mapping[stage][task_id] = new_node_port
+                    # If the node:port pair is new, track it
+                    if new_node_port not in old_task_mapping.get(stage, {}).values():
+                        new_node_ports.append(new_node_port)
 
-                # If the node:port pair is new, track it
-                if new_node_port not in old_task_mapping.get(stage, {}).values():
-                    new_node_ports.append(new_node_port)
+                    # Update the task count and node's load
+                    node_task_count[new_node] += 1
+                    heapq.heappush(self.worker_load, (new_load + 1, new_node))
 
-                # Update the task count and node's load
-                node_task_count[new_node] += 1
-                heapq.heappush(self.worker_load, (new_load + 1, new_node))
-
-            # Update the self.task_mapping with reassigned tasks
-            old_task_mapping = self.task_mapping
-            self.task_mapping = updated_task_mapping
-            self.log(f"New Task Mapping: {self.task_mapping}")
-            self.log("Task mapping updated successfully.")
+                # Update the self.task_mapping with reassigned tasks
+                old_task_mapping = self.task_mapping
+                self.task_mapping = updated_task_mapping
+                self.log(f"New Task Mapping: {self.task_mapping}")
+                self.log("Task mapping updated successfully.")
 
             # Start workers only on new node:port pairs
             for new_node_port in new_node_ports:
@@ -491,15 +494,16 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
                 self.sync_start_rainstorm_workers(src_file, dest_file, ports, servers)
 
             # Notify all workers about the updated mapping
-            self.notify_workers(self.task_mapping, old_task_mapping)
+            self.notify_workers(self.task_mapping, original_task_mapping)
 
             return self.task_mapping
 
         elif action == "joined":
-            self.log(f"Node {current_node} joined. Assigning tasks to the new node...")
+            pass
+            # self.log(f"Node {current_node} joined. Assigning tasks to the new node...")
 
-            # For now, handle newly joined nodes as idle nodes unless specific tasks are assigned
-            self.log(f"Node {current_node} joined. No immediate tasks reassigned.")
+            # # For now, handle newly joined nodes as idle nodes unless specific tasks are assigned
+            # self.log(f"Node {current_node} joined. No immediate tasks reassigned.")
 
 
     
@@ -534,6 +538,8 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
             try:
                 # Assuming the worker address in the mapping contains the full address (hostname:port)
                 host, port = node_address.split(':')
+
+                self.log(f"Calling RPC for {host}: {port}")
 
                 # Create a synchronous gRPC channel and stub with the correct port
                 with grpc.insecure_channel(f"{host}:{port}") as channel:
@@ -576,7 +582,8 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         time.sleep(20)
         self.log("Rainstorm Tasks: Monitoring membership list started")
         previous_membership_list = copy.deepcopy(self.hydfs_node.process.membership_list)
-
+        dead_nodes_count = 0
+        dead_nodes_list = []
         while not self.shutdown_flag.is_set():
             # Check for changes in the membership list every 2 seconds
             time.sleep(2)
@@ -589,16 +596,23 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
                             for previous_node in previous_membership_list):
                         # New node detected
                         self.log(f"Rainstorm Tasks: New node detected: {current_node}")
-                        self.task_mapping = self.handle_node_change(current_node, "joined")
+                        self.task_mapping = self.handle_node_change([current_node], "joined")
 
                     elif current_node['status'] == 'DEAD' and any(
                             previous_node['node_id'] == current_node['node_id'] and previous_node['status'] != 'DEAD'
                             for previous_node in previous_membership_list):
                         # Node status changed to DEAD
                         self.log(f"Rainstorm Tasks: Hydfs node marked as DEAD: {current_node}")
+                        dead_nodes_count += 1
+                        dead_nodes_list.append(current_node)
                         try:
+                            if dead_nodes_count == 2:
+                                dead_nodes_count = 0
+                                self.log('Handle dead node called for Rainstorm')
+                                self.task_mapping = self.handle_node_change(dead_nodes_list, "dead")
+                                dead_nodes_list = []
                             # time.sleep(2*self.hydfs_node.process.protocol_period)
-                            self.task_mapping = self.handle_node_change(current_node, "dead")
+                            
                         except Exception as e:
                             self.log(f"Rainstorm Tasks: Exception caught in thread: {e}")
 

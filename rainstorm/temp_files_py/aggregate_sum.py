@@ -29,6 +29,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run the Transform operation.")
     parser.add_argument("--state", type=str, required=True, help="Current state as a dictionary.")
     parser.add_argument("--input", type=str, required=True, help="Input tuple as a string.")
+    parser.add_argument("--pattern", type=str, required=True, help="Input tuple as a string.")
 
     args = parser.parse_args()
     state_dict = ast.literal_eval(args.state)

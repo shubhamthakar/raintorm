@@ -15,7 +15,7 @@ for node_id in "$@"; do
   echo "Connecting to $HOST and stopping the Python script..."
 
   # SSH into each host and kill the processes running the Python script
-  ssh "$HOST" "pkill -f 'python .*hyDFS.py.*'"
+  # ssh "$HOST" "pkill -f 'python .*hyDFS.py.*'"
   ssh "$HOST" "pkill -f 'python3 .*worker.py.*'"
 
   echo "Python script stopped on $HOST"
