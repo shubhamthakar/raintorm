@@ -241,7 +241,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             pass
         while True:
             data_to_send = await self.queue.get()  # Wait for an item in the queue
-            await self.send_json_to_leader(data_to_send)
+            
             self.log(f"Dequeued data: {data_to_send} for sending.")
 
             if self.next_stage_tasks is None:
@@ -251,6 +251,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
                     # Add ack rec to hyDFS
                     self.ack_rec[data_to_send['id']] = 1
                     response = await self.interact_with_hydfs('append', f"{self.task_type}_{self.partition_num}_ack", self.ack_rec)
+                    await self.send_json_to_leader(data_to_send)
                     self.log(f"HyDFS response for append to {self.task_type}_{self.partition_num}_ack : {response}")
                 else:
                     self.log('Result append to hydfs failed, readding data to queue')
