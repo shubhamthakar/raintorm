@@ -328,6 +328,7 @@ class RingNode:
         self.log("Monitoring membership list started")
         previous_membership_list = copy.deepcopy(self.process.membership_list)
         dead_nodes_count = 0
+        dead_nodes_list = []
         while not self.shutdown_flag.is_set():
             # Check for changes in the membership list every 2 seconds
             time.sleep(2)
@@ -350,10 +351,14 @@ class RingNode:
                         # Node status changed to DEAD
                         self.log(f"Hydfs node marked as DEAD: {current_node}")
                         dead_nodes_count += 1
+                        dead_nodes_list.append(current_node)
                         try:
                             if dead_nodes_count == 2:
                                 dead_nodes_count = 0
-                                self.handle_node_change(current_node, "dead")
+                                for ele in dead_nodes_list:
+                                    self.log('Handle dead node called')
+                                    self.handle_node_change(ele, "dead")
+                                dead_nodes_list = []
                         except Exception as e:
                             self.log(f"Exception caught in thread: {e}")
 
