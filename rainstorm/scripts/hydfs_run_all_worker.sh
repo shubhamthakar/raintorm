@@ -4,7 +4,7 @@
 PYTHON_SCRIPT_PATH="/home/chaskar2/distributed-logger/rainstorm/hyDFS.py"
 
 # Loop over host-01 to host-10
-for i in $(seq -w 02 04); do
+for i in $(seq -w 02 10); do
   HOST="fa24-cs425-69$i.cs.illinois.edu"
   echo "Connecting to $HOST and running the Python script..."
 

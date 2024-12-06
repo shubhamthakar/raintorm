@@ -1,12 +1,12 @@
 # This is op1
 
-def transform(state, input_tuple):
+def transform(state, input_tuple, pattern):
     # Extract key and line from input_tuple
     key, line = input_tuple
-
-    # Generate list of (word, 1) tuples
-    processed = [(word, 1) for word in line.split()]
-
+    processed = ()
+    if pattern in line:
+        parts = line.split(",")
+        processed = (parts[2], parts[3])
     return state, processed
 
 
@@ -18,7 +18,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run the Transform operation.")
     parser.add_argument("--state", type=str, required=True, help="Current state as a dictionary.")
     parser.add_argument("--input", type=str, required=True, help="Input tuple as a string.")
-
+    parser.add_argument("--pattern", type=str, required=True, help="Input tuple as a string.")
     args = parser.parse_args()
     state_dict = ast.literal_eval(args.state)
     input_tuple = ast.literal_eval(args.input)

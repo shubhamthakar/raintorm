@@ -67,14 +67,13 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         self.worker_load = [
             (0,'fa24-cs425-6902.cs.illinois.edu'),
             (0,'fa24-cs425-6903.cs.illinois.edu'),
-            (0,'fa24-cs425-6904.cs.illinois.edu')
-            # ,
-            # (0,'fa24-cs425-6905.cs.illinois.edu'),
-            # (0,'fa24-cs425-6906.cs.illinois.edu'),
-            # (0,'fa24-cs425-6907.cs.illinois.edu'),
-            # (0,'fa24-cs425-6908.cs.illinois.edu'),
-            # (0,'fa24-cs425-6909.cs.illinois.edu'),
-            # (0,'fa24-cs425-6910.cs.illinois.edu')
+            (0,'fa24-cs425-6904.cs.illinois.edu'),
+            (0,'fa24-cs425-6905.cs.illinois.edu'),
+            (0,'fa24-cs425-6906.cs.illinois.edu'),
+            (0,'fa24-cs425-6907.cs.illinois.edu'),
+            (0,'fa24-cs425-6908.cs.illinois.edu'),
+            (0,'fa24-cs425-6909.cs.illinois.edu'),
+            (0,'fa24-cs425-6910.cs.illinois.edu')
         ]
         # Heapify the list
         heapq.heapify(self.worker_load)
@@ -549,6 +548,22 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
             except Exception as e:
                 self.log(f"Failed to notify worker {node_address}: {e}")
 
+
+    async def PrintJson(self, request, context):
+        """
+        Receives a JSON object and prints it to the console.
+        """
+        try:
+            # Parse the JSON object
+            data = json.loads(request.json_data)
+            print("****** Received JSON data from Worker:", data)
+
+            # Acknowledge receipt
+            return rainstorm_pb2.AckResponse(ack="JSON received successfully.")
+        except Exception as e:
+            error_message = f"Error processing JSON: {str(e)}"
+            print(error_message)
+            return rainstorm_pb2.AckResponse(ack=error_message)
 
 
 

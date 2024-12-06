@@ -239,6 +239,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             pass
         while True:
             data_to_send = await self.queue.get()  # Wait for an item in the queue
+            await self.send_json_to_leader(data_to_send)
             self.log(f"Dequeued data: {data_to_send} for sending.")
 
             if self.next_stage_tasks is None:
@@ -291,6 +292,19 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
                         self.log(f"Failed to send data to partition {hashed_partition}: {data_to_send}. Re-queuing.")
                         await self.queue.put(data_to_send)  # Re-add to the queue for retry
 
+    async def send_json_to_leader(self, json_data):
+        """
+        Sends a JSON object to the leader using the PrintJson RPC.
+        """
+        try:
+            leader_address = 'fa24-cs425-6901.cs.illinois.edu:50051'  # Leader's address
+            async with grpc.aio.insecure_channel(leader_address) as channel:
+                stub = rainstorm_pb2_grpc.RainStormStub(channel)
+                request = rainstorm_pb2.JsonRequest(json_data=json.dumps(json_data))
+                response = await stub.PrintJson(request)
+                self.log(f"Leader response: {response.ack}")
+        except Exception as e:
+            self.log(f"Error sending JSON to leader: {e}")
 
 
     async def start_stream(self):
