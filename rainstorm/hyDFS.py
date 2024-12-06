@@ -244,6 +244,7 @@ class RingNode:
                         self.inputs.remove(s)
                     if s in self.outputs:
                         self.outputs.remove(s)
+                    print("Enters exceptional phase")
                     s.close()
                     if s in self.data_buffer:
                         del self.data_buffer[s]

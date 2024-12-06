@@ -586,7 +586,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         dead_nodes_list = []
         while not self.shutdown_flag.is_set():
             # Check for changes in the membership list every 2 seconds
-            time.sleep(2)
+            time.sleep(2)   
             current_membership_list = copy.deepcopy(self.hydfs_node.process.membership_list)
 
             if previous_membership_list != current_membership_list:

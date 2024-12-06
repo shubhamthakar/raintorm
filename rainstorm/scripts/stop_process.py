@@ -110,9 +110,12 @@ if __name__ == "__main__":
     node_2 = sys.argv[2]
     servers = [(f"fa24-cs425-69{node_1}.cs.illinois.edu", 5001), (f"fa24-cs425-69{node_2}.cs.illinois.edu", 5001)]
 
-
     # Initialize and perform action
     client = FileClient()
+
+    # kill rainstorm workers
+    client.run_task_cleanup_script('./task_cleanup_specify_nodes.sh', node_1, node_2)
+
     for server in servers:
-        # client.perform_action(server)
-        client.run_task_cleanup_script('./task_cleanup_specify_nodes.sh', node_1, node_2)
+        client.perform_action(server)
+        
