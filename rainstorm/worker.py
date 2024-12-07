@@ -75,18 +75,10 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         for i, task_type in enumerate(mapping_keys):
             task_dict = mapping[task_type]
             for partition_num, details in task_dict.items():
-                hostname, port, self.pattern = details.split(":")
-                
-                self.log(f"hostname:{hostname}")
-                self.log(f"port:{port}")
-
-                self.log(f"self.hostname:{self.hostname}")
-                self.log(f"self.port:{self.port}")
-
-                self.log(f"type port {type(port)}")
-                self.log(f"type self.port {type(self.port)}")
+                hostname, port, pattern = details.split(":")
 
                 if hostname == self.hostname and self.port == int(port):
+                    self.pattern = pattern
                     # Populate the attributes based on the match
                     print(partition_num)
                     self.task_type = task_type
@@ -253,7 +245,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
                     self.ack_rec[data_to_send['id']] = 1
                     response = await self.interact_with_hydfs('append', f"{self.task_type}_{self.partition_num}_ack", self.ack_rec)
                     self.log(f"HyDFS response for append to {self.task_type}_{self.partition_num}_ack : {response}")
-                    await self.send_json_to_leader(data_to_send)
+                    # await self.send_json_to_leader(data_to_send)
                     
                 else:
                     self.log('Result append to hydfs failed, readding data to queue')

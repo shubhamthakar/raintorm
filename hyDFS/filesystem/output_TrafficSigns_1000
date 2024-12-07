@@ -1,0 +1,1018 @@
+
+{"id": 1, "1|TrafficSigns_1000.csv": ["1", "Streetname - Mast Arm"]}
+{"id": 2, "2|TrafficSigns_1000.csv": ["2", "Streetname - Mast Arm"]}
+{"id": 3, "3|TrafficSigns_1000.csv": ["3", "No Outlet"]}
+{"id": 4, "4|TrafficSigns_1000.csv": ["4", "No Outlet"]}
+{"id": 5, "5|TrafficSigns_1000.csv": ["5", "No Outlet"]}
+{"id": 6, "6|TrafficSigns_1000.csv": ["6", "No Outlet"]}
+{"id": 7, "7|TrafficSigns_1000.csv": ["7", "No Outlet"]}
+{"id": 8, "8|TrafficSigns_1000.csv": ["8", "Streetname - Sesquicentennial"]}
+{"id": 9, "9|TrafficSigns_1000.csv": ["9", "Streetname - Sesquicentennial"]}
+{"id": 10, "10|TrafficSigns_1000.csv": ["10", "No Outlet"]}
+{"id": 11, "11|TrafficSigns_1000.csv": ["11", "No Outlet"]}
+{"id": 12, "12|TrafficSigns_1000.csv": ["12", "No Outlet"]}
+{"id": 13, "13|TrafficSigns_1000.csv": ["13", "No Outlet"]}
+{"id": 14, "14|TrafficSigns_1000.csv": ["14", "No Parking to Corner"]}
+{"id": 15, "15|TrafficSigns_1000.csv": ["15", "No Parking to Corner"]}
+{"id": 16, "16|TrafficSigns_1000.csv": ["16", "30 mph Speed Limit"]}
+{"id": 17, "17|TrafficSigns_1000.csv": ["17", "30 mph Speed Limit"]}
+{"id": 18, "18|TrafficSigns_1000.csv": ["18", "35 mph Speed Limit"]}
+{"id": 19, "19|TrafficSigns_1000.csv": ["19", "Stop"]}
+{"id": 20, "20|TrafficSigns_1000.csv": ["20", "Stop"]}
+{"id": 21, "21|TrafficSigns_1000.csv": ["21", "Stop"]}
+{"id": 22, "23|TrafficSigns_1000.csv": ["23", "Stop"]}
+{"id": 23, "24|TrafficSigns_1000.csv": ["24", "Stop"]}
+{"id": 24, "25|TrafficSigns_1000.csv": ["25", "Stop"]}
+{"id": 25, "26|TrafficSigns_1000.csv": ["26", "Stop"]}
+{"id": 26, "27|TrafficSigns_1000.csv": ["27", "Stop"]}
+{"id": 27, "28|TrafficSigns_1000.csv": ["28", "Streetname"]}
+{"id": 28, "29|TrafficSigns_1000.csv": ["29", "Stop"]}
+{"id": 29, "30|TrafficSigns_1000.csv": ["30", "Stop"]}
+{"id": 30, "31|TrafficSigns_1000.csv": ["31", "Stop"]}
+{"id": 31, "32|TrafficSigns_1000.csv": ["32", "Stop"]}
+{"id": 32, "33|TrafficSigns_1000.csv": ["33", "Stop"]}
+{"id": 33, "34|TrafficSigns_1000.csv": ["34", "Stop"]}
+{"id": 34, "35|TrafficSigns_1000.csv": ["35", "Stop"]}
+{"id": 35, "36|TrafficSigns_1000.csv": ["36", "Stop"]}
+{"id": 36, "37|TrafficSigns_1000.csv": ["37", "Stop"]}
+{"id": 37, "38|TrafficSigns_1000.csv": ["38", "Stop"]}
+{"id": 38, "39|TrafficSigns_1000.csv": ["39", "Stop"]}
+{"id": 39, "40|TrafficSigns_1000.csv": ["40", "Stop"]}
+{"id": 40, "41|TrafficSigns_1000.csv": ["41", "Stop"]}
+{"id": 41, "42|TrafficSigns_1000.csv": ["42", "Stop"]}
+{"id": 42, "43|TrafficSigns_1000.csv": ["43", "Stop"]}
+{"id": 43, "44|TrafficSigns_1000.csv": ["44", "Stop"]}
+{"id": 44, "45|TrafficSigns_1000.csv": ["45", "Streetname"]}
+{"id": 45, "46|TrafficSigns_1000.csv": ["46", "Streetname"]}
+{"id": 46, "47|TrafficSigns_1000.csv": ["47", "Push Button to Cross"]}
+{"id": 47, "48|TrafficSigns_1000.csv": ["48", "No Parking"]}
+{"id": 48, "49|TrafficSigns_1000.csv": ["49", "Streetname"]}
+{"id": 49, "50|TrafficSigns_1000.csv": ["50", "Streetname"]}
+{"id": 50, "51|TrafficSigns_1000.csv": ["51", "Streetname"]}
+{"id": 51, "52|TrafficSigns_1000.csv": ["52", "Streetname"]}
+{"id": 52, "53|TrafficSigns_1000.csv": ["53", "Streetname"]}
+{"id": 53, "54|TrafficSigns_1000.csv": ["54", "Streetname"]}
+{"id": 54, "55|TrafficSigns_1000.csv": ["55", "Streetname"]}
+{"id": 55, "56|TrafficSigns_1000.csv": ["56", "Streetname"]}
+{"id": 56, "57|TrafficSigns_1000.csv": ["57", "Streetname"]}
+{"id": 57, "58|TrafficSigns_1000.csv": ["58", "Streetname"]}
+{"id": 58, "59|TrafficSigns_1000.csv": ["59", "Streetname"]}
+{"id": 59, "60|TrafficSigns_1000.csv": ["60", "Streetname"]}
+{"id": 60, "61|TrafficSigns_1000.csv": ["61", "Streetname"]}
+{"id": 61, "62|TrafficSigns_1000.csv": ["62", "Streetname"]}
+{"id": 62, "50|TrafficSigns_1000.csv": ["50", "Streetname"]}
+{"id": 63, "63|TrafficSigns_1000.csv": ["63", "Streetname"]}
+{"id": 64, "64|TrafficSigns_1000.csv": ["64", "Streetname"]}
+{"id": 65, "65|TrafficSigns_1000.csv": ["65", "Streetname"]}
+{"id": 66, "66|TrafficSigns_1000.csv": ["66", "Streetname"]}
+{"id": 67, "67|TrafficSigns_1000.csv": ["67", "Streetname"]}
+{"id": 68, "68|TrafficSigns_1000.csv": ["68", "Streetname"]}
+{"id": 69, "69|TrafficSigns_1000.csv": ["69", "Streetname"]}
+{"id": 70, "70|TrafficSigns_1000.csv": ["70", "Streetname"]}
+{"id": 71, "71|TrafficSigns_1000.csv": ["71", "Streetname"]}
+{"id": 72, "72|TrafficSigns_1000.csv": ["72", "Streetname"]}
+{"id": 73, "73|TrafficSigns_1000.csv": ["73", "Streetname"]}
+{"id": 74, "74|TrafficSigns_1000.csv": ["74", "Streetname"]}
+{"id": 75, "75|TrafficSigns_1000.csv": ["75", "Streetname"]}
+{"id": 76, "76|TrafficSigns_1000.csv": ["76", "Streetname"]}
+{"id": 77, "77|TrafficSigns_1000.csv": ["77", "Streetname"]}
+{"id": 78, "78|TrafficSigns_1000.csv": ["78", "Streetname"]}
+{"id": 79, "79|TrafficSigns_1000.csv": ["79", "Streetname"]}
+{"id": 80, "80|TrafficSigns_1000.csv": ["80", "Streetname"]}
+{"id": 81, "81|TrafficSigns_1000.csv": ["81", "Streetname"]}
+{"id": 82, "82|TrafficSigns_1000.csv": ["82", "Streetname"]}
+{"id": 83, "83|TrafficSigns_1000.csv": ["83", "Streetname"]}
+{"id": 84, "53|TrafficSigns_1000.csv": ["53", "Streetname"]}
+{"id": 85, "84|TrafficSigns_1000.csv": ["84", "Streetname"]}
+{"id": 86, "85|TrafficSigns_1000.csv": ["85", "Streetname"]}
+{"id": 87, "86|TrafficSigns_1000.csv": ["86", "Streetname"]}
+{"id": 88, "87|TrafficSigns_1000.csv": ["87", "Streetname"]}
+{"id": 89, "88|TrafficSigns_1000.csv": ["88", "Streetname"]}
+{"id": 90, "89|TrafficSigns_1000.csv": ["89", "Stop"]}
+{"id": 91, "90|TrafficSigns_1000.csv": ["90", "Stop"]}
+{"id": 92, "91|TrafficSigns_1000.csv": ["91", "Stop"]}
+{"id": 93, "92|TrafficSigns_1000.csv": ["92", "Stop"]}
+{"id": 94, "93|TrafficSigns_1000.csv": ["93", "Stop"]}
+{"id": 95, "94|TrafficSigns_1000.csv": ["94", "Stop"]}
+{"id": 96, "95|TrafficSigns_1000.csv": ["95", "Stop"]}
+{"id": 97, "96|TrafficSigns_1000.csv": ["96", "Stop"]}
+{"id": 98, "97|TrafficSigns_1000.csv": ["97", "Stop"]}
+{"id": 99, "98|TrafficSigns_1000.csv": ["98", "Stop"]}
+{"id": 100, "99|TrafficSigns_1000.csv": ["99", "Stop"]}
+{"id": 101, "100|TrafficSigns_1000.csv": ["100", "Stop"]}
+{"id": 102, "101|TrafficSigns_1000.csv": ["101", "Stop"]}
+{"id": 103, "102|TrafficSigns_1000.csv": ["102", "Stop"]}
+{"id": 104, "103|TrafficSigns_1000.csv": ["103", "Stop"]}
+{"id": 105, "104|TrafficSigns_1000.csv": ["104", "Stop"]}
+{"id": 106, "105|TrafficSigns_1000.csv": ["105", "Stop"]}
+{"id": 107, "106|TrafficSigns_1000.csv": ["106", "Stop"]}
+{"id": 108, "107|TrafficSigns_1000.csv": ["107", "Stop"]}
+{"id": 109, "108|TrafficSigns_1000.csv": ["108", "Stop"]}
+{"id": 110, "109|TrafficSigns_1000.csv": ["109", "Stop"]}
+{"id": 111, "110|TrafficSigns_1000.csv": ["110", "Stop"]}
+{"id": 112, "111|TrafficSigns_1000.csv": ["111", "Stop"]}
+{"id": 113, "112|TrafficSigns_1000.csv": ["112", "Stop"]}
+{"id": 114, "113|TrafficSigns_1000.csv": ["113", "Stop"]}
+{"id": 115, "114|TrafficSigns_1000.csv": ["114", "Stop"]}
+{"id": 116, "115|TrafficSigns_1000.csv": ["115", "Stop"]}
+{"id": 117, "116|TrafficSigns_1000.csv": ["116", "Stop"]}
+{"id": 118, "117|TrafficSigns_1000.csv": ["117", "Stop"]}
+{"id": 119, "118|TrafficSigns_1000.csv": ["118", "Stop"]}
+{"id": 120, "119|TrafficSigns_1000.csv": ["119", "Streetname"]}
+{"id": 121, "120|TrafficSigns_1000.csv": ["120", "Streetname"]}
+{"id": 122, "121|TrafficSigns_1000.csv": ["121", "Streetname"]}
+{"id": 123, "122|TrafficSigns_1000.csv": ["122", "Streetname"]}
+{"id": 124, "123|TrafficSigns_1000.csv": ["123", "Streetname"]}
+{"id": 125, "124|TrafficSigns_1000.csv": ["124", "Streetname"]}
+{"id": 126, "125|TrafficSigns_1000.csv": ["125", "Streetname"]}
+{"id": 127, "126|TrafficSigns_1000.csv": ["126", "Streetname"]}
+{"id": 128, "127|TrafficSigns_1000.csv": ["127", "Streetname"]}
+{"id": 129, "128|TrafficSigns_1000.csv": ["128", "Streetname"]}
+{"id": 130, "129|TrafficSigns_1000.csv": ["129", "Streetname"]}
+{"id": 131, "130|TrafficSigns_1000.csv": ["130", "Streetname"]}
+{"id": 132, "131|TrafficSigns_1000.csv": ["131", "Streetname"]}
+{"id": 133, "132|TrafficSigns_1000.csv": ["132", "Streetname"]}
+{"id": 134, "133|TrafficSigns_1000.csv": ["133", "Streetname"]}
+{"id": 135, "134|TrafficSigns_1000.csv": ["134", "Streetname"]}
+{"id": 136, "135|TrafficSigns_1000.csv": ["135", "Streetname"]}
+{"id": 137, "136|TrafficSigns_1000.csv": ["136", "Streetname"]}
+{"id": 138, "137|TrafficSigns_1000.csv": ["137", "Streetname"]}
+{"id": 139, "138|TrafficSigns_1000.csv": ["138", "Streetname"]}
+{"id": 140, "139|TrafficSigns_1000.csv": ["139", "Streetname"]}
+{"id": 141, "140|TrafficSigns_1000.csv": ["140", "Streetname"]}
+{"id": 142, "141|TrafficSigns_1000.csv": ["141", "Streetname"]}
+{"id": 143, "142|TrafficSigns_1000.csv": ["142", "Streetname"]}
+{"id": 144, "143|TrafficSigns_1000.csv": ["143", "Streetname"]}
+{"id": 145, "144|TrafficSigns_1000.csv": ["144", "Streetname"]}
+{"id": 146, "145|TrafficSigns_1000.csv": ["145", "Streetname"]}
+{"id": 147, "146|TrafficSigns_1000.csv": ["146", "Streetname"]}
+{"id": 148, "147|TrafficSigns_1000.csv": ["147", "Streetname"]}
+{"id": 149, "148|TrafficSigns_1000.csv": ["148", "Streetname"]}
+{"id": 150, "149|TrafficSigns_1000.csv": ["149", "No Outlet"]}
+{"id": 151, "150|TrafficSigns_1000.csv": ["150", "No Outlet"]}
+{"id": 152, "151|TrafficSigns_1000.csv": ["151", "No Parking"]}
+{"id": 153, "152|TrafficSigns_1000.csv": ["152", "No Parking to Corner"]}
+{"id": 154, "153|TrafficSigns_1000.csv": ["153", "40 mph Speed Limit"]}
+{"id": 155, "154|TrafficSigns_1000.csv": ["154", "Stop"]}
+{"id": 156, "155|TrafficSigns_1000.csv": ["155", "Stop"]}
+{"id": 157, "156|TrafficSigns_1000.csv": ["156", "Stop"]}
+{"id": 158, "157|TrafficSigns_1000.csv": ["157", "Streetname"]}
+{"id": 159, "158|TrafficSigns_1000.csv": ["158", "Streetname"]}
+{"id": 160, "159|TrafficSigns_1000.csv": ["159", "Streetname"]}
+{"id": 161, "160|TrafficSigns_1000.csv": ["160", "No Parking"]}
+{"id": 162, "161|TrafficSigns_1000.csv": ["161", "No Parking"]}
+{"id": 163, "162|TrafficSigns_1000.csv": ["162", "35 mph Speed Limit"]}
+{"id": 164, "163|TrafficSigns_1000.csv": ["163", "35 mph Speed Limit"]}
+{"id": 165, "164|TrafficSigns_1000.csv": ["164", "Stop"]}
+{"id": 166, "165|TrafficSigns_1000.csv": ["165", "Stop"]}
+{"id": 167, "166|TrafficSigns_1000.csv": ["166", "Stop"]}
+{"id": 168, "167|TrafficSigns_1000.csv": ["167", "Stop"]}
+{"id": 169, "168|TrafficSigns_1000.csv": ["168", "Stop"]}
+{"id": 170, "169|TrafficSigns_1000.csv": ["169", "Stop"]}
+{"id": 171, "170|TrafficSigns_1000.csv": ["170", "Stop"]}
+{"id": 172, "171|TrafficSigns_1000.csv": ["171", "Stop"]}
+{"id": 173, "172|TrafficSigns_1000.csv": ["172", "Stop"]}
+{"id": 174, "174|TrafficSigns_1000.csv": ["174", "Stop"]}
+{"id": 175, "175|TrafficSigns_1000.csv": ["175", "Stop"]}
+{"id": 176, "176|TrafficSigns_1000.csv": ["176", "Stop"]}
+{"id": 177, "177|TrafficSigns_1000.csv": ["177", "Stop"]}
+{"id": 178, "178|TrafficSigns_1000.csv": ["178", "Stop"]}
+{"id": 179, "179|TrafficSigns_1000.csv": ["179", "Stop"]}
+{"id": 180, "180|TrafficSigns_1000.csv": ["180", "Stop"]}
+{"id": 181, "181|TrafficSigns_1000.csv": ["181", "Stop"]}
+{"id": 182, "182|TrafficSigns_1000.csv": ["182", "Stop"]}
+{"id": 183, "183|TrafficSigns_1000.csv": ["183", "Stop"]}
+{"id": 184, "184|TrafficSigns_1000.csv": ["184", "Stop"]}
+{"id": 185, "185|TrafficSigns_1000.csv": ["185", "Stop"]}
+{"id": 186, "186|TrafficSigns_1000.csv": ["186", "Stop"]}
+{"id": 187, "187|TrafficSigns_1000.csv": ["187", "Stop"]}
+{"id": 188, "188|TrafficSigns_1000.csv": ["188", "Streetname"]}
+{"id": 189, "189|TrafficSigns_1000.csv": ["189", "Streetname"]}
+{"id": 190, "190|TrafficSigns_1000.csv": ["190", "Streetname"]}
+{"id": 191, "191|TrafficSigns_1000.csv": ["191", "Streetname"]}
+{"id": 192, "192|TrafficSigns_1000.csv": ["192", "Streetname"]}
+{"id": 193, "193|TrafficSigns_1000.csv": ["193", "Streetname"]}
+{"id": 194, "194|TrafficSigns_1000.csv": ["194", "Streetname"]}
+{"id": 195, "195|TrafficSigns_1000.csv": ["195", "Streetname"]}
+{"id": 196, "196|TrafficSigns_1000.csv": ["196", "Streetname"]}
+{"id": 197, "197|TrafficSigns_1000.csv": ["197", "Streetname"]}
+{"id": 198, "198|TrafficSigns_1000.csv": ["198", "Streetname"]}
+{"id": 199, "199|TrafficSigns_1000.csv": ["199", "Streetname"]}
+{"id": 200, "200|TrafficSigns_1000.csv": ["200", "Streetname"]}
+{"id": 201, "201|TrafficSigns_1000.csv": ["201", "Streetname"]}
+{"id": 202, "202|TrafficSigns_1000.csv": ["202", "Streetname"]}
+{"id": 203, "203|TrafficSigns_1000.csv": ["203", "Streetname"]}
+{"id": 204, "204|TrafficSigns_1000.csv": ["204", "Streetname"]}
+{"id": 205, "205|TrafficSigns_1000.csv": ["205", "Streetname"]}
+{"id": 206, "206|TrafficSigns_1000.csv": ["206", "Streetname"]}
+{"id": 207, "207|TrafficSigns_1000.csv": ["207", "Streetname"]}
+{"id": 208, "208|TrafficSigns_1000.csv": ["208", "Streetname"]}
+{"id": 209, "209|TrafficSigns_1000.csv": ["209", "Streetname"]}
+{"id": 210, "210|TrafficSigns_1000.csv": ["210", "Streetname"]}
+{"id": 211, "211|TrafficSigns_1000.csv": ["211", "Streetname"]}
+{"id": 212, "212|TrafficSigns_1000.csv": ["212", "Streetname"]}
+{"id": 213, "213|TrafficSigns_1000.csv": ["213", "Streetname - Honorary"]}
+{"id": 214, "214|TrafficSigns_1000.csv": ["214", "Streetname"]}
+{"id": 215, "215|TrafficSigns_1000.csv": ["215", "Streetname"]}
+{"id": 216, "216|TrafficSigns_1000.csv": ["216", "Streetname"]}
+{"id": 217, "217|TrafficSigns_1000.csv": ["217", "Streetname"]}
+{"id": 218, "218|TrafficSigns_1000.csv": ["218", "Streetname"]}
+{"id": 219, "219|TrafficSigns_1000.csv": ["219", "Streetname"]}
+{"id": 220, "220|TrafficSigns_1000.csv": ["220", "Streetname"]}
+{"id": 221, "221|TrafficSigns_1000.csv": ["221", "Streetname"]}
+{"id": 222, "222|TrafficSigns_1000.csv": ["222", "Streetname"]}
+{"id": 223, "223|TrafficSigns_1000.csv": ["223", "Streetname"]}
+{"id": 224, "224|TrafficSigns_1000.csv": ["224", "Streetname"]}
+{"id": 225, "225|TrafficSigns_1000.csv": ["225", "Streetname"]}
+{"id": 226, "226|TrafficSigns_1000.csv": ["226", "Streetname"]}
+{"id": 227, "227|TrafficSigns_1000.csv": ["227", "Streetname"]}
+{"id": 228, "228|TrafficSigns_1000.csv": ["228", "Streetname"]}
+{"id": 229, "146|TrafficSigns_1000.csv": ["146", "Streetname"]}
+{"id": 230, "229|TrafficSigns_1000.csv": ["229", "Streetname"]}
+{"id": 231, "230|TrafficSigns_1000.csv": ["230", "Streetname"]}
+{"id": 232, "231|TrafficSigns_1000.csv": ["231", "Streetname"]}
+{"id": 233, "232|TrafficSigns_1000.csv": ["232", "Streetname"]}
+{"id": 234, "233|TrafficSigns_1000.csv": ["233", "Streetname"]}
+{"id": 235, "234|TrafficSigns_1000.csv": ["234", "Streetname"]}
+{"id": 236, "235|TrafficSigns_1000.csv": ["235", "Streetname"]}
+{"id": 237, "236|TrafficSigns_1000.csv": ["236", "Streetname"]}
+{"id": 238, "237|TrafficSigns_1000.csv": ["237", "Streetname"]}
+{"id": 239, "238|TrafficSigns_1000.csv": ["238", "Streetname"]}
+{"id": 240, "239|TrafficSigns_1000.csv": ["239", "No Outlet"]}
+{"id": 241, "240|TrafficSigns_1000.csv": ["240", "No Parking"]}
+{"id": 242, "241|TrafficSigns_1000.csv": ["241", "Stop"]}
+{"id": 243, "242|TrafficSigns_1000.csv": ["242", "No Parking"]}
+{"id": 244, "243|TrafficSigns_1000.csv": ["243", "Stop"]}
+{"id": 245, "244|TrafficSigns_1000.csv": ["244", "Stop"]}
+{"id": 246, "245|TrafficSigns_1000.csv": ["245", "Stop"]}
+{"id": 247, "246|TrafficSigns_1000.csv": ["246", "Stop"]}
+{"id": 248, "247|TrafficSigns_1000.csv": ["247", "Stop"]}
+{"id": 249, "248|TrafficSigns_1000.csv": ["248", "Stop"]}
+{"id": 250, "249|TrafficSigns_1000.csv": ["249", "Stop"]}
+{"id": 251, "250|TrafficSigns_1000.csv": ["250", "Stop"]}
+{"id": 252, "251|TrafficSigns_1000.csv": ["251", "Streetname"]}
+{"id": 253, "252|TrafficSigns_1000.csv": ["252", "Streetname"]}
+{"id": 254, "253|TrafficSigns_1000.csv": ["253", "Streetname"]}
+{"id": 255, "254|TrafficSigns_1000.csv": ["254", "Streetname"]}
+{"id": 256, "255|TrafficSigns_1000.csv": ["255", "Streetname"]}
+{"id": 257, "256|TrafficSigns_1000.csv": ["256", "Streetname"]}
+{"id": 258, "257|TrafficSigns_1000.csv": ["257", "Streetname"]}
+{"id": 259, "258|TrafficSigns_1000.csv": ["258", "Streetname"]}
+{"id": 260, "259|TrafficSigns_1000.csv": ["259", "Stop"]}
+{"id": 261, "260|TrafficSigns_1000.csv": ["260", "School Zone"]}
+{"id": 262, "261|TrafficSigns_1000.csv": ["261", "No Outlet"]}
+{"id": 263, "262|TrafficSigns_1000.csv": ["262", "No Outlet"]}
+{"id": 264, "263|TrafficSigns_1000.csv": ["263", "No Parking to Corner"]}
+{"id": 265, "264|TrafficSigns_1000.csv": ["264", "No Parking to Corner"]}
+{"id": 266, "265|TrafficSigns_1000.csv": ["265", "Stop"]}
+{"id": 267, "266|TrafficSigns_1000.csv": ["266", "Stop"]}
+{"id": 268, "267|TrafficSigns_1000.csv": ["267", "Stop"]}
+{"id": 269, "268|TrafficSigns_1000.csv": ["268", "Stop"]}
+{"id": 270, "269|TrafficSigns_1000.csv": ["269", "Stop"]}
+{"id": 271, "270|TrafficSigns_1000.csv": ["270", "Stop"]}
+{"id": 272, "271|TrafficSigns_1000.csv": ["271", "Stop"]}
+{"id": 273, "272|TrafficSigns_1000.csv": ["272", "Stop"]}
+{"id": 274, "273|TrafficSigns_1000.csv": ["273", "Stop"]}
+{"id": 275, "274|TrafficSigns_1000.csv": ["274", "Stop"]}
+{"id": 276, "275|TrafficSigns_1000.csv": ["275", "Stop"]}
+{"id": 277, "276|TrafficSigns_1000.csv": ["276", "Stop"]}
+{"id": 278, "277|TrafficSigns_1000.csv": ["277", "Stop"]}
+{"id": 279, "278|TrafficSigns_1000.csv": ["278", "Stop"]}
+{"id": 280, "279|TrafficSigns_1000.csv": ["279", "Stop"]}
+{"id": 281, "280|TrafficSigns_1000.csv": ["280", "Stop"]}
+{"id": 282, "281|TrafficSigns_1000.csv": ["281", "Stop"]}
+{"id": 283, "282|TrafficSigns_1000.csv": ["282", "Stop"]}
+{"id": 284, "283|TrafficSigns_1000.csv": ["283", "Stop"]}
+{"id": 285, "284|TrafficSigns_1000.csv": ["284", "Stop"]}
+{"id": 286, "285|TrafficSigns_1000.csv": ["285", "Stop"]}
+{"id": 287, "286|TrafficSigns_1000.csv": ["286", "Stop"]}
+{"id": 288, "287|TrafficSigns_1000.csv": ["287", "Stop"]}
+{"id": 289, "288|TrafficSigns_1000.csv": ["288", "Stop"]}
+{"id": 290, "289|TrafficSigns_1000.csv": ["289", "Stop"]}
+{"id": 291, "290|TrafficSigns_1000.csv": ["290", "Stop"]}
+{"id": 292, "291|TrafficSigns_1000.csv": ["291", "Stop"]}
+{"id": 293, "292|TrafficSigns_1000.csv": ["292", "Stop"]}
+{"id": 294, "293|TrafficSigns_1000.csv": ["293", "Stop"]}
+{"id": 295, "294|TrafficSigns_1000.csv": ["294", "Stop"]}
+{"id": 296, "295|TrafficSigns_1000.csv": ["295", "Stop"]}
+{"id": 297, "296|TrafficSigns_1000.csv": ["296", "Stop"]}
+{"id": 298, "297|TrafficSigns_1000.csv": ["297", "Stop"]}
+{"id": 299, "298|TrafficSigns_1000.csv": ["298", "Stop"]}
+{"id": 300, "299|TrafficSigns_1000.csv": ["299", "Stop"]}
+{"id": 301, "300|TrafficSigns_1000.csv": ["300", "Stop"]}
+{"id": 302, "301|TrafficSigns_1000.csv": ["301", "Stop"]}
+{"id": 303, "302|TrafficSigns_1000.csv": ["302", "Stop"]}
+{"id": 304, "303|TrafficSigns_1000.csv": ["303", "Stop"]}
+{"id": 305, "304|TrafficSigns_1000.csv": ["304", "Stop"]}
+{"id": 306, "305|TrafficSigns_1000.csv": ["305", "Stop"]}
+{"id": 307, "306|TrafficSigns_1000.csv": ["306", "Stop"]}
+{"id": 308, "307|TrafficSigns_1000.csv": ["307", "Stop"]}
+{"id": 309, "308|TrafficSigns_1000.csv": ["308", "Stop"]}
+{"id": 310, "309|TrafficSigns_1000.csv": ["309", "Stop"]}
+{"id": 311, "310|TrafficSigns_1000.csv": ["310", "Stop"]}
+{"id": 312, "311|TrafficSigns_1000.csv": ["311", "Stop"]}
+{"id": 313, "312|TrafficSigns_1000.csv": ["312", "Streetname"]}
+{"id": 314, "313|TrafficSigns_1000.csv": ["313", "Streetname - Private"]}
+{"id": 315, "314|TrafficSigns_1000.csv": ["314", "Streetname"]}
+{"id": 316, "315|TrafficSigns_1000.csv": ["315", "Streetname"]}
+{"id": 317, "316|TrafficSigns_1000.csv": ["316", "Streetname"]}
+{"id": 318, "317|TrafficSigns_1000.csv": ["317", "Streetname"]}
+{"id": 319, "318|TrafficSigns_1000.csv": ["318", "Streetname"]}
+{"id": 320, "319|TrafficSigns_1000.csv": ["319", "Streetname"]}
+{"id": 321, "320|TrafficSigns_1000.csv": ["320", "Streetname"]}
+{"id": 322, "321|TrafficSigns_1000.csv": ["321", "Streetname"]}
+{"id": 323, "322|TrafficSigns_1000.csv": ["322", "Streetname"]}
+{"id": 324, "323|TrafficSigns_1000.csv": ["323", "Streetname"]}
+{"id": 325, "324|TrafficSigns_1000.csv": ["324", "Streetname"]}
+{"id": 326, "325|TrafficSigns_1000.csv": ["325", "Streetname"]}
+{"id": 327, "326|TrafficSigns_1000.csv": ["326", "Streetname"]}
+{"id": 328, "327|TrafficSigns_1000.csv": ["327", "Streetname"]}
+{"id": 329, "328|TrafficSigns_1000.csv": ["328", "Streetname"]}
+{"id": 330, "329|TrafficSigns_1000.csv": ["329", "Streetname"]}
+{"id": 331, "330|TrafficSigns_1000.csv": ["330", "Streetname"]}
+{"id": 332, "331|TrafficSigns_1000.csv": ["331", "Streetname"]}
+{"id": 333, "332|TrafficSigns_1000.csv": ["332", "Streetname"]}
+{"id": 334, "333|TrafficSigns_1000.csv": ["333", "Streetname"]}
+{"id": 335, "334|TrafficSigns_1000.csv": ["334", "Streetname"]}
+{"id": 336, "335|TrafficSigns_1000.csv": ["335", "Streetname"]}
+{"id": 337, "336|TrafficSigns_1000.csv": ["336", "Streetname"]}
+{"id": 338, "337|TrafficSigns_1000.csv": ["337", "Streetname"]}
+{"id": 339, "338|TrafficSigns_1000.csv": ["338", "Streetname"]}
+{"id": 340, "339|TrafficSigns_1000.csv": ["339", "Streetname"]}
+{"id": 341, "340|TrafficSigns_1000.csv": ["340", "Streetname"]}
+{"id": 342, "341|TrafficSigns_1000.csv": ["341", "Streetname"]}
+{"id": 343, "342|TrafficSigns_1000.csv": ["342", "Streetname"]}
+{"id": 344, "343|TrafficSigns_1000.csv": ["343", "Streetname"]}
+{"id": 345, "344|TrafficSigns_1000.csv": ["344", "Streetname"]}
+{"id": 346, "345|TrafficSigns_1000.csv": ["345", "Streetname"]}
+{"id": 347, "346|TrafficSigns_1000.csv": ["346", "Streetname"]}
+{"id": 348, "347|TrafficSigns_1000.csv": ["347", "Streetname"]}
+{"id": 349, "348|TrafficSigns_1000.csv": ["348", "Streetname"]}
+{"id": 350, "349|TrafficSigns_1000.csv": ["349", "Streetname"]}
+{"id": 351, "350|TrafficSigns_1000.csv": ["350", "Streetname"]}
+{"id": 352, "351|TrafficSigns_1000.csv": ["351", "Streetname"]}
+{"id": 353, "352|TrafficSigns_1000.csv": ["352", "Streetname"]}
+{"id": 354, "353|TrafficSigns_1000.csv": ["353", "Streetname"]}
+{"id": 355, "354|TrafficSigns_1000.csv": ["354", "Streetname"]}
+{"id": 356, "355|TrafficSigns_1000.csv": ["355", "Streetname"]}
+{"id": 357, "356|TrafficSigns_1000.csv": ["356", "Streetname"]}
+{"id": 358, "357|TrafficSigns_1000.csv": ["357", "Streetname"]}
+{"id": 359, "358|TrafficSigns_1000.csv": ["358", "Streetname"]}
+{"id": 360, "359|TrafficSigns_1000.csv": ["359", "Streetname"]}
+{"id": 361, "360|TrafficSigns_1000.csv": ["360", "Streetname"]}
+{"id": 362, "361|TrafficSigns_1000.csv": ["361", "Streetname"]}
+{"id": 363, "362|TrafficSigns_1000.csv": ["362", "Streetname"]}
+{"id": 364, "363|TrafficSigns_1000.csv": ["363", "Streetname - Private"]}
+{"id": 365, "364|TrafficSigns_1000.csv": ["364", "Streetname - Private"]}
+{"id": 366, "365|TrafficSigns_1000.csv": ["365", "Streetname"]}
+{"id": 367, "366|TrafficSigns_1000.csv": ["366", "Streetname"]}
+{"id": 368, "367|TrafficSigns_1000.csv": ["367", "Streetname - Private"]}
+{"id": 369, "368|TrafficSigns_1000.csv": ["368", "Streetname"]}
+{"id": 370, "369|TrafficSigns_1000.csv": ["369", "Streetname"]}
+{"id": 371, "370|TrafficSigns_1000.csv": ["370", "Streetname"]}
+{"id": 372, "371|TrafficSigns_1000.csv": ["371", "Streetname"]}
+{"id": 373, "372|TrafficSigns_1000.csv": ["372", "Streetname"]}
+{"id": 374, "373|TrafficSigns_1000.csv": ["373", "Streetname"]}
+{"id": 375, "374|TrafficSigns_1000.csv": ["374", "Streetname"]}
+{"id": 376, "375|TrafficSigns_1000.csv": ["375", "Streetname"]}
+{"id": 377, "376|TrafficSigns_1000.csv": ["376", "No Outlet"]}
+{"id": 378, "377|TrafficSigns_1000.csv": ["377", "No Outlet"]}
+{"id": 379, "378|TrafficSigns_1000.csv": ["378", "No Parking"]}
+{"id": 380, "379|TrafficSigns_1000.csv": ["379", "No Parking"]}
+{"id": 381, "380|TrafficSigns_1000.csv": ["380", "No Parking"]}
+{"id": 382, "381|TrafficSigns_1000.csv": ["381", "Stop"]}
+{"id": 383, "382|TrafficSigns_1000.csv": ["382", "Stop"]}
+{"id": 384, "383|TrafficSigns_1000.csv": ["383", "Stop"]}
+{"id": 385, "384|TrafficSigns_1000.csv": ["384", "Stop"]}
+{"id": 386, "385|TrafficSigns_1000.csv": ["385", "Stop"]}
+{"id": 387, "386|TrafficSigns_1000.csv": ["386", "Stop"]}
+{"id": 388, "387|TrafficSigns_1000.csv": ["387", "Stop"]}
+{"id": 389, "388|TrafficSigns_1000.csv": ["388", "Stop"]}
+{"id": 390, "389|TrafficSigns_1000.csv": ["389", "Stop"]}
+{"id": 391, "390|TrafficSigns_1000.csv": ["390", "Stop"]}
+{"id": 392, "391|TrafficSigns_1000.csv": ["391", "Stop"]}
+{"id": 393, "392|TrafficSigns_1000.csv": ["392", "Stop"]}
+{"id": 394, "393|TrafficSigns_1000.csv": ["393", "Stop"]}
+{"id": 395, "394|TrafficSigns_1000.csv": ["394", "Stop"]}
+{"id": 396, "395|TrafficSigns_1000.csv": ["395", "Stop"]}
+{"id": 397, "396|TrafficSigns_1000.csv": ["396", "Stop"]}
+{"id": 398, "397|TrafficSigns_1000.csv": ["397", "Streetname"]}
+{"id": 399, "398|TrafficSigns_1000.csv": ["398", "Streetname"]}
+{"id": 400, "399|TrafficSigns_1000.csv": ["399", "Streetname"]}
+{"id": 401, "400|TrafficSigns_1000.csv": ["400", "Streetname"]}
+{"id": 402, "401|TrafficSigns_1000.csv": ["401", "Streetname"]}
+{"id": 403, "283|TrafficSigns_1000.csv": ["283", "Stop"]}
+{"id": 404, "402|TrafficSigns_1000.csv": ["402", "Streetname"]}
+{"id": 405, "403|TrafficSigns_1000.csv": ["403", "Streetname"]}
+{"id": 406, "404|TrafficSigns_1000.csv": ["404", "Streetname"]}
+{"id": 407, "405|TrafficSigns_1000.csv": ["405", "Streetname"]}
+{"id": 408, "406|TrafficSigns_1000.csv": ["406", "Streetname"]}
+{"id": 409, "407|TrafficSigns_1000.csv": ["407", "Streetname"]}
+{"id": 410, "408|TrafficSigns_1000.csv": ["408", "Streetname"]}
+{"id": 411, "409|TrafficSigns_1000.csv": ["409", "Streetname"]}
+{"id": 412, "410|TrafficSigns_1000.csv": ["410", "Streetname"]}
+{"id": 413, "411|TrafficSigns_1000.csv": ["411", "Streetname"]}
+{"id": 414, "412|TrafficSigns_1000.csv": ["412", "Streetname"]}
+{"id": 415, "413|TrafficSigns_1000.csv": ["413", "Streetname"]}
+{"id": 416, "414|TrafficSigns_1000.csv": ["414", "Streetname"]}
+{"id": 417, "415|TrafficSigns_1000.csv": ["415", "Streetname"]}
+{"id": 418, "295|TrafficSigns_1000.csv": ["295", "Stop"]}
+{"id": 419, "416|TrafficSigns_1000.csv": ["416", "Streetname"]}
+{"id": 420, "417|TrafficSigns_1000.csv": ["417", "Streetname"]}
+{"id": 421, "418|TrafficSigns_1000.csv": ["418", "Streetname"]}
+{"id": 422, "419|TrafficSigns_1000.csv": ["419", "Streetname"]}
+{"id": 423, "420|TrafficSigns_1000.csv": ["420", "Streetname"]}
+{"id": 424, "421|TrafficSigns_1000.csv": ["421", "Streetname"]}
+{"id": 425, "422|TrafficSigns_1000.csv": ["422", "Streetname"]}
+{"id": 426, "423|TrafficSigns_1000.csv": ["423", "Streetname"]}
+{"id": 427, "424|TrafficSigns_1000.csv": ["424", "Streetname"]}
+{"id": 428, "425|TrafficSigns_1000.csv": ["425", "Streetname"]}
+{"id": 429, "426|TrafficSigns_1000.csv": ["426", "Streetname"]}
+{"id": 430, "427|TrafficSigns_1000.csv": ["427", "Streetname"]}
+{"id": 431, "428|TrafficSigns_1000.csv": ["428", "No Outlet"]}
+{"id": 432, "429|TrafficSigns_1000.csv": ["429", "No Parking to Corner"]}
+{"id": 433, "430|TrafficSigns_1000.csv": ["430", "No Parking to Corner"]}
+{"id": 434, "431|TrafficSigns_1000.csv": ["431", "No Parking to Corner"]}
+{"id": 435, "432|TrafficSigns_1000.csv": ["432", "No Parking to Corner"]}
+{"id": 436, "433|TrafficSigns_1000.csv": ["433", "No Parking to Corner"]}
+{"id": 437, "434|TrafficSigns_1000.csv": ["434", "No Parking to Corner"]}
+{"id": 438, "435|TrafficSigns_1000.csv": ["435", "No Parking to Corner"]}
+{"id": 439, "436|TrafficSigns_1000.csv": ["436", "No Parking to Corner"]}
+{"id": 440, "437|TrafficSigns_1000.csv": ["437", "No Parking to Corner"]}
+{"id": 441, "438|TrafficSigns_1000.csv": ["438", "No Parking to Corner"]}
+{"id": 442, "439|TrafficSigns_1000.csv": ["439", "No Parking to Corner"]}
+{"id": 443, "440|TrafficSigns_1000.csv": ["440", "No Parking to Corner"]}
+{"id": 444, "441|TrafficSigns_1000.csv": ["441", "Stop"]}
+{"id": 445, "442|TrafficSigns_1000.csv": ["442", "Stop"]}
+{"id": 446, "443|TrafficSigns_1000.csv": ["443", "Stop"]}
+{"id": 447, "444|TrafficSigns_1000.csv": ["444", "Stop"]}
+{"id": 448, "445|TrafficSigns_1000.csv": ["445", "Stop"]}
+{"id": 449, "446|TrafficSigns_1000.csv": ["446", "Stop"]}
+{"id": 450, "447|TrafficSigns_1000.csv": ["447", "Stop"]}
+{"id": 451, "448|TrafficSigns_1000.csv": ["448", "Stop"]}
+{"id": 452, "449|TrafficSigns_1000.csv": ["449", "Stop"]}
+{"id": 453, "450|TrafficSigns_1000.csv": ["450", "Stop"]}
+{"id": 454, "451|TrafficSigns_1000.csv": ["451", "Stop"]}
+{"id": 455, "452|TrafficSigns_1000.csv": ["452", "Stop"]}
+{"id": 456, "453|TrafficSigns_1000.csv": ["453", "Stop"]}
+{"id": 457, "454|TrafficSigns_1000.csv": ["454", "Streetname"]}
+{"id": 458, "455|TrafficSigns_1000.csv": ["455", "Streetname"]}
+{"id": 459, "456|TrafficSigns_1000.csv": ["456", "Streetname"]}
+{"id": 460, "457|TrafficSigns_1000.csv": ["457", "Streetname"]}
+{"id": 461, "458|TrafficSigns_1000.csv": ["458", "Streetname"]}
+{"id": 462, "459|TrafficSigns_1000.csv": ["459", "Streetname"]}
+{"id": 463, "460|TrafficSigns_1000.csv": ["460", "Streetname"]}
+{"id": 464, "461|TrafficSigns_1000.csv": ["461", "Streetname"]}
+{"id": 465, "462|TrafficSigns_1000.csv": ["462", "Streetname"]}
+{"id": 466, "463|TrafficSigns_1000.csv": ["463", "Streetname"]}
+{"id": 467, "464|TrafficSigns_1000.csv": ["464", "No Parking"]}
+{"id": 468, "465|TrafficSigns_1000.csv": ["465", "No Parking"]}
+{"id": 469, "466|TrafficSigns_1000.csv": ["466", "No Parking"]}
+{"id": 470, "467|TrafficSigns_1000.csv": ["467", "No Parking"]}
+{"id": 471, "468|TrafficSigns_1000.csv": ["468", "No Parking"]}
+{"id": 472, "469|TrafficSigns_1000.csv": ["469", "No Parking"]}
+{"id": 473, "470|TrafficSigns_1000.csv": ["470", "No Parking"]}
+{"id": 474, "471|TrafficSigns_1000.csv": ["471", "No Parking"]}
+{"id": 475, "472|TrafficSigns_1000.csv": ["472", "No Parking"]}
+{"id": 476, "473|TrafficSigns_1000.csv": ["473", "No Parking"]}
+{"id": 477, "474|TrafficSigns_1000.csv": ["474", "Stop"]}
+{"id": 478, "475|TrafficSigns_1000.csv": ["475", "Stop"]}
+{"id": 479, "476|TrafficSigns_1000.csv": ["476", "Stop"]}
+{"id": 480, "477|TrafficSigns_1000.csv": ["477", "Stop"]}
+{"id": 481, "478|TrafficSigns_1000.csv": ["478", "Stop"]}
+{"id": 482, "479|TrafficSigns_1000.csv": ["479", "Stop"]}
+{"id": 483, "480|TrafficSigns_1000.csv": ["480", "Stop"]}
+{"id": 484, "481|TrafficSigns_1000.csv": ["481", "Stop"]}
+{"id": 485, "482|TrafficSigns_1000.csv": ["482", "Stop"]}
+{"id": 486, "483|TrafficSigns_1000.csv": ["483", "Stop"]}
+{"id": 487, "484|TrafficSigns_1000.csv": ["484", "Stop"]}
+{"id": 488, "485|TrafficSigns_1000.csv": ["485", "Stop"]}
+{"id": 489, "487|TrafficSigns_1000.csv": ["487", "Stop"]}
+{"id": 490, "488|TrafficSigns_1000.csv": ["488", "Stop"]}
+{"id": 491, "489|TrafficSigns_1000.csv": ["489", "Stop"]}
+{"id": 492, "490|TrafficSigns_1000.csv": ["490", "Stop"]}
+{"id": 493, "491|TrafficSigns_1000.csv": ["491", "Stop"]}
+{"id": 494, "492|TrafficSigns_1000.csv": ["492", "Stop"]}
+{"id": 495, "493|TrafficSigns_1000.csv": ["493", "Stop"]}
+{"id": 496, "494|TrafficSigns_1000.csv": ["494", "Stop"]}
+{"id": 497, "495|TrafficSigns_1000.csv": ["495", "Stop"]}
+{"id": 498, "496|TrafficSigns_1000.csv": ["496", "Stop"]}
+{"id": 499, "497|TrafficSigns_1000.csv": ["497", "Stop"]}
+{"id": 500, "498|TrafficSigns_1000.csv": ["498", "Stop"]}
+{"id": 501, "499|TrafficSigns_1000.csv": ["499", "Stop"]}
+{"id": 502, "500|TrafficSigns_1000.csv": ["500", "Stop"]}
+{"id": 503, "501|TrafficSigns_1000.csv": ["501", "Stop"]}
+{"id": 504, "502|TrafficSigns_1000.csv": ["502", "Streetname"]}
+{"id": 505, "503|TrafficSigns_1000.csv": ["503", "Streetname"]}
+{"id": 506, "504|TrafficSigns_1000.csv": ["504", "Streetname"]}
+{"id": 507, "505|TrafficSigns_1000.csv": ["505", "Streetname"]}
+{"id": 508, "506|TrafficSigns_1000.csv": ["506", "Streetname"]}
+{"id": 509, "507|TrafficSigns_1000.csv": ["507", "Streetname"]}
+{"id": 510, "508|TrafficSigns_1000.csv": ["508", "Streetname"]}
+{"id": 511, "386|TrafficSigns_1000.csv": ["386", "Stop"]}
+{"id": 512, "509|TrafficSigns_1000.csv": ["509", "Streetname"]}
+{"id": 513, "510|TrafficSigns_1000.csv": ["510", "Streetname"]}
+{"id": 514, "511|TrafficSigns_1000.csv": ["511", "Streetname"]}
+{"id": 515, "512|TrafficSigns_1000.csv": ["512", "Streetname"]}
+{"id": 516, "513|TrafficSigns_1000.csv": ["513", "Streetname"]}
+{"id": 517, "514|TrafficSigns_1000.csv": ["514", "Streetname"]}
+{"id": 518, "515|TrafficSigns_1000.csv": ["515", "Streetname"]}
+{"id": 519, "392|TrafficSigns_1000.csv": ["392", "Stop"]}
+{"id": 520, "516|TrafficSigns_1000.csv": ["516", "Streetname"]}
+{"id": 521, "517|TrafficSigns_1000.csv": ["517", "Streetname"]}
+{"id": 522, "518|TrafficSigns_1000.csv": ["518", "Streetname"]}
+{"id": 523, "519|TrafficSigns_1000.csv": ["519", "Streetname"]}
+{"id": 524, "520|TrafficSigns_1000.csv": ["520", "Streetname"]}
+{"id": 525, "521|TrafficSigns_1000.csv": ["521", "Streetname"]}
+{"id": 526, "522|TrafficSigns_1000.csv": ["522", "Streetname"]}
+{"id": 527, "524|TrafficSigns_1000.csv": ["524", "Streetname"]}
+{"id": 528, "525|TrafficSigns_1000.csv": ["525", "Streetname"]}
+{"id": 529, "526|TrafficSigns_1000.csv": ["526", "No Parking"]}
+{"id": 530, "399|TrafficSigns_1000.csv": ["399", "Streetname"]}
+{"id": 531, "527|TrafficSigns_1000.csv": ["527", "No Parking"]}
+{"id": 532, "528|TrafficSigns_1000.csv": ["528", "No Parking"]}
+{"id": 533, "529|TrafficSigns_1000.csv": ["529", "No Parking"]}
+{"id": 534, "530|TrafficSigns_1000.csv": ["530", "No Parking"]}
+{"id": 535, "531|TrafficSigns_1000.csv": ["531", "No Parking"]}
+{"id": 536, "532|TrafficSigns_1000.csv": ["532", "No Parking to Corner with Left Arrow"]}
+{"id": 537, "533|TrafficSigns_1000.csv": ["533", "No Parking Between Signs with Left Arrow"]}
+{"id": 538, "534|TrafficSigns_1000.csv": ["534", "2 hr Parking Time Limit"]}
+{"id": 539, "405|TrafficSigns_1000.csv": ["405", "Streetname"]}
+{"id": 540, "535|TrafficSigns_1000.csv": ["535", "No Parking"]}
+{"id": 541, "536|TrafficSigns_1000.csv": ["536", "No Parking"]}
+{"id": 542, "537|TrafficSigns_1000.csv": ["537", "No Parking"]}
+{"id": 543, "538|TrafficSigns_1000.csv": ["538", "No Parking"]}
+{"id": 544, "539|TrafficSigns_1000.csv": ["539", "No Parking"]}
+{"id": 545, "540|TrafficSigns_1000.csv": ["540", "No Parking"]}
+{"id": 546, "541|TrafficSigns_1000.csv": ["541", "No Parking"]}
+{"id": 547, "542|TrafficSigns_1000.csv": ["542", "No Parking"]}
+{"id": 548, "543|TrafficSigns_1000.csv": ["543", "No Parking"]}
+{"id": 549, "544|TrafficSigns_1000.csv": ["544", "No Parking"]}
+{"id": 550, "545|TrafficSigns_1000.csv": ["545", "No Parking"]}
+{"id": 551, "546|TrafficSigns_1000.csv": ["546", "No Parking"]}
+{"id": 552, "547|TrafficSigns_1000.csv": ["547", "No Parking"]}
+{"id": 553, "548|TrafficSigns_1000.csv": ["548", "No Parking"]}
+{"id": 554, "549|TrafficSigns_1000.csv": ["549", "No Parking"]}
+{"id": 555, "550|TrafficSigns_1000.csv": ["550", "No Parking"]}
+{"id": 556, "551|TrafficSigns_1000.csv": ["551", "No Parking to Corner"]}
+{"id": 557, "552|TrafficSigns_1000.csv": ["552", "No Parking to Corner"]}
+{"id": 558, "553|TrafficSigns_1000.csv": ["553", "No Parking to Corner"]}
+{"id": 559, "554|TrafficSigns_1000.csv": ["554", "No Parking to Corner"]}
+{"id": 560, "555|TrafficSigns_1000.csv": ["555", "No Parking to Corner"]}
+{"id": 561, "556|TrafficSigns_1000.csv": ["556", "No Parking to Corner"]}
+{"id": 562, "557|TrafficSigns_1000.csv": ["557", "No Parking to Corner"]}
+{"id": 563, "558|TrafficSigns_1000.csv": ["558", "No Parking to Corner"]}
+{"id": 564, "412|TrafficSigns_1000.csv": ["412", "Streetname"]}
+{"id": 565, "559|TrafficSigns_1000.csv": ["559", "No Parking to Corner"]}
+{"id": 566, "560|TrafficSigns_1000.csv": ["560", "Streetname - Sesquicentennial"]}
+{"id": 567, "561|TrafficSigns_1000.csv": ["561", "No Parking to Corner"]}
+{"id": 568, "562|TrafficSigns_1000.csv": ["562", "No Parking to Corner"]}
+{"id": 569, "563|TrafficSigns_1000.csv": ["563", "No Parking to Corner"]}
+{"id": 570, "564|TrafficSigns_1000.csv": ["564", "End School Zone"]}
+{"id": 571, "565|TrafficSigns_1000.csv": ["565", "20 mph School Speed Limit"]}
+{"id": 572, "566|TrafficSigns_1000.csv": ["566", "Stop"]}
+{"id": 573, "567|TrafficSigns_1000.csv": ["567", "Stop"]}
+{"id": 574, "568|TrafficSigns_1000.csv": ["568", "Stop"]}
+{"id": 575, "569|TrafficSigns_1000.csv": ["569", "Stop"]}
+{"id": 576, "570|TrafficSigns_1000.csv": ["570", "Stop"]}
+{"id": 577, "571|TrafficSigns_1000.csv": ["571", "Stop"]}
+{"id": 578, "572|TrafficSigns_1000.csv": ["572", "Stop"]}
+{"id": 579, "573|TrafficSigns_1000.csv": ["573", "Stop"]}
+{"id": 580, "574|TrafficSigns_1000.csv": ["574", "Stop"]}
+{"id": 581, "575|TrafficSigns_1000.csv": ["575", "Stop"]}
+{"id": 582, "576|TrafficSigns_1000.csv": ["576", "Stop"]}
+{"id": 583, "577|TrafficSigns_1000.csv": ["577", "Stop"]}
+{"id": 584, "578|TrafficSigns_1000.csv": ["578", "Stop"]}
+{"id": 585, "579|TrafficSigns_1000.csv": ["579", "Stop"]}
+{"id": 586, "580|TrafficSigns_1000.csv": ["580", "Stop"]}
+{"id": 587, "581|TrafficSigns_1000.csv": ["581", "Stop"]}
+{"id": 588, "582|TrafficSigns_1000.csv": ["582", "Stop"]}
+{"id": 589, "583|TrafficSigns_1000.csv": ["583", "Stop"]}
+{"id": 590, "584|TrafficSigns_1000.csv": ["584", "Stop"]}
+{"id": 591, "585|TrafficSigns_1000.csv": ["585", "Stop"]}
+{"id": 592, "586|TrafficSigns_1000.csv": ["586", "Stop"]}
+{"id": 593, "587|TrafficSigns_1000.csv": ["587", "Stop"]}
+{"id": 594, "588|TrafficSigns_1000.csv": ["588", "Stop"]}
+{"id": 595, "589|TrafficSigns_1000.csv": ["589", "Stop"]}
+{"id": 596, "590|TrafficSigns_1000.csv": ["590", "Stop"]}
+{"id": 597, "591|TrafficSigns_1000.csv": ["591", "Stop"]}
+{"id": 598, "592|TrafficSigns_1000.csv": ["592", "Stop"]}
+{"id": 599, "593|TrafficSigns_1000.csv": ["593", "Stop"]}
+{"id": 600, "594|TrafficSigns_1000.csv": ["594", "Stop"]}
+{"id": 601, "595|TrafficSigns_1000.csv": ["595", "Stop"]}
+{"id": 602, "596|TrafficSigns_1000.csv": ["596", "Stop"]}
+{"id": 603, "597|TrafficSigns_1000.csv": ["597", "Stop"]}
+{"id": 604, "598|TrafficSigns_1000.csv": ["598", "Streetname"]}
+{"id": 605, "599|TrafficSigns_1000.csv": ["599", "Streetname"]}
+{"id": 606, "600|TrafficSigns_1000.csv": ["600", "Streetname"]}
+{"id": 607, "601|TrafficSigns_1000.csv": ["601", "Streetname"]}
+{"id": 608, "602|TrafficSigns_1000.csv": ["602", "Streetname"]}
+{"id": 609, "603|TrafficSigns_1000.csv": ["603", "Streetname"]}
+{"id": 610, "604|TrafficSigns_1000.csv": ["604", "Streetname"]}
+{"id": 611, "605|TrafficSigns_1000.csv": ["605", "Streetname"]}
+{"id": 612, "606|TrafficSigns_1000.csv": ["606", "Streetname"]}
+{"id": 613, "607|TrafficSigns_1000.csv": ["607", "Streetname"]}
+{"id": 614, "608|TrafficSigns_1000.csv": ["608", "Streetname"]}
+{"id": 615, "609|TrafficSigns_1000.csv": ["609", "Streetname"]}
+{"id": 616, "610|TrafficSigns_1000.csv": ["610", "Streetname"]}
+{"id": 617, "611|TrafficSigns_1000.csv": ["611", "Streetname"]}
+{"id": 618, "612|TrafficSigns_1000.csv": ["612", "Streetname"]}
+{"id": 619, "613|TrafficSigns_1000.csv": ["613", "Streetname"]}
+{"id": 620, "614|TrafficSigns_1000.csv": ["614", "Streetname"]}
+{"id": 621, "615|TrafficSigns_1000.csv": ["615", "Streetname"]}
+{"id": 622, "616|TrafficSigns_1000.csv": ["616", "Streetname"]}
+{"id": 623, "617|TrafficSigns_1000.csv": ["617", "Streetname"]}
+{"id": 624, "618|TrafficSigns_1000.csv": ["618", "Streetname"]}
+{"id": 625, "619|TrafficSigns_1000.csv": ["619", "Streetname"]}
+{"id": 626, "620|TrafficSigns_1000.csv": ["620", "Streetname"]}
+{"id": 627, "621|TrafficSigns_1000.csv": ["621", "Streetname"]}
+{"id": 628, "622|TrafficSigns_1000.csv": ["622", "Streetname"]}
+{"id": 629, "623|TrafficSigns_1000.csv": ["623", "Streetname"]}
+{"id": 630, "624|TrafficSigns_1000.csv": ["624", "Streetname"]}
+{"id": 631, "625|TrafficSigns_1000.csv": ["625", "Streetname"]}
+{"id": 632, "626|TrafficSigns_1000.csv": ["626", "Streetname"]}
+{"id": 633, "627|TrafficSigns_1000.csv": ["627", "Streetname"]}
+{"id": 634, "628|TrafficSigns_1000.csv": ["628", "Streetname"]}
+{"id": 635, "629|TrafficSigns_1000.csv": ["629", "Streetname"]}
+{"id": 636, "630|TrafficSigns_1000.csv": ["630", "Streetname"]}
+{"id": 637, "631|TrafficSigns_1000.csv": ["631", "Streetname"]}
+{"id": 638, "632|TrafficSigns_1000.csv": ["632", "Streetname"]}
+{"id": 639, "633|TrafficSigns_1000.csv": ["633", "Streetname"]}
+{"id": 640, "634|TrafficSigns_1000.csv": ["634", "Streetname"]}
+{"id": 641, "635|TrafficSigns_1000.csv": ["635", "Streetname"]}
+{"id": 642, "636|TrafficSigns_1000.csv": ["636", "Streetname"]}
+{"id": 643, "637|TrafficSigns_1000.csv": ["637", "Streetname"]}
+{"id": 644, "639|TrafficSigns_1000.csv": ["639", "Streetname"]}
+{"id": 645, "640|TrafficSigns_1000.csv": ["640", "Streetname"]}
+{"id": 646, "641|TrafficSigns_1000.csv": ["641", "Streetname"]}
+{"id": 647, "642|TrafficSigns_1000.csv": ["642", "Streetname"]}
+{"id": 648, "643|TrafficSigns_1000.csv": ["643", "Streetname"]}
+{"id": 649, "644|TrafficSigns_1000.csv": ["644", "Streetname"]}
+{"id": 650, "645|TrafficSigns_1000.csv": ["645", "Streetname"]}
+{"id": 651, "646|TrafficSigns_1000.csv": ["646", "Streetname - Private"]}
+{"id": 652, "647|TrafficSigns_1000.csv": ["647", "Streetname - Private"]}
+{"id": 653, "648|TrafficSigns_1000.csv": ["648", "Streetname"]}
+{"id": 654, "649|TrafficSigns_1000.csv": ["649", "Streetname"]}
+{"id": 655, "650|TrafficSigns_1000.csv": ["650", "Streetname - Private"]}
+{"id": 656, "652|TrafficSigns_1000.csv": ["652", "Streetname - Private"]}
+{"id": 657, "653|TrafficSigns_1000.csv": ["653", "Streetname - Private"]}
+{"id": 658, "654|TrafficSigns_1000.csv": ["654", "Streetname"]}
+{"id": 659, "511|TrafficSigns_1000.csv": ["511", "Streetname"]}
+{"id": 660, "655|TrafficSigns_1000.csv": ["655", "Streetname"]}
+{"id": 661, "656|TrafficSigns_1000.csv": ["656", "Streetname"]}
+{"id": 662, "657|TrafficSigns_1000.csv": ["657", "Streetname"]}
+{"id": 663, "658|TrafficSigns_1000.csv": ["658", "Streetname"]}
+{"id": 664, "659|TrafficSigns_1000.csv": ["659", "Stop"]}
+{"id": 665, "660|TrafficSigns_1000.csv": ["660", "Streetname"]}
+{"id": 666, "661|TrafficSigns_1000.csv": ["661", "Streetname"]}
+{"id": 667, "662|TrafficSigns_1000.csv": ["662", "Streetname"]}
+{"id": 668, "663|TrafficSigns_1000.csv": ["663", "Streetname"]}
+{"id": 669, "664|TrafficSigns_1000.csv": ["664", "Streetname"]}
+{"id": 670, "665|TrafficSigns_1000.csv": ["665", "Streetname"]}
+{"id": 671, "666|TrafficSigns_1000.csv": ["666", "Streetname"]}
+{"id": 672, "667|TrafficSigns_1000.csv": ["667", "Streetname"]}
+{"id": 673, "668|TrafficSigns_1000.csv": ["668", "Streetname"]}
+{"id": 674, "669|TrafficSigns_1000.csv": ["669", "Streetname"]}
+{"id": 675, "670|TrafficSigns_1000.csv": ["670", "Streetname"]}
+{"id": 676, "671|TrafficSigns_1000.csv": ["671", "Streetname"]}
+{"id": 677, "672|TrafficSigns_1000.csv": ["672", "Streetname"]}
+{"id": 678, "673|TrafficSigns_1000.csv": ["673", "No Outlet"]}
+{"id": 679, "674|TrafficSigns_1000.csv": ["674", "Stop"]}
+{"id": 680, "675|TrafficSigns_1000.csv": ["675", "Streetname - Honorary"]}
+{"id": 681, "676|TrafficSigns_1000.csv": ["676", "Streetname - Private"]}
+{"id": 682, "677|TrafficSigns_1000.csv": ["677", "Streetname"]}
+{"id": 683, "678|TrafficSigns_1000.csv": ["678", "Streetname"]}
+{"id": 684, "679|TrafficSigns_1000.csv": ["679", "Streetname"]}
+{"id": 685, "680|TrafficSigns_1000.csv": ["680", "Streetname"]}
+{"id": 686, "681|TrafficSigns_1000.csv": ["681", "Streetname"]}
+{"id": 687, "682|TrafficSigns_1000.csv": ["682", "Streetname"]}
+{"id": 688, "683|TrafficSigns_1000.csv": ["683", "Streetname"]}
+{"id": 689, "684|TrafficSigns_1000.csv": ["684", "Streetname"]}
+{"id": 690, "685|TrafficSigns_1000.csv": ["685", "Streetname"]}
+{"id": 691, "686|TrafficSigns_1000.csv": ["686", "Streetname"]}
+{"id": 692, "687|TrafficSigns_1000.csv": ["687", "Streetname"]}
+{"id": 693, "688|TrafficSigns_1000.csv": ["688", "Streetname"]}
+{"id": 694, "689|TrafficSigns_1000.csv": ["689", "No Outlet"]}
+{"id": 695, "690|TrafficSigns_1000.csv": ["690", "No Outlet"]}
+{"id": 696, "691|TrafficSigns_1000.csv": ["691", "Stop"]}
+{"id": 697, "692|TrafficSigns_1000.csv": ["692", "Stop"]}
+{"id": 698, "693|TrafficSigns_1000.csv": ["693", "Stop"]}
+{"id": 699, "694|TrafficSigns_1000.csv": ["694", "Stop"]}
+{"id": 700, "695|TrafficSigns_1000.csv": ["695", "Stop"]}
+{"id": 701, "696|TrafficSigns_1000.csv": ["696", "Stop"]}
+{"id": 702, "697|TrafficSigns_1000.csv": ["697", "Stop"]}
+{"id": 703, "698|TrafficSigns_1000.csv": ["698", "Stop"]}
+{"id": 704, "699|TrafficSigns_1000.csv": ["699", "Stop"]}
+{"id": 705, "700|TrafficSigns_1000.csv": ["700", "Stop"]}
+{"id": 706, "701|TrafficSigns_1000.csv": ["701", "Stop"]}
+{"id": 707, "702|TrafficSigns_1000.csv": ["702", "Streetname"]}
+{"id": 708, "703|TrafficSigns_1000.csv": ["703", "Streetname"]}
+{"id": 709, "704|TrafficSigns_1000.csv": ["704", "Streetname - Honorary"]}
+{"id": 710, "705|TrafficSigns_1000.csv": ["705", "Streetname"]}
+{"id": 711, "706|TrafficSigns_1000.csv": ["706", "Streetname"]}
+{"id": 712, "707|TrafficSigns_1000.csv": ["707", "Streetname"]}
+{"id": 713, "708|TrafficSigns_1000.csv": ["708", "Streetname"]}
+{"id": 714, "709|TrafficSigns_1000.csv": ["709", "Streetname"]}
+{"id": 715, "710|TrafficSigns_1000.csv": ["710", "Streetname"]}
+{"id": 716, "711|TrafficSigns_1000.csv": ["711", "Streetname"]}
+{"id": 717, "712|TrafficSigns_1000.csv": ["712", "Streetname"]}
+{"id": 718, "713|TrafficSigns_1000.csv": ["713", "Streetname"]}
+{"id": 719, "714|TrafficSigns_1000.csv": ["714", "No Parking"]}
+{"id": 720, "715|TrafficSigns_1000.csv": ["715", "Stop"]}
+{"id": 721, "716|TrafficSigns_1000.csv": ["716", "Stop"]}
+{"id": 722, "717|TrafficSigns_1000.csv": ["717", "Stop"]}
+{"id": 723, "718|TrafficSigns_1000.csv": ["718", "Stop"]}
+{"id": 724, "719|TrafficSigns_1000.csv": ["719", "Stop"]}
+{"id": 725, "720|TrafficSigns_1000.csv": ["720", "Stop"]}
+{"id": 726, "721|TrafficSigns_1000.csv": ["721", "Stop"]}
+{"id": 727, "722|TrafficSigns_1000.csv": ["722", "Stop"]}
+{"id": 728, "723|TrafficSigns_1000.csv": ["723", "Stop"]}
+{"id": 729, "724|TrafficSigns_1000.csv": ["724", "Stop"]}
+{"id": 730, "725|TrafficSigns_1000.csv": ["725", "Stop"]}
+{"id": 731, "726|TrafficSigns_1000.csv": ["726", "Stop"]}
+{"id": 732, "727|TrafficSigns_1000.csv": ["727", "No Trespassing"]}
+{"id": 733, "728|TrafficSigns_1000.csv": ["728", "Do Not Enter"]}
+{"id": 734, "729|TrafficSigns_1000.csv": ["729", "Do Not Enter"]}
+{"id": 735, "730|TrafficSigns_1000.csv": ["730", "Do Not Enter"]}
+{"id": 736, "731|TrafficSigns_1000.csv": ["731", "Do Not Enter"]}
+{"id": 737, "732|TrafficSigns_1000.csv": ["732", "Do Not Enter"]}
+{"id": 738, "733|TrafficSigns_1000.csv": ["733", "Do Not Enter"]}
+{"id": 739, "734|TrafficSigns_1000.csv": ["734", "Do Not Enter"]}
+{"id": 740, "735|TrafficSigns_1000.csv": ["735", "Do Not Enter"]}
+{"id": 741, "736|TrafficSigns_1000.csv": ["736", "Double Headed Arrow"]}
+{"id": 742, "737|TrafficSigns_1000.csv": ["737", "Double Headed Arrow"]}
+{"id": 743, "738|TrafficSigns_1000.csv": ["738", "Double Headed Arrow"]}
+{"id": 744, "739|TrafficSigns_1000.csv": ["739", "Double Headed Arrow"]}
+{"id": 745, "740|TrafficSigns_1000.csv": ["740", "Double Headed Arrow"]}
+{"id": 746, "741|TrafficSigns_1000.csv": ["741", "Double Headed Arrow"]}
+{"id": 747, "742|TrafficSigns_1000.csv": ["742", "Left Lane Must Turn Left"]}
+{"id": 748, "743|TrafficSigns_1000.csv": ["743", "Right Lane Must Turn Right"]}
+{"id": 749, "744|TrafficSigns_1000.csv": ["744", "Lane Use -Right/Straight"]}
+{"id": 750, "745|TrafficSigns_1000.csv": ["745", "Left Lane Must Turn Left"]}
+{"id": 751, "746|TrafficSigns_1000.csv": ["746", "Lane Use -Left/Right"]}
+{"id": 752, "747|TrafficSigns_1000.csv": ["747", "Lane Use -Left/Right"]}
+{"id": 753, "748|TrafficSigns_1000.csv": ["748", "Right Lane Must Turn Right"]}
+{"id": 754, "749|TrafficSigns_1000.csv": ["749", "Right Lane Must Yield"]}
+{"id": 755, "750|TrafficSigns_1000.csv": ["750", "Right Lane Must Yield"]}
+{"id": 756, "751|TrafficSigns_1000.csv": ["751", "No Left Turn"]}
+{"id": 757, "752|TrafficSigns_1000.csv": ["752", "Left Turn Only"]}
+{"id": 758, "753|TrafficSigns_1000.csv": ["753", "Right Lane Must Turn Right"]}
+{"id": 759, "754|TrafficSigns_1000.csv": ["754", "Left Lane Must Turn Left"]}
+{"id": 760, "755|TrafficSigns_1000.csv": ["755", "Left Lane Must Turn Left"]}
+{"id": 761, "756|TrafficSigns_1000.csv": ["756", "Impassable During High Water"]}
+{"id": 762, "757|TrafficSigns_1000.csv": ["757", "Parkette"]}
+{"id": 763, "758|TrafficSigns_1000.csv": ["758", "Parkette"]}
+{"id": 764, "759|TrafficSigns_1000.csv": ["759", "Parkette"]}
+{"id": 765, "760|TrafficSigns_1000.csv": ["760", "No Turn on Red"]}
+{"id": 766, "761|TrafficSigns_1000.csv": ["761", "Public Library"]}
+{"id": 767, "762|TrafficSigns_1000.csv": ["762", "End One Way"]}
+{"id": 768, "763|TrafficSigns_1000.csv": ["763", "15 min Parking Time Limit"]}
+{"id": 769, "764|TrafficSigns_1000.csv": ["764", "15 min Parking Time Limit"]}
+{"id": 770, "765|TrafficSigns_1000.csv": ["765", "I-74"]}
+{"id": 771, "766|TrafficSigns_1000.csv": ["766", "Streetname - Private"]}
+{"id": 772, "767|TrafficSigns_1000.csv": ["767", "MTD Bus Stop"]}
+{"id": 773, "768|TrafficSigns_1000.csv": ["768", "Adopt A Highway"]}
+{"id": 774, "769|TrafficSigns_1000.csv": ["769", "1 hr Parking Time Limit"]}
+{"id": 775, "770|TrafficSigns_1000.csv": ["770", "2 hr Parking Time Limit"]}
+{"id": 776, "771|TrafficSigns_1000.csv": ["771", "School Zone Ahead"]}
+{"id": 777, "772|TrafficSigns_1000.csv": ["772", "2 hr Parking Time Limit"]}
+{"id": 778, "773|TrafficSigns_1000.csv": ["773", "No Trespassing"]}
+{"id": 779, "774|TrafficSigns_1000.csv": ["774", "No Turn on Red"]}
+{"id": 780, "775|TrafficSigns_1000.csv": ["775", "No Turn on Red"]}
+{"id": 781, "776|TrafficSigns_1000.csv": ["776", "No Right Turn"]}
+{"id": 782, "777|TrafficSigns_1000.csv": ["777", "No Parking in Excess of 72 Hours"]}
+{"id": 783, "778|TrafficSigns_1000.csv": ["778", "Wrong Way"]}
+{"id": 784, "779|TrafficSigns_1000.csv": ["779", "No Trucks"]}
+{"id": 785, "780|TrafficSigns_1000.csv": ["780", "Amtrak"]}
+{"id": 786, "781|TrafficSigns_1000.csv": ["781", "No Trucks"]}
+{"id": 787, "782|TrafficSigns_1000.csv": ["782", "No Parking in Excess of 72 Hours"]}
+{"id": 788, "783|TrafficSigns_1000.csv": ["783", "No Trucks"]}
+{"id": 789, "784|TrafficSigns_1000.csv": ["784", "Wrong Way"]}
+{"id": 790, "785|TrafficSigns_1000.csv": ["785", "T Intersection"]}
+{"id": 791, "786|TrafficSigns_1000.csv": ["786", "Wrong Way"]}
+{"id": 792, "787|TrafficSigns_1000.csv": ["787", "1 hr Parking Time Limit"]}
+{"id": 793, "788|TrafficSigns_1000.csv": ["788", "Push Button to Cross"]}
+{"id": 794, "789|TrafficSigns_1000.csv": ["789", "Public Library"]}
+{"id": 795, "790|TrafficSigns_1000.csv": ["790", "\"I-57"]}
+{"id": 796, "791|TrafficSigns_1000.csv": ["791", "Stop Ahead"]}
+{"id": 797, "792|TrafficSigns_1000.csv": ["792", "T Intersection"]}
+{"id": 798, "793|TrafficSigns_1000.csv": ["793", "Wrong Way"]}
+{"id": 799, "794|TrafficSigns_1000.csv": ["794", "Wrong Way"]}
+{"id": 800, "795|TrafficSigns_1000.csv": ["795", "No Thru Traffic"]}
+{"id": 801, "796|TrafficSigns_1000.csv": ["796", "T Intersection"]}
+{"id": 802, "797|TrafficSigns_1000.csv": ["797", "T Intersection"]}
+{"id": 803, "798|TrafficSigns_1000.csv": ["798", "Sharp Left Turn"]}
+{"id": 804, "799|TrafficSigns_1000.csv": ["799", "No Trucks"]}
+{"id": 805, "800|TrafficSigns_1000.csv": ["800", "No Trucks"]}
+{"id": 806, "801|TrafficSigns_1000.csv": ["801", "No Trucks"]}
+{"id": 807, "802|TrafficSigns_1000.csv": ["802", "IL-10"]}
+{"id": 808, "803|TrafficSigns_1000.csv": ["803", "Stop Ahead"]}
+{"id": 809, "804|TrafficSigns_1000.csv": ["804", "No Left Turn"]}
+{"id": 810, "805|TrafficSigns_1000.csv": ["805", "Streetname - Honorary"]}
+{"id": 811, "806|TrafficSigns_1000.csv": ["806", "Streetname"]}
+{"id": 812, "807|TrafficSigns_1000.csv": ["807", "Streetname - Mast Arm"]}
+{"id": 813, "808|TrafficSigns_1000.csv": ["808", "No Right Turn"]}
+{"id": 814, "809|TrafficSigns_1000.csv": ["809", "No Right Turn"]}
+{"id": 815, "810|TrafficSigns_1000.csv": ["810", "Plant Entrance"]}
+{"id": 816, "811|TrafficSigns_1000.csv": ["811", "Plant Entrance"]}
+{"id": 817, "812|TrafficSigns_1000.csv": ["812", "No Left Turn"]}
+{"id": 818, "813|TrafficSigns_1000.csv": ["813", "\"I-57"]}
+{"id": 819, "814|TrafficSigns_1000.csv": ["814", "No Right Turn"]}
+{"id": 820, "815|TrafficSigns_1000.csv": ["815", "I-57"]}
+{"id": 821, "816|TrafficSigns_1000.csv": ["816", "Yield"]}
+{"id": 822, "817|TrafficSigns_1000.csv": ["817", "Parking with Arrow"]}
+{"id": 823, "818|TrafficSigns_1000.csv": ["818", "Keep Right"]}
+{"id": 824, "819|TrafficSigns_1000.csv": ["819", "No Parking This Side of Street"]}
+{"id": 825, "820|TrafficSigns_1000.csv": ["820", "Streetname - Sesquicentennial"]}
+{"id": 826, "821|TrafficSigns_1000.csv": ["821", "Streetname - Sesquicentennial"]}
+{"id": 827, "822|TrafficSigns_1000.csv": ["822", "Left Turn Yield on Green"]}
+{"id": 828, "823|TrafficSigns_1000.csv": ["823", "I-74"]}
+{"id": 829, "824|TrafficSigns_1000.csv": ["824", "Firetruck Symbol"]}
+{"id": 830, "825|TrafficSigns_1000.csv": ["825", "Emergency Signal Stop at Line on Red"]}
+{"id": 831, "826|TrafficSigns_1000.csv": ["826", "Emergency Signal Stop at Line on Red"]}
+{"id": 832, "827|TrafficSigns_1000.csv": ["827", "Firetruck Symbol"]}
+{"id": 833, "828|TrafficSigns_1000.csv": ["828", "Emergency Signal Stop at Line on Red"]}
+{"id": 834, "829|TrafficSigns_1000.csv": ["829", "Route Marker"]}
+{"id": 835, "830|TrafficSigns_1000.csv": ["830", "Push Button to Cross"]}
+{"id": 836, "831|TrafficSigns_1000.csv": ["831", "Push Button to Cross"]}
+{"id": 837, "832|TrafficSigns_1000.csv": ["832", "Wrong Way"]}
+{"id": 838, "833|TrafficSigns_1000.csv": ["833", "Wrong Way"]}
+{"id": 839, "834|TrafficSigns_1000.csv": ["834", "Wrong Way"]}
+{"id": 840, "835|TrafficSigns_1000.csv": ["835", "No Trespassing"]}
+{"id": 841, "836|TrafficSigns_1000.csv": ["836", "No Right Turn"]}
+{"id": 842, "837|TrafficSigns_1000.csv": ["837", "Emergency Signal Stop at Line on Red"]}
+{"id": 843, "838|TrafficSigns_1000.csv": ["838", "Public Library"]}
+{"id": 844, "839|TrafficSigns_1000.csv": ["839", "Route Marker"]}
+{"id": 845, "840|TrafficSigns_1000.csv": ["840", "Hospital"]}
+{"id": 846, "841|TrafficSigns_1000.csv": ["841", "\"Clearance 11'-10\"\"\""]}
+{"id": 847, "842|TrafficSigns_1000.csv": ["842", "Merge Left"]}
+{"id": 848, "843|TrafficSigns_1000.csv": ["843", "Impassable During High Water"]}
+{"id": 849, "844|TrafficSigns_1000.csv": ["844", "Stanley Weaver Memorial Highway"]}
+{"id": 850, "845|TrafficSigns_1000.csv": ["845", "\"Clearance 11'-10\"\"\""]}
+{"id": 851, "846|TrafficSigns_1000.csv": ["846", "\"I-57"]}
+{"id": 852, "847|TrafficSigns_1000.csv": ["847", "Public Library"]}
+{"id": 853, "848|TrafficSigns_1000.csv": ["848", "Merge Left"]}
+{"id": 854, "849|TrafficSigns_1000.csv": ["849", "\"I-57"]}
+{"id": 855, "850|TrafficSigns_1000.csv": ["850", "Wrong Way"]}
+{"id": 856, "851|TrafficSigns_1000.csv": ["851", "Wrong Way"]}
+{"id": 857, "852|TrafficSigns_1000.csv": ["852", "T Intersection"]}
+{"id": 858, "853|TrafficSigns_1000.csv": ["853", "Truck Route"]}
+{"id": 859, "854|TrafficSigns_1000.csv": ["854", "No Semi Trucks"]}
+{"id": 860, "855|TrafficSigns_1000.csv": ["855", "Merge Left"]}
+{"id": 861, "856|TrafficSigns_1000.csv": ["856", "T Intersection"]}
+{"id": 862, "857|TrafficSigns_1000.csv": ["857", "Merge Left"]}
+{"id": 863, "858|TrafficSigns_1000.csv": ["858", "Right Lane Ends"]}
+{"id": 864, "859|TrafficSigns_1000.csv": ["859", "IL-10"]}
+{"id": 865, "860|TrafficSigns_1000.csv": ["860", "Stop Ahead"]}
+{"id": 866, "861|TrafficSigns_1000.csv": ["861", "Stop Ahead"]}
+{"id": 867, "862|TrafficSigns_1000.csv": ["862", "T Intersection"]}
+{"id": 868, "863|TrafficSigns_1000.csv": ["863", "Parallel Parking Only"]}
+{"id": 869, "864|TrafficSigns_1000.csv": ["864", "No Right Turn"]}
+{"id": 870, "865|TrafficSigns_1000.csv": ["865", "T Intersection"]}
+{"id": 871, "866|TrafficSigns_1000.csv": ["866", "T Intersection"]}
+{"id": 872, "867|TrafficSigns_1000.csv": ["867", "T Intersection"]}
+{"id": 873, "868|TrafficSigns_1000.csv": ["868", "Right Turn Warning"]}
+{"id": 874, "869|TrafficSigns_1000.csv": ["869", "Chevron"]}
+{"id": 875, "870|TrafficSigns_1000.csv": ["870", "Right Turn Warning"]}
+{"id": 876, "871|TrafficSigns_1000.csv": ["871", "Stop Ahead"]}
+{"id": 877, "872|TrafficSigns_1000.csv": ["872", "20 mph School Speed Limit"]}
+{"id": 878, "873|TrafficSigns_1000.csv": ["873", "No Turn on Red on school days when children are present"]}
+{"id": 879, "874|TrafficSigns_1000.csv": ["874", "Traffic Calming Ahead"]}
+{"id": 880, "875|TrafficSigns_1000.csv": ["875", "Traffic Calming Ahead"]}
+{"id": 881, "876|TrafficSigns_1000.csv": ["876", "Traffic Calming Ahead"]}
+{"id": 882, "877|TrafficSigns_1000.csv": ["877", "Streetname - Honorary"]}
+{"id": 883, "878|TrafficSigns_1000.csv": ["878", "Streetname"]}
+{"id": 884, "879|TrafficSigns_1000.csv": ["879", "Streetname"]}
+{"id": 885, "880|TrafficSigns_1000.csv": ["880", "Traffic Calming Ahead"]}
+{"id": 886, "881|TrafficSigns_1000.csv": ["881", "\"I-57"]}
+{"id": 887, "882|TrafficSigns_1000.csv": ["882", "Fire Hydrant"]}
+{"id": 888, "883|TrafficSigns_1000.csv": ["883", "Airport Symbol"]}
+{"id": 889, "884|TrafficSigns_1000.csv": ["884", "Push Button to Cross"]}
+{"id": 890, "885|TrafficSigns_1000.csv": ["885", "Push Button to Cross"]}
+{"id": 891, "886|TrafficSigns_1000.csv": ["886", "Push Button to Cross"]}
+{"id": 892, "887|TrafficSigns_1000.csv": ["887", "Neighborhood Watch"]}
+{"id": 893, "888|TrafficSigns_1000.csv": ["888", "Neighborhood Watch"]}
+{"id": 894, "889|TrafficSigns_1000.csv": ["889", "Neighborhood Watch"]}
+{"id": 895, "890|TrafficSigns_1000.csv": ["890", "Neighborhood Watch"]}
+{"id": 896, "891|TrafficSigns_1000.csv": ["891", "Neighborhood Watch"]}
+{"id": 897, "892|TrafficSigns_1000.csv": ["892", "Neighborhood Watch"]}
+{"id": 898, "893|TrafficSigns_1000.csv": ["893", "Neighborhood Watch"]}
+{"id": 899, "894|TrafficSigns_1000.csv": ["894", "Neighborhood Watch"]}
+{"id": 900, "895|TrafficSigns_1000.csv": ["895", "Neighborhood Watch"]}
+{"id": 901, "896|TrafficSigns_1000.csv": ["896", "Neighborhood Watch"]}
+{"id": 902, "897|TrafficSigns_1000.csv": ["897", "Neighborhood Watch"]}
+{"id": 903, "898|TrafficSigns_1000.csv": ["898", "Neighborhood Watch"]}
+{"id": 904, "899|TrafficSigns_1000.csv": ["899", "Neighborhood Watch"]}
+{"id": 905, "900|TrafficSigns_1000.csv": ["900", "Neighborhood Watch"]}
+{"id": 906, "901|TrafficSigns_1000.csv": ["901", "Neighborhood Watch"]}
+{"id": 907, "902|TrafficSigns_1000.csv": ["902", "Neighborhood Watch"]}
+{"id": 908, "903|TrafficSigns_1000.csv": ["903", "Neighborhood Watch"]}
+{"id": 909, "904|TrafficSigns_1000.csv": ["904", "Neighborhood Watch"]}
+{"id": 910, "905|TrafficSigns_1000.csv": ["905", "Neighborhood Watch"]}
+{"id": 911, "906|TrafficSigns_1000.csv": ["906", "Neighborhood Watch"]}
+{"id": 912, "907|TrafficSigns_1000.csv": ["907", "Neighborhood Watch"]}
+{"id": 913, "908|TrafficSigns_1000.csv": ["908", "Neighborhood Watch"]}
+{"id": 914, "909|TrafficSigns_1000.csv": ["909", "Neighborhood Watch"]}
+{"id": 915, "910|TrafficSigns_1000.csv": ["910", "Neighborhood Watch"]}
+{"id": 916, "911|TrafficSigns_1000.csv": ["911", "Neighborhood Watch"]}
+{"id": 917, "912|TrafficSigns_1000.csv": ["912", "Neighborhood Watch"]}
+{"id": 918, "913|TrafficSigns_1000.csv": ["913", "Neighborhood Watch"]}
+{"id": 919, "914|TrafficSigns_1000.csv": ["914", "Neighborhood Watch"]}
+{"id": 920, "915|TrafficSigns_1000.csv": ["915", "Neighborhood Watch"]}
+{"id": 921, "916|TrafficSigns_1000.csv": ["916", "Neighborhood Watch"]}
+{"id": 922, "917|TrafficSigns_1000.csv": ["917", "Neighborhood Watch"]}
+{"id": 923, "918|TrafficSigns_1000.csv": ["918", "Neighborhood Watch"]}
+{"id": 924, "919|TrafficSigns_1000.csv": ["919", "Neighborhood Watch"]}
+{"id": 925, "920|TrafficSigns_1000.csv": ["920", "Neighborhood Watch"]}
+{"id": 926, "921|TrafficSigns_1000.csv": ["921", "No Outlet"]}
+{"id": 927, "922|TrafficSigns_1000.csv": ["922", "No Outlet"]}
+{"id": 928, "923|TrafficSigns_1000.csv": ["923", "No Outlet"]}
+{"id": 929, "924|TrafficSigns_1000.csv": ["924", "No Outlet"]}
+{"id": 930, "925|TrafficSigns_1000.csv": ["925", "No Outlet"]}
+{"id": 931, "926|TrafficSigns_1000.csv": ["926", "No Outlet"]}
+{"id": 932, "927|TrafficSigns_1000.csv": ["927", "No Outlet"]}
+{"id": 933, "928|TrafficSigns_1000.csv": ["928", "No Outlet"]}
+{"id": 934, "929|TrafficSigns_1000.csv": ["929", "No Outlet"]}
+{"id": 935, "930|TrafficSigns_1000.csv": ["930", "No Outlet"]}
+{"id": 936, "931|TrafficSigns_1000.csv": ["931", "No Outlet"]}
+{"id": 937, "932|TrafficSigns_1000.csv": ["932", "No Outlet"]}
+{"id": 938, "933|TrafficSigns_1000.csv": ["933", "No Outlet"]}
+{"id": 939, "934|TrafficSigns_1000.csv": ["934", "No Outlet"]}
+{"id": 940, "935|TrafficSigns_1000.csv": ["935", "No Outlet"]}
+{"id": 941, "936|TrafficSigns_1000.csv": ["936", "No Outlet"]}
+{"id": 942, "937|TrafficSigns_1000.csv": ["937", "No Outlet"]}
+{"id": 943, "938|TrafficSigns_1000.csv": ["938", "No Parking"]}
+{"id": 944, "939|TrafficSigns_1000.csv": ["939", "No Parking to Corner"]}
+{"id": 945, "940|TrafficSigns_1000.csv": ["940", "No Parking to Drive"]}
+{"id": 946, "941|TrafficSigns_1000.csv": ["941", "No Parking"]}
+{"id": 947, "942|TrafficSigns_1000.csv": ["942", "No Parking to Corner"]}
+{"id": 948, "943|TrafficSigns_1000.csv": ["943", "No Parking"]}
+{"id": 949, "944|TrafficSigns_1000.csv": ["944", "No Parking"]}
+{"id": 950, "945|TrafficSigns_1000.csv": ["945", "No Parking"]}
+{"id": 951, "946|TrafficSigns_1000.csv": ["946", "No Parking"]}
+{"id": 952, "947|TrafficSigns_1000.csv": ["947", "No Parking"]}
+{"id": 953, "948|TrafficSigns_1000.csv": ["948", "No Parking"]}
+{"id": 954, "949|TrafficSigns_1000.csv": ["949", "No Parking to Corner"]}
+{"id": 955, "950|TrafficSigns_1000.csv": ["950", "No Parking"]}
+{"id": 956, "951|TrafficSigns_1000.csv": ["951", "No Parking"]}
+{"id": 957, "952|TrafficSigns_1000.csv": ["952", "No Parking"]}
+{"id": 958, "953|TrafficSigns_1000.csv": ["953", "No Parking"]}
+{"id": 959, "954|TrafficSigns_1000.csv": ["954", "No Parking"]}
+{"id": 960, "955|TrafficSigns_1000.csv": ["955", "No Parking"]}
+{"id": 961, "956|TrafficSigns_1000.csv": ["956", "No Parking"]}
+{"id": 962, "957|TrafficSigns_1000.csv": ["957", "No Parking"]}
+{"id": 963, "958|TrafficSigns_1000.csv": ["958", "No Parking"]}
+{"id": 964, "959|TrafficSigns_1000.csv": ["959", "No Parking"]}
+{"id": 965, "960|TrafficSigns_1000.csv": ["960", "No Parking"]}
+{"id": 966, "961|TrafficSigns_1000.csv": ["961", "Stop Ahead"]}
+{"id": 967, "962|TrafficSigns_1000.csv": ["962", "No Parking to Corner"]}
+{"id": 968, "963|TrafficSigns_1000.csv": ["963", "No Parking"]}
+{"id": 969, "964|TrafficSigns_1000.csv": ["964", "No Parking"]}
+{"id": 970, "965|TrafficSigns_1000.csv": ["965", "No Parking"]}
+{"id": 971, "966|TrafficSigns_1000.csv": ["966", "No Parking"]}
+{"id": 972, "967|TrafficSigns_1000.csv": ["967", "No Parking"]}
+{"id": 973, "968|TrafficSigns_1000.csv": ["968", "No Parking"]}
+{"id": 974, "969|TrafficSigns_1000.csv": ["969", "No Parking"]}
+{"id": 975, "970|TrafficSigns_1000.csv": ["970", "No Parking"]}
+{"id": 976, "971|TrafficSigns_1000.csv": ["971", "No Parking"]}
+{"id": 977, "972|TrafficSigns_1000.csv": ["972", "No Parking to Corner"]}
+{"id": 978, "973|TrafficSigns_1000.csv": ["973", "No Parking This Side"]}
+{"id": 979, "974|TrafficSigns_1000.csv": ["974", "No Parking This Side"]}
+{"id": 980, "975|TrafficSigns_1000.csv": ["975", "No Parking"]}
+{"id": 981, "976|TrafficSigns_1000.csv": ["976", "No Parking to Corner"]}
+{"id": 982, "977|TrafficSigns_1000.csv": ["977", "Keep Right"]}
+{"id": 983, "978|TrafficSigns_1000.csv": ["978", "Keep Right"]}
+{"id": 984, "979|TrafficSigns_1000.csv": ["979", "No Parking"]}
+{"id": 985, "980|TrafficSigns_1000.csv": ["980", "No Parking"]}
+{"id": 986, "981|TrafficSigns_1000.csv": ["981", "Stop"]}
+{"id": 987, "982|TrafficSigns_1000.csv": ["982", "No Parking"]}
+{"id": 988, "983|TrafficSigns_1000.csv": ["983", "No Parking"]}
+{"id": 989, "984|TrafficSigns_1000.csv": ["984", "No Parking"]}
+{"id": 990, "985|TrafficSigns_1000.csv": ["985", "No Parking"]}
+{"id": 991, "986|TrafficSigns_1000.csv": ["986", "No Parking"]}
+{"id": 992, "987|TrafficSigns_1000.csv": ["987", "No Parking"]}
+{"id": 993, "988|TrafficSigns_1000.csv": ["988", "No Parking"]}
+{"id": 994, "989|TrafficSigns_1000.csv": ["989", "No Parking"]}
+{"id": 995, "990|TrafficSigns_1000.csv": ["990", "No Parking"]}
+{"id": 996, "991|TrafficSigns_1000.csv": ["991", "No Parking"]}
+{"id": 997, "992|TrafficSigns_1000.csv": ["992", "No Parking"]}
+{"id": 998, "993|TrafficSigns_1000.csv": ["993", "1 hr Parking Time Limit"]}
+{"id": 999, "994|TrafficSigns_1000.csv": ["994", "Streetname - Honorary"]}
+{"id": 1000, "995|TrafficSigns_1000.csv": ["995", "No Parking to Corner"]}
+{"id": 1001, "996|TrafficSigns_1000.csv": ["996", "No Parking to Corner"]}
+{"id": 1002, "997|TrafficSigns_1000.csv": ["997", "No Parking to Corner"]}
+{"id": 1003, "998|TrafficSigns_1000.csv": ["998", "No Parking"]}
+{"id": 1004, "999|TrafficSigns_1000.csv": ["999", "No Parking"]}
+{"id": 1005, "1000|TrafficSigns_1000.csv": ["1000", "No Parking"]}
+{"id": 1006, "22|TrafficSigns_1000.csv": ["22", "Stop"]}
+{"id": 1007, "35|TrafficSigns_1000.csv": ["35", "Stop"]}
+{"id": 1008, "173|TrafficSigns_1000.csv": ["173", "Stop"]}
+{"id": 1009, "301|TrafficSigns_1000.csv": ["301", "Stop"]}
+{"id": 1010, "401|TrafficSigns_1000.csv": ["401", "Streetname"]}
+{"id": 1011, "414|TrafficSigns_1000.csv": ["414", "Streetname"]}
+{"id": 1012, "486|TrafficSigns_1000.csv": ["486", "Stop"]}
+{"id": 1013, "515|TrafficSigns_1000.csv": ["515", "Streetname"]}
+{"id": 1014, "523|TrafficSigns_1000.csv": ["523", "Streetname"]}
+{"id": 1015, "526|TrafficSigns_1000.csv": ["526", "No Parking"]}
+{"id": 1016, "638|TrafficSigns_1000.csv": ["638", "Streetname"]}
+{"id": 1017, "651|TrafficSigns_1000.csv": ["651", "Streetname - Private"]}

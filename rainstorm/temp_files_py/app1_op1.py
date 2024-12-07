@@ -6,7 +6,7 @@ def transform(state, input_tuple, pattern):
     key, line = input_tuple
     processed = []
     if re.search(pattern, line):
-        processed.append((line))
+        processed.append((key, line))
     return state, processed
 
 

@@ -6,7 +6,7 @@ def transform(state, input_tuple, pattern):
     key, line = input_tuple
     processed = []
     parts = line.split(",")
-    processed.append((parts[2], parts[3]))
+    processed.append((key, (parts[2], parts[3])))
     return state, processed
 
 
