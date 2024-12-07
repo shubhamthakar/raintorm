@@ -465,7 +465,6 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
 
 async def serve(port, mapping, src_file, dest_file):
     print(f"Recieved Mapping: {base64.b64decode(mapping).decode()}")
-    decoded_mapping = base64.b64decode(mapping).decode()
     server = grpc.aio.server(ThreadPoolExecutor(max_workers=10))
     worker_servicer = WorkerServicer(mapping, src_file, dest_file, port)
     await worker_servicer.create_files_for_state_recovery()
