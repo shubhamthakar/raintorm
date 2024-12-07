@@ -375,7 +375,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             generated_list_of_tuples = exe_output["processed"]
 
             # Update self.state and processed input ids with the new state from the .exe
-            self.state['inp_id_processed'][f"{input_id}"] = 1
+            self.state['inp_id_processed'][input_id] = 1
             self.state['state'] = updated_state
 
             # Return the list of processed tuples
