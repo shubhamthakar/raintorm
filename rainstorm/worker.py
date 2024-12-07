@@ -29,6 +29,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         self.src_file = src_file
         self.dest_file = dest_file
         self.port = port
+        self.pattern = ''
         # output_rec format [(id, data_in_tuple_format), ...]
         self.state = {"inp_id_processed": {}, "state": {}, "output_rec": [], "id_counter": 0}
         self.ack_rec = {}
@@ -74,7 +75,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         for i, task_type in enumerate(mapping_keys):
             task_dict = mapping[task_type]
             for partition_num, details in task_dict.items():
-                hostname, port = details.split(":")
+                hostname, port, self.pattern = details.split(":")
                 
                 self.log(f"hostname:{hostname}")
                 self.log(f"port:{port}")
@@ -98,7 +99,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
                     self.partition_num = partition_num
                     self.total_partitions = len(task_dict)
                     self.next_stage_tasks = mapping[mapping_keys[i + 1]] if i + 1 < len(mapping_keys) else None
-        self.log(f"Extracted details task_type: {self.task_type} exe_file_path: {self.exe_file_path} partition_num: {self.partition_num}, total_partitions: {self.total_partitions}, next_stage_tasks: {self.next_stage_tasks}")
+        self.log(f"Extracted details task_type: {self.task_type} pattern: {self.pattern} exe_file_path: {self.exe_file_path} partition_num: {self.partition_num}, total_partitions: {self.total_partitions}, next_stage_tasks: {self.next_stage_tasks}")
 
     async def create_files_for_state_recovery(self):
         # Create file for storing state_dict
@@ -251,8 +252,9 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
                     # Add ack rec to hyDFS
                     self.ack_rec[data_to_send['id']] = 1
                     response = await self.interact_with_hydfs('append', f"{self.task_type}_{self.partition_num}_ack", self.ack_rec)
-                    await self.send_json_to_leader(data_to_send)
                     self.log(f"HyDFS response for append to {self.task_type}_{self.partition_num}_ack : {response}")
+                    await self.send_json_to_leader(data_to_send)
+                    
                 else:
                     self.log('Result append to hydfs failed, readding data to queue')
                     await self.queue.put(data_to_send)
@@ -267,8 +269,8 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
                 hashed_partition = int(hashlib.sha256(key.encode('utf-8')).hexdigest(), 16) % self.total_partitions
 
                 # Get the remote server address based on the hashed partition
-                remote_server_address = self.next_stage_tasks[str(hashed_partition)]
-
+                hostname, port, _ = self.next_stage_tasks[str(hashed_partition)].split(':')
+                remote_server_address = f"{hostname}:{port}"
                 # Create a gRPC channel and stub
                 async with grpc.aio.insecure_channel(remote_server_address) as channel:
                     stub = worker_pb2_grpc.WorkerStub(channel)
@@ -369,7 +371,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
 
             # Execute the .exe file with the arguments
             result = subprocess.run(
-                [self.exe_file_path, "--state", state_arg, "--input", input_arg],
+                [self.exe_file_path, "--state", state_arg, "--input", input_arg, "--pattern", self.pattern],
                 capture_output=True, text=True, check=True
             )
 

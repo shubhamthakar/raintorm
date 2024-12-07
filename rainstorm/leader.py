@@ -110,12 +110,20 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         print("gRPC server stopped.")
 
     
-    async def create_task_mapping(self, op_exes, num_tasks):
+    async def create_task_mapping(self, op_exes, op_exe_patterns, num_tasks):
         
         
-        # Appending source, special task
+        # op_exe_patterns mapping
 
         print(f"Printing op_exes {op_exes}")
+        print(f"Printing op_exe_patterns {op_exe_patterns}")
+
+        pattern_match = {}
+
+        for i, op in enumerate(op_exes):
+            pattern_match[op] = op_exe_patterns[i]        
+
+        
         # op_exes.append("source")
 
         # Dictionary to keep track of the next available port for each server
@@ -149,7 +157,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
                     server_ports[server_ip] += 1
 
                     # Assign the server IP and port as a single string
-                    assigned_servers[i] = f"{server_ip}:{assigned_port}"
+                    assigned_servers[i] = f"{server_ip}:{assigned_port}:{pattern_match[op]}"
 
                     # Update the load and push back into the heap
                     new_load = load + 1
@@ -161,6 +169,9 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
 
             # Add the assigned servers for the op_exe
             self.task_mapping[op] = assigned_servers
+
+        self.log(f"Generated Mapping with Pattern: {self.task_mapping}")
+
 
         return self.task_mapping
 
@@ -198,7 +209,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         for task, servers in self.task_mapping.items():
             print(f"Task: {task}")
             for task_id, server in servers.items():
-                hostname, port = server.split(":") 
+                hostname, port, pattern = server.split(":") 
         
                 server_list.append(hostname)
                 port_list.append(port)
@@ -206,7 +217,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         return server_list, port_list
 
     async def SubmitJob(self, request, context):
-        self.log(request.op_exe_names)
+        self.log(request.op_exe_patterns)
 
         src_file = request.hydfs_src_file
         dest_file = request.hydfs_dest_filename
@@ -217,7 +228,6 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         # Save and set permissions for the op_exes
         for i, binary in enumerate(request.op_exes):
             op_path = os.path.join(self.base_dir, f"{request.op_exe_names[i]}")
-            print("Here")
             with open(op_path, "wb") as f:
                 f.write(binary)
             os.chmod(op_path, 0o777)
@@ -226,7 +236,10 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         ops_with_source = ["source"]
         ops_with_source.extend(request.op_exe_names)
 
-        self.task_mapping = await self.create_task_mapping(ops_with_source, request.num_tasks)
+        op_exe_patterns = ["source"]
+        op_exe_patterns.extend(request.op_exe_patterns)
+
+        self.task_mapping = await self.create_task_mapping(ops_with_source, op_exe_patterns, request.num_tasks)
 
         # Copy op exes to all the workers asynchronously
         await self.copy_exes_to_workers()
@@ -254,10 +267,10 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         self.log("Rainstorm Leader shut down gracefully.")
         self.stop_event.set()
 
-        # shutdown rainstorm workers
+        # # shutdown rainstorm workers
         self.execute_shell_script('./scripts/rainstorm_worker_cleanup.sh')
 
-        # shutdown HyDFS
+        # # shutdown HyDFS
         self.execute_shell_script('./scripts/hydfs_process_cleanup.sh')
 
         
@@ -437,7 +450,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
                 node_task_count = {node: 0 for _, node in self.worker_load}
                 for tasks in self.task_mapping.values():
                     for assigned_node in tasks.values():
-                        node, port = assigned_node.split(":")
+                        node, port,pattern = assigned_node.split(":")
                         if node in node_task_count:
                             node_task_count[node] += 1
 
