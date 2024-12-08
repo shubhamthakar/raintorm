@@ -328,12 +328,14 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
 
         # Add partition data to the queue
         for data in partition_data:
-            self.state['id_counter'] += 1
+            
             self.log(f"Queueing data: {data} with id {self.state['id_counter']}")
             # Appending dic of format {(line_num, file_name): line}
             self.state['output_rec'].append((self.state['id_counter'], [f"{data[0]}|{self.src_file}", data[1]]))
-            await self.queue.put({'id' : self.state['id_counter'], f"{data[0]}|{self.src_file}" : data[1]})
-
+            # id is calc as start_ind + id_counter
+            await self.queue.put({'id' : f"{start_index + self.state['id_counter']}", f"{data[0]}|{self.src_file}" : data[1]})
+            self.state['id_counter'] += 1
+        
         # Save state to hyDFS
         response = await self.interact_with_hydfs('append', f"{self.task_type}_{self.partition_num}_state", self.state)
         self.log(f"HyDFS response for append to f'{self.task_type}_{self.partition_num}_state' : {response}")
@@ -352,6 +354,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         try:
             input_id = data['id']
             if input_id in self.state['inp_id_processed']:
+                self.log(f"Id {input_id} was already processed, so discarded")
                 return []
             data_itr = iter(data.keys())
             next(data_itr)
@@ -400,16 +403,19 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         try:
             # Deserialize the JSON string from the request
             data = json.loads(request.data)
+            input_id = data['id']
             self.log(f"Received data: {data}")
             generated_list_of_tuples = await self.run_transform_exe(data)
 
             # add to queue
             for data in generated_list_of_tuples:
-                self.state['id_counter'] += 1
-                self.log(f"Queueing data: {data} with id {self.state['id_counter']}")
+                # self.state['id_counter'] += 1
+                output_id = f"{input_id}_{self.state['id_counter']}"
+                self.log(f"Queueing data: {data} with id {output_id}")
                 # Appending dic of format {(line_num, file_name): line}
-                self.state['output_rec'].append((self.state['id_counter'], data))
-                await self.queue.put({'id' : self.state['id_counter'], data[0] : data[1]})
+                self.state['output_rec'].append((output_id, data))
+                await self.queue.put({'id' : output_id, data[0] : data[1]})
+                self.state['id_counter'] += 1
 
             # Save state to hyDFS
             response = await self.interact_with_hydfs('append', f"{self.task_type}_{self.partition_num}_state", self.state)
