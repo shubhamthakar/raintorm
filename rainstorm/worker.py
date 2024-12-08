@@ -329,9 +329,9 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         # Add partition data to the queue
         for data in partition_data:
             
-            self.log(f"Queueing data: {data} with id {self.state['id_counter']}")
+            self.log(f"Queueing data: {data} with id {start_index + self.state['id_counter']}")
             # Appending dic of format {(line_num, file_name): line}
-            self.state['output_rec'].append((self.state['id_counter'], [f"{data[0]}|{self.src_file}", data[1]]))
+            self.state['output_rec'].append((f"{start_index + self.state['id_counter']}", [f"{data[0]}|{self.src_file}", data[1]]))
             # id is calc as start_ind + id_counter
             await self.queue.put({'id' : f"{start_index + self.state['id_counter']}", f"{data[0]}|{self.src_file}" : data[1]})
             self.state['id_counter'] += 1
@@ -409,7 +409,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
 
             # add to queue
             for data in generated_list_of_tuples:
-                # self.state['id_counter'] += 1
+               
                 output_id = f"{input_id}_{self.state['id_counter']}"
                 self.log(f"Queueing data: {data} with id {output_id}")
                 # Appending dic of format {(line_num, file_name): line}

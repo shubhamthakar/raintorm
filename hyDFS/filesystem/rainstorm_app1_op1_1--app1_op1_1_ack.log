@@ -1,2 +1,0 @@
-{"client_name": "rainstorm_app1_op1_1", "action": "append", "filename": "app1_op1_1_ack", "content": "{\"1\": 1}", "sequence_number": 1}
-{"client_name": "rainstorm_app1_op1_1", "action": "append", "filename": "app1_op1_1_ack", "content": "{\"1\": 1, \"2\": 1}", "sequence_number": 2}
