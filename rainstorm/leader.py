@@ -459,17 +459,17 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
                 for stage, tasks in self.task_mapping.items():
                     updated_task_mapping[stage] = {}
                     for task_id, assigned_node in tasks.items():
-                        node, port = assigned_node.split(":")
+                        node, port, pattern = assigned_node.split(":")
                         if current_node['node_id'].startswith(node):
                             # Collect tasks to reassign
-                            tasks_to_reassign.append((stage, task_id))
+                            tasks_to_reassign.append((stage, task_id, pattern))
                         else:
                             # Keep existing assignments
                             updated_task_mapping[stage][task_id] = assigned_node
 
                 # Reassign tasks to the most underutilized nodes
                 
-                for stage, task_id in tasks_to_reassign:
+                for stage, task_id, pattern in tasks_to_reassign:
                     if not self.worker_load:
                         raise RuntimeError("No available nodes to reassign tasks!")
 
@@ -479,7 +479,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
 
                     # Assign the task to the new node
                     next_port = 5002 + node_task_count[new_node]
-                    new_node_port = f"{new_node}:{next_port}"
+                    new_node_port = f"{new_node}:{next_port}:{pattern}"
                     updated_task_mapping[stage][task_id] = new_node_port
 
                     # If the node:port pair is new, track it
@@ -498,7 +498,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
 
             # Start workers only on new node:port pairs
             for new_node_port in new_node_ports:
-                node, port = new_node_port.split(":")
+                node, port, pattern = new_node_port.split(":")
                 self.log(f"Starting worker on new node:port pair: {new_node_port}")
                 src_file = self.src_file  # Replace with actual source file path
                 dest_file = self.dest_file # Replace with actual destination file path
@@ -550,7 +550,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         for node_address in workers_to_notify:
             try:
                 # Assuming the worker address in the mapping contains the full address (hostname:port)
-                host, port = node_address.split(':')
+                host, port, filter = node_address.split(':')
 
                 self.log(f"Calling RPC for {host}: {port}")
 
@@ -631,7 +631,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
 
                 previous_membership_list = copy.deepcopy(current_membership_list)
             
-            self.log("Rainstorm Tasks: No change in membership list")
+            # self.log("Rainstorm Tasks: No change in membership list")
 
 
             

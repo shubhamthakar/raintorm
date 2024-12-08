@@ -123,7 +123,7 @@ class RingNode:
         print(message)
     
     def listen_for_messages(self):
-        IDLE_TIMEOUT = 10  # 5 minutes
+        IDLE_TIMEOUT = 30  # 5 minutes
         last_activity = {}
         try:
 
@@ -228,7 +228,7 @@ class RingNode:
                 # Periodically check for idle sockets
                 for s in list(last_activity.keys()):
                     if current_time - last_activity[s] > IDLE_TIMEOUT:
-                        print(f"Closing idle socket: {s}")
+                        self.log(f"Closing idle socket: {s}")
                         if s in self.inputs:
                             self.inputs.remove(s)
                         last_activity.pop(s, None)
