@@ -23,7 +23,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         decoded_mapping = base64.b64decode(mapping).decode()
         self.mapping = json.loads(decoded_mapping)
 
-        self.log(f"Decoded mapping: {self.mapping}")
+        print(f"Decoded mapping: {self.mapping}")
 
         self.exe_file_path = '/home/chaskar2/distributed-logger/rainstorm/exe_files'
         self.src_file = src_file
