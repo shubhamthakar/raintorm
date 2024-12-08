@@ -1,9 +1,0 @@
-{"client_name": "rainstorm_app2_op2_2", "action": "append", "filename": "output_TrafficSigns_1000", "content": "{\"id\": \"2_1_0\", \"Warning\": 1}", "sequence_number": 1}
-{"client_name": "rainstorm_app2_op2_2", "action": "append", "filename": "output_TrafficSigns_1000", "content": "{\"id\": \"4_2_1\", \"Warning\": 2}", "sequence_number": 2}
-{"client_name": "rainstorm_app2_op2_2", "action": "append", "filename": "output_TrafficSigns_1000", "content": "{\"id\": \"9_2_2\", \"Warning\": 3}", "sequence_number": 3}
-{"client_name": "rainstorm_app2_op2_2", "action": "append", "filename": "output_TrafficSigns_1000", "content": "{\"id\": \"13_4_3\", \"Parking\": 1}", "sequence_number": 4}
-{"client_name": "rainstorm_app2_op2_2", "action": "append", "filename": "output_TrafficSigns_1000", "content": "{\"id\": \"14_6_4\", \"Parking\": 2}", "sequence_number": 5}
-{"client_name": "rainstorm_app2_op2_2", "action": "append", "filename": "output_TrafficSigns_1000", "content": "{\"id\": \"10_7_5\", \"Warning\": 4}", "sequence_number": 6}
-{"client_name": "rainstorm_app2_op2_2", "action": "append", "filename": "output_TrafficSigns_1000", "content": "{\"id\": \"12_7_6\", \"Warning\": 5}", "sequence_number": 7}
-{"client_name": "rainstorm_app2_op2_2", "action": "append", "filename": "output_TrafficSigns_1000", "content": "{\"id\": \"11_8_7\", \"Warning\": 6}", "sequence_number": 8}
-{"client_name": "rainstorm_app2_op2_2", "action": "append", "filename": "output_TrafficSigns_1000", "content": "{\"id\": \"689_13_8\", \"Warning\": 7}", "sequence_number": 9}

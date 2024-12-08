@@ -127,7 +127,9 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         # op_exes.append("source")
 
         # Dictionary to keep track of the next available port for each server
-        server_ports = defaultdict(lambda: 5002)
+
+        server_ports = {node: 5002+load for load, node in self.worker_load}
+
 
         # Loop over each op_exe to assign servers
         for idx, op in enumerate(op_exes):

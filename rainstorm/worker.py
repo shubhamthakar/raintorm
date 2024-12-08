@@ -23,7 +23,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         decoded_mapping = base64.b64decode(mapping).decode()
         self.mapping = json.loads(decoded_mapping)
 
-        print(f"Decoded mapping: {self.mapping}")
+        self.log(f"Decoded mapping: {self.mapping}")
 
         self.exe_file_path = '/home/chaskar2/distributed-logger/rainstorm/exe_files'
         self.src_file = src_file
@@ -80,7 +80,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
                 if hostname == self.hostname and self.port == int(port):
                     self.pattern = pattern
                     # Populate the attributes based on the match
-                    print(partition_num)
+                    self.log(partition_num)
                     self.task_type = task_type
 
                     if not self.partition_num:
@@ -136,7 +136,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
             # id in output_rec is in int
             if str(rec_id) not in self.ack_rec:
                 await self.queue.put({'id' : rec_id, rec_data[0]: rec_data[1]})  # Append to the queue
-                print(f"Added {record} to the queue.")
+                self.log(f"Added {record} to the queue.")
 
 
 
@@ -167,9 +167,9 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
 
         try:
             client_socket.sendall(msgpack.packb(message) + b"<EOF>")
-            print(f"Message for {action} sent successfully to hydfs.")
+            self.log(f"Message for {action} sent successfully to hydfs.")
         except Exception as e:
-            print(f"Error sending message: {e}")
+            self.log(f"Error sending message: {e}")
 
         # Response from hydfs
         response = b""
