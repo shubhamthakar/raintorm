@@ -123,7 +123,7 @@ class RingNode:
         print(message)
     
     def listen_for_messages(self):
-        IDLE_TIMEOUT = 30  # 5 minutes
+        IDLE_TIMEOUT = 20  # 5 minutes
         last_activity = {}
         try:
 
