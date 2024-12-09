@@ -1,4 +1,0 @@
-Connected to the server.
-Message for action 'read' sent successfully.
-Server response: {'client_name': 'client_1', 'action': 'ack', 'filename': 'business_1.txt', 'status': 'file_not_found'}
-Connection closed.

@@ -64,7 +64,7 @@ class RingNode:
         self.sequence_numbers = defaultdict(int)
 
         # Quorum
-        self.quorum_size = 3
+        self.quorum_size = 2
 
         self.listen_thread = threading.Thread(target=self.listen_for_messages)
         self.listen_thread.start()
@@ -972,15 +972,15 @@ class RingNode:
         filename = file_info['filename']
         action = file_info['action']
 
-        self.log(f"Acknowledgment received for file info: {file_info}")
-        self.acktracker[(client_name, filename, action)] += 1
+        # Retrieve the client socket from the client_socket_map using client_name
+        client_socket_to_use = self.client_socket_map.get(client_name)
 
-        ack_count = self.acktracker[(client_name, filename, action)]
+        self.log(f"Acknowledgment received for file info: {file_info}")
+        self.acktracker[(client_socket_to_use, filename, action)] += 1
+
+        ack_count = self.acktracker[(client_socket_to_use, filename, action)]
 
         if ack_count == self.quorum_size:
-
-            # Retrieve the client socket from the client_socket_map using client_name
-            client_socket_to_use = self.client_socket_map.get(client_name)
 
             self.log(f"client_socket_to_use {client_socket_to_use}")
 
@@ -1003,7 +1003,7 @@ class RingNode:
 
 
                     # Cleanup ack count
-                    del self.acktracker[(client_name, filename, action)]
+                    del self.acktracker[(client_socket_to_use, filename, action)]
 
                 except (BlockingIOError, socket.error) as e:
                     self.log(f"Failed to send acknowledgment to {client_name} - {e}")
