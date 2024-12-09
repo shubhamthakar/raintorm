@@ -15,6 +15,7 @@ import os
 import hashlib
 import traceback
 import base64
+import time
 
 class WorkerServicer(worker_pb2_grpc.WorkerServicer):
     def __init__(self, mapping, src_file, dest_file, port):
@@ -34,7 +35,7 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
         self.state = {"inp_id_processed": {}, "state": {}, "output_rec": [], "id_counter": 0}
         self.ack_rec = {}
         # Logging
-        self.log_file = '/home/chaskar2/distributed-logger/rainstorm/logs/worker.logs'
+        self.log_file = f'/home/chaskar2/distributed-logger/rainstorm/logs/worker_{time.time()}.logs'
         self.init_logging()
 
         self.task_type = None

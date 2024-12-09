@@ -118,6 +118,10 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
         print(f"Printing op_exes {op_exes}")
         print(f"Printing op_exe_patterns {op_exe_patterns}")
 
+        # empty task mapping for new assignments of new task
+        print(f"Emptying task mapping first")
+        self.task_mapping = {}
+
         pattern_match = {}
 
         for i, op in enumerate(op_exes):
@@ -508,6 +512,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
                 servers = [node]
                 self.sync_start_rainstorm_workers(src_file, dest_file, ports, servers)
 
+            time.sleep(5)
             # Notify all workers about the updated mapping
             self.notify_workers(self.task_mapping, original_task_mapping)
 
@@ -621,7 +626,7 @@ class Leader(rainstorm_pb2_grpc.RainStormServicer):
                         dead_nodes_count += 1
                         dead_nodes_list.append(current_node)
                         try:
-                            if dead_nodes_count == 2:
+                            if dead_nodes_count == 1:
                                 dead_nodes_count = 0
                                 self.log('Handle dead node called for Rainstorm')
                                 self.task_mapping = self.handle_node_change(dead_nodes_list, "dead")

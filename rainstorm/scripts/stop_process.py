@@ -3,6 +3,7 @@ import os
 import msgpack
 import time
 import subprocess
+import time
 
 class FileClient:
     def __init__(self):
@@ -108,14 +109,16 @@ if __name__ == "__main__":
     # Command-line arguments
     node_1 = sys.argv[1]
     node_2 = sys.argv[2]
-    servers = [(f"fa24-cs425-69{node_1}.cs.illinois.edu", 5001), (f"fa24-cs425-69{node_2}.cs.illinois.edu", 5001)]
+    nodes = [node_1, node_2]
 
     # Initialize and perform action
     client = FileClient()
 
-    # kill rainstorm workers
-    client.run_task_cleanup_script('./task_cleanup_specify_nodes.sh', node_1, node_2)
+    
 
-    for server in servers:
-        client.perform_action(server)
+    for node in nodes:
+        client.perform_action((f"fa24-cs425-69{node}.cs.illinois.edu", 5001))
+        # kill rainstorm workers
+        client.run_task_cleanup_script('./task_cleanup_specify_nodes.sh', node)
+        time.sleep(40)
         
