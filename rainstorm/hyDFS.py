@@ -64,7 +64,7 @@ class RingNode:
         self.sequence_numbers = defaultdict(int)
 
         # Quorum
-        self.quorum_size = 3
+        self.quorum_size = 1
 
         self.listen_thread = threading.Thread(target=self.listen_for_messages)
         self.listen_thread.start()
@@ -1126,7 +1126,7 @@ class RingNode:
     def get_all_replicas(self, filename):
 
         file_primary_ring_id = self.hash_string(filename)
-        next_3_nodes_info = self.get_next_n_nodes(file_primary_ring_id, 3)
+        next_3_nodes_info = self.get_next_n_nodes(file_primary_ring_id, 1)
 
         return next_3_nodes_info
 

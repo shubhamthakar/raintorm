@@ -16,6 +16,7 @@ import hashlib
 import traceback
 import base64
 import time
+import mmh3
 
 class WorkerServicer(worker_pb2_grpc.WorkerServicer):
     def __init__(self, mapping, src_file, dest_file, port):
@@ -259,7 +260,8 @@ class WorkerServicer(worker_pb2_grpc.WorkerServicer):
                 key = next(data_itr)
 
                 # Hash the key to determine the partition
-                hashed_partition = int(hashlib.sha256(key.encode('utf-8')).hexdigest(), 16) % self.total_partitions
+                #hashed_partition = int(hashlib.sha256(key.encode('utf-8')).hexdigest(), 16) % self.total_partitions
+                hashed_partition = mmh3.hash(key, seed=100) % self.total_partitions
 
                 # Get the remote server address based on the hashed partition
                 hostname, port, _ = self.next_stage_tasks[str(hashed_partition)].split(':')
