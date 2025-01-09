@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package worker;
+
+// The service definition for the Worker.
+service Worker {
+    // Receives data and responds with an acknowledgment.
+    rpc RecvData (DataRequest) returns (AckResponse);
+
+    // Updates the mapping and responds with a status.
+    rpc UpdateMapping (MappingUpdateRequest) returns (UpdateResponse);
+}
+
+// The request message containing the data to be sent.
+message DataRequest {
+    string data = 1; // JSON dictionary serialized as a string.
+}
+
+// The response message containing the acknowledgment.
+message AckResponse {
+    string ack = 1; // JSON dictionary serialized as a string.
+}
+
+message MappingUpdateRequest {
+    string mapping = 1; // New mapping in JSON format
+}
+
+message UpdateResponse {
+    string status = 1; // Status of the update operation
+}

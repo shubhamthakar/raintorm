@@ -1,0 +1,2089 @@
+2024-10-23 15:38:23,148 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 15:38:23,152 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 15:38:23,160 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 15:38:23,162 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 15:38:23,164 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729715903', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-23 15:38:33,633 - Shutting down...
+2024-10-23 15:38:43,170 - Node shut down gracefully.
+2024-10-23 15:39:51,362 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 15:39:51,364 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 15:39:51,368 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 15:39:51,370 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 15:39:51,371 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729715991', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-23 15:39:53,824 - Shutting down...
+2024-10-23 15:40:11,364 - Node shut down gracefully.
+2024-10-23 17:09:14,147 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 17:09:17,919 - Shutting down...
+2024-10-23 17:09:34,159 - Node shut down gracefully.
+2024-10-23 17:09:36,704 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 17:10:03,849 - Shutting down...
+2024-10-23 17:10:16,743 - Node shut down gracefully.
+2024-10-23 17:11:49,385 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 17:11:49,388 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 17:11:49,392 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 17:11:49,396 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 17:11:49,398 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729721509', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-23 17:11:53,205 - Shutting down...
+2024-10-23 17:12:09,397 - Node shut down gracefully.
+2024-10-23 17:28:00,459 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 17:28:00,462 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 17:28:00,466 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 17:28:00,468 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 17:28:00,470 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729722480', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-23 17:28:03,005 - Shutting down...
+2024-10-23 17:28:20,474 - Node shut down gracefully.
+2024-10-23 17:44:07,655 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 17:44:07,659 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 17:44:07,663 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 17:44:07,665 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-23 17:44:07,666 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729723447', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-23 17:44:26,422 - Shutting down...
+2024-10-23 17:44:27,674 - Node shut down gracefully.
+2024-10-24 16:42:42,337 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 16:42:46,769 - Shutting down...
+2024-10-24 16:43:02,360 - Node shut down gracefully.
+2024-10-24 16:43:30,561 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 16:43:33,369 - Shutting down...
+2024-10-24 16:43:50,581 - Node shut down gracefully.
+2024-10-24 16:43:54,027 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 16:43:54,033 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 16:43:54,035 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 16:43:54,037 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 16:43:54,039 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729806234', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 16:43:57,580 - Shutting down...
+2024-10-24 16:44:14,041 - Node shut down gracefully.
+2024-10-24 16:44:26,155 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 16:44:26,161 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 16:44:26,162 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 16:44:26,164 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 16:44:26,165 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729806266', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 20:46:33,764 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 20:46:33,769 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 20:46:33,773 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 20:46:33,774 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 20:46:33,776 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729820793', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 20:47:56,426 - New join request received from fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 20:47:56,427 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 20:47:56,429 - Actually sent ping out
+2024-10-24 20:47:56,431 - Sent membership list to fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 20:47:56,436 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 20:47:56,436 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 20:47:56,436 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 20:48:16,426 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 20:48:16,426 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 20:48:16,439 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 20:48:16,439 - Actually sent ping out
+2024-10-24 20:48:16,441 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 20:48:16,441 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 20:48:16,441 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 20:48:36,425 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 20:48:36,425 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 20:48:36,455 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 20:48:36,455 - Actually sent ping out
+2024-10-24 20:48:36,458 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 20:48:36,458 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 20:48:36,458 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 20:48:44,988 - Shutting down...
+2024-10-24 20:48:56,475 - Node shut down gracefully.
+2024-10-24 21:54:15,685 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 21:54:15,690 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 21:54:15,693 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 21:54:15,694 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 21:54:15,696 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729824855', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 21:54:34,760 - New join request received from fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 21:54:34,761 - Sent membership list to fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 21:54:35,699 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 21:54:35,701 - Actually sent ping out
+2024-10-24 21:54:35,703 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:54:35,703 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 21:54:35,703 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 21:54:54,780 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:54:54,781 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:54:55,708 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 21:54:55,709 - Actually sent ping out
+2024-10-24 21:54:55,712 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:54:55,712 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 21:54:55,712 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 21:55:14,798 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:55:14,800 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:55:15,728 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 21:55:15,730 - Actually sent ping out
+2024-10-24 21:55:15,735 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:55:15,735 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 21:55:15,735 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 21:55:34,803 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:55:34,804 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:55:35,748 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 21:55:35,749 - Actually sent ping out
+2024-10-24 21:55:35,751 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:55:35,751 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 21:55:35,751 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 21:55:54,814 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:55:54,817 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:55:55,749 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 21:55:55,750 - Actually sent ping out
+2024-10-24 21:55:55,755 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:55:55,755 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 21:55:55,755 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 21:56:14,834 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:56:14,835 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:56:15,752 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 21:56:15,754 - Actually sent ping out
+2024-10-24 21:56:15,757 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:56:15,758 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 21:56:15,758 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 21:56:34,854 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:56:34,855 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:56:35,769 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 21:56:35,770 - Actually sent ping out
+2024-10-24 21:56:35,772 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:56:35,772 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 21:56:35,772 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 21:56:54,861 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:56:54,863 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:56:55,775 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 21:56:55,776 - Actually sent ping out
+2024-10-24 21:56:55,778 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:56:55,778 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 21:56:55,778 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 21:57:14,861 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:57:14,862 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:57:15,795 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 21:57:15,797 - Actually sent ping out
+2024-10-24 21:57:15,800 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:57:15,800 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 21:57:15,800 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 21:57:34,870 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:57:34,871 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:57:35,800 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 21:57:35,801 - Actually sent ping out
+2024-10-24 21:57:35,803 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:57:35,803 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 21:57:35,803 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 21:57:54,891 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:57:54,893 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:57:55,811 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 21:57:55,812 - Actually sent ping out
+2024-10-24 21:57:55,815 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:57:55,815 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 21:57:55,816 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 21:58:14,910 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:58:14,910 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:58:15,818 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 21:58:15,820 - Actually sent ping out
+2024-10-24 21:58:15,823 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:58:15,823 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 21:58:15,824 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 21:58:34,919 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:58:34,920 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:58:35,823 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 21:58:35,824 - Actually sent ping out
+2024-10-24 21:58:35,826 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:58:35,826 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 21:58:35,826 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 21:58:54,931 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:58:54,933 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:58:55,840 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 21:58:55,842 - Actually sent ping out
+2024-10-24 21:58:55,844 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:58:55,844 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 21:58:55,844 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 21:59:14,935 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:59:14,935 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:59:15,842 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 21:59:15,844 - Actually sent ping out
+2024-10-24 21:59:15,846 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:59:15,847 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 21:59:15,847 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 21:59:34,945 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:59:34,946 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:59:35,851 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 21:59:35,852 - Actually sent ping out
+2024-10-24 21:59:35,854 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:59:35,854 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 21:59:35,854 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 21:59:54,958 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:59:54,960 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:59:55,871 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 21:59:55,872 - Actually sent ping out
+2024-10-24 21:59:55,874 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 21:59:55,874 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 21:59:55,874 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 22:00:14,979 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:00:14,980 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:00:15,879 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 22:00:15,881 - Actually sent ping out
+2024-10-24 22:00:15,884 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:00:15,885 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 22:00:15,885 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 22:00:34,996 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:00:34,998 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:00:35,893 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 22:00:35,894 - Actually sent ping out
+2024-10-24 22:00:35,897 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:00:35,897 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 22:00:35,898 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 22:00:55,016 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:00:55,017 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:00:55,903 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 22:00:55,904 - Actually sent ping out
+2024-10-24 22:00:55,907 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:00:55,907 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 22:00:55,907 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 22:01:15,036 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:01:15,037 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:01:15,923 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 22:01:15,925 - Actually sent ping out
+2024-10-24 22:01:15,929 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:01:15,929 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 22:01:15,929 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 22:01:35,045 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:01:35,047 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:01:35,938 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 22:01:35,940 - Actually sent ping out
+2024-10-24 22:01:35,943 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:01:35,944 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 22:01:35,944 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 22:01:55,046 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:01:55,046 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:01:55,958 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 22:01:55,958 - Actually sent ping out
+2024-10-24 22:01:55,961 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:01:55,961 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 22:01:55,961 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 22:02:15,055 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:02:15,056 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:02:15,959 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 22:02:15,960 - Actually sent ping out
+2024-10-24 22:02:15,962 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:02:15,962 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 22:02:15,962 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 22:02:35,063 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:02:35,065 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:02:35,960 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 22:02:35,961 - Actually sent ping out
+2024-10-24 22:02:35,963 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:02:35,963 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 22:02:35,963 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 22:02:55,082 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:02:55,084 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:02:55,980 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 22:02:55,982 - Actually sent ping out
+2024-10-24 22:02:55,984 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:02:55,985 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 22:02:55,985 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 22:03:15,092 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:03:15,094 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:03:15,983 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 22:03:15,983 - Actually sent ping out
+2024-10-24 22:03:15,986 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:03:15,986 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 22:03:15,986 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 22:03:35,113 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:03:35,115 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:03:35,991 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 22:03:35,992 - Actually sent ping out
+2024-10-24 22:03:35,994 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:03:35,994 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 22:03:35,994 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 22:03:55,114 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:03:55,114 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:03:56,011 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 22:03:56,013 - Actually sent ping out
+2024-10-24 22:03:56,016 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:03:56,016 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 22:03:56,016 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 22:04:15,129 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:04:15,131 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:04:16,023 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 22:04:16,024 - Actually sent ping out
+2024-10-24 22:04:16,027 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:04:16,027 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 22:04:16,027 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 22:04:35,141 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:04:35,143 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:04:36,027 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 22:04:36,029 - Actually sent ping out
+2024-10-24 22:04:36,032 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:04:36,033 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 22:04:36,033 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 22:04:55,141 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:04:55,142 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:04:56,030 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 22:04:56,032 - Actually sent ping out
+2024-10-24 22:04:56,035 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:04:56,035 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 22:04:56,036 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 22:05:15,158 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:05:15,159 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:05:16,039 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 22:05:16,040 - Actually sent ping out
+2024-10-24 22:05:16,042 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:05:16,042 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 22:05:16,042 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 22:05:35,174 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:05:35,176 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:05:36,059 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-24 22:05:36,061 - Actually sent ping out
+2024-10-24 22:05:36,064 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-24 22:05:36,064 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-24 22:05:36,064 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-24 22:05:46,755 - Shutting down...
+2024-10-24 22:05:56,078 - Node shut down gracefully.
+2024-10-24 22:08:11,540 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:08:11,544 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:08:11,548 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:08:11,550 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:08:11,551 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729825691', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 22:17:17,597 - Shutting down...
+2024-10-24 22:17:17,792 - Node shut down gracefully.
+2024-10-24 22:17:45,858 - Shutting down...
+2024-10-24 22:17:45,859 - Node shut down gracefully.
+2024-10-24 22:20:22,363 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:20:22,367 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:20:22,372 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:20:22,373 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:20:22,376 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729826422', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 22:20:33,197 - Shutting down...
+2024-10-24 22:20:46,133 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:20:46,136 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:20:46,144 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:20:46,146 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:20:46,147 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729826446', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 22:21:27,123 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:21:27,127 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:21:27,132 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:21:27,133 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:21:27,134 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729826487', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 22:23:35,605 - Shutting down...
+2024-10-24 22:23:35,814 - Node shut down gracefully.
+2024-10-24 22:24:01,722 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:24:01,725 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:24:01,729 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:24:01,730 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:24:01,732 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729826641', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 22:25:10,529 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:25:10,534 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:25:10,538 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:25:10,540 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:25:10,541 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729826710', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 22:26:00,084 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:26:00,088 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:26:00,092 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:26:00,093 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:26:00,094 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729826760', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 22:35:01,241 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:35:01,247 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:35:01,251 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:35:01,253 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:35:01,254 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729827301', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 22:40:05,100 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:40:05,105 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:40:05,109 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:40:05,110 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:40:05,113 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729827605', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 22:43:18,746 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:43:18,752 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:43:18,755 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:43:18,757 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 22:43:18,758 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729827798', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 23:01:49,340 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:01:49,347 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:01:49,351 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:01:49,353 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:01:49,354 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729828909', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 23:05:01,232 - Shutting down...
+2024-10-24 23:05:01,427 - Node shut down gracefully.
+2024-10-24 23:09:29,817 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:09:29,824 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:09:29,828 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:09:29,829 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:09:29,831 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729829369', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 23:10:25,059 - Shutting down...
+2024-10-24 23:10:25,071 - Node shut down gracefully.
+2024-10-24 23:10:27,681 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:10:27,685 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:10:27,689 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:10:27,691 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:10:27,692 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729829427', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 23:13:20,444 - Shutting down...
+2024-10-24 23:13:20,646 - Node shut down gracefully.
+2024-10-24 23:13:22,914 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:13:22,918 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:13:22,922 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:13:22,924 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:13:22,925 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729829602', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 23:14:17,325 - Shutting down...
+2024-10-24 23:14:18,159 - Node shut down gracefully.
+2024-10-24 23:14:19,135 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:14:19,138 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:14:19,143 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:14:19,144 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:14:19,145 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729829659', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 23:24:00,194 - Shutting down...
+2024-10-24 23:24:00,593 - Node shut down gracefully.
+2024-10-24 23:24:22,339 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:24:22,346 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:24:22,347 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:24:22,349 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:24:22,351 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729830262', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 23:26:24,761 - Shutting down...
+2024-10-24 23:26:24,997 - Node shut down gracefully.
+2024-10-24 23:26:26,941 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:26:26,944 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:26:26,948 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:26:26,949 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:26:26,950 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729830386', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 23:27:00,763 - Shutting down...
+2024-10-24 23:27:01,052 - Node shut down gracefully.
+2024-10-24 23:27:02,051 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:27:02,055 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:27:02,060 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:27:02,062 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:27:02,063 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729830422', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 23:27:26,092 - Shutting down...
+2024-10-24 23:27:26,107 - Node shut down gracefully.
+2024-10-24 23:27:27,392 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:27:27,396 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:27:27,401 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:27:27,403 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:27:27,403 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729830447', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 23:27:50,587 - Shutting down...
+2024-10-24 23:27:51,447 - Node shut down gracefully.
+2024-10-24 23:27:52,972 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:27:52,976 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:27:52,980 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:27:52,981 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:27:52,982 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729830472', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 23:33:36,377 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:33:36,381 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:33:36,385 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:33:36,387 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:33:36,388 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729830816', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 23:40:03,464 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:40:03,470 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:40:03,475 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:40:03,477 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:40:03,478 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729831203', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 23:44:07,475 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:44:07,479 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:44:07,483 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:44:07,485 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:44:07,487 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729831447', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-24 23:51:21,105 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:51:21,112 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:51:21,115 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:51:21,116 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-24 23:51:21,119 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729831881', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 00:00:56,418 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:00:56,422 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:00:56,427 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:00:56,428 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:00:56,429 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729832456', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 00:03:39,910 - Shutting down...
+2024-10-25 00:03:40,384 - Node shut down gracefully.
+2024-10-25 00:03:41,967 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:03:41,971 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:03:41,979 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:03:41,981 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:03:41,984 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729832621', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 00:05:12,758 - Shutting down...
+2024-10-25 00:05:13,438 - Node shut down gracefully.
+2024-10-25 00:05:15,546 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:05:15,552 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:05:15,556 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:05:15,557 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:05:15,558 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729832715', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 00:05:40,887 - Shutting down...
+2024-10-25 00:05:41,618 - Node shut down gracefully.
+2024-10-25 00:05:43,015 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:05:43,020 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:05:43,024 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:05:43,025 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:05:43,026 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729832743', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 00:06:25,567 - Shutting down...
+2024-10-25 00:06:26,189 - Node shut down gracefully.
+2024-10-25 00:06:27,534 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:06:27,537 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:06:27,544 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:06:27,545 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:06:27,547 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729832787', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 00:08:37,975 - Shutting down...
+2024-10-25 00:08:38,245 - Node shut down gracefully.
+2024-10-25 00:09:01,024 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:09:01,028 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:09:01,032 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:09:01,034 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:09:01,035 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729832941', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 00:15:40,760 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:15:40,764 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:15:40,768 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:15:40,769 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:15:40,770 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729833340', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 00:17:12,564 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:17:12,568 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:17:12,573 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:17:12,574 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:17:12,575 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729833432', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 00:24:24,236 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:24:24,240 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:24:24,244 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:24:24,246 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:24:24,247 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729833864', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 00:24:41,216 - Shutting down...
+2024-10-25 00:24:44,251 - Node shut down gracefully.
+2024-10-25 00:25:01,311 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:25:01,315 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:25:01,320 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:25:01,321 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:25:01,323 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729833901', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 00:27:10,025 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:27:10,030 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:27:10,037 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:27:10,038 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:27:10,039 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729834030', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 00:37:40,617 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:37:40,621 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:37:40,625 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:37:40,627 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:37:40,629 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729834660', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 00:59:38,077 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:59:38,081 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:59:38,086 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:59:38,087 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 00:59:38,088 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729835978', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 01:02:23,789 - Shutting down...
+2024-10-25 01:02:23,996 - Node shut down gracefully.
+2024-10-25 01:02:30,017 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:02:30,023 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:02:30,025 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:02:30,027 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:02:30,029 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729836150', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 01:05:42,575 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:05:42,579 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:05:42,584 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:05:42,585 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:05:42,586 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729836342', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 01:06:51,502 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:06:51,514 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:06:51,518 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:06:51,519 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:06:51,521 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729836411', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 01:07:27,405 - Shutting down...
+2024-10-25 01:07:27,641 - Node shut down gracefully.
+2024-10-25 01:07:30,195 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:07:30,200 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:07:30,204 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:07:30,205 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:07:30,207 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729836450', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 01:09:25,138 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:09:25,141 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:09:25,147 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:09:25,148 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:09:25,149 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729836565', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 01:09:35,964 - Shutting down...
+2024-10-25 01:09:45,160 - Node shut down gracefully.
+2024-10-25 01:09:51,026 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:09:51,031 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:09:51,036 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:09:51,037 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:09:51,039 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729836591', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 01:16:34,826 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:16:34,832 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:16:34,836 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:16:34,837 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:16:34,839 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729836994', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 01:18:01,033 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:18:01,037 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:18:01,041 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:18:01,043 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:18:01,044 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729837081', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 01:19:09,994 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:19:10,000 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:19:10,003 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:19:10,006 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 01:19:10,007 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729837150', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 19:34:39,613 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:34:43,122 - Shutting down...
+2024-10-25 19:34:59,634 - Node shut down gracefully.
+2024-10-25 19:35:48,023 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:35:52,236 - Shutting down...
+2024-10-25 19:36:08,032 - Node shut down gracefully.
+2024-10-25 19:36:13,523 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:36:54,111 - Shutting down...
+2024-10-25 19:37:13,576 - Node shut down gracefully.
+2024-10-25 19:38:22,412 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:38:29,571 - Shutting down...
+2024-10-25 19:38:42,428 - Node shut down gracefully.
+2024-10-25 19:38:52,366 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:40:09,414 - Shutting down...
+2024-10-25 19:40:12,422 - Node shut down gracefully.
+2024-10-25 19:40:49,693 - Shutting down...
+2024-10-25 19:40:49,693 - Node shut down gracefully.
+2024-10-25 19:41:01,433 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:41:01,440 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:41:01,442 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:41:01,444 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:41:01,445 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729903261', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 19:42:49,404 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:42:49,410 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:42:49,412 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:42:49,413 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:42:49,415 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729903369', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 19:48:15,371 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:48:15,377 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:48:15,381 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:48:15,383 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:48:15,384 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729903695', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 19:50:45,949 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:50:45,955 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:50:45,957 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:50:45,958 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:50:45,959 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729903845', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 19:52:25,803 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:52:25,810 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:52:25,811 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:52:25,813 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:52:25,814 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729903945', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 19:52:30,808 - Shutting down...
+2024-10-25 19:52:45,824 - Node shut down gracefully.
+2024-10-25 19:56:33,387 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:56:33,394 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:56:33,395 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:56:33,397 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:56:33,398 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729904193', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 19:57:33,805 - Shutting down...
+2024-10-25 19:57:34,669 - Node shut down gracefully.
+2024-10-25 19:57:36,960 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:57:36,966 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:57:36,968 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:57:36,969 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:57:36,971 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729904256', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 19:57:57,454 - Shutting down...
+2024-10-25 19:57:57,997 - Node shut down gracefully.
+2024-10-25 19:58:00,410 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:58:00,417 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:58:00,419 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:58:00,421 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-25 19:58:00,423 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729904280', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-25 20:44:39,388 - Shutting down...
+2024-10-25 20:44:39,446 - Node shut down gracefully.
+2024-10-26 15:42:19,714 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:42:19,722 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:42:19,726 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:42:19,728 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:42:19,730 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729975339', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 15:51:44,882 - Shutting down...
+2024-10-26 15:51:45,074 - Node shut down gracefully.
+2024-10-26 15:51:48,505 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:51:48,514 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:51:48,518 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:51:48,520 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:51:48,521 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729975908', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 15:52:21,335 - Shutting down...
+2024-10-26 15:52:21,619 - Node shut down gracefully.
+2024-10-26 15:52:23,311 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:52:23,321 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:52:23,324 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:52:23,326 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:52:23,327 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729975943', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 15:53:10,090 - Shutting down...
+2024-10-26 15:53:10,513 - Node shut down gracefully.
+2024-10-26 15:53:12,063 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:53:12,078 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:53:12,082 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:53:12,084 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:53:12,086 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729975992', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 15:55:11,043 - Shutting down...
+2024-10-26 15:55:11,710 - Node shut down gracefully.
+2024-10-26 15:56:23,739 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:56:23,745 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:56:23,749 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:56:23,750 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:56:23,751 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729976183', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 15:58:52,266 - Shutting down...
+2024-10-26 15:58:52,813 - Node shut down gracefully.
+2024-10-26 15:58:57,582 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:58:57,589 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:58:57,590 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:58:57,592 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 15:58:57,594 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729976337', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 16:02:10,124 - Shutting down...
+2024-10-26 16:02:11,028 - Node shut down gracefully.
+2024-10-26 16:02:16,708 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:02:16,714 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:02:16,716 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:02:16,717 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:02:16,719 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729976536', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 16:05:44,928 - Shutting down...
+2024-10-26 16:05:45,187 - Node shut down gracefully.
+2024-10-26 16:05:50,274 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:05:50,281 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:05:50,284 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:05:50,285 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:05:50,287 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729976750', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 16:21:11,199 - Shutting down...
+2024-10-26 16:21:11,510 - Node shut down gracefully.
+2024-10-26 16:22:47,508 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:22:47,522 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:22:47,525 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:22:47,529 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:22:47,530 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729977767', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 16:23:20,543 - Shutting down...
+2024-10-26 16:23:20,652 - Node shut down gracefully.
+2024-10-26 16:23:26,024 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:23:26,028 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:23:26,033 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:23:26,035 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:23:26,036 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729977806', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 16:25:45,020 - Shutting down...
+2024-10-26 16:25:46,004 - Node shut down gracefully.
+2024-10-26 16:25:49,137 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:25:49,146 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:25:49,149 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:25:49,151 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:25:49,152 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729977949', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 16:28:22,682 - Shutting down...
+2024-10-26 16:28:23,211 - Node shut down gracefully.
+2024-10-26 16:28:24,923 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:28:24,929 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:28:24,931 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:28:24,932 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:28:24,934 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729978104', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 16:36:28,760 - Shutting down...
+2024-10-26 16:36:29,580 - Node shut down gracefully.
+2024-10-26 16:52:52,505 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:52:52,510 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:52:52,513 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:52:52,515 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:52:52,517 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729979572', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 16:54:34,737 - Shutting down...
+2024-10-26 16:54:35,039 - Node shut down gracefully.
+2024-10-26 16:54:40,604 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:54:40,609 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:54:40,613 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:54:40,615 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:54:40,617 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729979680', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 16:59:43,117 - Shutting down...
+2024-10-26 16:59:43,392 - Node shut down gracefully.
+2024-10-26 16:59:45,953 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:59:45,957 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:59:45,967 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:59:45,969 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 16:59:45,970 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729979985', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 17:04:29,047 - Shutting down...
+2024-10-26 17:04:29,628 - Node shut down gracefully.
+2024-10-26 17:04:31,774 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:04:31,781 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:04:31,782 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:04:31,784 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:04:31,786 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729980271', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 17:08:09,886 - Shutting down...
+2024-10-26 17:08:10,002 - Node shut down gracefully.
+2024-10-26 17:08:15,089 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:08:15,094 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:08:15,097 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:08:15,099 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:08:15,100 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729980495', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 17:13:53,177 - Shutting down...
+2024-10-26 17:13:54,052 - Node shut down gracefully.
+2024-10-26 17:13:56,448 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:13:56,452 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:13:56,456 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:13:56,458 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:13:56,459 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729980836', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 17:26:23,207 - Shutting down...
+2024-10-26 17:26:23,925 - Node shut down gracefully.
+2024-10-26 17:28:00,639 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:28:00,647 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:28:00,650 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:28:00,652 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:28:00,653 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729981680', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 17:29:10,044 - Shutting down...
+2024-10-26 17:29:10,980 - Node shut down gracefully.
+2024-10-26 17:29:15,312 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:29:15,319 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:29:15,321 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:29:15,323 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:29:15,324 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729981755', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 17:30:57,628 - Shutting down...
+2024-10-26 17:30:57,852 - Node shut down gracefully.
+2024-10-26 17:31:05,910 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:31:05,917 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:31:05,919 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:31:05,921 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:31:05,924 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729981865', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 17:31:28,628 - Shutting down...
+2024-10-26 17:31:28,962 - Node shut down gracefully.
+2024-10-26 17:31:47,155 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:31:47,162 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:31:47,163 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:31:47,165 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:31:47,166 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729981907', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 17:32:15,828 - Shutting down...
+2024-10-26 17:32:16,240 - Node shut down gracefully.
+2024-10-26 17:32:26,809 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:32:26,815 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:32:26,817 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:32:26,819 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 17:32:26,820 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729981946', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 17:34:34,926 - Shutting down...
+2024-10-26 17:34:35,500 - Node shut down gracefully.
+2024-10-26 18:49:18,444 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 18:49:18,451 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 18:49:18,453 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 18:49:18,455 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 18:49:18,456 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729986558', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 18:54:18,434 - Shutting down...
+2024-10-26 18:54:19,200 - Node shut down gracefully.
+2024-10-26 18:54:34,334 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 18:54:34,339 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 18:54:34,342 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 18:54:34,344 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 18:54:34,347 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729986874', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 19:00:21,537 - Shutting down...
+2024-10-26 19:00:22,398 - Node shut down gracefully.
+2024-10-26 19:00:24,254 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:00:24,263 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:00:24,265 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:00:24,267 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:00:24,268 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729987224', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 19:01:20,392 - Shutting down...
+2024-10-26 19:01:20,531 - Node shut down gracefully.
+2024-10-26 19:16:20,955 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:16:38,516 - Shutting down...
+2024-10-26 19:16:40,958 - Node shut down gracefully.
+2024-10-26 19:17:22,595 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:17:27,224 - Shutting down...
+2024-10-26 19:17:42,617 - Node shut down gracefully.
+2024-10-26 19:17:45,088 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:17:45,091 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,091 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,091 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,091 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,091 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,091 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,091 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,091 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,091 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,091 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,091 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,091 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,091 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,091 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,091 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,091 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,091 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,091 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,092 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,092 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,092 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,092 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,092 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,092 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,092 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,092 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,092 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,092 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,092 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,092 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,092 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,092 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,092 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,092 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,093 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,093 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,093 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,093 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,093 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,093 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,093 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,093 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,094 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,094 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,094 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,094 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,094 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,094 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,094 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,094 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,094 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,095 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,095 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,095 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,095 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,095 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,095 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,095 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,095 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,095 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,096 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,096 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,096 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,096 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,096 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,096 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,096 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,096 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,097 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,097 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,097 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,097 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,097 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,097 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,097 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,097 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,097 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,098 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,098 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,098 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,098 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,098 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,098 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,098 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,098 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,098 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,099 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,099 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,099 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,099 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,099 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,099 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,099 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,099 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,100 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,100 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,100 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,100 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,100 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,100 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,100 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,100 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,101 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,101 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,101 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,101 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,101 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,101 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,101 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,101 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,101 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,102 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,102 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,102 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,102 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,102 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,102 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,102 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,102 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,103 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,103 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,103 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,103 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,103 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,103 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,103 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,103 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,103 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,104 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,104 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,104 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,104 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,104 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,104 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,104 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,104 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,105 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,105 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,105 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,105 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,105 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,105 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,105 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,105 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,105 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,106 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,106 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,106 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,106 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,106 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,106 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,106 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,106 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,106 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,107 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,107 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,107 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,107 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,107 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,107 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,107 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,107 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,107 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,108 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,108 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,108 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,108 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,108 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,108 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,108 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,108 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,108 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,109 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,109 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,109 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,109 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,109 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,109 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,109 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,109 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,109 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,110 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,110 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,110 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,110 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,110 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,110 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,110 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,110 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,110 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,111 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,111 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,111 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,111 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,111 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,111 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,111 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,111 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,111 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,112 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,112 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,112 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,112 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,112 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,112 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,112 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,112 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,113 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,113 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,113 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,113 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,113 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,113 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,113 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,113 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,113 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,114 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,114 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,114 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,114 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,114 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,114 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,114 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,114 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,114 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,115 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,115 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,115 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,115 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,115 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,115 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,115 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,115 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,116 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,116 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,116 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,116 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,116 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,116 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,116 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,116 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,116 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,117 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,117 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,117 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,117 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,117 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,117 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,117 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,117 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,117 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,118 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,118 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,118 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,118 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,118 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,118 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,118 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,118 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,118 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,119 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,119 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,119 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,119 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,119 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,119 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,119 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,119 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,119 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,120 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,120 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,120 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,120 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,120 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,120 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,121 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,121 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,121 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,121 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,121 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,121 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,121 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,121 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,122 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,122 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,122 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,122 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,122 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,122 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,122 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,122 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,122 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,123 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,123 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,123 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,123 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,123 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,123 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,123 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,123 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,124 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,124 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,124 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,124 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,124 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,124 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,124 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,124 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,124 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,125 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,125 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,125 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,125 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,125 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,125 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,125 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,125 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,125 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,126 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,126 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,126 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,126 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,126 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,126 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,126 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,126 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,127 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,127 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,127 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,127 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,127 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,127 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,127 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,127 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,127 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,128 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,128 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,128 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,128 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,128 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,128 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,128 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,129 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,129 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,129 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,129 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,129 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,129 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,129 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,129 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,129 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,130 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,130 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,130 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,130 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,130 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,130 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,130 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,130 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,130 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,131 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,131 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,131 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,131 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,131 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,131 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,131 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,131 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,131 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,132 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,132 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,132 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,132 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,132 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,132 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,132 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,132 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,133 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,133 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,133 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,133 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,133 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,133 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,133 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,133 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,133 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,134 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,134 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,134 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,134 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,134 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,134 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,134 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,134 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,134 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,135 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,135 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,135 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,135 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,135 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,135 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,135 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,135 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,135 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,136 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,136 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,136 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,136 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,136 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,136 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,136 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,136 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,137 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,137 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,137 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,137 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,137 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,137 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,137 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,137 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,137 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,138 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,138 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,138 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,138 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,138 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,138 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,138 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,138 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,138 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,139 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,139 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,139 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,139 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,139 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,139 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,139 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,139 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,139 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,140 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,140 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,140 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,140 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,140 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,140 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,140 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,140 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,140 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,141 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,141 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,141 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,141 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,141 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,141 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,141 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,141 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,141 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,142 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,142 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,142 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,142 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,142 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,142 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,142 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,142 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,142 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,143 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,143 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,143 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,143 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,143 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,143 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,143 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,143 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,144 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,144 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,144 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,144 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,144 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,144 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,145 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,145 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,145 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,145 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,146 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,146 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,146 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,146 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,146 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,146 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,146 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,146 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,146 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,147 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,147 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,147 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,147 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,147 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,147 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,147 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,147 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,147 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,148 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,148 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,148 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,148 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,148 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,148 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,148 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,148 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,148 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,149 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,149 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,149 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,149 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,149 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,149 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,149 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,149 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,149 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,150 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,150 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,150 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,150 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,150 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,150 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,150 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,150 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,150 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,151 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,151 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,151 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,151 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,151 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,151 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,151 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,151 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,151 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,152 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,152 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,152 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,152 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,152 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,152 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,152 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,152 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,152 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,153 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,153 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,153 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,153 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,153 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,153 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,153 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,153 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,153 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,154 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,154 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,154 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,154 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,154 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,154 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,154 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,154 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,154 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,155 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,155 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,155 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,155 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,155 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,155 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,155 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,155 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,155 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,156 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,156 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,156 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,156 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,156 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,156 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,156 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,156 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,156 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,157 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,157 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,157 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,157 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,157 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,157 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,157 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,157 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,157 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,157 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,158 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,158 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,158 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,158 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,158 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,158 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,158 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,158 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,158 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,159 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,159 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,159 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,159 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,159 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,159 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,159 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,159 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,160 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,160 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,160 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,160 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,160 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,160 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,160 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,160 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,160 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,161 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,161 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,161 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,161 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,161 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,161 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,161 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,161 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,161 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,162 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,162 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,162 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,162 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,162 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,162 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,162 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,162 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,162 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,163 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,163 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,163 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,163 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,163 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,163 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,163 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,163 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,163 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,164 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,165 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,165 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,165 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,165 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,165 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,166 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,166 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,166 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,166 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,166 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,166 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,166 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,167 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,167 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,167 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,167 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,167 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,167 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,167 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,167 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,167 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,168 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,168 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,168 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,168 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,168 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,168 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,168 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,168 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,168 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,169 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,169 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,169 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,169 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,169 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,169 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,169 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,169 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,169 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,170 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,170 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,170 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,170 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,170 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,170 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,170 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,170 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,170 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,171 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,171 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,171 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,171 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,171 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,171 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,171 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,171 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,171 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,172 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,172 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,172 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,172 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,172 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,172 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,172 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,172 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,172 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,173 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,173 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,173 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,173 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,173 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,173 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,173 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,174 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,174 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,174 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,174 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,174 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,174 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,174 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,175 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,175 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,176 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,176 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,176 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,176 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,176 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,176 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,176 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,177 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,177 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,177 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,177 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,177 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,177 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,177 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,177 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,177 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,178 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,178 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,178 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,178 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,178 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,178 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,178 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,178 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,178 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,179 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,179 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,179 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,179 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,179 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,179 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,179 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,179 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,179 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,180 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,180 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,180 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,180 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,180 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,180 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,180 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,180 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,180 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,181 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,181 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,181 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,181 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,181 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,181 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,181 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,181 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,181 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,182 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,182 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,182 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,182 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,182 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,182 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,182 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,182 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,182 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,183 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,183 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,183 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,183 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,183 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,183 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,183 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,183 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,183 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,184 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,184 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,184 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,184 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,184 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,184 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,184 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,184 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,184 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,185 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,185 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,185 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,185 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,185 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,185 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,185 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,185 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,185 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,186 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,186 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,186 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,186 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,186 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,186 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,186 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,186 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,186 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,186 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,187 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,187 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,187 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,187 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,187 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,187 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,187 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,187 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,187 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,188 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,188 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,188 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,188 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,188 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,188 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,188 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,188 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,188 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,189 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,189 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,189 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,189 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,189 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,189 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,189 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,189 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,189 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,190 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,190 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,190 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,190 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,190 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,190 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,190 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,190 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,190 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,191 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,191 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,191 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,191 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,191 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,191 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,191 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,191 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,191 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,192 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,192 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,192 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,192 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,192 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,192 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,192 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,192 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,192 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,193 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,193 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,193 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,193 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,193 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,193 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,193 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,193 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,193 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,194 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,194 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,194 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,194 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,194 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,194 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,194 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,194 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,195 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,195 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,195 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,195 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,195 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,195 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,195 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,195 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,195 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,195 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,196 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,196 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,196 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,196 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,196 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,196 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,196 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,196 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,196 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,197 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,197 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,197 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,197 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,197 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,197 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,197 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,197 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,197 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,198 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,198 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,198 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,198 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,198 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,198 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,198 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,198 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,198 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,199 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,199 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,199 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,199 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,199 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,199 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,199 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,199 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,199 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,200 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,200 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,200 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,200 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,200 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,200 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,200 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,200 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,200 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,201 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,201 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,201 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,201 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,201 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,201 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,201 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,201 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,201 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,202 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,202 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,202 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,202 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,202 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,202 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,202 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,202 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,202 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,203 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,203 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,203 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,203 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,203 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,203 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,203 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,203 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,203 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,204 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,204 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,204 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:17:45,204 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:18:26,527 - Shutting down...
+2024-10-26 19:18:45,139 - Node shut down gracefully.
+2024-10-26 19:18:48,238 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:18:48,240 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:18:48,241 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:18:48,243 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:18:48,246 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:18:48,248 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:18:48,249 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729988328', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 19:19:17,210 - Connection from ('172.22.94.228', 59208)
+2024-10-26 19:19:17,211 - [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729988328', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729988328', 'ring_id': 715}]
+2024-10-26 19:19:17,232 - Connection from ('172.22.94.228', 59222)
+2024-10-26 19:19:17,232 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
+2024-10-26 19:19:17,233 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
+2024-10-26 19:19:17,233 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
+2024-10-26 19:19:17,233 - Connection from ('172.22.94.228', 59230)
+2024-10-26 19:19:17,235 - File 'file_1194.txt' written successfully.
+2024-10-26 19:19:17,235 - Acknowledgment sent to client for 'file_1194.txt'.
+2024-10-26 19:19:17,235 - Connection from ('172.22.94.228', 59238)
+2024-10-26 19:19:17,235 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'write_complete'}
+2024-10-26 19:19:17,236 - Quorum not yet met, received ack from 1 replicas
+2024-10-26 19:19:17,236 - File 'file_1194.txt' already exists. Not writing to it.
+2024-10-26 19:19:17,236 - Acknowledgment sent to client for existing file 'file_1194.txt'.
+2024-10-26 19:19:17,236 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
+2024-10-26 19:19:17,237 - Quorum not yet met, received ack from 2 replicas
+2024-10-26 19:19:17,237 - File 'file_1194.txt' already exists. Not writing to it.
+2024-10-26 19:19:17,237 - Acknowledgment sent to client for existing file 'file_1194.txt'.
+2024-10-26 19:19:17,237 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
+2024-10-26 19:21:57,289 - Shutting down HyDFS...
+2024-10-26 19:21:57,290 - Listener thread is not running, skipping join.
+2024-10-26 19:21:57,290 - Shutting down...
+2024-10-26 19:21:57,292 - Node shut down gracefully.
+2024-10-26 19:21:57,292 - HyDFS Node shut down gracefully.
+2024-10-26 19:21:59,906 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:21:59,909 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:21:59,912 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:21:59,914 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:21:59,918 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:21:59,919 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:21:59,921 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729988519', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 19:22:18,439 - Connection from ('172.22.94.228', 40482)
+2024-10-26 19:22:18,442 - [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729988519', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729988519', 'ring_id': 715}]
+2024-10-26 19:22:18,448 - Connection from ('172.22.94.228', 40492)
+2024-10-26 19:22:18,448 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
+2024-10-26 19:22:18,448 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
+2024-10-26 19:22:18,449 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
+2024-10-26 19:22:18,449 - Connection from ('172.22.94.228', 40500)
+2024-10-26 19:22:18,451 - File 'file_1194.txt' written successfully.
+2024-10-26 19:22:18,451 - Acknowledgment sent to client for 'file_1194.txt'.
+2024-10-26 19:22:18,451 - Connection from ('172.22.94.228', 40504)
+2024-10-26 19:22:18,452 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'write_complete'}
+2024-10-26 19:22:18,452 - Quorum not yet met, received ack from 1 replicas
+2024-10-26 19:22:18,452 - File 'file_1194.txt' already exists. Not writing to it.
+2024-10-26 19:22:18,453 - Acknowledgment sent to client for existing file 'file_1194.txt'.
+2024-10-26 19:22:18,453 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
+2024-10-26 19:22:18,453 - Quorum not yet met, received ack from 2 replicas
+2024-10-26 19:22:18,453 - File 'file_1194.txt' already exists. Not writing to it.
+2024-10-26 19:22:18,454 - Acknowledgment sent to client for existing file 'file_1194.txt'.
+2024-10-26 19:22:18,454 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
+2024-10-26 19:22:18,454 - client_socket_to_use <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 40482)>
+2024-10-26 19:22:18,454 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
+2024-10-26 19:22:18,454 - Acknowledgment sent to client1 for file 'file_1194.txt'.
+2024-10-26 19:22:18,456 - Client disconnected
+2024-10-26 19:27:05,688 - Shutting down HyDFS...
+2024-10-26 19:27:05,689 - Listener thread is still running; proceeding to join...
+2024-10-26 19:27:09,051 - Listener thread joined successfully.
+2024-10-26 19:27:09,052 - Shutting down...
+2024-10-26 19:27:09,719 - Node shut down gracefully.
+2024-10-26 19:27:09,720 - HyDFS Node shut down gracefully.
+2024-10-26 19:27:12,657 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:27:12,660 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:27:12,660 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:27:12,664 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:27:12,666 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:27:12,667 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:27:12,669 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729988832', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 19:31:13,902 - Shutting down HyDFS...
+2024-10-26 19:31:13,903 - Listener thread is still running; proceeding to join...
+2024-10-26 19:31:18,134 - Listener thread joined successfully.
+2024-10-26 19:31:18,135 - Shutting down...
+2024-10-26 19:31:19,057 - Node shut down gracefully.
+2024-10-26 19:31:19,058 - HyDFS Node shut down gracefully.
+2024-10-26 19:32:02,941 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:32:02,943 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:32:02,944 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:32:02,946 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:32:02,968 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:32:02,976 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:32:02,978 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729989122', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 19:32:11,617 - Connection from ('172.22.94.228', 47548)
+2024-10-26 19:32:11,619 - [{'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729989122', 'ring_id': 715}, {'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729989122', 'ring_id': 715}]
+2024-10-26 19:32:11,624 - Connection from ('172.22.94.228', 47554)
+2024-10-26 19:32:11,626 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
+2024-10-26 19:32:11,627 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
+2024-10-26 19:32:11,627 - Sent data_buffer message b'\x84\xabclient_name\xa7client1\xa6action\xa5write\xa8filename\xadfile_1194.txt\xa7content\xc4\x1eThis file is uploaded to HyDFS<EOF>'
+2024-10-26 19:32:11,627 - Connection from ('172.22.94.228', 47570)
+2024-10-26 19:32:11,629 - File 'file_1194.txt' written successfully.
+2024-10-26 19:32:11,629 - Acknowledgment sent to client for 'file_1194.txt'.
+2024-10-26 19:32:11,629 - Connection from ('172.22.94.228', 47584)
+2024-10-26 19:32:11,630 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'write_complete'}
+2024-10-26 19:32:11,630 - Quorum not yet met, received ack from 1 replicas
+2024-10-26 19:32:11,630 - File 'file_1194.txt' already exists. Not writing to it.
+2024-10-26 19:32:11,630 - Acknowledgment sent to client for existing file 'file_1194.txt'.
+2024-10-26 19:32:11,630 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
+2024-10-26 19:32:11,631 - Quorum not yet met, received ack from 2 replicas
+2024-10-26 19:32:11,631 - File 'file_1194.txt' already exists. Not writing to it.
+2024-10-26 19:32:11,631 - Acknowledgment sent to client for existing file 'file_1194.txt'.
+2024-10-26 19:32:11,631 - Acknowledgment received for file info: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
+2024-10-26 19:32:11,631 - client_socket_to_use <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.22.94.228', 5001), raddr=('172.22.94.228', 47548)>
+2024-10-26 19:32:11,632 - file_info received from replicas: {'client_name': 'client1', 'action': 'ack', 'filename': 'file_1194.txt', 'status': 'file_exists'}
+2024-10-26 19:32:11,632 - Acknowledgment sent to client1 for file 'file_1194.txt'.
+2024-10-26 19:32:11,633 - Client disconnected
+2024-10-26 19:32:27,995 - Shutting down HyDFS...
+2024-10-26 19:32:27,998 - Listener thread is still running; proceeding to join...
+2024-10-26 19:32:31,670 - Listener thread joined successfully.
+2024-10-26 19:32:31,671 - Shutting down...
+2024-10-26 19:32:32,059 - Node shut down gracefully.
+2024-10-26 19:32:32,059 - HyDFS Node shut down gracefully.
+2024-10-26 19:48:41,141 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:48:41,144 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:48:41,145 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:48:41,145 - Logging initialized
+2024-10-26 19:48:41,148 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:48:41,150 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:48:41,152 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:48:41,154 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729990121', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 19:51:19,801 - Shutting down HyDFS...
+2024-10-26 19:51:19,802 - Listener thread is still running; proceeding to join...
+2024-10-26 19:51:21,452 - Listener thread joined successfully.
+2024-10-26 19:51:21,453 - Shutting down...
+2024-10-26 19:51:22,048 - Node shut down gracefully.
+2024-10-26 19:51:22,049 - HyDFS Node shut down gracefully.
+2024-10-26 19:51:25,156 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:51:25,159 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:51:25,159 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:51:25,159 - Logging initialized
+2024-10-26 19:51:25,162 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:51:25,167 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:51:25,168 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:51:25,170 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729990285', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 19:51:43,283 - Shutting down HyDFS...
+2024-10-26 19:51:43,283 - Listener thread is still running; proceeding to join...
+2024-10-26 19:51:45,186 - Listener thread joined successfully.
+2024-10-26 19:51:45,187 - Shutting down...
+2024-10-26 19:51:45,189 - Node shut down gracefully.
+2024-10-26 19:51:45,189 - HyDFS Node shut down gracefully.
+2024-10-26 19:54:13,267 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:54:13,269 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:54:13,270 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 19:54:13,270 - Logging initialized
+2024-10-26 19:54:13,273 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:54:13,276 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:54:13,277 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 19:54:13,279 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729990453', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 19:59:39,081 - New join request received from fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-26 19:59:39,082 - Pinging fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-26 19:59:39,083 - Sent membership list to fa24-cs425-6902.cs.illinois.edu:5000
+2024-10-26 19:59:39,085 - Actually sent ping out
+2024-10-26 19:59:39,088 - Received ack from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-26 19:59:39,088 - Popped this from queue: {'node_ip': 'fa24-cs425-6902.cs.illinois.edu', 'node_port': 5000}
+2024-10-26 19:59:39,088 - Node fa24-cs425-6902.cs.illinois.edu:5000 is alive
+2024-10-26 19:59:41,155 - New join request received from fa24-cs425-6903.cs.illinois.edu:5000
+2024-10-26 19:59:41,157 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 403, 'node_id': 'fa24-cs425-6903.cs.illinois.edu_5000_1729990781', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:41,160 - Sent membership list to fa24-cs425-6903.cs.illinois.edu:5000
+2024-10-26 19:59:41,824 - New join request received from fa24-cs425-6904.cs.illinois.edu:5000
+2024-10-26 19:59:41,826 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 859, 'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1729990781', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:41,827 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 859, 'node_id': 'fa24-cs425-6904.cs.illinois.edu_5000_1729990781', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:41,827 - Sent membership list to fa24-cs425-6904.cs.illinois.edu:5000
+2024-10-26 19:59:43,164 - New join request received from fa24-cs425-6905.cs.illinois.edu:5000
+2024-10-26 19:59:43,165 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 845, 'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1729990783', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:43,166 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 845, 'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1729990783', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:43,169 - Notified fa24-cs425-6904.cs.illinois.edu:5000 of new node {'ring_id': 845, 'node_id': 'fa24-cs425-6905.cs.illinois.edu_5000_1729990783', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:43,170 - Sent membership list to fa24-cs425-6905.cs.illinois.edu:5000
+2024-10-26 19:59:44,417 - New join request received from fa24-cs425-6906.cs.illinois.edu:5000
+2024-10-26 19:59:44,418 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 620, 'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1729990784', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:44,419 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 620, 'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1729990784', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:44,420 - Notified fa24-cs425-6904.cs.illinois.edu:5000 of new node {'ring_id': 620, 'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1729990784', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:44,420 - Notified fa24-cs425-6905.cs.illinois.edu:5000 of new node {'ring_id': 620, 'node_id': 'fa24-cs425-6906.cs.illinois.edu_5000_1729990784', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:44,421 - Sent membership list to fa24-cs425-6906.cs.illinois.edu:5000
+2024-10-26 19:59:45,980 - New join request received from fa24-cs425-6907.cs.illinois.edu:5000
+2024-10-26 19:59:45,981 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 140, 'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1729990785', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:45,983 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 140, 'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1729990785', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:45,984 - Notified fa24-cs425-6904.cs.illinois.edu:5000 of new node {'ring_id': 140, 'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1729990785', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:45,984 - Notified fa24-cs425-6905.cs.illinois.edu:5000 of new node {'ring_id': 140, 'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1729990785', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:45,986 - Notified fa24-cs425-6906.cs.illinois.edu:5000 of new node {'ring_id': 140, 'node_id': 'fa24-cs425-6907.cs.illinois.edu_5000_1729990785', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:45,987 - Sent membership list to fa24-cs425-6907.cs.illinois.edu:5000
+2024-10-26 19:59:47,063 - New join request received from fa24-cs425-6908.cs.illinois.edu:5000
+2024-10-26 19:59:47,066 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1729990787', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:47,066 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1729990787', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:47,067 - Notified fa24-cs425-6904.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1729990787', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:47,068 - Notified fa24-cs425-6905.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1729990787', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:47,069 - Notified fa24-cs425-6906.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1729990787', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:47,070 - Notified fa24-cs425-6907.cs.illinois.edu:5000 of new node {'ring_id': 58, 'node_id': 'fa24-cs425-6908.cs.illinois.edu_5000_1729990787', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:47,071 - Sent membership list to fa24-cs425-6908.cs.illinois.edu:5000
+2024-10-26 19:59:48,566 - New join request received from fa24-cs425-6909.cs.illinois.edu:5000
+2024-10-26 19:59:48,571 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1729990788', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:48,572 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1729990788', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:48,574 - Notified fa24-cs425-6904.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1729990788', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:48,575 - Notified fa24-cs425-6905.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1729990788', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:48,576 - Notified fa24-cs425-6906.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1729990788', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:48,577 - Notified fa24-cs425-6907.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1729990788', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:48,577 - Notified fa24-cs425-6908.cs.illinois.edu:5000 of new node {'ring_id': 578, 'node_id': 'fa24-cs425-6909.cs.illinois.edu_5000_1729990788', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:48,578 - Sent membership list to fa24-cs425-6909.cs.illinois.edu:5000
+2024-10-26 19:59:49,562 - New join request received from fa24-cs425-6910.cs.illinois.edu:5000
+2024-10-26 19:59:49,565 - Notified fa24-cs425-6902.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1729990789', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:49,566 - Notified fa24-cs425-6903.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1729990789', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:49,568 - Notified fa24-cs425-6904.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1729990789', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:49,569 - Notified fa24-cs425-6905.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1729990789', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:49,570 - Notified fa24-cs425-6906.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1729990789', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:49,571 - Notified fa24-cs425-6907.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1729990789', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:49,572 - Notified fa24-cs425-6908.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1729990789', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:49,573 - Notified fa24-cs425-6909.cs.illinois.edu:5000 of new node {'ring_id': 56, 'node_id': 'fa24-cs425-6910.cs.illinois.edu_5000_1729990789', 'status': 'LIVE', 'inc_num': 0}
+2024-10-26 19:59:49,573 - Sent membership list to fa24-cs425-6910.cs.illinois.edu:5000
+2024-10-26 19:59:59,080 - Recieved a ping from ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-26 19:59:59,082 - Sent ack to ('fa24-cs425-6902.cs.illinois.edu', 5000)
+2024-10-26 19:59:59,102 - Pinging fa24-cs425-6903.cs.illinois.edu:5000
+2024-10-26 19:59:59,103 - Actually sent ping out
+2024-10-26 19:59:59,106 - Received ack from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-10-26 19:59:59,107 - Popped this from queue: {'node_ip': 'fa24-cs425-6903.cs.illinois.edu', 'node_port': 5000}
+2024-10-26 19:59:59,107 - Node fa24-cs425-6903.cs.illinois.edu:5000 is alive
+2024-10-26 20:00:01,170 - Recieved a ping from ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-10-26 20:00:01,171 - Sent ack to ('fa24-cs425-6903.cs.illinois.edu', 5000)
+2024-10-26 20:00:01,843 - Recieved a ping from ('fa24-cs425-6904.cs.illinois.edu', 5000)
+2024-10-26 20:00:01,844 - Sent ack to ('fa24-cs425-6904.cs.illinois.edu', 5000)
+2024-10-26 20:00:02,516 - Shutting down HyDFS...
+2024-10-26 20:00:02,517 - Listener thread is still running; proceeding to join...
+2024-10-26 20:00:03,172 - Recieved a ping from ('fa24-cs425-6905.cs.illinois.edu', 5000)
+2024-10-26 20:00:03,174 - Sent ack to ('fa24-cs425-6905.cs.illinois.edu', 5000)
+2024-10-26 20:00:03,927 - Listener thread joined successfully.
+2024-10-26 20:00:03,928 - Shutting down...
+2024-10-26 20:00:19,112 - Node shut down gracefully.
+2024-10-26 20:00:19,113 - HyDFS Node shut down gracefully.
+2024-10-26 20:01:14,011 - Node started, listening on fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 20:01:14,014 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 20:01:14,015 - Server listening on fa24-cs425-6901.cs.illinois.edu:5001
+2024-10-26 20:01:14,015 - Logging initialized
+2024-10-26 20:01:14,018 - Sent join request to introducer at fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 20:01:14,021 - New join request received from fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 20:01:14,022 - Sent membership list to fa24-cs425-6901.cs.illinois.edu:5000
+2024-10-26 20:01:14,024 - Received updated membership list: [{'ring_id': 715, 'node_id': 'fa24-cs425-6901.cs.illinois.edu_5000_1729990874', 'status': 'LIVE', 'inc_num': 0}]
+2024-10-26 20:01:29,116 - Shutting down HyDFS...
+2024-10-26 20:01:29,117 - Listener thread is still running; proceeding to join...
+2024-10-26 20:01:34,031 - Listener thread joined successfully.
+2024-10-26 20:01:34,031 - Shutting down...
+2024-10-26 20:01:34,045 - Node shut down gracefully.
+2024-10-26 20:01:34,045 - HyDFS Node shut down gracefully.

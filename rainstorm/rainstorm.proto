@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+service RainStorm {
+    rpc SubmitJob (JobRequest) returns (JobResponse);
+    rpc PrintJson(JsonRequest) returns (AckResponse);
+}
+
+message JobRequest {
+    repeated bytes op_exes = 1;        // List of binary files
+    repeated string op_exe_names = 2;  // List of binary names corresponding to the op_exes
+    repeated string op_exe_patterns = 3;  // List of filter op_exe_patterns
+    string hydfs_src_file = 4;
+    string hydfs_dest_filename = 5;
+    int32 num_tasks = 6;
+}
+
+message JobResponse {
+    string message = 1;
+}
+
+
+message JsonRequest {
+    string json_data = 1;
+}
+
+message AckResponse {
+    string ack = 1;
+}
