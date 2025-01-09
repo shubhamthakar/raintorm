@@ -1,44 +1,82 @@
-# distributed-logger
-Group No. 69 (sthakar3 and chaskar2)
+###RainStorm: Stream Processing Framework
+#Overview
+RainStorm is a fault-tolerant stream-processing framework inspired by systems like Storm and Spark Streaming. It processes real-time data streams with exactly-once semantics, leveraging distributed group membership, a hybrid distributed file system (HyDFS), and Pythons asyncio for efficient task scheduling and execution.
 
-We have created a distributed logger on a cluster of 10 VMs. Each of the 10 machines has a server running listening for socket connections. A client socket can be created on any of the 10 machines. The client will parallelly open connections to the server and run grep command on each machine. We have used Thread Pooling to enable parallel execution. The grep output will then be passed on to the client where it is displayed on the terminal. 
+#Architecture
+Leader-Worker Design
+Leader:
+- Manages job submissions, task assignments, and fault recovery. Handles rescheduling tasks on worker failures.
 
-# Setup
+Workers:
+- Execute user-defined tasks such as transformations, filtering, and aggregations.
+- Use HyDFS for persistent storage and state management.
+- Implement exactly-once semantics with duplicate detection and state recovery.
 
-1. Pull latest code
+#Features
+Core Capabilities
+Fault Tolerance:
+- Dynamic task reassignment on failures.
+- Persistent state and tuple logs in HyDFS for recovery.
+- Consistent outputs under failure scenarios.
 
-    In order to have the latest code base on all the machines, execute the `git_cloner.sh` utility script.
+Exactly-once Semantics:
+- Ensures each input record is processed exactly once, even during retries.
+- Deduplication mechanisms with persistent logs.
 
-    ```shell
-    cd /home/chaskar2/
-    sh git_cloner.sh
-    ```
+Parallel Processing:
 
-2. Run Socket Server
-
-    To run the socket server across all the 10 machine, execute the `socket_server_runner.sh` utility script. This will start server sockets on all the machines
-
-    ```shell
-    cd /home/chaskar2/
-    sh socket_server_runner.sh
-    ```
-
-3. Run grep using Socket clients
-
-    To run the grep commands across all the log files, execute the `socket_client_parallel.py` with the pattern to be grepped.
-
-    ```shell
-    cd /home/chaskar2/distributed-logger
-    python socket_client_parallel.py -r 'http://reynolds.com/' /home/chaskar2/log/
-    ```
-
-4. Cleanup
-
-    To stop the socket servers running accross all the amchines, execute the `socket_server_cleanup.sh`
-
-    ```shell
-    cd /home/chaskar2/
-    sh socket_server_cleanup.sh
-    ```
+- Distributed execution of tasks across multiple stages.
+- Hash partitioning for balanced workload distribution.
+- Operations
+- Transform: Applies user-defined functions to records.
+- FilteredTransform: Filters records based on conditions, then transforms them.
+- AggregateByKey: Maintains and updates aggregate statistics.
 
 
+###HyDFS: Hybrid Distributed File System
+HyDFS is a fault-tolerant, distributed file system combining features from HDFS and Cassandra, optimized for performance and reliability in distributed systems. It serves as the backbone of RainStorm, providing persistent storage for state and data.
+
+#Key Features
+Distributed Architecture
+- Nodes are organized in a consistent hashing ring for efficient file location and distribution.
+- Files are replicated across multiple nodes to ensure fault tolerance and high availability.
+
+Fault Tolerance
+- Supports up to two simultaneous node failures while maintaining data availability.
+Active Push-based Replication:
+- Each file is replicated to the first three successor nodes on the ring.
+Automatic re-replication triggered on node failures to restore redundancy.
+
+File Operations
+- Create: Stores files in HyDFS, ensuring initial replication.
+- Get: Fetches files with quorum-based consistency checks.
+- Append: Allows data to be added to existing files while maintaining consistency across replicas.
+- Merge: Reconciles inconsistencies between replicas, ensuring all nodes have identical data.
+
+Consistency Guarantees
+- Ensures eventual consistency:
+Appends are applied in the same order across replicas.
+Reads reflect the most recent appends by the same client.
+Quorum-based operations for both read (get) and write (append).
+
+Client-Side Caching
+- Implements LRU caching for frequently accessed files to reduce latency.
+- Cache size can be configured (e.g., 10%, 50%, 100% of data size).
+- Supports performance optimization for workloads with Zipfian access patterns.
+
+##Experiments on HyDFS
+
+
+ Fig 1. Replication time reported here includes both the failure detection time (Ping Ack) and time to replicate. The larger file sizes (1 MB, 10 MB, and 20 MB) show a noticeable increase in replication time, with 20 MB having the longest time and the largest standard deviation, indicating more variability in replication time for larger files.
+
+Fig 2. For this experiment we measured the average bandwidth of nodes participating in file exchanges during replication and are reporting this value. We monitored the interface at each of these nodes to get packets sent and received per second and used that to calculate the bandwidth. The graph shows that bandwidth utilization increases as file size increases, with larger files (10 MB and 20 MB) using significantly more bandwidth compared to smaller ones.
+
+Fig 3. For a single client we did 1000 back-to-back appends, for 2 clients we did 500 back-to-back appends each and so on. As the number of concurrent clients grow merge time increases but the increase is not a lot because of the way we are handling merge and appends
+ 
+Fig 4. Merge times for 40 KB appends are consistently higher than for 4 KB, and the increase with more concurrent clients is more pronounced, indicating larger data sizes lead to longer and more variable merge times.
+
+Fig 5. For this experiment we wrote 1000 files to hyDFS each of size 4kb and performed 2000 sequential gets. The graph shows that as cache size increases, the overall get time decreases, improving performance. The difference between 50% and 100% cache size is small because, at 50%, the cache already holds most frequently accessed data, so increasing it to 100% offers minimal additional benefit.
+ '
+ Fig 6. The Zipfian graph shows a sharp drop in get time from 0% to 10% cache size, with minimal improvement beyond that. This reflects the benefit of caching the most frequently accessed data early on. In contrast to this the uniform distribution has a steady improvement across all cache sizes.
+
+Fig 7. This graph compares cache performance for uniform and Zipfian distributions at 0% and 50% cache sizes. For this experiment we wrote 1000 files to hyDFS each of size 4kb. Our query workload had 1800 gets and 200 appends. At 0% cache, both distributions have similar get times, showing no cache benefit. However, at 50% cache, the Zipfian distribution shows a significantly lower get time compared to the uniform distribution, indicating that caching benefits the Zipfian pattern more due to its skewed data access
